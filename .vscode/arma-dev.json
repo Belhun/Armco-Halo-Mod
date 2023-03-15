@@ -1,0 +1,14 @@
+{
+	"title": "Armco Halo",
+	"name": "armcohalo",
+	"author": "Belhun",
+	"website": "https://github.com/Belhun/Armco-Halo-Mod",
+	"version": "0.1.0",
+	"buildPath": "build",
+	"privateKey": "",
+	"serverDirs": [],
+	"serverUse32bit": false,
+	"clientDirs": [ "src/client/ARMCO-Halo-mod" ],
+	"clientMods": [ ],
+	"ftpConnection": {}
+}
