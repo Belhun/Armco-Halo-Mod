@@ -2,6 +2,7 @@ class CfgPatches {
 	class CA_ARMCO_WARTHOG { 
 		units[] = {
 			"ARMCO_M12_LRV",
+			"ARMCO_M914_RV",
 		}; 
 		weapons[] = {}; 
 		requiredVersion = 0.1; 
