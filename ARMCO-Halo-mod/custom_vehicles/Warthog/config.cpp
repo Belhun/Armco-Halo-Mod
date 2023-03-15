@@ -26,8 +26,8 @@ class CfgVehicles
 				"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 				"\OPTRE_Vehicles\Warthog\data\turrets\m12_turret_co.paa",
 				"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-				"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-				"\OPTRE_Vehicles\warthog\data\night\M12HogMaav_interior_night_co.paa",
+				"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+				"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
 				"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa"
 			};
 		class textureSources
@@ -137,8 +137,8 @@ class CfgVehicles
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\turrets\m12_turret_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-					"\OPTRE_Vehicles\warthog\data\night\M12HogMaav_interior_night_co.paa",
+					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa"
 				};
 				factions[]=
@@ -193,7 +193,7 @@ class CfgVehicles
 			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\night\M12HogMaav_interior_night_co.paa",
+			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 			"\OPTRE_Vehicles\warthog\data\net_ca.paa"
 		};
 		class textureSources
@@ -292,7 +292,7 @@ class CfgVehicles
 					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\OPTRE_Vehicles\warthog\data\night\M12HogMaav_interior_night_co.paa",
+					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\net_ca.paa"
 				};
 				factions[]=
