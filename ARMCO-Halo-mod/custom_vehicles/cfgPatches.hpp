@@ -113,15 +113,15 @@ class CfgFactionClasses //This configures the in-game factions
 {
 	class ARMCO_UNSC
 	{
-		dlc = "OPTRE";
-		displayName 																			= "ARMCO";
-		author																					= "Article 2 Studios";
-		priority 																				= 1;
-		side 																					= 1;
-		icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
-		flag 																					= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
-		primaryLanguage 																		= "EN";
-		backpack_tf_faction_radio_api 															= "OPTRE_Como_pack_2";
+		dlc 							= "OPTRE";
+		displayName 					= "ARMCO";
+		author							= "Article 2 Studios";
+		priority 						= 1;
+		side 							= 1;
+		icon 							= "\OPTRE_Core\data\icon_UNSC_ca.paa";
+		flag 							= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
+		primaryLanguage 				= "EN";
+		backpack_tf_faction_radio_api 	= "OPTRE_Como_pack_2";
         /*personal_tf_faction_radio_api = "some_personal_radio_class";
         rifleman_tf_faction_radio_api = "some_rifleman_radio_class";
         airborne_tf_faction_radio_api = "some_airborne_radio_class";*/

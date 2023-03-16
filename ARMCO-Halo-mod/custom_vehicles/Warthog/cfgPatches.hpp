@@ -3,6 +3,7 @@ class CfgPatches {
 		units[] = {
 			"ARMCO_M12_LRV",
 			"ARMCO_M914_RV",
+			"ARMCO_M12_FAV",
 		}; 
 		weapons[] = {}; 
 		requiredVersion = 0.1; 
