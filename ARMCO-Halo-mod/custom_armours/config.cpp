@@ -12,6 +12,8 @@
 	terrainDrainRun=0;
 	terrainSpeedCoef=1;
 };*/
+class tfw_ilbe_gr;
+
 class CfgMarkerClasses
 {
 	class ARMCO_Markers
@@ -232,13 +234,13 @@ class I_crew_F;
 class AMRCO_Dress_Soldier_Base: ARMCO_Soldier_Base {
 		scope = 1;
 		scopeCurator=1;
-		identityTypes[] =  {"LanguageENG_F","Head_NATO","None"};
-		dlc = "ARMCO OPTRE Reskins";
-		author											= "4th Battalion Mod Team";
-		uniformClass													= "OPTRE_UNSC_Dress_Uniform_gray";
-		faction															= "ARMCO_PMC";
-		model															= "\OPTRE_UNSC_Units\Army\officer.p3d";
-		linkedItems[] 													= 
+		identityTypes[] 	=  {"LanguageENG_F","Head_NATO","None"};
+		dlc 				= "ARMCO OPTRE Reskins";
+		author				= "4th Battalion Mod Team";
+		uniformClass		= "OPTRE_UNSC_Dress_Uniform_gray";
+		faction				= "ARMCO_PMC";
+		model				= "\OPTRE_UNSC_Units\Army\officer.p3d";
+		linkedItems[] 		= 
 		{
 			"ItemMap",
 			"ItemCompass",
@@ -348,23 +350,23 @@ class AMRCO_Dress_Soldier_Base: ARMCO_Soldier_Base {
 	};
 class ARMCO_Soldier_WDL: AMRCO_Dress_Soldier_Base {
 		dlc = "ARMCO OPTRE Reskins";
-		scope															= 1;
-		scopeCurator													= 1;
-		identityTypes[] =  {"LanguageENG_F","Head_NATO","None"};
-		author											= "4th Battalion Mod Team";
-		vehicleClass													= "OPTRE_UNSC_Man_Army_W_class";
-		uniformClass													= "OPTRE_UNSC_Army_Uniform_WDL";
-		model															= "\OPTRE_UNSC_Units\Army\uniform.p3d";
-		weapons[]														= {"Throw","Put"};
-		respawnWeapons[]												= {"Throw","Put"};
-		Items[]															= {"OPTRE_Biofoam"};
-		RespawnItems[]													= {"OPTRE_Biofoam"};
-		magazines[]														= {};
-		respawnMagazines[]												= {};
-		//linkedItems[] 													= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		//respawnLinkedItems[] 											= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-		hiddenSelections[] 												= {"camo","camo2","insignia","clan","A_SlimLeg"}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
+		scope						= 1;
+		scopeCurator				= 1;
+		identityTypes[] 			=  {"LanguageENG_F","Head_NATO","None"};
+		author						= "4th Battalion Mod Team";
+		vehicleClass				= "OPTRE_UNSC_Man_Army_W_class";
+		uniformClass				= "OPTRE_UNSC_Army_Uniform_WDL";
+		model						= "\OPTRE_UNSC_Units\Army\uniform.p3d";
+		weapons[]					= {"Throw","Put"};
+		respawnWeapons[]			= {"Throw","Put"};
+		Items[]						= {"OPTRE_Biofoam"};
+		RespawnItems[]				= {"OPTRE_Biofoam"};
+		magazines[]					= {};
+		respawnMagazines[]			= {};
+		//linkedItems[] 			= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		//respawnLinkedItems[] 		= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+		hiddenSelections[] 			= {"camo","camo2","insignia","clan","A_SlimLeg"}; //Determines what hiddenselections are enabled
+		hiddenSelectionsTextures[] 	= {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
 		class Wounds /// changes material of skin according to damage
 		{
 			tex[] = {};
