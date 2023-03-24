@@ -1,14 +1,14 @@
 #include "CfgPatches.hpp"
 class CfgVehicles
 {
-	class OPTRE_M12_FAV;//added  [ARMCO] M12-FAV
+	class OPTRE_M12_FAV;	//added [ARMCO] M12-FAV
 	class OPTRE_M12_FAV_APC;//added [ARMCO] M12-FAV APC
-	class OPTRE_M813_TT;//added [ARMCO] M813 Troop Transport
-	class OPTRE_M12_LRV;//added [ARMCO] M12 Warthog LRV (MG)
-	class OPTRE_M12G1_LRV;//added [ARMCO] M12G1 Warthog LRV (Gauss)
-	class OPTRE_M12A1_LRV;//added [ARMCO] M12A1 Warthog LRV (Rocket)
-	class OPTRE_M12R_AA;//added [ARMCO] M12R Warthog AA
-	class OPTRE_M914_RV;//added [ARMCO] M914 Repair Hog
+	class OPTRE_M813_TT;	//added [ARMCO] M813 Troop Transport
+	class OPTRE_M12_LRV;	//added [ARMCO] M12 Warthog LRV (MG)
+	class OPTRE_M12G1_LRV;	//added [ARMCO] M12G1 Warthog LRV (Gauss)
+	class OPTRE_M12A1_LRV;	//added [ARMCO] M12A1 Warthog LRV (Rocket)
+	class OPTRE_M12R_AA;	//added [ARMCO] M12R Warthog AA
+	class OPTRE_M914_RV;	//added [ARMCO] M914 Repair Hog
 	class OPTRE_M12_FAV_APC_MED;//added [ARMCO] M12-FAV Medical APC
 
 	class ARMCO_M12_LRV: OPTRE_M12_LRV
