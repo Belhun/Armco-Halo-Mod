@@ -185,8 +185,8 @@ class CfgVehicles
 		//Takes the class textureSources
 		textureList[]=
 		{
-			"colorstand",
-			2,
+			"colorstand",//Class name
+			2,//Priority fir the order to be sown(lower number higher in list)
 			"colornight",
 			3,
 			"colorsand",
@@ -207,6 +207,5 @@ class CfgVehicles
 		tf_range 			= 25000;
 		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio	 	= 1;
-		
 	};
 };
