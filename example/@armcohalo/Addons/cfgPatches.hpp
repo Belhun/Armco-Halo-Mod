@@ -168,29 +168,41 @@ class CfgFactionClasses //This configures the in-game factions
 	class ARMCO_PMC
 	{
 		dlc = "ARMCO OPTRE Reskins";
-		displayName 					= "ARMCO";
-		author							= "Frosty & Mac";
-		priority 						= 1;
-		side 							= 1;
-		scope							= 2;
-		scopeArsenal					= 2;
-		scopeCurator					= 2;
-		icon 							= "\OPTRE_Core\data\icon_UNSC_ca.paa";
-		flag 							= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
-		primaryLanguage 				= "EN";
-		backpack_tf_faction_radio_api 	= "OPTRE_Como_pack_2";
+		displayName 																			= "ARMCO";
+		author																					= "Frosty & Mac";
+		priority 																				= 1;
+		side 																					= 1;
+		scope																					= 2;
+		scopeArsenal																			= 2;
+		scopeCurator																			= 2;
+		icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
+		flag 																					= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
+		primaryLanguage 																		= "EN";
+		backpack_tf_faction_radio_api 															= "OPTRE_Como_pack_2";
 	};
+	/*class ARMCO_Hidden
+	{
+		dlc = "ARMCO OPTRE Reskins";
+		displayName 																			= "ARMCO Hidden";
+		author																					= "Frosty & Mac";
+		priority 																				= 3;
+		side 																					= 2;
+		icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
+		flag 																					= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
+		primaryLanguage 																		= "EN";
+		backpack_tf_faction_radio_api 															= "OPTRE_Como_pack_2";
+	};*/
 	class ARMCO_Green_Horns
 	{
 		dlc = "ARMCO OPTRE Reskins";
-		displayName 					= "Insurrectionist (Green Horns)";
-		author							= "Frosty & Mac";
-		priority 						= 2;
-		side 							= 0;
-		icon 							= "\OPTRE_Core\data\icon_UNSC_ca.paa";
-		flag 							= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
-		primaryLanguage 				= "EN";
-		backpack_tf_faction_radio_api 	= "OPTRE_Como_pack_2";
+		displayName 																			= "Insurrectionist (Green Horns)";
+		author																					= "Frosty & Mac";
+		priority 																				= 2;
+		side 																					= 0;
+		icon 																					= "\OPTRE_Core\data\icon_UNSC_ca.paa";
+		flag 																					= "\OPTRE_Core\Data\flag_UNSC_ca.paa";
+		primaryLanguage 																		= "EN";
+		backpack_tf_faction_radio_api 															= "OPTRE_Como_pack_2";
 	};
 };
 /*

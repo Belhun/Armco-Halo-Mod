@@ -169,47 +169,47 @@ class ARMCO_Soldier_Base: SoldierWB	{
 			};
 			class HitLegs
 			{
-				armor               = 1;
-				material            = -1;
-				name                = "legs";
-				passThrough         = 0.1;
-				radius              = 0.12;
-				explosionShielding  = 0.25;
-				visual              = "injury_legs";
-				minimalHit          = 0.01;
+				armor= 1;
+				material= -1;
+				name= "legs";
+				passThrough= 0.1;
+				radius= 0.12;
+				explosionShielding= 0.25;
+				visual= "injury_legs";
+				minimalHit= 0.01;
 			};
 			
 			// ACE
 			
 			class HitLeftArm
 			{
-				armor               = 1;
-				material            = -1;
-				name                = "hand_l";
-				passThrough         = 0.1;
-				radius              = 0.1;
-				explosionShielding  = 0.25;
-				visual              = "injury_hands";
-				minimalHit          = 0.01;
+				armor= 1;
+				material= -1;
+				name= "hand_l";
+				passThrough= 0.1;
+				radius= 0.1;
+				explosionShielding= 0.25;
+				visual= "injury_hands";
+				minimalHit= 0.01;
 			};
 			class HitRightArm: HitLeftArm
 			{
-				name                = "hand_r";
+				name= "hand_r";
 			};
 			class HitLeftLeg
 			{
-				armor               = 1;
-				material            = -1;
-				name                = "leg_l";
-				passThrough         = 0.1;
-				radius              = 0.1;
-				explosionShielding  = 0.25;
-				visual              = "injury_hands";
-				minimalHit          = 0.01;
+				armor=1;
+				material=-1;
+				name="leg_l";
+				passThrough=0.1;
+				radius=0.1;
+				explosionShielding=0.25;
+				visual="injury_hands";
+				minimalHit=0.01;
 			};
 			class HitRightLeg: HitLeftLeg
 			{
-				name                = "leg_r";
+				name="leg_r";
 			};
 		};
 	};
@@ -222,11 +222,11 @@ class AMRCO_Dress_Soldier_Base: ARMCO_Soldier_Base {
 		scopeCurator=1;
 		identityTypes[] =  {"LanguageENG_F","Head_NATO","None"};
 		dlc = "ARMCO OPTRE Reskins";
-		author											= "Frosty & Mac";
-		uniformClass													= "OPTRE_UNSC_Dress_Uniform_gray";
-		faction															= "ARMCO_PMC";
-		model															= "\OPTRE_UNSC_Units\Army\officer.p3d";
-		linkedItems[] 													= 
+		author= "Frosty & Mac";
+		uniformClass= "OPTRE_UNSC_Dress_Uniform_gray";
+		faction	= "ARMCO_PMC";
+		model= "\OPTRE_UNSC_Units\Army\officer.p3d";
+		linkedItems[] 	= 
 		{
 			"ItemMap",
 			"ItemCompass",
@@ -248,7 +248,7 @@ class AMRCO_Dress_Soldier_Base: ARMCO_Soldier_Base {
 			"insignia",
 			"clan"
 		}; //Determines what hiddenselections are enabled
-		hiddenSelectionsTextures[] 										= 
+		hiddenSelectionsTextures[]= 
 		{
 			"OPTRE_UNSC_Units\Army\data\dress_uniform_gray_co.paa"
 		};
