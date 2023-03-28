@@ -48,20 +48,27 @@ so the ``` C: ``` should be set to whatever drive you have your PBO Manager set 
 once you change that running it should work(if not or your unsure and have questions please don't be afraid to ask Belhun#0001 on discord)
 
 
-##Retexturing info
-So you want help Retexturing The main files you are going to be looking at are the files in 
+## Retexturing info
+So you want help Retexturing The main files you are going to be looking at are the files in "Default Textures" and "png Files".
+
+I will Prob give a better-detailed explanation of how this all works but the main bit is "png Files" where every .paa file in this mod is stored as a .png so if changes need to be made they are in an easy-to-access place instead of needing to convert back into a .png file only to change a little and changing it back into a .paa file. if you want to add more textures Please make sure the .png version is in the right directory in "png files".
+
+While Default Textures are textures we reuse a bunch of , anything under the old file is not used and prob doesn't work.
 
 
-
-
-## tools I recommend
+## Tools I recommend
 [Visual Studio Code](https://code.visualstudio.com/) is the Editor I use for writing all the code I use.
 I recommend these extensions for Visual Studio Code
 - [Arma Dev](https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev)
 - [SQF Language](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf)
 - optionally [Fig Files Intellisense](https://marketplace.visualstudio.com/items?itemName=kiriko.fig-unreleased)
 
+[PBO Manager](https://pbo-manager-v-1-4.software.informer.com/download/#downloading) For managing the PBOs and packing them up for testing
+[Arma 3 Tools](https://store.steampowered.com/app/233800/Arma_3_Tools/) Has a lot of tools for making ARMA 3 mods
 
+[paa.gruppe-adler.de](https://paa.gruppe-adler.de/) This Website allows me to Drag Tons of .paa files into the web browser and get PNGs for all of them. Super nice for learning and looking at other people's projects(Remember to be respectful and let people who where you got the base images from if you reuse them)
 
-
+Both of these I use for managing and using GitHub
+[Git](https://git-scm.com/downloads)
+[GitHub Desktop](https://desktop.github.com/)
 
