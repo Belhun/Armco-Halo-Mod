@@ -1,17 +1,7 @@
-#include "cfgPatches.hpp"
+/* #include "cfgPatches.hpp"
 ////////////////////////
 //Damage & UNITS Start//
 ////////////////////////
-/*class CfgMovesFatigueMedic
-{
-	staminaDuration=180;
-	staminaCooldown=5;
-	staminaRestoration=15;
-	aimPrecisionSpeedCoef=0;
-	terrainDrainSprint=0;
-	terrainDrainRun=0;
-	terrainSpeedCoef=1;
-};*/
 	class Mode_SemiAuto;
 	class WeaponSlotsInfo;
 	class Mode_Burst;
@@ -3861,18 +3851,6 @@ class ARMCO_Dress_Uniform_VJ : ARMCO_Uniform_Base
 			uniformClass												= "ARMCO_Dress_Soldier_VJ";
 		};	
 	};
-/*class ARMCO_Dress_Uniform_French : ARMCO_Uniform_Base
-	{
-		dlc = "ARMCO OPTRE Reskins";
-		scope = 2;
-		author											= "Frosty & Mac";				
-		displayName														= "[ARMCO] Dress Uniform (French)";
-		//picture   														= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-		class ItemInfo: ItemInfo				
-		{				
-			uniformClass												= "ARMCO_Dress_Soldier_French";
-		};	
-	};*/
 class ARMCO_Dress_Uniform_Symbol : ARMCO_Uniform_Base
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -4455,3 +4433,4 @@ class ARMCO_Dress_Uniform_Phoenix_Three : ARMCO_Uniform_Base
 		};	
 	};
 };
+ */
