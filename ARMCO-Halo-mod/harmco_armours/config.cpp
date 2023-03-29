@@ -179,4 +179,5 @@ class CfgVehicles
 
 class cfgWeapons {
 	
+	
 };
