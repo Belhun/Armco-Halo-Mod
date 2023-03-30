@@ -20,7 +20,23 @@ class CfgPatches
 			"Phoenix_CH252_Helmet",
 			"Zulu_CH252_Helmet",
 			"ARMCO_Generic_CH252_Ghillie_Helmet"
+			//Squad Uniforms
+			"Alpha_BDU",
+			"Alpha_EOD_BDU",
+			"Alpha_Medic_BDU",
+			"Sabre_BDU",
+			"Sabre_EOD_BDU",
+			"Sabre_Medic_BDU",
+			"Zulu_BDU",
+			"Zulu_Camo_BDU",
+			"Zulu_EOD_BDU",
+			"Zulu_Medic_BDU",
+			"Zulu_Medic_Camo_BDU",
+			"Phoenix_BDU",
+			"Phoenix_EOD_BDU",
+			"Phoenix_Medic_BDU",
 			// Squad Armor
+			""
 		};
 		requiredVersion = 0.1; 
 		requiredAddons[] = {"OPTRE_UNSC_Units","ace_main","A3_Characters_F_BLUFOR"}; 
@@ -94,6 +110,7 @@ class cfgWeapons {
 	};
 	class OPTRE_UNSC_CH252_Helmet_WDL;
 	class OPTRE_UNSC_CH252_Helmet2_WDL;
+	class OPTRE_UNSC_ODST_Uniform;
 	class Alpha_CH252_Helmet: OPTRE_UNSC_CH252_Helmet2_WDL
 	{
 		dlc="ARMCO_PMC";
@@ -170,4 +187,23 @@ class cfgWeapons {
 			};
 		};
 	};
+	class Alpha_BDU: OPTRE_UNSC_ODST_Uniform
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Alpha)";
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_alpha_co.paa",
+			"OPTRE_UNSC_Units\Army\data\uniform_b_urban_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[]=
+        	{
+				"armco_armours\data\uniforms\uniform_alpha_co.paa",
+				"OPTRE_UNSC_Units\Army\data\uniform_b_urban_co.paa"
+        	};
+		};
+	}
 };
