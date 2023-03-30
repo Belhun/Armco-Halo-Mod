@@ -1,24 +1,26 @@
-- [ ] ARMCO_Soldier_Alpha
+BELHUN IS
+
+- [C] ARMCO_Soldier_Alpha
 - [ ] ARMCO_Soldier_Alpha_TL
 - [ ] ARMCO_Soldier_Alpha_Medic
 - [ ] ARMCO_Soldier_Alpha_Corpsman
 - [ ] ARMCO_Soldier_Alpha_EOD
 - [ ] ARMCO_Soldier_Sabre
 - [ ] ARMCO_Soldier_Sabre_TL
-- [ ] ARMCO_Soldier_Sabre_Medic
+- [X] ARMCO_Soldier_Sabre_Medic
 - [ ] ARMCO_Soldier_Sabre_Corpsman
 - [ ] ARMCO_Soldier_Sabre_EOD
 - [ ] ARMCO_Soldier_Zulu
 - [ ] ARMCO_Soldier_Zulu_TL
 - [ ] ARMCO_Soldier_Zulu_Medic
-- [ ] ARMCO_Soldier_Zulu_Corpsman
+- [X] ARMCO_Soldier_Zulu_Corpsman
 - [ ] ARMCO_Soldier_Zulu_EOD
 - [ ] ARMCO_Soldier_Phoenix
-- [ ] ARMCO_Soldier_Phoenix_TL
+- [X] ARMCO_Soldier_Phoenix_TL
 - [ ] ARMCO_Soldier_Phoenix_Medic
 - [ ] ARMCO_Soldier_Phoenix_Corpsman
 - [ ] ARMCO_Soldier_Phoenix_EOD
-
+DEFZRGXTDHCYUGKILHO;JPK'
 class CfgVehicles
 {
     class OPTRE_UNSC_Army_Soldier_WDL;
