@@ -49,61 +49,60 @@ class CfgPatches {
 	requiredVersion = 0.1; 
 	requiredAddons[] = {"OPTRE_UNSC_Units","ace_main","A3_Characters_F_BLUFOR"}; 
 	}; 
-};
+	};
 class CfgEditorCategories {
 	class armco_units // Category class, you point to it in editorCategory property
 	{
 		displayName = "ARMCO"; // Name visible in the list
 	};
-}
+	}
 class CfgEditorSubcategories {
-class armco_units_cars // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO Cars"; // Name visible in the list
-	};
-class armco_units_cars2 // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO Armoured Cars"; // Name visible in the list
-	};
-class armco_units_APCs // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO APCs"; // Name visible in the list
-	};
-class armco_units_pelicans // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO Pelicans"; // Name visible in the list
-	};
-	class gh_units_pelicans // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "Aircraft"; // Name visible in the list
-	};
-class armco_units_tanks // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO Tanks"; // Name visible in the list
-	};
-class armco_units_drones // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO Drones"; // Name visible in the list
-	};
-class armco_units_arty // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO Artillery"; // Name visible in the list
-	};
-class armco_units_ifv // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO IFVs"; // Name visible in the list
-	};
-class armco_units_AA // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO Anti-air"; // Name visible in the list
-	};
-class armco_units_support // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "ARMCO Support Vehicles"; // Name visible in the list
-	};
-};
-class CfgFactionClasses //This configures the in-game factions
-{
+	class armco_units_cars // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO Cars"; // Name visible in the list
+		};
+	class armco_units_cars2 // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO Armoured Cars"; // Name visible in the list
+		};
+	class armco_units_APCs // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO APCs"; // Name visible in the list
+		};
+	class armco_units_pelicans // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO Pelicans"; // Name visible in the list
+		};
+		class gh_units_pelicans // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "Aircraft"; // Name visible in the list
+		};
+	class armco_units_tanks // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO Tanks"; // Name visible in the list
+		};
+	class armco_units_drones // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO Drones"; // Name visible in the list
+		};
+	class armco_units_arty // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO Artillery"; // Name visible in the list
+		};
+	class armco_units_ifv // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO IFVs"; // Name visible in the list
+		};
+	class armco_units_AA // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO Anti-air"; // Name visible in the list
+		};
+	class armco_units_support // Category class, you point to it in editorSubcategory property
+		{
+			displayName = "ARMCO Support Vehicles"; // Name visible in the list
+		};
+		};
+class CfgFactionClasses{ //This configures the in-game factions
 	class ARMCO_UNSC
 	{
 		dlc 							= "OPTRE";
@@ -119,4 +118,4 @@ class CfgFactionClasses //This configures the in-game factions
         rifleman_tf_faction_radio_api = "some_rifleman_radio_class";
         airborne_tf_faction_radio_api = "some_airborne_radio_class";*/
 	};
-};
+	};
