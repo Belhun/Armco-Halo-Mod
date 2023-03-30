@@ -8,11 +8,11 @@ class CfgPatches {
 	class CA_ARMCO_INFANTRY { 
 		units[] = {
 			//Marine Units//
-			"ARMCO_Soldier_O_Alpha",
-			"ARMCO_Soldier_O_Alpha_TL",
-			"ARMCO_Soldier_O_Alpha_Medic",
-			"ARMCO_Soldier_O_Alpha_Corpsman",
-			"ARMCO_Soldier_O_Alpha_EOD",
+			"ARMCO_Soldier_Alpha",
+			"ARMCO_Soldier_Alpha_TL",
+			"ARMCO_Soldier_Alpha_Medic",
+			"ARMCO_Soldier_Alpha_Corpsman",
+			"ARMCO_Soldier_Alpha_EOD",
 
 		};
 		requiredVersion = 0.1; 
@@ -49,6 +49,10 @@ class CfgFactionClasses
 		primaryLanguage= "EN";
 		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
 	};
+	class ARMCO_PMC
+	{
+
+	}
 
 };
 
@@ -79,7 +83,7 @@ class CfgMarkers
 class CfgVehicles
 {
     class OPTRE_UNSC_Army_Soldier_WDL;
-	class OPTRE_UNSC_Army_Soldier_TeamLead_WDL: OPTRE_UNSC_Army_Soldier_WDL
+	class ARMCO_Army_Soldier: OPTRE_UNSC_Army_Soldier_WDL
 	{
 		dlc="OPTRE";
 		scope=2;
