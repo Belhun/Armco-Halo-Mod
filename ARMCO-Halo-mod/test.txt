@@ -1,9 +1,9 @@
 - [ ] ARMCO_Soldier_Alpha
 - [ ] ARMCO_Soldier_Alpha_TL
-- [ ] ARMCO_Soldier_Alpha_Medic
+- [X] ARMCO_Soldier_Alpha_Medic
 - [ ] ARMCO_Soldier_Alpha_Corpsman
 - [ ] ARMCO_Soldier_Alpha_EOD
-- [ ] ARMCO_Soldier_Sabre
+- [X] ARMCO_Soldier_Sabre
 - [ ] ARMCO_Soldier_Sabre_TL
 - [ ] ARMCO_Soldier_Sabre_Medic
 - [ ] ARMCO_Soldier_Sabre_Corpsman
@@ -12,12 +12,10 @@
 - [ ] ARMCO_Soldier_Zulu_TL
 - [ ] ARMCO_Soldier_Zulu_Medic
 - [ ] ARMCO_Soldier_Zulu_Corpsman
-- [ ] ARMCO_Soldier_Zulu_EOD
+- [X] ARMCO_Soldier_Zulu_EOD
 - [ ] ARMCO_Soldier_Phoenix
 - [ ] ARMCO_Soldier_Phoenix_TL
 - [ ] ARMCO_Soldier_Phoenix_Medic
-- [ ] ARMCO_Soldier_Phoenix_Corpsman
-- [ ] ARMCO_Soldier_Phoenix_EOD
 
 class CfgVehicles
 {
@@ -73,6 +71,22 @@ class CfgVehicles
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
 			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
 			"1Rnd_HE_Grenade_shell",
@@ -89,6 +103,8 @@ class CfgVehicles
 			"OPTRE_M2_Smoke_Orange",
 			"OPTRE_M2_Smoke_Green"
 		};
+		respawnMagazines[]=
+		respawnMagazines[]=
 		respawnMagazines[]=
 		{
 			"OPTRE_32Rnd_762x51_Mag_Tracer",
@@ -123,4 +139,23 @@ class CfgVehicles
 class cfgWeapons {
 	
 	
+};
+
+class CfgMarkers 	
+{
+		class ARMCO_Flag
+		{
+		name ="ARMCO HQ";
+		scope=2;
+		scopeCurator=2;
+		icon = "custom_armours\data\flags\flag_armco_ca.paa";
+		color[] = {1, 1, 1, 1};
+		size = 29;
+		size = 29;
+		size = 29;
+		size = 29;
+		shadow = 0;
+		texture = "custom_armours\data\flags\flag_armco_ca.paa";
+		markerClass="ARMCO_Markers";
+		};
 };
