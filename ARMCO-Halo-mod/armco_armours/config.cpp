@@ -359,6 +359,195 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_alpha_medic_co.paa"
 		};
 	};
+	class ARMCO_Soldier_S_Rifle: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_sabre_co.paa",
+			"armco_armours\data\uniforms\uniform_sabre_co.paa"
+		};
+	};
+	class ARMCO_Soldier_S_EOD: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_sabre_eod_co.paa",
+			"armco_armours\data\uniforms\uniform_sabre_eod_co.paa"
+		};
+	};
+	class ARMCO_Soldier_S_Medical: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_sabre_medic_co.paa",
+			"armco_armours\data\uniforms\uniform_sabre_medic_co.paa"
+		};
+	};
+	class ARMCO_Soldier_Z_Rifle: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_zulu_co.paa",
+			"armco_armours\data\uniforms\uniform_zulu_co.paa"
+		};
+	};
+	class ARMCO_Soldier_Z_EOD: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_zulu_eod_co.paa",
+			"armco_armours\data\uniforms\uniform_zulu_eod_co.paa"
+		};
+	};
+	class ARMCO_Soldier_Z_Medical: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_zulu_medic_co.paa",
+			"armco_armours\data\uniforms\uniform_zulu_medic_co.paa"
+		};
+	};
+	class ARMCO_Soldier_P_Rifle: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_phoenix_co.paa",
+			"armco_armours\data\uniforms\uniform_phoenix_co.paa"
+		};
+	};
+	class ARMCO_Soldier_P_EOD: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_phoenix_eod_co.paa",
+			"armco_armours\data\uniforms\uniform_phoenix_eod_co.paa"
+		};
+	};
+	class ARMCO_Soldier_P_Medical: ARMCO_PMC_Army_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_phoenix_medic_co.paa",
+			"armco_armours\data\uniforms\uniform_phoenix_medic_co.paa"
+		};
+	};
 };
 
 class cfgWeapons {
@@ -506,6 +695,123 @@ class cfgWeapons {
 		class ItemInfo: UniformItem{
 			uniformModel="-";
 			uniformClass="ARMCO_Soldier_A_Medical";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Sabre_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Sabre)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_S_Rifle";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Sabre_EOD_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Sabre EOD)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_S_EOD";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Sabre_Medic_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Sabre Medical)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_S_Medical";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Zulu_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Zulu)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_Z_Rifle";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Zulu_EOD_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Zulu EOD)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_Z_EOD";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Zulu_Medic_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Zulu Medical)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_Z_Medical";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Phoenix_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Phoenix)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_P_Rifle";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Phoenix_EOD_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Phoenix EOD)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_P_EOD";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class Phoenix_Medic_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Squad BDU (Phoenix Medical)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_P_Medical";
 			containerClass="Supply40";
 			mass=50;
 			modelSides[]={6};
