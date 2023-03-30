@@ -1,6 +1,5 @@
 #include "cfgPatches.hpp"
-class CfgGroups 
-{
+class CfgGroups{
 	class West
 	{
 		class ARMCO 
@@ -478,5 +477,4 @@ class CfgGroups
 			};
 		};
 	};
-};
-
+	};

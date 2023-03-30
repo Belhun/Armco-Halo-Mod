@@ -1,34 +1,33 @@
 class CfgPatches { 
 class CA_ARMCO_ADMIN { 
 units[] = {
-//Police Units//
-"ARMCO_Police_Officer",
-"ARMCO_Police_Officer_tl",
-"C_P_M12_FAV",
+	//Police Units//
+	"ARMCO_Police_Officer",
+	"ARMCO_Police_Officer_tl",
+	"C_P_M12_FAV",
 
 
-//Rescue Units//
-"ARMCO_Rescue_Officer",
-"ARMCO_Rescue_Officer_tl",
-"C_P_M12_LRV",
-"C_R_M12_FAV",
-"C_R_M914_RV",
-"C_R_M12_Medical",
+	//Rescue Units//
+	"ARMCO_Rescue_Officer",
+	"ARMCO_Rescue_Officer_tl",
+	"C_P_M12_LRV",
+	"C_R_M12_FAV",
+	"C_R_M914_RV",
+	"C_R_M12_Medical",
 
-//Firefighter Units//
-"ARMCO_Firefighter_Officer",
-"ARMCO_Firefighter_Officer_tl",
-"C_F_M12_RRV",
+	//Firefighter Units//
+	"ARMCO_Firefighter_Officer",
+	"ARMCO_Firefighter_Officer_tl",
+	"C_F_M12_RRV",
 
-//Hazmat Units//
+	//Hazmat Units//
+	}; 
 
-
-}; 
 weapons[] = {}; 
 requiredVersion = 0.1; 
 requiredAddons[] = {"OPTRE_UNSC_Units", "ace_main","A3_Characters_F_BLUFOR"}; 
  }; 
-};
+	};
 class CfgEditorCategories {
 	/*class armco_units // Category class, you point to it in editorCategory property
 	{
@@ -42,7 +41,7 @@ class CfgEditorCategories {
 	{
 		displayName = "Colonial Administration"; // Name visible in the list
 	};
-}
+	}
 class CfgEditorSubcategories {
 	/*class armco_units_fancy // Category class, you point to it in editorSubcategory property
 	{
@@ -101,9 +100,9 @@ class CfgEditorSubcategories {
 	{
 		displayName = "Colonial Firefighters Vehicles"; // Name visible in the list
 	};
-};
-class CfgFactionClasses //This configures the in-game factions
-{
+	};
+class CfgFactionClasses{ //This configures the in-game factions
+
 	/*class ARMCO_UNSC
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -157,10 +156,9 @@ class CfgFactionClasses //This configures the in-game factions
         rifleman_tf_faction_radio_api = "some_rifleman_radio_class";
         airborne_tf_faction_radio_api = "some_airborne_radio_class";*/
 	};
-};
+	};
+/*class CfgVehicleClasses{ //This configures vehicle classes such as "Men", "Armor", etc.
 
-/*class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor", etc.
-{
 	class ARMCO_Faction
 	{
 		dlc ="ARMCO OPTRE Reskins";
@@ -171,4 +169,4 @@ class CfgFactionClasses //This configures the in-game factions
 		scopeCurator																			= 2;
 	};
 	
-};*/
+	};*/
