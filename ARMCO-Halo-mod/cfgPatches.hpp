@@ -114,11 +114,11 @@ units[] =
 weapons[] = 
 {
 	"ARMCO_DMR_SR_01X",
-}; 
+	}; 
 requiredVersion = 0.1; 
 requiredAddons[] = {"OPTRE_UNSC_Units","ace_main","A3_Characters_F_BLUFOR"}; 
  }; 
-};
+	};
 class CfgEditorCategories {
 	class armco_units // Category class, you point to it in editorCategory property
 	{
@@ -128,7 +128,7 @@ class CfgEditorCategories {
 	{
 		displayName = "Insurrectionists (Green Horns)"; // Name visible in the list
 	};
-}
+	}
 class CfgEditorSubcategories {
 	/*class armco_units_fancy // Category class, you point to it in editorSubcategory property
 	{
@@ -162,7 +162,7 @@ class CfgEditorSubcategories {
 	{
 		displayName = "Security Troopers"; // Name visible in the list
 	};
-};
+	};
 class CfgFactionClasses //This configures the in-game factions
 {
 	class ARMCO_PMC
@@ -192,7 +192,7 @@ class CfgFactionClasses //This configures the in-game factions
 		primaryLanguage 				= "EN";
 		backpack_tf_faction_radio_api 	= "OPTRE_Como_pack_2";
 	};
-};
+	};
 /*
 class CfgVehicleClasses //This configures vehicle classes such as "Men", "Armor", etc.
 {

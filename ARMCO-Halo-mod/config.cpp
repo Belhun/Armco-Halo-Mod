@@ -2,8 +2,7 @@
 ////////////////////////
 //Damage & UNITS Start//
 ////////////////////////
-/*class CfgMovesFatigueMedic
-{
+/*class CfgMovesFatigueMedic{
 	staminaDuration=180;
 	staminaCooldown=5;
 	staminaRestoration=15;
@@ -11,16 +10,14 @@
 	terrainDrainSprint=0;
 	terrainDrainRun=0;
 	terrainSpeedCoef=1;
-};*/
-class CfgMarkerClasses
-{
+	};*/
+class CfgMarkerClasses{
 	class ARMCO_Markers
 	{
 		displayName="ARMCO";
 	};
-};
-class CfgMarkers 	
-{
+	};
+class CfgMarkers{
 		class ARMCO_Flag
 		{
 		name ="ARMCO HQ";
@@ -33,9 +30,8 @@ class CfgMarkers
 		texture = "custom_armours\data\flags\flag_armco_ca.paa";
 		markerClass="ARMCO_Markers";
 		};
-};
-class CfgVehicles
-{
+		};
+class CfgVehicles{
 	class Land;
 	class Man: Land	{
 		class EventHandlers;
@@ -345,7 +341,7 @@ class AMRCO_Dress_Soldier_Base: ARMCO_Soldier_Base {
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-	};
+		};
 class ARMCO_Soldier_WDL: AMRCO_Dress_Soldier_Base {
 		dlc = "ARMCO OPTRE Reskins";
 		scope															= 1;
@@ -448,7 +444,7 @@ class ARMCO_Soldier_WDL: AMRCO_Dress_Soldier_Base {
 				armor               = 4;
 			};
 		};
-};
+		};
 class ARMCO_Soldier_WDL_Medic: AMRCO_Dress_Soldier_Base {
 		dlc = "ARMCO OPTRE Reskins";
 		scope															= 1;
@@ -551,7 +547,7 @@ class ARMCO_Soldier_WDL_Medic: AMRCO_Dress_Soldier_Base {
 				armor               = 4;
 			};
 		};
-};
+		};
 class ARMCO_Soldier_WDL_ODST: AMRCO_Dress_Soldier_Base {
 		dlc = "ARMCO OPTRE Reskins";
 		scope															= 1;
@@ -654,7 +650,7 @@ class ARMCO_Soldier_WDL_ODST: AMRCO_Dress_Soldier_Base {
 				armor               = 4;
 			};
 		};
-};
+		};
 class ARMCO_Soldier_Security_Bureau: I_crew_F {
 		author="$STR_A3_Bohemia_Interactive";
 		editorPreview="\A3\EditorPreviews_F_Tank\Data\CfgVehicles\I_Story_Crew_F.jpg";
@@ -744,7 +740,7 @@ class ARMCO_Soldier_Security_Bureau: I_crew_F {
 				"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"
 			};
 		};
-	};
+		};
 //----------END OF BASE UNIT----------//
 
 ///////////////////////
@@ -767,7 +763,7 @@ class ARMCO_Soldier_PT: ARMCO_Soldier_WDL
 			"custom_armours\data\uniform\Summer_PT_odst_TO_CO.paa"
 		};
 		editorSubcategory = "armco_units_training";
-};
+	};
 
 
 //---Alpha Squad---//
@@ -815,7 +811,7 @@ class ARMCO_Soldier_O_Alpha: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Team Leader---//
 class ARMCO_Soldier_O_Alpha_TL: ARMCO_Soldier_WDL 
 	{
@@ -862,7 +858,7 @@ class ARMCO_Soldier_O_Alpha_TL: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};	
+	};	
 //---Squad Medic---//
 class ARMCO_Soldier_O_Alpha_Medic: ARMCO_Soldier_WDL_Medic 
 	{
@@ -910,7 +906,7 @@ class ARMCO_Soldier_O_Alpha_Medic: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};	
+	};	
 //---Squad Corpsman---//
 class ARMCO_Soldier_O_Alpha_Corpsman: ARMCO_Soldier_WDL_Medic 
 	{
@@ -958,7 +954,7 @@ class ARMCO_Soldier_O_Alpha_Corpsman: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---EOD---//
 class ARMCO_Soldier_O_Alpha_EOD: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1006,7 +1002,7 @@ class ARMCO_Soldier_O_Alpha_EOD: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};	
+	};	
 
 
 //---Sabre Squad---//
@@ -1054,7 +1050,7 @@ class ARMCO_Soldier_O_Echo: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Team Leader---//
 class ARMCO_Soldier_O_Echo_TL: ARMCO_Soldier_WDL 
 	{
@@ -1101,7 +1097,7 @@ class ARMCO_Soldier_O_Echo_TL: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Squad Medic---//
 class ARMCO_Soldier_O_Echo_Medic: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1149,7 +1145,7 @@ class ARMCO_Soldier_O_Echo_Medic: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Squad Corpsman---//
 class ARMCO_Soldier_O_Echo_Corpsman: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1197,7 +1193,7 @@ class ARMCO_Soldier_O_Echo_Corpsman: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---EOD---//
 class ARMCO_Soldier_O_Echo_EOD: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1245,7 +1241,7 @@ class ARMCO_Soldier_O_Echo_EOD: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 
 
 //---Zulu Squad---//
@@ -1293,7 +1289,7 @@ class ARMCO_Soldier_O_Zulu: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Team Leader---//
 class ARMCO_Soldier_O_Zulu_TL: ARMCO_Soldier_WDL 
 	{
@@ -1340,7 +1336,7 @@ class ARMCO_Soldier_O_Zulu_TL: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Squad Medic---//
 class ARMCO_Soldier_O_Zulu_Medic: ARMCO_Soldier_WDL_Medic	
 	{
@@ -1388,7 +1384,7 @@ class ARMCO_Soldier_O_Zulu_Medic: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Squad Corpsman---//
 class ARMCO_Soldier_O_Zulu_Corpsman: ARMCO_Soldier_WDL_Medic	
 	{
@@ -1436,7 +1432,7 @@ class ARMCO_Soldier_O_Zulu_Corpsman: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---EOD---//
 class ARMCO_Soldier_O_Zulu_EOD: ARMCO_Soldier_WDL_Medic	
 	{
@@ -1484,7 +1480,7 @@ class ARMCO_Soldier_O_Zulu_EOD: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 
 
 //---Zulu Squad Ghillie---//
@@ -1519,8 +1515,8 @@ class ARMCO_Soldier_Camo_Zulu: ARMCO_Soldier_WDL_Medic
 		};
 		weapons[] = {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
-magazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
-respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
+	magazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
+	respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Orange","OPTRE_M2_Smoke_Green"};
 		respawnLinkedItems[] 											= 
 		{
 			"ARMCO_Uniform_Zulu_Camo",
@@ -1534,7 +1530,7 @@ respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_6
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_camo";
-};
+	};
 //---Team Leader---//
 class ARMCO_Soldier_Camo_Zulu_TL: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1582,7 +1578,7 @@ class ARMCO_Soldier_Camo_Zulu_TL: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_camo";
-};
+	};
 //---Squad Medic---//
 class ARMCO_Soldier_Camo_Zulu_Medic: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1630,7 +1626,7 @@ class ARMCO_Soldier_Camo_Zulu_Medic: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_camo";
-};
+	};
 //---Squad Corpsman---//
 class ARMCO_Soldier_Camo_Zulu_Corpsman: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1678,7 +1674,7 @@ class ARMCO_Soldier_Camo_Zulu_Corpsman: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_camo";
-};
+	};
 //---EOD---//
 class ARMCO_Soldier_Camo_Zulu_EOD: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1726,7 +1722,7 @@ class ARMCO_Soldier_Camo_Zulu_EOD: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_camo";
-};
+	};
 
 
 //---Phoenix Squad---//
@@ -1775,7 +1771,7 @@ class ARMCO_Soldier_O_Phoenix: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Team Leader---//
 class ARMCO_Soldier_O_Phoenix_TL: ARMCO_Soldier_WDL 
 	{
@@ -1822,7 +1818,7 @@ class ARMCO_Soldier_O_Phoenix_TL: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Squad Medic---//
 class ARMCO_Soldier_Phoenix_Medic: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1870,7 +1866,7 @@ class ARMCO_Soldier_Phoenix_Medic: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---Squad Corpsman---//
 class ARMCO_Soldier_Phoenix_Corpsman: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1918,7 +1914,7 @@ class ARMCO_Soldier_Phoenix_Corpsman: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 //---EOD---//
 class ARMCO_Soldier_Phoenix_EOD: ARMCO_Soldier_WDL_Medic 
 	{
@@ -1966,7 +1962,7 @@ class ARMCO_Soldier_Phoenix_EOD: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 
 
 //---ODSTs---//
@@ -2011,7 +2007,7 @@ class ARMCO_Soldier_ODST: ARMCO_Soldier_WDL_ODST
 			"OPTRE_NVG"
 		};
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 class ARMCO_Soldier_ODST_Camo: ARMCO_Soldier_WDL_ODST 
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -2053,7 +2049,7 @@ class ARMCO_Soldier_ODST_Camo: ARMCO_Soldier_WDL_ODST
 			"OPTRE_NVG"
 		};
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 class ARMCO_Soldier_ODST_M90_Camo: ARMCO_Soldier_WDL_ODST 
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -2095,7 +2091,7 @@ class ARMCO_Soldier_ODST_M90_Camo: ARMCO_Soldier_WDL_ODST
 			"OPTRE_NVG"
 		};
 		editorSubcategory = "armco_units_infantry";
-};
+	};
 class ARMCO_Soldier_ODST_Security_Medic: ARMCO_Soldier_WDL_ODST 
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -2139,7 +2135,7 @@ class ARMCO_Soldier_ODST_Security_Medic: ARMCO_Soldier_WDL_ODST
 			"ItemRadio",
 		};
 		editorSubcategory = "armco_units_security";
-};
+	};
 class ARMCO_Soldier_ODST_Security_RM: ARMCO_Soldier_WDL_ODST 
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -2183,7 +2179,7 @@ class ARMCO_Soldier_ODST_Security_RM: ARMCO_Soldier_WDL_ODST
 			"ItemRadio",
 		};
 		editorSubcategory = "armco_units_security";
-};
+	};
 class ARMCO_Soldier_ODST_Security_TL: ARMCO_Soldier_WDL_ODST 
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -2226,7 +2222,7 @@ class ARMCO_Soldier_ODST_Security_TL: ARMCO_Soldier_WDL_ODST
 			"ItemRadio",
 		};
 		editorSubcategory = "armco_units_security";
-};
+	};
 class ARMCO_Security_Bureau_Officer: ARMCO_Soldier_Security_Bureau
 	{
 		dlc="ARMCO OPTRE Reskins";
@@ -2321,7 +2317,7 @@ class ARMCO_Soldier_ODST_Jackson: ARMCO_Soldier_WDL_ODST
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns_s";
-};
+	};
 class ARMCO_Soldier_ODST_Girlie: ARMCO_Soldier_WDL_ODST 
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -2365,7 +2361,7 @@ class ARMCO_Soldier_ODST_Girlie: ARMCO_Soldier_WDL_ODST
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns_s";
-};
+	};
 class ARMCO_Soldier_ODST_Sharkface: ARMCO_Soldier_WDL_ODST 
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -2409,7 +2405,7 @@ class ARMCO_Soldier_ODST_Sharkface: ARMCO_Soldier_WDL_ODST
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns_s";
-};
+	};
 class ARMCO_Soldier_ODST_Jaymes: ARMCO_Soldier_WDL_ODST 
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -2453,7 +2449,7 @@ class ARMCO_Soldier_ODST_Jaymes: ARMCO_Soldier_WDL_ODST
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns_s";
-};
+	};
 
 
 //---GreenHorns Marines---//
@@ -2502,7 +2498,7 @@ class ARMCO_Soldier_GH: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns";
-};
+	};
 //---Auto-Rifleman---//
 class ARMCO_Soldier_AR: ARMCO_Soldier_WDL 
 	{
@@ -2549,7 +2545,7 @@ class ARMCO_Soldier_AR: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns";
-};
+	};
 //---AT Rifleman---//
 class ARMCO_Soldier_AT: ARMCO_Soldier_WDL 
 	{
@@ -2596,7 +2592,7 @@ class ARMCO_Soldier_AT: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns";
-};
+	};
 //---Team Leader---//
 class ARMCO_Soldier_GH_TL: ARMCO_Soldier_WDL 
 	{
@@ -2644,7 +2640,7 @@ class ARMCO_Soldier_GH_TL: ARMCO_Soldier_WDL
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns";
-};
+	};
 //---Squad Medic---//
 class ARMCO_Soldier_GH_Medic: ARMCO_Soldier_WDL_Medic 
 	{
@@ -2701,7 +2697,7 @@ class ARMCO_Soldier_GH_Medic: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns";
-};
+	};
 //---Squad Corpsman---//
 class ARMCO_Soldier_GH_Corpsman: ARMCO_Soldier_WDL_Medic 
 	{
@@ -2758,7 +2754,7 @@ class ARMCO_Soldier_GH_Corpsman: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns";
-};
+	};
 //---EOD---//
 class ARMCO_Soldier_GH_EOD: ARMCO_Soldier_WDL_Medic 
 	{
@@ -2807,7 +2803,7 @@ class ARMCO_Soldier_GH_EOD: ARMCO_Soldier_WDL_Medic
 		};
 		editorCategory = "armco_units_green_horns";
 		editorSubcategory = "armco_units_green_horns";
-};
+	};
 
 ////////////////////
 //BACKPACKS CONFIG//
@@ -3192,7 +3188,7 @@ class ARMCO_Rucksack_Soft_Alpha : OPTRE_UNSC_Rucksack
 				tf_range 											= 17000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;*/
-};
+	};
 class ARMCO_Rucksack_Soft_Echo : OPTRE_UNSC_Rucksack
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -3210,7 +3206,7 @@ class ARMCO_Rucksack_Soft_Echo : OPTRE_UNSC_Rucksack
 				tf_range 											= 17000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;*/
-};
+	};
 class ARMCO_Rucksack_Soft_Zulu : OPTRE_UNSC_Rucksack
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -3228,7 +3224,7 @@ class ARMCO_Rucksack_Soft_Zulu : OPTRE_UNSC_Rucksack
 				tf_range 											= 17000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;*/
-};
+	};
 class ARMCO_Rucksack_Soft_Phoenix : OPTRE_UNSC_Rucksack
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -3246,7 +3242,7 @@ class ARMCO_Rucksack_Soft_Phoenix : OPTRE_UNSC_Rucksack
 				tf_range 											= 17000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;*/
-};
+	};
 class ARMCO_Rucksack_Soft_Medical : OPTRE_UNSC_Rucksack
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -3264,7 +3260,7 @@ class ARMCO_Rucksack_Soft_Medical : OPTRE_UNSC_Rucksack
 				tf_range 											= 17000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 
 
 //---ODST Hard Packs---// ,"AP_Heavy","BioFoam"
@@ -3295,7 +3291,7 @@ class ARMCO_ANPRC_515_BLK_Medic : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Alpha : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3323,7 +3319,7 @@ class ARMCO_ANPRC_515_Alpha : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Echo : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3351,7 +3347,7 @@ class ARMCO_ANPRC_515_Echo : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Zulu : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3379,7 +3375,7 @@ class ARMCO_ANPRC_515_Zulu : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Phoenix : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3407,7 +3403,7 @@ class ARMCO_ANPRC_515_Phoenix : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Security : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3435,7 +3431,7 @@ class ARMCO_ANPRC_515_Security : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 
 
 //---Personal Packs---// ,"AP_Heavy","BioFoam"
@@ -3456,7 +3452,7 @@ class ARMCO_Rucksack_Soft_Boone : OPTRE_UNSC_Rucksack
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_Rucksack_Soft_French : OPTRE_UNSC_Rucksack
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -3474,7 +3470,7 @@ class ARMCO_Rucksack_Soft_French : OPTRE_UNSC_Rucksack
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};	
+	};	
 class ARMCO_ANPRC_515_Frosty : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3501,7 +3497,7 @@ class ARMCO_ANPRC_515_Frosty : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Spooks : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3528,7 +3524,7 @@ class ARMCO_ANPRC_515_Spooks : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Nutters : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3555,7 +3551,7 @@ class ARMCO_ANPRC_515_Nutters : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Shaw : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -3637,7 +3633,7 @@ class ARMCO_ANPRC_515_Ciro : OPTRE_ILCS_Rucksack_Black
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
 	};
-class ARMCO_ANPRC_515_Mac : OPTRE_ILCS_Rucksack_Black 
+class ARMCO_ANPRC_515_Mac : OPTRE_ILCS_Rucksack_Black
 	{
 				dlc = "ARMCO OPTRE Reskins";
 				scope = 2;
@@ -3693,7 +3689,7 @@ class ARMCO_ANPRC_515_Gunner : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};
+	};
 class ARMCO_ANPRC_515_Darman : OPTRE_ILCS_Rucksack_Black 
 	{
 				dlc = "ARMCO OPTRE Reskins";
@@ -4361,11 +4357,10 @@ class ARMCO_ANPRC_515_Extortionist : OPTRE_ILCS_Rucksack_Black
 				tf_range 											= 25000;
 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
 				tf_hasLRradio	 									= 1;
-};*/
+	};*/
 
 class Flag_White_F;
-class ARMCO_Flag : Flag_White_F
-{
+class ARMCO_Flag : Flag_White_F{
 	displayName="[ARMCO] Unit Flag";
 	scope=2;
 	scopeCurator=2;
@@ -4377,7 +4372,7 @@ class ARMCO_Flag : Flag_White_F
 	{
 		"custom_armours\data\flags\flag_armco_co.paa"
 	};
-};
+	};
 
 
 
@@ -4467,7 +4462,7 @@ class ARMCO_CH252_Helmet_Alpha: OPTRE_UNSC_CH252_Helmet_Base
 				};
 			};
 		};
-}; 
+	}; 
 class ARMCO_CH252_Helmet_Alpha_C: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -4521,7 +4516,7 @@ class ARMCO_CH252_Helmet_Alpha_C: OPTRE_UNSC_CH252_Helmet_Base
 				};
 			};
 		};
-}; 
+	}; 
 
 
 //Special Role Helmets//
@@ -4594,7 +4589,7 @@ class ARMCO_CH252_Helmet_Medic: OPTRE_UNSC_CH252_Helmet_Base
 		{
 			"Integrated_NVG_TI_0_F"
 		};*/
-};
+	};
 class ARMCO_CH252_Helmet_Medic_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -4639,7 +4634,7 @@ class ARMCO_CH252_Helmet_Medic_dp: OPTRE_UNSC_CH252_Helmet_Base
 			ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
 			ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
 		};
-};
+	};
 class ARMCO_CH252_Helmet_Medic_C: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -4707,7 +4702,7 @@ class ARMCO_CH252_Helmet_Medic_C: OPTRE_UNSC_CH252_Helmet_Base
 		{
 			"Integrated_NVG_TI_0_F"
 		};*/
-};
+	};
 class ARMCO_CH252_Helmet_Medic_C_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -4750,7 +4745,7 @@ class ARMCO_CH252_Helmet_Medic_C_dp: OPTRE_UNSC_CH252_Helmet_Base
 			ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
 			ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
 		};
-};
+	};
 
 
 class ARMCO_CH252_Helmet_Corpsman: OPTRE_UNSC_CH252_Helmet_Base 
@@ -4816,7 +4811,7 @@ class ARMCO_CH252_Helmet_Corpsman: OPTRE_UNSC_CH252_Helmet_Base
 				};			
 			};
 		};
-};
+	};
 class ARMCO_CH252_Helmet_Corpsman_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -4880,7 +4875,7 @@ class ARMCO_CH252_Helmet_Corpsman_dp: OPTRE_UNSC_CH252_Helmet_Base
 				};			
 			};
 		};
-};    
+	};    
 
 class ARMCO_CH252_Helmet_Corpsman_C: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
@@ -4943,7 +4938,7 @@ class ARMCO_CH252_Helmet_Corpsman_C: OPTRE_UNSC_CH252_Helmet_Base
 				};			
 			};
 		};
-};
+	};
 class ARMCO_CH252_Helmet_Corpsman_C_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5005,7 +5000,7 @@ class ARMCO_CH252_Helmet_Corpsman_C_dp: OPTRE_UNSC_CH252_Helmet_Base
 				};			
 			};
 		};
-};    
+	};    
 
 
 class ARMCO_CH252_Helmet_EOD: OPTRE_UNSC_CH252_Helmet_Base 
@@ -5077,7 +5072,7 @@ class ARMCO_CH252_Helmet_EOD: OPTRE_UNSC_CH252_Helmet_Base
 		{
 			"Integrated_NVG_TI_0_F"
 		};*/
-};
+	};
 class ARMCO_CH252_Helmet_EOD_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5122,7 +5117,7 @@ class ARMCO_CH252_Helmet_EOD_dp: OPTRE_UNSC_CH252_Helmet_Base
 			ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
 			ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
 		};
-};
+	};
 class ARMCO_CH252_Helmet_EOD_Camo: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5190,7 +5185,7 @@ class ARMCO_CH252_Helmet_EOD_Camo: OPTRE_UNSC_CH252_Helmet_Base
 		{
 			"Integrated_NVG_TI_0_F"
 		};*/
-};
+	};
 class ARMCO_CH252_Helmet_EOD_Camo_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5233,7 +5228,7 @@ class ARMCO_CH252_Helmet_EOD_Camo_dp: OPTRE_UNSC_CH252_Helmet_Base
 			ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
 			ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
 		};
-};
+	};
 
 ////////////////
 //Sabre Helmets//
@@ -5307,7 +5302,7 @@ class ARMCO_CH252_Helmet_Echo: OPTRE_UNSC_CH252_Helmet_Base
 		{
 			"Integrated_NVG_TI_0_F"
 		};*/
-};
+	};
 class ARMCO_CH252_Helmet_Echo_DP: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5352,7 +5347,7 @@ class ARMCO_CH252_Helmet_Echo_DP: OPTRE_UNSC_CH252_Helmet_Base
 			ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
 			ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
 		};
-};
+	};
 class ARMCO_CH252_Helmet_Echo_C: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5420,7 +5415,7 @@ class ARMCO_CH252_Helmet_Echo_C: OPTRE_UNSC_CH252_Helmet_Base
 		{
 			"Integrated_NVG_TI_0_F"
 		};*/
-};
+	};
 class ARMCO_CH252_Helmet_Echo_C_DP: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5465,7 +5460,7 @@ class ARMCO_CH252_Helmet_Echo_C_DP: OPTRE_UNSC_CH252_Helmet_Base
 			ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
 			ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
 		};
-};
+	};
 
 
 ////////////////
@@ -5526,9 +5521,9 @@ class ARMCO_CH252_Helmet_Zulu: OPTRE_UNSC_CH252_Helmet_Base
 					armor 												= 20;
 					passThrough 										= 0.1;
 				};
-};
+	};
 		};
-}; 
+	}; 
 class ARMCO_CH252_Helmet_Zulu_Medic: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5639,7 +5634,7 @@ class ARMCO_CH252_Helmet_Zulu_Medic_dp: OPTRE_UNSC_CH252_Helmet_Base
 			ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
 			ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
 		};
-};
+	};
 class ARMCO_CH252_Helmet_Zulu_Corpsman: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5703,7 +5698,7 @@ class ARMCO_CH252_Helmet_Zulu_Corpsman: OPTRE_UNSC_CH252_Helmet_Base
 				};			
 			};
 		};
-};
+	};
 class ARMCO_CH252_Helmet_Zulu_Corpsman_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5767,7 +5762,7 @@ class ARMCO_CH252_Helmet_Zulu_Corpsman_dp: OPTRE_UNSC_CH252_Helmet_Base
 				};			
 			};
 		};
-};  
+	};  
 
 //---Zulu Ghillie Helmet---//
 class ARMCO_CH252_Helmet_Zulu_C: OPTRE_UNSC_CH252_Helmet_Base 
@@ -5823,9 +5818,9 @@ class ARMCO_CH252_Helmet_Zulu_C: OPTRE_UNSC_CH252_Helmet_Base
 					armor 												= 20;
 					passThrough 										= 0.1;
 				};
-};
+	};
 		};
-}; 
+	}; 
 class ARMCO_CH252_Helmet_Zulu_C_Medic: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5897,7 +5892,7 @@ class ARMCO_CH252_Helmet_Zulu_C_Medic: OPTRE_UNSC_CH252_Helmet_Base
 		{
 			"Integrated_NVG_TI_0_F"
 		};*/
-};
+	};
 class ARMCO_CH252_Helmet_Zulu_C_Medic_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -5940,7 +5935,7 @@ class ARMCO_CH252_Helmet_Zulu_C_Medic_dp: OPTRE_UNSC_CH252_Helmet_Base
 			ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
 			ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
 		};
-};
+	};
 class ARMCO_CH252_Helmet_Zulu_C_Corpsman: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -6002,7 +5997,7 @@ class ARMCO_CH252_Helmet_Zulu_C_Corpsman: OPTRE_UNSC_CH252_Helmet_Base
 				};			
 			};
 		};
-};
+	};
 class ARMCO_CH252_Helmet_Zulu_C_Corpsman_dp: OPTRE_UNSC_CH252_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -6064,7 +6059,7 @@ class ARMCO_CH252_Helmet_Zulu_C_Corpsman_dp: OPTRE_UNSC_CH252_Helmet_Base
 				};			
 			};
 		};
-}; 
+	}; 
 
 ///////////////////
 //Phoenix Helmets//
@@ -11542,7 +11537,7 @@ class ARMCO_CH252D_Helmet_Kellboy_dp: OPTRE_UNSC_CH252D_Helmet_Base
 			};
 		};
 	};
-*/
+	*/
 class ARMCO_CH252D_Helmet_Wolffe: OPTRE_UNSC_CH252D_Helmet_Base 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -12332,7 +12327,7 @@ class ARMCO_M52A_Armor_Base: OPTRE_UNSC_M52A_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 class ARMCO_M52M_Armor_Base: OPTRE_UNSC_M52A_Armor_Base 
 	{	
 		scope = 1;
@@ -12482,7 +12477,7 @@ class ARMCO_M52M_Armor_Base: OPTRE_UNSC_M52A_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 class ARMCO_M52E_Armor_Base: OPTRE_UNSC_M52A_Armor_Base 
 	{	
 		scope = 1;
@@ -12632,7 +12627,7 @@ class ARMCO_M52E_Armor_Base: OPTRE_UNSC_M52A_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 class ARMCO_M52D_Armor_Base: OPTRE_UNSC_M52A_Armor1_WDL 
 	{	
 		dlc = "ARMCO OPTRE Reskins";
@@ -12818,7 +12813,7 @@ class ARMCO_M52D_Armor_Base: OPTRE_UNSC_M52A_Armor1_WDL
 				};
 			};
 		};
-}; 
+	}; 
 
 //---Base Vests End---//
 
@@ -14856,7 +14851,7 @@ class ARMCO_M52M_Armor_Echo_Medic: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 //---Corpsman---//
 class ARMCO_M52M_Armor_Echo_Corpsman: ARMCO_M52M_Armor_Base
 	{	
@@ -15012,7 +15007,7 @@ class ARMCO_M52M_Armor_Echo_Corpsman: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 //---EOD---//
 class ARMCO_M52E_Armor_Echo_EOD: ARMCO_M52M_Armor_Base
 	{	
@@ -15168,7 +15163,7 @@ class ARMCO_M52E_Armor_Echo_EOD: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 
 
 //---Echo Ghillie---//
@@ -15646,7 +15641,7 @@ class ARMCO_M52M_Armor_Echo_Medic_C: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 //---Corpsman---//
 class ARMCO_M52M_Armor_Echo_Corpsman_C: ARMCO_M52M_Armor_Base
 	{	
@@ -15800,7 +15795,7 @@ class ARMCO_M52M_Armor_Echo_Corpsman_C: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 //---EOD---//
 class ARMCO_M52E_Armor_Echo_EOD_C: ARMCO_M52M_Armor_Base
 	{	
@@ -15954,7 +15949,7 @@ class ARMCO_M52E_Armor_Echo_EOD_C: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 
 
 
@@ -16629,7 +16624,7 @@ class ARMCO_M52M_Armor_Zulu_Corpsman: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-};
+	};
 //---EOD---//
 class ARMCO_M52E_Armor_Zulu_EOD: ARMCO_M52M_Armor_Base
 	{	
@@ -17461,7 +17456,7 @@ class ARMCO_M52M_Armor_Zulu_Camo_Corpsman: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-};
+	};
 //---EOD---//
 class ARMCO_M52E_Armor_Zulu_Camo_EOD: ARMCO_M52M_Armor_Base
 	{	
@@ -19679,7 +19674,7 @@ class ARMCO_M52M_Armor_GH_Medic: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 //---Corpsman---//
 class ARMCO_M52M_Armor_GH_Corpsman: ARMCO_M52M_Armor_Base
 	{	
@@ -19835,7 +19830,7 @@ class ARMCO_M52M_Armor_GH_Corpsman: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 //---EOD---//
 class ARMCO_M52E_Armor_GH_EOD: ARMCO_M52M_Armor_Base
 	{	
@@ -19991,7 +19986,7 @@ class ARMCO_M52E_Armor_GH_EOD: ARMCO_M52M_Armor_Base
 				};
 			};
 		};
-}; 
+	}; 
 
 /////////////////////////
 //---O.D.S.T Armours---//
@@ -20149,7 +20144,7 @@ class ARMCO_M52D_Armor_Frosty: ARMCO_M52D_Armor_Base
 				};
 			};
 		};
-};
+	};
 class ARMCO_M52D_Armor_Mac: ARMCO_M52D_Armor_Base
 	{	
 		scope = 2;
@@ -20298,7 +20293,7 @@ class ARMCO_M52D_Armor_Mac: ARMCO_M52D_Armor_Base
 				};
 			};
 		};
-};
+	};
 class ARMCO_M52D_Armor_French: ARMCO_M52D_Armor_Base
 	{	
 		scope = 2;
@@ -20451,7 +20446,7 @@ class ARMCO_M52D_Armor_French: ARMCO_M52D_Armor_Base
 				};
 			};
 		};
-};
+	};
 class ARMCO_M52D_Armor_Boone: ARMCO_M52D_Armor_Base
 	{	
 		scope = 2;
@@ -23258,7 +23253,7 @@ class ARMCO_M52D_Armor_Security: ARMCO_M52D_Armor_Base
 				};
 			};
 		};
-};
+	};
 class ARMCO_Security_Belt: Vest_NoCamo_Base
 	{
 		scope=2;
@@ -25173,7 +25168,7 @@ class ARMCO_M52D_Armor_Valkyrie: ARMCO_M52D_Armor_Base
 				};
 			};
 		};
-};
+	};
 class ARMCO_M52D_Armor_Acanite: ARMCO_M52D_Armor_Base
 	{	
 		scope = 2;
@@ -25322,7 +25317,7 @@ class ARMCO_M52D_Armor_Acanite: ARMCO_M52D_Armor_Base
 				};
 			};
 		};
-};	
+	};	
 class ARMCO_M52D_Armor_Raziel: ARMCO_M52D_Armor_Base
 	{	
 		scope = 2;
@@ -25483,7 +25478,7 @@ class ARMCO_M52D_Armor_Raziel: ARMCO_M52D_Armor_Base
 				};
 			};
 		};
-};	
+	};	
 /*class ARMCO_M52D_Armor_Kellboy: ARMCO_M52D_Armor_Base
 	{	
 		scope = 2;
@@ -25649,7 +25644,7 @@ class ARMCO_M52D_Armor_Raziel: ARMCO_M52D_Armor_Base
 			};
 		};
 	};	
-*/
+	*/
 class ARMCO_M52D_Armor_Wolffe: ARMCO_M52D_Armor_Base
 	{	
 		scope = 2;
@@ -27227,7 +27222,7 @@ class ARMCO_Uniform_Base: U_B_CombatUniform_mcam
 			mass														= 50;
 			modelSides[] 												= {6};
 		};
-};
+	};
 class ARMCO_Uniform_Medical_Base: U_B_CombatUniform_mcam
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -27244,7 +27239,7 @@ class ARMCO_Uniform_Medical_Base: U_B_CombatUniform_mcam
 			mass														= 50;
 			modelSides[] 												= {6};
 		};
-};
+	};
 class ARMCO_Uniform_ODST_Base: U_B_CombatUniform_mcam
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -27261,7 +27256,7 @@ class ARMCO_Uniform_ODST_Base: U_B_CombatUniform_mcam
 			mass														= 50;
 			modelSides[] 												= {6};
 		};
-};
+	};
 class ARMCO_Uniform_ODST_S_Base: U_B_CombatUniform_mcam
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -27279,7 +27274,7 @@ class ARMCO_Uniform_ODST_S_Base: U_B_CombatUniform_mcam
 			modelSides[] 												= {6};
 		};
 		
-};
+	};
 class ARMCO_Uniform_Alpha_O: ARMCO_Uniform_Base
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -27293,7 +27288,7 @@ class ARMCO_Uniform_Alpha_O: ARMCO_Uniform_Base
 			containerClass												= "Supply100";
 			mass														= 50;
 		};
-};
+	};
 class ARMCO_Uniform_Alpha_O_Medical: ARMCO_Uniform_Medical_Base
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -27335,7 +27330,7 @@ class ARMCO_Uniform_Echo_O: ARMCO_Uniform_Base
 			containerClass												= "Supply100";
 			mass														= 50;
 		};
-};
+	};
 class ARMCO_Uniform_Echo_O_Medical: ARMCO_Uniform_Medical_Base
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -27538,7 +27533,7 @@ class ARMCO_Uniform_Security: Uniform_Base
 			mass														= 50;
 			modelSides[] 												= {6};
 		};
-};
+	};
 class ARMCO_Uniform_ODST_Security: ARMCO_Uniform_ODST_S_Base
 	{
 		dlc = "ARMCO OPTRE Reskins";
@@ -27553,4 +27548,4 @@ class ARMCO_Uniform_ODST_Security: ARMCO_Uniform_ODST_S_Base
 			mass														= 50;
 		};
 	};
-};
+	};
