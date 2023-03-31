@@ -107,7 +107,7 @@ class CfgVehicles{
 	class SoldierWB; // ARMA
 	class EventHandlers; // ARMA
 	
-
+	// This is a base class for all soldiers use this too make new soldiers
 	class ARMCO_Base_Soldier: SoldierWB
 	{
 		
@@ -283,7 +283,7 @@ class CfgVehicles{
 		};
 		editorSubcategory="OPTRE_EditorSubcategory_MenWDL";
 	};
-
+	
 	class ARMCO_Soldier_A_Rifle: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
@@ -624,15 +624,15 @@ class cfgWeapons {
 		displayName="[A][ARMCO] Squad CH252 Helmet (Alpha)";
 		hiddenSelectionsTextures[]=
 		{
-			"armco_armours\data\helmets\helmet_alpha_co.paa",
-			"armco_armours\data\helmets\visors\Helmet_Visor_ca.paa"
+			"armco_armours\data\marine\helmets\helmet_alpha_co.paa",
+			"armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelectionsTextures[]=
 			{
-				"armco_armours\data\helmets\helmet_alpha_co.paa",
-				"armco_armours\data\helmets\visors\Helmet_Visor_ca.paa"
+				"armco_armours\data\marine\helmets\helmet_alpha_co.paa",
+				"armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
 			};
 		};
 	};
@@ -643,15 +643,15 @@ class cfgWeapons {
 		displayName="[A][ARMCO] Squad CH252 Helmet (Sabre)";
 		hiddenSelectionsTextures[]=
 		{
-			"armco_armours\data\helmets\helmet_sabre_co.paa",
-			"armco_armours\data\helmets\visors\Helmet_Visor_ca.paa"
+			"armco_armours\data\marine\helmets\helmet_sabre_co.paa",
+			"armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelectionsTextures[]=
 			{
-				"armco_armours\data\helmets\helmet_sabre_co.paa",
-				"armco_armours\data\helmets\visors\Helmet_Visor_ca.paa"
+				"armco_armours\data\marine\helmets\helmet_sabre_co.paa",
+				"armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
 			};
 		};
 	};
@@ -662,15 +662,15 @@ class cfgWeapons {
 		displayName="[A][ARMCO] Squad CH252 Helmet (Phoenix)";
 		hiddenSelectionsTextures[]=
 		{
-			"armco_armours\data\helmets\helmet_phoenix_co.paa",
-			"armco_armours\data\helmets\visors\Helmet_Visor_ca.paa"
+			"armco_armours\data\marine\helmets\helmet_phoenix_co.paa",
+			"armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelectionsTextures[]=
 			{
-				"armco_armours\data\helmets\helmet_phoenix_co.paa",
-				"armco_armours\data\helmets\visors\Helmet_Visor_ca.paa"
+				"armco_armours\data\marine\helmets\helmet_phoenix_co.paa",
+				"armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
 			};
 		};
 	};
@@ -681,15 +681,15 @@ class cfgWeapons {
 		displayName="[A][ARMCO] Squad CH252 Helmet (Zulu)";
 		hiddenSelectionsTextures[]=
 		{
-			"armco_armours\data\helmets\helmet_zulu_co.paa",
-			"armco_armours\data\helmets\visors\Helmet_Visor_ca.paa"
+			"armco_armours\data\marine\helmets\helmet_zulu_co.paa",
+			"armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelectionsTextures[]=
 			{
-				"armco_armours\data\helmets\helmet_zulu_co.paa",
-				"armco_armours\data\helmets\visors\Helmet_Visor_ca.paa"
+				"armco_armours\data\marine\helmets\helmet_zulu_co.paa",
+				"armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
 			};
 		};
 	};
@@ -883,7 +883,7 @@ class cfgWeapons {
 		displayName="[A][ARMCO] Unit BDU (ODST)";
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ARMCO_Soldier_O_Rifle";
+			uniformClass="ARMCO_Soldier_ODST_BLK";
 			containerClass="Supply40";
 			mass=50;
 			modelSides[]={6};
@@ -896,7 +896,7 @@ class cfgWeapons {
 		displayName="[A][ARMCO] Unit BDU (ODST Camo)";
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ARMCO_Soldier_O_Rifle_Camo";
+			uniformClass="ARMCO_Soldier_ODST_camo";
 			containerClass="Supply40";
 			mass=50;
 			modelSides[]={6};
@@ -909,7 +909,7 @@ class cfgWeapons {
 		displayName="[A][ARMCO] Unit BDU (ODST M90)";
 		class ItemInfo: UniformItem{
 			uniformModel="-";
-			uniformClass="ARMCO_Soldier_O_Rifle_M90";
+			uniformClass="ARMCO_Soldier_ODST_M90";
 			containerClass="Supply40";
 			mass=50;
 			modelSides[]={6};
