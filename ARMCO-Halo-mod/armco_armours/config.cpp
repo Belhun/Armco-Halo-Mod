@@ -1,6 +1,7 @@
 class CfgPatches 
 {
-    /*Squad names: 
+    /*
+	Squad names: 
     Alpha
     Saber
     Phoenix
@@ -33,8 +34,11 @@ class CfgPatches
 			"Zulu_Medic_Camo_BDU",
 			"Phoenix_BDU",
 			"Phoenix_EOD_BDU",
-			"Phoenix_Medic_BDU"
+			"Phoenix_Medic_BDU",
 			// Squad Armor
+			"ARMCO_ODST_BLK_BDU",
+			"ARMCO_ODST_camo_BDU",
+			"ARMCO_ODST_M90_BDU",
 			
 		};
 		requiredVersion = 0.1; 
@@ -96,31 +100,15 @@ class CfgMarkers{
 };
 
 class CfgVehicles{
-	class U_B_CombatUniform_mcam;
-	class UniformItem;
-	class OPTRE_UNSC_Soldier_Base;
-	class OPTRE_UNSC_Man_Army_W_class;
-	class SoldierWB;
-	/* class ARMCO_PMC_Soldier_Base: SoldierWB
-	{
-		class EventHandlers;
-		class HitPoints
-		{
-			class HitFace;
-			class HitNeck;
-			class HitHead;
-			class HitPelvis;
-			class HitAbdomen;
-			class HitDiaphragm;
-			class HitChest;
-			class HitBody;
-			class HitArms;
-			class HitHands;
-			class HitLegs;
-		};
-	}; */
-	class EventHandlers;
-	class ARMCO_PMC_Army_Soldier: SoldierWB
+
+	//importing the base classes from ARMA and OPTRE
+	class UniformItem; // ARMA
+	class OPTRE_UNSC_Man_Army_W_class; // OPTRE
+	class SoldierWB; // ARMA
+	class EventHandlers; // ARMA
+	
+
+	class ARMCO_Base_Soldier: SoldierWB
 	{
 		
 		dlc="ARMCO_PMC";
@@ -296,7 +284,7 @@ class CfgVehicles{
 		editorSubcategory="OPTRE_EditorSubcategory_MenWDL";
 	};
 
-	class ARMCO_Soldier_A_Rifle: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_A_Rifle: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -317,7 +305,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_alpha_co.paa"
 		};
 	};
-	class ARMCO_Soldier_A_EOD: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_A_EOD: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -338,7 +326,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_alpha_eod_co.paa"
 		};
 	};
-	class ARMCO_Soldier_A_Medical: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_A_Medical: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -359,7 +347,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_alpha_medic_co.paa"
 		};
 	};
-	class ARMCO_Soldier_S_Rifle: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_S_Rifle: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -380,7 +368,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_sabre_co.paa"
 		};
 	};
-	class ARMCO_Soldier_S_EOD: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_S_EOD: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -401,7 +389,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_sabre_eod_co.paa"
 		};
 	};
-	class ARMCO_Soldier_S_Medical: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_S_Medical: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -422,7 +410,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_sabre_medic_co.paa"
 		};
 	};
-	class ARMCO_Soldier_Z_Rifle: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_Z_Rifle: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -443,7 +431,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_zulu_co.paa"
 		};
 	};
-	class ARMCO_Soldier_Z_EOD: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_Z_EOD: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -464,7 +452,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_zulu_eod_co.paa"
 		};
 	};
-	class ARMCO_Soldier_Z_Medical: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_Z_Medical: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -485,7 +473,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_zulu_medic_co.paa"
 		};
 	};
-	class ARMCO_Soldier_P_Rifle: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_P_Rifle: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -506,7 +494,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_phoenix_co.paa"
 		};
 	};
-	class ARMCO_Soldier_P_EOD: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_P_EOD: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -527,7 +515,7 @@ class CfgVehicles{
 			"armco_armours\data\uniforms\uniform_phoenix_eod_co.paa"
 		};
 	};
-	class ARMCO_Soldier_P_Medical: ARMCO_PMC_Army_Soldier
+	class ARMCO_Soldier_P_Medical: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
@@ -546,6 +534,73 @@ class CfgVehicles{
 		{
 			"armco_armours\data\uniforms\uniform_phoenix_medic_co.paa",
 			"armco_armours\data\uniforms\uniform_phoenix_medic_co.paa"
+		};
+	};
+	//ODST Uniforms
+	//black
+	//camo
+	//M90
+	class ARMCO_Soldier_ODST_BLK: ARMCO_Base_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_odst_black_co.paa",
+			"armco_armours\data\uniforms\uniform_odst_black_co.paa"
+		};
+	};
+	class ARMCO_Soldier_ODST_camo: ARMCO_Base_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_odst_camo_co.paa",
+			"armco_armours\data\uniforms\uniform_odst_camo_co.paa"
+		};
+	};
+	class ARMCO_Soldier_ODST_M90: ARMCO_Base_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_odst_M90_camo_co.paa",
+			"armco_armours\data\uniforms\uniform_odst_M90_camo_co.paa"
 		};
 	};
 };
@@ -647,13 +702,12 @@ class cfgWeapons {
 		dlc="ARMCO_PMC";
 		scope=2;
 		author="Belhun";
-		displayName="[0](FUCKING WORK???) BDU";
 		picture="\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel="-";
-			uniformClass="ARMCO_PMC_Army_Soldier_WDL";
+			uniformClass="ARMCO_Base_Soldier";
 			containerClass="Supply40";
 			mass=50;
 			modelSides[]={6};
@@ -661,6 +715,7 @@ class cfgWeapons {
 	};
 
 	//Squad Uniforms
+	//Alpha Uniforms
 	class Alpha_BDU: ARMCO_PMC_Army_Uniform_WDL
 	{
 		dlc="ARMCO_PMC";
@@ -700,6 +755,7 @@ class cfgWeapons {
 			modelSides[]={6};
 		}
 	};
+	//Sabre Uniforms
 	class Sabre_BDU: ARMCO_PMC_Army_Uniform_WDL
 	{
 		dlc="ARMCO_PMC";
@@ -739,6 +795,7 @@ class cfgWeapons {
 			modelSides[]={6};
 		}
 	};
+	//Zulu Uniforms
 	class Zulu_BDU: ARMCO_PMC_Army_Uniform_WDL
 	{
 		dlc="ARMCO_PMC";
@@ -778,6 +835,7 @@ class cfgWeapons {
 			modelSides[]={6};
 		}
 	};
+	//Phoenix Uniforms
 	class Phoenix_BDU: ARMCO_PMC_Army_Uniform_WDL
 	{
 		dlc="ARMCO_PMC";
@@ -812,6 +870,46 @@ class cfgWeapons {
 		class ItemInfo: UniformItem{
 			uniformModel="-";
 			uniformClass="ARMCO_Soldier_P_Medical";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	//ODST Uniforms
+	class ARMCO_ODST_BLK_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Unit BDU (ODST)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_O_Rifle";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class ARMCO_ODST_camo_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Unit BDU (ODST Camo)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_O_Rifle_Camo";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class ARMCO_ODST_M90_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Unit BDU (ODST M90)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_O_Rifle_M90";
 			containerClass="Supply40";
 			mass=50;
 			modelSides[]={6};
