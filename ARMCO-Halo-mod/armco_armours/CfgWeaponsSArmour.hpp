@@ -50,6 +50,7 @@ This area is for all the options the M52A Armour have in hiddenSelections. Just 
 - `CustomKit_Scorch` = [front img](https://i.imgur.com/uHjTO3W.png)[back img](https://i.imgur.com/IUVBpKa.png)
 */
 	class OPTRE_UNSC_M52A_Armor2_WDL;
+	//remove A_Base, A_ChestArmor, A_ShinArmorLeft, A_ShinArmorRight, A_ThighArmorLeft, A_ThighArmorRight
 	class ARMCO_Test_Armor: OPTRE_UNSC_M52A_Armor2_WDL
 	{
 		dlc="ARMCO_PMC";
@@ -62,18 +63,13 @@ This area is for all the options the M52A Armour have in hiddenSelections. Just 
 			"camo3",
 			"camo4",
 			"camo5",
-			"A_ChestArmor",
 			"A_Ghillie",
 			"A_KneesLeft",
 			"A_KneesRight",
 			"A_KneesMarLeft",
 			"A_KneesMarRight",
 			"A_ODST",
-			"A_ShinArmorLeft",
-			"A_ShinArmorRight",
 			"A_TacPad",
-			"A_ThighArmorLeft",
-			"A_ThighArmorRight",
 			"AS_BaseLeft",
 			"AS_BaseRight",
 			"AS_LargeLeft",
@@ -121,18 +117,13 @@ This area is for all the options the M52A Armour have in hiddenSelections. Just 
 				"camo3",
 				"camo4",
 				"camo5",
-				"A_ChestArmor",
 				"A_Ghillie",
 				"A_KneesLeft",
 				"A_KneesRight",
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 				"A_ODST",
-				"A_ShinArmorLeft",
-				"A_ShinArmorRight",
 				"A_TacPad",
-				"A_ThighArmorLeft",
-				"A_ThighArmorRight",
 				"AS_BaseLeft",
 				"AS_BaseRight",
 				"AS_LargeLeft",
