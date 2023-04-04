@@ -10,12 +10,12 @@ author = "Belhun/Armco";
 // Color used for DLC stripes and backgrounds (RGBA)
 dlcColor[] =
 {
-	0.23,
-	0.39,
-	0.30,
-	1
+	255,
+	102,
+	0,
+	0.54
 };
 // Overview text, displayed from the extension menu
-overview = "Unleash your creativity! Here goes the long description of your mod.";
+overview = "Armco Halo is a mod for Arma 3 that adds ARMCO Halo themed armours and vehicals to the game. ALL based off Optrays amazing work";
 hideName	= 0;	// Hide the extension name
 hidePicture	= 0;	// Hide the extension menu
