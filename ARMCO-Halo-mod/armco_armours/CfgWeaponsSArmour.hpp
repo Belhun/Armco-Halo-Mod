@@ -15,7 +15,7 @@ This area is for all the options the M52A Armour have in hiddenSelections. Just 
 - `A_ThighArmorLeft` = [front img](https://i.imgur.com/JcG9INA.png)
 - `A_ThighArmorRight` = [front img](https://i.imgur.com/0Q8m6Db.png)
 - `AP_AR` = [front img](https://i.imgur.com/DEyWMdx.png)
-- `AP_BR` = [front img](https://i.imgur.com/lRUIRum.png)
+- `AP_BR` = [front img](https://i.imgur.com/15iyLE0.png)
 - `AP_Canteen` = [front img](https://i.imgur.com/Ja9Ve9Y.png)
 - `AP_Frag` = [front img](https://i.imgur.com/oFLG1HE.png)
 - `AP_GL` = [front img](https://i.imgur.com/RCWiwyw.png)
