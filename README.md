@@ -5,14 +5,22 @@ This is ARMCO's Halo mod Data, I will be providing a breakdown of the file struc
 ### File Break Down
 
 - Armco-Halo-Mod
-- .vscode
+  - .vscode
     - Arma-dev.json {This file works with the Name: Arma-dev Link: https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev}
   - ARMCO-Halo-mod
-    - custom_armours(here are most custom ODST armors)
-    - custom_dress_uniforms (here are all the Dress uniforms)   
-    - custom_emergency(these are the files partaining to armors for Emergicy services)
-    - custom_groups(This is where peaple are defined, for example where each squad is defined)
-    - custom_vehicles(where Pelican and Warthog files)
+    - armco_armours(New Where the new Armours are being made)
+      - CfgPatchesMisc.hpp(This includes everything that needs to go into CfgPatches plus some additional msic stuff)
+      - CfgVehicleSoldier.hpp (This includes based Solders, needed to either spawn pre made solders in editor or Zues or use them to make uniforms)
+      - CfgWeaponsSHelmet.hpp (All Squad based Helmets go here)
+      - CfgWeaponsUniform.hpp (All Uniforms go here)
+      - CfgWeaponsSArmour.hpp (Squad based armours go here)
+      - CfgWeaponsCArmour.hpp (Custom Armours go here)
+      - config.cpp
+    - custom_armours(OLD here are most custom ODST armors)
+    - custom_dress_uniforms (OLDhere are all the Dress uniforms)   
+    - custom_emergency(OLDthese are the files partaining to armors for Emergicy services)
+    - custom_groups(OLDThis is where peaple are defined, for example where each squad is defined)
+    - custom_vehicles(old and new where Pelican and Warthog files)
     - Build_PBOs.bat{This is a script that will go into PBO manager and execute a set of commands to pack all custom_blank's into PBOs and place them in a file that I use to test the mod}
     - cfgPatches.hpp
     - config.cpp
@@ -55,21 +63,32 @@ I will Prob give a better-detailed explanation of how this all works but the mai
 
 While Default Textures are textures we reuse a bunch of , anything under the old file is not used and prob doesn't work.
 
+_
 
-## Tools I recommend
-[Visual Studio Code](https://code.visualstudio.com/) is the Editor I use for writing all the code I use.
+_
+# Recommend Tools
+### VS Code
+- [Visual Studio Code](https://code.visualstudio.com/) is the Editor I use for writing all the code I use.
 I recommend these extensions for Visual Studio Code
-- [Arma Dev](https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev)
-- [SQF Language](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf)
-- optionally [Fig Files Intellisense](https://marketplace.visualstudio.com/items?itemName=kiriko.fig-unreleased)
+  - [Arma Dev](https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev)
+  - [SQF Language](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf)
+  - optionally [Fig Files Intellisense](https://marketplace.visualstudio.com/items?itemName=kiriko.fig-unreleased)
+### Arma Tools
+- [PBO Manager](https://pbo-manager-v-1-4.software.informer.com/download/#downloading) For managing the PBOs and packing them up for testing
+- [Arma 3 Tools](https://store.steampowered.com/app/233800/Arma_3_Tools/) Has a lot of tools for making ARMA 3 mods
 
-[PBO Manager](https://pbo-manager-v-1-4.software.informer.com/download/#downloading) For managing the PBOs and packing them up for testing
-[Arma 3 Tools](https://store.steampowered.com/app/233800/Arma_3_Tools/) Has a lot of tools for making ARMA 3 mods
+### _.paa Files_
+- [paa.gruppe-adler.de](https://paa.gruppe-adler.de/) This Website allows me to Drag Tons of .paa files into the web browser and get PNGs for all of them. Super nice for learning and looking at other people's projects(Remember to be respectful and let people who where you got the base images from if you reuse them)
 
-[paa.gruppe-adler.de](https://paa.gruppe-adler.de/) This Website allows me to Drag Tons of .paa files into the web browser and get PNGs for all of them. Super nice for learning and looking at other people's projects(Remember to be respectful and let people who where you got the base images from if you reuse them)
+- [.paa Gimp Plugin](https://github.com/gruppe-adler/paa-gimp-plugin)
+
+### HiddenSelections
+- (something iv put together) [Armour Breakdown With Pictures github wiki](https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With-Pictures)
+
+- (not from optre but found on there discord) [Optre HiddenSelections google doc](https://docs.google.com/document/d/1ILyvFV8opoARs_2hy4hRAU4_hr4qWrAQKfJ4UlC5K5c/edit#)
+
+
 
 Both of these I use for managing and using GitHub
-[Git](https://git-scm.com/downloads)
-[GitHub Desktop](https://desktop.github.com/)
-
-(changeing this to test something)
+- [Git](https://git-scm.com/downloads)
+- [GitHub Desktop](https://desktop.github.com/)
