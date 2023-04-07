@@ -18,7 +18,6 @@ class cfgWeapons {
 	//this include brings in all the all the Vests from the CfgVehicleVest.hpp
 	#include "CfgWeaponsSArmour.hpp"
 
-
 	//this include brings in all the all the Custom armour from the CfgWeaponsCArmour.hpp
 	#include "CfgWeaponsCArmour.hpp"
 };

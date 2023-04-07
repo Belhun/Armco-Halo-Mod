@@ -1,3 +1,4 @@
+	// if you add a new Unifrom you need to add a corasponding unit in CfgVehicalSoldier.hpp
 	class U_B_CombatUniform_mcam;
 	class UniformItem;
 	class ARMCO_PMC_Army_Uniform_WDL: U_B_CombatUniform_mcam
