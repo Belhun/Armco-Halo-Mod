@@ -500,3 +500,87 @@
 			"armco_armours\data\uniforms\uniform_odst_M90_camo_co.paa"
 		};
 	};
+	class ARMCO_Soldier_ODST_GDJungle: ARMCO_Base_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_a_gdjungle_CO.paa",
+			"armco_armours\data\uniforms\uniform_a_gdjungle_CO.paa"
+		};
+	};
+	class ARMCO_Soldier_ODST_Dark_Mountain: ARMCO_Base_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_a_gddmount_CO.paa",
+			"armco_armours\data\uniforms\uniform_a_gddmount_CO.paa"
+		};
+	};
+	class ARMCO_Soldier_ODST_DDRKWDL: ARMCO_Base_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_a_darkwoodland_CO.paa",
+			"armco_armours\data\uniforms\uniform_a_darkwoodland_CO.paa"
+		};
+	};
+	class ARMCO_Soldier_ODST_DWLD: ARMCO_Base_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_a_DigitalWoodland_CO.paa",
+			"armco_armours\data\uniforms\uniform_a_DigitalWoodland_CO.paa"
+		};
+	};

@@ -39,6 +39,10 @@ class CfgPatches
 			"ARMCO_ODST_BLK_BDU",
 			"ARMCO_ODST_camo_BDU",
 			"ARMCO_ODST_M90_BDU",
+			"ARMCO_ODST_GDJungle_BDU",
+			"ARMCO_ODST_GDDMOUNT_BDU",
+			"ARMCO_ODST_DDRKWDL_BDU",
+			"ARMCO_ODST_DWLD_BDU",
 			// Squad Marine Armours
 			//Alpha Squad
 			"Alpha_Armour_Corpsman",

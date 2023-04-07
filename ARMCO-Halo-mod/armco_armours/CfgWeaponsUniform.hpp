@@ -218,3 +218,55 @@
 			modelSides[]={6};
 		}
 	};
+	class ARMCO_ODST_GDJungle_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Unit BDU (Jungle)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_ODST_GDJungle";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class ARMCO_ODST_GDDMOUNT_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Unit BDU (Dark Mountain)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_ODST_Dark_Mountain";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class ARMCO_ODST_DDRKWDL_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Unit BDU (Digital Dark Woodland)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_ODST_DDRKWDL";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
+	class ARMCO_ODST_DWLD_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Unit BDU (Digital Woodland)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_ODST_DWLD";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
