@@ -15,6 +15,6 @@ PBOConsole.exe -pack %~dp0custom_emergency      %~dp0..\..\Export\@armcohalo\Add
 PBOConsole.exe -pack %~dp0custom_groups         %~dp0..\..\Export\@armcohalo\Addons\custom_groups.pbo
 PBOConsole.exe -pack %~dp0custom_vehicles       %~dp0..\..\Export\@armcohalo\Addons\custom_vehicles.pbo
 PBOConsole.exe -pack %~dp0armco_armours         %~dp0..\..\Export\@armcohalo\Addons\armco_armours.pbo
-PBOConsole.exe -pack %~dp0armoc_items           %~dp0..\..\Export\@armcohalo\Addons\armoc_items.pbo
+PBOConsole.exe -pack %~dp0armco_items           %~dp0..\..\Export\@armcohalo\Addons\armco_items.pbo
 
 PAUSE

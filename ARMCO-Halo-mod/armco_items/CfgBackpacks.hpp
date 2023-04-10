@@ -1,9 +1,9 @@
-class OPTRE_ILCS_Rucksack_Black;
-	//ODST Backpacks
-	class ARMCO_ILCS_Rucksack_Heavy_Alpha: OPTRE_ILCS_Rucksack_Black
+	class OPTRE_ILCS_Rucksack_Black;
+	//ODST Hard Backpacks
+	class ARMCO_Rucksack_Hard_Alpha: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="OPTRE";
-		author="Article 2 Studios";
+		author="Belhun";
 		maximumLoad=400;
 		mass=50;
 		displayName="[A][ARMCO]Hard Rucksack [Alpha]";
@@ -17,10 +17,10 @@ class OPTRE_ILCS_Rucksack_Black;
 			"armco_items\data\backpacks\backpack_odst_hard_alpha_co.paa"
 		};
 	};
-	class ARMCO_ILCS_Rucksack_Heavy_Sabre: OPTRE_ILCS_Rucksack_Black
+	class ARMCO_Rucksack_Hard_Sabre: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="OPTRE";
-		author="Article 2 Studios";
+		author="Belhun";
 		maximumLoad=400;
 		mass=50;
 		displayName="[A][ARMCO]Hard Rucksack [Sabre]";
@@ -34,10 +34,10 @@ class OPTRE_ILCS_Rucksack_Black;
 			"armco_items\data\backpacks\backpack_odst_hard_sabre_co.paa"
 		};
 	};
-	class ARMCO_ILCS_Rucksack_Heavy_Zulu: OPTRE_ILCS_Rucksack_Black
+	class ARMCO_Rucksack_Hard_Zulu: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="OPTRE";
-		author="Article 2 Studios";
+		author="Belhun";
 		maximumLoad=400;
 		mass=50;
 		displayName="[A][ARMCO]Hard Rucksack [Zulu]";
@@ -51,10 +51,10 @@ class OPTRE_ILCS_Rucksack_Black;
 			"armco_items\data\backpacks\backpack_odst_hard_zulu_co.paa"
 		};
 	};
-	class ARMCO_ILCS_Rucksack_Heavy_Phoenix: OPTRE_ILCS_Rucksack_Black
+	class ARMCO_Rucksack_Hard_Phoenix: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="OPTRE";
-		author="Article 2 Studios";
+		author="Belhun";
 		maximumLoad=400;
 		mass=50;
 		displayName="[A][ARMCO]Hard Rucksack [Phoenix]";
@@ -68,17 +68,16 @@ class OPTRE_ILCS_Rucksack_Black;
 			"armco_items\data\backpacks\backpack_odst_hard_phoenix_co.paa"
 		};
 	};
-	class ARMCO_ILCS_Rucksack_Heavy_Medical: OPTRE_ILCS_Rucksack_Black
+	class ARMCO_Rucksack_Hard_Medical: OPTRE_ILCS_Rucksack_Black
 	{
 		dlc="OPTRE";
-		author="Article 2 Studios";
+		author="Belhun";
 		maximumLoad=400;
 		mass=50;
 		displayName="[A][ARMCO]Hard Rucksack [Medical]";
 		hiddenSelections[]=
 		{
-			"camo1",
-			"ap_heavy"
+			"camo1"
 		};
         hiddenSelectionsTextures[]=
 		{
@@ -90,31 +89,11 @@ class OPTRE_ILCS_Rucksack_Black;
 	
 	//Basic Backpacks
 	class OPTRE_UNSC_Rucksack;
-	class ARMCO_Rucksack_Basic: OPTRE_UNSC_Rucksack
+	class ARMCO_Rucksack_Soft_Alpha: OPTRE_UNSC_Rucksack
 	{
 		dlc="OPTRE";
-		author="Article 2 Studios";
-		displayName="[A][ARMCO] Rucksack (Basic)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"B_Addons",
-			"B_Medic",
-			"B_Radio",
-			"B_strap"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"optre_unsc_units\army\data\soft_backpack_co.paa",
-			""
-		};
-	};
-	class ARMCO_Rucksack_B_Addons: OPTRE_UNSC_Rucksack
-	{
-		dlc="OPTRE";
-		author="Article 2 Studios";
-		displayName="[A][ARMCO] Rucksack (B_Addons)";
+		author="Belhun";
+		displayName="[A][ARMCO] Soft Rucksack (Alpha)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -124,15 +103,69 @@ class OPTRE_ILCS_Rucksack_Black;
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"optre_unsc_units\army\data\soft_backpack_co.paa",
+			"armco_items\data\backpacks\backpack_odst_soft_alpha_co.paa",
 			""
 		};
 	};
-	class ARMCO_Rucksack_B_Medic: OPTRE_UNSC_Rucksack
+	class ARMCO_Rucksack_Soft_Sabre: OPTRE_UNSC_Rucksack
 	{
 		dlc="OPTRE";
-		author="Article 2 Studios";
-		displayName="[A][ARMCO] Rucksack (B_Medic)";
+		author="Belhun";
+		displayName="[A][ARMCO] Soft Rucksack (Sabre)";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"B_Medic",
+			"B_Radio"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_items\data\backpacks\backpack_odst_soft_sabre_co.paa",
+			""
+		};
+	};
+	class ARMCO_Rucksack_Soft_Zulu: OPTRE_UNSC_Rucksack
+	{
+		dlc="OPTRE";
+		author="Belhun";
+		displayName="[A][ARMCO] Soft Rucksack (Zulu)";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"B_Medic",
+			"B_Radio"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_items\data\backpacks\backpack_odst_soft_zulu_co.paa",
+			""
+		};
+	};
+	class ARMCO_Rucksack_Soft_Phoenix: OPTRE_UNSC_Rucksack
+	{
+		dlc="OPTRE";
+		author="Belhun";
+		displayName="[A][ARMCO] Soft Rucksack (Phoenix)";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"B_Medic",
+			"B_Radio"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_items\data\backpacks\backpack_odst_soft_phoenix_co.paa",
+			""
+		};
+	};
+	class ARMCO_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack
+	{
+		dlc="OPTRE";
+		author="Belhun";
+		displayName="[A][ARMCO] Soft Rucksack (Medical)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -142,25 +175,7 @@ class OPTRE_ILCS_Rucksack_Black;
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"optre_unsc_units\army\data\soft_backpack_co.paa",
-			""
-		};
-	};
-	class ARMCO_Rucksack_B_Radio: OPTRE_UNSC_Rucksack
-	{
-		dlc="OPTRE";
-		author="Article 2 Studios";
-		displayName="[A][ARMCO] Rucksack (B_Radio)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"B_Addons",
-			"B_Medic",
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"optre_unsc_units\army\data\soft_backpack_co.paa",
+			"armco_items\data\backpacks\backpack_odst_soft_medical_co.paa",
 			""
 		};
 	};
