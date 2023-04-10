@@ -131,8 +131,6 @@ class CfgFactionClasses{
 	};
 };
 
-class tfw_ilbe_gr;
-
 class CfgMarkerClasses {
 	class ARMCO_Markers {
 		displayName="ARMCO";
