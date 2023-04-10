@@ -245,6 +245,19 @@
 			modelSides[]={6};
 		}
 	};
+	class ARMCO_ODST_NEWGDDMOUNT_BDU: ARMCO_PMC_Army_Uniform_WDL
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		displayName="[A][ARMCO] Unit BDU (New Dark Mountain)";
+		class ItemInfo: UniformItem{
+			uniformModel="-";
+			uniformClass="ARMCO_Soldier_ODST_New_Dark_Mountain";
+			containerClass="Supply40";
+			mass=50;
+			modelSides[]={6};
+		}
+	};
 	class ARMCO_ODST_DDRKWDL_BDU: ARMCO_PMC_Army_Uniform_WDL
 	{
 		dlc="ARMCO_PMC";

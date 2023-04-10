@@ -542,6 +542,27 @@
 			"armco_armours\data\uniforms\uniform_a_gddmount_CO.paa"
 		};
 	};
+	class ARMCO_Soldier_ODST_New_Dark_Mountain: ARMCO_Base_Soldier
+	{
+		dlc="ARMCO_PMC";
+		author="Belhun";
+		vehicleClass="OPTRE_UNSC_Man_Army_W_class";
+		uniformClass="ARMCO_PMC_Army_Uniform_WDL";
+		model="\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_SlimLeg"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"armco_armours\data\uniforms\uniform_a_newdarkdigitalgreen_CO.paa",
+			"armco_armours\data\uniforms\uniform_a_newdarkdigitalgreen_CO.paa"
+		};
+	};
 	class ARMCO_Soldier_ODST_DDRKWDL: ARMCO_Base_Soldier
 	{
 		dlc="ARMCO_PMC";
