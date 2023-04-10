@@ -95,7 +95,7 @@ class CfgPatches
 			
 		};
 		requiredVersion = 0.1; 
-		requiredAddons[] = {"OPTRE_UNSC_Units", "OPTRE_Core" ,"ace_main","A3_Characters_F_BLUFOR"}; 
+		requiredAddons[] = {"OPTRE_UNSC_Units", "OPTRE_Core" ,"ace_main","A3_Characters_F_BLUFOR","OPTRE_Weapons"}; 
 	}; 
 };
 
