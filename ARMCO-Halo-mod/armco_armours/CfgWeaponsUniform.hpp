@@ -249,7 +249,7 @@
 	{
 		dlc="ARMCO_PMC";
 		author="Belhun";
-		displayName="[A][ARMCO] Unit BDU (New Dark Mountain)";
+		displayName="[A][ARMCO] Unit BDU (New Jungle)";
 		class ItemInfo: UniformItem{
 			uniformModel="-";
 			uniformClass="ARMCO_Soldier_ODST_New_Dark_Mountain";
