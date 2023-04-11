@@ -20,6 +20,7 @@ class CfgPatches
 			"Phoenix_CH252_Helmet",
 			"Zulu_CH252_Helmet",
 			"ARMCO_Generic_CH252_Ghillie_Helmet",
+
 			//Squad Uniforms
 			"Alpha_BDU",
 			"Alpha_EOD_BDU",
@@ -43,54 +44,37 @@ class CfgPatches
 			"ARMCO_ODST_GDDMOUNT_BDU",
 			"ARMCO_ODST_DDRKWDL_BDU",
 			"ARMCO_ODST_DWLD_BDU",
+
 			// Squad Marine Armours
+			//Base armour tests
+			"ARMCO_Alpha_Armor",
+			"ARMCO_Sabre_Armor",
+			"ARMCO_Zulu_Armor",
+			"ARMCO_Phoenix_Armor",
 			//Alpha Squad
 			"Alpha_Armour_Corpsman",
-			"Alpha_Armour_Corpsman_Ghillie",
 			"Alpha_Armour_EOD",
-			"Alpha_Armour_EOD_Ghillie",
 			"Alpha_Armour_Medic",
-			"Alpha_Armour_Medic_Ghillie",
 			"Alpha_Armour_Rifleman",
-			"Alpha_Armour_Rifleman_Ghillie",
 			"Alpha_Armour_Team_Leader",
-			"Alpha_Armour_Team_Leader_Ghillie",
 			//Phoenix Squad
 			"Phoenix_Squad_Corpsman",
-			"Phoenix_Squad_Corpsman_Ghillie",
 			"Phoenix_Squad_EOD",
-			"Phoenix_Squad_EOD_Ghillie",
 			"Phoenix_Squad_Medic",
-			"Phoenix_Squad_Medic_Ghillie",
 			"Phoenix_Squad_Rifleman",
-			"Phoenix_Squad_Rifleman_Ghillie",
 			"Phoenix_Squad_Team_Leader",
-			"Phoenix_Squad_Team_Leader_Ghillie",
 			//Sabre Squad
 			"Sabre_Squad_Corpsman",
-			"Sabre_Squad_Corpsman_Ghillie",
 			"Sabre_Squad_EOD",
-			"Sabre_Squad_EOD_Ghillie",
 			"Sabre_Squad_Medic",
-			"Sabre_Squad_Medic_Ghillie",
 			"Sabre_Squad_Rifleman",
-			"Sabre_Squad_Rifleman_Ghillie",
 			"Sabre_Squad_Team_Leader",
-			"Sabre_Squad_Team_Leader_Ghillie",
 			//Zulu Squad
 			"Zulu_Squad_Corpsman",
-			"Zulu_Squad_Corpsman_Ghillie",
 			"Zulu_Squad_EOD",
-			"Zulu_Squad_EOD_Ghillie",
 			"Zulu_Squad_Medic",
-			"Zulu_Squad_Medic_Ghillie",
 			"Zulu_Squad_Rifleman",
-			"Zulu_Squad_Rifleman_Ghillie",
 			"Zulu_Squad_Team_Leader",
-			"Zulu_Squad_Team_Leader_Ghillie",
-			"ARMCO_Test_Armor",
-
-			//Test Aromor
 
 			
 		};
