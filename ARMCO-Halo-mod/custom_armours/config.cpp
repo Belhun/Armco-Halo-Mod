@@ -11,7 +11,7 @@
 	terrainDrainRun=0;
 	terrainSpeedCoef=1;
 	};*/
-class tfw_ilbe_gr;
+// class tfw_ilbe_gr;
 class CfgMarkerClasses{
         class ARMCO_Markers
         {
@@ -808,7 +808,7 @@ class CfgVehicles{
 				author											= "4th Battalion Mod Team";
 				model															= "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
 				icon 															= "iconManLeader";
-				backpack 														= "ARMCO_LR_Bag_Alpha";
+				backpack 														= "ARMCO_Rucksack_Soft_Alpha";
 				uniformClass													= "ARMCO_Uniform_Alpha_O";
 				hiddenSelectionsTextures[] 										= 
 				{
@@ -1047,7 +1047,7 @@ class CfgVehicles{
 				author											= "4th Battalion Mod Team";
 				model															= "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
 				icon 															= "iconManLeader";
-				backpack 														= "ARMCO_LR_Bag_Echo";
+				backpack 														= "ARMCO_Rucksack_Soft_Echo";
 				uniformClass													= "ARMCO_Uniform_Echo_O";
 				hiddenSelectionsTextures[] 										= 
 				{
@@ -1286,7 +1286,7 @@ class CfgVehicles{
 				author											= "4th Battalion Mod Team";
 				model															= "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
 				icon 															= "iconManLeader";
-				backpack 														= "ARMCO_LR_Bag_Zulu";
+				backpack 														= "ARMCO_Rucksack_Soft_Zulu";
 				uniformClass													= "ARMCO_Uniform_zulu_O";
 				hiddenSelectionsTextures[] 										= 
 				{
@@ -1527,7 +1527,7 @@ class CfgVehicles{
 				author	= "4th Battalion Mod Team";
 				model															= "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
 				icon 															= "iconManLeader";
-				backpack 														= "ARMCO_LR_Bag_Zulu_Camo";
+				backpack 														= "ARMCO_Rucksack_Soft_Zulu";
 				uniformClass													= "ARMCO_Uniform_Zulu_Camo";
 				hiddenSelectionsTextures[] 										= 
 				{
@@ -1768,7 +1768,7 @@ class CfgVehicles{
 				author											= "4th Battalion Mod Team";
 				model															= "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
 				icon 															= "iconManLeader";
-				backpack 														= "ARMCO_LR_Bag_Phoenix";
+				backpack 														= "ARMCO_Rucksack_Soft_Phoenix";
 				uniformClass													= "ARMCO_Uniform_Phoenix_O";
 				hiddenSelectionsTextures[] 										= 
 				{
@@ -2794,7 +2794,7 @@ class CfgVehicles{
 		//BACKPACKS CONFIG//
 		////////////////////
 		class B_Kitbag_base;
-		class tfw_ilbe_gr;
+		// class tfw_ilbe_gr;
 		class OPTRE_UNSC_Rucksack;
 		class OPTRE_ILCS_Rucksack_Black;
 		class Weapon_srifle_DMR_02_F;
@@ -2957,202 +2957,202 @@ class CfgVehicles{
 
 	
 		//---Long Range Radio Backpacks---//	
-		class ARMCO_LR_Bag_BLK: tfw_ilbe_gr
-			{
-				author= "4th Battalion Mod Team";
-				scope=1;
-				scopeCurator = 1;
-				displayName="[ARMCO] ILBE RT-1523G [Medical] (ASIP)";
-				descriptionShort="RT-1523G (ASIP) long range radio 20km";
-				picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-				editorPreview="";
-				model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-				hiddenSelectionsTextures[]=
-				{
-					"custom_armours\data\backpacks\ilbe_armco_blk_co.paa"
-				};
-				hiddenSelections[]=
-				{
-					"camo"
-				};
-				containerClass = "Supply250";
-				mass=80;
-				isbackpack=1;
-						tf_encryptionCode 									= "tf_west_radio_code";
-						tf_dialog 											= "rt1523g_radio_dialog";
-						tf_subtype 											= "digital_lr";
-						tf_range 											= 17000;
-						tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-						tf_hasLRradio	 									= 1;
-			};
-		class ARMCO_LR_Bag_Alpha: tfw_ilbe_gr 
-			{
-				author= "4th Battalion Mod Team";
-				scope=1;
-				scopeCurator = 1;
-				displayName="[ARMCO] ILBE Alpha Squad RT-1523G (ASIP)";
-				descriptionShort="RT-1523G (ASIP) long range radio 20km";
-				picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-				editorPreview="";
-				model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-				hiddenSelectionsTextures[]=
-				{
-					"custom_armours\data\backpacks\backpack_radio_alpha_co.paa"
-				};
-				hiddenSelections[]=
-				{
-					"camo"
-				};
-				containerClass = "Supply250";
-				mass=80;
-				isbackpack=1;
-						tf_encryptionCode 									= "tf_west_radio_code";
-						tf_dialog 											= "rt1523g_radio_dialog";
-						tf_subtype 											= "digital_lr";
-						tf_range 											= 17000;
-						tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-						tf_hasLRradio	 									= 1;
-			};
-		class ARMCO_LR_Bag_Echo: tfw_ilbe_gr 
-			{
-				author= "4th Battalion Mod Team";
-				scope=1;
-				scopeCurator = 1;
-				displayName="[ARMCO] ILBE Sabre Squad RT-1523G (ASIP)";
-				descriptionShort="RT-1523G (ASIP) long range radio 20km";
-				picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-				editorPreview="";
-				model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-				hiddenSelectionsTextures[]=
-				{
-					"custom_armours\data\backpacks\backpack_radio_echo_co.paa"
-				};
-				hiddenSelections[]=
-				{
-					"camo"
-				};
-				containerClass = "Supply250";
-				mass=80;
-				isbackpack=1;
-						tf_encryptionCode 									= "tf_west_radio_code";
-						tf_dialog 											= "rt1523g_radio_dialog";
-						tf_subtype 											= "digital_lr";
-						tf_range 											= 17000;
-						tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-						tf_hasLRradio	 									= 1;
-			};
-		class ARMCO_LR_Bag_Zulu: tfw_ilbe_gr 
-			{
-				author="4th Battalion Mod Team";
-				scope=1;
-				scopeCurator = 1;
-				displayName="[ARMCO] ILBE Zulu Squad RT-1523G (ASIP)";
-				descriptionShort="RT-1523G (ASIP) long range radio 20km";
-				picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-				editorPreview="";
-				model="y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-				hiddenSelectionsTextures[]=
-				{
-					"custom_armours\data\backpacks\backpack_radio_zulu_co.paa"
-				};
-				hiddenSelections[]=
-				{
-					"camo"
-				};
-				containerClass = "Supply250";
-				mass=80;
-				isbackpack=1;
-						tf_encryptionCode 									= "tf_west_radio_code";
-						tf_dialog 											= "rt1523g_radio_dialog";
-						tf_subtype 											= "digital_lr";
-						tf_range 											= 17000;
-						tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-						tf_hasLRradio	 									= 1;
-			};
-		class ARMCO_LR_Bag_Zulu_Camo: tfw_ilbe_gr 
-			{
-				author="4th Battalion Mod Team";
-				scope=1;
-				scopeCurator = 1;
-				displayName="[ARMCO] ILBE Camo Zulu Squad RT-1523G (ASIP)";
-				descriptionShort="RT-1523G (ASIP) long range radio 20km";
-				picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-				editorPreview="";
-				model="y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-				hiddenSelectionsTextures[]=
-				{
-					"custom_armours\data\backpacks\backpack_radio_zulu_camo_co.paa"
-				};
-				hiddenSelections[]=
-				{
-					"camo"
-				};
-				containerClass = "Supply250";
-				mass=80;
-				isbackpack=1;
-						tf_encryptionCode 									= "tf_west_radio_code";
-						tf_dialog 											= "rt1523g_radio_dialog";
-						tf_subtype 											= "digital_lr";
-						tf_range 											= 17000;
-						tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-						tf_hasLRradio	 									= 1;
-			};
-		class ARMCO_LR_Bag_Phoenix: tfw_ilbe_gr 
-			{
-				author="4th Battalion Mod Team";
-				scope=1;
-				scopeCurator = 1;
-				displayName="[ARMCO] ILBE Phoenix Squad RT-1523G (ASIP)";
-				descriptionShort="RT-1523G (ASIP) long range radio 20km";
-				picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-				editorPreview="";
-				model="y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-				hiddenSelectionsTextures[]=
-				{
-					"custom_armours\data\backpacks\backpack_radio_phoenix_co.paa"
-				};
-				hiddenSelections[]=
-				{
-					"camo"
-				};
-				containerClass = "Supply250";
-				mass=80;
-				isbackpack=1;
-						tf_encryptionCode 									= "tf_west_radio_code";
-						tf_dialog 											= "rt1523g_radio_dialog";
-						tf_subtype 											= "digital_lr";
-						tf_range 											= 17000;
-						tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-						tf_hasLRradio	 									= 1;
-			};	
-		class ARMCO_LR_Bag_Security: tfw_ilbe_gr 
-			{
-				author="4th Battalion Mod Team";
-				scope=1;
-				scopeCurator = 1;
-				displayName="[ARMCO] ILBE Security RT-1523G (ASIP)";
-				descriptionShort="RT-1523G (ASIP) long range radio 20km";
-				picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-				editorPreview="";
-				model="y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-				hiddenSelectionsTextures[]=
-				{
-					"custom_armours\data\security\backpack\b_radio_armco_security_co.paa"
-				};
-				hiddenSelections[]=
-				{
-					"camo"
-				};
-				containerClass = "Supply250";
-				mass=80;
-				isbackpack=1;
-						tf_encryptionCode 									= "tf_west_radio_code";
-						tf_dialog 											= "rt1523g_radio_dialog";
-						tf_subtype 											= "digital_lr";
-						tf_range 											= 17000;
-						tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-						tf_hasLRradio	 									= 1;
-			};
+		// class ARMCO_LR_Bag_BLK: tfw_ilbe_gr
+		// 	{
+		// 		author= "4th Battalion Mod Team";
+		// 		scope=1;
+		// 		scopeCurator = 1;
+		// 		displayName="[ARMCO] ILBE RT-1523G [Medical] (ASIP)";
+		// 		descriptionShort="RT-1523G (ASIP) long range radio 20km";
+		// 		picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+		// 		editorPreview="";
+		// 		model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+		// 		hiddenSelectionsTextures[]=
+		// 		{
+		// 			"custom_armours\data\backpacks\ilbe_armco_blk_co.paa"
+		// 		};
+		// 		hiddenSelections[]=
+		// 		{
+		// 			"camo"
+		// 		};
+		// 		containerClass = "Supply250";
+		// 		mass=80;
+		// 		isbackpack=1;
+		// 				tf_encryptionCode 									= "tf_west_radio_code";
+		// 				tf_dialog 											= "rt1523g_radio_dialog";
+		// 				tf_subtype 											= "digital_lr";
+		// 				tf_range 											= 17000;
+		// 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
+		// 				tf_hasLRradio	 									= 1;
+		// 	};
+		// class ARMCO_LR_Bag_Alpha: tfw_ilbe_gr 
+		// 	{
+		// 		author= "4th Battalion Mod Team";
+		// 		scope=1;
+		// 		scopeCurator = 1;
+		// 		displayName="[ARMCO] ILBE Alpha Squad RT-1523G (ASIP)";
+		// 		descriptionShort="RT-1523G (ASIP) long range radio 20km";
+		// 		picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+		// 		editorPreview="";
+		// 		model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+		// 		hiddenSelectionsTextures[]=
+		// 		{
+		// 			"custom_armours\data\backpacks\backpack_radio_alpha_co.paa"
+		// 		};
+		// 		hiddenSelections[]=
+		// 		{
+		// 			"camo"
+		// 		};
+		// 		containerClass = "Supply250";
+		// 		mass=80;
+		// 		isbackpack=1;
+		// 				tf_encryptionCode 									= "tf_west_radio_code";
+		// 				tf_dialog 											= "rt1523g_radio_dialog";
+		// 				tf_subtype 											= "digital_lr";
+		// 				tf_range 											= 17000;
+		// 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
+		// 				tf_hasLRradio	 									= 1;
+		// 	};
+		// class ARMCO_LR_Bag_Echo: tfw_ilbe_gr 
+		// 	{
+		// 		author= "4th Battalion Mod Team";
+		// 		scope=1;
+		// 		scopeCurator = 1;
+		// 		displayName="[ARMCO] ILBE Sabre Squad RT-1523G (ASIP)";
+		// 		descriptionShort="RT-1523G (ASIP) long range radio 20km";
+		// 		picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+		// 		editorPreview="";
+		// 		model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+		// 		hiddenSelectionsTextures[]=
+		// 		{
+		// 			"custom_armours\data\backpacks\backpack_radio_echo_co.paa"
+		// 		};
+		// 		hiddenSelections[]=
+		// 		{
+		// 			"camo"
+		// 		};
+		// 		containerClass = "Supply250";
+		// 		mass=80;
+		// 		isbackpack=1;
+		// 				tf_encryptionCode 									= "tf_west_radio_code";
+		// 				tf_dialog 											= "rt1523g_radio_dialog";
+		// 				tf_subtype 											= "digital_lr";
+		// 				tf_range 											= 17000;
+		// 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
+		// 				tf_hasLRradio	 									= 1;
+		// 	};
+		// class ARMCO_LR_Bag_Zulu: tfw_ilbe_gr 
+		// 	{
+		// 		author="4th Battalion Mod Team";
+		// 		scope=1;
+		// 		scopeCurator = 1;
+		// 		displayName="[ARMCO] ILBE Zulu Squad RT-1523G (ASIP)";
+		// 		descriptionShort="RT-1523G (ASIP) long range radio 20km";
+		// 		picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+		// 		editorPreview="";
+		// 		model="y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+		// 		hiddenSelectionsTextures[]=
+		// 		{
+		// 			"custom_armours\data\backpacks\backpack_radio_zulu_co.paa"
+		// 		};
+		// 		hiddenSelections[]=
+		// 		{
+		// 			"camo"
+		// 		};
+		// 		containerClass = "Supply250";
+		// 		mass=80;
+		// 		isbackpack=1;
+		// 				tf_encryptionCode 									= "tf_west_radio_code";
+		// 				tf_dialog 											= "rt1523g_radio_dialog";
+		// 				tf_subtype 											= "digital_lr";
+		// 				tf_range 											= 17000;
+		// 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
+		// 				tf_hasLRradio	 									= 1;
+		// 	};
+		// class ARMCO_LR_Bag_Zulu_Camo: tfw_ilbe_gr 
+		// 	{
+		// 		author="4th Battalion Mod Team";
+		// 		scope=1;
+		// 		scopeCurator = 1;
+		// 		displayName="[ARMCO] ILBE Camo Zulu Squad RT-1523G (ASIP)";
+		// 		descriptionShort="RT-1523G (ASIP) long range radio 20km";
+		// 		picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+		// 		editorPreview="";
+		// 		model="y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+		// 		hiddenSelectionsTextures[]=
+		// 		{
+		// 			"custom_armours\data\backpacks\backpack_radio_zulu_camo_co.paa"
+		// 		};
+		// 		hiddenSelections[]=
+		// 		{
+		// 			"camo"
+		// 		};
+		// 		containerClass = "Supply250";
+		// 		mass=80;
+		// 		isbackpack=1;
+		// 				tf_encryptionCode 									= "tf_west_radio_code";
+		// 				tf_dialog 											= "rt1523g_radio_dialog";
+		// 				tf_subtype 											= "digital_lr";
+		// 				tf_range 											= 17000;
+		// 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
+		// 				tf_hasLRradio	 									= 1;
+		// 	};
+		// class ARMCO_LR_Bag_Phoenix: tfw_ilbe_gr 
+		// 	{
+		// 		author="4th Battalion Mod Team";
+		// 		scope=1;
+		// 		scopeCurator = 1;
+		// 		displayName="[ARMCO] ILBE Phoenix Squad RT-1523G (ASIP)";
+		// 		descriptionShort="RT-1523G (ASIP) long range radio 20km";
+		// 		picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+		// 		editorPreview="";
+		// 		model="y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+		// 		hiddenSelectionsTextures[]=
+		// 		{
+		// 			"custom_armours\data\backpacks\backpack_radio_phoenix_co.paa"
+		// 		};
+		// 		hiddenSelections[]=
+		// 		{
+		// 			"camo"
+		// 		};
+		// 		containerClass = "Supply250";
+		// 		mass=80;
+		// 		isbackpack=1;
+		// 				tf_encryptionCode 									= "tf_west_radio_code";
+		// 				tf_dialog 											= "rt1523g_radio_dialog";
+		// 				tf_subtype 											= "digital_lr";
+		// 				tf_range 											= 17000;
+		// 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
+		// 				tf_hasLRradio	 									= 1;
+		// 	};	
+		// class ARMCO_LR_Bag_Security: tfw_ilbe_gr 
+		// 	{
+		// 		author="4th Battalion Mod Team";
+		// 		scope=1;
+		// 		scopeCurator = 1;
+		// 		displayName="[ARMCO] ILBE Security RT-1523G (ASIP)";
+		// 		descriptionShort="RT-1523G (ASIP) long range radio 20km";
+		// 		picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+		// 		editorPreview="";
+		// 		model="y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+		// 		hiddenSelectionsTextures[]=
+		// 		{
+		// 			"custom_armours\data\security\backpack\b_radio_armco_security_co.paa"
+		// 		};
+		// 		hiddenSelections[]=
+		// 		{
+		// 			"camo"
+		// 		};
+		// 		containerClass = "Supply250";
+		// 		mass=80;
+		// 		isbackpack=1;
+		// 				tf_encryptionCode 									= "tf_west_radio_code";
+		// 				tf_dialog 											= "rt1523g_radio_dialog";
+		// 				tf_subtype 											= "digital_lr";
+		// 				tf_range 											= 17000;
+		// 				tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
+		// 				tf_hasLRradio	 									= 1;
+		// 	};
 
 		//---ODST Long Range Backpacks---//
 		class ARMCO_Rucksack_Soft_Alpha : OPTRE_UNSC_Rucksack
