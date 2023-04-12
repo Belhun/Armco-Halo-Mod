@@ -42,14 +42,23 @@
 // 			{
 // 				class HitFace
 // 				{
-// 					armor               = 1; // "Healthpoints" of this hitpoint is armor value (of hitpoint) * armor value ( coefficient of the total armor defined below for the whole object
-// 					material            = -1; // damage material (-1 means "unused")
-// 					name                = "face_hub"; // selection name from hit points LOD in object
-// 					passThrough         = 0.1; // coefficient defining how much damage will pass into total damage when this hit point is damaged
-// 					radius              = 0.08; // size of the hit point sphere, this is how it works: https://community.bistudio.com/wiki/Arma_3_Damage_Description
-// 					explosionShielding  = 0.1; // multiplier of explosive damage (parameter: explosive > 0 in ammunition type)
-// 					minimalHit          = 0.01; // minimal damage value that can be applied (based on armor value), damage below this threshold is ignored
-// 					//example: total hit point armor = 2 and hitpoint class armor = 10 and minimalHit = 0.04  -> all damage below a hit value of 2*10*0.04= 0.8 is ignored
+// 					armor               = 1; // "Healthpoints" of
+// this hitpoint is armor value (of hitpoint) * armor value ( coefficient of the
+// total armor defined below for the whole object
+// material            = -1; // damage material (-1 means "unused")
+// name                = "face_hub"; // selection name from hit points LOD in
+// object 					passThrough         = 0.1; //
+// coefficient defining how much damage will pass into total damage when this
+// hit point is damaged 					radius              = 0.08; //
+// size of the hit point sphere, this is how it works:
+// https://community.bistudio.com/wiki/Arma_3_Damage_Description
+// 					explosionShielding  = 0.1; // multiplier
+// of explosive damage (parameter: explosive > 0 in ammunition type)
+// minimalHit = 0.01; // minimal damage value that can be applied (based on
+// armor value), damage below this threshold is ignored
+// 					//example: total hit point armor = 2 and
+// hitpoint class armor = 10 and minimalHit = 0.04  -> all damage below a hit
+// value of 2*10*0.04= 0.8 is ignored
 // 				};
 // 				class HitNeck: HitFace
 // 				{
@@ -70,10 +79,16 @@
 // 					radius              = 0.2;
 // 					explosionShielding  = 0.1;
 // 					minimalHit          = 0.01;
-// 					depends             = "HitFace max HitNeck"; // returns the greater of HitFace and HitNeck.
-// 					// for depends to work, HitHead must be inheriting from HitFace and HitNeck.
-// 					// "max" is not the only operator you can use. + and *  are confirmed working. 
-// 					// Other operators from the https://community.bistudio.com/wiki/Simple_Expression list may be usable as well.
+// 					depends             = "HitFace max HitNeck";
+// // returns the greater of HitFace and HitNeck.
+// 					// for depends to work, HitHead must be
+// inheriting from HitFace and HitNeck.
+// 					// "max" is not the only operator you can use. +
+// and
+// *  are confirmed working.
+// 					// Other operators from the
+// https://community.bistudio.com/wiki/Simple_Expression list may be usable as
+// well.
 // 				};
 // 				class HitPelvis
 // 				{
@@ -121,16 +136,18 @@
 // 				};
 // 				class HitBody: HitChest
 // 				{
-// 					armor               = 1000; // not supposed to take damage directly
-// 					material            = -1;
-// 					name                = "body";
-// 					passThrough         = 0.1;
-// 					radius              = 0.16;
+// 					armor               = 1000; // not supposed to
+// take damage directly 					material = -1;
+// name                = "body"; 					passThrough         = 0.1; 					radius = 0.16;
 // 					explosionShielding  = 2;
 // 					visual              = "injury_body";
 // 					minimalHit          = 0.01;
-// 					depends             = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest"; // depends work only for hit points defined in inheritance chain
-// 					//arbitrary example for different operator usage: = "(2* (HitPelvis + HitAbdomen) * HitDiaphragm) max HitChest";
+// 					depends             = "HitPelvis max HitAbdomen
+// max HitDiaphragm max HitChest"; // depends work only for hit points defined
+// in inheritance chain
+// 					//arbitrary example for different operator usage:
+// =
+// "(2* (HitPelvis + HitAbdomen) * HitDiaphragm) max HitChest";
 // 				};
 // 				class HitArms
 // 				{
@@ -166,9 +183,9 @@
 // 					visual              = "injury_legs";
 // 					minimalHit          = 0.01;
 // 				};
-			
+
 // 				// ACE
-			
+
 // 				class HitLeftArm
 // 				{
 // 					armor               = 1;
@@ -207,11 +224,12 @@
 // 	class AMRCO_Dress_Soldier_Base: ARMCO_Soldier_Base {
 // 			scope = 1;
 // 			dlc = "ARMCO OPTRE Reskins";
-// 			author											= "Frosty & Mac";
-// 			uniformClass													= "OPTRE_UNSC_Dress_Uniform_gray";
-// 			faction															= "ARMCO_Fancy_Faction";
-// 			model															= "\OPTRE_UNSC_Units\Army\officer.p3d";
-// 			linkedItems[] 													= 
+// 			author
+// = "Frosty & Mac"; 			uniformClass =
+// "OPTRE_UNSC_Dress_Uniform_gray"; 			faction = "ARMCO_Fancy_Faction";
+// model = "\OPTRE_UNSC_Units\Army\officer.p3d";
+// linkedItems[]
+// =
 // 			{
 // 				"ItemMap",
 // 				"ItemCompass",
@@ -219,7 +237,8 @@
 // 				"ItemRadio",
 // 				"OPTRE_NVG"
 // 			};
-// 			respawnLinkedItems[] 											= 
+// 			respawnLinkedItems[]
+// =
 // 			{
 // 				"ItemMap",
 // 				"ItemCompass",
@@ -227,13 +246,15 @@
 // 				"ItemRadio",
 // 				"OPTRE_NVG"
 // 			};
-// 			hiddenSelections[] 												= 
+// 			hiddenSelections[]
+// =
 // 			{
 // 				"camo1",
 // 				"insignia",
 // 				"clan"
 // 			}; //Determines what hiddenselections are enabled
-// 			hiddenSelectionsTextures[] 										= 
+// 			hiddenSelectionsTextures[]
+// =
 // 			{
 // 				"OPTRE_UNSC_Units\Army\data\dress_uniform_gray_co.paa"
 // 			};
@@ -271,9 +292,9 @@
 // 				{
 // 					armor               = 2;
 // 				};
-			
+
 // 				// ACE
-			
+
 // 				//class HitLeftArm: HitLeftArm
 // 				//{
 // 				//	armor               = 2;
@@ -291,29 +312,30 @@
 // 				//	armor               = 2;
 // 				//};
 // 			};
-// 			class Wounds /// changes material of skin according to damage
+// 			class Wounds /// changes material of skin according to
+// damage
 // 			{
 // 				tex[] = {};
 // 				mat[] = {
 // 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",	
+// 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
 
 // 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"					
+// 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"
 // 				};
 // 			};
 // 			editorCategory = "armco_units";
@@ -321,49 +343,61 @@
 // 			};
 // 	class ARMCO_Soldier_WDL: AMRCO_Dress_Soldier_Base {
 // 			dlc = "ARMCO OPTRE Reskins";
-// 			scope															= 1;
-// 			scopeCurator													= 0;
-// 			author											= "Frosty & Mac";
-// 			vehicleClass													= "OPTRE_UNSC_Man_Army_W_class";
-// 			uniformClass													= "OPTRE_UNSC_Army_Uniform_WDL";
-// 			model															= "\OPTRE_UNSC_Units\Army\uniform.p3d";
-// 			weapons[]														= {"Throw","Put"};
-// 			respawnWeapons[]												= {"Throw","Put"};
-// 			Items[]															= {"OPTRE_Biofoam"};
-// 			RespawnItems[]													= {"OPTRE_Biofoam"};
-// 			magazines[]														= {};
-// 			respawnMagazines[]												= {};
-// 			//linkedItems[] 													= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-// 			//respawnLinkedItems[] 											= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-// 			hiddenSelections[] 												= {"camo","camo2","insignia","clan","A_SlimLeg"}; //Determines what hiddenselections are enabled
-// 			hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
-// 			class Wounds /// changes material of skin according to damage
+// 			scope
+// = 1; 			scopeCurator
+// = 0; 			author
+// = "Frosty & Mac";
+// 			vehicleClass
+// = "OPTRE_UNSC_Man_Army_W_class"; 			uniformClass
+// = "OPTRE_UNSC_Army_Uniform_WDL"; 			model
+// = "\OPTRE_UNSC_Units\Army\uniform.p3d"; 			weapons[]
+// = {"Throw","Put"};
+// 			respawnWeapons[]
+// = {"Throw","Put"};
+// 			Items[]
+// = {"OPTRE_Biofoam"}; 			RespawnItems[]
+// = {"OPTRE_Biofoam"}; 			magazines[]
+// = {}; 			respawnMagazines[]
+// = {};
+// 			//linkedItems[]
+// =
+// {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+// 			//respawnLinkedItems[]
+// =
+// {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+// 			hiddenSelections[]
+// = {"camo","camo2","insignia","clan","A_SlimLeg"}; //Determines what
+// hiddenselections are enabled hiddenSelectionsTextures[]
+// =
+// {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
+// 			class Wounds /// changes material of skin according to
+// damage
 // 			{
 // 				tex[] = {};
 // 				mat[] = {
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a.rvmat",
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat",
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat",
-				
+
 // 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",	
+// 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
 
 // 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"					
+// 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"
 // 				};
 // 			};
 // 			class HitPoints: HitPoints
@@ -400,9 +434,9 @@
 // 				{
 // 					armor               = 4;
 // 				};
-			
+
 // 				// ACE
-			
+
 // 				class HitLeftArm: HitLeftArm
 // 				{
 // 					armor               = 4;
@@ -423,49 +457,61 @@
 // 			};
 // 	class ARMCO_Soldier_WDL_Medic: AMRCO_Dress_Soldier_Base {
 // 			dlc = "ARMCO OPTRE Reskins";
-// 			scope															= 1;
-// 			scopeCurator													= 0;
-// 			author											= "Frosty & Mac";
-// 			vehicleClass													= "OPTRE_UNSC_Man_Army_W_class";
-// 			uniformClass													= "OPTRE_UNSC_Army_Uniform_WDL";
-// 			model															= "\OPTRE_UNSC_Units\Army\uniform.p3d";
-// 			weapons[]														= {"Throw","Put"};
-// 			respawnWeapons[]												= {"Throw","Put"};
-// 			Items[]															= {"OPTRE_Biofoam"};
-// 			RespawnItems[]													= {"OPTRE_Biofoam"};
-// 			magazines[]														= {};
-// 			respawnMagazines[]												= {};
-// 			//linkedItems[] 													= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-// 			//respawnLinkedItems[] 											= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-// 			hiddenSelections[] 												= {"camo","camo2","insignia","clan","A_SlimLeg"}; //Determines what hiddenselections are enabled
-// 			hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
-// 			class Wounds /// changes material of skin according to damage
+// 			scope
+// = 1; 			scopeCurator
+// = 0; 			author
+// = "Frosty & Mac";
+// 			vehicleClass
+// = "OPTRE_UNSC_Man_Army_W_class"; 			uniformClass
+// = "OPTRE_UNSC_Army_Uniform_WDL"; 			model
+// = "\OPTRE_UNSC_Units\Army\uniform.p3d"; 			weapons[]
+// = {"Throw","Put"};
+// 			respawnWeapons[]
+// = {"Throw","Put"};
+// 			Items[]
+// = {"OPTRE_Biofoam"}; 			RespawnItems[]
+// = {"OPTRE_Biofoam"}; 			magazines[]
+// = {}; 			respawnMagazines[]
+// = {};
+// 			//linkedItems[]
+// =
+// {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+// 			//respawnLinkedItems[]
+// =
+// {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+// 			hiddenSelections[]
+// = {"camo","camo2","insignia","clan","A_SlimLeg"}; //Determines what
+// hiddenselections are enabled hiddenSelectionsTextures[]
+// =
+// {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
+// 			class Wounds /// changes material of skin according to
+// damage
 // 			{
 // 				tex[] = {};
 // 				mat[] = {
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a.rvmat",
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat",
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat",
-				
+
 // 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",	
+// 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
 
 // 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"					
+// 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"
 // 				};
 // 			};
 // 			class HitPoints: HitPoints
@@ -502,9 +548,9 @@
 // 				{
 // 					armor               = 4;
 // 				};
-			
+
 // 				// ACE
-			
+
 // 				class HitLeftArm: HitLeftArm
 // 				{
 // 					armor               = 4;
@@ -525,49 +571,61 @@
 // 			};
 // 	class ARMCO_Soldier_WDL_ODST: AMRCO_Dress_Soldier_Base {
 // 			dlc = "ARMCO OPTRE Reskins";
-// 			scope															= 1;
-// 			scopeCurator													= 0;
-// 			author											= "Frosty & Mac";
-// 			vehicleClass													= "OPTRE_UNSC_Man_Army_W_class";
-// 			uniformClass													= "OPTRE_UNSC_Army_Uniform_WDL";
-// 			model															= "\OPTRE_UNSC_Units\Army\uniform.p3d";
-// 			weapons[]														= {"Throw","Put"};
-// 			respawnWeapons[]												= {"Throw","Put"};
-// 			Items[]															= {"OPTRE_Biofoam"};
-// 			RespawnItems[]													= {"OPTRE_Biofoam"};
-// 			magazines[]														= {};
-// 			respawnMagazines[]												= {};
-// 			//linkedItems[] 													= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-// 			//respawnLinkedItems[] 											= {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
-// 			hiddenSelections[] 												= {"camo","camo2","insignia","clan","A_SlimLeg"}; //Determines what hiddenselections are enabled
-// 			hiddenSelectionsTextures[] 										= {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
-// 			class Wounds /// changes material of skin according to damage
+// 			scope
+// = 1; 			scopeCurator
+// = 0; 			author
+// = "Frosty & Mac";
+// 			vehicleClass
+// = "OPTRE_UNSC_Man_Army_W_class"; 			uniformClass
+// = "OPTRE_UNSC_Army_Uniform_WDL"; 			model
+// = "\OPTRE_UNSC_Units\Army\uniform.p3d"; 			weapons[]
+// = {"Throw","Put"};
+// 			respawnWeapons[]
+// = {"Throw","Put"};
+// 			Items[]
+// = {"OPTRE_Biofoam"}; 			RespawnItems[]
+// = {"OPTRE_Biofoam"}; 			magazines[]
+// = {}; 			respawnMagazines[]
+// = {};
+// 			//linkedItems[]
+// =
+// {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+// 			//respawnLinkedItems[]
+// =
+// {"OPTRE_UNSC_M52A_Armor1_WDL","OPTRE_UNSC_CH252_Helmet_WDL","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+// 			hiddenSelections[]
+// = {"camo","camo2","insignia","clan","A_SlimLeg"}; //Determines what
+// hiddenselections are enabled hiddenSelectionsTextures[]
+// =
+// {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
+// 			class Wounds /// changes material of skin according to
+// damage
 // 			{
 // 				tex[] = {};
 // 				mat[] = {
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a.rvmat",
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat",
 // 					"OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat",
-				
+
 // 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",	
+// 					"A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat",
 
 // 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_white_old.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",	
-				
+// 					"A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat",
+
 // 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat",
 // 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat",
-// 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"					
+// 					"A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"
 // 				};
 // 			};
 // 			class HitPoints: HitPoints
@@ -604,9 +662,9 @@
 // 				{
 // 					armor               = 4;
 // 				};
-			
+
 // 				// ACE
-			
+
 // 				class HitLeftArm: HitLeftArm
 // 				{
 // 					armor               = 4;
@@ -627,7 +685,6 @@
 // 			};
 // 	//----------END OF BASE UNIT----------//
 
-
 // 	//---Actual Vehicles---//
 // 		class OPTRE_M12_FAV;
 // 		class OPTRE_M12_FAV_APC;
@@ -646,7 +703,7 @@
 // 		class OPTRE_M12A1_LRV;
 // 		class OPTRE_M12R_AA;
 // 		class OPTRE_M914_RV;
-	
+
 // 		class C_P_M12_FAV: OPTRE_M12_FAV_snow
 // 		{
 // 			side=2;
@@ -655,8 +712,8 @@
 // 			author= "Frosty & Gunner";
 // 			crew="ARMCO_Police_Officer";
 // 			faction="ARMCO_C_Admin";
-// 			displayName="[Colonial Police] M12 Warthog LRV (Unarmed)";
-// 			hiddenSelections[]=
+// 			displayName="[Colonial Police] M12 Warthog LRV
+// (Unarmed)"; 			hiddenSelections[]=
 // 			{
 // 				"Camo1"
 // 			};
@@ -667,12 +724,16 @@
 // 		editorCategory = "colonial_administration";
 // 		editorSubcategory = "c_police_v";
 // 		// TFAR Config
-// 					tf_encryptionCode 									= "tf_west_radio_code";
-// 					tf_dialog 											= "rt1523g_radio_dialog";
-// 					tf_subtype 											= "digital_lr";
-// 					tf_range 											= 25000;
-// 					tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-// 					tf_hasLRradio	 									= 1;	
+// 					tf_encryptionCode
+// = "tf_west_radio_code"; 					tf_dialog
+// = "rt1523g_radio_dialog";
+// 					tf_subtype
+// = "digital_lr"; 					tf_range
+// = 25000;
+// 					tf_dialogUpdate
+// = "call TFAR_fnc_updateLRDialogToChannel;";
+// 					tf_hasLRradio
+// = 1;
 // 		};
 // 		class C_P_M12_LRV: OPTRE_M12_LRV
 // 		{
@@ -696,12 +757,16 @@
 // 		editorCategory = "colonial_administration";
 // 		editorSubcategory = "c_police_v";
 // 		// TFAR Config
-// 					tf_encryptionCode 									= "tf_west_radio_code";
-// 					tf_dialog 											= "rt1523g_radio_dialog";
-// 					tf_subtype 											= "digital_lr";
-// 					tf_range 											= 25000;
-// 					tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-// 					tf_hasLRradio	 									= 1;	
+// 					tf_encryptionCode
+// = "tf_west_radio_code"; 					tf_dialog
+// = "rt1523g_radio_dialog";
+// 					tf_subtype
+// = "digital_lr"; 					tf_range
+// = 25000;
+// 					tf_dialogUpdate
+// = "call TFAR_fnc_updateLRDialogToChannel;";
+// 					tf_hasLRradio
+// = 1;
 // 		};
 // 		class C_R_M12_FAV: OPTRE_M12_FAV_snow
 // 		{
@@ -711,8 +776,8 @@
 // 			author= "Frosty & Gunner";
 // 			crew="ARMCO_Rescue_Officer";
 // 			faction="ARMCO_C_Admin";
-// 			displayName="[Colonial Rescue] M12 Warthog LRV (Unarmed)";
-// 			hiddenSelections[]=
+// 			displayName="[Colonial Rescue] M12 Warthog LRV
+// (Unarmed)"; 			hiddenSelections[]=
 // 			{
 // 				"Camo1"
 // 			};
@@ -723,12 +788,16 @@
 // 		editorCategory = "colonial_administration";
 // 		editorSubcategory = "c_rescue_v";
 // 		// TFAR Config
-// 					tf_encryptionCode 									= "tf_west_radio_code";
-// 					tf_dialog 											= "rt1523g_radio_dialog";
-// 					tf_subtype 											= "digital_lr";
-// 					tf_range 											= 25000;
-// 					tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-// 					tf_hasLRradio	 									= 1;	
+// 					tf_encryptionCode
+// = "tf_west_radio_code"; 					tf_dialog
+// = "rt1523g_radio_dialog";
+// 					tf_subtype
+// = "digital_lr"; 					tf_range
+// = 25000;
+// 					tf_dialogUpdate
+// = "call TFAR_fnc_updateLRDialogToChannel;";
+// 					tf_hasLRradio
+// = 1;
 // 		};
 // 		class C_R_M914_RV: OPTRE_M914_RV
 // 		{
@@ -758,12 +827,16 @@
 // 		editorCategory = "colonial_administration";
 // 		editorSubcategory = "c_rescue_v";
 // 		// TFAR Config
-// 					tf_encryptionCode 									= "tf_west_radio_code";
-// 					tf_dialog 											= "rt1523g_radio_dialog";
-// 					tf_subtype 											= "digital_lr";
-// 					tf_range 											= 25000;
-// 					tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-// 					tf_hasLRradio	 									= 1;	
+// 					tf_encryptionCode
+// = "tf_west_radio_code"; 					tf_dialog
+// = "rt1523g_radio_dialog";
+// 					tf_subtype
+// = "digital_lr"; 					tf_range
+// = 25000;
+// 					tf_dialogUpdate
+// = "call TFAR_fnc_updateLRDialogToChannel;";
+// 					tf_hasLRradio
+// = 1;
 // 		};
 // 		class C_R_M12_Medical: OPTRE_M12_FAV_APC
 // 		{
@@ -788,12 +861,16 @@
 // 		editorCategory = "colonial_administration";
 // 		editorSubcategory = "c_rescue_v";
 // 		// TFAR Config
-// 					tf_encryptionCode 									= "tf_west_radio_code";
-// 					tf_dialog 											= "rt1523g_radio_dialog";
-// 					tf_subtype 											= "digital_lr";
-// 					tf_range 											= 25000;
-// 					tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-// 					tf_hasLRradio	 									= 1;	
+// 					tf_encryptionCode
+// = "tf_west_radio_code"; 					tf_dialog
+// = "rt1523g_radio_dialog";
+// 					tf_subtype
+// = "digital_lr"; 					tf_range
+// = 25000;
+// 					tf_dialogUpdate
+// = "call TFAR_fnc_updateLRDialogToChannel;";
+// 					tf_hasLRradio
+// = 1;
 // 		};
 // 		class C_P_M12_PT: OPTRE_M12_FAV_APC
 // 		{
@@ -818,12 +895,16 @@
 // 		editorCategory = "colonial_administration";
 // 		editorSubcategory = "c_police_v";
 // 		// TFAR Config
-// 					tf_encryptionCode 									= "tf_west_radio_code";
-// 					tf_dialog 											= "rt1523g_radio_dialog";
-// 					tf_subtype 											= "digital_lr";
-// 					tf_range 											= 25000;
-// 					tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-// 					tf_hasLRradio	 									= 1;	
+// 					tf_encryptionCode
+// = "tf_west_radio_code"; 					tf_dialog
+// = "rt1523g_radio_dialog";
+// 					tf_subtype
+// = "digital_lr"; 					tf_range
+// = 25000;
+// 					tf_dialogUpdate
+// = "call TFAR_fnc_updateLRDialogToChannel;";
+// 					tf_hasLRradio
+// = 1;
 // 		};
 // 		class C_F_M12_RRV: OPTRE_M12_FAV_APC
 // 		{
@@ -834,8 +915,8 @@
 // 			author= "Frosty & Gunner";
 // 			crew="ARMCO_Firefighter_Officer";
 // 			faction="ARMCO_C_Admin";
-// 			displayName="[Colonial Fire Department] M12F Rapid Response Vehicle";
-// 			hiddenSelections[]=
+// 			displayName="[Colonial Fire Department] M12F Rapid
+// Response Vehicle"; 			hiddenSelections[]=
 // 			{
 // 				"Camo1",
 // 				"Camo2"
@@ -848,12 +929,16 @@
 // 		editorCategory = "colonial_administration";
 // 		editorSubcategory = "c_firefighter_v";
 // 		// TFAR Config
-// 					tf_encryptionCode 									= "tf_west_radio_code";
-// 					tf_dialog 											= "rt1523g_radio_dialog";
-// 					tf_subtype 											= "digital_lr";
-// 					tf_range 											= 25000;
-// 					tf_dialogUpdate 									= "call TFAR_fnc_updateLRDialogToChannel;";
-// 					tf_hasLRradio	 									= 1;	
+// 					tf_encryptionCode
+// = "tf_west_radio_code"; 					tf_dialog
+// = "rt1523g_radio_dialog";
+// 					tf_subtype
+// = "digital_lr"; 					tf_range
+// = 25000;
+// 					tf_dialogUpdate
+// = "call TFAR_fnc_updateLRDialogToChannel;";
+// 					tf_hasLRradio
+// = 1;
 // 		};
 // 	///////////////////////
 // 	//BASE Uniforms Start//
@@ -887,10 +972,14 @@
 // 				"ItemWatch",
 // 				"ItemRadio",
 // 			};
-// 			weapons[] 				= {"OPTRE_MA5A","OPTRE_M6G_SF","Throw","Put"};
-// 			respawnWeapons[] 		= {"OPTRE_MA5A","OPTRE_M6G_SF","Throw","Put"};
-// 			magazines[] 			= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
-// 			respawnMagazines[] 		= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+// 			weapons[] 				=
+// {"OPTRE_MA5A","OPTRE_M6G_SF","Throw","Put"}; 			respawnWeapons[]
+// =
+// {"OPTRE_MA5A","OPTRE_M6G_SF","Throw","Put"}; 			magazines[]
+// =
+// {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+// 			respawnMagazines[] 		=
+// {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 // 			respawnLinkedItems[]=
 // 			{
 // 				"ARMCO_Uniform_Police",
@@ -931,10 +1020,14 @@
 // 				"ItemWatch",
 // 				"ItemRadio",
 // 			};
-// 			weapons[] 				= {"OPTRE_MA5A","OPTRE_M6G_SF","Throw","Put"};
-// 			respawnWeapons[] 		= {"OPTRE_MA5A","OPTRE_M6G_SF","Throw","Put"};
-// 			magazines[] 			= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
-// 			respawnMagazines[] 		= {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+// 			weapons[] 				=
+// {"OPTRE_MA5A","OPTRE_M6G_SF","Throw","Put"}; 			respawnWeapons[]
+// =
+// {"OPTRE_MA5A","OPTRE_M6G_SF","Throw","Put"}; 			magazines[]
+// =
+// {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
+// 			respawnMagazines[] 		=
+// {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_M2_Smoke","OPTRE_M2_Smoke_Green"};
 // 			respawnLinkedItems[]=
 // 			{
 // 				"ARMCO_Uniform_Police",
@@ -948,7 +1041,7 @@
 // 			editorCategory = "colonial_administration";
 // 			editorSubcategory = "c_police";
 // 		};
-	
+
 // 	//--Rescue Officer--//
 // 	class ARMCO_Rescue_Officer: ARMCO_Soldier_WDL_Medic
 // 		{
@@ -1037,7 +1130,6 @@
 
 // 	//---Biohazard---//
 
-
 // 	//--Firefighter---//
 // 	class ARMCO_Firefighter_Officer: ARMCO_Soldier_WDL_Medic
 // 		{
@@ -1124,7 +1216,6 @@
 // 			editorSubcategory = "c_firefighter";
 // 		};
 
-
 // 	////////////////////
 // 	//BACKPACKS CONFIG//
 // 	////////////////////
@@ -1180,8 +1271,9 @@
 // 			author="Frosty";
 // 			scope=2;
 // 			displayName="[Colonial Police] ILBE RT-1523G (ASIP)";
-// 			descriptionShort="RT-1523G (ASIP) long range radio 20km";
-// 			picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+// 			descriptionShort="RT-1523G (ASIP) long range radio
+// 20km";
+// picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
 // 			editorPreview="";
 // 			model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
 // 			hiddenSelectionsTextures[]=
@@ -1205,8 +1297,9 @@
 // 			author="Frosty";
 // 			scope=2;
 // 			displayName="[Colonial Rescue] ILBE RT-1523G (ASIP)";
-// 			descriptionShort="RT-1523G (ASIP) long range radio 20km";
-// 			picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+// 			descriptionShort="RT-1523G (ASIP) long range radio
+// 20km";
+// picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
 // 			editorPreview="";
 // 			model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
 // 			hiddenSelectionsTextures[]=
@@ -1229,9 +1322,9 @@
 // 		{
 // 			author="Frosty";
 // 			scope=2;
-// 			displayName="[Colonial Fire Department] ILBE RT-1523G (ASIP)";
-// 			descriptionShort="RT-1523G (ASIP) long range radio 20km";
-// 			picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+// 			displayName="[Colonial Fire Department] ILBE RT-1523G
+// (ASIP)"; 			descriptionShort="RT-1523G (ASIP) long range radio
+// 20km"; 			picture="\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
 // 			editorPreview="";
 // 			model="\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
 // 			hiddenSelectionsTextures[]=
@@ -1252,9 +1345,7 @@
 // 		};
 // 	//---ODST Long Range Backpacks---//
 
-
 // 	//ODST Hard Packs//
-
 
 // 	//Personal Packs// ,"AP_Heavy","BioFoam"
 
@@ -1374,18 +1465,19 @@
 // 	//-------------------------//
 
 // 	/////////////////
-// 	//Polce Helmets// "camo","camo2","camo3","H_Collar","H_Neck","H_UNSCVacLower","H_UNSCVacVisor","H_VacCollar"
-// 	/////////////////	
+// 	//Polce Helmets//
+// "camo","camo2","camo3","H_Collar","H_Neck","H_UNSCVacLower","H_UNSCVacVisor","H_VacCollar"
+// 	/////////////////
 // 	class ARMCO_CH252_Helmet_Police: OPTRE_UNSC_CH252_Helmet_Base
 // 		{
 // 			dlc = "ARMCO OPTRE Reskins";
 // 			scope=2;
 // 			scopeCurator=2;
 // 			author= "Frosty & Mac";
-// 			displayName="[Colonial Police] CH252 Helmet (Vac Sealed)";
-// 			picture= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
-// 			model= "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
-// 			hiddenSelections[]= 
+// 			displayName="[Colonial Police] CH252 Helmet (Vac
+// Sealed)"; 			picture=
+// "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa"; 			model=
+// "\OPTRE_UNSC_Units\Army\helmet_p.p3d"; hiddenSelections[]=
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -1393,13 +1485,13 @@
 // 				"H_Collar",
 // 				"H_Ghillie"
 // 			};
-// 			hiddenSelectionsTextures[]= 
+// 			hiddenSelectionsTextures[]=
 // 			{
 // 				"custom_emergency\data\police\helmet\h_colonial_police_co.paa",
 // 				"custom_emergency\data\police\helmet\h_visor_colonial_police_co.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 			};
-// 			subItems[] = 
+// 			subItems[] =
 // 			{
 // 				"Integrated_NVG_TI_0_F",
 // 			};
@@ -1407,8 +1499,10 @@
 // 			optreHUDStyle = "ODST_1";
 // 			class ItemInfo: HeadgearItem
 // 			{
-// 				uniformModel												= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 				hiddenSelections[]   										= 
+// 				uniformModel
+// = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -1416,33 +1510,38 @@
 // 					"H_Collar",
 // 					"H_Ghillie"
 // 				};
-// 				hiddenSelectionsTextures[]   								= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 				"custom_emergency\data\police\helmet\h_colonial_police_co.paa",
 // 				"custom_emergency\data\police\helmet\h_visor_colonial_police_co.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 				};
-// 				ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
-// 				ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
-// 			class HitpointsProtectionInfo
+// 				ace_hearing_protection = 1.50;  // Protection
+// against deafening (0 to 1, higher means more protection)
+// ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher
+// means more muffling) 			class HitpointsProtectionInfo
 // 				{
 // 					class Head
 // 					{
-// 						hitpointName 										= "HitHead";
-// 						armor 												= 25;
-// 						passThrough 										= 0.1;
+// 						hitpointName
+// = "HitHead"; 						armor
+// = 25; 						passThrough
+// = 0.1;
 // 					};
 // 					class Face
 // 					{
-// 						hitpointName 										= "HitFace";
-// 						armor 												= 25;
-// 						passThrough 										= 0.1;
-// 					};			
-// 					class Neck				
-// 					{				
-// 						hitpointName										= "HitNeck";
-// 						armor												= 20;
-// 						passThrough											= 0.1;
+// 						hitpointName
+// = "HitFace"; 						armor
+// = 25; 						passThrough
+// = 0.1;
+// 					};
+// 					class Neck
+// 					{
+// 						hitpointName
+// = "HitNeck"; 						armor
+// = 20; 						passThrough
+// = 0.1;
 // 					};
 // 				};
 // 			};
@@ -1453,10 +1552,10 @@
 // 			scope=1;
 // 			scopeCurator=1;
 // 			author= "Frosty & Mac";
-// 			displayName="[Colonial Police] CH252 Helmet (Vac Sealed/clear)";
-// 			picture= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
-// 			model= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 			hiddenSelections[]= 
+// 			displayName="[Colonial Police] CH252 Helmet (Vac
+// Sealed/clear)"; 			picture=
+// "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa"; 			model=
+// "\OPTRE_UNSC_Units\Army\helmet.p3d"; 			hiddenSelections[]=
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -1464,13 +1563,13 @@
 // 				"H_Collar",
 // 				"H_Ghillie"
 // 			};
-// 			hiddenSelectionsTextures[]= 
+// 			hiddenSelectionsTextures[]=
 // 			{
 // 				"custom_emergency\data\police\helmet\h_colonial_police_co.paa",
 // 				"custom_emergency\data\visor\Helmet_Visor_ca.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 			};
-// 			subItems[] = 
+// 			subItems[] =
 // 			{
 // 				"Integrated_NVG_TI_0_F",
 // 			};
@@ -1478,8 +1577,10 @@
 // 			optreHUDStyle = "ODST_1";
 // 			class ItemInfo: HeadgearItem
 // 			{
-// 				uniformModel												= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 				hiddenSelections[]   										= 
+// 				uniformModel
+// = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -1487,39 +1588,44 @@
 // 					"H_Collar",
 // 					"H_Ghillie"
 // 				};
-// 				hiddenSelectionsTextures[]   								= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 					"custom_emergency\data\police\helmet\h_colonial_police_co.paa",
 // 					"custom_emergency\data\visor\Helmet_Visor_ca.paa",
 // 					"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 				};
-// 				ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
-// 				ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
-// 				class HitpointsProtectionInfo
+// 				ace_hearing_protection = 1.50;  // Protection
+// against deafening (0 to 1, higher means more protection)
+// ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher
+// means more muffling) 				class
+// HitpointsProtectionInfo
 // 				{
 // 					class Head
 // 					{
-// 						hitpointName 										= "HitHead";
-// 						armor 												= 25;
-// 						passThrough 										= 0.1;
+// 						hitpointName
+// = "HitHead"; 						armor
+// = 25; 						passThrough
+// = 0.1;
 // 					};
 // 					class Face
 // 					{
-// 						hitpointName 										= "HitFace";
-// 						armor 												= 10;
-// 						passThrough 										= 0.1;
-// 					};			
-// 					class Neck				
-// 					{				
-// 						hitpointName										= "HitNeck";
-// 						armor												= 20;
-// 						passThrough											= 0.1;
+// 						hitpointName
+// = "HitFace"; 						armor
+// = 10; 						passThrough
+// = 0.1;
+// 					};
+// 					class Neck
+// 					{
+// 						hitpointName
+// = "HitNeck"; 						armor
+// = 20; 						passThrough
+// = 0.1;
 // 					};
 // 				};
 // 			};
-// 		};	
+// 		};
 
-	
 // 	//////////////////
 // 	//Rescue Helmets//
 // 	//////////////////
@@ -1529,10 +1635,12 @@
 // 			scope=2;
 // 			scopeCurator=2;
 // 			author="Frosty & Mac";
-// 			displayName="[Colonial Rescue] CH252 Helmet (Vac Sealed)";
-// 			picture   														= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
-// 			model 															= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 			hiddenSelections[]= 
+// 			displayName="[Colonial Rescue] CH252 Helmet (Vac
+// Sealed)";
+// 			picture
+// = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
+// model = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]=
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -1540,13 +1648,13 @@
 // 				"H_Collar",
 // 				"H_Ghillie"
 // 			};
-// 			hiddenSelectionsTextures[]= 
+// 			hiddenSelectionsTextures[]=
 // 			{
 // 				"custom_emergency\data\medical\helmet\h_colonial_rescue_co.paa",
 // 				"custom_emergency\data\medical\helmet\h_visor_colonial_rescue_co.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 			};
-// 			subItems[] = 
+// 			subItems[] =
 // 			{
 // 				"Integrated_NVG_TI_0_F",
 // 			};
@@ -1554,8 +1662,10 @@
 // 			optreHUDStyle = "ODST_1";
 // 			class ItemInfo: HeadgearItem
 // 			{
-// 				uniformModel												= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 				hiddenSelections[]   										= 
+// 				uniformModel
+// = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -1563,14 +1673,17 @@
 // 					"H_Collar",
 // 					"H_Ghillie"
 // 				};
-// 				hiddenSelectionsTextures[]   								= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 				"custom_emergency\data\medical\helmet\h_colonial_rescue_co.paa",
 // 				"custom_emergency\data\medical\helmet\h_visor_colonial_rescue_co.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 				};
-// 				ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
-// 				ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
+// 				ace_hearing_protection = 1.50;  // Protection
+// against deafening (0 to 1, higher means more protection)
+// ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher
+// means more muffling)
 // 			};
 // 		};
 // 	class ARMCO_CH252_Helmet_Rescue_dp: OPTRE_UNSC_CH252_Helmet_Base
@@ -1579,10 +1692,11 @@
 // 			scope=1;
 // 			scopeCurator=1;
 // 			author="Frosty & Mac";
-// 			displayName="[Colonial Rescue] CH252 Helmet (Vac Sealed/clear)";
-// 			picture   														= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
-// 			model 															= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 			hiddenSelections[]= 
+// 			displayName="[Colonial Rescue] CH252 Helmet (Vac
+// Sealed/clear)"; 			picture
+// = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
+// model = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]=
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -1590,13 +1704,13 @@
 // 				"H_Collar",
 // 				"H_Ghillie"
 // 			};
-// 			hiddenSelectionsTextures[]= 
+// 			hiddenSelectionsTextures[]=
 // 			{
 // 				"custom_emergency\data\medical\helmet\h_colonial_rescue_co.paa",
 // 				"custom_emergency\data\visor\Helmet_Visor_ca.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 			};
-// 			subItems[] = 
+// 			subItems[] =
 // 			{
 // 				"Integrated_NVG_TI_0_F",
 // 			};
@@ -1604,8 +1718,10 @@
 // 			optreHUDStyle = "ODST_1";
 // 			class ItemInfo: HeadgearItem
 // 			{
-// 				uniformModel												= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 				hiddenSelections[]   										= 
+// 				uniformModel
+// = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -1613,43 +1729,47 @@
 // 					"H_Collar",
 // 					"H_Ghillie"
 // 				};
-// 				hiddenSelectionsTextures[]   								= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 				"custom_emergency\data\medical\helmet\h_colonial_rescue_co.paa",
 // 				"custom_emergency\data\visor\Helmet_Visor_ca.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 				};
-// 				ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
-// 				ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
-// 				class HitpointsProtectionInfo
+// 				ace_hearing_protection = 1.50;  // Protection
+// against deafening (0 to 1, higher means more protection)
+// ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher
+// means more muffling) 				class
+// HitpointsProtectionInfo
 // 				{
 // 					class Head
 // 					{
-// 						hitpointName 										= "HitHead";
-// 						armor 												= 25;
-// 						passThrough 										= 0.1;
+// 						hitpointName
+// = "HitHead"; 						armor
+// = 25; 						passThrough
+// = 0.1;
 // 					};
 // 					class Face
 // 					{
-// 						hitpointName 										= "HitFace";
-// 						armor 												= 10;
-// 						passThrough 										= 0.1;
-// 					};			
-// 					class Neck				
-// 					{				
-// 						hitpointName										= "HitNeck";
-// 						armor												= 20;
-// 						passThrough											= 0.1;
+// 						hitpointName
+// = "HitFace"; 						armor
+// = 10; 						passThrough
+// = 0.1;
+// 					};
+// 					class Neck
+// 					{
+// 						hitpointName
+// = "HitNeck"; 						armor
+// = 20; 						passThrough
+// = 0.1;
 // 					};
 // 				};
 // 			};
 // 		};
 
-	
 // 	/////////////////////
 // 	//Biohazard Helmets//
 // 	/////////////////////
-
 
 // 	///////////////////////
 // 	//Firefighter Helmets//
@@ -1660,10 +1780,10 @@
 // 			scope=2;
 // 			scopeCurator=2;
 // 			author="Frosty & Mac";
-// 			displayName="[Colonial Fire Department] CH252 Helmet (Vac Sealed)";
-// 			picture   														= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
-// 			model 															= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 			hiddenSelections[]= 
+// 			displayName="[Colonial Fire Department] CH252 Helmet
+// (Vac Sealed)"; 			picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
+// model = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]=
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -1671,13 +1791,13 @@
 // 				"H_Collar",
 // 				"H_Ghillie"
 // 			};
-// 			hiddenSelectionsTextures[]= 
+// 			hiddenSelectionsTextures[]=
 // 			{
 // 				"custom_emergency\data\firefighter\helmet\h_colonial_firefighter_co.paa",
 // 				"custom_emergency\data\firefighter\helmet\h_visor_colonial_firefighter_co.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 			};
-// 			subItems[] = 
+// 			subItems[] =
 // 			{
 // 				"Integrated_NVG_TI_0_F",
 // 			};
@@ -1685,8 +1805,10 @@
 // 			optreHUDStyle = "ODST_1";
 // 			class ItemInfo: HeadgearItem
 // 			{
-// 				uniformModel												= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 				hiddenSelections[]   										= 
+// 				uniformModel
+// = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -1694,14 +1816,17 @@
 // 					"H_Collar",
 // 					"H_Ghillie"
 // 				};
-// 				hiddenSelectionsTextures[]   								= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 				"custom_emergency\data\firefighter\helmet\h_colonial_firefighter_co.paa",
 // 				"custom_emergency\data\firefighter\helmet\h_visor_colonial_firefighter_co.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 				};
-// 				ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
-// 				ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
+// 				ace_hearing_protection = 1.50;  // Protection
+// against deafening (0 to 1, higher means more protection)
+// ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher
+// means more muffling)
 // 			};
 // 		};
 // 	class ARMCO_CH252_Helmet_Firefighter_dp: OPTRE_UNSC_CH252_Helmet_Base
@@ -1710,10 +1835,9 @@
 // 			scope=1;
 // 			scopeCurator=1;
 // 			author="Frosty & Mac";
-// 			displayName="[Colonial Fire Department] CH252 Helmet (Vac Sealed/clear)";
-// 			picture   														= "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa";
-// 			model 															= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 			hiddenSelections[]= 
+// 			displayName="[Colonial Fire Department] CH252 Helmet
+// (Vac Sealed/clear)"; 			picture =
+// "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl.paa"; 			model = "\OPTRE_UNSC_Units\Army\helmet.p3d"; 			hiddenSelections[]=
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -1721,13 +1845,13 @@
 // 				"H_Collar",
 // 				"H_Ghillie"
 // 			};
-// 			hiddenSelectionsTextures[]= 
+// 			hiddenSelectionsTextures[]=
 // 			{
 // 				"custom_emergency\data\firefighter\helmet\h_colonial_firefighter_co.paa",
 // 				"custom_emergency\data\firefighter\helmet\h_visor_colonial_firefighter_co.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 			};
-// 			subItems[] = 
+// 			subItems[] =
 // 			{
 // 				"Integrated_NVG_TI_0_F",
 // 			};
@@ -1735,8 +1859,10 @@
 // 			optreHUDStyle = "ODST_1";
 // 			class ItemInfo: HeadgearItem
 // 			{
-// 				uniformModel												= "\OPTRE_UNSC_Units\Army\helmet.p3d";
-// 				hiddenSelections[]   										= 
+// 				uniformModel
+// = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+// hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -1744,43 +1870,48 @@
 // 					"H_Collar",
 // 					"H_Ghillie"
 // 				};
-// 				hiddenSelectionsTextures[]   								= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 				"custom_emergency\data\firefighter\helmet\h_colonial_firefighter_co.paa",
 // 				"custom_emergency\data\firefighter\helmet\h_visor_colonial_firefighter_co.paa",
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa"
 // 				};
-// 				ace_hearing_protection = 1.50;  // Protection against deafening (0 to 1, higher means more protection)
-// 				ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher means more muffling)
-// 				class HitpointsProtectionInfo
+// 				ace_hearing_protection = 1.50;  // Protection
+// against deafening (0 to 1, higher means more protection)
+// ace_hearing_lowerVolume = 0.10;  // Muffling of the sound (0 to 1, higher
+// means more muffling) 				class
+// HitpointsProtectionInfo
 // 				{
 // 					class Head
 // 					{
-// 						hitpointName 										= "HitHead";
-// 						armor 												= 25;
-// 						passThrough 										= 0.1;
+// 						hitpointName
+// = "HitHead"; 						armor
+// = 25; 						passThrough
+// = 0.1;
 // 					};
 // 					class Face
 // 					{
-// 						hitpointName 										= "HitFace";
-// 						armor 												= 10;
-// 						passThrough 										= 0.1;
-// 					};			
-// 					class Neck				
-// 					{				
-// 						hitpointName										= "HitNeck";
-// 						armor												= 20;
-// 						passThrough											= 0.1;
+// 						hitpointName
+// = "HitFace"; 						armor
+// = 10; 						passThrough
+// = 0.1;
+// 					};
+// 					class Neck
+// 					{
+// 						hitpointName
+// = "HitNeck"; 						armor
+// = 20; 						passThrough
+// = 0.1;
 // 					};
 // 				};
 // 			};
 // 		};
 
-
 // 	///////////////////
 // 	//O.D.S.T Helmets//
 // 	///////////////////
-	
+
 // 	//----------HELMETS END-----------//
 
 // 	/////////////////
@@ -1788,13 +1919,15 @@
 // 	/////////////////
 // 	class OPTRE_UNSC_M52A_Armor_Base;
 // 	class OPTRE_UNSC_M52A_Armor1_WDL;
-// 	class ARMCO_M52A_Armor_Base: OPTRE_UNSC_M52A_Armor_Base 
-// 		{	
+// 	class ARMCO_M52A_Armor_Base: OPTRE_UNSC_M52A_Armor_Base
+// 		{
 // 			scope = 0;
 // 			dlc = "ARMCO Faction Mod ; OPTRE Re-textures";
-// 			author											= "Frosty & Mac";
-// 			displayName  									= "[ARMCO] Base M52A Body Armor";
-// 			hiddenSelections[]   							= 
+// 			author
+// = "Frosty & Mac"; 			displayName
+// =
+// "[ARMCO] Base M52A Body Armor"; 			hiddenSelections[]
+// =
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -1829,7 +1962,8 @@
 // 				"AS_SmallLeft",
 // 				"AS_SmallRight"
 // 			};
-// 			hiddenSelectionsTextures[]   					= 
+// 			hiddenSelectionsTextures[]
+// =
 // 			{
 // 				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
 // 				"optre_unsc_units\army\data\armor_co.paa",
@@ -1837,13 +1971,15 @@
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 // 				"optre_unsc_units\army\data\odst_armor_co.paa"
 // 			};
-// 			class ItemInfo: VestItem 
+// 			class ItemInfo: VestItem
 // 			{
-// 				uniformModel 								= "\OPTRE_UNSC_Units\Army\armor.p3d";
-// 				containerClass 								= "Supply300";
-// 				mass 										= 80;
-// 				modelSides[] 								= {6};
-// 				hiddenSelections[]   						= 
+// 				uniformModel
+// =
+// "\OPTRE_UNSC_Units\Army\armor.p3d";
+// 				containerClass
+// = "Supply300"; 				mass = 80; 				modelSides[]
+// = {6}; 				hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -1878,7 +2014,8 @@
 // 					"AS_SmallLeft",
 // 					"AS_SmallRight"
 // 				};
-// 				hiddenSelectionsTextures[]   				= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 					"OPTRE_UNSC_Units\Army\data\vest_co.paa",
 // 					"optre_unsc_units\army\data\armor_co.paa",
@@ -1890,62 +2027,68 @@
 // 				{
 // 					class Neck
 // 					{
-// 						hitpointName						= "HitNeck";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitNeck"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Legs
 // 					{
-// 						hitpointName						= "HitLegs";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitLegs"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Arms
 // 					{
-// 						hitpointName						= "HitArms";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitArms"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Hands
 // 					{
-// 						hitpointName						= "HitHands";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitHands"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Chest
 // 					{
-// 						hitpointName 						= "HitChest";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitChest"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 					class Diaphragm
 // 					{
-// 						hitpointName 						= "HitDiaphragm";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitDiaphragm"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Abdomen
 // 					{
-// 						hitpointName 						= "HitAbdomen";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitAbdomen"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Body
 // 					{
-// 						hitpointName 						= "HitBody";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitBody"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 				};
 // 			};
-// 		}; 
-// 	class ARMCO_M52M_Armor_Base: OPTRE_UNSC_M52A_Armor_Base 
-// 		{	
+// 		};
+// 	class ARMCO_M52M_Armor_Base: OPTRE_UNSC_M52A_Armor_Base
+// 		{
 // 			scope = 1;
 // 			dlc = "ARMCO Faction Mod ; OPTRE Re-textures";
-// 			author											= "Frosty & Mac";
-// 			displayName  									= "[ARMCO] Base M52A Body Armor [Medical]";
-// 			hiddenSelections[]   							= 
+// 			author
+// = "Frosty & Mac"; 			displayName
+// =
+// "[ARMCO] Base M52A Body Armor [Medical]"; hiddenSelections[]
+// =
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -1980,7 +2123,8 @@
 // 				"AS_SmallLeft",
 // 				"AS_SmallRight"
 // 			};
-// 			hiddenSelectionsTextures[]   					= 
+// 			hiddenSelectionsTextures[]
+// =
 // 			{
 // 				"OPTRE_UNSC_Units\Army\data\vest_co.paa",
 // 				"optre_unsc_units\army\data\armor_co.paa",
@@ -1988,13 +2132,15 @@
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 // 				"optre_unsc_units\army\data\odst_armor_co.paa"
 // 			};
-// 			class ItemInfo: VestItem 
+// 			class ItemInfo: VestItem
 // 			{
-// 				uniformModel 								= "\OPTRE_UNSC_Units\Army\armor.p3d";
-// 				containerClass 								= "Supply350";
-// 				mass 										= 80;
-// 				modelSides[] 								= {6};
-// 				hiddenSelections[]   						= 
+// 				uniformModel
+// =
+// "\OPTRE_UNSC_Units\Army\armor.p3d";
+// 				containerClass
+// = "Supply350"; 				mass = 80; 				modelSides[]
+// = {6}; 				hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -2028,7 +2174,8 @@
 // 					"AS_ODSTSniperRight",
 // 					"AS_SmallLeft",
 // 					"AS_SmallRight"};
-// 				hiddenSelectionsTextures[]   				= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 					"OPTRE_UNSC_Units\Army\data\vest_co.paa",
 // 					"optre_unsc_units\army\data\armor_co.paa",
@@ -2040,62 +2187,69 @@
 // 				{
 // 					class Neck
 // 					{
-// 						hitpointName						= "HitNeck";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitNeck"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Legs
 // 					{
-// 						hitpointName						= "HitLegs";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitLegs"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Arms
 // 					{
-// 						hitpointName						= "HitArms";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitArms"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Hands
 // 					{
-// 						hitpointName						= "HitHands";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitHands"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Chest
 // 					{
-// 						hitpointName 						= "HitChest";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitChest"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 					class Diaphragm
 // 					{
-// 						hitpointName 						= "HitDiaphragm";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitDiaphragm"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Abdomen
 // 					{
-// 						hitpointName 						= "HitAbdomen";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitAbdomen"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Body
 // 					{
-// 						hitpointName 						= "HitBody";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitBody"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 				};
 // 			};
-// 		}; 
-// 	class ARMCO_M52D_Armor_Base: OPTRE_UNSC_M52A_Armor1_WDL 
-// 		{	
+// 		};
+// 	class ARMCO_M52D_Armor_Base: OPTRE_UNSC_M52A_Armor1_WDL
+// 		{
 // 			dlc = "ARMCO OPTRE Reskins";
 // 			scope = 1;
-// 			author											= "Frosty & Mac";							= "Frosty & Mac";
-// 			displayName  													= "[ARMCO] M52D Body Armor Base";
-// 			hiddenSelections[]   											= 
+// 			author
+// =
+// "Frosty & Mac";							= "Frosty
+// & Mac"; 			displayName = "[ARMCO] M52D Body Armor Base";
+// hiddenSelections[]
+// =
 // 			{
 // 				"camo",
 // 				"camo2",
@@ -2148,7 +2302,8 @@
 // 				"APO_SMG",
 // 				"APO_Sniper","CustomKit_Scorch"
 // 			};
-// 			hiddenSelectionsTextures[]   									= 
+// 			hiddenSelectionsTextures[]
+// =
 // 			{
 // 				"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
 // 				"optre_unsc_units\army\data\armor_odst_co.paa",
@@ -2156,10 +2311,11 @@
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 // 				"optre_unsc_units\army\data\odst_armor_co.paa"
 // 			};
-// 			class ItemInfo: VestItem				
+// 			class ItemInfo: VestItem
 // 			{
-// 				containerClass 								= "Supply350";			
-// 				hiddenSelections[]   										= 
+// 				containerClass
+// = "Supply350"; 				hiddenSelections[]
+// =
 // 				{
 // 				"camo",
 // 				"camo2",
@@ -2212,7 +2368,8 @@
 // 				"APO_SMG",
 // 				"APO_Sniper","CustomKit_Scorch"
 // 				};
-// 				hiddenSelectionsTextures[]   								= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 					"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
 // 					"optre_unsc_units\army\data\armor_odst_co.paa",
@@ -2220,59 +2377,68 @@
 // 					"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 // 					"optre_unsc_units\army\data\odst_armor_co.paa"
 // 				};
-// 				class HitpointsProtectionInfo				
-// 				{				
-// 					class Neck				
-// 					{				
-// 						hitpointName										= "HitNeck";
-// 						armor												= 45;
-// 						passThrough											= 0.1;
-// 					};				
-// 					class Legs				
-// 					{				
-// 						hitpointName										= "HitLegs";
-// 						armor												= 45;
-// 						passThrough											= 0.1;
-// 					};				
-// 					class Arms				
-// 					{				
-// 						hitpointName										= "HitArms";
-// 						armor												= 45;
-// 						passThrough											= 0.1;
-// 					};				
-// 					class Hands				
-// 					{				
-// 						hitpointName										= "HitHands";
-// 						armor												= 45;
-// 						passThrough											= 0.1;
-// 					};				
-// 					class Chest				
-// 					{				
-// 						hitpointName 										= "HitChest";
-// 						armor 												= 45;
-// 						passThrough 										= 0.1;
-// 					};				
-// 					class Diaphragm				
-// 					{				
-// 						hitpointName 										= "HitDiaphragm";
-// 						armor 												= 45;
-// 						passThrough 										= 0.1;
-// 					};				
-// 					class Abdomen				
-// 					{				
-// 						hitpointName 										= "HitAbdomen";
-// 						armor 												= 45;
-// 						passThrough 										= 0.1;
-// 					};				
-// 					class Body				
-// 					{				
-// 						hitpointName 										= "HitBody";
-// 						armor 												= 45;
-// 						passThrough 										= 0.1;
+// 				class HitpointsProtectionInfo
+// 				{
+// 					class Neck
+// 					{
+// 						hitpointName
+// = "HitNeck"; 						armor
+// = 45; 						passThrough
+// = 0.1;
+// 					};
+// 					class Legs
+// 					{
+// 						hitpointName
+// = "HitLegs"; 						armor
+// = 45; 						passThrough
+// = 0.1;
+// 					};
+// 					class Arms
+// 					{
+// 						hitpointName
+// = "HitArms"; 						armor
+// = 45; 						passThrough
+// = 0.1;
+// 					};
+// 					class Hands
+// 					{
+// 						hitpointName
+// = "HitHands"; 						armor
+// = 45; 						passThrough
+// = 0.1;
+// 					};
+// 					class Chest
+// 					{
+// 						hitpointName
+// = "HitChest"; 						armor
+// = 45; 						passThrough
+// = 0.1;
+// 					};
+// 					class Diaphragm
+// 					{
+// 						hitpointName
+// = "HitDiaphragm";
+// 						armor
+// = 45; 						passThrough
+// = 0.1;
+// 					};
+// 					class Abdomen
+// 					{
+// 						hitpointName
+// = "HitAbdomen"; 						armor
+// = 45; 						passThrough
+// = 0.1;
+// 					};
+// 					class Body
+// 					{
+// 						hitpointName
+// = "HitBody"; 						armor
+// = 45; 						passThrough
+// = 0.1;
 // 					};
 // 				};
 // 			};
-// 		}; 
+// 		};
 
 // 	//---Base Vests End---//
 // 	//--------------------//
@@ -2283,7 +2449,7 @@
 // 			dlc = "ARMCO Faction Mod ; OPTRE Re-textures";
 // 			author	= "Frosty & Mac";
 // 			displayName  = "[Colonial Police] M52M Vest";
-// 			hiddenSelections[]= 
+// 			hiddenSelections[]=
 // 			{
 // 					"camo",
 // 					"camo2",
@@ -2319,7 +2485,8 @@
 // 					"APO_SMG",
 // 					"APO_Sniper","CustomKit_Scorch"
 // 			};
-// 			hiddenSelectionsTextures[]   					= 
+// 			hiddenSelectionsTextures[]
+// =
 // 			{
 // 				"custom_emergency\data\police\armour\v_colonial_police_co.paa",
 // 				"custom_emergency\data\police\armour\a_colonial_police_co.paa",
@@ -2327,13 +2494,15 @@
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 // 				"optre_unsc_units\army\data\odst_armor_co.paa"
 // 			};
-// 			class ItemInfo: VestItem 
+// 			class ItemInfo: VestItem
 // 			{
-// 				uniformModel 								= "\OPTRE_UNSC_Units\Army\armor.p3d";
-// 				containerClass 								= "Supply200";
-// 				mass 										= 80;
-// 				modelSides[] 								= {6};
-// 				hiddenSelections[]   						= 
+// 				uniformModel
+// =
+// "\OPTRE_UNSC_Units\Army\armor.p3d";
+// 				containerClass
+// = "Supply200"; 				mass = 80; 				modelSides[]
+// = {6}; 				hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -2369,7 +2538,8 @@
 // 					"APO_SMG",
 // 					"APO_Sniper","CustomKit_Scorch"
 // 				};
-// 				hiddenSelectionsTextures[]   				= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 				"custom_emergency\data\police\armour\v_colonial_police_co.paa",
 // 				"custom_emergency\data\police\armour\a_colonial_police_co.paa",
@@ -2381,51 +2551,55 @@
 // 				{
 // 					class Neck
 // 					{
-// 						hitpointName						= "HitNeck";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitNeck"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Legs
 // 					{
-// 						hitpointName						= "HitLegs";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitLegs"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Arms
 // 					{
-// 						hitpointName						= "HitArms";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitArms"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Hands
 // 					{
-// 						hitpointName						= "HitHands";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitHands"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Chest
 // 					{
-// 						hitpointName 						= "HitChest";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitChest"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 					class Diaphragm
 // 					{
-// 						hitpointName 						= "HitDiaphragm";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitDiaphragm"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Abdomen
 // 					{
-// 						hitpointName 						= "HitAbdomen";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitAbdomen"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Body
 // 					{
-// 						hitpointName 						= "HitBody";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitBody"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 				};
 // 			};
@@ -2437,7 +2611,7 @@
 // 			dlc = "ARMCO Faction Mod ; OPTRE Re-textures";
 // 			author	= "Frosty & Mac";
 // 			displayName = "[Colonial Rescue] M52M Vest";
-// 			hiddenSelections[] = 
+// 			hiddenSelections[] =
 // 			{
 // 					"camo",
 // 					"camo2",
@@ -2473,7 +2647,8 @@
 // 					"APO_SMG",
 // 					"APO_Sniper","CustomKit_Scorch"
 // 			};
-// 			hiddenSelectionsTextures[]   					=
+// 			hiddenSelectionsTextures[]
+// =
 // 			{
 // 				"custom_emergency\data\medical\armour\v_colonial_rescue_co.paa",
 // 				"custom_emergency\data\medical\armour\a_colonial_rescue_co.paa",
@@ -2481,13 +2656,15 @@
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 // 				"optre_unsc_units\army\data\odst_armor_co.paa"
 // 			};
-// 			class ItemInfo: VestItem 
+// 			class ItemInfo: VestItem
 // 			{
-// 				uniformModel 								= "\OPTRE_UNSC_Units\Army\armor.p3d";
-// 				containerClass 								= "Supply200";
-// 				mass 										= 80;
-// 				modelSides[] 								= {6};
-// 				hiddenSelections[]   						= 
+// 				uniformModel
+// =
+// "\OPTRE_UNSC_Units\Army\armor.p3d";
+// 				containerClass
+// = "Supply200"; 				mass = 80; 				modelSides[]
+// = {6}; 				hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -2523,7 +2700,8 @@
 // 					"APO_SMG",
 // 					"APO_Sniper","CustomKit_Scorch"
 // 				};
-// 				hiddenSelectionsTextures[]   				= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 					"custom_emergency\data\medical\armour\v_colonial_rescue_co.paa",
 // 					"custom_emergency\data\medical\armour\a_colonial_rescue_co.paa",
@@ -2535,51 +2713,55 @@
 // 				{
 // 					class Neck
 // 					{
-// 						hitpointName						= "HitNeck";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitNeck"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Legs
 // 					{
-// 						hitpointName						= "HitLegs";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitLegs"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Arms
 // 					{
-// 						hitpointName						= "HitArms";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitArms"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Hands
 // 					{
-// 						hitpointName						= "HitHands";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitHands"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Chest
 // 					{
-// 						hitpointName 						= "HitChest";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitChest"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 					class Diaphragm
 // 					{
-// 						hitpointName 						= "HitDiaphragm";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitDiaphragm"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Abdomen
 // 					{
-// 						hitpointName 						= "HitAbdomen";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitAbdomen"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Body
 // 					{
-// 						hitpointName 						= "HitBody";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitBody"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 				};
 // 			};
@@ -2595,7 +2777,7 @@
 // 			dlc = "ARMCO Faction Mod ; OPTRE Re-textures";
 // 			author	= "Frosty & Mac";
 // 			displayName = "[Colonial Fire Department] M52F Vest";
-// 			hiddenSelections[] = 
+// 			hiddenSelections[] =
 // 			{
 // 					"camo",
 // 					"camo2",
@@ -2631,7 +2813,8 @@
 // 					"APO_SMG",
 // 					"APO_Sniper","CustomKit_Scorch"
 // 			};
-// 			hiddenSelectionsTextures[]   					=
+// 			hiddenSelectionsTextures[]
+// =
 // 			{
 // 				"custom_emergency\data\firefighter\armour\v_colonial_firefighter_co.paa",
 // 				"custom_emergency\data\firefighter\armour\a_colonial_firefighter_co.paa",
@@ -2639,13 +2822,15 @@
 // 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 // 				"optre_unsc_units\army\data\odst_armor_co.paa"
 // 			};
-// 			class ItemInfo: VestItem 
+// 			class ItemInfo: VestItem
 // 			{
-// 				uniformModel 								= "\OPTRE_UNSC_Units\Army\armor.p3d";
-// 				containerClass 								= "Supply200";
-// 				mass 										= 80;
-// 				modelSides[] 								= {6};
-// 				hiddenSelections[]   						= 
+// 				uniformModel
+// =
+// "\OPTRE_UNSC_Units\Army\armor.p3d";
+// 				containerClass
+// = "Supply200"; 				mass = 80; 				modelSides[]
+// = {6}; 				hiddenSelections[]
+// =
 // 				{
 // 					"camo",
 // 					"camo2",
@@ -2681,7 +2866,8 @@
 // 					"APO_SMG",
 // 					"APO_Sniper","CustomKit_Scorch"
 // 				};
-// 				hiddenSelectionsTextures[]   				= 
+// 				hiddenSelectionsTextures[]
+// =
 // 				{
 // 					"custom_emergency\data\firefighter\armour\v_colonial_firefighter_co.paa",
 // 				"custom_emergency\data\firefighter\armour\a_colonial_firefighter_co.paa",
@@ -2693,51 +2879,55 @@
 // 				{
 // 					class Neck
 // 					{
-// 						hitpointName						= "HitNeck";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitNeck"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Legs
 // 					{
-// 						hitpointName						= "HitLegs";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitLegs"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Arms
 // 					{
-// 						hitpointName						= "HitArms";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitArms"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Hands
 // 					{
-// 						hitpointName						= "HitHands";
-// 						armor								= 35;
-// 						passThrough							= 0.1;
+// 						hitpointName
+// = "HitHands"; 						armor = 35;
+// passThrough							= 0.1;
 // 					};
 // 					class Chest
 // 					{
-// 						hitpointName 						= "HitChest";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitChest"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 					class Diaphragm
 // 					{
-// 						hitpointName 						= "HitDiaphragm";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitDiaphragm"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Abdomen
 // 					{
-// 						hitpointName 						= "HitAbdomen";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitAbdomen"; 						armor
+// =
+// 35; 						passThrough 						=
+// 0.1;
 // 					};
 // 					class Body
 // 					{
-// 						hitpointName 						= "HitBody";
-// 						armor 								= 35;
-// 						passThrough 						= 0.1;
+// 						hitpointName
+// = "HitBody"; 						armor = 35;
+// passThrough 						= 0.1;
 // 					};
 // 				};
 // 			};
@@ -2747,52 +2937,61 @@
 // 	class C_Uniform_Base: U_B_CombatUniform_mcam
 // 		{
 // 			dlc = "ARMCO OPTRE Reskins";
-// 			scope															= 1;
-// 			author											= "Frosty & Mac";				
-// 			displayName														= "-";
-// 			picture   														= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-// 			model															= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-// 			class ItemInfo: UniformItem				
-// 			{				
-// 				uniformModel												= "-";
-// 				uniformClass												= "OPTRE_UNSC_Army_Soldier_WDL";
-// 				containerClass												= "Supply200";
-// 				mass														= 50;
-// 				modelSides[] 												= {6};
+// 			scope
+// = 1; 			author
+// = "Frosty & Mac";
+// 			displayName
+// = "-"; 			picture
+// = "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
+// model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+// class ItemInfo: UniformItem
+// 			{
+// 				uniformModel
+// = "-"; 				uniformClass
+// = "OPTRE_UNSC_Army_Soldier_WDL"; 				containerClass
+// = "Supply200"; 				mass
+// = 50; 				modelSides[]
+// = {6};
 // 			};
 // 		};
 // 	class C_Uniform_Medical_Base: U_B_CombatUniform_mcam
 // 		{
 // 			dlc = "ARMCO OPTRE Reskins";
-// 			scope															= 1;
-// 			author											= "Frosty & Mac";				
-// 			displayName														= "-";
-// 			picture   														= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-// 			model															= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-// 			class ItemInfo: UniformItem				
-// 			{				
-// 				uniformModel												= "-";
-// 				uniformClass												= "OPTRE_UNSC_Army_Soldier_WDL";
-// 				containerClass												= "Supply250";
-// 				mass														= 50;
-// 				modelSides[] 												= {6};
+// 			scope
+// = 1; 			author
+// = "Frosty & Mac";
+// 			displayName
+// = "-"; 			picture
+// = "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
+// model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+// class ItemInfo: UniformItem
+// 			{
+// 				uniformModel
+// = "-"; 				uniformClass
+// = "OPTRE_UNSC_Army_Soldier_WDL"; 				containerClass
+// = "Supply250"; 				mass
+// = 50; 				modelSides[]
+// = {6};
 // 			};
 // 		};
 // 	class C_Uniform_ODST_Base: U_B_CombatUniform_mcam
 // 		{
 // 			dlc = "ARMCO OPTRE Reskins";
-// 			scope															= 1;
-// 			author											= "Frosty & Mac";				
-// 			displayName														= "-";
-// 			picture   														= "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-// 			model															= "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-// 			class ItemInfo: UniformItem				
-// 			{				
-// 				uniformModel												= "-";
-// 				uniformClass												= "OPTRE_UNSC_Army_Soldier_WDL";
-// 				containerClass												= "Supply300";
-// 				mass														= 50;
-// 				modelSides[] 												= {6};
+// 			scope
+// = 1; 			author
+// = "Frosty & Mac";
+// 			displayName
+// = "-"; 			picture
+// = "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
+// model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+// class ItemInfo: UniformItem
+// 			{
+// 				uniformModel
+// = "-"; 				uniformClass
+// = "OPTRE_UNSC_Army_Soldier_WDL"; 				containerClass
+// = "Supply300"; 				mass
+// = 50; 				modelSides[]
+// = {6};
 // 			};
 // 		};
 // 	//---Police---//
@@ -2800,11 +2999,12 @@
 // 		{
 // 			dlc 		 = "ARMCO OPTRE Reskins";
 // 			scope 	     = 2;
-// 			author		 = "Frosty & Mac";				
+// 			author		 = "Frosty & Mac";
 // 			displayName	 = "[Colonial Rescue] BDU";
-// 			//picture    = "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-// 			class ItemInfo: ItemInfo				
-// 			{				
+// 			//picture    =
+// "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa"; 			class
+// ItemInfo: ItemInfo
+// 			{
 // 				uniformClass = "ARMCO_Police_Officer";
 // 			};
 // 		};
@@ -2814,28 +3014,29 @@
 // 		{
 // 			dlc 		 = "ARMCO OPTRE Reskins";
 // 			scope 	     = 2;
-// 			author		 = "Frosty & Mac";				
+// 			author		 = "Frosty & Mac";
 // 			displayName	 = "[Colonial Rescue] BDU";
-// 			//picture    = "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-// 			class ItemInfo: ItemInfo				
-// 			{				
+// 			//picture    =
+// "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa"; 			class
+// ItemInfo: ItemInfo
+// 			{
 // 				uniformClass = "ARMCO_Rescue_Officer";
 // 			};
 // 		};
 
 // 	//---Biohazard---//
 
-
 // 	//---Firefighter---//
 // 	class ARMCO_Uniform_Firefighter: C_Uniform_ODST_Base
 // 		{
 // 			dlc 		 = "ARMCO OPTRE Reskins";
 // 			scope 	     = 2;
-// 			author		 = "Frosty & Mac";				
+// 			author		 = "Frosty & Mac";
 // 			displayName	 = "[Colonial Fire Department] BDU";
-// 			//picture    = "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
-// 			class ItemInfo: ItemInfo				
-// 			{				
+// 			//picture    =
+// "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa"; 			class
+// ItemInfo: ItemInfo
+// 			{
 // 				uniformClass = "ARMCO_Firefighter_Officer";
 // 			};
 // 		};
