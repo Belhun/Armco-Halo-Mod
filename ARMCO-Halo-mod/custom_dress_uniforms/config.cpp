@@ -1,4 +1,4 @@
-/* #include "cfgPatches.hpp"
+ #include "cfgPatches.hpp"
 ////////////////////////
 //Damage & UNITS Start//
 ////////////////////////
@@ -4433,4 +4433,4 @@ class ARMCO_Dress_Uniform_Phoenix_Three : ARMCO_Uniform_Base
 		};	
 	};
 };
- */
+ 

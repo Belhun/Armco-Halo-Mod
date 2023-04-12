@@ -89,7 +89,7 @@
 	
 	//Basic Backpacks
 	class OPTRE_UNSC_Rucksack;
-	class ARMCO_Rucksack_Soft_Alpha: OPTRE_UNSC_Rucksack
+	class ARMCO_Rucksack_tSoft_Alpha: OPTRE_UNSC_Rucksack
 	{
 		dlc="OPTRE";
 		author="Belhun";
@@ -107,7 +107,7 @@
 			""
 		};
 	};
-	class ARMCO_Rucksack_Soft_Sabre: OPTRE_UNSC_Rucksack
+	class ARMCO_Rucksack_tSoft_Sabre: OPTRE_UNSC_Rucksack
 	{
 		dlc="OPTRE";
 		author="Belhun";
@@ -125,7 +125,7 @@
 			""
 		};
 	};
-	class ARMCO_Rucksack_Soft_Zulu: OPTRE_UNSC_Rucksack
+	class ARMCO_Rucksack_tSoft_Zulu: OPTRE_UNSC_Rucksack
 	{
 		dlc="OPTRE";
 		author="Belhun";
@@ -143,7 +143,7 @@
 			""
 		};
 	};
-	class ARMCO_Rucksack_Soft_Phoenix: OPTRE_UNSC_Rucksack
+	class ARMCO_Rucksack_tSoft_Phoenix: OPTRE_UNSC_Rucksack
 	{
 		dlc="OPTRE";
 		author="Belhun";
@@ -161,7 +161,7 @@
 			""
 		};
 	};
-	class ARMCO_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack
+	class ARMCO_Rucksack_tSoft_Medical: OPTRE_UNSC_Rucksack
 	{
 		dlc="OPTRE";
 		author="Belhun";

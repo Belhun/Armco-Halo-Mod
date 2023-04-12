@@ -9,11 +9,11 @@ class CfgPatches
 			"ARMCO_Rucksack_Hard_Zulu",
 			"ARMCO_Rucksack_Hard_Phoenix",
 			"ARMCO_Rucksack_Hard_Medical",
-			"ARMCO_Rucksack_Soft_Alpha",
-			"ARMCO_Rucksack_Soft_Sabre",
-			"ARMCO_Rucksack_Soft_Zulu",
-			"ARMCO_Rucksack_Soft_Phoenix",
-			"ARMCO_Rucksack_Soft_Medical"
+			"ARMCO_Rucksack_tSoft_Alpha",
+			"ARMCO_Rucksack_tSoft_Sabre",
+			"ARMCO_Rucksack_tSoft_Zulu",
+			"ARMCO_Rucksack_tSoft_Phoenix",
+			"ARMCO_Rucksack_tSoft_Medical"
 		};
 		weapons[]={};
 		requiredVersion = 0.1; 
