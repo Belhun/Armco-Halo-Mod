@@ -2590,7 +2590,7 @@ class CfgVehicles{
 				author											= "4th Battalion Mod Team";
 				model															= "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
 				icon 															= "iconManLeader";
-				backpack 														= "tfw_ilbe_blade_wd";
+				backpack 														= "OPTRE_UNSC_Rucksack";
 				uniformClass													= "OPTRE_UNSC_Army_Uniform_OLI_SlimLeg";
 				hiddenSelectionsTextures[] 										= 
 				{
