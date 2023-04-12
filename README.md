@@ -1,94 +1,102 @@
 # Armco-Halo-Mod
-This is ARMCO's Halo mod Data, I will be providing a breakdown of the file structure so far that am aware, I (Belhun) am still learning much about Arma 3 coding and don't have much experience with this. but iv got a little bit of coding experience and will be trying my best to update this mod and hopefully add more in the future.
 
+Welcome to ARMCO's Halo mod data. In this section, I will provide a breakdown of the file structure that I am currently aware of. I, Belhun, am still learning a lot about Arma 3 coding and don't have a great deal of experience with this mod. However, I do have some coding experience and will do my best to keep this mod updated and hopefully add more in the future.
 
-### File Break Down
+## File Break Down
 
-- Armco-Halo-Mod
-  - .vscode
-    - Arma-dev.json {This file works with the Name: Arma-dev Link: https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev}
-  - ARMCO-Halo-mod
-    - armco_armours(New Where the new Armours are being made)
-      - CfgPatchesMisc.hpp(This includes everything that needs to go into CfgPatches plus some additional msic stuff)
-      - CfgVehicleSoldier.hpp (This includes based Solders, needed to either spawn pre made solders in editor or Zues or use them to make uniforms)
-      - CfgWeaponsSHelmet.hpp (All Squad based Helmets go here)
-      - CfgWeaponsUniform.hpp (All Uniforms go here)
-      - CfgWeaponsSArmour.hpp (Squad based armours go here)
-      - CfgWeaponsCArmour.hpp (Custom Armours go here)
-      - config.cpp
-    - custom_armours(OLD here are most custom ODST armors)
-    - custom_dress_uniforms (OLDhere are all the Dress uniforms)   
-    - custom_emergency(OLDthese are the files partaining to armors for Emergicy services)
-    - custom_groups(OLDThis is where peaple are defined, for example where each squad is defined)
-    - custom_vehicles(old and new where Pelican and Warthog files)
-    - Build_PBOs.bat{This is a script that will go into PBO manager and execute a set of commands to pack all custom_blank's into PBOs and place them in a file that I use to test the mod}
-    - cfgPatches.hpp
-    - config.cpp
-  - build{arma-dev location to place builds}
-  - Default Textures{This holds a bunch of png's of textures we can easily access to use for retexturing(some are from OPTRE and others are from older versions of this mod)}
-  - png files{every png of this mod before it was taken over and uploaded to github}
-  
+```sh
+.
+├── ARMCO-Halo-mod
+│   ├── Build_PBOs.bat (Mod build script)
+│   ├── Setup.bat (Development Enviorment setup script)
+│   ├── armco_armours (Where the new Armours are being made)
+│   │   ├── CfgPatchesMisc.hpp (Everything that needs to go into CfgPatches plus some additional items)
+│   │   ├── CfgVehicleSoldier.hpp (These are the base Solders, needed to either spawn pre made solders in editor or Zues or use them to make uniforms)
+│   │   ├── CfgWeaponsCArmour.hpp (Custom Armours go here)
+│   │   ├── CfgWeaponsCHelmet.hpp (Squad based Helmets go here)
+│   │   ├── CfgWeaponsSArmour.hpp (Squad based armours go here)
+│   │   ├── CfgWeaponsUniform.hpp (Uniforms go here)
+│   │   ├── config.cpp
+│   ├── custom_armours (OLD)
+│   ├── custom_dress_uniforms (OLD)
+│   ├── custom_emergency (OLD)
+│   ├── custom_groups (OLD)
+│   └── custom_vehicles (OLD)
+├── ArmourBreakdown.md
+├── README.md
+└── example
+    └── @armcohalo
+        └── mod.cpp
+```
 
 ## Changing the Build_PBOs for your own needs
 
-So! what is the Build_PBO and how can you use it to help yourself without knowing much about .bat files?
-First of all, Build_PBO is a .bat file, it's something used to automate simple things that can get annoying to do over and over.
- 
-The thing it's Helping me with is Automating the Building of Each file into a PBO and placing it into my local test mod.
+So, what exactly is `Build_PBO` and how can you use it to simplify your life if you don't know much about `.bat` files?
 
-This local test mod is super useful for seeing if what iv just added or changed will work or not, and all I need to do is double-click this .bat file and it will Delete all the old .pbo files and pack up the new ones. 
+Simply put, Build_PBO is a .bat file that automates simple tasks that can become repetitive over time. In my case, it automates the building of each file into a PBO and places it into my local test mod. This local test mod is incredibly useful for quickly testing changes or additions to see if they work or not. All I need to do is double-click the .bat file, and it will delete all old .pbo files and pack up the new ones.
 
-what do I need to use and change the .bat file? well not much you only need one program, called [PBO Manager](https://pbo-manager-v-1-4.software.informer.com/download/#downloading). keep in mind where you install this as we will need the directory of PBO manager.
+What do you need to use and modify the .bat file? Not much, actually - you only need one program called [PBO Manager](https://pbo-manager-v-1-4.software.informer.com/download/#downloading). Just be sure to remember where you install this program as we will need the directory of PBO Manager.
 
-one more thing that you need for using this .bat file is Create a testing file, This testing file should use the "example_build" Structure this file structure has everything you need to run this mod in arma
+One more thing you need to know is that you need to create a testing file. This testing file should use the `example_build` structure. This file structure contains everything you need to run this mod in Arma.
 
 ### Breaking Down Build_PBO
 
-So iv made this as easy as possible we have 2 Files Setup.bat and Build_PBOs.bat
-all you will need to change on your end is in Build_PBOs.bat where you see the following
-```
+To make things easy for you, I've provided two files: `Setup.bat` and `Build_PBOs.bat`.
+
+To set up the Build_PBOs.bat file, simply take a look at the following code:
+
+```ps
 C:
 cd C:\Program Files\PBO Manager v.1.4 beta
 ```
-so the ``` C: ``` should be set to whatever drive you have your PBO Manager set up in, so that could be  ``` C: ```, ``` D: ```, ``` E: ```,  ``` (Drive Letter): ``` whatever your drive letter is. Then you want to change ``` cd C:\Program Files\PBO Manager v.1.4 beta ``` to where ever you have So if you instead have it installed in a custom place it should look like ``` cd "PBO manager location" ``` you just have to make sure the location you point to looks like this 
+
+Change the C: to the appropriate drive letter where you have PBO Manager installed. If you've installed PBO Manager in a custom directory, replace `cd C:\Program Files\PBO Manager v.1.4 beta` with the path to your installation folder. Just make sure that your path looks similar to the following file structure:
+
 ![a file structure with a mouse pointing to PBOConsole.exe](https://i.imgur.com/R7J37l3.png)
 
-once you change that running it should work(if not or your unsure and have questions please don't be afraid to ask Belhun#0001 on discord)
-
+Once you've made the necessary changes, run `Build_PBOs.bat`. If you run into any issues or have any questions, don't hesitate to contact Belhun#0001 on Discord.
 
 ## Retexturing info
-So you want help Retexturing The main files you are going to be looking at are the files in "Default Textures" and "png Files".
 
-I will Prob give a better-detailed explanation of how this all works but the main bit is "png Files" where every .paa file in this mod is stored as a .png so if changes need to be made they are in an easy-to-access place instead of needing to convert back into a .png file only to change a little and changing it back into a .paa file. if you want to add more textures Please make sure the .png version is in the right directory in "png files".
+Want to help with retexturing? Look no further than the "Default Textures" and "png Files" folders. The "png Files" directory is where all the .paa files are stored as .png files, so you can easily make changes without the hassle of constantly converting back and forth. Just be sure to pop your new textures in the right place in the "png files" folder.
 
-While Default Textures are textures we reuse a bunch of , anything under the old file is not used and prob doesn't work.
+Keep in mind that the "Default Textures" folder has textures we use all the time. Anything in the "old" folder is outdated and probably won't work.
 
-_
+## Recommend Tools
 
-_
-# Recommend Tools
 ### VS Code
-- [Visual Studio Code](https://code.visualstudio.com/) is the Editor I use for writing all the code I use.
-I recommend these extensions for Visual Studio Code
+
+- [Visual Studio Code](https://code.visualstudio.com/) is the editor that I recommend for writing code. To make it more useful for Arma 3 modding, you can install the following extensions:
   - [Arma Dev](https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev)
   - [SQF Language](https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf)
-  - optionally [Fig Files Intellisense](https://marketplace.visualstudio.com/items?itemName=kiriko.fig-unreleased)
+  - Optionally [Fig Files Intellisense](https://marketplace.visualstudio.com/items?itemName=kiriko.fig-unreleased)
+
 ### Arma Tools
-- [PBO Manager](https://pbo-manager-v-1-4.software.informer.com/download/#downloading) For managing the PBOs and packing them up for testing
-- [Arma 3 Tools](https://store.steampowered.com/app/233800/Arma_3_Tools/) Has a lot of tools for making ARMA 3 mods
+
+You will need some tools specifically for Arma 3 modding:
+
+- [PBO Manager](https://pbo-manager-v-1-4.software.informer.com/download/#downloading) for managing and packing PBO files for testing
+- [Arma 3 Tools](https://store.steampowered.com/app/233800/Arma_3_Tools/)
 
 ### _.paa Files_
-- [paa.gruppe-adler.de](https://paa.gruppe-adler.de/) This Website allows me to Drag Tons of .paa files into the web browser and get PNGs for all of them. Super nice for learning and looking at other people's projects(Remember to be respectful and let people who where you got the base images from if you reuse them)
+
+If you need to work with .paa files, these resources can be helpful:
+
+- [paa.gruppe-adler.de](https://paa.gruppe-adler.de/) a website that allows you to convert .paa files to PNGs
 
 - [.paa Gimp Plugin](https://github.com/gruppe-adler/paa-gimp-plugin)
 
-### HiddenSelections
-- (something iv put together) [Armour Breakdown With Pictures github wiki](https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With-Pictures)
+### Hidden Selections
 
-- (not from optre but found on there discord) [Optre HiddenSelections google doc](https://docs.google.com/document/d/1ILyvFV8opoARs_2hy4hRAU4_hr4qWrAQKfJ4UlC5K5c/edit#)
+For managing hidden selections, you can refer to the following resources:
 
+- [Armour Breakdown With Pictures github wiki](https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With-Pictures)
 
+- [Optre HiddenSelections google doc](https://docs.google.com/document/d/1ILyvFV8opoARs_2hy4hRAU4_hr4qWrAQKfJ4UlC5K5c/edit#)
 
-Both of these I use for managing and using GitHub
+### Git
+
+If you are using GitHub to manage your modding project, you will need to install Git and if you're unfamiliar with the command line GitHub Desktop:
+
 - [Git](https://git-scm.com/downloads)
 - [GitHub Desktop](https://desktop.github.com/)
