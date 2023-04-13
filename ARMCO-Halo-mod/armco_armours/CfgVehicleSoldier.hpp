@@ -26,14 +26,7 @@ class ARMCO_Base_Soldier : SoldierWB {
       "armco_armours\data\uniforms\uniform_alpha_co.paa"};
 
   class EventHandlers : EventHandlers {
-    init = "if (local (_this select 0)) then {[(_this select 0), nil, ['', "
-           "0.35,'OPTRE_HUD_Glasses',0.5 ,'OPTRE_HUD_g_Glasses',0.5 "
-           ",'OPTRE_HUD_r_Glasses',0.25 ,'OPTRE_HUD_b_Glasses',0.3 "
-           ",'OPTRE_HUD_p_Glasses',0.2 ,'OPTRE_HUD_w_Glasses',0.25 "
-           ",'OPTRE_EyePiece',0.5 "
-           ",'G_Bandanna_blk',0.5,'G_Bandanna_khk',0.5,'G_Bandanna_oli',0.5,'G_"
-           "Bandanna_tan',0.5,'G_Balaclava_TI_blk_F',0.6]] call "
-           "BIS_fnc_unitHeadgear;};";
+    init = "if (local (_this select 0)) then {[(_this select 0), nil, ['',0.35,'OPTRE_HUD_Glasses',0.5 ,'OPTRE_HUD_g_Glasses',0.5,'OPTRE_HUD_r_Glasses',0.25 ,'OPTRE_HUD_b_Glasses',0.3,'OPTRE_HUD_p_Glasses',0.2 ,'OPTRE_HUD_w_Glasses',0.25,'OPTRE_EyePiece',0.5,'G_Bandanna_blk',0.5,'G_Bandanna_khk',0.5,'G_Bandanna_oli',0.5,'G_Bandanna_tan',0.5,'G_Balaclava_TI_blk_F',0.6]] callBIS_fnc_unitHeadgear;};";
   };
   class Wounds {
     tex[] = {};
