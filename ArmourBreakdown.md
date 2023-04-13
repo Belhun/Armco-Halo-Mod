@@ -1,5 +1,7 @@
-Armor Breakdown
+# Armor Breakdown
+
 This area is for all the options the M52A Armour have in hiddenSelections. Just for a point when doing armor you have to remove the code bit from the hidden selection and it will show it on the amour. so you remove what you want from the hiddent selections other then the camo bit
+
 - `A_base` = [front img](https://i.imgur.com/zzgcpmA.png)[back img](https://i.imgur.com/8X1WsjV.png)
 - `A_ChestArmor` = [front img](https://i.imgur.com/1aP15da.png)
 - `A_Ghillie` = [front img](https://i.imgur.com/cCBL4Qd.png)
