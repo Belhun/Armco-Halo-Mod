@@ -1,10 +1,34 @@
 // importing the base classes from ARMA and OPTRE
 class UniformItem;                 // ARMA
 class OPTRE_UNSC_Man_Army_W_class; // OPTRE
-class SoldierWB;                   // ARMA
-class EventHandlers;               // ARMA
+// class SoldierWB;                   // ARMA
+class EventHandlers; // ARMA
 
 // This is a base class for all soldiers use this too make new soldiers
+
+class Land;
+class Man : Land {
+  class EventHandlers;
+};
+class CAManBase : Man {
+  class HitPoints;
+};
+class SoldierWB : CAManBase {
+  class HitPoints : HitPoints {
+    class HitFace;
+    class HitNeck;
+    class HitHead;
+    class HitPelvis;
+    class HitAbdomen;
+    class HitDiaphragm;
+    class HitChest;
+    class HitBody;
+    class HitArms;
+    class HitHands;
+    class HitLegs;
+  };
+};
+
 class ARMCO_Base_Soldier : SoldierWB {
 
   dlc = "ARMCO_PMC";
@@ -25,9 +49,10 @@ class ARMCO_Base_Soldier : SoldierWB {
       "armco_armours\data\uniforms\uniform_alpha_co.paa",
       "armco_armours\data\uniforms\uniform_alpha_co.paa"};
 
-  class EventHandlers : EventHandlers {
-    init = "if (local (_this select 0)) then {[(_this select 0), nil, ['',0.35,'OPTRE_HUD_Glasses',0.5 ,'OPTRE_HUD_g_Glasses',0.5,'OPTRE_HUD_r_Glasses',0.25 ,'OPTRE_HUD_b_Glasses',0.3,'OPTRE_HUD_p_Glasses',0.2 ,'OPTRE_HUD_w_Glasses',0.25,'OPTRE_EyePiece',0.5,'G_Bandanna_blk',0.5,'G_Bandanna_khk',0.5,'G_Bandanna_oli',0.5,'G_Bandanna_tan',0.5,'G_Balaclava_TI_blk_F',0.6]] callBIS_fnc_unitHeadgear;};";
-  };
+  class EventHandlers: EventHandlers
+		{
+			init="if (local (_this select 0)) then {[(_this select 0), nil, ['', 0.35,'OPTRE_HUD_Glasses',0.5 ,'OPTRE_HUD_g_Glasses',0.5 ,'OPTRE_HUD_r_Glasses',0.25 ,'OPTRE_HUD_b_Glasses',0.3 ,'OPTRE_HUD_p_Glasses',0.2 ,'OPTRE_HUD_w_Glasses',0.25 ,'OPTRE_EyePiece',0.5 ,'G_Bandanna_blk',0.5,'G_Bandanna_khk',0.5,'G_Bandanna_oli',0.5,'G_Bandanna_tan',0.5,'G_Balaclava_TI_blk_F',0.6]] call BIS_fnc_unitHeadgear;};";
+		};
   class Wounds {
     tex[] = {};
     mat[] = {
@@ -56,19 +81,39 @@ class ARMCO_Base_Soldier : SoldierWB {
         "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat",
         "A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat"};
   };
-  class HitPoints {
-    class HitNeck {
-      name = "neck";
+  class HitPoints : HitPoints {
+    class HitFace {
+      armor = 1;
       material = -1;
-      armor = 4;
+      name = "face_hub";
+      passThrough = 0.80000001;
+      radius = 0.079999998;
+      explosionShielding = 0.1;
+      minimalHit = 0.0099999998;
+    };
+    class HitNeck : HitFace {
+      armor = 1;
+      material = -1;
+      name = "neck";
+      passThrough = 0.80000001;
+      radius = 0.1;
+      explosionShielding = 0.5;
+      minimalHit = 0.0099999998;
+    };
+    class HitHead : HitNeck {
+      armor = 1;
+      material = -1;
+      name = "head";
       passThrough = 0.80000001;
       radius = 0.2;
       explosionShielding = 0.5;
       minimalHit = 0.0099999998;
+      depends = "HitFace max HitNeck";
     };
-    class HitPelvis {
+    class HitPelvis : HitHead {
+      armor = 6;
+      material = -1;
       name = "pelvis";
-      armor = 8;
       passThrough = 0.80000001;
       radius = 0.23999999;
       explosionShielding = 1;
@@ -76,30 +121,40 @@ class ARMCO_Base_Soldier : SoldierWB {
       minimalHit = 0.0099999998;
       depends = "0";
     };
-    class HitAbdomen {
-      name = "abdomen";
+    class HitAbdomen : HitPelvis {
+      armor = 1;
       material = -1;
-      armor = 4;
+      name = "spine1";
+      passThrough = 0.80000001;
+      radius = 0.16;
+      explosionShielding = 1;
+      visual = "injury_body";
+      minimalHit = 0.0099999998;
+    };
+    class HitDiaphragm : HitAbdomen {
+      armor = 1;
+      material = -1;
+      name = "spine2";
       passThrough = 0.80000001;
       radius = 0.18000001;
       explosionShielding = 2.4000001;
       visual = "injury_body";
       minimalHit = 0.0099999998;
     };
-    class HitDiaphragm {
-      name = "diaphragm";
+    class HitChest : HitDiaphragm {
+      armor = 1;
       material = -1;
-      armor = 4;
+      name = "spine3";
       passThrough = 0.80000001;
       radius = 0.18000001;
       explosionShielding = 2.4000001;
       visual = "injury_body";
       minimalHit = 0.0099999998;
     };
-    class HitChest {
-      name = "chest";
+    class HitBody : HitChest {
+      armor = 1000;
       material = -1;
-      armor = 4;
+      name = "body";
       passThrough = 1;
       radius = 0;
       explosionShielding = 2.4000001;
@@ -107,10 +162,21 @@ class ARMCO_Base_Soldier : SoldierWB {
       minimalHit = 0.0099999998;
       depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
     };
-    class HitArms {
-      name = "arms";
+    class HitArms : HitBody {
+      armor = 5;
       material = -1;
-      armor = 6;
+      name = "arms";
+      passThrough = 1;
+      radius = 0.1;
+      explosionShielding = 0.30000001;
+      visual = "injury_hands";
+      minimalHit = 0.0099999998;
+      depends = "0";
+    };
+    class HitHands : HitArms {
+      armor = 5;
+      material = -1;
+      name = "hands";
       passThrough = 1;
       radius = 0.1;
       explosionShielding = 0.30000001;
@@ -118,19 +184,8 @@ class ARMCO_Base_Soldier : SoldierWB {
       minimalHit = 0.0099999998;
       depends = "HitArms";
     };
-    class HitHands {
-      name = "hands";
-      material = -1;
-      armor = 6;
-      passThrough = 1;
-      radius = 0.14;
-      explosionShielding = 0.30000001;
-      visual = "injury_legs";
-      minimalHit = 0.0099999998;
-      depends = "0";
-    };
-    class HitLegs {
-      armor = 6;
+    class HitLegs : HitHands {
+      armor = 5;
       material = -1;
       name = "legs";
       passThrough = 1;
@@ -143,6 +198,7 @@ class ARMCO_Base_Soldier : SoldierWB {
   };
   editorSubcategory = "OPTRE_EditorSubcategory_MenWDL";
 };
+
 
 class ARMCO_Soldier_A_Rifle : ARMCO_Base_Soldier {
   dlc = "ARMCO_PMC";
