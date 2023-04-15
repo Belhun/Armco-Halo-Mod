@@ -8,6 +8,7 @@ class ItemInfo {
 };
 class OPTRE_UNSC_CH252_Helmet_WDL;
 class OPTRE_UNSC_CH252_Helmet2_WDL;
+//Alpha Helmet
 class Alpha_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
   dlc = "ARMCO_PMC";
   author = "Belhun";
@@ -21,6 +22,7 @@ class Alpha_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
         "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
   };
 };
+//Sabre Helmet
 class Sabre_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
   dlc = "ARMCO_PMC";
   author = "Belhun";
@@ -34,6 +36,7 @@ class Sabre_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
         "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
   };
 };
+//Phoenix Helmet
 class Phoenix_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
   dlc = "ARMCO_PMC";
   author = "Belhun";
@@ -47,6 +50,7 @@ class Phoenix_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
         "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
   };
 };
+//Zulu Helmet
 class Zulu_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
   dlc = "ARMCO_PMC";
   author = "Belhun";
@@ -58,5 +62,33 @@ class Zulu_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
     hiddenSelectionsTextures[] = {
         "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
         "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+  };
+};
+//Medical Helmet
+class Medical_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
+  dlc = "ARMCO_PMC";
+  author = "Belhun";
+  displayName = "[A][ARMCO] Unit CH252 Helmet (Medical)";
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\helmets\helmet_medic_co.paa",
+      "armco_armours\data\marine\helmets\visors\medical_visor_co.paa"};
+  class ItemInfo : ItemInfo {
+    hiddenSelectionsTextures[] = {
+        "armco_armours\data\marine\helmets\helmet_medic_co.paa",
+        "armco_armours\data\marine\helmets\visors\medical_visor_co.paa"};
+  };
+};
+//EOD Helmet
+class EOD_CH252_Helmet : OPTRE_UNSC_CH252_Helmet2_WDL {
+  dlc = "ARMCO_PMC";
+  author = "Belhun";
+  displayName = "[A][ARMCO] Unit CH252 Helmet (EOD)";
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\helmets\helmet_eod_co.paa",
+      "armco_armours\data\marine\helmets\visors\eod_visor_co.paa"};
+  class ItemInfo : ItemInfo {
+    hiddenSelectionsTextures[] = {
+        "armco_armours\data\marine\helmets\helmet_eod_co.paa",
+        "armco_armours\data\marine\helmets\visors\eod_visor_co.paa"};
   };
 };

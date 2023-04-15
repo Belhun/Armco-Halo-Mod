@@ -178,7 +178,7 @@ class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
 class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO_PMC";
   author = "Belhun";
-  displayName = "[A][ARMCO] Base Alpha";
+  displayName = "[A][ARMCO] Alpha Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -275,7 +275,7 @@ class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
 class ARMCO_Sabre_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO_PMC";
   author = "Belhun";
-  displayName = "[A][ARMCO] Base Sabre";
+  displayName = "[A][ARMCO] Sabre Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -376,7 +376,7 @@ class ARMCO_Sabre_Armor : ARMCO_Base_Armor {
 class ARMCO_Zulu_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO_PMC";
   author = "Belhun";
-  displayName = "[A][ARMCO] Base Zulu";
+  displayName = "[A][ARMCO] Zulu Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -477,7 +477,7 @@ class ARMCO_Zulu_Armor : ARMCO_Base_Armor {
 class ARMCO_Phoenix_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO_PMC";
   author = "Belhun";
-  displayName = "[A][ARMCO] Base Phoenix";
+  displayName = "[A][ARMCO] Phoenix Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -566,6 +566,195 @@ class ARMCO_Phoenix_Armor : ARMCO_Base_Armor {
         "armco_armours\data\marine\armors\vest_phoenix_co.paa",
         "armco_armours\data\marine\armors\armour_phoenix_co.paa",
         "armco_armours\data\marine\armors\legs_phoenix_co.paa",
+        "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+        "optre_unsc_units\army\data\odst_armor_co.paa"};
+  };
+};
+// Medical Armour
+class ARMCO_Medical_Armor : ARMCO_Base_Armor {
+  dlc = "ARMCO_PMC";
+  author = "Belhun";
+  displayName = "[A][ARMCO] Meidcal Armour";
+  hiddenSelections[] = {"camo",
+                        "camo2",
+                        "camo3",
+                        "camo4",
+                        "camo5",
+                        "A_Ghillie",
+                        "A_KneesLeft",
+                        "A_KneesRight",
+                        "A_ODST",
+                        "A_TacPad",
+                        "AS_BaseLeft",
+                        "AS_BaseRight",
+                        "AS_LargeRight",
+                        "AS_MediumLeft",
+                        "AS_ODSTCQBLeft",
+                        "AS_ODSTCQBRight",
+                        "AS_ODSTLeft",
+                        "AS_ODSTRight",
+                        "AS_ODSTSniperLeft",
+                        "AS_ODSTSniperRight",
+                        "AS_SmallLeft",
+                        "AS_SmallRight",
+                        "AP_BR",
+                        "AP_Canteen",
+                        "AP_GL",
+                        "AP_Knife",
+                        "AP_MGThigh",
+                        "AP_Rounds",
+                        "AP_SG",
+                        "AP_SMG",
+                        "AP_Sniper",
+                        "AP_Frag",
+                        "APO_AR",
+                        "APO_BR",
+                        "APO_SMG",
+                        "APO_Sniper",
+                        "CustomKit_Scorch"};
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\armors\vest_medic_co.paa",
+      "armco_armours\data\marine\armors\armor_medic_co.paa",
+      "armco_armours\data\marine\armors\legs_medic_co.paa",
+      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+      "optre_unsc_units\army\data\odst_armor_co.paa"};
+  class ItemInfo : ItemInfo {
+    containerClass = "Supply120";
+    hiddenSelections[] = {"camo",
+                          "camo2",
+                          "camo3",
+                          "camo4",
+                          "camo5",
+                          "A_Ghillie",
+                          "A_KneesLeft",
+                          "A_KneesRight",
+                          "A_ODST",
+                          "A_TacPad",
+                          "AS_BaseLeft",
+                          "AS_BaseRight",
+                          "AS_LargeRight",
+                          "AS_MediumLeft",
+                          "AS_ODSTCQBLeft",
+                          "AS_ODSTCQBRight",
+                          "AS_ODSTLeft",
+                          "AS_ODSTRight",
+                          "AS_ODSTSniperLeft",
+                          "AS_ODSTSniperRight",
+                          "AS_SmallLeft",
+                          "AS_SmallRight",
+                          "AP_BR",
+                          "AP_Canteen",
+                          "AP_GL",
+                          "AP_Knife",
+                          "AP_MGThigh",
+                          "AP_Rounds",
+                          "AP_SG",
+                          "AP_SMG",
+                          "AP_Sniper",
+                          "AP_Frag",
+                          "APO_AR",
+                          "APO_BR",
+                          "APO_SMG",
+                          "APO_Sniper",
+                          "CustomKit_Scorch"};
+    hiddenSelectionsTextures[] = {
+        "armco_armours\data\marine\armors\vest_medic_co.paa",
+        "armco_armours\data\marine\armors\armor_medic_co.paa",
+        "armco_armours\data\marine\armors\legs_medic_co.paa",
+        "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+        "optre_unsc_units\army\data\odst_armor_co.paa"};
+  };
+};
+class ARMCO_EOD_Armor : ARMCO_Base_Armor {
+  dlc = "ARMCO_PMC";
+  author = "Belhun";
+  displayName = "[A][ARMCO] EOD Armour";
+  hiddenSelections[] = {"camo",
+                        "camo2",
+                        "camo3",
+                        "camo4",
+                        "camo5",
+                        "A_Ghillie",
+                        "A_KneesLeft",
+                        "A_KneesRight",
+                        "A_ODST",
+                        "A_TacPad",
+                        "AS_BaseLeft",
+                        "AS_BaseRight",
+                        "AS_LargeRight",
+                        "AS_MediumLeft",
+                        "AS_ODSTCQBLeft",
+                        "AS_ODSTCQBRight",
+                        "AS_ODSTLeft",
+                        "AS_ODSTRight",
+                        "AS_ODSTSniperLeft",
+                        "AS_ODSTSniperRight",
+                        "AS_SmallLeft",
+                        "AS_SmallRight",
+                        "AP_BR",
+                        "AP_Canteen",
+                        "AP_GL",
+                        "AP_Knife",
+                        "AP_MGThigh",
+                        "AP_Rounds",
+                        "AP_SG",
+                        "AP_SMG",
+                        "AP_Sniper",
+                        "AP_Frag",
+                        "APO_AR",
+                        "APO_BR",
+                        "APO_SMG",
+                        "APO_Sniper",
+                        "CustomKit_Scorch"};
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\armors\vest_eod_co.paa",
+      "armco_armours\data\marine\armors\armor_eod_co.paa",
+      "armco_armours\data\marine\armors\legs_eod_co.paa",
+      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+      "optre_unsc_units\army\data\odst_armor_co.paa"};
+  class ItemInfo : ItemInfo {
+    containerClass = "Supply120";
+    hiddenSelections[] = {"camo",
+                          "camo2",
+                          "camo3",
+                          "camo4",
+                          "camo5",
+                          "A_Ghillie",
+                          "A_KneesLeft",
+                          "A_KneesRight",
+                          "A_ODST",
+                          "A_TacPad",
+                          "AS_BaseLeft",
+                          "AS_BaseRight",
+                          "AS_LargeRight",
+                          "AS_MediumLeft",
+                          "AS_ODSTCQBLeft",
+                          "AS_ODSTCQBRight",
+                          "AS_ODSTLeft",
+                          "AS_ODSTRight",
+                          "AS_ODSTSniperLeft",
+                          "AS_ODSTSniperRight",
+                          "AS_SmallLeft",
+                          "AS_SmallRight",
+                          "AP_BR",
+                          "AP_Canteen",
+                          "AP_GL",
+                          "AP_Knife",
+                          "AP_MGThigh",
+                          "AP_Rounds",
+                          "AP_SG",
+                          "AP_SMG",
+                          "AP_Sniper",
+                          "AP_Frag",
+                          "APO_AR",
+                          "APO_BR",
+                          "APO_SMG",
+                          "APO_Sniper",
+                          "CustomKit_Scorch"};
+    hiddenSelectionsTextures[] = {
+        "armco_armours\data\marine\armors\vest_eod_co.paa",
+        "armco_armours\data\marine\armors\armor_eod_co.paa",
+        "armco_armours\data\marine\armors\legs_eod_co.paa",
         "optre_unsc_units\army\data\ghillie_woodland_co.paa",
         "optre_unsc_units\army\data\odst_armor_co.paa"};
   };
