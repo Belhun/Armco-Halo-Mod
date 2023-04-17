@@ -10,7 +10,8 @@ class CfgPatches {
                "ARMCO_Kitbag_Sabre",          "ARMCO_Kitbag_Zulu",
                "ARMCO_Kitbag_Phoenix",        "ARMCO_Kitbag_Medic",
                "ARMCO_Kitbag_Corpsman",       "ARMCO_Kitbag_Medic_Camo",
-               "ARMCO_Kitbag_Corpsman_Camo",  "ARMCO_Kitbag_EOD"};
+               "ARMCO_Kitbag_Corpsman_Camo",  "ARMCO_Kitbag_EOD",
+               "ARMCO_Kitbag_Zulu_Camo"};
     weapons[] = {};
     requiredVersion = 0.1;
     requiredAddons[] = {

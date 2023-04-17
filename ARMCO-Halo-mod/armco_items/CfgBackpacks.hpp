@@ -155,6 +155,11 @@ class ARMCO_Kitbag_Zulu : ARMCO_Kitbag_Black {
   hiddenSelectionsTextures[] = {
       "armco_items\data\backpacks\Kitbag\backpack_kitbag_zulu_co.paa"};
 };
+class ARMCO_Kitbag_Zulu_Camo : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Zulu Kitbag (Camo)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_zulu_camo_co.paa"};
+};
 class ARMCO_Kitbag_EOD : ARMCO_Kitbag_Black {
   displayName = "[A][ARMCO] Kitbag (EOD)";
   hiddenSelectionsTextures[] = {
