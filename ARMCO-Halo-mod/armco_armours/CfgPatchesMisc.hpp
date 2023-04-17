@@ -59,6 +59,7 @@ class CfgPatches {
         "ARMCO_Phoenix_Armor",
         "ARMCO_Medical_Armor",
         "ARMCO_EOD_Armor",
+        "ARMCO_Zulu_Ghillie_Armor",
         // ODST armour
         "ARMCO_Alpha_ODST_Armor",
         "ARMCO_Sabre_ODST_Armor",

@@ -99,11 +99,13 @@ class ARMCO_Generic_CH252_Ghillie_Helmet : OPTRE_UNSC_CH252_Helmet3_WDL {
   displayName = "[A][ARMCO] Unit CH252 Helmet (Ghillie)";
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
-      "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+      "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa",
+      "optre_unsc_units\army\data\ghillie_woodland_co.paa"};
   class ItemInfo : ItemInfo {
     hiddenSelectionsTextures[] = {
         "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
-        "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+        "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa",
+        "optre_unsc_units\army\data\ghillie_woodland_co.paa"};
   };
 };
 
