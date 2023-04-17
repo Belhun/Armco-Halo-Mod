@@ -190,7 +190,7 @@ class CfgVehicles
 		tf_range 			= 25000;
 		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio	 	= 1;
-		
+
 	};
 	class ARMCO_M12G1_LRV: OPTRE_M12G1_LRV
 	{
@@ -372,7 +372,7 @@ class CfgVehicles
 		tf_range 			= 25000;
 		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio	 	= 1;
-		
+
 	};
 	class ARMCO_M12A1_LRV: OPTRE_M12A1_LRV
 	{
@@ -553,7 +553,7 @@ class CfgVehicles
 		tf_range 			= 25000;
 		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio	 	= 1;
-		
+
 	};
 	class ARMCO_M12R_AA: OPTRE_M12R_AA
 	{
@@ -726,7 +726,7 @@ class CfgVehicles
 		tf_range 			= 25000;
 		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio	 	= 1;
-		
+
 	};
 	class ARMCO_M914_RV: OPTRE_M914_RV
 	{
@@ -900,7 +900,7 @@ class CfgVehicles
 		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio	 	= 1;
 	};
-	
+
 	class ARMCO_M12_FAV: OPTRE_M12_FAV
 	{
 		displayName="[ARMCO] M12-FAV";
@@ -917,7 +917,7 @@ class CfgVehicles
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
 			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
-			
+
 		};
 		class textureSources
 		{
@@ -947,7 +947,7 @@ class CfgVehicles
 					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
 					"\OPTRE_Vehicles\Warthog\data\m12hogmaav_interior_co.paa"
-					
+
 				};
 				factions[]=
 				{
@@ -1077,7 +1077,7 @@ class CfgVehicles
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_cars";
 		hiddenSelectionsTextures[]=
-		{		
+		{
 			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
@@ -1123,7 +1123,7 @@ class CfgVehicles
 					"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa"
-					
+
 				};
 				factions[]=
 				{
@@ -1287,7 +1287,7 @@ class CfgVehicles
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\medical_lopo_co.paa"
-			
+
 		};
 		class textureSources
 		{
@@ -1486,7 +1486,7 @@ class CfgVehicles
 		editorCategory = "armco_units";
 		editorSubcategory = "armco_units_cars";
 		hiddenSelectionsTextures[]=
-		{		
+		{
 			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
@@ -1529,7 +1529,7 @@ class CfgVehicles
 					"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa"
-					
+
 				};
 				factions[]=
 				{
