@@ -2927,145 +2927,145 @@ class CfgVehicles {
   ////////////////////
   // BACKPACKS CONFIG//
   ////////////////////
-  class B_Kitbag_base;
+  //class B_Kitbag_base;
   // class tfw_ilbe_gr;
   class OPTRE_UNSC_Rucksack;
   class OPTRE_ILCS_Rucksack_Black;
   class Weapon_srifle_DMR_02_F;
 
   //---Kitbags---//
-  class ARMCO_Kitbag_Black : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Kitbag (Black)";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\CM_BAG_armco_blk.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Alpha : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Alpha Kitbag";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_alpha_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Echo : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Sabre Kitbag";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_echo_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Zulu : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Zulu Kitbag";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_zulu_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Zulu_Camo : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Zulu Kitbag (Camo)";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_zulu_camo_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Phoenix : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Phoenix Kitbag";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_phoenix_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Corpsman : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Corpsman Kitbag";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_corpsman_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Corpsman_Camo : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Corpsman Kitbag (Camo)";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_corpsman_camo_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Medic : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Medic Kitbag";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_medic_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_Medic_Camo : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] Medic Kitbag (Camo)";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_medic_camo_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
-  class ARMCO_Kitbag_EOD : B_Kitbag_base {
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] EOD Kitbag";
-    picture =
-        "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\backpacks\backpack_soft_eod_co.paa"};
-    containerClass = "Supply300";
-    mass = 20;
-  };
+  // class ARMCO_Kitbag_Black : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Kitbag (Black)";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\CM_BAG_armco_blk.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Alpha : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Alpha Kitbag";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_alpha_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Echo : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Sabre Kitbag";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_echo_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Zulu : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Zulu Kitbag";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_zulu_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Zulu_Camo : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Zulu Kitbag (Camo)";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_zulu_camo_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Phoenix : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Phoenix Kitbag";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_phoenix_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Corpsman : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Corpsman Kitbag";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_corpsman_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Corpsman_Camo : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Corpsman Kitbag (Camo)";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_corpsman_camo_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Medic : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Medic Kitbag";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_medic_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_Medic_Camo : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] Medic Kitbag (Camo)";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_medic_camo_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
+  // class ARMCO_Kitbag_EOD : B_Kitbag_base {
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] EOD Kitbag";
+  //   picture =
+  //       "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\backpacks\backpack_soft_eod_co.paa"};
+  //   containerClass = "Supply300";
+  //   mass = 20;
+  // };
 
   //---Long Range Radio Backpacks---//
   // class ARMCO_LR_Bag_BLK : tfw_ilbe_gr {

@@ -128,3 +128,60 @@ class ARMCO_Rucksack_tSoft_Medical : OPTRE_UNSC_Rucksack {
   hiddenSelectionsTextures[] = {
       "armco_items\data\backpacks\backpack_odst_soft_medical_co.paa", ""};
 };
+
+class B_Kitbag_base;
+// Kitbags
+class ARMCO_Kitbag_Black : B_Kitbag_base {
+  author = "Belhun";
+  displayName = "[A][ARMCO] Kitbag (Black)";
+  scope = 2;
+  maximumLoad = 320;
+  picture = "\A3\weapons_f\ammoboxes\bags\data\ui\icon_B_C_Compact_dgtl_ca.paa";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_blk.paa"};
+};
+class ARMCO_Kitbag_Alpha : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (Alpha)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_alpha_co.paa"};
+};
+class ARMCO_Kitbag_Sabre : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (Sabre)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_sabre_co.paa"};
+};
+class ARMCO_Kitbag_Zulu : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (Zulu)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_zulu_co.paa"};
+};
+class ARMCO_Kitbag_EOD : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (EOD)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_eod_co.paa"};
+};
+class ARMCO_Kitbag_Phoenix : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (Phoenix)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_phoenix_co.paa"};
+};
+class ARMCO_Kitbag_Corpsman : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (Corpsman)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_corpsman_co.paa"};
+};
+class ARMCO_Kitbag_Corpsman_Camo : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (Corpsman Camo)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_corpsman_camo_co.paa"};
+};
+class ARMCO_Kitbag_Medic : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (Medic)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_medic_co.paa"};
+};
+class ARMCO_Kitbag_Medic_Camo : ARMCO_Kitbag_Black {
+  displayName = "[A][ARMCO] Kitbag (Medic Camo)";
+  hiddenSelectionsTextures[] = {
+      "armco_items\data\backpacks\Kitbag\backpack_kitbag_medic_camo_co.paa"};
+};
