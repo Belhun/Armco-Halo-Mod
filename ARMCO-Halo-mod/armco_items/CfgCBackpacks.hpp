@@ -27,6 +27,12 @@ class ARMCO_Rucksack_Boone : ARMCO_Rucksack_tSoft_Alpha {
   hiddenSelections[] = {"camo", "B_Medic", "B_Radio"};
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_backpacks\odst_soft_backpack_Boone_co.paa"};
+  tf_encryptionCode = "tf_west_radio_code";
+  tf_dialog = "rt1523g_radio_dialog";
+  tf_subtype = "digital_lr";
+  tf_range = 25000;
+  tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  tf_hasLRradio = 1;
 };
 class ARMCO_Rucksack_Cheese : ARMCO_Rucksack_Hard_Alpha {
   displayName = "[A][ARMCO]Hard Rucksack (Cheese)";
