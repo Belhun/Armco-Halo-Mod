@@ -3,5 +3,5 @@
 #include "CfgPatches.hpp"
 
 class CfgVehicles {
-#include "CfgBackpacks.hpp"
+#include "CfgSBackpacks.hpp"
 };
