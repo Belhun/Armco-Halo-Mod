@@ -1,7 +1,7 @@
 // if you add a new Unifrom you need to add a corasponding unit in
 // CfgVehicalSoldier.hpp
 class U_B_CombatUniform_mcam;
-class UniformItem;
+class UniformItem;// dont know where this is comeing from but need it
 class ARMCO_PMC_Army_Uniform_WDL : U_B_CombatUniform_mcam {
   dlc = "ARMCO_PMC";
   scope = 2;
@@ -241,4 +241,23 @@ class ARMCO_ODST_DWLD_BDU : ARMCO_PMC_Army_Uniform_WDL {
     mass = 50;
     modelSides[] = {6};
   }
+};
+class ARMCO_SEC_OVAL_BDU : ARMCO_PMC_Army_Uniform_WDL {
+
+  displayName = "[ARMCO] Security Tactical Overalls";
+  class ItemInfo : UniformItem {
+    uniformClass = "ARMCO_Soldier_SEC";
+    containerClass = "Supply40";
+    mass = 50;
+    modelSides[] = {6};
+  };
+};
+class ARMCO_ODST_SEC_BDU : ARMCO_PMC_Army_Uniform_WDL {
+  displayName = "[ARMCO] Security Bureau ODST BDU [Black/Gold]";
+  class ItemInfo : ItemInfo {
+    uniformClass = "ARMCO_Soldier_ODST_SEC";
+    containerClass = "Supply40";
+    mass = 50;
+    modelSides[] = {6};
+  };
 };

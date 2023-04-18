@@ -20,7 +20,7 @@ class CfgPatches {
         "Zulu_CH252_Helmet",
         "Medical_CH252_Helmet",
         "EOD_CH252_Helmet",
-        "ARMCO_Generic_CH252_Ghillie_Helmet",
+        "ARMCO_Generic_CH252_Ghillie_Helmesssssssast",
 
         // Squad ODST Helmet
         "Alpha_CH252D_Helmet",
@@ -53,6 +53,8 @@ class CfgPatches {
         "ARMCO_ODST_GDDMOUNT_BDU",
         "ARMCO_ODST_DDRKWDL_BDU",
         "ARMCO_ODST_DWLD_BDU",
+        "ARMCO_SEC_OVAL_BDU",
+        "ARMCO_ODST_SEC_BDU",
 
         // Squad Marine Armours
         // Squad Base armour

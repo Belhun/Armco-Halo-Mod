@@ -380,6 +380,7 @@ class ARMCO_Soldier_ODST_GDJungle : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_a_gdjungle_CO.paa",
       "armco_armours\data\uniforms\uniform_a_gdjungle_CO.paa"};
 };
+//BDUs made by Belhun
 class ARMCO_Soldier_ODST_Dark_Mountain : ARMCO_Base_Soldier {
   dlc = "ARMCO_PMC";
   author = "Belhun";
@@ -423,4 +424,26 @@ class ARMCO_Soldier_ODST_DWLD : ARMCO_Base_Soldier {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\uniforms\uniform_a_DigitalWoodland_CO.paa",
       "armco_armours\data\uniforms\uniform_a_DigitalWoodland_CO.paa"};
+};
+//Scurity BDU
+class ARMCO_Soldier_SEC : ARMCO_Base_Soldier {
+  dlc = "ARMCO_PMC";
+  author = "Belhun";
+  vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
+  uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
+  model = "\A3\Characters_F_Tank\Uniforms\U_Tank_crew_F.p3d";
+  hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\security\uniform\uniform_armco_security_co.paa"};
+};
+class ARMCO_Soldier_ODST_SEC : ARMCO_Base_Soldier {
+  dlc = "ARMCO_PMC";
+  author = "Belhun";
+  vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
+  uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
+  model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\security\uniform\uniform_armco_odst_security_co.paa",
+      "armco_armours\data\security\uniform\uniform_armco_odst_security_co.paa"};
 };
