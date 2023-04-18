@@ -9,6 +9,7 @@ class CfgPatches {
   class ARMCO_Units_Army {
     units[] = {
         // Units class names go here
+        "ARMCO_Soldier_A_Rifle"
     };
     weapons[] = {
         // item class names go here
@@ -26,6 +27,8 @@ class CfgPatches {
         "Sabre_CH252D_Helmet",
         "Zulu_CH252D_Helmet",
         "Phoenix_CH252D_Helmet",
+
+        "ARMCO_PMC_Army_Uniform_WDL",
 
         // Squad Uniforms
         "Alpha_BDU",
