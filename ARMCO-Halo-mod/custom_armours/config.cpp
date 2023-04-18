@@ -678,1379 +678,1379 @@ class CfgVehicles {
   ///////////////////////
   // BASE Uniforms Start//
   ///////////////////////
-  class ARMCO_Soldier_PT : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    author = "4th Battalion Mod Team";
-    uniformClass = "ARMCO_PT_Uniform";
-    model = "\OPTRE_UNSC_Units\Army\uniform_PT.p3d";
-    hiddenSelections[] = {
-        "camo", "insignia",
-        "clan"}; // Determines what hiddenselections are enabled
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\uniform\Summer_PT_odst_TO_CO.paa"};
-    editorSubcategory = "armco_units_training";
-  };
+  // class ARMCO_Soldier_PT : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   author = "4th Battalion Mod Team";
+  //   uniformClass = "ARMCO_PT_Uniform";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_PT.p3d";
+  //   hiddenSelections[] = {
+  //       "camo", "insignia",
+  //       "clan"}; // Determines what hiddenselections are enabled
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\uniform\Summer_PT_odst_TO_CO.paa"};
+  //   editorSubcategory = "armco_units_training";
+  // };
 
-  //---Alpha Squad---//
-  class ARMCO_Soldier_O_Alpha : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Alpha Squad] Rifleman (Olive)";
-    author = "Frosty & Mac";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Alpha";
-    uniformClass = "ARMCO_Uniform_Alpha_O";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_alpha_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_alpha_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Alpha_O",
-                     "ARMCO_M52A_Armor_Alpha_Rifleman",
-                     "ARMCO_CH252_Helmet_Alpha",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Alpha_O",
-                            "ARMCO_M52A_Armor_Alpha_Rifleman",
-                            "ARMCO_CH252_Helmet_Alpha",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Team Leader---//
-  class ARMCO_Soldier_O_Alpha_TL : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Alpha Squad] Team Leader (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    icon = "iconManLeader";
-    backpack = "ARMCO_Rucksack_Soft_Alpha";
-    uniformClass = "ARMCO_Uniform_Alpha_O";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_alpha_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_alpha_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Alpha_O",
-                     "ARMCO_M52A_Armor_Alpha_Team_Lead",
-                     "ARMCO_CH252_Helmet_Alpha",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Alpha_O",
-                            "ARMCO_M52A_Armor_Alpha_Team_Lead",
-                            "ARMCO_CH252_Helmet_Alpha",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Squad Medic---//
-  class ARMCO_Soldier_O_Alpha_Medic : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Alpha Squad] Medic (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Rucksack_Soft_Medical";
-    uniformClass = "ARMCO_Uniform_Alpha_O_Medical";
-    icon = "iconManMedic";
-    attendant = 1;
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_alpha_medic_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_alpha_medic_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_Alpha_O_Medical",
-        "ARMCO_M52A_Armor_Alpha_Medic",
-        "ARMCO_CH252_Helmet_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_Alpha_O_Medical",
-        "ARMCO_M52A_Armor_Alpha_Medic",
-        "ARMCO_CH252_Helmet_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Squad Corpsman---//
-  class ARMCO_Soldier_O_Alpha_Corpsman : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Alpha Squad] Corpsman (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Corpsman";
-    uniformClass = "ARMCO_Uniform_Alpha_O_Medical";
-    icon = "iconManMedic";
-    attendant = 1;
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_alpha_medic_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_alpha_medic_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Alpha_O_Medical",
-                     "ARMCO_M52A_Armor_Alpha_Corpsman",
-                     "ARMCO_CH252_Helmet_Corpsman",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Alpha_O_Medical",
-                            "ARMCO_M52A_Armor_Alpha_Corpsman",
-                            "ARMCO_CH252_Helmet_Corpsman",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---EOD---//
-  class ARMCO_Soldier_O_Alpha_EOD : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Alpha Squad] EOD (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_EOD";
-    uniformClass = "ARMCO_Uniform_Alpha_O_EOD";
-    icon = "iconManExplosive";
-    engineer = 1;
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_alpha_eod_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_alpha_eod_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_Alpha_O_EOD",
-        "ARMCO_M52E_Armor_Alpha_EOD",
-        "ARMCO_CH252_Helmet_EOD",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_Alpha_O_EOD",
-        "ARMCO_M52E_Armor_Alpha_EOD",
-        "ARMCO_CH252_Helmet_EOD",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
+  // //---Alpha Squad---//
+  // class ARMCO_Soldier_O_Alpha : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Alpha Squad] Rifleman (Olive)";
+  //   author = "Frosty & Mac";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Alpha";
+  //   uniformClass = "ARMCO_Uniform_Alpha_O";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Alpha_O",
+  //                    "ARMCO_M52A_Armor_Alpha_Rifleman",
+  //                    "ARMCO_CH252_Helmet_Alpha",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Alpha_O",
+  //                           "ARMCO_M52A_Armor_Alpha_Rifleman",
+  //                           "ARMCO_CH252_Helmet_Alpha",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Team Leader---//
+  // class ARMCO_Soldier_O_Alpha_TL : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Alpha Squad] Team Leader (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   icon = "iconManLeader";
+  //   backpack = "ARMCO_Rucksack_Soft_Alpha";
+  //   uniformClass = "ARMCO_Uniform_Alpha_O";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Alpha_O",
+  //                    "ARMCO_M52A_Armor_Alpha_Team_Lead",
+  //                    "ARMCO_CH252_Helmet_Alpha",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Alpha_O",
+  //                           "ARMCO_M52A_Armor_Alpha_Team_Lead",
+  //                           "ARMCO_CH252_Helmet_Alpha",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Squad Medic---//
+  // class ARMCO_Soldier_O_Alpha_Medic : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Alpha Squad] Medic (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Rucksack_Soft_Medical";
+  //   uniformClass = "ARMCO_Uniform_Alpha_O_Medical";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_medic_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_medic_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_Alpha_O_Medical",
+  //       "ARMCO_M52A_Armor_Alpha_Medic",
+  //       "ARMCO_CH252_Helmet_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_Alpha_O_Medical",
+  //       "ARMCO_M52A_Armor_Alpha_Medic",
+  //       "ARMCO_CH252_Helmet_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Squad Corpsman---//
+  // class ARMCO_Soldier_O_Alpha_Corpsman : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Alpha Squad] Corpsman (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Corpsman";
+  //   uniformClass = "ARMCO_Uniform_Alpha_O_Medical";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_medic_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_medic_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Alpha_O_Medical",
+  //                    "ARMCO_M52A_Armor_Alpha_Corpsman",
+  //                    "ARMCO_CH252_Helmet_Corpsman",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Alpha_O_Medical",
+  //                           "ARMCO_M52A_Armor_Alpha_Corpsman",
+  //                           "ARMCO_CH252_Helmet_Corpsman",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---EOD---//
+  // class ARMCO_Soldier_O_Alpha_EOD : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Alpha Squad] EOD (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_EOD";
+  //   uniformClass = "ARMCO_Uniform_Alpha_O_EOD";
+  //   icon = "iconManExplosive";
+  //   engineer = 1;
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_eod_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_alpha_eod_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_Alpha_O_EOD",
+  //       "ARMCO_M52E_Armor_Alpha_EOD",
+  //       "ARMCO_CH252_Helmet_EOD",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_Alpha_O_EOD",
+  //       "ARMCO_M52E_Armor_Alpha_EOD",
+  //       "ARMCO_CH252_Helmet_EOD",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
 
-  //---Sabre Squad---//
-  class ARMCO_Soldier_O_Echo : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Sabre Squad] Rifleman (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Echo";
-    uniformClass = "ARMCO_Uniform_Echo_O";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_echo_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_echo_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Echo_O",
-                     "ARMCO_M52A_Armor_Echo_Rifleman",
-                     "ARMCO_CH252_Helmet_Echo",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Echo_O",
-                            "ARMCO_M52A_Armor_Echo_Rifleman",
-                            "ARMCO_CH252_Helmet_Echo",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Team Leader---//
-  class ARMCO_Soldier_O_Echo_TL : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Sabre Squad] Team Leader (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    icon = "iconManLeader";
-    backpack = "ARMCO_Rucksack_Soft_Echo";
-    uniformClass = "ARMCO_Uniform_Echo_O";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_echo_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_echo_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Echo_O",
-                     "ARMCO_M52A_Armor_Echo_Team_Lead",
-                     "ARMCO_CH252_Helmet_Echo",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Echo_O",
-                            "ARMCO_M52A_Armor_Echo_Team_Lead",
-                            "ARMCO_CH252_Helmet_Echo",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Squad Medic---//
-  class ARMCO_Soldier_O_Echo_Medic : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Sabre Squad] Medic (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Rucksack_Soft_Medical";
-    icon = "iconManMedic";
-    attendant = 1;
-    uniformClass = "ARMCO_Uniform_Echo_O_Medical";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_echo_medic_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_echo_medic_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_Echo_O_Medical",
-        "ARMCO_M52M_Armor_Echo_Medic",
-        "ARMCO_CH252_Helmet_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_Echo_O_Medical",
-        "ARMCO_M52M_Armor_Echo_Medic",
-        "ARMCO_CH252_Helmet_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Squad Corpsman---//
-  class ARMCO_Soldier_O_Echo_Corpsman : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Sabre Squad] Corpsman (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Corpsman";
-    icon = "iconManMedic";
-    attendant = 1;
-    uniformClass = "ARMCO_Uniform_Echo_O_Medical";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_echo_medic_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_echo_medic_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Echo_O_Medical",
-                     "ARMCO_M52M_Armor_Echo_Corpsman",
-                     "ARMCO_CH252_Helmet_Corpsman",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Echo_O_Medical",
-                            "ARMCO_M52M_Armor_Echo_Corpsman",
-                            "ARMCO_CH252_Helmet_Corpsman",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---EOD---//
-  class ARMCO_Soldier_O_Echo_EOD : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Sabre Squad] EOD (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_EOD";
-    icon = "iconManExplosive";
-    engineer = 1;
-    uniformClass = "ARMCO_Uniform_Echo_O_EOD";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_echo_eod_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_echo_eod_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_Echo_O_EOD",
-        "ARMCO_M52E_Armor_Echo_EOD",
-        "ARMCO_CH252_Helmet_EOD",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_Echo_O_EOD",
-        "ARMCO_M52E_Armor_Echo_EOD",
-        "ARMCO_CH252_Helmet_EOD",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
+  // //---Sabre Squad---//
+  // class ARMCO_Soldier_O_Echo : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Sabre Squad] Rifleman (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Echo";
+  //   uniformClass = "ARMCO_Uniform_Echo_O";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Echo_O",
+  //                    "ARMCO_M52A_Armor_Echo_Rifleman",
+  //                    "ARMCO_CH252_Helmet_Echo",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Echo_O",
+  //                           "ARMCO_M52A_Armor_Echo_Rifleman",
+  //                           "ARMCO_CH252_Helmet_Echo",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Team Leader---//
+  // class ARMCO_Soldier_O_Echo_TL : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Sabre Squad] Team Leader (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   icon = "iconManLeader";
+  //   backpack = "ARMCO_Rucksack_Soft_Echo";
+  //   uniformClass = "ARMCO_Uniform_Echo_O";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Echo_O",
+  //                    "ARMCO_M52A_Armor_Echo_Team_Lead",
+  //                    "ARMCO_CH252_Helmet_Echo",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Echo_O",
+  //                           "ARMCO_M52A_Armor_Echo_Team_Lead",
+  //                           "ARMCO_CH252_Helmet_Echo",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Squad Medic---//
+  // class ARMCO_Soldier_O_Echo_Medic : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Sabre Squad] Medic (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Rucksack_Soft_Medical";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   uniformClass = "ARMCO_Uniform_Echo_O_Medical";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_medic_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_medic_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_Echo_O_Medical",
+  //       "ARMCO_M52M_Armor_Echo_Medic",
+  //       "ARMCO_CH252_Helmet_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_Echo_O_Medical",
+  //       "ARMCO_M52M_Armor_Echo_Medic",
+  //       "ARMCO_CH252_Helmet_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Squad Corpsman---//
+  // class ARMCO_Soldier_O_Echo_Corpsman : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Sabre Squad] Corpsman (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Corpsman";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   uniformClass = "ARMCO_Uniform_Echo_O_Medical";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_medic_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_medic_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Echo_O_Medical",
+  //                    "ARMCO_M52M_Armor_Echo_Corpsman",
+  //                    "ARMCO_CH252_Helmet_Corpsman",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Echo_O_Medical",
+  //                           "ARMCO_M52M_Armor_Echo_Corpsman",
+  //                           "ARMCO_CH252_Helmet_Corpsman",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---EOD---//
+  // class ARMCO_Soldier_O_Echo_EOD : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Sabre Squad] EOD (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_EOD";
+  //   icon = "iconManExplosive";
+  //   engineer = 1;
+  //   uniformClass = "ARMCO_Uniform_Echo_O_EOD";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_eod_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_echo_eod_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_Echo_O_EOD",
+  //       "ARMCO_M52E_Armor_Echo_EOD",
+  //       "ARMCO_CH252_Helmet_EOD",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_Echo_O_EOD",
+  //       "ARMCO_M52E_Armor_Echo_EOD",
+  //       "ARMCO_CH252_Helmet_EOD",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
 
-  //---Zulu Squad---//
-  class ARMCO_Soldier_O_Zulu : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] Rifleman (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Zulu";
-    uniformClass = "ARMCO_Uniform_zulu_O";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_zulu_O",
-                     "ARMCO_M52A_Armor_Zulu_Rifleman",
-                     "ARMCO_CH252_Helmet_Zulu",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_zulu_O",
-                            "ARMCO_M52A_Armor_Zulu_Rifleman",
-                            "ARMCO_CH252_Helmet_Zulu",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Team Leader---//
-  class ARMCO_Soldier_O_Zulu_TL : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] Team Leader (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    icon = "iconManLeader";
-    backpack = "ARMCO_Rucksack_Soft_Zulu";
-    uniformClass = "ARMCO_Uniform_zulu_O";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_zulu_O",
-                     "ARMCO_M52A_Armor_Zulu_Team_Lead",
-                     "ARMCO_CH252_Helmet_Zulu",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_zulu_O",
-                            "ARMCO_M52A_Armor_Zulu_Team_Lead",
-                            "ARMCO_CH252_Helmet_Zulu",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Squad Medic---//
-  class ARMCO_Soldier_O_Zulu_Medic : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] Medic (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Rucksack_Soft_Medical";
-    icon = "iconManMedic";
-    attendant = 1;
-    uniformClass = "ARMCO_Uniform_zulu_O_Medical";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_medic_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_medic_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_zulu_O_Medical",
-        "ARMCO_M52M_Armor_Zulu_Medic",
-        "ARMCO_CH252_Helmet_Zulu_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_zulu_O_Medical",
-        "ARMCO_M52M_Armor_Zulu_Medic",
-        "ARMCO_CH252_Helmet_Zulu_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Squad Corpsman---//
-  class ARMCO_Soldier_O_Zulu_Corpsman : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] Corpsman (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Corpsman";
-    icon = "iconManMedic";
-    attendant = 1;
-    uniformClass = "ARMCO_Uniform_zulu_O_Medical";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_medic_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_medic_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_zulu_O_Medical",
-                     "ARMCO_M52M_Armor_Zulu_Corpsman",
-                     "ARMCO_CH252_Helmet_Zulu_Corpsman",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_zulu_O_Medical",
-                            "ARMCO_M52M_Armor_Zulu_Corpsman",
-                            "ARMCO_CH252_Helmet_Zulu_Corpsman",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---EOD---//
-  class ARMCO_Soldier_O_Zulu_EOD : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] EOD (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_EOD";
-    icon = "iconManExplosive";
-    engineer = 1;
-    uniformClass = "ARMCO_Uniform_zulu_O_EOD";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_eod_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_eod_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_zulu_O_EOD",
-        "ARMCO_M52E_Armor_Zulu_EOD",
-        "ARMCO_CH252_Helmet_EOD",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_zulu_O_EOD",
-        "ARMCO_M52E_Armor_Zulu_EOD",
-        "ARMCO_CH252_Helmet_EOD",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
+  // //---Zulu Squad---//
+  // class ARMCO_Soldier_O_Zulu : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] Rifleman (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Zulu";
+  //   uniformClass = "ARMCO_Uniform_zulu_O";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_zulu_O",
+  //                    "ARMCO_M52A_Armor_Zulu_Rifleman",
+  //                    "ARMCO_CH252_Helmet_Zulu",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_MA5B", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_zulu_O",
+  //                           "ARMCO_M52A_Armor_Zulu_Rifleman",
+  //                           "ARMCO_CH252_Helmet_Zulu",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Team Leader---//
+  // class ARMCO_Soldier_O_Zulu_TL : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] Team Leader (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   icon = "iconManLeader";
+  //   backpack = "ARMCO_Rucksack_Soft_Zulu";
+  //   uniformClass = "ARMCO_Uniform_zulu_O";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_zulu_O",
+  //                    "ARMCO_M52A_Armor_Zulu_Team_Lead",
+  //                    "ARMCO_CH252_Helmet_Zulu",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_zulu_O",
+  //                           "ARMCO_M52A_Armor_Zulu_Team_Lead",
+  //                           "ARMCO_CH252_Helmet_Zulu",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Squad Medic---//
+  // class ARMCO_Soldier_O_Zulu_Medic : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] Medic (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Rucksack_Soft_Medical";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   uniformClass = "ARMCO_Uniform_zulu_O_Medical";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_medic_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_medic_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_zulu_O_Medical",
+  //       "ARMCO_M52M_Armor_Zulu_Medic",
+  //       "ARMCO_CH252_Helmet_Zulu_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_zulu_O_Medical",
+  //       "ARMCO_M52M_Armor_Zulu_Medic",
+  //       "ARMCO_CH252_Helmet_Zulu_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Squad Corpsman---//
+  // class ARMCO_Soldier_O_Zulu_Corpsman : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] Corpsman (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Corpsman";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   uniformClass = "ARMCO_Uniform_zulu_O_Medical";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_medic_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_medic_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_zulu_O_Medical",
+  //                    "ARMCO_M52M_Armor_Zulu_Corpsman",
+  //                    "ARMCO_CH252_Helmet_Zulu_Corpsman",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_zulu_O_Medical",
+  //                           "ARMCO_M52M_Armor_Zulu_Corpsman",
+  //                           "ARMCO_CH252_Helmet_Zulu_Corpsman",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---EOD---//
+  // class ARMCO_Soldier_O_Zulu_EOD : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] EOD (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_EOD";
+  //   icon = "iconManExplosive";
+  //   engineer = 1;
+  //   uniformClass = "ARMCO_Uniform_zulu_O_EOD";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_eod_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_eod_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_zulu_O_EOD",
+  //       "ARMCO_M52E_Armor_Zulu_EOD",
+  //       "ARMCO_CH252_Helmet_EOD",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_zulu_O_EOD",
+  //       "ARMCO_M52E_Armor_Zulu_EOD",
+  //       "ARMCO_CH252_Helmet_EOD",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
 
-  //---Zulu Squad Ghillie---//
-  class ARMCO_Soldier_Camo_Zulu : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] Rifleman (Camo)";
-    icon = "iconManRecon";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Zulu_Camo";
-    uniformClass = "ARMCO_Uniform_Zulu_Camo";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_camo_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_camo_co.paa"
+  // //---Zulu Squad Ghillie---//
+  // class ARMCO_Soldier_Camo_Zulu : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] Rifleman (Camo)";
+  //   icon = "iconManRecon";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Zulu_Camo";
+  //   uniformClass = "ARMCO_Uniform_Zulu_Camo";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_camo_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_camo_co.paa"
 
-    };
-    linkedItems[] = {"ARMCO_Uniform_Zulu_Camo",
-                     "ARMCO_M52A_Armor_Zulu_Camo_Rifleman",
-                     "ARMCO_CH252_Helmet_Zulu_C",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Zulu_Camo",
-                            "ARMCO_M52A_Armor_Zulu_Camo_Rifleman",
-                            "ARMCO_CH252_Helmet_Zulu_C",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_camo";
-  };
-  //---Team Leader---//
-  class ARMCO_Soldier_Camo_Zulu_TL : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] Team Leader (Camo)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    icon = "iconManLeader";
-    backpack = "ARMCO_Rucksack_Soft_Zulu";
-    uniformClass = "ARMCO_Uniform_Zulu_Camo";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_camo_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_camo_co.paa"
+  //   };
+  //   linkedItems[] = {"ARMCO_Uniform_Zulu_Camo",
+  //                    "ARMCO_M52A_Armor_Zulu_Camo_Rifleman",
+  //                    "ARMCO_CH252_Helmet_Zulu_C",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Zulu_Camo",
+  //                           "ARMCO_M52A_Armor_Zulu_Camo_Rifleman",
+  //                           "ARMCO_CH252_Helmet_Zulu_C",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_camo";
+  // };
+  // //---Team Leader---//
+  // class ARMCO_Soldier_Camo_Zulu_TL : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] Team Leader (Camo)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   icon = "iconManLeader";
+  //   backpack = "ARMCO_Rucksack_Soft_Zulu";
+  //   uniformClass = "ARMCO_Uniform_Zulu_Camo";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_camo_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_camo_co.paa"
 
-    };
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    linkedItems[] = {"ARMCO_Uniform_Zulu_Camo",
-                     "ARMCO_M52A_Armor_Zulu_Camo_Team_Lead",
-                     "ARMCO_CH252_Helmet_Zulu_C",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Zulu_Camo",
-                            "ARMCO_M52A_Armor_Zulu_Camo_Team_Lead",
-                            "ARMCO_CH252_Helmet_Zulu_C",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_camo";
-  };
-  //---Squad Medic---//
-  class ARMCO_Soldier_Camo_Zulu_Medic : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] Medic (Camo)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Rucksack_Soft_Medical";
-    icon = "iconManMedic";
-    attendant = 1;
-    uniformClass = "ARMCO_Uniform_Zulu_Camo_Medical";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_medic_camo_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_medic_camo_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_Zulu_Camo_Medical",
-        "ARMCO_M52M_Armor_Zulu_Camo_Medic",
-        "ARMCO_CH252_Helmet_Zulu_C_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_Zulu_Camo_Medical",
-        "ARMCO_M52M_Armor_Zulu_Camo_Medic",
-        "ARMCO_CH252_Helmet_Zulu_C_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_camo";
-  };
-  //---Squad Corpsman---//
-  class ARMCO_Soldier_Camo_Zulu_Corpsman : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] Corpsman (Camo)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Corpsman_Camo";
-    icon = "iconManMedic";
-    attendant = 1;
-    uniformClass = "ARMCO_Uniform_Zulu_Camo_Medical";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_medic_camo_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_medic_camo_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Zulu_Camo_Medical",
-                     "ARMCO_M52M_Armor_Zulu_Camo_Corpsman",
-                     "ARMCO_CH252_Helmet_Zulu_C_Corpsman",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Zulu_Camo_Medical",
-                            "ARMCO_M52M_Armor_Zulu_Camo_Corpsman",
-                            "ARMCO_CH252_Helmet_Zulu_C_Corpsman",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_camo";
-  };
-  //---EOD---//
-  class ARMCO_Soldier_Camo_Zulu_EOD : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Zulu Squad] EOD (Camo)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_EOD";
-    icon = "iconManExplosive";
-    engineer = 1;
-    uniformClass = "ARMCO_Uniform_Zulu_O_EOD";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_zulu_eod_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_zulu_eod_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_Zulu_O_EOD",
-        "ARMCO_M52E_Armor_Zulu_Camo_EOD",
-        "ARMCO_CH252_Helmet_EOD_Camo",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_Zulu_O_EOD",
-        "ARMCO_M52E_Armor_Zulu_Camo_EOD",
-        "ARMCO_CH252_Helmet_EOD_Camo",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_camo";
-  };
+  //   };
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   linkedItems[] = {"ARMCO_Uniform_Zulu_Camo",
+  //                    "ARMCO_M52A_Armor_Zulu_Camo_Team_Lead",
+  //                    "ARMCO_CH252_Helmet_Zulu_C",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Zulu_Camo",
+  //                           "ARMCO_M52A_Armor_Zulu_Camo_Team_Lead",
+  //                           "ARMCO_CH252_Helmet_Zulu_C",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_camo";
+  // };
+  // //---Squad Medic---//
+  // class ARMCO_Soldier_Camo_Zulu_Medic : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] Medic (Camo)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Rucksack_Soft_Medical";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   uniformClass = "ARMCO_Uniform_Zulu_Camo_Medical";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_medic_camo_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_medic_camo_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_Zulu_Camo_Medical",
+  //       "ARMCO_M52M_Armor_Zulu_Camo_Medic",
+  //       "ARMCO_CH252_Helmet_Zulu_C_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_Zulu_Camo_Medical",
+  //       "ARMCO_M52M_Armor_Zulu_Camo_Medic",
+  //       "ARMCO_CH252_Helmet_Zulu_C_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_camo";
+  // };
+  // //---Squad Corpsman---//
+  // class ARMCO_Soldier_Camo_Zulu_Corpsman : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] Corpsman (Camo)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Corpsman_Camo";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   uniformClass = "ARMCO_Uniform_Zulu_Camo_Medical";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_medic_camo_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_medic_camo_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Zulu_Camo_Medical",
+  //                    "ARMCO_M52M_Armor_Zulu_Camo_Corpsman",
+  //                    "ARMCO_CH252_Helmet_Zulu_C_Corpsman",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Zulu_Camo_Medical",
+  //                           "ARMCO_M52M_Armor_Zulu_Camo_Corpsman",
+  //                           "ARMCO_CH252_Helmet_Zulu_C_Corpsman",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_camo";
+  // };
+  // //---EOD---//
+  // class ARMCO_Soldier_Camo_Zulu_EOD : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Zulu Squad] EOD (Camo)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_EOD";
+  //   icon = "iconManExplosive";
+  //   engineer = 1;
+  //   uniformClass = "ARMCO_Uniform_Zulu_O_EOD";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_eod_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_zulu_eod_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_Zulu_O_EOD",
+  //       "ARMCO_M52E_Armor_Zulu_Camo_EOD",
+  //       "ARMCO_CH252_Helmet_EOD_Camo",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_Zulu_O_EOD",
+  //       "ARMCO_M52E_Armor_Zulu_Camo_EOD",
+  //       "ARMCO_CH252_Helmet_EOD_Camo",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_camo";
+  // };
 
-  //---Phoenix Squad---//
-  class ARMCO_Soldier_O_Phoenix : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Phoenix Squad] Rifleman (Olive)";
-    author = "4th Battalion Mod Team";
-    icon = "iconManMG";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Phoenix";
-    uniformClass = "ARMCO_Uniform_Phoenix_O";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Phoenix_O",
-                     "ARMCO_M52A_Armor_Phoenix_Rifleman",
-                     "ARMCO_CH252_Helmet_Phoenix",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_M73", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M73", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_200Rnd_95x40_Box", "OPTRE_200Rnd_95x40_Box",
-                   "OPTRE_200Rnd_95x40_Box", "OPTRE_200Rnd_95x40_Box",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_200Rnd_95x40_Box", "OPTRE_200Rnd_95x40_Box",
-                          "OPTRE_200Rnd_95x40_Box", "OPTRE_200Rnd_95x40_Box",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Phoenix_O",
-                            "ARMCO_M52A_Armor_Phoenix_Rifleman",
-                            "ARMCO_CH252_Helmet_Phoenix",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Team Leader---//
-  class ARMCO_Soldier_O_Phoenix_TL : ARMCO_Soldier_WDL {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Phoenix Squad] Team Leader (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    icon = "iconManLeader";
-    backpack = "ARMCO_Rucksack_Soft_Phoenix";
-    uniformClass = "ARMCO_Uniform_Phoenix_O";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Phoenix_O",
-                     "ARMCO_M52A_Armor_Phoenix_Team_Lead",
-                     "ARMCO_CH252_Helmet_Phoenix",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Phoenix_O",
-                            "ARMCO_M52A_Armor_Phoenix_Team_Lead",
-                            "ARMCO_CH252_Helmet_Phoenix",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Squad Medic---//
-  class ARMCO_Soldier_Phoenix_Medic : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Phoenix Squad] Medic (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Rucksack_Soft_Medical";
-    icon = "iconManMedic";
-    attendant = 1;
-    uniformClass = "ARMCO_Uniform_Phoenix_Medical";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_medic_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_medic_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_Phoenix_Medical",
-        "ARMCO_M52M_Armor_Phoenix_Medic",
-        "ARMCO_CH252_Helmet_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_Phoenix_Medical",
-        "ARMCO_M52M_Armor_Phoenix_Medic",
-        "ARMCO_CH252_Helmet_Medic",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---Squad Corpsman---//
-  class ARMCO_Soldier_Phoenix_Corpsman : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Phoenix Squad] Corpsman (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_Corpsman";
-    icon = "iconManMedic";
-    attendant = 1;
-    uniformClass = "ARMCO_Uniform_Phoenix_Medical";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_medic_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_medic_co.paa"};
-    linkedItems[] = {"ARMCO_Uniform_Phoenix_Medical",
-                     "ARMCO_M52M_Armor_Phoenix_Corpsman",
-                     "ARMCO_CH252_Helmet_Corpsman",
-                     "ItemMap",
-                     "ItemCompass",
-                     "ItemWatch",
-                     "ItemRadio",
-                     "OPTRE_NVG"};
-    weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                   "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
-                          "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {"ARMCO_Uniform_Phoenix_Medic",
-                            "ARMCO_M52M_Armor_Phoenix_Corpsman",
-                            "ARMCO_CH252_Helmet_Corpsman",
-                            "ItemMap",
-                            "ItemCompass",
-                            "ItemWatch",
-                            "ItemRadio",
-                            "OPTRE_NVG"};
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
-  //---EOD---//
-  class ARMCO_Soldier_Phoenix_EOD : ARMCO_Soldier_WDL_Medic {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    faction = "ARMCO_PMC";
-    displayName = "[Phoenix Squad] EOD (Olive)";
-    author = "4th Battalion Mod Team";
-    model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
-    backpack = "ARMCO_Kitbag_EOD";
-    icon = "iconManExplosive";
-    engineer = 1;
-    uniformClass = "ARMCO_Uniform_Phoenix_EOD";
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_eod_co.paa",
-        "custom_armours\data\Marines\Uniform\uniform_phoenix_eod_co.paa"};
-    linkedItems[] = {
-        "ARMCO_Uniform_Phoenix_EOD",
-        "ARMCO_M52E_Armor_Phoenix_EOD",
-        "ARMCO_CH252_Helmet_EOD",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
-    magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                   "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
-                          "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
-    respawnLinkedItems[] = {
-        "ARMCO_Uniform_Phoenix_EOD",
-        "ARMCO_M52E_Armor_Phoenix_EOD",
-        "ARMCO_CH252_Helmet_EOD",
-        "ItemMap",
-        "ItemCompass",
-        "ItemWatch",
-        "ItemRadio",
-        //"OPTRE_NVG"
-    };
-    editorCategory = "armco_units";
-    editorSubcategory = "armco_units_infantry";
-  };
+  // //---Phoenix Squad---//
+  // class ARMCO_Soldier_O_Phoenix : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Phoenix Squad] Rifleman (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   icon = "iconManMG";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Phoenix";
+  //   uniformClass = "ARMCO_Uniform_Phoenix_O";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Phoenix_O",
+  //                    "ARMCO_M52A_Armor_Phoenix_Rifleman",
+  //                    "ARMCO_CH252_Helmet_Phoenix",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_M73", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M73", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_200Rnd_95x40_Box", "OPTRE_200Rnd_95x40_Box",
+  //                  "OPTRE_200Rnd_95x40_Box", "OPTRE_200Rnd_95x40_Box",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_200Rnd_95x40_Box", "OPTRE_200Rnd_95x40_Box",
+  //                         "OPTRE_200Rnd_95x40_Box", "OPTRE_200Rnd_95x40_Box",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Phoenix_O",
+  //                           "ARMCO_M52A_Armor_Phoenix_Rifleman",
+  //                           "ARMCO_CH252_Helmet_Phoenix",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Team Leader---//
+  // class ARMCO_Soldier_O_Phoenix_TL : ARMCO_Soldier_WDL {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Phoenix Squad] Team Leader (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   icon = "iconManLeader";
+  //   backpack = "ARMCO_Rucksack_Soft_Phoenix";
+  //   uniformClass = "ARMCO_Uniform_Phoenix_O";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Phoenix_O",
+  //                    "ARMCO_M52A_Armor_Phoenix_Team_Lead",
+  //                    "ARMCO_CH252_Helmet_Phoenix",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_MA5BGL", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_60Rnd_762x51_Mag", "OPTRE_60Rnd_762x51_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Phoenix_O",
+  //                           "ARMCO_M52A_Armor_Phoenix_Team_Lead",
+  //                           "ARMCO_CH252_Helmet_Phoenix",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Squad Medic---//
+  // class ARMCO_Soldier_Phoenix_Medic : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Phoenix Squad] Medic (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Rucksack_Soft_Medical";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   uniformClass = "ARMCO_Uniform_Phoenix_Medical";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_medic_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_medic_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_Phoenix_Medical",
+  //       "ARMCO_M52M_Armor_Phoenix_Medic",
+  //       "ARMCO_CH252_Helmet_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_Phoenix_Medical",
+  //       "ARMCO_M52M_Armor_Phoenix_Medic",
+  //       "ARMCO_CH252_Helmet_Medic",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---Squad Corpsman---//
+  // class ARMCO_Soldier_Phoenix_Corpsman : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Phoenix Squad] Corpsman (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_Corpsman";
+  //   icon = "iconManMedic";
+  //   attendant = 1;
+  //   uniformClass = "ARMCO_Uniform_Phoenix_Medical";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_medic_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_medic_co.paa"};
+  //   linkedItems[] = {"ARMCO_Uniform_Phoenix_Medical",
+  //                    "ARMCO_M52M_Armor_Phoenix_Corpsman",
+  //                    "ARMCO_CH252_Helmet_Corpsman",
+  //                    "ItemMap",
+  //                    "ItemCompass",
+  //                    "ItemWatch",
+  //                    "ItemRadio",
+  //                    "OPTRE_NVG"};
+  //   weapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7S", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                  "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M9_Frag",          "OPTRE_M9_Frag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Orange",
+  //                         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {"ARMCO_Uniform_Phoenix_Medic",
+  //                           "ARMCO_M52M_Armor_Phoenix_Corpsman",
+  //                           "ARMCO_CH252_Helmet_Corpsman",
+  //                           "ItemMap",
+  //                           "ItemCompass",
+  //                           "ItemWatch",
+  //                           "ItemRadio",
+  //                           "OPTRE_NVG"};
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
+  // //---EOD---//
+  // class ARMCO_Soldier_Phoenix_EOD : ARMCO_Soldier_WDL_Medic {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   faction = "ARMCO_PMC";
+  //   displayName = "[Phoenix Squad] EOD (Olive)";
+  //   author = "4th Battalion Mod Team";
+  //   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
+  //   backpack = "ARMCO_Kitbag_EOD";
+  //   icon = "iconManExplosive";
+  //   engineer = 1;
+  //   uniformClass = "ARMCO_Uniform_Phoenix_EOD";
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_eod_co.paa",
+  //       "custom_armours\data\Marines\Uniform\uniform_phoenix_eod_co.paa"};
+  //   linkedItems[] = {
+  //       "ARMCO_Uniform_Phoenix_EOD",
+  //       "ARMCO_M52E_Armor_Phoenix_EOD",
+  //       "ARMCO_CH252_Helmet_EOD",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   weapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   respawnWeapons[] = {"OPTRE_M7", "OPTRE_M6G_SF", "Throw", "Put"};
+  //   magazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                  "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_60Rnd_5x23mm_Mag", "OPTRE_60Rnd_5x23mm_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_8Rnd_127x40_Mag",  "OPTRE_8Rnd_127x40_Mag",
+  //                         "OPTRE_M2_Smoke",         "OPTRE_M2_Smoke_Green"};
+  //   respawnLinkedItems[] = {
+  //       "ARMCO_Uniform_Phoenix_EOD",
+  //       "ARMCO_M52E_Armor_Phoenix_EOD",
+  //       "ARMCO_CH252_Helmet_EOD",
+  //       "ItemMap",
+  //       "ItemCompass",
+  //       "ItemWatch",
+  //       "ItemRadio",
+  //       //"OPTRE_NVG"
+  //   };
+  //   editorCategory = "armco_units";
+  //   editorSubcategory = "armco_units_infantry";
+  // };
 
   //---ODSTs---//
   class ARMCO_Soldier_ODST : ARMCO_Soldier_WDL_ODST {
@@ -3461,912 +3461,912 @@ class CfgVehicles {
   //   tf_hasLRradio = 1;
   // };
 
-  //---Personal Packs---// ,"AP_Heavy","BioFoam"
-  class ARMCO_Rucksack_Soft_Boone : OPTRE_UNSC_Rucksack {
-    dlc = "ARMCO OPTRE Reskins";
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] UNSC Rucksack (Boone)";
-    containerClass = "Supply300";
-    mass = 45;
-    hiddenSelections[] = {"camo", "B_Medic", "B_Radio"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\boone_backpack_soft_co.paa"};
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_Rucksack_Soft_French : OPTRE_UNSC_Rucksack {
-    dlc = "ARMCO OPTRE Reskins";
-    author = "4th Battalion Mod Team";
-    scope = 2;
-    scopeCurator = 2;
-    displayName = "[ARMCO] UNSC Rucksack (French)";
-    containerClass = "Supply300";
-    mass = 45;
-    hiddenSelections[] = {"camo", "B_Medic", "B_Radio"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\french_backpack_soft_co.paa"};
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Frosty : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    scopeCurator = 1;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Frosty) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Frosty_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Spooks : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Spooks) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\backpack_spooks_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Nutters : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Nutters) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_nutters_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Shaw : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Shaw) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_shaw_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Defender : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Defender) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Defender_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Ciro : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Ciro) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Ciro_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Mac : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Mac) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "AP_Heavy"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_mac_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
+  // //---Personal Packs---// ,"AP_Heavy","BioFoam"
+  // class ARMCO_Rucksack_Soft_Boone : OPTRE_UNSC_Rucksack {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] UNSC Rucksack (Boone)";
+  //   containerClass = "Supply300";
+  //   mass = 45;
+  //   hiddenSelections[] = {"camo", "B_Medic", "B_Radio"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\boone_backpack_soft_co.paa"};
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_Rucksack_Soft_French : OPTRE_UNSC_Rucksack {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   author = "4th Battalion Mod Team";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   displayName = "[ARMCO] UNSC Rucksack (French)";
+  //   containerClass = "Supply300";
+  //   mass = 45;
+  //   hiddenSelections[] = {"camo", "B_Medic", "B_Radio"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\french_backpack_soft_co.paa"};
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Frosty : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   scopeCurator = 1;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Frosty) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Frosty_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Spooks : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Spooks) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\backpack_spooks_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Nutters : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Nutters) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_nutters_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Shaw : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Shaw) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_shaw_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Defender : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Defender) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Defender_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Ciro : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Ciro) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Ciro_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Mac : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Mac) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "AP_Heavy"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_mac_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
 
-  //----Community Made Backpacks----// ,"AP_Heavy","BioFoam"
-  class ARMCO_ANPRC_515_Gunner : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Gunner) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_gunner_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Darman : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Darman) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_darman_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Red : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Red) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-      "custom_armours\data\ODST\Backpack\odst_hard_backpack_RedDragon_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Symbol : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Symbol/Bruce) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Symbol_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Mini : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Mini) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Mini_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Night : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    scopeCurator = 1;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Night) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Night_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Garf : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Garfield) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Garf_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Apples : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Apples) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Apples_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Calamity : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Calamity) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Calamity_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Cheese : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Cheese) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Cheese_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Darkness : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Darkness) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Darkness_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Acanite : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Acanite) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Acanite_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Raziel : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Raziel) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Raz_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Valk : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Valkyrie) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_valk_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Runic : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Runic) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Runic_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Wolffe : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Wolffe) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_wolffe_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Addy : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Addy) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_addy_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Merek : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Merek) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "AP_Heavy"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_merek_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Belhun : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Belhun) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "AP_Heavy"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Belhun_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Reaper : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Reaper) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Reaper_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Viking : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Viking) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Viking_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Burford : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Burford) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Burford_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Blue : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Blue) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {"camo1", "BioFoam"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Blue_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Cybran : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Cybran) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {
-        "camo1",
-    };
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Backpack\odst_hard_backpack_Cybran_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
-  class ARMCO_ANPRC_515_Extortionist : OPTRE_ILCS_Rucksack_Black {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    scopeCurator = 2;
-    author = "4th Battalion Mod Team";
-    class TransportMagazines {};
-    class TransportWeapons {};
-    isbackpack = 1;
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
-    containerClass = "Supply300";
-    class DestructionEffects {};
-    displayName = "[ARMCO] ILCS Rucksack (Extortionist) (With LR Radio)";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
-    vehicleClass = "OPTRE_UNSC_Backpack_class";
-    allowedSlots[] = {901};
-    mass = 40;
-    hiddenSelections[] = {
-        "camo1",
-    };
-    hiddenSelectionsTextures[] = {"custom_armours\data\ODST\Backpack\odst_hard_backpack_Extortionist_co.paa"};
-    // TFAR Config
-    tf_encryptionCode = "tf_west_radio_code";
-    tf_dialog = "rt1523g_radio_dialog";
-    tf_subtype = "digital_lr";
-    tf_range = 25000;
-    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-    tf_hasLRradio = 1;
-  };
+  // //----Community Made Backpacks----// ,"AP_Heavy","BioFoam"
+  // class ARMCO_ANPRC_515_Gunner : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Gunner) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_gunner_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Darman : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Darman) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_darman_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Red : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Red) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //     "custom_armours\data\ODST\Backpack\odst_hard_backpack_RedDragon_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Symbol : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Symbol/Bruce) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Symbol_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Mini : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Mini) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Mini_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Night : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   scopeCurator = 1;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Night) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Night_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Garf : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Garfield) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Garf_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Apples : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Apples) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Apples_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Calamity : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Calamity) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Calamity_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Cheese : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Cheese) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Cheese_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Darkness : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Darkness) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Darkness_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Acanite : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Acanite) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Acanite_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Raziel : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Raziel) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Raz_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Valk : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Valkyrie) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_valk_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Runic : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Runic) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Runic_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Wolffe : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Wolffe) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_wolffe_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Addy : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Addy) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_addy_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Merek : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Merek) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "AP_Heavy"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_merek_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Belhun : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Belhun) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "AP_Heavy"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Belhun_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Reaper : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Reaper) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Reaper_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Viking : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Viking) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Viking_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Burford : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Burford) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Burford_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Blue : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Blue) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {"camo1", "BioFoam"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Blue_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Cybran : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Cybran) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {
+  //       "camo1",
+  //   };
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Backpack\odst_hard_backpack_Cybran_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
+  // class ARMCO_ANPRC_515_Extortionist : OPTRE_ILCS_Rucksack_Black {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   scopeCurator = 2;
+  //   author = "4th Battalion Mod Team";
+  //   class TransportMagazines {};
+  //   class TransportWeapons {};
+  //   isbackpack = 1;
+  //   picture = "\OPTRE_weapons\backpacks\icons\rucksack_med.paa";
+  //   containerClass = "Supply300";
+  //   class DestructionEffects {};
+  //   displayName = "[ARMCO] ILCS Rucksack (Extortionist) (With LR Radio)";
+  //   model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+  //   vehicleClass = "OPTRE_UNSC_Backpack_class";
+  //   allowedSlots[] = {901};
+  //   mass = 40;
+  //   hiddenSelections[] = {
+  //       "camo1",
+  //   };
+  //   hiddenSelectionsTextures[] = {"custom_armours\data\ODST\Backpack\odst_hard_backpack_Extortionist_co.paa"};
+  //   // TFAR Config
+  //   tf_encryptionCode = "tf_west_radio_code";
+  //   tf_dialog = "rt1523g_radio_dialog";
+  //   tf_subtype = "digital_lr";
+  //   tf_range = 25000;
+  //   tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+  //   tf_hasLRradio = 1;
+  // };
 
   //---Soft Packs---// ,"B_Addons","B_Medic", "B_Radio"
   /*class ARMCO_Rucksack_Soft_Mac : OPTRE_UNSC_Rucksack
@@ -5767,1368 +5767,1368 @@ class cfgWeapons {
   //     };
   //   };
   // };
-  class ARMCO_CH252D_Helmet_Super : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Super)";
-    author = "4th Battalion Mod Team";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Super_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Super_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Super_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Super_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Super_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Super/Clear)";
-    author = "4th Battalion Mod Team";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Super_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Super_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Boone : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Boone)";
-    author = "4th Battalion Mod Team";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Boone_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Boone_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Boone_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Boone/Clear)";
-    author = "4th Battalion Mod Team";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Boone_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Boone_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Shaw : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Shaw)";
-    author = "4th Battalion Mod Team";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Shaw_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Shaw_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Shaw_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Nutters_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Shaw_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Shaw/Clear)";
-    author = "4th Battalion Mod Team";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Shaw_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Shaw_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Defender : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Defender)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Defender_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Defender_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Defender_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Defender_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Defender_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Defender/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Defender_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Defender_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Ciro : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Ciro)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Ciro_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Ciro_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Ciro_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Ciro_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Ciro_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Ciro/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Ciro_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Ciro_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Ciro_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Runic : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Runic)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Runic_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Runic_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Runic_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Runic_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Runic_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Runic/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Runic_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Runic_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Viking : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Viking)";
-    author = "Viking";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Viking_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Viking_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Viking_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Viking_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Viking_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Viking/Clear)";
-    author = "Viking";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Viking_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Viking_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Viking_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Viking_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Burford : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Burford)";
-    author = "Viking";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Burford_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Burford_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Burford_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Burford_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Burford_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Burford/Clear)";
-    author = "Viking";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Burford_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Burford_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Burford_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Burford_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Blue : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Blue)";
-    author = "Viking & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Blue_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Blue_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Blue_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Blue_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Blue_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Blue/Clear)";
-    author = "Viking & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Blue_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Blue_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Cybran : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Cybran)";
-    author = "Viking & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Cybran_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Cybran_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Cybran_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Cybran_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Cybran_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Cybran/Clear)";
-    author = "Viking & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Cybran_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Cybran_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Extortionist : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Extortionist)";
-    author = "Viking & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Extortionist_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Extortionist_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Extortionist_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Extortionist_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Extortionist_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Extortionist/Clear)";
-    author = "Viking & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Extortionist_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Extortionist_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Extortionist_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Extortionist_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  //---Squad Specific ODST Helmets---//
-  class ARMCO_CH252D_Helmet_Alpha : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Alpha)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Alpha_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Alpha_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Alpha_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Alpha/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Alpha_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Alpha_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Echo : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Sabre)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_sabre_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_sabre_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Echo_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Sabre/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_sabre_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_sabre_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Phoenix : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Phoenix)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Phoenix_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Phoenix_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Phoenix_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Phoenix/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Phoenix_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Phoenix_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Zulu : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Zulu)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Zulu_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Zulu_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Zulu_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Zulu/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Zulu_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Zulu_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
+  // class ARMCO_CH252D_Helmet_Super : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Super)";
+  //   author = "4th Battalion Mod Team";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Super_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Super_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Super_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Super_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Super_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Super/Clear)";
+  //   author = "4th Battalion Mod Team";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Super_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Super_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Boone : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Boone)";
+  //   author = "4th Battalion Mod Team";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Boone_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Boone_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Boone_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Boone/Clear)";
+  //   author = "4th Battalion Mod Team";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Boone_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Boone_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Shaw : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Shaw)";
+  //   author = "4th Battalion Mod Team";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Shaw_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Shaw_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Shaw_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Nutters_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Shaw_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Shaw/Clear)";
+  //   author = "4th Battalion Mod Team";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Shaw_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Shaw_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Defender : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Defender)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Defender_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Defender_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Defender_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Defender_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Defender_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Defender/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Defender_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Defender_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Ciro : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Ciro)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Ciro_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Ciro_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Ciro_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Ciro_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Ciro_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Ciro/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Ciro_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Ciro_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Ciro_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Runic : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Runic)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Runic_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Runic_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Runic_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Runic_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Runic_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Runic/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Runic_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Runic_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Viking : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Viking)";
+  //   author = "Viking";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Viking_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Viking_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Viking_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Viking_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Viking_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Viking/Clear)";
+  //   author = "Viking";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Viking_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Viking_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Viking_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Viking_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Burford : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Burford)";
+  //   author = "Viking";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Burford_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Burford_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Burford_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Burford_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Burford_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Burford/Clear)";
+  //   author = "Viking";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Burford_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Burford_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Burford_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Burford_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Blue : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Blue)";
+  //   author = "Viking & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Blue_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Blue_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Blue_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Blue_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Blue_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Blue/Clear)";
+  //   author = "Viking & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Blue_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Blue_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Cybran : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Cybran)";
+  //   author = "Viking & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Cybran_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Cybran_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Cybran_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Cybran_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Cybran_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Cybran/Clear)";
+  //   author = "Viking & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Cybran_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Cybran_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Extortionist : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Extortionist)";
+  //   author = "Viking & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Extortionist_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Extortionist_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Extortionist_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Extortionist_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Extortionist_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Extortionist/Clear)";
+  //   author = "Viking & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Extortionist_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Extortionist_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Extortionist_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_Helmet_Visor_Extortionist_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // //---Squad Specific ODST Helmets---//
+  // class ARMCO_CH252D_Helmet_Alpha : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Alpha)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Alpha_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Alpha_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Alpha_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Alpha/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Alpha_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Alpha_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Echo : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Sabre)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_sabre_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_sabre_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Echo_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Sabre/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_sabre_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_sabre_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Phoenix : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Phoenix)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Phoenix_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Phoenix_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Phoenix_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Phoenix/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Phoenix_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Phoenix_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Zulu : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Zulu)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Zulu_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Zulu_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Zulu_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Zulu/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Zulu_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Zulu_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
 
   //---Security Helmet---//
   class ARMCO_CH252D_Helmet_Security : OPTRE_UNSC_CH252D_Helmet_Base {
@@ -7721,1735 +7721,1735 @@ class cfgWeapons {
     };
   };
 
-  //---Community Made Helmets---//
-  class ARMCO_CH252D_Helmet_VJ : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Vincent)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_VJ_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_VJ_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_VJ_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_VJ_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_VJ_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Vincent/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_VJ_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_VJ_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Nutters : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Nutters)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Nutters_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Nutters_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Nutters_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Nutters_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Nutters_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Nutters/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Nutters_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Nutters_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Spooks : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Spooks)";
-    author = "Frosty & Spooks";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Spooks_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Spooks_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Spooks_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Spooks_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Spooks_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Spooks/Clear)";
-    author = "Frosty & Spooks";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Spooks_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Spooks_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Spooks_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Spooks_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_French : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (French)";
-    author = "Frosty & French";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_French_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_French_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_French_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_French_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_French_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (French/Clear)";
-    author = "Frosty & French";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_French_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_French_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Mac : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Mac)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Mac_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mac_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Mac_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mac_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Mac_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Mac/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Mac_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mac_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Mac_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Gunner : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Gunner)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Gunner_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Gunner_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Gunner_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Gunner_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Gunner_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Gunner/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Gunner_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Gunner_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Gunner_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Gunner_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Darman : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Darman)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Darman_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Darman_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Darman_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Darman_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Darman_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Darman/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Darman_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Darman_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Red : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Red)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_RedDragon_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_RedDragon_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_RedDragon_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_RedDragon_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Red_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Red/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_RedDragon_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_RedDragon_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Night : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Night)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Night_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Night_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Night_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Night_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Night_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Night/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Night_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Night_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Symbol : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Symbol/Bruce)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Symbol_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Symbol_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Symbol_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Symbol_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Symbol_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Symbol/Bruce/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Symbol_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Symbol_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Mini : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Mini)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Mini_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mini_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Mini_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mini_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Mini_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Mini/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Mini_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Mini_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Garf : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Garfield)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Garf_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Garf_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Garf_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Garf_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Garf_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Garfield/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Garf_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Garf_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Cheese : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Cheese)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Cheese_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Cheese_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Cheese_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Cheese_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Cheese_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Cheese/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Cheese_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Cheese_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Calamity : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Calamity)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Calamity_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Calamity_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Calamity_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Calamity_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Calamity_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Calamity/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Calamity_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Calamity_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Darkness : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Darkness)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Darkness_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Darkness_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Darkness_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Darkness_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Darkness_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Darkness/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Darkness_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Darkness_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Apples : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Apples)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Apples_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Apples_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Apples_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Apples_co.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Apples_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Apples/Clear)";
-    author = "Frosty & Mac";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Apples_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Apples_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Valk : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Valkyrie)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Valk_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Valk_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Valk_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Valk_.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Valk_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Valkyrie/Clear)";
-    author = "Frosty & Gunnre";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Valk_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Valk_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Acanite : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Acanite)";
-    author = "Frosty & Acanite";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Acanite_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Acanite_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Acanite_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Acanite_.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Acanite_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Acanite/Clear)";
-    author = "Frosty & Acanite";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_Acanite_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Acanite_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_Acanite_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Acanite_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
-  class ARMCO_CH252D_Helmet_Raziel : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 2;
-    displayName = "[ARMCO] CH252D Helmet (Raziel)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_raz_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_raz_co.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_raz_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_raz_.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.30; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-    subItems[] = {"Integrated_NVG_F"};
-  };
-  class ARMCO_CH252D_Helmet_Raziel_dp : OPTRE_UNSC_CH252D_Helmet_Base {
-    dlc = "ARMCO OPTRE Reskins";
-    scope = 1;
-    displayName = "[ARMCO] CH252D Helmet (Raziel/Clear)";
-    author = "Frosty & Gunner";
-    picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
-    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {"camo", "camo2"};
-    hiddenSelectionsTextures[] = {
-        "custom_armours\data\ODST\Helmet\odst_helmet_raz_co.paa",
-        "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-    optreVarietys[] = {"_dp", "", "_broken"};
-    optreHUDStyle = "ODST_1";
-    class ItemInfo : HeadgearItem {
-      uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-      mass = 40;
-      modelSides[] = {6};
-      passThrough = 0.1;
-      hiddenSelections[] = {"camo", "camo2"};
-      hiddenSelectionsTextures[] = {
-          "custom_armours\data\ODST\Helmet\odst_helmet_raz_co.paa",
-          "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
-      ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
-                                     // higher means more protection)
-      ace_hearing_lowerVolume =
-          0.10; // Muffling of the sound (0 to 1, higher means more muffling)
-      class HitpointsProtectionInfo {
-        class Head {
-          hitpointName = "HitHead";
-          armor = 25;
-          passThrough = 0.1;
-        };
-        class Face {
-          hitpointName = "HitFace";
-          armor = 5;
-          passThrough = 0.1;
-        };
-        class Neck {
-          hitpointName = "HitNeck";
-          armor = 5;
-          passThrough = 0.1;
-        };
-      };
-    };
-  };
+  // //---Community Made Helmets---//
+  // class ARMCO_CH252D_Helmet_VJ : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Vincent)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_VJ_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_VJ_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_VJ_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_VJ_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_VJ_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Vincent/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_VJ_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_VJ_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Nutters : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Nutters)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Nutters_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Nutters_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Nutters_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Nutters_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Nutters_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Nutters/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Nutters_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Nutters_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Boone_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Spooks : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Spooks)";
+  //   author = "Frosty & Spooks";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Spooks_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Spooks_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Spooks_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Spooks_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Spooks_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Spooks/Clear)";
+  //   author = "Frosty & Spooks";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Spooks_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Spooks_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Spooks_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Spooks_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_French : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (French)";
+  //   author = "Frosty & French";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_French_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_French_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_French_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_French_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_French_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (French/Clear)";
+  //   author = "Frosty & French";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_French_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_French_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Mac : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Mac)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Mac_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mac_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Mac_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mac_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Mac_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Mac/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Mac_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mac_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Mac_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Gunner : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Gunner)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Gunner_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Gunner_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Gunner_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Gunner_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Gunner_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Gunner/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Gunner_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Gunner_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Gunner_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Gunner_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Darman : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Darman)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Darman_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Darman_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Darman_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Darman_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Darman_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Darman/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Darman_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Darman_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Red : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Red)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_RedDragon_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_RedDragon_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_RedDragon_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_RedDragon_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Red_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Red/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_RedDragon_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_RedDragon_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Night : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Night)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Night_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Night_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Night_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Night_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Night_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Night/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Night_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Night_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Symbol : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Symbol/Bruce)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Symbol_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Symbol_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Symbol_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Symbol_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Symbol_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Symbol/Bruce/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Symbol_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Symbol_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Mini : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Mini)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Mini_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mini_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Mini_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Mini_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Mini_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Mini/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Mini_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Mini_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Garf : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Garfield)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Garf_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Garf_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Garf_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Garf_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Garf_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Garfield/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Garf_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Garf_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Cheese : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Cheese)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Cheese_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Cheese_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Cheese_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Cheese_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Cheese_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Cheese/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Cheese_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Cheese_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Calamity : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Calamity)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Calamity_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Calamity_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Calamity_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Calamity_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Calamity_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Calamity/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Calamity_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Calamity_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Darkness : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Darkness)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Darkness_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Darkness_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Darkness_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Darkness_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Darkness_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Darkness/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Darkness_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Darkness_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Apples : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Apples)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Apples_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Apples_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Apples_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Apples_co.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Apples_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Apples/Clear)";
+  //   author = "Frosty & Mac";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Apples_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Apples_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Valk : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Valkyrie)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Valk_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Valk_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Valk_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Valk_.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Valk_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Valkyrie/Clear)";
+  //   author = "Frosty & Gunnre";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Valk_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Valk_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Acanite : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Acanite)";
+  //   author = "Frosty & Acanite";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Acanite_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Acanite_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Acanite_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Acanite_.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Acanite_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Acanite/Clear)";
+  //   author = "Frosty & Acanite";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_Acanite_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Acanite_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_Acanite_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_Acanite_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
+  // class ARMCO_CH252D_Helmet_Raziel : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 2;
+  //   displayName = "[ARMCO] CH252D Helmet (Raziel)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_raz_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_raz_co.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_raz_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\ODST_Helmet_Visor_raz_.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.30; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  //   subItems[] = {"Integrated_NVG_F"};
+  // };
+  // class ARMCO_CH252D_Helmet_Raziel_dp : OPTRE_UNSC_CH252D_Helmet_Base {
+  //   dlc = "ARMCO OPTRE Reskins";
+  //   scope = 1;
+  //   displayName = "[ARMCO] CH252D Helmet (Raziel/Clear)";
+  //   author = "Frosty & Gunner";
+  //   picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+  //   model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //   hiddenSelections[] = {"camo", "camo2"};
+  //   hiddenSelectionsTextures[] = {
+  //       "custom_armours\data\ODST\Helmet\odst_helmet_raz_co.paa",
+  //       "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //   optreVarietys[] = {"_dp", "", "_broken"};
+  //   optreHUDStyle = "ODST_1";
+  //   class ItemInfo : HeadgearItem {
+  //     uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+  //     mass = 40;
+  //     modelSides[] = {6};
+  //     passThrough = 0.1;
+  //     hiddenSelections[] = {"camo", "camo2"};
+  //     hiddenSelectionsTextures[] = {
+  //         "custom_armours\data\ODST\Helmet\odst_helmet_raz_co.paa",
+  //         "custom_armours\data\ODST\Helmet\visors\odst_helmet_visor_ca.paa"};
+  //     ace_hearing_protection = 1.10; // Protection against deafening (0 to 1,
+  //                                    // higher means more protection)
+  //     ace_hearing_lowerVolume =
+  //         0.10; // Muffling of the sound (0 to 1, higher means more muffling)
+  //     class HitpointsProtectionInfo {
+  //       class Head {
+  //         hitpointName = "HitHead";
+  //         armor = 25;
+  //         passThrough = 0.1;
+  //       };
+  //       class Face {
+  //         hitpointName = "HitFace";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //       class Neck {
+  //         hitpointName = "HitNeck";
+  //         armor = 5;
+  //         passThrough = 0.1;
+  //       };
+  //     };
+  //   };
+  // };
   /*class ARMCO_CH252D_Helmet_Kellboy: OPTRE_UNSC_CH252D_Helmet_Base
           {
                   dlc = "ARMCO OPTRE Reskins";
