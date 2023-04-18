@@ -4,4 +4,5 @@
 
 class CfgVehicles {
 #include "CfgSBackpacks.hpp"
+#include "CfgCBackpacks.hpp"
 };
