@@ -5,6 +5,8 @@ class ItemInfo {
   uniformModel = "";
   modelOff = "";
   mass = 1;
+  ace_hearing_protection = 1.10; //Hearing protection
+  ace_hearing_lowerVolume = 0.10;
 };
 class OPTRE_UNSC_CH252_Helmet_WDL;
 // class OPTRE_UNSC_CH252_Helmet_WDL;
