@@ -243,7 +243,6 @@ class ARMCO_ODST_DWLD_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class ARMCO_SEC_OVAL_BDU : ARMCO_PMC_Army_Uniform_WDL {
-
   displayName = "[ARMCO] Security Tactical Overalls";
   class ItemInfo : UniformItem {
     uniformClass = "ARMCO_Soldier_SEC";

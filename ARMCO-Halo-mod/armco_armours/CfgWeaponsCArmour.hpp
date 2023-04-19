@@ -354,23 +354,30 @@ class ARMCO_Burford_ODST_Armor : ARMCO_Alpha_ODST_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "armco_armours\data\odst\custom_armours\odst_armor_Burford_co.paa"};
   class ItemInfo : ItemInfo {
-    "camo", "camo2", "camo3", "camo4", "camo5", "A_Ghillie", "AS_LargeLeft",
-        "AS_LargeRight", "AS_MediumLeft", "AS_MediumRight", "AS_ODSTCQBLeft",
-        "AS_ODSTCQBRight", "AS_ODSTLeft", "AS_ODSTSniperRight", "AS_SmallLeft",
-        "AS_SmallRight", "AP_BR", "AP_Canteen", "AP_GL", "AP_MGThigh",
-        "AP_Pack", "AP_Rounds", "AP_SG", "AP_SMG", "AP_Sniper", "AP_Thigh",
-        "AP_Frag", "AP_AR", "APO_BR", "APO_SMG", "APO_Sniper",
-        "CustomKit_Scorch"
+    hiddenSelections[] = {"camo",           "camo2",
+                          "camo3",          "camo4",
+                          "camo5",          "A_Ghillie",
+                          "AS_LargeLeft",   "AS_LargeRight",
+                          "AS_MediumLeft",  "AS_MediumRight",
+                          "AS_ODSTCQBLeft", "AS_ODSTCQBRight",
+                          "AS_ODSTLeft",    "AS_ODSTSniperRight",
+                          "AS_SmallLeft",   "AS_SmallRight",
+                          "AP_BR",          "AP_Canteen",
+                          "AP_GL",          "AP_MGThigh",
+                          "AP_Pack",        "AP_Rounds",
+                          "AP_SG",          "AP_SMG",
+                          "AP_Sniper",      "AP_Thigh",
+                          "AP_Frag",        "AP_AR",
+                          "APO_BR",         "APO_SMG",
+                          "APO_Sniper",     "CustomKit_Scorch"};
+    hiddenSelectionsTextures[] = {
+        "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+        "optre_unsc_units\army\data\armor_odst_co.paa",
+        "armco_armours\data\odst\custom_armours\odst_legs_Burford_co.paa",
+        "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+        "armco_armours\data\odst\custom_armours\odst_armor_Burford_co.paa"};
   };
-  hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
-      "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Burford_co.paa",
-      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Burford_co.paa"};
 };
-}
-;
 class ARMCO_Cheese_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayName = "[A][ARMCO] ODST Armour (Cheese)";
   hiddenSelections[] = {"camo",
@@ -739,8 +746,7 @@ class ARMCO_Extortionist_ODST_Armor : ARMCO_Alpha_ODST_Armor {
         "optre_unsc_units\army\data\armor_odst_co.paa",
         "armco_armours\data\odst\custom_armours\odst_legs_Extortionist_co.paa",
         "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-        "armco_armours\data\odst\custom_armours\odst_armor_Extortionist_co."
-        "paa"};
+        "armco_armours\data\odst\custom_armours\odst_armor_Extortionist_co.paa"};
   };
 };
 class ARMCO_Garfield_ODST_Armor : ARMCO_Alpha_ODST_Armor {

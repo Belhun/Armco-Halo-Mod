@@ -432,7 +432,7 @@ class ARMCO_Soldier_SEC : ARMCO_Base_Soldier {
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
   model = "\A3\Characters_F_Tank\Uniforms\U_Tank_crew_F.p3d";
-  hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
+  hiddenSelections[] = {"camo", "insignia"};
   hiddenSelectionsTextures[] = {
       "armco_armours\data\security\uniform\uniform_armco_security_co.paa"};
 };
