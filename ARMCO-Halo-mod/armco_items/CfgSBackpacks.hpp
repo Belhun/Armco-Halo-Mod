@@ -1,6 +1,6 @@
-class ARMCO_PMC_ILCS_Rucksack_Black;
+class OPTRE_ILCS_Rucksack_Black;
 // ODST Hard Backpacks
-class ARMCO_Rucksack_Hard_Alpha : ARMCO_PMC_ILCS_Rucksack_Black {
+class ARMCO_Rucksack_Hard_Alpha : OPTRE_ILCS_Rucksack_Black {
   dlc = "ARMCO_PMC";
   author = "Belhun";
   maximumLoad = 400;

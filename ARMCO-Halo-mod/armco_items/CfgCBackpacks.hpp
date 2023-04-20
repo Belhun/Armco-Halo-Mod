@@ -80,13 +80,13 @@ class ARMCO_Rucksack_Mini : ARMCO_Rucksack_Hard_Alpha {
   displayName = "[A][ARMCO]Hard Rucksack (Mini)";
   hiddenSelections[] = {"camo1", "biofoam"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_backpacks\.paa"};
+      "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_Mini_CO.paa"};
 };
 class ARMCO_Rucksack_Nutters : ARMCO_Rucksack_Hard_Alpha {
   displayName = "[A][ARMCO]Hard Rucksack (Nutters)";
   hiddenSelections[] = {"camo1"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_Mini_CO.paa"};
+      "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_Nutters_co.paa"};
 };
 class ARMCO_Rucksack_Raziel : ARMCO_Rucksack_Hard_Alpha {
   displayName = "[A][ARMCO]Hard Rucksack (Raziel)";
@@ -118,12 +118,13 @@ class ARMCO_Rucksack_Shaw : ARMCO_Rucksack_Hard_Alpha {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_Shaw_co.paa"};
 };
-class ARMCO_Rucksack_VJ : ARMCO_Rucksack_Hard_Alpha {
-  displayName = "[A][ARMCO]Hard Rucksack (VJ)";
-  hiddenSelections[] = {"camo1", "biofoam"};
-  hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_backpacks\.paa"};
-};
+// dosent have a texture for backpack
+// class ARMCO_Rucksack_VJ : ARMCO_Rucksack_Hard_Alpha {
+//   displayName = "[A][ARMCO]Hard Rucksack (VJ)";
+//   hiddenSelections[] = {"camo1", "biofoam"};
+//   hiddenSelectionsTextures[] = {
+//       "armco_armours\data\odst\custom_backpacks\.paa"};
+// };
 class ARMCO_Rucksack_Wolffe : ARMCO_Rucksack_Hard_Alpha {
   displayName = "[A][ARMCO]Hard Rucksack (Wolffe)";
   hiddenSelections[] = {"camo1"};

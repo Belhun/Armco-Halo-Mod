@@ -5896,6 +5896,8 @@ class ARMCO_Phoenix_Special_Weapons_Operator
 
 class ARMCO_Alpha_Squad_Lead_pack : ARMCO_Rucksack_Hard_Alpha {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -5961,6 +5963,8 @@ class ARMCO_Alpha_Squad_Lead_pack : ARMCO_Rucksack_Hard_Alpha {
 
 class ARMCO_Alpha_Medic_pack : ARMCO_Rucksack_Hard_Medical {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_SmokeShellYellow {
       count = 3;
@@ -6158,6 +6162,8 @@ class ARMCO_Alpha_Medic_pack : ARMCO_Rucksack_Hard_Medical {
 
 class ARMCO_Alpha_Corpsman_pack : ARMCO_Rucksack_tSoft_Medical {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_SmokeShellYellow {
       count = 3;
@@ -6319,6 +6325,8 @@ class ARMCO_Alpha_Corpsman_pack : ARMCO_Rucksack_tSoft_Medical {
 
 class ARMCO_Alpha_Engineer_pack : ARMCO_Rucksack_tSoft_Alpha {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -6384,6 +6392,8 @@ class ARMCO_Alpha_Engineer_pack : ARMCO_Rucksack_tSoft_Alpha {
 
 class ARMCO_Alpha_Special_Weapons_Operator_pack : ARMCO_Rucksack_tSoft_Alpha {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -6449,6 +6459,8 @@ class ARMCO_Alpha_Special_Weapons_Operator_pack : ARMCO_Rucksack_tSoft_Alpha {
 
 class ARMCO_Alpha_EOD_pack : ARMCO_Rucksack_tSoft_Alpha {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -6514,6 +6526,8 @@ class ARMCO_Alpha_EOD_pack : ARMCO_Rucksack_tSoft_Alpha {
 
 class ARMCO_Alpha_Marksman_pack : ARMCO_Rucksack_tSoft_Alpha {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -6579,6 +6593,8 @@ class ARMCO_Alpha_Marksman_pack : ARMCO_Rucksack_tSoft_Alpha {
 
 class ARMCO_Sabre_Sqaud_Lead_pack : ARMCO_Rucksack_Hard_Sabre {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -6644,6 +6660,8 @@ class ARMCO_Sabre_Sqaud_Lead_pack : ARMCO_Rucksack_Hard_Sabre {
 
 class ARMCO_Sabre_Medic_pack : ARMCO_Rucksack_Hard_Medical {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_SmokeShellYellow {
       count = 3;
@@ -6841,6 +6859,8 @@ class ARMCO_Sabre_Medic_pack : ARMCO_Rucksack_Hard_Medical {
 
 class ARMCO_Sabre_Corpsman_pack : ARMCO_Rucksack_tSoft_Medical {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_SmokeShellYellow {
       count = 3;
@@ -7002,6 +7022,8 @@ class ARMCO_Sabre_Corpsman_pack : ARMCO_Rucksack_tSoft_Medical {
 
 class ARMCO_Sabre_Special_Weapons_Operator_pack : ARMCO_Rucksack_tSoft_Sabre {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7067,6 +7089,8 @@ class ARMCO_Sabre_Special_Weapons_Operator_pack : ARMCO_Rucksack_tSoft_Sabre {
 
 class ARMCO_Sabre_Engineer_pack : ARMCO_Rucksack_tSoft_Sabre {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7132,6 +7156,8 @@ class ARMCO_Sabre_Engineer_pack : ARMCO_Rucksack_tSoft_Sabre {
 
 class ARMCO_Sabre_EOD_pack : ARMCO_Rucksack_tSoft_Sabre {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7197,6 +7223,8 @@ class ARMCO_Sabre_EOD_pack : ARMCO_Rucksack_tSoft_Sabre {
 
 class ARMCO_Sabre_Marksmen_pack : ARMCO_Rucksack_tSoft_Sabre {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7262,6 +7290,8 @@ class ARMCO_Sabre_Marksmen_pack : ARMCO_Rucksack_tSoft_Sabre {
 
 class ARMCO_Sabre_Rifleman_pack : ARMCO_Rucksack_tSoft_Sabre {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7327,6 +7357,8 @@ class ARMCO_Sabre_Rifleman_pack : ARMCO_Rucksack_tSoft_Sabre {
 
 class ARMCO_Zulu_Squad_Lead_pack : ARMCO_Rucksack_Hard_Zulu {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7392,6 +7424,8 @@ class ARMCO_Zulu_Squad_Lead_pack : ARMCO_Rucksack_Hard_Zulu {
 
 class ARMCO_Zulu_Medic_pack : ARMCO_Rucksack_Hard_Medical {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_SmokeShellYellow {
       count = 3;
@@ -7589,6 +7623,8 @@ class ARMCO_Zulu_Medic_pack : ARMCO_Rucksack_Hard_Medical {
 
 class ARMCO_Zulu_EOD_pack : ARMCO_Rucksack_tSoft_Zulu {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7654,6 +7690,8 @@ class ARMCO_Zulu_EOD_pack : ARMCO_Rucksack_tSoft_Zulu {
 
 class ARMCO_Zulu_Engineer_pack : ARMCO_Rucksack_tSoft_Zulu {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7719,6 +7757,8 @@ class ARMCO_Zulu_Engineer_pack : ARMCO_Rucksack_tSoft_Zulu {
 
 class ARMCO_Zulu_Refleman_pack : ARMCO_Rucksack_tSoft_Zulu {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7784,6 +7824,8 @@ class ARMCO_Zulu_Refleman_pack : ARMCO_Rucksack_tSoft_Zulu {
 
 class ARMCO_Zulu_Special_Weapons_Operator_pack : ARMCO_Rucksack_tSoft_Zulu {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7849,6 +7891,8 @@ class ARMCO_Zulu_Special_Weapons_Operator_pack : ARMCO_Rucksack_tSoft_Zulu {
 
 class ARMCO_Zulu_Sniper_pack : ARMCO_Rucksack_tSoft_Zulu {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7914,6 +7958,8 @@ class ARMCO_Zulu_Sniper_pack : ARMCO_Rucksack_tSoft_Zulu {
 
 class ARMCO_Phoenix_Squad_Lead_pack : ARMCO_Rucksack_Hard_Phoenix {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -7979,6 +8025,8 @@ class ARMCO_Phoenix_Squad_Lead_pack : ARMCO_Rucksack_Hard_Phoenix {
 
 class ARMCO_Phoenix_Medic_pack : ARMCO_Rucksack_Hard_Medical {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_SmokeShellYellow {
       count = 3;
@@ -8176,6 +8224,8 @@ class ARMCO_Phoenix_Medic_pack : ARMCO_Rucksack_Hard_Medical {
 
 class ARMCO_Phoenix_Corpsmen_pack : ARMCO_Rucksack_tSoft_Medical {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_SmokeShellYellow {
       count = 3;
@@ -8337,6 +8387,8 @@ class ARMCO_Phoenix_Corpsmen_pack : ARMCO_Rucksack_tSoft_Medical {
 
 class ARMCO_Phoenix_JTAC_pack : ARMCO_Rucksack_Hard_Phoenix {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -8402,6 +8454,8 @@ class ARMCO_Phoenix_JTAC_pack : ARMCO_Rucksack_Hard_Phoenix {
 
 class ARMCO_Phoenix_Sniper_pack : ARMCO_Rucksack_tSoft_Phoenix {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -8467,6 +8521,8 @@ class ARMCO_Phoenix_Sniper_pack : ARMCO_Rucksack_tSoft_Phoenix {
 
 class ARMCO_Phoenix_Engineer_pack : ARMCO_Rucksack_tSoft_Phoenix {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -8532,6 +8588,8 @@ class ARMCO_Phoenix_Engineer_pack : ARMCO_Rucksack_tSoft_Phoenix {
 
 class ARMCO_Phoenix_EOD_pack : ARMCO_Rucksack_tSoft_Phoenix {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;
@@ -8597,6 +8655,8 @@ class ARMCO_Phoenix_EOD_pack : ARMCO_Rucksack_tSoft_Phoenix {
 
 class ARMCO_Phoenix_Auto_Rifleman_pack : ARMCO_Rucksack_tSoft_Phoenix {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 2;
@@ -8675,6 +8735,8 @@ class ARMCO_Phoenix_Auto_Rifleman_pack : ARMCO_Rucksack_tSoft_Phoenix {
 class ARMCO_Phoenix_Special_Weapons_Operator_pack
     : ARMCO_Rucksack_tSoft_Phoenix {
   scope = 1;
+  scopeCurator = 1;
+  ScopeArsenal = 1;
   class TransportMagazines {
     class _xx_OPTRE_8Rnd_127x40_AP_Mag {
       count = 1;

@@ -4,5 +4,10 @@
 
 class CfgVehicles {
 #include "CfgSBackpacks.hpp"
+
 #include "CfgCBackpacks.hpp"
+};
+
+class CfgWeapons {
+#include "CfgMiscHelmets.hpp"
 };
