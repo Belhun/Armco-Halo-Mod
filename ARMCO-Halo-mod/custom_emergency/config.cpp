@@ -1015,7 +1015,7 @@ class CfgVehicles {
   // BACKPACKS CONFIG//
   ////////////////////
   class B_Kitbag_base;
-//   class tfw_ilbe_gr;
+  class tfw_ilbe_gr;
   class OPTRE_UNSC_Rucksack;
   class OPTRE_ILCS_Rucksack_Black;
 
@@ -1055,63 +1055,63 @@ class CfgVehicles {
   };
 
   //---Long Range Radio Backpacks---//
-//   class ARMCO_LR_Bag_Police : tfw_ilbe_gr {
-//     author = "Frosty";
-//     scope = 2;
-//     displayName = "[Colonial Police] ILBE RT-1523G (ASIP)";
-//     descriptionShort = "RT-1523G (ASIP) long range radio 20km";
-//     picture = "\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-//     editorPreview = "";
-//     model = "\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-//     hiddenSelectionsTextures[] = {
-//         "custom_emergency\data\police\backpack\b_radio_police_co.paa"};
-//     hiddenSelections[] = {"camo"};
-//     maximumLoad = 350;
-//     mass = 80;
-//     isbackpack = 1;
-//     tf_encryptionCode = "tf_west_radio_code";
-//     tf_dialog = "rt1523g_radio_dialog";
-//     tf_subtype = "digital_lr";
-//     tf_range = 17000;
-//   };
-//   class ARMCO_LR_Bag_Rescue : tfw_ilbe_gr {
-//     author = "Frosty";
-//     scope = 2;
-//     displayName = "[Colonial Rescue] ILBE RT-1523G (ASIP)";
-//     descriptionShort = "RT-1523G (ASIP) long range radio 20km";
-//     picture = "\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-//     editorPreview = "";
-//     model = "\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-//     hiddenSelectionsTextures[] = {
-//         "custom_emergency\data\medical\backpack\b_radio_rescue_co.paa"};
-//     hiddenSelections[] = {"camo"};
-//     maximumLoad = 350;
-//     mass = 80;
-//     isbackpack = 1;
-//     tf_encryptionCode = "tf_west_radio_code";
-//     tf_dialog = "rt1523g_radio_dialog";
-//     tf_subtype = "digital_lr";
-//     tf_range = 17000;
-//   };
-//   class ARMCO_LR_Bag_Firefighter : tfw_ilbe_gr {
-//     author = "Frosty";
-//     scope = 2;
-//     displayName = "[Colonial Fire Department] ILBE RT-1523G (ASIP)";
-//     descriptionShort = "RT-1523G (ASIP) long range radio 20km";
-//     picture = "\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
-//     editorPreview = "";
-//     model = "\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
-//     hiddenSelectionsTextures[] = {
-//         "custom_emergency\data\firefighter\backpack\b_colonial_firefighter_ radio_co.paa"};
-//     hiddenSelections[] = {"camo"};
-//     maximumLoad = 350;
-//     mass = 80;
-//     isbackpack = 1;
-//     tf_encryptionCode = "tf_west_radio_code";
-//     tf_dialog = "rt1523g_radio_dialog";
-//     tf_subtype = "digital_lr";
-//     tf_range = 17000;
-//   };
+  class ARMCO_LR_Bag_Police : tfw_ilbe_gr {
+    author = "Frosty";
+    scope = 2;
+    displayName = "[Colonial Police] ILBE RT-1523G (ASIP)";
+    descriptionShort = "RT-1523G (ASIP) long range radio 20km";
+    picture = "\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    editorPreview = "";
+    model = "\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+    hiddenSelectionsTextures[] = {
+        "custom_emergency\data\police\backpack\b_radio_police_co.paa"};
+    hiddenSelections[] = {"camo"};
+    maximumLoad = 350;
+    mass = 80;
+    isbackpack = 1;
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 17000;
+  };
+  class ARMCO_LR_Bag_Rescue : tfw_ilbe_gr {
+    author = "Frosty";
+    scope = 2;
+    displayName = "[Colonial Rescue] ILBE RT-1523G (ASIP)";
+    descriptionShort = "RT-1523G (ASIP) long range radio 20km";
+    picture = "\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    editorPreview = "";
+    model = "\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+    hiddenSelectionsTextures[] = {
+        "custom_emergency\data\medical\backpack\b_radio_rescue_co.paa"};
+    hiddenSelections[] = {"camo"};
+    maximumLoad = 350;
+    mass = 80;
+    isbackpack = 1;
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 17000;
+  };
+  class ARMCO_LR_Bag_Firefighter : tfw_ilbe_gr {
+    author = "Frosty";
+    scope = 2;
+    displayName = "[Colonial Fire Department] ILBE RT-1523G (ASIP)";
+    descriptionShort = "RT-1523G (ASIP) long range radio 20km";
+    picture = "\y\tfw_radios\addons\ilbe\data\icons\ilbe_icon.paa";
+    editorPreview = "";
+    model = "\y\tfw_radios\addons\ilbe\data\model\dd\tfw_dd_ilbe.p3d";
+    hiddenSelectionsTextures[] = {
+        "custom_emergency\data\firefighter\backpack\b_colonial_firefighter_ radio_co.paa"};
+    hiddenSelections[] = {"camo"};
+    maximumLoad = 350;
+    mass = 80;
+    isbackpack = 1;
+    tf_encryptionCode = "tf_west_radio_code";
+    tf_dialog = "rt1523g_radio_dialog";
+    tf_subtype = "digital_lr";
+    tf_range = 17000;
+  };
   //---ODST Long Range Backpacks---//
 
   // ODST Hard Packs//
@@ -1136,66 +1136,66 @@ class cfgWeapons {
   //////////////////////
 
   //---Dress Uniform Hats---//
-//   class ARMCO_Beret_Police : H_Beret_02 {
-//     dlc = "-";
-//     scope = 2;
-//     weaponPoolAvailable = 1;
-//     author = "Frosty & Mac";
-//     displayName = "[Colonial Police] Beret";
-//     model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
-//     hiddenSelections[] = {"camo"};
-//     hiddenSelectionsTextures[] = {
-//         "custom_emergency\data\police\helmet\h_beret_police_co.paa"};
-//     class ItemInfo : HeadgearItem {
-//       mass = 6;
-//       uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
-//       allowedSlots[] = {801, 901, 701};
-//       modelSides[] = {3, 1};
-//       armor = 0;
-//       passThrough = 1;
-//       hiddenSelections[] = {"camo"};
-//     };
-//   };
-//   class ARMCO_Beret_Rescue : H_Beret_02 {
-//     dlc = "-";
-//     scope = 2;
-//     weaponPoolAvailable = 1;
-//     author = "Frosty & Mac";
-//     displayName = "[Colonial Rescue] Beret";
-//     model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
-//     hiddenSelections[] = {"camo"};
-//     hiddenSelectionsTextures[] = {
-//         "custom_emergency\data\medical\helmet\h_beret_rescue_co.paa"};
-//     class ItemInfo : HeadgearItem {
-//       mass = 6;
-//       uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
-//       allowedSlots[] = {801, 901, 701};
-//       modelSides[] = {3, 1};
-//       armor = 0;
-//       passThrough = 1;
-//       hiddenSelections[] = {"camo"};
-//     };
-//   };
-//   class ARMCO_Beret_Firefighter : H_Beret_02 {
-//     dlc = "-";
-//     scope = 2;
-//     weaponPoolAvailable = 1;
-//     author = "Frosty & Mac";
-//     displayName = "[Colonial Fire Department] Beret";
-//     model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
-//     hiddenSelections[] = {"camo"};
-//     hiddenSelectionsTextures[] = {"custom_emergency\data\firefighter\helmet\h_"
-//                                   "beret_colonial_firefighter_co.paa"};
-//     class ItemInfo : HeadgearItem {
-//       mass = 6;
-//       uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
-//       allowedSlots[] = {801, 901, 701};
-//       modelSides[] = {3, 1};
-//       armor = 0;
-//       passThrough = 1;
-//       hiddenSelections[] = {"camo"};
-//     };
-//   };
+  class ARMCO_Beret_Police : H_Beret_02 {
+    dlc = "-";
+    scope = 2;
+    weaponPoolAvailable = 1;
+    author = "Frosty & Mac";
+    displayName = "[Colonial Police] Beret";
+    model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {
+        "custom_emergency\data\police\helmet\h_beret_police_co.paa"};
+    class ItemInfo : HeadgearItem {
+      mass = 6;
+      uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+      allowedSlots[] = {801, 901, 701};
+      modelSides[] = {3, 1};
+      armor = 0;
+      passThrough = 1;
+      hiddenSelections[] = {"camo"};
+    };
+  };
+  class ARMCO_Beret_Rescue : H_Beret_02 {
+    dlc = "-";
+    scope = 2;
+    weaponPoolAvailable = 1;
+    author = "Frosty & Mac";
+    displayName = "[Colonial Rescue] Beret";
+    model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {
+        "custom_emergency\data\medical\helmet\h_beret_rescue_co.paa"};
+    class ItemInfo : HeadgearItem {
+      mass = 6;
+      uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+      allowedSlots[] = {801, 901, 701};
+      modelSides[] = {3, 1};
+      armor = 0;
+      passThrough = 1;
+      hiddenSelections[] = {"camo"};
+    };
+  };
+  class ARMCO_Beret_Firefighter : H_Beret_02 {
+    dlc = "-";
+    scope = 2;
+    weaponPoolAvailable = 1;
+    author = "Frosty & Mac";
+    displayName = "[Colonial Fire Department] Beret";
+    model = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"custom_emergency\data\firefighter\helmet\h_"
+                                  "beret_colonial_firefighter_co.paa"};
+    class ItemInfo : HeadgearItem {
+      mass = 6;
+      uniformModel = "\A3\characters_f_epb\BLUFOR\headgear_beret02";
+      allowedSlots[] = {801, 901, 701};
+      modelSides[] = {3, 1};
+      armor = 0;
+      passThrough = 1;
+      hiddenSelections[] = {"camo"};
+    };
+  };
   ////////////////////////
   // Marine Helmets Start//
   ////////////////////////
