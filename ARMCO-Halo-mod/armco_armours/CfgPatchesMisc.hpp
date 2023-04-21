@@ -20,7 +20,7 @@ class CfgPatches {
         "Zulu_CH252_Helmet",
         "Medical_CH252_Helmet",
         "EOD_CH252_Helmet",
-        "ARMCO_Generic_CH252_Ghillie_Helmesssssssast",
+        "ARMCO_Generic_CH252_Ghillie_Helmet",
 
         // Squad ODST Helmet
         "Alpha_CH252D_Helmet",
