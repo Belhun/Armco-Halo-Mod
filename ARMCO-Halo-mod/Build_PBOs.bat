@@ -10,7 +10,7 @@ C:
 cd C:\Program Files\PBO Manager v.1.4 beta
 
 PBOConsole.exe -pack %~dp0custom_armours        %~dp0..\..\Export\@armcohalo\Addons\custom_armours.pbo
-PBOConsole.exe -pack %~dp0custom_dress_uniforms %~dp0..\..\Export\@armcohalo\Addons\custom_dress_uniforms.pbo
+@REM PBOConsole.exe -pack %~dp0custom_dress_uniforms %~dp0..\..\Export\@armcohalo\Addons\custom_dress_uniforms.pbo
 PBOConsole.exe -pack %~dp0custom_emergency      %~dp0..\..\Export\@armcohalo\Addons\custom_emergency.pbo
 PBOConsole.exe -pack %~dp0custom_groups         %~dp0..\..\Export\@armcohalo\Addons\custom_groups.pbo
 PBOConsole.exe -pack %~dp0custom_vehicles       %~dp0..\..\Export\@armcohalo\Addons\custom_vehicles.pbo
