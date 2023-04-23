@@ -7,12 +7,13 @@ class CfgVehicles {
 };
 // cfgWeapons includes weapons armours and helmets and uniforms.
 class cfgWeapons {
-// this include brings in all the all the Helmets from the CfgVehicleHelmet.hpp
-#include "CfgWeaponsSHelmet.hpp"
 
 // this include brings in all the all the Uniforms from the
 // CfgVehicleUniform.hpp
 #include "CfgWeaponsUniform.hpp"
+
+// this include brings in all the all the Helmets from the CfgVehicleHelmet.hpp
+#include "CfgWeaponsSHelmet.hpp"
 
 // this include Squad based Armours from the CfgWeaponsSArmour.hpp
 #include "CfgWeaponsSArmour.hpp"
@@ -23,4 +24,6 @@ class cfgWeapons {
 
 // Brings in all the custom helmets from the CfgWeaponsCHelmet.hpp
 #include "CfgWeaponsCHelmet.hpp"
+
+
 };
