@@ -1,5 +1,5 @@
 class cfgPatches {
-#include "CfgPathces.hpp"
+#include "CfgPatches.hpp"
 };
 
 class cfgFactionClasses {
@@ -12,10 +12,11 @@ class cfgFactionClasses {
 };
 
 class cfgWeapons {
-
 #include "CfgWeapons.hpp"
 };
 
 class cfgVehicles {
 #include "CfgVehicles.hpp"
+
+#include "Cfginven.hpp"
 };
