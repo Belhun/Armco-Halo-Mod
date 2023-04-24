@@ -2,9 +2,9 @@
 class CfgGroups {
   class East {
     class GH {
-      name = "Insurrectionists (Green Horns)"; //
+      name = "Insurrectionists (Green Horns)";
       class GH_Groups {
-        name = "Infantry"; //
+        name = "Infantry";
         class GH_Fireteam {
           name = "Fireteam";
           side = 0;
@@ -89,29 +89,6 @@ class CfgGroups {
             position[] = {20, -20, 0};
             rank = "PRIVATE";
             vehicle = "ARMCO_Soldier_AR";
-          };
-        };
-      };
-    };
-  };
-  class Indep {
-    class CA {
-      name = "Colonial Administration"; //
-      class ARMCO_Groups_S {
-        name = "Police"; //
-        class ARMCO_CA_Patrol {
-          name = "Police Patrol";
-          side = 2;
-          class CP_TL {
-            position[] = {0, 0, 0};
-            rank = "CORPORAL";
-            side = 2;
-            vehicle = "ARMCO_Police_Officer_tl";
-          };
-          class CP_officer : CP_TL {
-            position[] = {0, -5, 0};
-            rank = "PRIVATE";
-            vehicle = "ARMCO_Police_Officer";
           };
         };
       };

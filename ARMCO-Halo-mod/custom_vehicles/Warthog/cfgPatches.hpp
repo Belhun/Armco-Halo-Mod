@@ -1,5 +1,5 @@
-class CfgPatches { 
-	class CA_ARMCO_WARTHOG { 
+class CfgPatches {
+	class ARMCO_Warthogs {
 		units[] = {
 			"ARMCO_M12_LRV",
 			"ARMCO_M12G1_LRV",
@@ -17,12 +17,8 @@ class CfgPatches {
 	};
 };
 class CfgEditorSubcategories {
-	class armco_units_cars // Category class, you point to it in editorSubcategory property
+	class armco_units_cars
 	{
-		displayName = "ARMCO Warthogs"; // Name visible in the list
-	};
-	class gh_units_cars // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "Warthogs"; // Name visible in the list
+		displayName = "ARMCO Warthogs";
 	};
 };
