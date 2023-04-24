@@ -16,14 +16,11 @@ Welcome to ARMCO's Halo mod data. In this section, I will provide a breakdown of
 │   │   ├── CfgWeaponsCHelmet.hpp (Squad based Helmets go here)
 │   │   ├── CfgWeaponsSArmour.hpp (Squad based armours go here)
 │   │   ├── CfgWeaponsUniform.hpp (Uniforms go here)
-│   │   ├── config.cpp
-│   ├── custom_armours (OLD)
-│   ├── custom_dress_uniforms (OLD)
-│   ├── custom_emergency (OLD)
-│   ├── custom_groups (OLD)
-│   └── custom_vehicles (OLD)
-├── ArmourBreakdown.md
-├── README.md
+│   │   ├── config.cpp (all the hpp fires go here)
+│   ├── armco_vehicles (New)
+|       ├──
+├── ArmourBreakdown.md (This hold the Armour breakdown of the hidden selctions)
+├── README.md (this...)
 └── example
     └── @armcohalo
         └── mod.cpp
