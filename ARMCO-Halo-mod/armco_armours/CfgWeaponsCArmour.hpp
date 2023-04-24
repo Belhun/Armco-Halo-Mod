@@ -1,7 +1,7 @@
 /*
 //example Custom Template for ODST armour
 class ARMCO__ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour ()";
+  displayname = "[ARMCO][Z] ODST Armour ()";
   hiddenSelections[] = {};
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
@@ -16,7 +16,7 @@ class ARMCO__ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 */
 class ARMCO_Addy_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Addy)";
+  displayname = "[ARMCO][Z] ODST Armour (Addy)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -107,7 +107,7 @@ class ARMCO_Addy_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Belhun_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Belhun)";
+  displayname = "[ARMCO][Z] ODST Armour (Belhun)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -198,7 +198,7 @@ class ARMCO_Belhun_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Blue_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Blue)";
+  displayname = "[ARMCO][Z] ODST Armour (Blue)";
   hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
@@ -247,7 +247,7 @@ class ARMCO_Blue_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Boone_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Boone)";
+  displayname = "[ARMCO][Z] ODST Armour (Boone)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -330,7 +330,7 @@ class ARMCO_Boone_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Burford_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Burford)";
+  displayname = "[ARMCO][Z] ODST Armour (Burford)";
   hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
@@ -379,7 +379,7 @@ class ARMCO_Burford_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Cheese_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Cheese)";
+  displayname = "[ARMCO][Z] ODST Armour (Cheese)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -460,7 +460,7 @@ class ARMCO_Cheese_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Ciro_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Ciro)";
+  displayname = "[ARMCO][Z] ODST Armour (Ciro)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -547,7 +547,7 @@ class ARMCO_Ciro_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Darkness_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Darkness)";
+  displayname = "[ARMCO][Z] ODST Armour (Darkness)";
   hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
@@ -596,7 +596,7 @@ class ARMCO_Darkness_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Darman_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Darman)";
+  displayname = "[ARMCO][Z] ODST Armour (Darman)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -673,7 +673,7 @@ class ARMCO_Darman_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Extortionist_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Extortionist)";
+  displayname = "[ARMCO][Z] ODST Armour (Extortionist)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -750,7 +750,7 @@ class ARMCO_Extortionist_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Garfield_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Garfield)";
+  displayname = "[ARMCO][Z] ODST Armour (Garfield)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -831,7 +831,7 @@ class ARMCO_Garfield_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Merek_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Merek)";
+  displayname = "[ARMCO][Z] ODST Armour (Merek)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -912,7 +912,7 @@ class ARMCO_Merek_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Mini_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Mini)";
+  displayname = "[ARMCO][Z] ODST Armour (Mini)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -995,7 +995,7 @@ class ARMCO_Mini_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Nutters_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Nutters)";
+  displayname = "[ARMCO][Z] ODST Armour (Nutters)";
   hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
@@ -1048,7 +1048,7 @@ class ARMCO_Nutters_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Raziel_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Raziel)";
+  displayname = "[ARMCO][Z] ODST Armour (Raziel)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -1139,7 +1139,7 @@ class ARMCO_Raziel_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Reaper_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Reaper)";
+  displayname = "[ARMCO][Z] ODST Armour (Reaper)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -1230,7 +1230,7 @@ class ARMCO_Reaper_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Red)";
+  displayname = "[ARMCO][Z] ODST Armour (Red)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -1307,7 +1307,7 @@ class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Runic_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Runic)";
+  displayname = "[ARMCO][Z] ODST Armour (Runic)";
   hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
@@ -1358,7 +1358,7 @@ class ARMCO_Runic_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Shaw_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Shaw)";
+  displayname = "[ARMCO][Z] ODST Armour (Shaw)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -1441,7 +1441,7 @@ class ARMCO_Shaw_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_VJ_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (VJ)";
+  displayname = "[ARMCO][Z] ODST Armour (VJ)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -1528,7 +1528,7 @@ class ARMCO_VJ_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   };
 };
 class ARMCO_Wolffe_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayName = "[A][ARMCO] ODST Armour (Wolffe)";
+  displayname = "[ARMCO][Z] ODST Armour (Wolffe)";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",

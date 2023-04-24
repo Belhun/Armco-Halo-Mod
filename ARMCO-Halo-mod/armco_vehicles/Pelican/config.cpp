@@ -5,7 +5,7 @@ class CfgFunctions
     {
         class PelicanMagLiftSystem
         {
-            file = "custom_vehicles\Pelican";
+            file = "armco_vehicles\Pelican";
             class PelicanLoadValidate{};
 			class PelicanUnLoadValidate{};
         };

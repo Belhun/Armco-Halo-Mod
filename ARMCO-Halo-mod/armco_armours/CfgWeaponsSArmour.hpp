@@ -179,7 +179,7 @@ class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
 class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Alpha Armor";
+  displayName = "[ARMCO][A] Alpha Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -276,7 +276,7 @@ class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
 class ARMCO_Sabre_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Sabre Armor";
+  displayName = "[ARMCO][A] Sabre Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -377,7 +377,7 @@ class ARMCO_Sabre_Armor : ARMCO_Base_Armor {
 class ARMCO_Zulu_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Zulu Armor";
+  displayName = "[ARMCO][A] Zulu Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -475,7 +475,7 @@ class ARMCO_Zulu_Armor : ARMCO_Base_Armor {
 class ARMCO_Zulu_Ghillie_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Zulu Ghillie Armor";
+  displayName = "[ARMCO][A] Zulu Ghillie Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -574,7 +574,7 @@ class ARMCO_Zulu_Ghillie_Armor : ARMCO_Base_Armor {
 class ARMCO_Phoenix_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Phoenix Armor";
+  displayName = "[ARMCO][A] Phoenix Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -671,7 +671,7 @@ class ARMCO_Phoenix_Armor : ARMCO_Base_Armor {
 class ARMCO_Medical_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Meidcal Armour";
+  displayName = "[ARMCO][A] Meidcal Armour";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -765,7 +765,7 @@ class ARMCO_Medical_Armor : ARMCO_Base_Armor {
 class ARMCO_EOD_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] EOD Armour";
+  displayName = "[ARMCO][A] EOD Armour";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -860,7 +860,7 @@ class ARMCO_EOD_Armor : ARMCO_Base_Armor {
 class ARMCO_Alpha_ODST_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Alpha ODST Armour";
+  displayName = "[ARMCO][B] Alpha ODST Armour";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -950,7 +950,7 @@ class ARMCO_Alpha_ODST_Armor : ARMCO_Base_Armor {
 class ARMCO_Sabre_ODST_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Sabre ODST Armour";
+  displayName = "[ARMCO][B] Sabre ODST Armour";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -1038,7 +1038,7 @@ class ARMCO_Sabre_ODST_Armor : ARMCO_Base_Armor {
 class ARMCO_Zulu_ODST_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Zulu ODST Armour";
+  displayName = "[ARMCO][B] Zulu ODST Armour";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -1128,7 +1128,7 @@ class ARMCO_Zulu_ODST_Armor : ARMCO_Base_Armor {
 class ARMCO_Phoenix_ODST_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[A][ARMCO] Phoenix ODST Armour";
+  displayName = "[ARMCO][B] Phoenix ODST Armour";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",

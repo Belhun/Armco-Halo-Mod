@@ -1,6 +1,6 @@
 class Flag_White_F;
   class ARMCO_Flag : Flag_White_F {
-    displayName = "[A][ARMCO] Unit Flag";
+    displayname = "[ARMCO]Unit Flag";
     scope = 2;
     scopeCurator = 2;
     hiddenSelections[] = {"Camo_1"};

@@ -16,8 +16,6 @@ dlcColor[] =
 	0.54
 };
 // Overview text, displayed from the extension menu
-overview = "Armco Halo is a mod for Arma 3 that adds ARMCO Halo themed
-armours/items and vehicals to the game. ALL based off Optrays amazing work. Notable mentions to the Optre discord for all the help,
-Darknessvoid99, aheroicmusket, Cutup, kitsune0199, Arcanumwolf";
+overview = "Armco Halo is a mod for Arma 3 that adds ARMCO Halo themed armours/items and vehicals to the game. ALL based off Optrays amazing work. Notable mentions to the Optre discord for all the help, Darknessvoid99, aheroicmusket, Cutup, kitsune0199, Arcanumwolf";
 hideName	= 0;	// Hide the extension name
 hidePicture	= 0;	// Hide the extension menu
