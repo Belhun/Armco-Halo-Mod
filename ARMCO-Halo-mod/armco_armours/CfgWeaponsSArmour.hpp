@@ -55,11 +55,12 @@ img](https://i.imgur.com/LbsKPwe.png)
 - `CustomKit_Scorch` = [front img](https://i.imgur.com/uHjTO3W.png)[back
 img](https://i.imgur.com/IUVBpKa.png)
 */
+
 class OPTRE_UNSC_M52A_Armor2_WDL;
 // removed A_Base, A_ChestArmor, A_ShinArmorLeft, A_ShinArmorRight,
 // A_ThighArmorLeft, A_ThighArmorRight
 class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   hiddenSelections[] = {"camo",
                         "camo2",
@@ -176,7 +177,7 @@ class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
 // Alpha Base Armour AS_LargeLeft, AS_MediumRight, AP_AR, AP_Smoke, AP_Pistol,
 // AP_Pack, A_KneesMarRight, A_KneesMarLeft, AP_Thigh, APO_Knife
 class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Alpha Armor";
   hiddenSelections[] = {"camo",
@@ -273,7 +274,7 @@ class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
 // Sabre Base Armour AS_MediumLeft,AS_SmallRight,AP_BR,AP_Smoke,AP_Frag, No
 // Upper Chest Add-on, A_KneesMarRight, A_KneesMarLeft, AP_Thigh, APO_Knife
 class ARMCO_Sabre_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Sabre Armor";
   hiddenSelections[] = {"camo",
@@ -374,7 +375,7 @@ class ARMCO_Sabre_Armor : ARMCO_Base_Armor {
 // AS_MediumLeft,AS_MediumRight,AP_BR,AP_Smoke,AP_Pistol,AP_Pack,A_KneesMarRight,AP_Rounds,
 // APO_Knife
 class ARMCO_Zulu_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Zulu Armor";
   hiddenSelections[] = {"camo",
@@ -472,7 +473,7 @@ class ARMCO_Zulu_Armor : ARMCO_Base_Armor {
   };
 };
 class ARMCO_Zulu_Ghillie_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Zulu Ghillie Armor";
   hiddenSelections[] = {"camo",
@@ -571,7 +572,7 @@ class ARMCO_Zulu_Ghillie_Armor : ARMCO_Base_Armor {
 // AS_LargeLeft,AS_MediumRight,AP_BR,AP_Canteen,AP_Frag,AP_SG,A_KneesMarRight,
 // A_KneesMarLeft,AP_MGThigh, APO_Knife
 class ARMCO_Phoenix_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Phoenix Armor";
   hiddenSelections[] = {"camo",
@@ -668,7 +669,7 @@ class ARMCO_Phoenix_Armor : ARMCO_Base_Armor {
 };
 // Medical Armour
 class ARMCO_Medical_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Meidcal Armour";
   hiddenSelections[] = {"camo",
@@ -762,7 +763,7 @@ class ARMCO_Medical_Armor : ARMCO_Base_Armor {
   };
 };
 class ARMCO_EOD_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] EOD Armour";
   hiddenSelections[] = {"camo",
@@ -857,7 +858,7 @@ class ARMCO_EOD_Armor : ARMCO_Base_Armor {
 };
 // ODST Armour
 class ARMCO_Alpha_ODST_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Alpha ODST Armour";
   hiddenSelections[] = {"camo",
@@ -947,7 +948,7 @@ class ARMCO_Alpha_ODST_Armor : ARMCO_Base_Armor {
   };
 };
 class ARMCO_Sabre_ODST_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Sabre ODST Armour";
   hiddenSelections[] = {"camo",
@@ -1035,7 +1036,7 @@ class ARMCO_Sabre_ODST_Armor : ARMCO_Base_Armor {
   };
 };
 class ARMCO_Zulu_ODST_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Zulu ODST Armour";
   hiddenSelections[] = {"camo",
@@ -1125,7 +1126,7 @@ class ARMCO_Zulu_ODST_Armor : ARMCO_Base_Armor {
   };
 };
 class ARMCO_Phoenix_ODST_Armor : ARMCO_Base_Armor {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Phoenix ODST Armour";
   hiddenSelections[] = {"camo",

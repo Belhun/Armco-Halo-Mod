@@ -22,7 +22,7 @@ class ARMCO_Rucksack_Burford : ARMCO_Rucksack_Hard_Alpha {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_Burford_co.paa"};
 };
-class ARMCO_Rucksack_Boone : ARMCO_Rucksack_tSoft_Alpha {
+class ARMCO_Rucksack_Boone : ARMCO_Rucksack_Soft_Alpha {
   displayName = "[A][ARMCO]Hard Rucksack (Boone)";
   hiddenSelections[] = {"camo", "B_Medic", "B_Radio"};
   hiddenSelectionsTextures[] = {

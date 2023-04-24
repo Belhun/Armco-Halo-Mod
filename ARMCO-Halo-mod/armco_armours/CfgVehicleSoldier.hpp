@@ -1,3 +1,13 @@
+class Flag_White_F;
+  class ARMCO_Flag : Flag_White_F {
+    displayName = "[A][ARMCO] Unit Flag";
+    scope = 2;
+    scopeCurator = 2;
+    hiddenSelections[] = {"Camo_1"};
+    hiddenSelectionsTextures[] = {
+        "custom_armours\data\flags\flag_armco_co.paa"};
+  };
+
 // importing the base classes from ARMA and OPTRE
 class UniformItem;                 // ARMA
 class OPTRE_UNSC_Man_Army_W_class; // OPTRE
@@ -31,7 +41,7 @@ class SoldierWB : CAManBase {
 
 class ARMCO_Base_Soldier : SoldierWB {
 
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   scope = 1;
   scopeCurator = 0;
   author = "Belhun";
@@ -201,7 +211,7 @@ class ARMCO_Base_Soldier : SoldierWB {
 
 
 class ARMCO_Soldier_A_Rifle : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -212,7 +222,7 @@ class ARMCO_Soldier_A_Rifle : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_alpha_co.paa"};
 };
 class ARMCO_Soldier_A_EOD : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -223,7 +233,7 @@ class ARMCO_Soldier_A_EOD : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_alpha_eod_co.paa"};
 };
 class ARMCO_Soldier_A_Medical : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -234,7 +244,7 @@ class ARMCO_Soldier_A_Medical : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_alpha_medic_co.paa"};
 };
 class ARMCO_Soldier_S_Rifle : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -245,7 +255,7 @@ class ARMCO_Soldier_S_Rifle : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_sabre_co.paa"};
 };
 class ARMCO_Soldier_S_EOD : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -256,7 +266,7 @@ class ARMCO_Soldier_S_EOD : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_sabre_eod_co.paa"};
 };
 class ARMCO_Soldier_S_Medical : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -267,7 +277,7 @@ class ARMCO_Soldier_S_Medical : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_sabre_medic_co.paa"};
 };
 class ARMCO_Soldier_Z_Rifle : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -278,7 +288,7 @@ class ARMCO_Soldier_Z_Rifle : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_zulu_co.paa"};
 };
 class ARMCO_Soldier_Z_EOD : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -289,7 +299,7 @@ class ARMCO_Soldier_Z_EOD : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_zulu_eod_co.paa"};
 };
 class ARMCO_Soldier_Z_Medical : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -300,7 +310,7 @@ class ARMCO_Soldier_Z_Medical : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_zulu_medic_co.paa"};
 };
 class ARMCO_Soldier_P_Rifle : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -311,7 +321,7 @@ class ARMCO_Soldier_P_Rifle : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_phoenix_co.paa"};
 };
 class ARMCO_Soldier_P_EOD : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -322,7 +332,7 @@ class ARMCO_Soldier_P_EOD : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_phoenix_eod_co.paa"};
 };
 class ARMCO_Soldier_P_Medical : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -337,7 +347,7 @@ class ARMCO_Soldier_P_Medical : ARMCO_Base_Soldier {
 // camo
 // M90
 class ARMCO_Soldier_ODST_BLK : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -348,7 +358,7 @@ class ARMCO_Soldier_ODST_BLK : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_odst_black_co.paa"};
 };
 class ARMCO_Soldier_ODST_camo : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -359,7 +369,7 @@ class ARMCO_Soldier_ODST_camo : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_odst_camo_co.paa"};
 };
 class ARMCO_Soldier_ODST_M90 : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -370,7 +380,7 @@ class ARMCO_Soldier_ODST_M90 : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_odst_M90_camo_co.paa"};
 };
 class ARMCO_Soldier_ODST_GDJungle : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -382,7 +392,7 @@ class ARMCO_Soldier_ODST_GDJungle : ARMCO_Base_Soldier {
 };
 //BDUs made by Belhun
 class ARMCO_Soldier_ODST_Dark_Mountain : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -393,7 +403,7 @@ class ARMCO_Soldier_ODST_Dark_Mountain : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_a_gddmount_CO.paa"};
 };
 class ARMCO_Soldier_ODST_New_Dark_Mountain : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -404,7 +414,7 @@ class ARMCO_Soldier_ODST_New_Dark_Mountain : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_a_newdarkdigitalgreen_CO.paa"};
 };
 class ARMCO_Soldier_ODST_DDRKWDL : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -415,7 +425,7 @@ class ARMCO_Soldier_ODST_DDRKWDL : ARMCO_Base_Soldier {
       "armco_armours\data\uniforms\uniform_a_darkwoodland_CO.paa"};
 };
 class ARMCO_Soldier_ODST_DWLD : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -427,7 +437,7 @@ class ARMCO_Soldier_ODST_DWLD : ARMCO_Base_Soldier {
 };
 //Scurity BDU
 class ARMCO_Soldier_SEC : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";
@@ -437,7 +447,7 @@ class ARMCO_Soldier_SEC : ARMCO_Base_Soldier {
       "armco_armours\data\security\uniform\uniform_armco_security_co.paa"};
 };
 class ARMCO_Soldier_ODST_SEC : ARMCO_Base_Soldier {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
   uniformClass = "ARMCO_PMC_Army_Uniform_WDL";

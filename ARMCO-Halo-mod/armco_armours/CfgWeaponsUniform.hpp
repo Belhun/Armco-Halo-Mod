@@ -3,7 +3,7 @@
 class U_B_CombatUniform_mcam;
 class UniformItem;// dont know where this is comeing from but need it
 class ARMCO_PMC_Army_Uniform_WDL : U_B_CombatUniform_mcam {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   scope = 2;
   author = "Belhun";
   picture = "\OPTRE_UNSC_Units\Army\icons\army_uniform_wdl_hvy.paa";
@@ -19,7 +19,7 @@ class ARMCO_PMC_Army_Uniform_WDL : U_B_CombatUniform_mcam {
 // Squad Uniforms
 // Alpha Uniforms
 class Alpha_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Alpha)";
   class ItemInfo : UniformItem {
@@ -30,7 +30,7 @@ class Alpha_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class Alpha_EOD_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Alpha EOD)";
   class ItemInfo : UniformItem {
@@ -41,7 +41,7 @@ class Alpha_EOD_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class Alpha_Medic_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Alpha Medical)";
   class ItemInfo : UniformItem {
@@ -53,7 +53,7 @@ class Alpha_Medic_BDU : ARMCO_PMC_Army_Uniform_WDL {
 };
 // Sabre Uniforms
 class Sabre_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Sabre)";
   class ItemInfo : UniformItem {
@@ -64,7 +64,7 @@ class Sabre_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class Sabre_EOD_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Sabre EOD)";
   class ItemInfo : UniformItem {
@@ -75,7 +75,7 @@ class Sabre_EOD_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class Sabre_Medic_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Sabre Medical)";
   class ItemInfo : UniformItem {
@@ -87,7 +87,7 @@ class Sabre_Medic_BDU : ARMCO_PMC_Army_Uniform_WDL {
 };
 // Zulu Uniforms
 class Zulu_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Zulu)";
   class ItemInfo : UniformItem {
@@ -98,7 +98,7 @@ class Zulu_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class Zulu_EOD_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Zulu EOD)";
   class ItemInfo : UniformItem {
@@ -109,7 +109,7 @@ class Zulu_EOD_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class Zulu_Medic_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Zulu Medical)";
   class ItemInfo : UniformItem {
@@ -121,7 +121,7 @@ class Zulu_Medic_BDU : ARMCO_PMC_Army_Uniform_WDL {
 };
 // Phoenix Uniforms
 class Phoenix_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Phoenix)";
   class ItemInfo : UniformItem {
@@ -132,7 +132,7 @@ class Phoenix_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class Phoenix_EOD_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Phoenix EOD)";
   class ItemInfo : UniformItem {
@@ -143,7 +143,7 @@ class Phoenix_EOD_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class Phoenix_Medic_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad BDU (Phoenix Medical)";
   class ItemInfo : UniformItem {
@@ -155,7 +155,7 @@ class Phoenix_Medic_BDU : ARMCO_PMC_Army_Uniform_WDL {
 };
 // ODST Uniforms
 class ARMCO_ODST_BLK_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit BDU (ODST)";
   class ItemInfo : UniformItem {
@@ -166,7 +166,7 @@ class ARMCO_ODST_BLK_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class ARMCO_ODST_camo_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit BDU (ODST Camo)";
   class ItemInfo : UniformItem {
@@ -177,7 +177,7 @@ class ARMCO_ODST_camo_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class ARMCO_ODST_M90_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit BDU (ODST M90)";
   class ItemInfo : UniformItem {
@@ -188,7 +188,7 @@ class ARMCO_ODST_M90_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class ARMCO_ODST_GDJungle_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit BDU (Jungle)";
   class ItemInfo : UniformItem {
@@ -199,7 +199,7 @@ class ARMCO_ODST_GDJungle_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class ARMCO_ODST_GDDMOUNT_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit BDU (Dark Mountain)";
   class ItemInfo : UniformItem {
@@ -210,7 +210,7 @@ class ARMCO_ODST_GDDMOUNT_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class ARMCO_ODST_NEWGDDMOUNT_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit BDU (New Jungle)";
   class ItemInfo : UniformItem {
@@ -221,7 +221,7 @@ class ARMCO_ODST_NEWGDDMOUNT_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class ARMCO_ODST_DDRKWDL_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit BDU (Digital Dark Woodland)";
   class ItemInfo : UniformItem {
@@ -232,7 +232,7 @@ class ARMCO_ODST_DDRKWDL_BDU : ARMCO_PMC_Army_Uniform_WDL {
   }
 };
 class ARMCO_ODST_DWLD_BDU : ARMCO_PMC_Army_Uniform_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit BDU (Digital Woodland)";
   class ItemInfo : UniformItem {

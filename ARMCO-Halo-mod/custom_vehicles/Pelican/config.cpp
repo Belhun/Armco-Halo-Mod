@@ -292,7 +292,7 @@ class ARMCO_Pelican_Transport: ARMCO_Pelican_Base_U
 		{
 			"\custom_vehicles\Pelican\data\Armco_Pelican_Transport.paa"
 		};
-	editorCategory = "armco_units";
+	editorCategory = "ARMCO_Armco_Faction";
 	editorSubcategory = "armco_units_pelicans";
 	};
 class ARMCO_Pelican_Gunship: ARMCO_Pelican_Base_A
@@ -315,7 +315,7 @@ class ARMCO_Pelican_Gunship: ARMCO_Pelican_Base_A
 		{
 			"\custom_vehicles\Pelican\data\Armco_Pelican_Transport.paa"
 		};
-	editorCategory = "armco_units";
+	editorCategory = "ARMCO_Armco_Faction";
 	editorSubcategory = "armco_units_pelicans";
 	};
 class ARMCO_Pelican_Medevac: ARMCO_Pelican_Base_U
@@ -340,11 +340,11 @@ class ARMCO_Pelican_Medevac: ARMCO_Pelican_Base_U
 		{
 			"\custom_vehicles\Pelican\data\Armco_Pelican_Med.paa"
 		};
-		editorCategory = "armco_units";
+		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "armco_units_pelicans";
 	};
 
-	
+
 //---Green Horns Pelicans---//
 class GH_Pelican_Transport: ARMCO_Pelican_Base_U
 	{
@@ -367,8 +367,8 @@ class GH_Pelican_Transport: ARMCO_Pelican_Base_U
 		{
 			"\custom_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
 		};
-	editorCategory = "armco_units_green_horns";
-	editorSubcategory = "gh_units_pelicans";
+	editorCategory = "ARMCO_Green_Horns_Cat";
+	editorSubcategory = "armco_units_pelicans";
 	};
 class GH_Pelican_Gunship: ARMCO_Pelican_Base_A
 	{
@@ -390,8 +390,8 @@ class GH_Pelican_Gunship: ARMCO_Pelican_Base_A
 		{
 			"\custom_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
 		};
-	editorCategory = "armco_units_green_horns";
-	editorSubcategory = "gh_units_pelicans";
+	editorCategory = "ARMCO_Green_Horns_Cat";
+	editorSubcategory = "armco_units_pelicans";
 	};
 class GH_Pelican_Medevac: ARMCO_Pelican_Base_U
 	{
@@ -415,7 +415,7 @@ class GH_Pelican_Medevac: ARMCO_Pelican_Base_U
 		{
 			"\custom_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
 		};
-		editorCategory = "armco_units_green_horns";
-		editorSubcategory = "gh_units_pelicans";
+		editorCategory = "ARMCO_Green_Horns_Cat";
+		editorSubcategory = "armco_units_pelicans";
 	};
 };

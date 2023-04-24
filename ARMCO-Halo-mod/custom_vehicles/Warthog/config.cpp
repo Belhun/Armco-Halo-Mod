@@ -18,9 +18,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 			{
 				"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
@@ -49,7 +49,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colornight
@@ -68,7 +68,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorwood
@@ -87,7 +87,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsnow
@@ -106,7 +106,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsand
@@ -125,7 +125,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmco
@@ -144,7 +144,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -163,7 +163,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};
@@ -199,9 +199,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -237,7 +237,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colornight
@@ -255,7 +255,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorwood
@@ -273,7 +273,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsnow
@@ -291,7 +291,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsand
@@ -309,7 +309,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmco
@@ -327,7 +327,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -345,7 +345,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};
@@ -381,9 +381,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 			{
 				"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
@@ -412,7 +412,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colornight
@@ -431,7 +431,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorwood
@@ -450,7 +450,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsnow
@@ -469,7 +469,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsand
@@ -488,7 +488,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmco
@@ -507,7 +507,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -526,7 +526,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};
@@ -562,9 +562,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -682,7 +682,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -699,7 +699,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};
@@ -735,9 +735,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -770,7 +770,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colornight
@@ -787,7 +787,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorwood
@@ -804,7 +804,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsnow
@@ -821,7 +821,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsand
@@ -838,7 +838,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmco
@@ -855,7 +855,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -872,7 +872,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};
@@ -908,9 +908,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 		{
 			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
@@ -934,7 +934,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colornight
@@ -951,7 +951,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorwood
@@ -967,7 +967,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsnow
@@ -983,7 +983,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsand
@@ -999,7 +999,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmco
@@ -1015,7 +1015,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -1031,7 +1031,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};
@@ -1073,9 +1073,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 		{
 			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
@@ -1106,7 +1106,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colornight
@@ -1127,7 +1127,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorwood
@@ -1147,7 +1147,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsnow
@@ -1167,7 +1167,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsand
@@ -1187,7 +1187,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmco
@@ -1207,7 +1207,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -1227,7 +1227,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};
@@ -1273,9 +1273,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 		{
 			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
@@ -1309,7 +1309,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colornight
@@ -1330,7 +1330,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorwood
@@ -1351,7 +1351,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsnow
@@ -1372,7 +1372,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsand
@@ -1393,7 +1393,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmco
@@ -1414,7 +1414,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -1435,7 +1435,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};
@@ -1482,9 +1482,9 @@ class CfgVehicles
 		side=1;
 		scope=2;
 		crew="ARMCO_Soldier_O_Phoenix";
-		faction="ARMCO_PMC";
-		editorCategory = "armco_units";
-		editorSubcategory = "armco_units_cars";
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 		{
 			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
@@ -1513,7 +1513,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colornight
@@ -1533,7 +1533,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorwood
@@ -1552,7 +1552,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsnow
@@ -1571,7 +1571,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorsand
@@ -1590,7 +1590,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmco
@@ -1609,7 +1609,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 			class colorarmcot
@@ -1628,7 +1628,7 @@ class CfgVehicles
 				};
 				factions[]=
 				{
-					"ARMCO_PMC"
+					"ARMCO_Armco_Faction"
 				};
 			};
 		};

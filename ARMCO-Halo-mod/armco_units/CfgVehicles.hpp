@@ -5795,8 +5795,7 @@ class ARMCO_Phoenix_Auto_Rifleman : OPTRE_UNSC_Marine_Soldier_Unarmed {
   backpack = "ARMCO_Phoenix_Auto_Rifleman_pack";
 };
 
-class ARMCO_Phoenix_Special_Weapons_Operator
-    : OPTRE_UNSC_Marine_Soldier_Unarmed {
+class ARMCO_Phoenix_Special_Weapons_Operator : OPTRE_UNSC_Marine_Soldier_Unarmed {
   faction = "ARMCO_Armco_Faction";
   side = 1;
   displayName = "Phoenix Special Weapons Operator";

@@ -13,7 +13,7 @@ class OPTRE_UNSC_CH252_Helmet_WDL;
 class OPTRE_UNSC_CH252_Helmet3_WDL;
 // Alpha Helmet
 class Alpha_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad CH252 Helmet (Alpha)";
   hiddenSelectionsTextures[] = {
@@ -27,7 +27,7 @@ class Alpha_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
 };
 // Sabre Helmet
 class Sabre_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad CH252 Helmet (Sabre)";
   hiddenSelectionsTextures[] = {
@@ -41,7 +41,7 @@ class Sabre_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
 };
 // Phoenix Helmet
 class Phoenix_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad CH252 Helmet (Phoenix)";
   hiddenSelectionsTextures[] = {
@@ -55,7 +55,7 @@ class Phoenix_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
 };
 // Zulu Helmet
 class Zulu_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Squad CH252 Helmet (Zulu)";
   hiddenSelectionsTextures[] = {
@@ -69,7 +69,7 @@ class Zulu_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
 };
 // Medical Helmet
 class Medical_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit CH252 Helmet (Medical)";
   hiddenSelectionsTextures[] = {
@@ -83,7 +83,7 @@ class Medical_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
 };
 // EOD Helmet
 class EOD_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit CH252 Helmet (EOD)";
   hiddenSelectionsTextures[] = {
@@ -96,7 +96,7 @@ class EOD_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   };
 };
 class ARMCO_Generic_CH252_Ghillie_Helmet : OPTRE_UNSC_CH252_Helmet3_WDL {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Unit CH252 Helmet (Ghillie)";
   hiddenSelectionsTextures[] = {
@@ -115,7 +115,7 @@ class ARMCO_Generic_CH252_Ghillie_Helmet : OPTRE_UNSC_CH252_Helmet3_WDL {
 class OPTRE_UNSC_CH252D_Helmet; // Brings in the base Helmet for ODST Helmet
 
 class Alpha_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Alpha ODST Helmet";
   hiddenSelectionsTextures[] = {
@@ -128,7 +128,7 @@ class Alpha_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   };
 };
 class Sabre_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Sabre ODST Helmet";
   hiddenSelectionsTextures[] = {
@@ -141,7 +141,7 @@ class Sabre_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   };
 };
 class Zulu_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Zulu ODST Helmet";
   hiddenSelectionsTextures[] = {
@@ -154,7 +154,7 @@ class Zulu_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   };
 };
 class Phoenix_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Phoenix ODST Helmet";
   hiddenSelectionsTextures[] = {

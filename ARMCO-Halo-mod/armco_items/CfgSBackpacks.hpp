@@ -1,7 +1,7 @@
 class OPTRE_ILCS_Rucksack_Black;
 // ODST Hard Backpacks
 class ARMCO_Rucksack_Hard_Alpha : OPTRE_ILCS_Rucksack_Black {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   maximumLoad = 400;
   mass = 50;
@@ -49,7 +49,7 @@ class ARMCO_Rucksack_Hard_Medical : ARMCO_Rucksack_Hard_Alpha {
 // Basic Backpacks
 class ARMCO_PMC_UNSC_Rucksack;
 class ARMCO_Rucksack_Soft_Alpha : ARMCO_PMC_UNSC_Rucksack {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Soft Rucksack (Alpha)";
   hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Radio"};
@@ -57,7 +57,7 @@ class ARMCO_Rucksack_Soft_Alpha : ARMCO_PMC_UNSC_Rucksack {
       "armco_items\data\backpacks\backpack_odst_soft_alpha_co.paa", ""};
 };
 class ARMCO_Rucksack_Soft_Sabre : ARMCO_PMC_UNSC_Rucksack {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Soft Rucksack (Sabre)";
   hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Radio"};
@@ -65,7 +65,7 @@ class ARMCO_Rucksack_Soft_Sabre : ARMCO_PMC_UNSC_Rucksack {
       "armco_items\data\backpacks\backpack_odst_soft_sabre_co.paa", ""};
 };
 class ARMCO_Rucksack_Soft_Zulu : ARMCO_PMC_UNSC_Rucksack {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Soft Rucksack (Zulu)";
   hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Radio"};
@@ -73,7 +73,7 @@ class ARMCO_Rucksack_Soft_Zulu : ARMCO_PMC_UNSC_Rucksack {
       "armco_items\data\backpacks\backpack_odst_soft_zulu_co.paa", ""};
 };
 class ARMCO_Rucksack_Soft_Phoenix : ARMCO_PMC_UNSC_Rucksack {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Soft Rucksack (Phoenix)";
   hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Radio"};
@@ -81,7 +81,7 @@ class ARMCO_Rucksack_Soft_Phoenix : ARMCO_PMC_UNSC_Rucksack {
       "armco_items\data\backpacks\backpack_odst_soft_phoenix_co.paa", ""};
 };
 class ARMCO_Rucksack_Soft_Medical : ARMCO_PMC_UNSC_Rucksack {
-  dlc = "ARMCO_PMC";
+  dlc = "ARMCO";
   author = "Belhun";
   displayName = "[A][ARMCO] Soft Rucksack (Medical)";
   hiddenSelections[] = {"camo", "camo2", "B_Addons", "B_Radio"};

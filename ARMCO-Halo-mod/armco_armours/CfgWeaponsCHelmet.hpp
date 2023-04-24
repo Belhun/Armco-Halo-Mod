@@ -23,7 +23,6 @@ class Belhun_CH252D_Helmet : Alpha_CH252D_Helmet {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_helmets\odst_helmet_Belhun_co.paa",
       "armco_armours\data\odst\custom_helmets\visors\odst_helmet_visor_Belhun_co.paa"};
-  };
 };
 class Blue_CH252D_Helmet : Alpha_CH252D_Helmet {
   displayName = "[A][ARMCO] ODST Helmet (Blue)";

@@ -78,35 +78,18 @@ class CfgPatches {
   };
 };
 
-// unsure if i need it yet(gona message around with it)
-/* class CfgEditorCategories {
-        class armco_units
-        {
-                displayName = "ARMCO";
-        };
-}
-class CfgEditorSubcategories {
-        class armco_units_infantry
-        {
-                displayName = "Infantry (Baseline)";
-        };
-
-}; */
-
-class CfgFactionClasses {
-  class ARMCO_PMC {
-    dlc = "ARMCO OPTRE Reskins";
-    displayName = "ARMCO";
-    author = "Armco Community";
-    priority = 1;
+class cfgFactionClasses {
+  class ARMCO_Armco_Faction {
+    icon = "";
+    displayName = "Armco Faction";
     side = 1;
-    scope = 2;
-    scopeArsenal = 2;
-    scopeCurator = 2;
-    icon = "\OPTRE_Core\data\icon_UNSC_ca.paa";
-    flag = "\OPTRE_Core\Data\flag_UNSC_ca.paa";
-    primaryLanguage = "EN";
-    backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
+    priority = 1;
+  };
+  class ARMCO_Green_Horns {
+    icon = "";
+    displayName = "Insurrectionist (Green Horns)";
+    side = 0;
+    priority = 1;
   };
 };
 
@@ -121,11 +104,11 @@ class CfgMarkers {
     name = "ARMCO HQ";
     scope = 2;
     scopeCurator = 2;
-    icon = "custom_armours\data\flags\flag_armco_ca.paa";
+    icon = "armco_armours\data\flags\flag_armco_ca.paa";
     color[] = {1, 1, 1, 1};
     size = 29;
     shadow = 0;
-    texture = "custom_armours\data\flags\flag_armco_ca.paa";
+    texture = "armco_armours\data\flags\flag_armco_ca.paa";
     markerClass = "ARMCO_Markers";
   };
 };

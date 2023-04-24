@@ -9,6 +9,12 @@ class cfgFactionClasses {
     side = 1;
     priority = 1;
   };
+  class ARMCO_Green_Horns {
+    icon = "";
+    displayName = "Insurrectionist (Green Horns)";
+    side = 0;
+    priority = 1;
+  };
 };
 
 class cfgWeapons {
