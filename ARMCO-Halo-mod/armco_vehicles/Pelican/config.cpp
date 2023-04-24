@@ -290,7 +290,7 @@ class ARMCO_Pelican_Transport: ARMCO_Pelican_Base_U
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Pelican\data\Armco_Pelican_Transport.paa"
+			"\armco_vehicles\Pelican\data\Armco_Pelican_Transport.paa"
 		};
 	editorCategory = "ARMCO_Armco_Faction";
 	editorSubcategory = "armco_units_pelicans";
@@ -313,7 +313,7 @@ class ARMCO_Pelican_Gunship: ARMCO_Pelican_Base_A
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Pelican\data\Armco_Pelican_Transport.paa"
+			"\armco_vehicles\Pelican\data\Armco_Pelican_Transport.paa"
 		};
 	editorCategory = "ARMCO_Armco_Faction";
 	editorSubcategory = "armco_units_pelicans";
@@ -338,7 +338,7 @@ class ARMCO_Pelican_Medevac: ARMCO_Pelican_Base_U
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Pelican\data\Armco_Pelican_Med.paa"
+			"\armco_vehicles\Pelican\data\Armco_Pelican_Med.paa"
 		};
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "armco_units_pelicans";
@@ -365,7 +365,7 @@ class GH_Pelican_Transport: ARMCO_Pelican_Base_U
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
+			"\armco_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
 		};
 	editorCategory = "ARMCO_Green_Horns_Cat";
 	editorSubcategory = "armco_units_pelicans";
@@ -388,7 +388,7 @@ class GH_Pelican_Gunship: ARMCO_Pelican_Base_A
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
+			"\armco_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
 		};
 	editorCategory = "ARMCO_Green_Horns_Cat";
 	editorSubcategory = "armco_units_pelicans";
@@ -413,7 +413,7 @@ class GH_Pelican_Medevac: ARMCO_Pelican_Base_U
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
+			"\armco_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
 		};
 		editorCategory = "ARMCO_Green_Horns_Cat";
 		editorSubcategory = "armco_units_pelicans";
