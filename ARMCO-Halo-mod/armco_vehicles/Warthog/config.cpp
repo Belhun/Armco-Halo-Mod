@@ -23,11 +23,11 @@ class CfgVehicles
 		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 			{
-				"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+				"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 				"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-				"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+				"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 				"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-				"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+				"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 				"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
 				"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa"
 			};
@@ -134,11 +134,11 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-					"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+					"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa"
 				};
@@ -153,11 +153,11 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-					"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+					"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa"
 				};
@@ -213,12 +213,12 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\m68_turret_night_co.paa",
-			"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+			"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 		};
 		class textureSources
 		{
@@ -318,12 +318,12 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\m68_turret_night_co.paa",
-					"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+					"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 				};
 				factions[]=
 				{
@@ -336,12 +336,12 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\m68_turret_night_co.paa",
-					"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+					"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 				};
 				factions[]=
 				{
@@ -386,11 +386,11 @@ class CfgVehicles
 		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 			{
-				"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+				"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 				"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-				"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+				"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 				"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-				"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+				"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 				"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
 				"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 			};
@@ -497,11 +497,11 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-					"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+					"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 				};
@@ -516,11 +516,11 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-					"\custom_vehicles\Warthog\data\m12_turret_armco_co.paa",
+					"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
 					"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 				};
@@ -575,11 +575,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\m79_turret_night_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 		};
 		class textureSources
 		{
@@ -674,11 +674,11 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\m79_turret_night_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 				};
 				factions[]=
 				{
@@ -691,11 +691,11 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\m79_turret_night_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 				};
 				factions[]=
 				{
@@ -748,10 +748,10 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 			"\OPTRE_Vehicles\warthog\data\net_ca.paa"
 		};
 		class textureSources
@@ -847,10 +847,10 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\net_ca.paa"
 				};
 				factions[]=
@@ -864,10 +864,10 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\net_ca.paa"
 				};
 				factions[]=
@@ -913,10 +913,10 @@ class CfgVehicles
 		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
-			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 
 		};
 		class textureSources
@@ -1008,10 +1008,10 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 				};
 				factions[]=
 				{
@@ -1024,10 +1024,10 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
 				};
 				factions[]=
 				{
@@ -1078,12 +1078,12 @@ class CfgVehicles
 		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa"
 		};
@@ -1196,12 +1196,12 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa"
 				};
@@ -1216,12 +1216,12 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa"
 				};
@@ -1278,12 +1278,12 @@ class CfgVehicles
 		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\medical_lopo_co.paa"
@@ -1402,12 +1402,12 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\medical_lopo_co.paa"
@@ -1423,12 +1423,12 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\medical_lopo_co.paa"
@@ -1487,11 +1487,11 @@ class CfgVehicles
 		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
 		{
-			"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa"
 		};
@@ -1599,11 +1599,11 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa"
 				};
@@ -1618,11 +1618,11 @@ class CfgVehicles
 				author="Belhun";
 				textures[]=
 				{
-					"\custom_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
 					"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-					"\custom_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+					"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa"
 				};
