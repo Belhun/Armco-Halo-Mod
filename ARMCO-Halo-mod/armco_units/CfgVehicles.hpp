@@ -784,7 +784,7 @@ class ARMCO_Alpha_Medic : OPTRE_UNSC_Marine_Soldier_Unarmed {
                    "ItemGPS",
                    "OPTRE_NVG",
                    "Rangefinder",
-                   "Phoenix_CH252_Helmet",
+                   "Alpha_CH252_Helmet",
                    "ARMCO_Medical_Armor",
                    "OPTRE_HUD_r_Glasses",
                    "OPTRE_NVG"};
@@ -795,7 +795,7 @@ class ARMCO_Alpha_Medic : OPTRE_UNSC_Marine_Soldier_Unarmed {
                           "ItemGPS",
                           "OPTRE_NVG",
                           "Rangefinder",
-                          "Phoenix_CH252_Helmet",
+                          "Alpha_CH252_Helmet",
                           "ARMCO_Medical_Armor",
                           "OPTRE_HUD_r_Glasses",
                           "OPTRE_NVG"};
@@ -1269,6 +1269,120 @@ class ARMCO_Alpha_Special_Weapons_Operator : OPTRE_UNSC_Marine_Soldier_Unarmed {
   backpack = "ARMCO_Alpha_Special_Weapons_Operator_pack";
 };
 
+class ARMCO_Alpha_Riflemen : OPTRE_UNSC_Marine_Soldier_Unarmed {
+  faction = "ARMCO_Armco_Faction";
+  side = 1;
+  displayName = "Alpha Riflemen";
+  uniformClass = "Alpha_BDU";
+  weapons[] = {"Rangefinder",
+               "ARMCO_OPTRE_MA37_OPTRE_MA37_Smartlink_Scope",
+               "ARMCO_OPTRE_M6G_OPTRE_M6G_Scope",
+               "Put",
+               "Throw"};
+  respawnWeapons[] = {"Rangefinder",
+                      "ARMCO_OPTRE_MA37_OPTRE_MA37_Smartlink_Scope",
+                      "ARMCO_OPTRE_M6G_OPTRE_M6G_Scope",
+                      "Put",
+                      "Throw"};
+  items[] = {"ACE_CableTie",        "ACE_CableTie",
+             "ACE_CableTie",        "ACE_CableTie",
+             "ACE_CableTie",        "ACE_EarPlugs",
+             "ACE_EntrenchingTool", "ACE_IR_Strobe_Item",
+             "ACE_IR_Strobe_Item",  "ACE_MapTools",
+             "ACE_RangeCard",       "ACE_Flashlight_XL50",
+             "ACE_EarPlugs",        "ToolKit",
+             "ACE_bloodIV",         "ACE_bloodIV",
+             "ACE_bloodIV",         "ACE_bloodIV_250",
+             "ACE_bloodIV_500",     "ACE_quikclot",
+             "ACE_quikclot",        "ACE_quikclot",
+             "ACE_quikclot",        "ACE_quikclot",
+             "ACE_quikclot",        "ACE_quikclot",
+             "ACE_quikclot",        "ACE_quikclot",
+             "ACE_quikclot",        "ACE_fieldDressing",
+             "ACE_fieldDressing",   "ACE_fieldDressing",
+             "ACE_fieldDressing",   "ACE_fieldDressing",
+             "ACE_fieldDressing",   "ACE_fieldDressing",
+             "ACE_fieldDressing",   "ACE_fieldDressing",
+             "ACE_fieldDressing",   "ACE_fieldDressing",
+             "ACE_fieldDressing",   "ACE_fieldDressing",
+             "ACE_fieldDressing",   "ACE_fieldDressing",
+             "ACE_elasticBandage",  "ACE_elasticBandage",
+             "ACE_elasticBandage",  "ACE_elasticBandage",
+             "ACE_elasticBandage",  "ACE_packingBandage",
+             "ACE_packingBandage",  "ACE_packingBandage",
+             "ACE_packingBandage",  "ACE_packingBandage",
+             "kat_IV_16",           "kat_IV_16",
+             "kat_chestSeal",       "kat_IO_FAST",
+             "kat_PainkillerItem",  "kat_PainkillerItem",
+             "ACE_splint",          "ACE_splint",
+             "ACE_tourniquet",      "ACE_tourniquet",
+             "ACE_tourniquet",      "ACE_tourniquet"};
+  respawnItems[] = {"ACE_CableTie",        "ACE_CableTie",
+                    "ACE_CableTie",        "ACE_CableTie",
+                    "ACE_CableTie",        "ACE_EarPlugs",
+                    "ACE_EntrenchingTool", "ACE_IR_Strobe_Item",
+                    "ACE_IR_Strobe_Item",  "ACE_MapTools",
+                    "ACE_RangeCard",       "ACE_Flashlight_XL50",
+                    "ACE_EarPlugs",        "ToolKit",
+                    "ACE_bloodIV",         "ACE_bloodIV",
+                    "ACE_bloodIV",         "ACE_bloodIV_250",
+                    "ACE_bloodIV_500",     "ACE_quikclot",
+                    "ACE_quikclot",        "ACE_quikclot",
+                    "ACE_quikclot",        "ACE_quikclot",
+                    "ACE_quikclot",        "ACE_quikclot",
+                    "ACE_quikclot",        "ACE_quikclot",
+                    "ACE_quikclot",        "ACE_fieldDressing",
+                    "ACE_fieldDressing",   "ACE_fieldDressing",
+                    "ACE_fieldDressing",   "ACE_fieldDressing",
+                    "ACE_fieldDressing",   "ACE_fieldDressing",
+                    "ACE_fieldDressing",   "ACE_fieldDressing",
+                    "ACE_fieldDressing",   "ACE_fieldDressing",
+                    "ACE_fieldDressing",   "ACE_fieldDressing",
+                    "ACE_fieldDressing",   "ACE_fieldDressing",
+                    "ACE_elasticBandage",  "ACE_elasticBandage",
+                    "ACE_elasticBandage",  "ACE_elasticBandage",
+                    "ACE_elasticBandage",  "ACE_packingBandage",
+                    "ACE_packingBandage",  "ACE_packingBandage",
+                    "ACE_packingBandage",  "ACE_packingBandage",
+                    "kat_IV_16",           "kat_IV_16",
+                    "kat_chestSeal",       "kat_IO_FAST",
+                    "kat_PainkillerItem",  "kat_PainkillerItem",
+                    "ACE_splint",          "ACE_splint",
+                    "ACE_tourniquet",      "ACE_tourniquet",
+                    "ACE_tourniquet",      "ACE_tourniquet"};
+  magazines[] = {"SmokeShellYellow",
+                 "SmokeShellYellow",
+                 "SmokeShellRed",
+                 "SmokeShellBlue",
+                 "OPTRE_8Rnd_127x40_AP_Mag",
+                 "OPTRE_32Rnd_762x51_Mag",
+                 "OPTRE_32Rnd_762x51_Mag",
+                 "OPTRE_32Rnd_762x51_Mag",
+                 "OPTRE_8Rnd_127x40_AP_Mag"};
+  respawnMagazines[] = {"SmokeShellYellow",
+                        "SmokeShellYellow",
+                        "SmokeShellRed",
+                        "SmokeShellBlue",
+                        "OPTRE_8Rnd_127x40_AP_Mag",
+                        "OPTRE_32Rnd_762x51_Mag",
+                        "OPTRE_32Rnd_762x51_Mag",
+                        "OPTRE_32Rnd_762x51_Mag",
+                        "OPTRE_8Rnd_127x40_AP_Mag"};
+  linkedItems[] = {"ItemMap",           "ItemCompass",
+                   "ItemWatch",         "TFAR_anprc152",
+                   "ItemGPS",           "OPTRE_NVG",
+                   "Rangefinder",       "Alpha_CH252_Helmet",
+                   "ARMCO_Alpha_Armor", "OPTRE_HUD_b_Glasses",
+                   "OPTRE_NVG"};
+  respawnLinkedItems[] = {"ItemMap",           "ItemCompass",
+                          "ItemWatch",         "TFAR_anprc152",
+                          "ItemGPS",           "OPTRE_NVG",
+                          "Rangefinder",       "Alpha_CH252_Helmet",
+                          "ARMCO_Alpha_Armor", "OPTRE_HUD_b_Glasses",
+                          "OPTRE_NVG"};
+  backpack = "ARMCO_Alpha_Special_Weapons_Operator_pack";
+};
+
 class ARMCO_Alpha_EOD : OPTRE_UNSC_Marine_Soldier_Unarmed {
   faction = "ARMCO_Armco_Faction";
   side = 1;
@@ -1439,13 +1553,13 @@ class ARMCO_Alpha_Marksman : OPTRE_UNSC_Marine_Soldier_Unarmed {
   linkedItems[] = {"ItemMap",           "ItemCompass",
                    "ItemWatch",         "TFAR_anprc152",
                    "ItemGPS",           "OPTRE_NVG",
-                   "Rangefinder",       "Phoenix_CH252_Helmet",
+                   "Rangefinder",       "Alpha_CH252_Helmet",
                    "ARMCO_Alpha_Armor", "OPTRE_EyePiece",
                    "OPTRE_NVG"};
   respawnLinkedItems[] = {"ItemMap",           "ItemCompass",
                           "ItemWatch",         "TFAR_anprc152",
                           "ItemGPS",           "OPTRE_NVG",
-                          "Rangefinder",       "Phoenix_CH252_Helmet",
+                          "Rangefinder",       "Alpha_CH252_Helmet",
                           "ARMCO_Alpha_Armor", "OPTRE_EyePiece",
                           "OPTRE_NVG"};
   backpack = "ARMCO_Alpha_Marksman_pack";
@@ -2675,13 +2789,13 @@ class ARMCO_Sabre_Engineer : OPTRE_UNSC_Marine_Soldier_Unarmed {
                    "ItemWatch",       "TFAR_anprc152",
                    "ItemGPS",         "OPTRE_NVG",
                    "Rangefinder",     "Sabre_CH252_Helmet",
-                   "ARMCO_EOD_Armor", "OPTRE_HUD_r_Glasses",
+                   "ARMCO_Sabre_Armor", "OPTRE_HUD_r_Glasses",
                    "OPTRE_NVG"};
   respawnLinkedItems[] = {"ItemMap",         "ItemCompass",
                           "ItemWatch",       "TFAR_anprc152",
                           "ItemGPS",         "OPTRE_NVG",
                           "Rangefinder",     "Sabre_CH252_Helmet",
-                          "ARMCO_EOD_Armor", "OPTRE_HUD_r_Glasses",
+                          "ARMCO_Sabre_Armor", "OPTRE_HUD_r_Glasses",
                           "OPTRE_NVG"};
   backpack = "ARMCO_Sabre_Engineer_pack";
 };
@@ -3976,10 +4090,10 @@ class ARMCO_Zulu_Engineer : OPTRE_UNSC_Marine_Soldier_Unarmed {
   backpack = "ARMCO_Zulu_Engineer_pack";
 };
 
-class ARMCO_Zulu_Refleman : OPTRE_UNSC_Marine_Soldier_Unarmed {
+class ARMCO_Zulu_Rifleman : OPTRE_UNSC_Marine_Soldier_Unarmed {
   faction = "ARMCO_Armco_Faction";
   side = 1;
-  displayName = "Zulu Refleman";
+  displayName = "Zulu Rifleman";
   uniformClass = "Zulu_BDU";
   weapons[] = {"Rangefinder", "ARMCO_OPTRE_MA37_OPTRE_MA37_Smartlink_Scope",
                "ARMCO_OPTRE_M6G", "Put", "Throw"};
@@ -4052,16 +4166,16 @@ class ARMCO_Zulu_Refleman : OPTRE_UNSC_Marine_Soldier_Unarmed {
   linkedItems[] = {"ItemMap",          "ItemCompass",
                    "ItemWatch",        "TFAR_anprc152",
                    "ItemGPS",          "OPTRE_NVG",
-                   "Rangefinder",      "Phoenix_CH252_Helmet",
+                   "Rangefinder",      "Zulu_CH252_Helmet",
                    "ARMCO_Zulu_Armor", "OPTRE_HUD_g_Glasses",
                    "OPTRE_NVG"};
   respawnLinkedItems[] = {"ItemMap",          "ItemCompass",
                           "ItemWatch",        "TFAR_anprc152",
                           "ItemGPS",          "OPTRE_NVG",
-                          "Rangefinder",      "Phoenix_CH252_Helmet",
+                          "Rangefinder",      "Zulu_CH252_Helmet",
                           "ARMCO_Zulu_Armor", "OPTRE_HUD_g_Glasses",
                           "OPTRE_NVG"};
-  backpack = "ARMCO_Zulu_Refleman_pack";
+  backpack = "ARMCO_Zulu_Rifleman_pack";
 };
 
 class ARMCO_Zulu_Special_Weapons_Operator : OPTRE_UNSC_Marine_Soldier_Unarmed {
@@ -4147,13 +4261,13 @@ class ARMCO_Zulu_Special_Weapons_Operator : OPTRE_UNSC_Marine_Soldier_Unarmed {
   linkedItems[] = {"ItemMap",          "ItemCompass",
                    "ItemWatch",        "TFAR_anprc152",
                    "ItemGPS",          "OPTRE_NVG",
-                   "Rangefinder",      "Phoenix_CH252_Helmet",
+                   "Rangefinder",      "Zulu_CH252_Helmet",
                    "ARMCO_Zulu_Armor", "OPTRE_HUD_g_Glasses",
                    "OPTRE_NVG"};
   respawnLinkedItems[] = {"ItemMap",          "ItemCompass",
                           "ItemWatch",        "TFAR_anprc152",
                           "ItemGPS",          "OPTRE_NVG",
-                          "Rangefinder",      "Phoenix_CH252_Helmet",
+                          "Rangefinder",      "Zulu_CH252_Helmet",
                           "ARMCO_Zulu_Armor", "OPTRE_HUD_g_Glasses",
                           "OPTRE_NVG"};
   backpack = "ARMCO_Zulu_Special_Weapons_Operator_pack";
@@ -4235,13 +4349,13 @@ class ARMCO_Zulu_Sniper : OPTRE_UNSC_Marine_Soldier_Unarmed {
   linkedItems[] = {"ItemMap",          "ItemCompass",
                    "ItemWatch",        "TFAR_anprc152",
                    "ItemGPS",          "OPTRE_NVG",
-                   "Rangefinder",      "Phoenix_CH252_Helmet",
+                   "Rangefinder",      "Zulu_CH252_Helmet",
                    "ARMCO_Zulu_Armor", "OPTRE_HUD_g_Glasses",
                    "OPTRE_NVG"};
   respawnLinkedItems[] = {"ItemMap",          "ItemCompass",
                           "ItemWatch",        "TFAR_anprc152",
                           "ItemGPS",          "OPTRE_NVG",
-                          "Rangefinder",      "Phoenix_CH252_Helmet",
+                          "Rangefinder",      "Zulu_CH252_Helmet",
                           "ARMCO_Zulu_Armor", "OPTRE_HUD_g_Glasses",
                           "OPTRE_NVG"};
   backpack = "ARMCO_Zulu_Sniper_pack";
@@ -4251,7 +4365,7 @@ class ARMCO_Phoenix_Squad_Lead : OPTRE_UNSC_Marine_Soldier_Unarmed {
   faction = "ARMCO_Armco_Faction";
   side = 1;
   displayName = "Phoenix Squad Lead";
-  uniformClass = "ARMCO_Uniform_Phoenix_O";
+  uniformClass = "Phoenix_BDU";
   weapons[] = {"Rangefinder", "ARMCO_OPTRE_MA37GL", "ARMCO_OPTRE_M6G", "Put",
                "Throw"};
   respawnWeapons[] = {"Rangefinder", "ARMCO_OPTRE_MA37GL", "ARMCO_OPTRE_M6G",
@@ -5285,7 +5399,7 @@ class ARMCO_Phoenix_JTAC : OPTRE_UNSC_Marine_Soldier_Unarmed {
   faction = "ARMCO_Armco_Faction";
   side = 1;
   displayName = "Phoenix JTAC";
-  uniformClass = "ARMCO_Uniform_Phoenix_O";
+  uniformClass = "Phoenix_BDU";
   weapons[] = {"Rangefinder", "ARMCO_OPTRE_MA37GL", "ARMCO_OPTRE_M6G", "Put",
                "Throw"};
   respawnWeapons[] = {"Rangefinder", "ARMCO_OPTRE_MA37GL", "ARMCO_OPTRE_M6G",

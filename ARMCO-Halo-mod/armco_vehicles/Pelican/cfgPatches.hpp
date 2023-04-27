@@ -2,18 +2,8 @@ class CfgPatches {
   class CA_ARMCO_PELICANS {
     units[] = {
         "ARMCO_Pelican_Transport", "ARMCO_Pelican_Gunship",
-        "ARMCO_Pelican_Medevac"
-    };
-    weapons[] = {};
-    requiredVersion = 0.1;
-    requiredAddons[] = {"OPTRE_UNSC_Units", "ace_main",
-                        "A3_Characters_F_BLUFOR"};
-  };
-  class ARMCO_Green_Horns {
-    units[] = {
-        "GH_Pelican_Transport",
-        "GH_Pelican_Gunship",
-        "GH_Pelican_Medevac",
+        "ARMCO_Pelican_Medevac",   "GH_Pelican_Transport",
+        "GH_Pelican_Gunship",      "GH_Pelican_Medevac",
     };
     weapons[] = {};
     requiredVersion = 0.1;

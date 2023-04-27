@@ -17,7 +17,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
@@ -198,7 +198,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
@@ -380,7 +380,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
@@ -561,7 +561,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
@@ -734,7 +734,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
@@ -907,7 +907,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
@@ -1072,7 +1072,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
@@ -1272,7 +1272,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
@@ -1481,7 +1481,7 @@ class CfgVehicles
 		author="Belhun";
 		side=1;
 		scope=2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Armco_Faction";
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";

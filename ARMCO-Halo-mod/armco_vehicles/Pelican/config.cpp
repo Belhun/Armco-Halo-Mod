@@ -276,7 +276,7 @@ class ARMCO_Pelican_Transport: ARMCO_Pelican_Base_U
 		side=1;
 		scope=2;
 		scopeCurator =2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_PMC";
 		displayName="[ARMCO] DC77 Pelican Transport";
 		hiddenSelections[]=
@@ -300,7 +300,7 @@ class ARMCO_Pelican_Gunship: ARMCO_Pelican_Base_A
 		side=1;
 		scope=2;
 		scopeCurator =2;
-		crew="ARMCO_Soldier_O_Phoenix";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_PMC";
 		displayName="[ARMCO] DC77/TAL Pelican Gunship";
 		hiddenSelections[]=
@@ -324,7 +324,7 @@ class ARMCO_Pelican_Medevac: ARMCO_Pelican_Base_U
 		scope=2;
 		scopeCurator =2;
 		attendant = 1;
-		crew="ARMCO_Soldier_Phoenix_Medic";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_PMC";
 		displayName="[ARMCO] DC77/M Pelican Medevac";
 		hiddenSelections[]=
@@ -351,7 +351,7 @@ class GH_Pelican_Transport: ARMCO_Pelican_Base_U
 		side=0;
 		scope=2;
 		scopeCurator = 2;
-		crew="ARMCO_Soldier_GH";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Green_Horns";
 		displayName="[GH] DC76 Pelican Transport";
 		hiddenSelections[]=
@@ -375,7 +375,7 @@ class GH_Pelican_Gunship: ARMCO_Pelican_Base_A
 		side=0;
 		scope=2;
 		scopeCurator = 2;
-		crew="ARMCO_Soldier_GH";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Green_Horns";
 		displayName="[GH] DC76/TAL Pelican Gunship";
 		hiddenSelections[]=
@@ -399,7 +399,7 @@ class GH_Pelican_Medevac: ARMCO_Pelican_Base_U
 		scope=2;
 		scopeCurator = 2;
 		attendant = 1;
-		crew="ARMCO_Soldier_GH_Medic";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 		faction="ARMCO_Green_Horns";
 		displayName="[GH] DC76/M Pelican Medevac";
 		hiddenSelections[]=

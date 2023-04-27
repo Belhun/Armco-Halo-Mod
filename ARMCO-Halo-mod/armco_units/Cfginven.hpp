@@ -1860,7 +1860,7 @@ class ARMCO_Zulu_Engineer_pack : ARMCO_Rucksack_Soft_Zulu {
   class TransportWeapons {};
 };
 
-class ARMCO_Zulu_Refleman_pack : ARMCO_Rucksack_Soft_Zulu {
+class ARMCO_Zulu_Rifleman_pack : ARMCO_Rucksack_Soft_Zulu {
   scope = 1;
   scopeCurator = 1;
   ScopeArsenal = 1;

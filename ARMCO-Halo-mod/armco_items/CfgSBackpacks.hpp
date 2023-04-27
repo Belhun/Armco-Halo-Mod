@@ -47,8 +47,8 @@ class ARMCO_Rucksack_Hard_Medical : ARMCO_Rucksack_Hard_Alpha {
 };
 
 // Basic Backpacks
-class ARMCO_PMC_UNSC_Rucksack;
-class ARMCO_Rucksack_Soft_Alpha : ARMCO_PMC_UNSC_Rucksack {
+class OPTRE_UNSC_Rucksack_Heavy;
+class ARMCO_Rucksack_Soft_Alpha : OPTRE_UNSC_Rucksack_Heavy {
   dlc = "ARMCO";
   author = "Belhun";
   displayname = "[ARMCO][A] Soft Rucksack (Alpha)";
@@ -56,7 +56,7 @@ class ARMCO_Rucksack_Soft_Alpha : ARMCO_PMC_UNSC_Rucksack {
   hiddenSelectionsTextures[] = {
       "armco_items\data\backpacks\backpack_odst_soft_alpha_co.paa", ""};
 };
-class ARMCO_Rucksack_Soft_Sabre : ARMCO_PMC_UNSC_Rucksack {
+class ARMCO_Rucksack_Soft_Sabre : OPTRE_UNSC_Rucksack_Heavy {
   dlc = "ARMCO";
   author = "Belhun";
   displayname = "[ARMCO][A] Soft Rucksack (Sabre)";
@@ -64,7 +64,7 @@ class ARMCO_Rucksack_Soft_Sabre : ARMCO_PMC_UNSC_Rucksack {
   hiddenSelectionsTextures[] = {
       "armco_items\data\backpacks\backpack_odst_soft_sabre_co.paa", ""};
 };
-class ARMCO_Rucksack_Soft_Zulu : ARMCO_PMC_UNSC_Rucksack {
+class ARMCO_Rucksack_Soft_Zulu : OPTRE_UNSC_Rucksack_Heavy {
   dlc = "ARMCO";
   author = "Belhun";
   displayname = "[ARMCO][A] Soft Rucksack (Zulu)";
@@ -72,7 +72,7 @@ class ARMCO_Rucksack_Soft_Zulu : ARMCO_PMC_UNSC_Rucksack {
   hiddenSelectionsTextures[] = {
       "armco_items\data\backpacks\backpack_odst_soft_zulu_co.paa", ""};
 };
-class ARMCO_Rucksack_Soft_Phoenix : ARMCO_PMC_UNSC_Rucksack {
+class ARMCO_Rucksack_Soft_Phoenix : OPTRE_UNSC_Rucksack_Heavy {
   dlc = "ARMCO";
   author = "Belhun";
   displayname = "[ARMCO][A] Soft Rucksack (Phoenix)";
@@ -80,7 +80,7 @@ class ARMCO_Rucksack_Soft_Phoenix : ARMCO_PMC_UNSC_Rucksack {
   hiddenSelectionsTextures[] = {
       "armco_items\data\backpacks\backpack_odst_soft_phoenix_co.paa", ""};
 };
-class ARMCO_Rucksack_Soft_Medical : ARMCO_PMC_UNSC_Rucksack {
+class ARMCO_Rucksack_Soft_Medical : OPTRE_UNSC_Rucksack_Heavy {
   dlc = "ARMCO";
   author = "Belhun";
   displayname = "[ARMCO][B] Soft Rucksack (Medical)";

@@ -5,7 +5,7 @@ class Flag_White_F;
     scopeCurator = 2;
     hiddenSelections[] = {"Camo_1"};
     hiddenSelectionsTextures[] = {
-        "custom_armours\data\flags\flag_armco_co.paa"};
+        "armco_armours\data\flags\flag_armco_ca.paa"};
   };
 
 // importing the base classes from ARMA and OPTRE
