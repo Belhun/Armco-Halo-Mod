@@ -1,13 +1,27 @@
 // Need to Define ItemInfo to use it in the Helmets(and maby others)
-class ItemInfo {
-  type = 616;
-  hmdType = 0;
-  uniformModel = "";
-  modelOff = "";
-  mass = 1;
-  ace_hearing_protection = 1.10; //Hearing protection
-  ace_hearing_lowerVolume = 0.10;
-};
+
+// class ItemInfo {
+//   displayName="";
+//   nameSound="";
+//   scope = 2;
+//   picture="";
+//   class Library {
+// 	libTextDesc = "";
+//   };
+//   type = 616;
+//   hmdType = 0;
+//   uniformModel = "";
+//   modelOff = "";
+//   mass = 1;
+//   ace_hearing_protection = 1.10; //Hearing protection
+//   ace_hearing_lowerVolume = 0.10;
+//   model="";
+//   simulation = "";
+//   fireLightDuration = "";
+//   fireLightIntensity = "";
+//   fireLightDiffuse = "";
+
+// };
 class OPTRE_UNSC_CH252_Helmet_WDL;
 // class OPTRE_UNSC_CH252_Helmet_WDL;
 class OPTRE_UNSC_CH252_Helmet3_WDL;
@@ -19,11 +33,11 @@ class Alpha_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
-        "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
+  //       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+  // };
 };
 // Sabre Helmet
 class Sabre_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
@@ -33,11 +47,11 @@ class Sabre_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\helmets\helmet_sabre_co.paa",
       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\marine\helmets\helmet_sabre_co.paa",
-        "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\marine\helmets\helmet_sabre_co.paa",
+  //       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+  // };
 };
 // Phoenix Helmet
 class Phoenix_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
@@ -47,11 +61,11 @@ class Phoenix_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\helmets\helmet_phoenix_co.paa",
       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\marine\helmets\helmet_phoenix_co.paa",
-        "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\marine\helmets\helmet_phoenix_co.paa",
+  //       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+  // };
 };
 // Zulu Helmet
 class Zulu_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
@@ -61,11 +75,11 @@ class Zulu_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
-        "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
+  //       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+  // };
 };
 // Medical Helmet
 class Medical_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
@@ -75,11 +89,11 @@ class Medical_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\helmets\helmet_medic_co.paa",
       "armco_armours\data\marine\helmets\visors\medical_visor_co.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\marine\helmets\helmet_medic_co.paa",
-        "armco_armours\data\marine\helmets\visors\medical_visor_co.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\marine\helmets\helmet_medic_co.paa",
+  //       "armco_armours\data\marine\helmets\visors\medical_visor_co.paa"};
+  // };
 };
 // EOD Helmet
 class EOD_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
@@ -89,11 +103,11 @@ class EOD_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\helmets\helmet_eod_co.paa",
       "armco_armours\data\marine\helmets\visors\eod_visor_co.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\marine\helmets\helmet_eod_co.paa",
-        "armco_armours\data\marine\helmets\visors\eod_visor_co.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\marine\helmets\helmet_eod_co.paa",
+  //       "armco_armours\data\marine\helmets\visors\eod_visor_co.paa"};
+  // };
 };
 class ARMCO_Generic_CH252_Ghillie_Helmet : OPTRE_UNSC_CH252_Helmet3_WDL {
   dlc = "ARMCO";
@@ -103,12 +117,12 @@ class ARMCO_Generic_CH252_Ghillie_Helmet : OPTRE_UNSC_CH252_Helmet3_WDL {
       "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa",
       "optre_unsc_units\army\data\ghillie_woodland_co.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
-        "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa",
-        "optre_unsc_units\army\data\ghillie_woodland_co.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
+  //       "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa",
+  //       "optre_unsc_units\army\data\ghillie_woodland_co.paa"};
+  // };
 };
 
 // ODST Helmet
@@ -121,11 +135,11 @@ class Alpha_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\squad_helmets\odst_helmet_Alpha_co.paa",
       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\odst\squad_helmets\odst_helmet_Alpha_co.paa",
-        "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\odst\squad_helmets\odst_helmet_Alpha_co.paa",
+  //       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
+  // };
 };
 class Sabre_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   dlc = "ARMCO";
@@ -134,11 +148,11 @@ class Sabre_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\squad_helmets\odst_helmet_Sabre_co.paa",
       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\odst\squad_helmets\odst_helmet_Sabre_co.paa",
-        "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\odst\squad_helmets\odst_helmet_Sabre_co.paa",
+  //       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
+  // };
 };
 class Zulu_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   dlc = "ARMCO";
@@ -147,11 +161,11 @@ class Zulu_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\squad_helmets\odst_helmet_Zulu_co.paa",
       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\odst\squad_helmets\odst_helmet_Zulu_co.paa",
-        "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\odst\squad_helmets\odst_helmet_Zulu_co.paa",
+  //       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
+  // };
 };
 class Phoenix_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   dlc = "ARMCO";
@@ -160,9 +174,9 @@ class Phoenix_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\squad_helmets\odst_helmet_Phoenix_co.paa",
       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsTextures[] = {
-        "armco_armours\data\odst\squad_helmets\odst_helmet_Phoenix_co.paa",
-        "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
-  };
+  // class ItemInfo : ItemInfo {
+  //   hiddenSelectionsTextures[] = {
+  //       "armco_armours\data\odst\squad_helmets\odst_helmet_Phoenix_co.paa",
+  //       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
+  // };
 };

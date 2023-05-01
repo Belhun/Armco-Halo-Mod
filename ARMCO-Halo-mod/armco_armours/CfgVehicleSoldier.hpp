@@ -9,10 +9,10 @@ class Flag_White_F;
   };
 
 // importing the base classes from ARMA and OPTRE
-class UniformItem;                 // ARMA
-class OPTRE_UNSC_Man_Army_W_class; // OPTRE
+
+// class OPTRE_UNSC_Man_Army_W_class; // OPTRE
 // class SoldierWB;                   // ARMA
-class EventHandlers; // ARMA
+// class EventHandlers; // ARMA
 
 // This is a base class for all soldiers use this too make new soldiers
 

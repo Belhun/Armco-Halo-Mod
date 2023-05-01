@@ -6,7 +6,7 @@ class OPTRE_UNSC_Hat_Base;
 class OPTRE_CPD_Beret;
 
 class ARMCO_Beret_Rifleman : H_Beret_02 {
-  scope = 2;
+  scope = 1;
   author = "Belhun";
   displayname = "[ARMCO][B] Rifleman Beret";
   hiddenSelections[] = {"camo"};
