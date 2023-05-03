@@ -60,7 +60,8 @@ class OPTRE_UNSC_M52A_Armor2_WDL;
 // removed A_Base, A_ChestArmor, A_ShinArmorLeft, A_ShinArmorRight,
 // A_ThighArmorLeft, A_ThighArmorRight
 class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
-  scope = 1;
+  scope = 0;
+  ScopeArsenal = 0;
   dlc = "ARMCO";
   author = "Belhun";
   hiddenSelections[] = {"camo",
@@ -123,6 +124,7 @@ class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
 class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
   scope = 2;
+  ScopeArsenal = 2;
   author = "Belhun";
   displayName = "[ARMCO][A] Alpha Armor";
   hiddenSelections[] = {"camo",
