@@ -273,10 +273,11 @@ class ARMCO_Zulu_Armor : ARMCO_Base_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
-class ARMCO_Zulu_Ghillie_Armor : ARMCO_Base_Armor {
+class OPTRE_UNSC_M52A_Armor_Sniper_WDL;
+class ARMCO_Zulu_Ghillie_Armor : OPTRE_UNSC_M52A_Armor_Sniper_WDL {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[ARMCO][A] Zulu Ghillie Armor";
+  displayName = "[ARMCO][A] Ghillie Armor";
   hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
@@ -471,8 +472,9 @@ class ARMCO_EOD_Armor : ARMCO_Base_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
+class OPTRE_UNSC_M52D_Armor;
 // ODST Armour
-class ARMCO_Alpha_ODST_Armor : ARMCO_Base_Armor {
+class ARMCO_Alpha_ODST_Armor : OPTRE_UNSC_M52D_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][B] Alpha ODST Armour";
@@ -518,7 +520,7 @@ class ARMCO_Alpha_ODST_Armor : ARMCO_Base_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "armco_armours\data\odst\squad_armors\odst_armor_Alpha_co.paa"};
 };
-class ARMCO_Sabre_ODST_Armor : ARMCO_Base_Armor {
+class ARMCO_Sabre_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][B] Sabre ODST Armour";
@@ -563,7 +565,7 @@ class ARMCO_Sabre_ODST_Armor : ARMCO_Base_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "armco_armours\data\odst\squad_armors\odst_armor_sabre_co.paa"};
 };
-class ARMCO_Zulu_ODST_Armor : ARMCO_Base_Armor {
+class ARMCO_Zulu_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][B] Zulu ODST Armour";
@@ -609,7 +611,7 @@ class ARMCO_Zulu_ODST_Armor : ARMCO_Base_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "armco_armours\data\odst\squad_armors\odst_armor_Zulu_co.paa"};
 };
-class ARMCO_Phoenix_ODST_Armor : ARMCO_Base_Armor {
+class ARMCO_Phoenix_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][B] Phoenix ODST Armour";

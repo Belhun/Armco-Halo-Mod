@@ -4,9 +4,9 @@ class H_Beret_02;
 class V_PlateCarrierGL_rgr;
 class OPTRE_UNSC_Hat_Base;
 class OPTRE_CPD_Beret;
+class OPTRE_UNSC_PatrolCap_Army;
 
-class ARMCO_Beret_Rifleman : H_Beret_02 {
-  scope = 1;
+class ARMCO_Beret_Rifleman : OPTRE_CPD_Beret {
   author = "Belhun";
   displayname = "[ARMCO][B] Rifleman Beret";
   hiddenSelections[] = {"camo"};
@@ -43,7 +43,7 @@ class ARMCO_Beret_ODST : ARMCO_Beret_Rifleman {
   hiddenSelectionsTextures[] = {
       "armco_items\data\hats\armco_beret_odst_co.paa"};
 };
-class ARMCO_PatrolCap_Hat : OPTRE_UNSC_Hat_Base {
+class ARMCO_PatrolCap_Hat : OPTRE_UNSC_PatrolCap_Army {
   author = "Belhun";
   displayname = "[ARMCO][B] Patrol Cap";
   hiddenSelections[] = {"camo"};
