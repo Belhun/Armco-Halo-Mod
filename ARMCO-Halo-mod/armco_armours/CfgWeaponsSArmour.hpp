@@ -60,6 +60,7 @@ class OPTRE_UNSC_M52A_Armor2_WDL;
 // removed A_Base, A_ChestArmor, A_ShinArmorLeft, A_ShinArmorRight,
 // A_ThighArmorLeft, A_ThighArmorRight
 class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
+  scope = 1;
   dlc = "ARMCO";
   author = "Belhun";
   hiddenSelections[] = {"camo",
@@ -121,6 +122,7 @@ class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
 // AP_Pack, A_KneesMarRight, A_KneesMarLeft, AP_Thigh, APO_Knife
 class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
   dlc = "ARMCO";
+  scope = 2;
   author = "Belhun";
   displayName = "[ARMCO][A] Alpha Armor";
   hiddenSelections[] = {"camo",
@@ -170,7 +172,7 @@ class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
 // Alpha
 // Sabre Base Armour AS_MediumLeft,AS_SmallRight,AP_BR,AP_Smoke,AP_Frag, No
 // Upper Chest Add-on, A_KneesMarRight, A_KneesMarLeft, AP_Thigh, APO_Knife
-class ARMCO_Sabre_Armor : ARMCO_Base_Armor {
+class ARMCO_Sabre_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] Sabre Armor";
@@ -223,7 +225,7 @@ class ARMCO_Sabre_Armor : ARMCO_Base_Armor {
 // Zulu Base Armour
 // AS_MediumLeft,AS_MediumRight,AP_BR,AP_Smoke,AP_Pistol,AP_Pack,A_KneesMarRight,AP_Rounds,
 // APO_Knife
-class ARMCO_Zulu_Armor : ARMCO_Base_Armor {
+class ARMCO_Zulu_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] Zulu Armor";
@@ -326,7 +328,7 @@ class ARMCO_Zulu_Ghillie_Armor : OPTRE_UNSC_M52A_Armor_Sniper_WDL {
 // Phoenix Base Armour
 // AS_LargeLeft,AS_MediumRight,AP_BR,AP_Canteen,AP_Frag,AP_SG,A_KneesMarRight,
 // A_KneesMarLeft,AP_MGThigh, APO_Knife
-class ARMCO_Phoenix_Armor : ARMCO_Base_Armor {
+class ARMCO_Phoenix_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] Phoenix Armor";
@@ -376,7 +378,7 @@ class ARMCO_Phoenix_Armor : ARMCO_Base_Armor {
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
 // Medical Armour
-class ARMCO_Medical_Armor : ARMCO_Base_Armor {
+class ARMCO_Medical_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] Meidcal Armour";
@@ -424,7 +426,7 @@ class ARMCO_Medical_Armor : ARMCO_Base_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
-class ARMCO_EOD_Armor : ARMCO_Base_Armor {
+class ARMCO_EOD_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] EOD Armour";
