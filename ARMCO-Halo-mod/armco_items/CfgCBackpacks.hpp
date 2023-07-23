@@ -48,7 +48,7 @@ class ARMCO_Rucksack_Ciro : ARMCO_Rucksack_Hard_Alpha {
 };
 class ARMCO_Rucksack_Darkness : ARMCO_Rucksack_Hard_Alpha {
   displayname = "[ARMCO][Z]Hard Rucksack (Darkness)";
-  hiddenSelections[] = {"camo1", "biofoam"};
+  hiddenSelections[] = {"camo1"};
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_Darkness_CO.paa"};
 };
@@ -106,12 +106,13 @@ class ARMCO_Rucksack_Red : ARMCO_Rucksack_Hard_Alpha {
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_RedDragon_co.paa"};
 };
-class ARMCO_Rucksack_Runic : ARMCO_Rucksack_Hard_Alpha {
-  displayname = "[ARMCO][Z]Hard Rucksack (Runic)";
-  hiddenSelections[] = {"camo1"};
-  hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_Runic_co.paa"};
-};
+// Left unit
+// class ARMCO_Rucksack_Runic : ARMCO_Rucksack_Hard_Alpha {
+//   displayname = "[ARMCO][Z]Hard Rucksack (Runic)";
+//   hiddenSelections[] = {"camo1"};
+//   hiddenSelectionsTextures[] = {
+//       "armco_armours\data\odst\custom_backpacks\odst_hard_backpack_Runic_co.paa"};
+// };
 class ARMCO_Rucksack_Shaw : ARMCO_Rucksack_Hard_Alpha {
   displayname = "[ARMCO][Z]Hard Rucksack (Shaw)";
   hiddenSelections[] = {"camo1", "biofoam"};

@@ -2,6 +2,9 @@
 // CfgMarkerClasses, CfgMarkers CfgFactionClasses
 #include "CfgPatchesMisc.hpp"
 
+//Arsonal exstened setup
+#include "CfgArsonalExspa.hpp"
+
 class CfgVehicles {
 #include "CfgVehicleSoldier.hpp"
 };
@@ -24,6 +27,7 @@ class cfgWeapons {
 
 // Brings in all the custom helmets from the CfgWeaponsCHelmet.hpp
 #include "CfgWeaponsCHelmet.hpp"
+
 
 
 };

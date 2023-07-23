@@ -114,12 +114,12 @@ class Red_CH252D_Helmet : Alpha_CH252D_Helmet {
       "armco_armours\data\odst\custom_helmets\odst_helmet_RedDragon_co.paa",
       "armco_armours\data\odst\custom_helmets\visors\odst_helmet_visor_RedDragon_co.paa"};
 };
-class Runic_CH252D_Helmet : Alpha_CH252D_Helmet {
-  displayname = "[ARMCO][Z] ODST Helmet (Runic)";
-  hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_helmets\odst_helmet_Runic_co.paa",
-      "armco_armours\data\odst\custom_helmets\visors\odst_helmet_visor_Runic_co.paa"};
-};
+// class Runic_CH252D_Helmet : Alpha_CH252D_Helmet {
+//   displayname = "[ARMCO][Z] ODST Helmet (Runic)";
+//   hiddenSelectionsTextures[] = {
+//       "armco_armours\data\odst\custom_helmets\odst_helmet_Runic_co.paa",
+//       "armco_armours\data\odst\custom_helmets\visors\odst_helmet_visor_Runic_co.paa"};
+// };
 class Shaw_CH252D_Helmet : Alpha_CH252D_Helmet {
   displayname = "[ARMCO][Z] ODST Helmet (Shaw)";
   hiddenSelectionsTextures[] = {

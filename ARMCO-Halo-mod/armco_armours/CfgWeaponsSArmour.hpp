@@ -55,8 +55,10 @@ img](https://i.imgur.com/LbsKPwe.png)
 - `CustomKit_Scorch` = [front img](https://i.imgur.com/uHjTO3W.png)[back
 img](https://i.imgur.com/IUVBpKa.png)
 */
-
-class OPTRE_UNSC_M52A_Armor2_WDL;
+ class OPTRE_UNSC_M52A_Armor1_WDL;
+class OPTRE_UNSC_M52A_Armor2_WDL: OPTRE_UNSC_M52A_Armor1_WDL{
+  class ItemInfo;
+};
 // removed A_Base, A_ChestArmor, A_ShinArmorLeft, A_ShinArmorRight,
 // A_ThighArmorLeft, A_ThighArmorRight
 class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
@@ -64,7 +66,9 @@ class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
   ScopeArsenal = 0;
   dlc = "ARMCO";
   author = "Belhun";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -112,6 +116,7 @@ class ARMCO_Base_Armor : OPTRE_UNSC_M52A_Armor2_WDL {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "OPTRE_UNSC_Units\Army\data\vest_co.paa",
       "optre_unsc_units\army\data\armor_co.paa",
@@ -127,7 +132,9 @@ class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
   ScopeArsenal = 2;
   author = "Belhun";
   displayName = "[ARMCO][A] Alpha Armor";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -164,6 +171,7 @@ class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_alpha_co.paa",
       "armco_armours\data\marine\armors\armour_alpha_co.paa",
@@ -178,7 +186,9 @@ class ARMCO_Sabre_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] Sabre Armor";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -217,6 +227,7 @@ class ARMCO_Sabre_Armor : ARMCO_Alpha_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_sabre_co.paa",
       "armco_armours\data\marine\armors\armour_sabre_co.paa",
@@ -224,6 +235,8 @@ class ARMCO_Sabre_Armor : ARMCO_Alpha_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
+//Ghillie
+
 // Zulu Base Armour
 // AS_MediumLeft,AS_MediumRight,AP_BR,AP_Smoke,AP_Pistol,AP_Pack,A_KneesMarRight,AP_Rounds,
 // APO_Knife
@@ -231,7 +244,9 @@ class ARMCO_Zulu_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] Zulu Armor";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -270,6 +285,7 @@ class ARMCO_Zulu_Armor : ARMCO_Alpha_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_zulu_co.paa",
       "armco_armours\data\marine\armors\armour_zulu_co.paa",
@@ -277,12 +293,17 @@ class ARMCO_Zulu_Armor : ARMCO_Alpha_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
-class OPTRE_UNSC_M52A_Armor_Sniper_WDL;
+class OPTRE_UNSC_M52A_Armor3_WDL;
+class OPTRE_UNSC_M52A_Armor_Sniper_WDL: OPTRE_UNSC_M52A_Armor3_WDL {
+  class ItemInfo;
+};
 class ARMCO_Zulu_Ghillie_Armor : OPTRE_UNSC_M52A_Armor_Sniper_WDL {
   dlc = "ARMCO";
   author = "Belhun";
-  displayName = "[ARMCO][A] Ghillie Armor";
-  hiddenSelections[] = {"camo",
+  displayName = "[ARMCO][A] Zulu Ghillie Armor";
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -320,6 +341,7 @@ class ARMCO_Zulu_Ghillie_Armor : OPTRE_UNSC_M52A_Armor_Sniper_WDL {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_zulu_co.paa",
       "armco_armours\data\marine\armors\armour_zulu_co.paa",
@@ -334,7 +356,9 @@ class ARMCO_Phoenix_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] Phoenix Armor";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -372,6 +396,7 @@ class ARMCO_Phoenix_Armor : ARMCO_Alpha_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_phoenix_co.paa",
       "armco_armours\data\marine\armors\armour_phoenix_co.paa",
@@ -379,12 +404,15 @@ class ARMCO_Phoenix_Armor : ARMCO_Alpha_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
+//Ghillie
 // Medical Armour
 class ARMCO_Medical_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] Meidcal Armour";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -421,6 +449,7 @@ class ARMCO_Medical_Armor : ARMCO_Alpha_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_medic_co.paa",
       "armco_armours\data\marine\armors\armor_medic_co.paa",
@@ -428,11 +457,15 @@ class ARMCO_Medical_Armor : ARMCO_Alpha_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
+//Ghillie
+
 class ARMCO_EOD_Armor : ARMCO_Alpha_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][A] EOD Armour";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -469,6 +502,7 @@ class ARMCO_EOD_Armor : ARMCO_Alpha_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_eod_co.paa",
       "armco_armours\data\marine\armors\armor_eod_co.paa",
@@ -476,13 +510,272 @@ class ARMCO_EOD_Armor : ARMCO_Alpha_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
-class OPTRE_UNSC_M52D_Armor;
+//Ghillie
+class ARMCO_Alpha_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
+  displayName = "[ARMCO][A] Alpha Ghillie Armor";
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
+                        "camo2",
+                        "camo3",
+                        "camo4",
+                        "camo5",
+                        "A_KneesLeft",
+                        "A_KneesRight",
+                        "A_ODST",
+                        "A_TacPad",
+                        "AS_BaseLeft",
+                        "AS_BaseRight",
+                        "AS_LargeRight",
+                        "AS_MediumLeft",
+                        "AS_ODSTCQBLeft",
+                        "AS_ODSTCQBRight",
+                        "AS_ODSTLeft",
+                        "AS_ODSTRight",
+                        "AS_ODSTSniperLeft",
+                        "AS_ODSTSniperRight",
+                        "AS_SmallLeft",
+                        "AS_SmallRight",
+                        "AP_BR",
+                        "AP_Canteen",
+                        "AP_GL",
+                        "AP_Knife",
+                        "AP_MGThigh",
+                        "AP_Rounds",
+                        "AP_SG",
+                        "AP_SMG",
+                        "AP_Sniper",
+                        "AP_Frag",
+                        "APO_AR",
+                        "APO_BR",
+                        "APO_SMG",
+                        "APO_Sniper",
+                        "CustomKit_Scorch"};
+  }
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\armors\vest_alpha_co.paa",
+      "armco_armours\data\marine\armors\armour_alpha_co.paa",
+      "armco_armours\data\marine\armors\legs_alpha_co.paa",
+      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+      "optre_unsc_units\army\data\odst_armor_co.paa"};
+};
+
+class ARMCO_Sabre_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
+  dlc = "ARMCO";
+  author = "Belhun";
+  displayName = "[ARMCO][A] Sabre Armor";
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
+                        "camo2",
+                        "camo3",
+                        "camo4",
+                        "camo5",
+                        "A_KneesLeft",
+                        "A_KneesRight",
+                        "A_ODST",
+                        "A_TacPad",
+                        "AS_BaseLeft",
+                        "AS_BaseRight",
+                        "AS_LargeLeft",
+                        "AS_LargeRight",
+                        "AS_MediumRight",
+                        "AS_ODSTCQBLeft",
+                        "AS_ODSTCQBRight",
+                        "AS_ODSTLeft",
+                        "AS_ODSTRight",
+                        "AS_ODSTSniperLeft",
+                        "AS_ODSTSniperRight",
+                        "AS_SmallLeft",
+                        "AP_AR",
+                        "AP_Canteen",
+                        "AP_GL",
+                        "AP_Knife",
+                        "AP_MGThigh",
+                        "AP_AR",
+                        "AP_Pack",
+                        "AP_Pistol",
+                        "AP_Rounds",
+                        "AP_SG",
+                        "AP_SMG",
+                        "AP_Sniper",
+                        "APO_AR",
+                        "APO_BR",
+                        "APO_SMG",
+                        "APO_Sniper",
+                        "CustomKit_Scorch"};
+  }
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\armors\vest_sabre_co.paa",
+      "armco_armours\data\marine\armors\armour_sabre_co.paa",
+      "armco_armours\data\marine\armors\legs_sabre_co.paa",
+      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+      "optre_unsc_units\army\data\odst_armor_co.paa"};
+};
+
+class ARMCO_Phoenix_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
+  dlc = "ARMCO";
+  author = "Belhun";
+  displayName = "[ARMCO][A] Phoenix Ghillie Armor";
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
+                        "camo2",
+                        "camo3",
+                        "camo4",
+                        "camo5",
+                        "A_KneesLeft",
+                        "A_KneesRight",
+                        "A_ODST",
+                        "A_TacPad",
+                        "AS_BaseLeft",
+                        "AS_BaseRight",
+                        "AS_LargeRight",
+                        "AS_MediumLeft",
+                        "AS_ODSTCQBLeft",
+                        "AS_ODSTCQBRight",
+                        "AS_ODSTLeft",
+                        "AS_ODSTRight",
+                        "AS_ODSTSniperLeft",
+                        "AS_ODSTSniperRight",
+                        "AS_SmallLeft",
+                        "AS_SmallRight",
+                        "AP_AR",
+                        "AP_GL",
+                        "AP_Knife",
+                        "AP_AR",
+                        "AP_Pack",
+                        "AP_Pistol",
+                        "AP_Rounds",
+                        "AP_SMG",
+                        "AP_Sniper",
+                        "AP_Thigh",
+                        "AP_Smoke",
+                        "APO_AR",
+                        "APO_BR",
+                        "APO_SMG",
+                        "APO_Sniper",
+                        "CustomKit_Scorch"};
+  }
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\armors\vest_phoenix_co.paa",
+      "armco_armours\data\marine\armors\armour_phoenix_co.paa",
+      "armco_armours\data\marine\armors\legs_phoenix_co.paa",
+      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+      "optre_unsc_units\army\data\odst_armor_co.paa"};
+};
+
+class ARMCO_Medical_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
+  dlc = "ARMCO";
+  author = "Belhun";
+  displayName = "[ARMCO][A] Meidcal Ghillie Armour";
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
+                        "camo2",
+                        "camo3",
+                        "camo4",
+                        "camo5",
+                        "A_KneesLeft",
+                        "A_KneesRight",
+                        "A_ODST",
+                        "A_TacPad",
+                        "AS_BaseLeft",
+                        "AS_BaseRight",
+                        "AS_LargeRight",
+                        "AS_MediumLeft",
+                        "AS_ODSTCQBLeft",
+                        "AS_ODSTCQBRight",
+                        "AS_ODSTLeft",
+                        "AS_ODSTRight",
+                        "AS_ODSTSniperLeft",
+                        "AS_ODSTSniperRight",
+                        "AS_SmallLeft",
+                        "AS_SmallRight",
+                        "AP_BR",
+                        "AP_Canteen",
+                        "AP_GL",
+                        "AP_Knife",
+                        "AP_MGThigh",
+                        "AP_Rounds",
+                        "AP_SG",
+                        "AP_SMG",
+                        "AP_Sniper",
+                        "AP_Frag",
+                        "APO_AR",
+                        "APO_BR",
+                        "APO_SMG",
+                        "APO_Sniper",
+                        "CustomKit_Scorch"};
+  }
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\armors\vest_medic_co.paa",
+      "armco_armours\data\marine\armors\armor_medic_co.paa",
+      "armco_armours\data\marine\armors\legs_medic_co.paa",
+      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+      "optre_unsc_units\army\data\odst_armor_co.paa"};
+};
+class ARMCO_EOD_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
+  dlc = "ARMCO";
+  author = "Belhun";
+  displayName = "[ARMCO][A] EOD Ghillie Armour";
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
+                        "camo2",
+                        "camo3",
+                        "camo4",
+                        "camo5",
+                        "A_KneesLeft",
+                        "A_KneesRight",
+                        "A_ODST",
+                        "A_TacPad",
+                        "AS_BaseLeft",
+                        "AS_BaseRight",
+                        "AS_LargeRight",
+                        "AS_MediumLeft",
+                        "AS_ODSTCQBLeft",
+                        "AS_ODSTCQBRight",
+                        "AS_ODSTLeft",
+                        "AS_ODSTRight",
+                        "AS_ODSTSniperLeft",
+                        "AS_ODSTSniperRight",
+                        "AS_SmallLeft",
+                        "AS_SmallRight",
+                        "AP_BR",
+                        "AP_Canteen",
+                        "AP_GL",
+                        "AP_Knife",
+                        "AP_MGThigh",
+                        "AP_Rounds",
+                        "AP_SG",
+                        "AP_SMG",
+                        "AP_Sniper",
+                        "AP_Frag",
+                        "APO_AR",
+                        "APO_BR",
+                        "APO_SMG",
+                        "APO_Sniper",
+                        "CustomKit_Scorch"};
+  }
+  hiddenSelectionsTextures[] = {
+      "armco_armours\data\marine\armors\vest_eod_co.paa",
+      "armco_armours\data\marine\armors\armor_eod_co.paa",
+      "armco_armours\data\marine\armors\legs_eod_co.paa",
+      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+      "optre_unsc_units\army\data\odst_armor_co.paa"};
+};
+class OPTRE_UNSC_M52D_Armor : OPTRE_UNSC_M52A_Armor1_WDL {
+  class ItemInfo;
+};
 // ODST Armour
 class ARMCO_Alpha_ODST_Armor : OPTRE_UNSC_M52D_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][B] Alpha ODST Armour";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -517,6 +810,7 @@ class ARMCO_Alpha_ODST_Armor : OPTRE_UNSC_M52D_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_alpha_co.paa",
       "armco_armours\data\marine\armors\armour_alpha_co.paa",
@@ -528,7 +822,9 @@ class ARMCO_Sabre_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][B] Sabre ODST Armour";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -562,6 +858,7 @@ class ARMCO_Sabre_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_BR",
                         "APO_Knife",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_sabre_co.paa",
       "armco_armours\data\marine\armors\armour_sabre_co.paa",
@@ -573,7 +870,9 @@ class ARMCO_Zulu_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][B] Zulu ODST Armour";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -608,6 +907,7 @@ class ARMCO_Zulu_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_BR",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_zulu_camo_co.paa",
       "armco_armours\data\marine\armors\armour_zulu_camo_co.paa",
@@ -619,7 +919,9 @@ class ARMCO_Phoenix_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
   author = "Belhun";
   displayName = "[ARMCO][B] Phoenix ODST Armour";
-  hiddenSelections[] = {"camo",
+  class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -652,6 +954,7 @@ class ARMCO_Phoenix_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+  }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\marine\armors\vest_phoenix_co.paa",
       "armco_armours\data\marine\armors\armour_phoenix_co.paa",
@@ -659,3 +962,4 @@ class ARMCO_Phoenix_ODST_Armor : ARMCO_Alpha_ODST_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "armco_armours\data\odst\squad_armors\odst_armor_Phoenix_co.paa"};
 };
+

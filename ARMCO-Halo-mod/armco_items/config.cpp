@@ -2,6 +2,8 @@
 // CfgMarkerClasses, CfgMarkers CfgFactionClasses
 #include "CfgPatches.hpp"
 
+#include "CfgArsonalExspa.hpp"
+
 class CfgVehicles {
 #include "CfgSBackpacks.hpp"
 

@@ -2,7 +2,9 @@
 //example Custom Template for ODST armour
 class ARMCO__ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour ()";
-  hiddenSelections[] = {};
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {};
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -10,6 +12,8 @@ class ARMCO__ODST_Armor : ARMCO_Alpha_ODST_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "armco_armours\data\odst\custom_armours\.paa"};
   class ItemInfo : ItemInfo {
+      class ItemInfo: ItemInfo
+  {
     hiddenSelections[] = {};
     hiddenSelectionsTextures[] = {};
   };
@@ -17,7 +21,9 @@ class ARMCO__ODST_Armor : ARMCO_Alpha_ODST_Armor {
 */
 class ARMCO_Addy_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Addy)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -54,6 +60,7 @@ class ARMCO_Addy_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -63,7 +70,9 @@ class ARMCO_Addy_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Belhun_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Belhun)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -100,6 +109,7 @@ class ARMCO_Belhun_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Belhun_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -109,7 +119,9 @@ class ARMCO_Belhun_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Blue_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Blue)";
-  hiddenSelections[] = {"camo",           "camo2",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
                         "AS_LargeLeft",   "AS_LargeRight",
@@ -125,6 +137,7 @@ class ARMCO_Blue_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "AP_Frag",        "AP_AR",
                         "APO_BR",         "APO_SMG",
                         "APO_Sniper",     "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -134,7 +147,9 @@ class ARMCO_Blue_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Boone_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Boone)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -167,6 +182,7 @@ class ARMCO_Boone_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -176,7 +192,9 @@ class ARMCO_Boone_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Burford_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Burford)";
-  hiddenSelections[] = {"camo",           "camo2",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
                         "AS_LargeLeft",   "AS_LargeRight",
@@ -192,6 +210,7 @@ class ARMCO_Burford_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "AP_Frag",        "AP_AR",
                         "APO_BR",         "APO_SMG",
                         "APO_Sniper",     "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -201,7 +220,9 @@ class ARMCO_Burford_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Cheese_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Cheese)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -233,6 +254,7 @@ class ARMCO_Cheese_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Cheese_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -242,7 +264,9 @@ class ARMCO_Cheese_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Ciro_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Ciro)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -277,6 +301,7 @@ class ARMCO_Ciro_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Ciro_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -286,7 +311,9 @@ class ARMCO_Ciro_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Darkness_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Darkness)";
-  hiddenSelections[] = {"camo",           "camo2",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
                         "AS_LargeLeft",   "AS_LargeRight",
@@ -302,6 +329,7 @@ class ARMCO_Darkness_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "AP_Frag",        "APO_AR",
                         "APO_BR",         "APO_Knife",
                         "APO_Sniper",     "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Darkness_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -311,7 +339,9 @@ class ARMCO_Darkness_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Darman_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Darman)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -341,6 +371,7 @@ class ARMCO_Darman_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Darman_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -350,7 +381,9 @@ class ARMCO_Darman_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Extortionist_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Extortionist)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -380,6 +413,7 @@ class ARMCO_Extortionist_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Extortionist_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -389,7 +423,9 @@ class ARMCO_Extortionist_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Garfield_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Garfield)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -421,6 +457,7 @@ class ARMCO_Garfield_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -430,7 +467,9 @@ class ARMCO_Garfield_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Merek_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Merek)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -462,6 +501,7 @@ class ARMCO_Merek_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Merek_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -471,7 +511,9 @@ class ARMCO_Merek_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Mini_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Mini)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -504,6 +546,7 @@ class ARMCO_Mini_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_BR",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -513,7 +556,9 @@ class ARMCO_Mini_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Nutters_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Nutters)";
-  hiddenSelections[] = {"camo",           "camo2",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",           "camo2",
                         "camo3",          "camo4",
                         "camo5",          "A_Ghillie",
                         "AS_LargeLeft",   "AS_LargeRight",
@@ -531,6 +576,7 @@ class ARMCO_Nutters_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "AP_Frag",        "APO_AR",
                         "APO_BR",         "APO_SMG",
                         "APO_Sniper",     "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -540,7 +586,9 @@ class ARMCO_Nutters_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Raziel_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Raziel)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -577,6 +625,7 @@ class ARMCO_Raziel_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -586,7 +635,9 @@ class ARMCO_Raziel_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Reaper_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Reaper)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -623,6 +674,7 @@ class ARMCO_Reaper_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Reaper_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -632,7 +684,9 @@ class ARMCO_Reaper_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Red)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -662,6 +716,7 @@ class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_RedDragon_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -669,35 +724,40 @@ class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "armco_armours\data\odst\custom_armours\odst_armor_RedDragon_co.paa"};
 };
-class ARMCO_Runic_ODST_Armor : ARMCO_Alpha_ODST_Armor {
-  displayname = "[ARMCO][Z] ODST Armour (Runic)";
-  hiddenSelections[] = {"camo",           "camo2",
-                        "camo3",          "camo4",
-                        "camo5",          "A_Ghillie",
-                        "AS_LargeLeft",   "AS_LargeRight",
-                        "AS_MediumLeft",  "AS_MediumRight",
-                        "AS_ODSTCQBLeft", "AS_ODSTCQBRight",
-                        "AS_ODSTLeft",    "AS_ODSTSniperRight",
-                        "AS_SmallLeft",   "AS_SmallRight",
-                        "AP_AR",          "AP_BR",
-                        "AP_Canteen",     "AP_GL",
-                        "AP_Knife",       "AP_MGThigh",
-                        "AP_AR",          "AP_Pack",
-                        "AP_Rounds",      "AP_SG",
-                        "AP_SMG",         "AP_Sniper",
-                        "AP_Frag",        "APO_AR",
-                        "APO_SMG",        "APO_Knife",
-                        "APO_Sniper",     "CustomKit_Scorch"};
-  hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Runic_co.paa",
-      "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Runic_co.paa",
-      "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Runic_co.paa"};
-};
+// class ARMCO_Runic_ODST_Armor : ARMCO_Alpha_ODST_Armor {
+//   displayname = "[ARMCO][Z] ODST Armour (Runic)";
+//     class ItemInfo: ItemInfo
+//   {
+//     hiddenSelections[] = {"camo",           "camo2",
+//                         "camo3",          "camo4",
+//                         "camo5",          "A_Ghillie",
+//                         "AS_LargeLeft",   "AS_LargeRight",
+//                         "AS_MediumLeft",  "AS_MediumRight",
+//                         "AS_ODSTCQBLeft", "AS_ODSTCQBRight",
+//                         "AS_ODSTLeft",    "AS_ODSTSniperRight",
+//                         "AS_SmallLeft",   "AS_SmallRight",
+//                         "AP_AR",          "AP_BR",
+//                         "AP_Canteen",     "AP_GL",
+//                         "AP_Knife",       "AP_MGThigh",
+//                         "AP_AR",          "AP_Pack",
+//                         "AP_Rounds",      "AP_SG",
+//                         "AP_SMG",         "AP_Sniper",
+//                         "AP_Frag",        "APO_AR",
+//                         "APO_SMG",        "APO_Knife",
+//                         "APO_Sniper",     "CustomKit_Scorch"};
+//     }
+//   hiddenSelectionsTextures[] = {
+//       "armco_armours\data\odst\custom_vest\vest_odst_Runic_co.paa",
+//       "optre_unsc_units\army\data\armor_odst_co.paa",
+//       "armco_armours\data\odst\custom_armours\odst_legs_Runic_co.paa",
+//       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+//       "armco_armours\data\odst\custom_armours\odst_armor_Runic_co.paa"};
+// };
 class ARMCO_Shaw_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Shaw)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -730,6 +790,7 @@ class ARMCO_Shaw_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -739,7 +800,9 @@ class ARMCO_Shaw_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_VJ_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (VJ)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -774,6 +837,7 @@ class ARMCO_VJ_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
@@ -783,7 +847,9 @@ class ARMCO_VJ_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 };
 class ARMCO_Wolffe_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Wolffe)";
-  hiddenSelections[] = {"camo",
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
                         "camo2",
                         "camo3",
                         "camo4",
@@ -820,6 +886,7 @@ class ARMCO_Wolffe_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_SMG",
                         "APO_Sniper",
                         "CustomKit_Scorch"};
+    }
   hiddenSelectionsTextures[] = {
       "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",

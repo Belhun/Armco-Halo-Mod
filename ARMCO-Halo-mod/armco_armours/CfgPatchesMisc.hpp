@@ -64,13 +64,18 @@ class CfgPatches {
         "ARMCO_Phoenix_Armor",
         "ARMCO_Medical_Armor",
         "ARMCO_EOD_Armor",
+        //Ghillie Armours
+        "ARMCO_Alpha_Ghillie_Armor",
+        "ARMCO_Sabre_Ghillie_Armor",
         "ARMCO_Zulu_Ghillie_Armor",
+        "ARMCO_Phoenix_Ghillie_Armor",
+        "ARMCO_Medical_Ghillie_Armor",
+        "ARMCO_EOD_Ghillie_Armor",
         // ODST armour
         "ARMCO_Alpha_ODST_Armor",
         "ARMCO_Sabre_ODST_Armor",
         "ARMCO_Zulu_ODST_Armor",
-        "ARMCO_Phoenix_ODST_Armor",
-
+        "ARMCO_Phoenix_ODST_Armor"
     };
     requiredVersion = 0.1;
     requiredAddons[] = {"OPTRE_UNSC_Units", "OPTRE_Core", "ace_main",
