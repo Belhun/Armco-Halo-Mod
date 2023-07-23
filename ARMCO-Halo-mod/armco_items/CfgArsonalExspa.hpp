@@ -548,6 +548,10 @@ class XtdGearModels
 			};
 
 		};
+
+    };
+    class CfgWeapons
+    {
         class ARMCO_Beret
 		{
 			options[]=
@@ -602,5 +606,5 @@ class XtdGearModels
                 };
 			};
 		};
-    };
+    }
 };
