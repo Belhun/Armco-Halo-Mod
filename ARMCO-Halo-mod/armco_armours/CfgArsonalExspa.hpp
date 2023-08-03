@@ -38,7 +38,47 @@ class XtdGearInfos
             Squads="EOD";
             Addons="No_Ghillie";
         };
-        // Ghillies
+
+    // Alpha Vereints armors
+        class ARMCO_Alpha_Team_1_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Alpha";
+            Addons="No_Ghillie";
+            Team="Team_1"
+        };
+        class ARMCO_Alpha_Team_2_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Alpha";
+            Addons="No_Ghillie";
+            Team="Team_2"
+        };
+        class ARMCO_Alpha_Team_3_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Alpha";
+            Addons="No_Ghillie";
+            Team="Team_3"
+        };
+        class ARMCO_Alpha_Medical_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Alpha";
+            Addons="No_Ghillie";
+            Team="Team_Medical"
+        };
+        class ARMCO_Alpha_EOD_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Alpha";
+            Addons="No_Ghillie";
+            Team="Team_EOD"
+        };
+
+    // Phoenix Veriants
+
+    // Ghillies
         class ARMCO_Alpha_Ghillie_Armor
         {
             Model="ARMCO_Base_Armor";
@@ -75,7 +115,8 @@ class XtdGearInfos
             Squads="EOD";
             Addons="Ghillie";
         };
-        //ODST Armours
+
+    //ODST Armours
         class ARMCO_Alpha_ODST_Armor
         {
             Model="ARMCO_Base_ODST_Armor";
@@ -100,7 +141,7 @@ class XtdGearInfos
 
 
 
-        //Custom Armour
+    //Custom Armour
         class ARMCO_Addy_ODST_Armor
         {
             Model="ARMCO_Custom_ODST_Armor";
@@ -201,7 +242,7 @@ class XtdGearInfos
             Model="ARMCO_Custom_ODST_Armor";
             Custom="Wolffe";
         };
-        //Custom Helemts
+    //Custom Helemts
         class Addy_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
@@ -302,7 +343,7 @@ class XtdGearInfos
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Wolffe";
         };
-        //Squad Helemt
+    //Squad Helemt
         class Alpha_CH252_Helmet
         {
             Model="ARMCO_Squad_Helmet";
@@ -338,7 +379,7 @@ class XtdGearInfos
             Model="ARMCO_Squad_Helmet";
             Squads="Ghillie";
         };
-        // ODST Squad Helmet
+    // ODST Squad Helmet
         class Alpha_CH252D_Helmet
         {
             Model="ARMCO_ODST_Squad_Helmet";
@@ -359,7 +400,7 @@ class XtdGearInfos
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Phoenix";
         };
-        //Uniforms
+    //Uniforms
         class Alpha_BDU
         {
             Model="ARMCO_Squad_BDU";
@@ -435,7 +476,7 @@ class XtdGearInfos
             Squads="Phoenix";
             Role="Medical";
         };
-        //Cusom BDUs
+    //Cusom BDUs
         class ARMCO_ODST_BLK_BDU
         {
             Model="ARMCO_Custom_BDU";
@@ -497,7 +538,8 @@ class XtdGearModels
 			options[]=
 			{
 				"Squads",
-                "Addons"
+                "Addons",
+                "Team"
 			};
 			label="[ARMCO] M52D Body Armour";
 			class Squads
@@ -560,6 +602,42 @@ class XtdGearModels
 					label="Ghillie";
 				};
 			};
+            class Team
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Team";
+				values[]=
+				{
+					"Team_1",
+					"Team_2",
+					"Team_3",
+					"Team_Medical",
+					"Team_EOD",
+				};
+				class Team_1
+				{
+					label="Team 1";
+				};
+				class Team_2
+				{
+					label="Team 2";
+				};
+                class Team_3
+				{
+					label="Team 3";
+				};
+				class Team_EOD
+				{
+					label="EOD";
+				};
+                class Team_Medical
+				{
+					label="Medical";
+				};
+			};
+
 		};
         class ARMCO_Base_ODST_Armor
 		{
