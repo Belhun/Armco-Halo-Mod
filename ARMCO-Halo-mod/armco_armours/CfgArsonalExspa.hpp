@@ -2,6 +2,7 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+    // Squad Armor
         class ARMCO_Alpha_Armor
         {
             Model="ARMCO_Base_Armor";
@@ -76,6 +77,35 @@ class XtdGearInfos
             Team="Team_EOD"
         };
 
+    // Zulu Veriants
+        class ARMCO_Zulu_Team_1_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Zulu";
+            Addons="No_Ghillie";
+            Team="Team_1"
+        };
+        class ARMCO_Zulu_Team_2_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Zulu";
+            Addons="No_Ghillie";
+            Team="Team_2"
+        };
+        class ARMCO_Zulu_EOD_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Zulu";
+            Addons="No_Ghillie";
+            Team="Team_EOD"
+        };
+        class ARMCO_Zulu_Medical_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Zulu";
+            Addons="No_Ghillie";
+            Team="Team_Medical"
+        };
     // Phoenix Veriants
 
     // Ghillies
