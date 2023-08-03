@@ -46,35 +46,35 @@ class XtdGearInfos
             Model="ARMCO_Base_Armor";
             Squads="Alpha";
             Addons="No_Ghillie";
-            Team="Team_1"
+            Team="Team_1";
         };
         class ARMCO_Alpha_Team_2_Armor
         {
             Model="ARMCO_Base_Armor";
             Squads="Alpha";
             Addons="No_Ghillie";
-            Team="Team_2"
+            Team="Team_2";
         };
         class ARMCO_Alpha_Team_3_Armor
         {
             Model="ARMCO_Base_Armor";
             Squads="Alpha";
             Addons="No_Ghillie";
-            Team="Team_3"
+            Team="Team_3";
         };
         class ARMCO_Alpha_Medical_Armor
         {
             Model="ARMCO_Base_Armor";
             Squads="Alpha";
             Addons="No_Ghillie";
-            Team="Team_Medical"
+            Team="Team_Medical";
         };
         class ARMCO_Alpha_EOD_Armor
         {
             Model="ARMCO_Base_Armor";
             Squads="Alpha";
             Addons="No_Ghillie";
-            Team="Team_EOD"
+            Team="Team_EOD";
         };
 
     // Zulu Veriants
@@ -83,31 +83,101 @@ class XtdGearInfos
             Model="ARMCO_Base_Armor";
             Squads="Zulu";
             Addons="No_Ghillie";
-            Team="Team_1"
+            Team="Team_1";
         };
         class ARMCO_Zulu_Team_2_Armor
         {
             Model="ARMCO_Base_Armor";
             Squads="Zulu";
             Addons="No_Ghillie";
-            Team="Team_2"
+            Team="Team_2";
         };
         class ARMCO_Zulu_EOD_Armor
         {
             Model="ARMCO_Base_Armor";
             Squads="Zulu";
             Addons="No_Ghillie";
-            Team="Team_EOD"
+            Team="Team_EOD";
         };
         class ARMCO_Zulu_Medical_Armor
         {
             Model="ARMCO_Base_Armor";
             Squads="Zulu";
             Addons="No_Ghillie";
-            Team="Team_Medical"
+            Team="Team_Medical";
         };
     // Phoenix Veriants
-
+        class ARMCO_Phoenix_Team_1_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Phoenix";
+            Addons="No_Ghillie";
+            Team="Team_1";
+        };
+        class ARMCO_Phoenix_Team_2_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Phoenix";
+            Addons="No_Ghillie";
+            Team="Team_2";
+        };
+        class ARMCO_Phoenix_Team_3_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Phoenix";
+            Addons="No_Ghillie";
+            Team="Team_3";
+        };
+        class ARMCO_Phoenix_Medical_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Phoenix";
+            Addons="No_Ghillie";
+            Team="Team_Medical";
+        };
+        class ARMCO_Phoenix_EOD_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Phoenix";
+            Addons="No_Ghillie";
+            Team="Team_EOD";
+        };
+    // Sabre Verents
+        class ARMCO_Sabre_Team_1_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Sabre";
+            Addons="No_Ghillie";
+            Team="Team_1";
+        };
+        class ARMCO_Sabre_Team_2_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Sabre";
+            Addons="No_Ghillie";
+            Team="Team_2";
+        };
+        class ARMCO_Sabre_Team_3_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Sabre";
+            Addons="No_Ghillie";
+            Team="Team_3";
+        };
+        class ARMCO_Sabre_Medical_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Sabre";
+            Addons="No_Ghillie";
+            Team="Team_Medical";
+        };
+        class ARMCO_Sabre_EOD_Armor
+        {
+            Model="ARMCO_Base_Armor";
+            Squads="Sabre";
+            Addons="No_Ghillie";
+            Team="Team_EOD"
+        };
     // Ghillies
         class ARMCO_Alpha_Ghillie_Armor
         {
