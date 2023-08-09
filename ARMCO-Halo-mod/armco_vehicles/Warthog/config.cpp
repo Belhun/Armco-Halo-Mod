@@ -1,6 +1,7 @@
 #include "CfgPatches.hpp"
 class CfgVehicles
 {
+	class OPTRE_M12_Base;
 	class OPTRE_M12_FAV;	//added [ARMCO] M12-FAV
 	class OPTRE_M12_FAV_APC;//added [ARMCO] M12-FAV APC
 	class OPTRE_M813_TT;	//added [ARMCO] M813 Troop Transport
@@ -10,6 +11,7 @@ class CfgVehicles
 	class OPTRE_M12R_AA;	//added [ARMCO] M12R Warthog AA
 	class OPTRE_M914_RV;	//added [ARMCO] M914 Repair Hog
 	class OPTRE_M12_FAV_APC_MED;//added [ARMCO] M12-FAV Medical APC
+	class OPTRE_M12_TD_CMA; // added [ARMCO] M12 TD
 
 	class ARMCO_M12_LRV: OPTRE_M12_LRV
 	{
@@ -1665,5 +1667,46 @@ class CfgVehicles
 		tf_range 			= 25000;
 		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio	 	= 1;
+	};
+
+	class ARMCO_M12_TD: OPTRE_M12_TD_CMA
+	{
+		author="Belhun";
+		side=1;
+		scope=2;
+		faction="ARMCO_Armco_Faction";
+		editorCategory = "ARMCO_Armco_Faction";
+		editorSubcategory = "ARMCO_Factions_cars";
+		displayName="[ARMCO] M12 TD";
+		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
+		textureList[]=
+		{
+			"ARMCO",
+			1
+		};
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3",
+			"Camo4",
+			"Camo5",
+			"Camo6",
+			"camo_details",
+			"camo_interior",
+			"camo_console"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
+			"\OPTRE_Weapons\static\fg75\data\cannon_co.paa",
+			"\OPTRE_Weapons\static\fg75\data\carriage_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+			"\OPTRE_Weapons\static\fg75\data\console_co.paa"
+		};
 	};
 };
