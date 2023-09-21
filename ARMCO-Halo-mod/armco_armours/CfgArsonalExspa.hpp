@@ -1034,7 +1034,10 @@ class XtdGearModels
 					"Alpha",
 					"Sabre",
 					"Phoenix",
-					"Zulu"
+					"Zulu",
+                    "Medical",
+                    "EOD",
+                    "Ghillie"
 				};
 				class Alpha
 				{
