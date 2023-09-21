@@ -31,8 +31,9 @@ class Alpha_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   author = "Belhun";
   displayname = "[ARMCO][S] Squad CH252 Helmet (Alpha)";
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
-      "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+    "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
+    "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
+  };
   // class ItemInfo : ItemInfo {
   //   hiddenSelectionsTextures[] = {
   //       "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
