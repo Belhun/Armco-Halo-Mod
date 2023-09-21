@@ -35,6 +35,7 @@ class Alpha_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
     "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
   };
   ace_hearing_protection = 0.95;
+  TFAR_ExternalIntercomWirelessCapable = 1;
 };
 // Sabre Helmet
 class Sabre_CH252_Helmet : Alpha_CH252_Helmet {
@@ -108,6 +109,7 @@ class Alpha_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet {
       "armco_armours\data\odst\squad_helmets\odst_helmet_Alpha_co.paa",
       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
   ace_hearing_protection = 0.95;
+  TFAR_ExternalIntercomWirelessCapable = 1;
 };
 class Sabre_CH252D_Helmet : Alpha_CH252D_Helmet {
   dlc = "ARMCO";
