@@ -87,6 +87,7 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
       "armco_armours\data\marine\helmets\visors\eod_visor_co.paa"};
 
 };
+// Ghillie Helmet
 class ARMCO_Generic_CH252_Ghillie_Helmet : Alpha_CH252_Helmet {
   dlc = "ARMCO";
   author = "Belhun";
