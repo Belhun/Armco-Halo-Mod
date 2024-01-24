@@ -8,6 +8,8 @@ class CfgVehicles {
 #include "CfgSBackpacks.hpp"
 
 #include "CfgCBackpacks.hpp"
+
+#include "CfgStorage.hpp"
 };
 
 class CfgWeapons {
