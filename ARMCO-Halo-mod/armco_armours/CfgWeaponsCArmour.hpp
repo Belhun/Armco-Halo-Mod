@@ -694,6 +694,7 @@ class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "A_Ghillie",
                         "AS_LargeLeft",
                         "AS_LargeRight",
+                        "AS_MediumLeft",
                         "AS_MediumRight",
                         "AS_ODSTCQBLeft",
                         "AS_ODSTCQBRight",

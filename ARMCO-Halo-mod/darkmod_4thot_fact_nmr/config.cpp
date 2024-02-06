@@ -69,8 +69,6 @@ class CfgPatches {
             "4thot_nmr_m_crew",
             "4thot_nmr_v_m808s",
             "4thot_nmr_v_m808b",
-            "4thot_nmr_v_pelican_t",
-            "4thot_nmr_v_pelican_g",
             "4thot_nmr_v_hornet",
             "4thot_nmr_v_bison_ifv",
             "4thot_nmr_v_bison_mgs",
@@ -85,7 +83,10 @@ class CfgPatches {
             "4thot_nmr_s_at",
             "4thot_nmr_s_m247t"
         };
-        magazines[] = { };
+        magazines[] =
+        {
+            "4thot_b_86070_100_ap"
+        };
         requiredAddons[] = 
             {   
             "OPTRE_Loadorder",
@@ -120,12 +121,43 @@ class CfgEditorSubcategories
     };
 };
 
+class CfgMagazines
+{
+    class 130Rnd_338_Mag;
+    class 4thot_b_86070_100_ap : 130Rnd_338_Mag
+    {
+        displayName = "100rnd 8.6x70mm AP-W(T3E10) HBOX";
+        displayNameShort = "";
+        descriptionShort = "AP17 Armor Piercing Rounds<br/>AP17T Piercing Tracer(W) Rounds<br/>100 Rounds, Tracer every 3, 3 End Tracers";
+
+        ammo = "OPTRE_B_338_AP";
+        tracersEvery = 3;
+        lastRoundsTracer = 10;
+
+        //mass = 60;
+        count = 100;
+    };
+};
+
+class CfgRecoils
+{
+    class recoil_ebr;
+
+    class 4thot_a_hmg48h : recoil_ebr
+    {
+        permanent = "0.1*0.4";
+        temporary = "0.01*0.6";
+    };
+};
+
 class CfgWeapons
 {
     class OPTRE_MA5AGL;
     class 4thot_a_OPTRE_MA5AGL_mrco : OPTRE_MA5AGL
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
 		class LinkedItems
 		{
             class LinkedItemsOptic
@@ -140,6 +172,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_MA5A_mrco : OPTRE_MA5A
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
 		class LinkedItems
 		{
             class LinkedItemsOptic
@@ -153,6 +187,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_MA5A_scope : OPTRE_MA5A
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
 		class LinkedItems
 		{
             class LinkedItemsOptic
@@ -166,6 +202,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_MA5A_aco : OPTRE_MA5A
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
 		class LinkedItems
 		{
             class LinkedItemsOptic
@@ -180,6 +218,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_Commando_Snow_ch : OPTRE_Commando_Snow
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
             class LinkedItemsOptic
@@ -194,6 +234,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_CQS48_Bulldog_Automatic_Snow_acos : OPTRE_CQS48_Bulldog_Automatic_Snow
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
             class LinkedItemsOptic
@@ -214,6 +256,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_Bulldog_Riot_Shield_Urban_acos : OPTRE_Bulldog_Riot_Shield_Urban
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
 			class LinkedItemsAcc
@@ -228,6 +272,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_M7_acos : OPTRE_M7
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
             class LinkedItemsOptic
@@ -242,6 +288,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_HMG38_std : OPTRE_HMG38
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -265,6 +313,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_HMG38_auto : OPTRE_HMG38
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -289,6 +339,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_BR37_srm : OPTRE_BR37
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -309,10 +361,135 @@ class CfgWeapons
     	};
     };
 
-    class MMG_02_black_F;
-    class 4thot_a_MMG_02_black_F_srm : MMG_02_black_F
+    class MMG_02_camo_F;
+    class MMG_02_black_F : MMG_02_camo_F
+    {
+        class manual;
+    };
+
+    class 4thot_w_a_hmg48h : MMG_02_black_F
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
+        baseweapon = "4thot_w_a_hmg48h";
+
+        displayName = "HMG-48H Machinegun";
+        descriptionShort = "Medium Machine Gun<br />Caliber: 8.6x70mm";
+
+        magazines[] = {"4thot_b_86070_100_ap"};
+        magazineWell[] = {};
+        recoil = "4thot_a_hmg48h";
+
+        class manual : manual
+        {
+            reloadTime = 0.075;
+            dispersion = 0.00126;
+        };
+
+        class close : manual
+        {
+            aiDispersionCoefX = 3;  //3.78 MIL
+            aiDispersionCoefY = 5;  //6.30 MIL
+
+            aiBurstTerminable = 1;
+            aiRateOfFire = 1;
+            aiRateOfFireDispersion = 1;
+            aiRateOfFireDistance = 50;
+            burst = 10;
+
+            maxRange = 50;
+            maxRangeProbab = 0.04;
+            midRange = 25;
+            midRangeProbab = 0.7;
+            minRange = 0;
+            minRangeProbab = 0.05;
+            
+            showToPlayer = 0;
+        };
+
+        class short : close
+        {
+            aiDispersionCoefX = 1;  //1.26 MIL
+            aiDispersionCoefY = 2;  //2.52 MIL
+
+            aiBurstTerminable = 0;
+            aiRateOfFireDistance = 200;
+            burst = 10;
+
+            maxRange = 200;
+            maxRangeProbab = 0.04;
+            midRange = 100;
+            midRangeProbab = 0.7;
+            minRange = 50;
+            minRangeProbab = 0.05;
+        };
+
+        class medium : short
+        {
+            aiDispersionCoefX = 1.5;    //1.80 MIL
+            aiDispersionCoefY = 2.5;    //3.15 MIL
+
+            aiRateOfFire = 3;
+            aiRateOfFireDispersion = 2;
+            aiRateOfFireDistance = 800;
+            burst = 10;
+
+            maxRange = 800;
+            maxRangeProbab = 0.1;
+            midRange = 500;
+            midRangeProbab = 0.6;
+            minRange = 200;
+            minRangeProbab = 0.05;
+        };
+
+        class far_optic1 : medium
+        {
+            aiDispersionCoefX = 2;    //2.52 MIL
+            aiDispersionCoefY = 3;    //3.78 MIL
+
+            aiRateOfFire = 3;
+            aiRateOfFireDispersion = 3;
+            aiRateOfFireDistance = 800;
+            burst = 5;
+
+            maxRange = 1200;
+            maxRangeProbab = 0.01;
+            midRange = 1000;
+            midRangeProbab = 0.5;
+            minRange = 800;
+            minRangeProbab = 0.04;
+
+            requiredOpticType = 1;
+        };
+
+        class far_optic2 : far_optic1
+        {
+            aiDispersionCoefX = 1.5;    //1.80 MIL
+            aiDispersionCoefY = 2.5;    //3.15 MIL
+
+            aiRateOfFire = 4;
+            aiRateOfFireDispersion = 4;
+            aiRateOfFireDistance = 1200;
+            burst = 5;
+
+            maxRange = 2000;
+            maxRangeProbab = 0.01;
+            midRange = 1600;
+            midRangeProbab = 0.5;
+            minRange = 1200;
+            minRangeProbab = 0.05;
+
+            requiredOpticType = 2;
+        };
+    };
+
+
+    class 4thot_w_a_hmg48h_a_srm : 4thot_w_a_hmg48h
+    {
+        scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -337,6 +514,8 @@ class CfgWeapons
     class 4thot_a_OPTRE_M90A_lsr : OPTRE_M90A
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
 			class LinkedItemsAcc
@@ -350,6 +529,9 @@ class CfgWeapons
     class optre_hgun_sas10_F;
     class 4thot_a_optre_hgun_sas10_F_lsr : optre_hgun_sas10_F
     {
+        scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class LinkedItems
 		{
 			class LinkedItemsAcc
@@ -364,6 +546,8 @@ class CfgWeapons
     class 4thot_e_OPTRE_Ins_URF_Helmet1_White_lun : OPTRE_Ins_URF_Helmet1_White
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         allowedfacewear[] = {"VES_HUD_APR_03",1};
     };
 
@@ -371,6 +555,8 @@ class CfgWeapons
     class 4thot_e_OPTRE_ONI_Researcher_Headgear_lun : OPTRE_ONI_Researcher_Headgear
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         allowedfacewear[] = {"",1};
     };
 
@@ -378,6 +564,8 @@ class CfgWeapons
     class 4thot_e_OPTRE_Ins_BJ_Helmet_URB_lun : OPTRE_Ins_BJ_Helmet_URB
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         allowedfacewear[] = {"G_Balaclava_TI_blk_F",1};
     };
 };
@@ -398,12 +586,16 @@ class CfgVehicles
     class 4thot_e_B_SCBA_01_F : B_SCBA_01_F
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
     };
 
     class B_ViperHarness_blk_F;
     class 4thot_e_B_ViperHarness_blk_F_std : B_ViperHarness_blk_F
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class TransportMagazines
         {
             mag_xx(OPTRE_40Rnd_30x06_Mag,10);
@@ -414,6 +606,8 @@ class CfgVehicles
     class 4thot_e_B_ViperHarness_blk_F_med : B_ViperHarness_blk_F
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
 
         class TransportItems
         {
@@ -448,6 +642,8 @@ class CfgVehicles
     class 4thot_e_B_ViperHarness_blk_F_auto : B_ViperHarness_blk_F
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class TransportMagazines
         {
             mag_xx(OPTRE_100Rnd_30x06_Mag_Tracer,6);
@@ -457,15 +653,19 @@ class CfgVehicles
     class 4thot_e_B_ViperHarness_blk_F_mmg : B_ViperHarness_blk_F
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class TransportMagazines
         {
-            mag_xx(130Rnd_338_Mag,5);
+            mag_xx(4thot_b_86070_100_ap,5);
         };
     };
 
     class 4thot_e_B_ViperHarness_blk_F_ats : B_ViperHarness_blk_F
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class TransportMagazines
         {
             mag_xx(OPTRE_M41_Twin_HEAT_SACLOS,2);
@@ -478,6 +678,8 @@ class CfgVehicles
     class 4thot_e_OPTRE_ANPRC_521_Black_sl : OPTRE_ANPRC_521_Black
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class TransportMagazines
         {
             mag_xx(OPTRE_40Rnd_30x06_Mag,6);
@@ -488,6 +690,8 @@ class CfgVehicles
     class 4thot_e_B_ViperLightHarness_blk_F_mark : B_ViperLightHarness_blk_F
     {
         scope = 1;
+        scopeCurator = 1;
+        ScopeArsenal = 1;
         class TransportItems
         {
             item_xx(ACE_Tripod,1);
@@ -900,10 +1104,10 @@ class CfgVehicles
 		displayName = "Machinegunner";
 
         backpack = "4thot_e_B_ViperHarness_blk_F_mmg";
-        weapons[] = {"4thot_a_MMG_02_black_F_srm","4thot_a_optre_hgun_sas10_F_lsr","Throw","Put"};
-		respawnWeapons[] = {"4thot_a_MMG_02_black_F_srm","4thot_a_optre_hgun_sas10_F_lsr","Throw","Put"};
-        magazines[] = {"kat_Painkiller",tx_2("UK3CB_BAF_SmokeShell"),tx_2("OPTRE_M9_Frag"),tx_2("130Rnd_338_Mag")};
-		respawnMagazines[] = {"kat_Painkiller",tx_2("UK3CB_BAF_SmokeShell"),tx_2("OPTRE_M9_Frag"),tx_2("130Rnd_338_Mag")};
+        weapons[] = {"4thot_w_a_hmg48h_a_srm","4thot_a_optre_hgun_sas10_F_lsr","Throw","Put"};
+		respawnWeapons[] = {"4thot_w_a_hmg48h_a_srm","4thot_a_optre_hgun_sas10_F_lsr","Throw","Put"};
+        magazines[] = {"kat_Painkiller",tx_2("UK3CB_BAF_SmokeShell"),tx_2("OPTRE_M9_Frag"),tx_2("4thot_b_86070_100_ap")};
+		respawnMagazines[] = {"kat_Painkiller",tx_2("UK3CB_BAF_SmokeShell"),tx_2("OPTRE_M9_Frag"),tx_2("4thot_b_86070_100_ap")};
     };
 
     class 4thot_nmr_m_sgr : 4thot_nmr_m_rifleman
@@ -942,36 +1146,10 @@ class CfgVehicles
 		respawnMagazines[] = {"kat_Painkiller",tx_2("UK3CB_BAF_SmokeShell"),tx_5("OPTRE_48Rnd_5x23mm_Mag_tracer")};
     };
 
-    class OPTRE_M808Sins;
-    class 4thot_nmr_v_m808s : OPTRE_M808Sins
-    {
-        faction = "4thot_nmr_m";
-
-        crew = "4thot_nmr_m_crew";
-    };
-
     class OPTRE_M808B_INS;
     class 4thot_nmr_v_m808b : OPTRE_M808B_INS
     {
         faction = "4thot_nmr_m";
-
-        crew = "4thot_nmr_m_crew";
-    };
-
-	class GH_Pelican_Transport;
-    class 4thot_nmr_v_pelican_t : GH_Pelican_Transport
-    {
-        faction = "4thot_nmr_m";
-        editorCategory = "";
-
-        crew = "4thot_nmr_m_crew";
-    };
-
-    class GH_Pelican_Gunship;
-    class 4thot_nmr_v_pelican_g : GH_Pelican_Gunship
-    {
-        faction = "4thot_nmr_m";
-        editorCategory = "";
 
         crew = "4thot_nmr_m_crew";
     };
@@ -1238,43 +1416,43 @@ class CfgGroups
 					class Unit1
 					{
 						side = 0;
-						vehicle = "4thot_nmr_m_marks";
-						rank = "SERGEANT";
+						vehicle = "4thot_nmr_m_medic";
+						rank = "CORPORAL";
 						position[] = {0,0,0};
 					};
 					class Unit2
 					{
 						side = 1;
-						vehicle = "4thot_nmr_m_mmg";
+						vehicle = "4thot_nmr_m_lmg";
 						rank = "CORPORAL";
 						position[] = {-2,0,0};
 					};
 					class Unit3
 					{
 						side = 1;
-						vehicle = "4thot_nmr_m_medic";
+						vehicle = "4thot_nmr_m_ats";
 						rank = "CORPORAL";
 						position[] = {-4,0,0};
 					};
 					class Unit4
 					{
 						side = 1;
-						vehicle = "4thot_nmr_m_tleader";
+						vehicle = "4thot_nmr_m_sgr";
 						rank = "SERGEANT";
 						position[] = {-6,0,0};
 					};
 					class Unit5
 					{
 						side = 1;
-						vehicle = "4thot_nmr_m_mmg";
-						rank = "CORPORAL";
+						vehicle = "4thot_nmr_m_rifleman";
+						rank = "PRIVATE";
 						position[] = {-8,0,0};
 					};
 					class Unit6
 					{
 						side = 1;
-						vehicle = "4thot_nmr_m_ats";
-						rank = "CORPORAL";
+						vehicle = "4thot_nmr_m_rifleman";
+						rank = "PRIVATE";
 						position[] = {-10,0,0};
 					};
 					class Unit7

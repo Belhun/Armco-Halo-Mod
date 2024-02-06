@@ -343,105 +343,246 @@ class XtdGearInfos
             Custom="Wolffe";
         };
     //Custom Helemts
+        class Addy_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Addy";
+            polar="polar0";
+        };
+        class Belhun_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Belhun";
+            polar="polar0";
+        };
+        class Blue_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Blue";
+            polar="polar0";
+        };
+        class Burford_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Burford";
+            polar="polar0";
+        };
+        class Boone_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Boone";
+            polar="polar0";
+        };
+        class Cheese_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Cheese";
+            polar="polar0";
+        };
+        class Ciro_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Ciro";
+            polar="polar0";
+        };
+        class Darkness_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Darkness";
+            polar="polar0";
+        };
+        class Darman_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Darman";
+            polar="polar0";
+        };
+        class Extortionist_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Extortionist";
+            polar="polar0";
+        };
+        class Garfield_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Garfield";
+            polar="polar0";
+        };
+        class Merek_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Merek";
+            polar="polar0";
+        };
+        class Mini_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Mini";
+            polar="polar0";
+        };
+        class Nutters_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Nutters";
+            polar="polar0";
+        };
+        class Raziel_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Raziel";
+            polar="polar0";
+        };
+        class Reaper_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Reaper";
+            polar="polar0";
+        };
+        class Red_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Red";
+            polar="polar0";
+        };
+        class Shaw_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Shaw";
+            polar="polar0";
+        };
+        class VJ_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="VJ";
+            polar="polar0";
+        };
+        class Wolffe_CH252D_Helmet_dp
+        {
+            Model="ARMCO_Custom_ODST_Helmets";
+            Custom="Wolffe";
+            polar="polar0";
+        };
+
         class Addy_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Addy";
+            polar="polar1";
         };
         class Belhun_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Belhun";
+            polar="polar1";
         };
         class Blue_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Blue";
+            polar="polar1";
         };
         class Burford_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Burford";
+            polar="polar1";
         };
         class Boone_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Boone";
+            polar="polar1";
         };
         class Cheese_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Cheese";
+            polar="polar1";
         };
         class Ciro_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Ciro";
+            polar="polar1";
         };
         class Darkness_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Darkness";
+            polar="polar1";
         };
         class Darman_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Darman";
+            polar="polar1";
         };
         class Extortionist_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Extortionist";
+            polar="polar1";
         };
         class Garfield_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Garfield";
+            polar="polar1";
         };
         class Merek_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Merek";
+            polar="polar1";
         };
         class Mini_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Mini";
+            polar="polar1";
         };
         class Nutters_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Nutters";
+            polar="polar1";
         };
         class Raziel_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Raziel";
+            polar="polar1";
         };
         class Reaper_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Reaper";
+            polar="polar1";
         };
         class Red_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Red";
+            polar="polar1";
         };
         class Shaw_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Shaw";
+            polar="polar1";
         };
         class VJ_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="VJ";
+            polar="polar1";
         };
         class Wolffe_CH252D_Helmet
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Wolffe";
+            polar="polar1";
         };
     //Squad Helemt
         class Alpha_CH252_Helmet
@@ -484,21 +625,50 @@ class XtdGearInfos
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Alpha";
+            polar="polar0";
         };
         class Sabre_CH252D_Helmet
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Sabre";
+            polar="polar0";
         };
         class Zulu_CH252D_Helmet
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Zulu";
+            polar="polar0";
         };
         class Phoenix_CH252D_Helmet
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Phoenix";
+            polar="polar0";
+        };
+
+        class Alpha_CH252D_Helmet_dp
+        {
+            Model="ARMCO_ODST_Squad_Helmet";
+            Squads="Alpha";
+            polar="polar1";
+        };
+        class Sabre_CH252D_Helmet_dp
+        {
+            Model="ARMCO_ODST_Squad_Helmet";
+            Squads="Sabre";
+            polar="polar1";
+        };
+        class Zulu_CH252D_Helmet_dp
+        {
+            Model="ARMCO_ODST_Squad_Helmet";
+            Squads="Zulu";
+            polar="polar1";
+        };
+        class Phoenix_CH252D_Helmet_dp
+        {
+            Model="ARMCO_ODST_Squad_Helmet";
+            Squads="Phoenix";
+            polar="polar1";
         };
     //Uniforms
         class Alpha_BDU
@@ -901,7 +1071,8 @@ class XtdGearModels
 		{
 			options[]=
 			{
-                "Custom"
+                "Custom",
+                "polar"
 			};
 			label="[ARMCO] Custom ODST Helmets";
 			class Custom
@@ -1015,6 +1186,26 @@ class XtdGearModels
                 };
 			};
 
+            class polar
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Polarization";
+				values[]=
+				{
+					"polar0",
+					"polar1"
+				};
+                class polar0
+				{
+					label="OFF";
+				};
+                class polar1
+				{
+					label="ON";
+				};
+			};
 		};
         class ARMCO_Squad_Helmet
 		{
@@ -1074,7 +1265,8 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"Squads"
+				"Squads",
+                "polar"
 			};
 			label="[ARMCO] ODST Squad Helmet";
 			class Squads
@@ -1105,6 +1297,27 @@ class XtdGearModels
 				class Zulu
 				{
 					label="Zulu";
+				};
+			};
+
+            class polar
+			{
+				alwaysSelectable=1;
+				changeingame=0;
+				changedelay=0;
+				label="Polarization";
+				values[]=
+				{
+					"polar0",
+					"polar1"
+				};
+                class polar0
+				{
+					label="OFF";
+				};
+                class polar1
+				{
+					label="ON";
 				};
 			};
 		};
