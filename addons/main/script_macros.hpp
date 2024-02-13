@@ -5,8 +5,8 @@
 // Default versioning level
 #define DEFAULT_VERSIONING_LEVEL 2
 
-#define DGVAR(varName)    if(isNil "AHR_DEBUG_NAMESPACE") then { AHR_DEBUG_NAMESPACE = []; }; if(!(QUOTE(GVAR(varName)) in AHR_DEBUG_NAMESPACE)) then { PUSH(AHR_DEBUG_NAMESPACE, QUOTE(GVAR(varName))); }; GVAR(varName)
-#define DVAR(varName)     if(isNil "AHR_DEBUG_NAMESPACE") then { AHR_DEBUG_NAMESPACE = []; }; if(!(QUOTE(varName) in AHR_DEBUG_NAMESPACE)) then { PUSH(AHR_DEBUG_NAMESPACE, QUOTE(varName)); }; varName
+#define DGVAR(varName)    if(isNil "ACE_DEBUG_NAMESPACE") then { ACE_DEBUG_NAMESPACE = []; }; if(!(QUOTE(GVAR(varName)) in ACE_DEBUG_NAMESPACE)) then { PUSH(ACE_DEBUG_NAMESPACE, QUOTE(GVAR(varName))); }; GVAR(varName)
+#define DVAR(varName)     if(isNil "ACE_DEBUG_NAMESPACE") then { ACE_DEBUG_NAMESPACE = []; }; if(!(QUOTE(varName) in ACE_DEBUG_NAMESPACE)) then { PUSH(ACE_DEBUG_NAMESPACE, QUOTE(varName)); }; varName
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
@@ -40,6 +40,18 @@
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 #define ANY_OF(ARRAY,CONDITION) (ARRAY findIf {CONDITION} != -1)
 
+// ACEX Merge
+#define ACEX_PREFIX acex
+#define XADDON DOUBLES(ACEX_PREFIX,COMPONENT)
+#define XGVAR(var) DOUBLES(XADDON,var)
+#define EXGVAR(var1,var2) TRIPLES(ACEX_PREFIX,var1,var2)
+#define QXGVAR(var) QUOTE(XGVAR(var))
+#define QEXGVAR(var1,var2) QUOTE(EXGVAR(var1,var2))
+#define QQXGVAR(var) QUOTE(QXGVAR(var))
+#define QQEXGVAR(var1,var2) QUOTE(QEXGVAR(var1,var2))
+#define ACEX_PREP(func) PREP(func); TRIPLES(XADDON,fnc,func) = DFUNC(func)
+
+
 #define MACRO_ADDWEAPON(WEAPON,COUNT) class _xx_##WEAPON { \
     weapon = #WEAPON; \
     count = COUNT; \
@@ -60,110 +72,19 @@
     count = COUNT; \
 }
 
-// Returns a text config entry as compiled code or variable from missionNamespace
-#define GET_FUNCTION(var,cfg) \
-    private var = getText (cfg); \
-    if (isNil var) then { \
-        var = compile var; \
-    } else { \
-        var = missionNamespace getVariable var; \
-    }
-
-// Returns a number config entry with default value of 0
-// If entry is a string, will get the variable from missionNamespace
-#define GET_NUMBER_ENTRY(cfg) \
-    if (isText (cfg)) then { \
-        missionNamespace getVariable [getText (cfg), 0]; \
-    } else { \
-        getNumber (cfg); \
-    }
-
-// BEGIN ACE3 reference macros
-
-#define ACE_PREFIX ace
-
-#define ACE_ADDON(component)        DOUBLES(ACE_PREFIX,component)
-
-#define ACEGVAR(module,var)         TRIPLES(ACE_PREFIX,module,var)
-#define QACEGVAR(module,var)        QUOTE(ACEGVAR(module,var))
-#define QQACEGVAR(module,var)       QUOTE(QACEGVAR(module,var))
-
-#define ACEFUNC(module,function)    TRIPLES(DOUBLES(ACE_PREFIX,module),fnc,function)
-#define QACEFUNC(module,function)   QUOTE(ACEFUNC(module,function))
-
-#define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
-#define ACELLSTRING(module,string)  localize ACELSTRING(module,string)
-#define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
-
-#define ACEPATHTOF(component,path) \z\ace\addons\component\path
-#define QACEPATHTOF(component,path) QUOTE(ACEPATHTOF(component,path))
-
-// Macros for checking if unit is in medical vehicle or facility
-// Defined mostly to make location check in canTreat more readable
-// #define IN_MED_VEHICLE(unit)  (unit call ACEFUNC(medical_treatment,isInMedicalVehicle))
-// #define IN_MED_FACILITY(unit) (unit call ACEFUNC(medical_treatment,isInMedicalFacility))
-
-// #define TREATMENT_LOCATIONS_ALL 0
-// #define TREATMENT_LOCATIONS_VEHICLES 1
-// #define TREATMENT_LOCATIONS_FACILITIES 2
-// #define TREATMENT_LOCATIONS_VEHICLES_AND_FACILITIES 3
-// #define TREATMENT_LOCATIONS_NONE 4
-
-// // medical_statemachine/script_component.hpp
-// #define FATAL_INJURIES_ALWAYS 0
-// #define FATAL_INJURIES_CRDC_ARRST 1
-// #define FATAL_INJURIES_NEVER 2
-
-// // These variables get stored in object space and used across components
-// // Defined here for easy consistency with GETVAR/SETVAR (also a list for reference)
-// #define VAR_BLOOD_PRESS       QACEGVAR(medical,bloodPressure)
-// #define VAR_BLOOD_VOL         QACEGVAR(medical,bloodVolume)
-// #define VAR_WOUND_BLEEDING    QACEGVAR(medical,woundBleeding)
-// #define VAR_CRDC_ARRST        QACEGVAR(medical,inCardiacArrest)
-// #define VAR_HEART_RATE        QACEGVAR(medical,heartRate)
-// #define VAR_PAIN              QACEGVAR(medical,pain)
-// #define VAR_PAIN_SUPP         QACEGVAR(medical,painSuppress)
-// #define VAR_PERIPH_RES        QACEGVAR(medical,peripheralResistance)
-// #define VAR_UNCON             "ACE_isUnconscious"
-// #define VAR_OPEN_WOUNDS       QACEGVAR(medical,openWounds)
-// #define VAR_BANDAGED_WOUNDS   QACEGVAR(medical,bandagedWounds)
-// #define VAR_STITCHED_WOUNDS   QACEGVAR(medical,stitchedWounds)
-// // These variables track gradual adjustments (from medication, etc.)
-// #define VAR_MEDICATIONS       QACEGVAR(medical,medications)
-// // These variables track the current state of status values above
-// #define VAR_HEMORRHAGE        QACEGVAR(medical,hemorrhage)
-// #define VAR_IN_PAIN           QACEGVAR(medical,inPain)
-// #define VAR_TOURNIQUET        QACEGVAR(medical,tourniquets)
-// #define VAR_FRACTURES         QACEGVAR(medical,fractures)
-
-// - Unit Functions ---------------------------------------------------
-// Retrieval macros for common unit values
-// Defined for easy consistency and speed
-// #define GET_SM_STATE(_unit)         ([_unit, ACEGVAR(medical,STATE_MACHINE)] call CBA_statemachine_fnc_getCurrentState)
-// #define GET_BLOOD_VOLUME(unit)      (unit getVariable [VAR_BLOOD_VOL, DEFAULT_BLOOD_VOLUME])
-// #define GET_WOUND_BLEEDING(unit)    (unit getVariable [VAR_WOUND_BLEEDING, 0])
-// #define GET_HEART_RATE(unit)        (unit getVariable [VAR_HEART_RATE, DEFAULT_HEART_RATE])
-// #define GET_HEMORRHAGE(unit)        (unit getVariable [VAR_HEMORRHAGE, 0])
-// #define GET_PAIN(unit)              (unit getVariable [VAR_PAIN, 0])
-// #define GET_PAIN_SUPPRESS(unit)     (unit getVariable [VAR_PAIN_SUPP, 0])
-// #define GET_FRACTURES(unit)         (unit getVariable [VAR_FRACTURES, DEFAULT_FRACTURE_VALUES])
-// #define IN_CRDC_ARRST(unit)         (unit getVariable [VAR_CRDC_ARRST, false])
-// #define IS_BLEEDING(unit)           (GET_WOUND_BLEEDING(unit) > 0)
-// #define IS_IN_PAIN(unit)            (unit getVariable [VAR_IN_PAIN, false])
-// #define IS_UNCONSCIOUS(unit)        (unit getVariable [VAR_UNCON, false])
-// #define GET_OPEN_WOUNDS(unit)       (unit getVariable [VAR_OPEN_WOUNDS, createHashMap])
-// #define GET_BANDAGED_WOUNDS(unit)   (unit getVariable [VAR_BANDAGED_WOUNDS, createHashMap])
-// #define GET_STITCHED_WOUNDS(unit)   (unit getVariable [VAR_STITCHED_WOUNDS, createHashMap])
-// #define GET_DAMAGE_THRESHOLD(unit)  (unit getVariable [QACEGVAR(medical,damageThreshold), [ACEGVAR(medical,AIDamageThreshold),ACEGVAR(medical,playerDamageThreshold)] select (isPlayer unit)])
-
-// #define GET_PAIN_PERCEIVED(unit)    (0 max (GET_PAIN(unit) - GET_PAIN_SUPPRESS(unit)) min 1)
-
-// #define DEFAULT_TOURNIQUET_VALUES   [0,0,0,0,0,0]
-// #define GET_TOURNIQUETS(unit)       (unit getVariable [VAR_TOURNIQUET, DEFAULT_TOURNIQUET_VALUES])
-// #define HAS_TOURNIQUET_APPLIED_ON(unit,index) ((GET_TOURNIQUETS(unit) select index) > 0)
-
-// END ACE3 reference macros
-
+// weapon types
+#define TYPE_WEAPON_PRIMARY 1
+#define TYPE_WEAPON_HANDGUN 2
+#define TYPE_WEAPON_SECONDARY 4
+// magazine types
+#define TYPE_MAGAZINE_HANDGUN_AND_GL 16 // mainly
+#define TYPE_MAGAZINE_PRIMARY_AND_THROW 256
+#define TYPE_MAGAZINE_SECONDARY_AND_PUT 512 // mainly
+#define TYPE_MAGAZINE_MISSILE 768
+// more types
+#define TYPE_BINOCULAR_AND_NVG 4096
+#define TYPE_WEAPON_VEHICLE 65536
+#define TYPE_ITEM 131072
 // item types
 #define TYPE_DEFAULT 0
 #define TYPE_MUZZLE 101
@@ -178,7 +99,11 @@
 #define TYPE_SCUBA 604 // not implemented
 #define TYPE_HEADGEAR 605
 #define TYPE_FACTOR 607
+#define TYPE_MAP 608
+#define TYPE_COMPASS 609
+#define TYPE_WATCH 610
 #define TYPE_RADIO 611
+#define TYPE_GPS 612
 #define TYPE_HMD 616
 #define TYPE_BINOCULAR 617
 #define TYPE_MEDIKIT 619
@@ -198,17 +123,16 @@
 
 #define PREP_MODULE(folder) [] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)
 
-#define AHR_isHC (!hasInterface && !isDedicated)
+#define ACE_isHC (!hasInterface && !isDedicated)
 
 #define IDC_STAMINA_BAR 193
 
-#define AHR_DEPRECATED(arg1,arg2,arg3) WARNING_3("%1 is deprecated. Support will be dropped in version %2. Replaced by: %3",arg1,arg2,arg3)
+#define ACE_DEPRECATED(arg1,arg2,arg3) WARNING_3("%1 is deprecated. Support will be dropped in version %2. Replaced by: %3",arg1,arg2,arg3)
 
 #define PFORMAT_10(MESSAGE,A,B,C,D,E,F,G,H,I,J) \
     format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10 J=%11', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I), RETNIL(J)]
 #ifdef DEBUG_MODE_FULL
-#define TRACE_10(MESSAGE,A,B,C,D,E,F,G,H,I,J) \
-    [THIS_FILE_, __LINE__, PFORMAT_10(MESSAGE,A,B,C,D,E,F,G,H,I,J)] call CBA_fnc_log
+#define TRACE_10(MESSAGE,A,B,C,D,E,F,G,H,I,J) LOG_SYS_FILELINENUMBERS('TRACE',PFORMAT_10(str diag_frameNo + ' ' + (MESSAGE),A,B,C,D,E,F,G,H,I,J))
 #else
    #define TRACE_10(MESSAGE,A,B,C,D,E,F,G,H,I,J) /* disabled */
 #endif
@@ -218,34 +142,41 @@
 #define SD_TO_MIN_MAX(d) ((d) * 3.371) // Standard deviation -> min / max of random [min, mid, max]
 
 // Angular unit conversion
-#define MRAD_TO_MOA(d) ((d) * 3.43774677) // Conversion factor: 54 / (5 * PI)
-#define MOA_TO_MRAD(d) ((d) * 0.29088821) // Conversion factor: (5 * PI) / 54
-#define DEG_TO_MOA(d) ((d) * 60) // Conversion factor: 60
-#define MOA_TO_DEG(d) ((d) / 60) // Conversion factor: 1 / 60
-#define DEG_TO_MRAD(d) ((d) * 17.45329252) // Conversion factor: (50 * PI) / 9
-#define MRAD_TO_DEG(d) ((d) / 17.45329252) // Conversion factor: 9 / (50 * PI)
-#define MOA_TO_RAD(d) ((d) * 0.00029088) // Conversion factor: PI / 10800
+// Conversion factor: 54 / (5 * PI)
+#define MRAD_TO_MOA(d) ((d) * 3.43774677)
+// Conversion factor: (5 * PI) / 54
+#define MOA_TO_MRAD(d) ((d) * 0.29088821)
+// Conversion factor: 60
+#define DEG_TO_MOA(d) ((d) * 60)
+// Conversion factor: 1 / 60
+#define MOA_TO_DEG(d) ((d) / 60)
+// Conversion factor: (50 * PI) / 9
+#define DEG_TO_MRAD(d) ((d) * 17.45329252)
+// Conversion factor: 9 / (50 * PI)
+#define MRAD_TO_DEG(d) ((d) / 17.45329252)
+// Conversion factor: PI / 10800
+#define MOA_TO_RAD(d) ((d) * 0.00029088)
 
-#define QPATHTOF_SOUND(var1) QUOTE(PATHTOF2_SYS(PREFIX,COMPONENT,var1))
-#define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
+#define ZEUS_ACTION_CONDITION ([_target, {QUOTE(QUOTE(ADDON)) in curatorAddons _this}, missionNamespace, QUOTE(QGVAR(zeusCheck)), 1E11, 'ace_interactMenuClosed'] call EFUNC(common,cachedCall))
+
+#define SUBSKILLS ["aimingAccuracy", "aimingShake", "aimingSpeed", "spotDistance", "spotTime", "courage", "reloadSpeed", "commanding", "general"]
+
+// macro add a dummy cfgPatch and notLoaded entry
+#define ACE_PATCH_NOT_LOADED(NAME,CAUSE) \
+class CfgPatches { \
+    class DOUBLES(NAME,notLoaded) { \
+        units[] = {}; \
+        weapons[] = {}; \
+        requiredVersion = REQUIRED_VERSION; \
+        requiredAddons[] = {"ace_main"}; \
+        VERSION_CONFIG; \
+    }; \
+}; \
+class ace_notLoaded { \
+    NAME = CAUSE; \
+};
 
 #include "script_debug.hpp"
-
-// Airway
-#define VAR_SPO2                       QEGVAR(breathing,airwayStatus)
-#define GET_SPO2(unit)                 (unit getVariable [VAR_SPO2, 100])
-
-// // Circulation
-// #define VAR_INTERNAL_BLEEDING          QEGVAR(circulation,internalBleeding)
-// #define GET_INTERNAL_BLEEDING(unit)    (unit getVariable [VAR_INTERNAL_BLEEDING, 0])
-
-// #define GET_BLOOD_PRESSURE(unit)       ([unit] call EFUNC(circulation,getBloodPressure))
-// #define VAR_BLOODPRESSURE_CHANGE       QEGVAR(circulation,bloodPressureChange)
-// #define GET_BLOODPRESSURE_CHANGE(unit) (unit getVariable [VAR_BLOODPRESSURE_CHANGE, [0,0]])
-
-// // ARMOURScy
-// #define GET_BLOOD_LOSS(unit)           ([unit] call EFUNC(ARMOURS,getBloodLoss))
-
 // Darkness Macros
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
