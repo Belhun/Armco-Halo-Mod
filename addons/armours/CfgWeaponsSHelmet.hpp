@@ -31,8 +31,8 @@ class Alpha_CH252_Helmet : OPTRE_UNSC_CH252_Helmet_WDL {
   author = "Belhun";
   displayname = "[ARMCO][S] Squad CH252 Helmet (Alpha)";
   hiddenSelectionsTextures[] = {
-    "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
-    "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"
+    QPATHTOF(data\marine\helmets\helmet_alpha_co.paa),
+    QPATHTOF(data\marine\helmets\visors\Helmet_Visor_ca.paa)
   };
   ace_hearing_protection = 0.95;
   TFAR_ExternalIntercomWirelessCapable = 1;
@@ -43,8 +43,8 @@ class Sabre_CH252_Helmet : Alpha_CH252_Helmet {
   author = "Belhun";
   displayname = "[ARMCO][S] Squad CH252 Helmet (Sabre)";
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\helmets\helmet_sabre_co.paa",
-      "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+      QPATHTOF(data\marine\helmets\helmet_sabre_co.paa),
+      QPATHTOF(data\marine\helmets\visors\Helmet_Visor_ca.paa)};
 
 };
 // Phoenix Helmet
@@ -53,8 +53,8 @@ class Phoenix_CH252_Helmet : Alpha_CH252_Helmet {
   author = "Belhun";
   displayname = "[ARMCO][S] Squad CH252 Helmet (Phoenix)";
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\helmets\helmet_phoenix_co.paa",
-      "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+      QPATHTOF(data\marine\helmets\helmet_phoenix_co.paa),
+      QPATHTOF(data\marine\helmets\visors\Helmet_Visor_ca.paa)};
 
 };
 // Zulu Helmet
@@ -63,8 +63,8 @@ class Zulu_CH252_Helmet : Alpha_CH252_Helmet {
   author = "Belhun";
   displayname = "[ARMCO][S] Squad CH252 Helmet (Zulu)";
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
-      "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa"};
+      QPATHTOF(data\marine\helmets\helmet_zulu_co.paa),
+      QPATHTOF(data\marine\helmets\visors\Helmet_Visor_ca.paa)};
 
 };
 // Medical Helmet
@@ -73,8 +73,8 @@ class Medical_CH252_Helmet : Alpha_CH252_Helmet {
   author = "Belhun";
   displayname = "[ARMCO][V] Unit CH252 Helmet (Medical)";
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\helmets\helmet_medic_co.paa",
-      "armco_armours\data\marine\helmets\visors\medical_visor_co.paa"};
+      QPATHTOF(data\marine\helmets\helmet_medic_co.paa),
+      QPATHTOF(data\marine\helmets\visors\medical_visor_co.paa)};
 
 };
 // EOD Helmet
@@ -83,8 +83,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
   author = "Belhun";
   displayname = "[ARMCO][W] Unit CH252 Helmet (EOD)";
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\helmets\helmet_eod_co.paa",
-      "armco_armours\data\marine\helmets\visors\eod_visor_co.paa"};
+      QPATHTOF(data\marine\helmets\helmet_eod_co.paa),
+      QPATHTOF(data\marine\helmets\visors\eod_visor_co.paa)};
 
 };
 // Ghillie Helmet
@@ -95,8 +95,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Unit CH252 Helmet (Ghillie)";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
-            "armco_armours\data\marine\helmets\visors\Helmet_Visor_ca.paa",
+            QPATHTOF(data\marine\helmets\helmet_zulu_co.paa),
+            QPATHTOF(data\marine\helmets\visors\Helmet_Visor_ca.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -115,8 +115,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Alpha ODST Helmet";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\odst\squad_helmets\odst_helmet_Alpha_co.paa",
-            "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa",
+            QPATHTOF(data\odst\squad_helmets\odst_helmet_Alpha_co.paa),
+            QPATHTOF(data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -124,8 +124,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         TFAR_ExternalIntercomWirelessCapable = 1;
         // class ItemInfo : ItemInfo {
         //   hiddenSelectionsTextures[] = {
-        //       "armco_armours\data\odst\squad_helmets\odst_helmet_Sabre_co.paa",
-        //       "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa"};
+        //       QPATHTOF(data\odst\squad_helmets\odst_helmet_Sabre_co.paa),
+        //       QPATHTOF(data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa)};
         // };
     };
 
@@ -134,8 +134,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Sabre ODST Helmet";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\odst\squad_helmets\odst_helmet_Sabre_co.paa",
-            "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa",
+            QPATHTOF(data\odst\squad_helmets\odst_helmet_Sabre_co.paa),
+            QPATHTOF(data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -145,8 +145,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Zulu ODST Helmet";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\odst\squad_helmets\odst_helmet_Zulu_co.paa",
-            "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa",
+            QPATHTOF(data\odst\squad_helmets\odst_helmet_Zulu_co.paa),
+            QPATHTOF(data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -157,8 +157,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Phoenix ODST Helmet";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\odst\squad_helmets\odst_helmet_Phoenix_co.paa",
-            "armco_armours\data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa",
+            QPATHTOF(data\odst\squad_helmets\odst_helmet_Phoenix_co.paa),
+            QPATHTOF(data\odst\squad_helmets\visors\odst_helmet_visor_ca.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -171,7 +171,7 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Alpha ODST Helmet (DP)";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\odst\squad_helmets\odst_helmet_Alpha_co.paa"
+            QPATHTOF(data\odst\squad_helmets\odst_helmet_Alpha_co.paa)
         };
         ace_hearing_protection = 0.95;
         TFAR_ExternalIntercomWirelessCapable = 1;
@@ -182,7 +182,7 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Sabre ODST Helmet (DP)";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\odst\squad_helmets\odst_helmet_Sabre_co.paa"
+            QPATHTOF(data\odst\squad_helmets\odst_helmet_Sabre_co.paa)
         };
     };
 
@@ -191,7 +191,7 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Zulu ODST Helmet (DP)";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\odst\squad_helmets\odst_helmet_Zulu_co.paa"
+            QPATHTOF(data\odst\squad_helmets\odst_helmet_Zulu_co.paa)
         };
     };
 
@@ -200,6 +200,6 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         displayname = "[ARMCO][Y] Phoenix ODST Helmet (DP)";
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\odst\squad_helmets\odst_helmet_Phoenix_co.paa"
+            QPATHTOF(data\odst\squad_helmets\odst_helmet_Phoenix_co.paa)
         };
     };

@@ -5,7 +5,7 @@ class Flag_White_F;
     scopeCurator = 2;
     hiddenSelections[] = {"Camo_1"};
     hiddenSelectionsTextures[] = {
-        "armco_armours\data\flags\flag_armco_ca.paa"};
+        QPATHTOF(data\flags\flag_armco_ca.paa)};
   };
 
 // importing the base classes from ARMA and OPTRE
@@ -56,8 +56,8 @@ class ARMCO_Base_Soldier : SoldierWB {
   respawnMagazines[] = {};
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_alpha_co.paa",
-      "armco_armours\data\uniforms\uniform_alpha_co.paa"};
+      QPATHTOF(data\uniforms\uniform_alpha_co.paa),
+      QPATHTOF(data\uniforms\uniform_alpha_co.paa)};
 
   class EventHandlers: EventHandlers
 		{
@@ -218,8 +218,8 @@ class ARMCO_Soldier_A_Rifle : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_alpha_co.paa",
-      "armco_armours\data\uniforms\uniform_alpha_co.paa"};
+      QPATHTOF(data\uniforms\uniform_alpha_co.paa),
+      QPATHTOF(data\uniforms\uniform_alpha_co.paa)};
 };
 class ARMCO_Soldier_A_EOD : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -229,8 +229,8 @@ class ARMCO_Soldier_A_EOD : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_alpha_eod_co.paa",
-      "armco_armours\data\uniforms\uniform_alpha_eod_co.paa"};
+      QPATHTOF(data\uniforms\uniform_alpha_eod_co.paa),
+      QPATHTOF(data\uniforms\uniform_alpha_eod_co.paa)};
 };
 class ARMCO_Soldier_A_Medical : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -240,8 +240,8 @@ class ARMCO_Soldier_A_Medical : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_alpha_medic_co.paa",
-      "armco_armours\data\uniforms\uniform_alpha_medic_co.paa"};
+      QPATHTOF(data\uniforms\uniform_alpha_medic_co.paa),
+      QPATHTOF(data\uniforms\uniform_alpha_medic_co.paa)};
 };
 class ARMCO_Soldier_S_Rifle : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -251,8 +251,8 @@ class ARMCO_Soldier_S_Rifle : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_sabre_co.paa",
-      "armco_armours\data\uniforms\uniform_sabre_co.paa"};
+      QPATHTOF(data\uniforms\uniform_sabre_co.paa),
+      QPATHTOF(data\uniforms\uniform_sabre_co.paa)};
 };
 class ARMCO_Soldier_S_EOD : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -262,8 +262,8 @@ class ARMCO_Soldier_S_EOD : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_sabre_eod_co.paa",
-      "armco_armours\data\uniforms\uniform_sabre_eod_co.paa"};
+      QPATHTOF(data\uniforms\uniform_sabre_eod_co.paa),
+      QPATHTOF(data\uniforms\uniform_sabre_eod_co.paa)};
 };
 class ARMCO_Soldier_S_Medical : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -273,8 +273,8 @@ class ARMCO_Soldier_S_Medical : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_sabre_medic_co.paa",
-      "armco_armours\data\uniforms\uniform_sabre_medic_co.paa"};
+      QPATHTOF(data\uniforms\uniform_sabre_medic_co.paa),
+      QPATHTOF(data\uniforms\uniform_sabre_medic_co.paa)};
 };
 class ARMCO_Soldier_Z_Rifle : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -284,8 +284,8 @@ class ARMCO_Soldier_Z_Rifle : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_zulu_co.paa",
-      "armco_armours\data\uniforms\uniform_zulu_co.paa"};
+      QPATHTOF(data\uniforms\uniform_zulu_co.paa),
+      QPATHTOF(data\uniforms\uniform_zulu_co.paa)};
 };
 class ARMCO_Soldier_Z_EOD : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -295,8 +295,8 @@ class ARMCO_Soldier_Z_EOD : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_zulu_eod_co.paa",
-      "armco_armours\data\uniforms\uniform_zulu_eod_co.paa"};
+      QPATHTOF(data\uniforms\uniform_zulu_eod_co.paa),
+      QPATHTOF(data\uniforms\uniform_zulu_eod_co.paa)};
 };
 class ARMCO_Soldier_Z_Medical : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -306,8 +306,8 @@ class ARMCO_Soldier_Z_Medical : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_zulu_medic_co.paa",
-      "armco_armours\data\uniforms\uniform_zulu_medic_co.paa"};
+      QPATHTOF(data\uniforms\uniform_zulu_medic_co.paa),
+      QPATHTOF(data\uniforms\uniform_zulu_medic_co.paa)};
 };
 class ARMCO_Soldier_P_Rifle : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -317,8 +317,8 @@ class ARMCO_Soldier_P_Rifle : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_phoenix_co.paa",
-      "armco_armours\data\uniforms\uniform_phoenix_co.paa"};
+      QPATHTOF(data\uniforms\uniform_phoenix_co.paa),
+      QPATHTOF(data\uniforms\uniform_phoenix_co.paa)};
 };
 class ARMCO_Soldier_P_EOD : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -328,8 +328,8 @@ class ARMCO_Soldier_P_EOD : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_phoenix_eod_co.paa",
-      "armco_armours\data\uniforms\uniform_phoenix_eod_co.paa"};
+      QPATHTOF(data\uniforms\uniform_phoenix_eod_co.paa),
+      QPATHTOF(data\uniforms\uniform_phoenix_eod_co.paa)};
 };
 class ARMCO_Soldier_P_Medical : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -339,8 +339,8 @@ class ARMCO_Soldier_P_Medical : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_phoenix_medic_co.paa",
-      "armco_armours\data\uniforms\uniform_phoenix_medic_co.paa"};
+      QPATHTOF(data\uniforms\uniform_phoenix_medic_co.paa),
+      QPATHTOF(data\uniforms\uniform_phoenix_medic_co.paa)};
 };
 // ODST Uniforms
 // black
@@ -354,8 +354,8 @@ class ARMCO_Soldier_ODST_BLK : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_odst_black_co.paa",
-      "armco_armours\data\uniforms\uniform_odst_black_co.paa"};
+      QPATHTOF(data\uniforms\uniform_odst_black_co.paa),
+      QPATHTOF(data\uniforms\uniform_odst_black_co.paa)};
 };
 class ARMCO_Soldier_ODST_camo : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -365,8 +365,8 @@ class ARMCO_Soldier_ODST_camo : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_odst_camo_co.paa",
-      "armco_armours\data\uniforms\uniform_odst_camo_co.paa"};
+      QPATHTOF(data\uniforms\uniform_odst_camo_co.paa),
+      QPATHTOF(data\uniforms\uniform_odst_camo_co.paa)};
 };
 class ARMCO_Soldier_ODST_M90 : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -376,8 +376,8 @@ class ARMCO_Soldier_ODST_M90 : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_odst_M90_camo_co.paa",
-      "armco_armours\data\uniforms\uniform_odst_M90_camo_co.paa"};
+      QPATHTOF(data\uniforms\uniform_odst_M90_camo_co.paa),
+      QPATHTOF(data\uniforms\uniform_odst_M90_camo_co.paa)};
 };
 class ARMCO_Soldier_ODST_GDJungle : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -387,8 +387,8 @@ class ARMCO_Soldier_ODST_GDJungle : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_a_gdjungle_CO.paa",
-      "armco_armours\data\uniforms\uniform_a_gdjungle_CO.paa"};
+      QPATHTOF(data\uniforms\uniform_a_gdjungle_CO.paa),
+      QPATHTOF(data\uniforms\uniform_a_gdjungle_CO.paa)};
 };
 //BDUs made by Belhun
 class ARMCO_Soldier_ODST_Dark_Mountain : ARMCO_Base_Soldier {
@@ -399,8 +399,8 @@ class ARMCO_Soldier_ODST_Dark_Mountain : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_a_gddmount_CO.paa",
-      "armco_armours\data\uniforms\uniform_a_gddmount_CO.paa"};
+      QPATHTOF(data\uniforms\uniform_a_gddmount_CO.paa),
+      QPATHTOF(data\uniforms\uniform_a_gddmount_CO.paa)};
 };
 class ARMCO_Soldier_ODST_New_Dark_Mountain : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -410,8 +410,8 @@ class ARMCO_Soldier_ODST_New_Dark_Mountain : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_a_newdarkdigitalgreen_CO.paa",
-      "armco_armours\data\uniforms\uniform_a_newdarkdigitalgreen_CO.paa"};
+      QPATHTOF(data\uniforms\uniform_a_newdarkdigitalgreen_CO.paa),
+      QPATHTOF(data\uniforms\uniform_a_newdarkdigitalgreen_CO.paa)};
 };
 class ARMCO_Soldier_ODST_DDRKWDL : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -421,8 +421,8 @@ class ARMCO_Soldier_ODST_DDRKWDL : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_a_darkwoodland_CO.paa",
-      "armco_armours\data\uniforms\uniform_a_darkwoodland_CO.paa"};
+      QPATHTOF(data\uniforms\uniform_a_darkwoodland_CO.paa),
+      QPATHTOF(data\uniforms\uniform_a_darkwoodland_CO.paa)};
 };
 class ARMCO_Soldier_ODST_DWLD : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -432,8 +432,8 @@ class ARMCO_Soldier_ODST_DWLD : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\uniforms\uniform_a_DigitalWoodland_CO.paa",
-      "armco_armours\data\uniforms\uniform_a_DigitalWoodland_CO.paa"};
+      QPATHTOF(data\uniforms\uniform_a_DigitalWoodland_CO.paa),
+      QPATHTOF(data\uniforms\uniform_a_DigitalWoodland_CO.paa)};
 };
 //Scurity BDU
 class ARMCO_Soldier_SEC : ARMCO_Base_Soldier {
@@ -444,7 +444,7 @@ class ARMCO_Soldier_SEC : ARMCO_Base_Soldier {
   model = "\A3\Characters_F_Tank\Uniforms\U_Tank_crew_F.p3d";
   hiddenSelections[] = {"camo", "insignia"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\security\uniform\uniform_armco_security_co.paa"};
+      QPATHTOF(data\security\uniform\uniform_armco_security_co.paa)};
 };
 class ARMCO_Soldier_ODST_SEC : ARMCO_Base_Soldier {
   dlc = "ARMCO";
@@ -454,6 +454,6 @@ class ARMCO_Soldier_ODST_SEC : ARMCO_Base_Soldier {
   model = "\OPTRE_UNSC_Units\Army\uniform_odst.p3d";
   hiddenSelections[] = {"camo", "camo2", "insignia", "clan", "A_SlimLeg"};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\security\uniform\uniform_armco_odst_security_co.paa",
-      "armco_armours\data\security\uniform\uniform_armco_odst_security_co.paa"};
+      QPATHTOF(data\security\uniform\uniform_armco_odst_security_co.paa),
+      QPATHTOF(data\security\uniform\uniform_armco_odst_security_co.paa)};
 };

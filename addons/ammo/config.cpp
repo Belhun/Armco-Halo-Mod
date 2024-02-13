@@ -44,6 +44,7 @@ class CfgPatches
       	VERSION_CONFIG;
 	};
 };
+#include "CfgFunctions.hpp"
 class CfgSounds
 {
 	class spark2
@@ -51,7 +52,7 @@ class CfgSounds
 		name="spark2";
 		Sound[]=
 		{
-			"\armco_ammo\audio\spark2.ogg",
+			QPATHTOF(audio\spark2.ogg),
 			"db+25",
 			1
 		};
@@ -62,7 +63,7 @@ class CfgSounds
 		name="spark3";
 		Sound[]=
 		{
-			"\armco_ammo\audio\spark3.ogg",
+			QPATHTOF(audio\spark3.ogg),
 			"db+25",
 			1
 		};
@@ -73,7 +74,7 @@ class CfgSounds
 		name="spark4";
 		Sound[]=
 		{
-			"\armco_ammo\audio\spark4.ogg",
+			QPATHTOF(audio\spark4.ogg),
 			"db+25",
 			1
 		};
@@ -124,7 +125,7 @@ class CfgCloudlets
 		randomDirectionPeriod=0.0099999998;
 		randomDirectionIntensity=0.079999998;
 		onTimerScript="";
-		beforeDestroyScript="\armco_ammo\functionsns\unco.sqf";
+		beforeDestroyScript=QFUNC(uncon);
 		lifeTimeVar=0;
 		rotationVelocityVar=1;
 		sizeVar=0;
@@ -172,7 +173,7 @@ class CfgCloudlets
 		randomDirectionPeriod=0.0099999998;
 		randomDirectionIntensity=0.079999998;
 		onTimerScript="";
-		beforeDestroyScript="\armco_ammo\functionsns\uncoAoE.sqf";
+		beforeDestroyScript=QFUNC(uncoAoE);
 		lifeTimeVar=0;
 		rotationVelocityVar=1;
 		sizeVar=0;
@@ -220,7 +221,7 @@ class CfgCloudlets
 		randomDirectionPeriod=0.0099999998;
 		randomDirectionIntensity=0.079999998;
 		onTimerScript="";
-		beforeDestroyScript="\armco_ammo\functionsns\heal.sqf";
+		beforeDestroyScript=QFUNC(heal);
 		lifeTimeVar=0;
 		rotationVelocityVar=1;
 		sizeVar=0;

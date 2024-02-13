@@ -6,11 +6,11 @@ class ARMCO__ODST_Armor : ARMCO_Alpha_ODST_Armor {
   {
     hiddenSelections[] = {};
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa",
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\.paa",
+      QPATHTOF(data\odst\custom_armours\.paa",
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\.paa"};
+      QPATHTOF(data\odst\custom_armours\.paa"};
   class ItemInfo : ItemInfo {
       class ItemInfo: ItemInfo
   {
@@ -62,11 +62,11 @@ class ARMCO_Addy_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Addy_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Addy_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Addy_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Addy_co.paa)};
 };
 class ARMCO_Belhun_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Belhun)";
@@ -111,11 +111,11 @@ class ARMCO_Belhun_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Belhun_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Belhun_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Belhun_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Belhun_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Belhun_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Belhun_co.paa)};
 };
 class ARMCO_Blue_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Blue)";
@@ -139,11 +139,11 @@ class ARMCO_Blue_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_Sniper",     "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Blue_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Blue_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Blue_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Blue_co.paa)};
 };
 class ARMCO_Boone_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Boone)";
@@ -184,11 +184,11 @@ class ARMCO_Boone_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Boone_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Boone_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Boone_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Boone_co.paa)};
 };
 class ARMCO_Burford_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Burford)";
@@ -212,11 +212,11 @@ class ARMCO_Burford_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_Sniper",     "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Burford_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Burford_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Burford_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Burford_co.paa)};
 };
 class ARMCO_Cheese_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Cheese)";
@@ -256,11 +256,11 @@ class ARMCO_Cheese_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Cheese_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Cheese_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Cheese_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Cheese_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Cheese_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Cheese_co.paa)};
 };
 class ARMCO_Ciro_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Ciro)";
@@ -303,11 +303,11 @@ class ARMCO_Ciro_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Ciro_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Ciro_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Ciro_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Ciro_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Ciro_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Ciro_co.paa)};
 };
 class ARMCO_Darkness_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Darkness)";
@@ -331,11 +331,11 @@ class ARMCO_Darkness_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_Sniper",     "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Darkness_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Darkness_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Darkness_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Darkness_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Darkness_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Darkness_co.paa)};
 };
 class ARMCO_Darman_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Darman)";
@@ -373,11 +373,11 @@ class ARMCO_Darman_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Darman_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Darman_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Darman_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Darman_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Darman_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Darman_co.paa)};
 };
 class ARMCO_Extortionist_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Extortionist)";
@@ -415,11 +415,11 @@ class ARMCO_Extortionist_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Extortionist_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Extortionist_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Extortionist_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Extortionist_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Extortionist_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Extortionist_co.paa)};
 };
 class ARMCO_Garfield_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Garfield)";
@@ -459,11 +459,11 @@ class ARMCO_Garfield_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Garf_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Garf_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Garf_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Garf_co.paa)};
 };
 class ARMCO_Merek_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Merek)";
@@ -503,11 +503,11 @@ class ARMCO_Merek_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Merek_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Merek_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Merek_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Merek_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Merek_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Merek_co.paa)};
 };
 class ARMCO_Mini_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Mini)";
@@ -548,11 +548,11 @@ class ARMCO_Mini_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Mini_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Mini_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Mini_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Mini_co.paa)};
 };
 class ARMCO_Nutters_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Nutters)";
@@ -578,11 +578,11 @@ class ARMCO_Nutters_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "APO_Sniper",     "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Nutters_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Nutters_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Nutters_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Nutters_co.paa)};
 };
 class ARMCO_Raziel_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Raziel)";
@@ -627,11 +627,11 @@ class ARMCO_Raziel_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Raz_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Raz_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Raz_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Raz_co.paa)};
 };
 class ARMCO_Reaper_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Reaper)";
@@ -676,11 +676,11 @@ class ARMCO_Reaper_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Reaper_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Reaper_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Reaper_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Reaper_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Reaper_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Reaper_co.paa)};
 };
 class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Red)";
@@ -718,11 +718,11 @@ class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_RedDragon_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_RedDragon_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_RedDragon_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_RedDragon_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_RedDragon_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_RedDragon_co.paa)};
 };
 // class ARMCO_Runic_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 //   displayname = "[ARMCO][Z] ODST Armour (Runic)";
@@ -747,11 +747,11 @@ class ARMCO_Red_ODST_Armor : ARMCO_Alpha_ODST_Armor {
 //                         "APO_Sniper",     "CustomKit_Scorch"};
 //     };
 //   hiddenSelectionsTextures[] = {
-//       "armco_armours\data\odst\custom_vest\vest_odst_Runic_co.paa",
+//       QPATHTOF(data\odst\custom_vest\vest_odst_Runic_co.paa),
 //       "optre_unsc_units\army\data\armor_odst_co.paa",
-//       "armco_armours\data\odst\custom_armours\odst_legs_Runic_co.paa",
+//       QPATHTOF(data\odst\custom_armours\odst_legs_Runic_co.paa),
 //       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-//       "armco_armours\data\odst\custom_armours\odst_armor_Runic_co.paa"};
+//       QPATHTOF(data\odst\custom_armours\odst_armor_Runic_co.paa)};
 // };
 class ARMCO_Shaw_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Shaw)";
@@ -792,11 +792,11 @@ class ARMCO_Shaw_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Shaw_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Shaw_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Shaw_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Shaw_co.paa)};
 };
 class ARMCO_VJ_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (VJ)";
@@ -839,11 +839,11 @@ class ARMCO_VJ_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Super_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Super_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_VJ_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_VJ_co.paa)};
 };
 class ARMCO_Wolffe_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   displayname = "[ARMCO][Z] ODST Armour (Wolffe)";
@@ -888,9 +888,9 @@ class ARMCO_Wolffe_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
     };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\odst\custom_vest\vest_odst_Black_co.paa",
+      QPATHTOF(data\odst\custom_vest\vest_odst_Black_co.paa),
       "optre_unsc_units\army\data\armor_odst_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_legs_Wolffe_co.paa",
+      QPATHTOF(data\odst\custom_armours\odst_legs_Wolffe_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\custom_armours\odst_armor_Wolffe_co.paa"};
+      QPATHTOF(data\odst\custom_armours\odst_armor_Wolffe_co.paa)};
 };

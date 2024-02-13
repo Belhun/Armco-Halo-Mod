@@ -57,8 +57,8 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_equipment\data\h_s1onir_m_nutters.paa",
-            "armco_equipment\data\h_s1onir_v_nutters.paa",
+            QPATHTOF(data\h_s1onir_m_nutters.paa),
+            QPATHTOF(data\h_s1onir_v_nutters.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -78,7 +78,7 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_equipment\data\h_s1onir_m_nutters.paa",
+            QPATHTOF(data\h_s1onir_m_nutters.paa),
             "V_FZ_Armor\Data\Helmets\V_S1ONIR_CLR_V_CA",
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
@@ -100,7 +100,7 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_equipment\data\h_ch252_des_alpha.paa",
+            QPATHTOF(data\h_ch252_des_alpha.paa),
             "optre_unsc_units\army\data\helmet_visor_ca.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
@@ -121,8 +121,8 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_equipment\data\h_ch252_des_alpha.paa",
-            "armco_equipment\data\h_ch252_v_gold.paa",
+            QPATHTOF(data\h_ch252_des_alpha.paa),
+            QPATHTOF(data\h_ch252_v_gold.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -144,8 +144,8 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_equipmentch252_des_alpha_tl.paa",
-            "armco_equipment\data\h_ch252_v_gold.paa",
+            QPATHTOF(ch252_des_alpha_tl.paa),
+            QPATHTOF(data\h_ch252_v_gold.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -157,8 +157,8 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_equipment\data\h_ch252_des_alpha_sl.paa",
-            "armco_equipment\data\h_ch252_v_gold.paa",
+            QPATHTOF(data\h_ch252_des_alpha_sl.paa),
+            QPATHTOF(data\h_ch252_v_gold.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -175,8 +175,8 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
-            "armco_equipment\data\h_ch252_v_gold.paa",
+            QPATHTOF(data\marine\helmets\helmet_alpha_co.paa),
+            QPATHTOF(data\h_ch252_v_gold.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -198,8 +198,8 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_sabre_co.paa",
-            "armco_equipment\data\h_ch252_v_gold.paa",
+            QPATHTOF(data\marine\helmets\helmet_sabre_co.paa),
+            QPATHTOF(data\h_ch252_v_gold.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -211,8 +211,8 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
-            "armco_equipment\data\h_ch252_v_gold.paa",
+            QPATHTOF(data\marine\helmets\helmet_zulu_co.paa),
+            QPATHTOF(data\h_ch252_v_gold.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -224,8 +224,8 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_phoenix_co.paa",
-            "armco_equipment\data\h_ch252_v_gold.paa",
+            QPATHTOF(data\marine\helmets\helmet_phoenix_co.paa),
+            QPATHTOF(data\h_ch252_v_gold.paa),
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
@@ -242,7 +242,7 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_equipment\data\h_ch252_des_alpha.paa",
+            QPATHTOF(data\h_ch252_des_alpha.paa),
             "optre_unsc_units\army\data\helmet_visor_ca.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
@@ -270,7 +270,7 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_alpha_co.paa",
+            QPATHTOF(data\marine\helmets\helmet_alpha_co.paa),
             "optre_unsc_units\army\data\helmet_visor_ca.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
@@ -293,7 +293,7 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_sabre_co.paa",
+            QPATHTOF(data\marine\helmets\helmet_sabre_co.paa),
             "optre_unsc_units\army\data\helmet_visor_ca.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
@@ -306,7 +306,7 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_zulu_co.paa",
+            QPATHTOF(data\marine\helmets\helmet_zulu_co.paa),
             "optre_unsc_units\army\data\helmet_visor_ca.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
@@ -319,7 +319,7 @@ class CfgWeapons
 
         hiddenSelectionsTextures[] =
         {
-            "armco_armours\data\marine\helmets\helmet_phoenix_co.paa",
+            QPATHTOF(data\marine\helmets\helmet_phoenix_co.paa),
             "optre_unsc_units\army\data\helmet_visor_ca.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"

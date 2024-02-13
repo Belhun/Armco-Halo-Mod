@@ -173,9 +173,9 @@ class ARMCO_Alpha_Armor : ARMCO_Base_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_alpha_co.paa",
-      "armco_armours\data\marine\armors\armour_alpha_co.paa",
-      "armco_armours\data\marine\armors\legs_alpha_co.paa",
+      QPATHTOF(data\marine\armors\vest_alpha_co.paa),
+      QPATHTOF(data\marine\armors\armour_alpha_co.paa),
+      QPATHTOF(data\marine\armors\legs_alpha_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -229,9 +229,9 @@ class ARMCO_Sabre_Armor : ARMCO_Alpha_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_sabre_co.paa",
-      "armco_armours\data\marine\armors\armour_sabre_co.paa",
-      "armco_armours\data\marine\armors\legs_sabre_co.paa",
+      QPATHTOF(data\marine\armors\vest_sabre_co.paa),
+      QPATHTOF(data\marine\armors\armour_sabre_co.paa),
+      QPATHTOF(data\marine\armors\legs_sabre_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -287,9 +287,9 @@ class ARMCO_Zulu_Armor : ARMCO_Alpha_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_zulu_co.paa",
-      "armco_armours\data\marine\armors\armour_zulu_co.paa",
-      "armco_armours\data\marine\armors\legs_zulu_co.paa",
+      QPATHTOF(data\marine\armors\vest_zulu_co.paa),
+      QPATHTOF(data\marine\armors\armour_zulu_co.paa),
+      QPATHTOF(data\marine\armors\legs_zulu_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -343,9 +343,9 @@ class ARMCO_Zulu_Ghillie_Armor : OPTRE_UNSC_M52A_Armor_Sniper_WDL {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_zulu_co.paa",
-      "armco_armours\data\marine\armors\armour_zulu_co.paa",
-      "armco_armours\data\marine\armors\legs_zulu_co.paa",
+      QPATHTOF(data\marine\armors\vest_zulu_co.paa),
+      QPATHTOF(data\marine\armors\armour_zulu_co.paa),
+      QPATHTOF(data\marine\armors\legs_zulu_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -398,9 +398,9 @@ class ARMCO_Phoenix_Armor : ARMCO_Alpha_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_phoenix_co.paa",
-      "armco_armours\data\marine\armors\armour_phoenix_co.paa",
-      "armco_armours\data\marine\armors\legs_phoenix_co.paa",
+      QPATHTOF(data\marine\armors\vest_phoenix_co.paa),
+      QPATHTOF(data\marine\armors\armour_phoenix_co.paa),
+      QPATHTOF(data\marine\armors\legs_phoenix_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -451,9 +451,9 @@ class ARMCO_Medical_Armor : ARMCO_Alpha_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_medic_co.paa",
-      "armco_armours\data\marine\armors\armor_medic_co.paa",
-      "armco_armours\data\marine\armors\legs_medic_co.paa",
+      QPATHTOF(data\marine\armors\vest_medic_co.paa),
+      QPATHTOF(data\marine\armors\armor_medic_co.paa),
+      QPATHTOF(data\marine\armors\legs_medic_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -504,9 +504,9 @@ class ARMCO_EOD_Armor : ARMCO_Alpha_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_eod_co.paa",
-      "armco_armours\data\marine\armors\armor_eod_co.paa",
-      "armco_armours\data\marine\armors\legs_eod_co.paa",
+      QPATHTOF(data\marine\armors\vest_eod_co.paa),
+      QPATHTOF(data\marine\armors\armor_eod_co.paa),
+      QPATHTOF(data\marine\armors\legs_eod_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -553,9 +553,9 @@ class ARMCO_Alpha_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_alpha_co.paa",
-      "armco_armours\data\marine\armors\armour_alpha_co.paa",
-      "armco_armours\data\marine\armors\legs_alpha_co.paa",
+      QPATHTOF(data\marine\armors\vest_alpha_co.paa),
+      QPATHTOF(data\marine\armors\armour_alpha_co.paa),
+      QPATHTOF(data\marine\armors\legs_alpha_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -606,9 +606,9 @@ class ARMCO_Sabre_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_sabre_co.paa",
-      "armco_armours\data\marine\armors\armour_sabre_co.paa",
-      "armco_armours\data\marine\armors\legs_sabre_co.paa",
+      QPATHTOF(data\marine\armors\vest_sabre_co.paa),
+      QPATHTOF(data\marine\armors\armour_sabre_co.paa),
+      QPATHTOF(data\marine\armors\legs_sabre_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -658,9 +658,9 @@ class ARMCO_Phoenix_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_phoenix_co.paa",
-      "armco_armours\data\marine\armors\armour_phoenix_co.paa",
-      "armco_armours\data\marine\armors\legs_phoenix_co.paa",
+      QPATHTOF(data\marine\armors\vest_phoenix_co.paa),
+      QPATHTOF(data\marine\armors\armour_phoenix_co.paa),
+      QPATHTOF(data\marine\armors\legs_phoenix_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -709,9 +709,9 @@ class ARMCO_Medical_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_medic_co.paa",
-      "armco_armours\data\marine\armors\armor_medic_co.paa",
-      "armco_armours\data\marine\armors\legs_medic_co.paa",
+      QPATHTOF(data\marine\armors\vest_medic_co.paa),
+      QPATHTOF(data\marine\armors\armor_medic_co.paa),
+      QPATHTOF(data\marine\armors\legs_medic_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -759,9 +759,9 @@ class ARMCO_EOD_Ghillie_Armor : ARMCO_Zulu_Ghillie_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_eod_co.paa",
-      "armco_armours\data\marine\armors\armor_eod_co.paa",
-      "armco_armours\data\marine\armors\legs_eod_co.paa",
+      QPATHTOF(data\marine\armors\vest_eod_co.paa),
+      QPATHTOF(data\marine\armors\armor_eod_co.paa),
+      QPATHTOF(data\marine\armors\legs_eod_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       "optre_unsc_units\army\data\odst_armor_co.paa"};
 };
@@ -812,11 +812,11 @@ class ARMCO_Alpha_ODST_Armor : OPTRE_UNSC_M52D_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_alpha_co.paa",
-      "armco_armours\data\marine\armors\armour_alpha_co.paa",
-      "armco_armours\data\odst\squad_armors\legs_odst_Alpha_co.paa",
+      QPATHTOF(data\marine\armors\vest_alpha_co.paa),
+      QPATHTOF(data\marine\armors\armour_alpha_co.paa),
+      QPATHTOF(data\odst\squad_armors\legs_odst_Alpha_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\squad_armors\odst_armor_Alpha_co.paa"};
+      QPATHTOF(data\odst\squad_armors\odst_armor_Alpha_co.paa)};
 };
 class ARMCO_Sabre_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
@@ -860,11 +860,11 @@ class ARMCO_Sabre_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_sabre_co.paa",
-      "armco_armours\data\marine\armors\armour_sabre_co.paa",
-      "armco_armours\data\odst\squad_armors\legs_odst_sabre_co.paa",
+      QPATHTOF(data\marine\armors\vest_sabre_co.paa),
+      QPATHTOF(data\marine\armors\armour_sabre_co.paa),
+      QPATHTOF(data\odst\squad_armors\legs_odst_sabre_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\squad_armors\odst_armor_sabre_co.paa"};
+      QPATHTOF(data\odst\squad_armors\odst_armor_sabre_co.paa)};
 };
 class ARMCO_Zulu_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
@@ -909,11 +909,11 @@ class ARMCO_Zulu_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_zulu_camo_co.paa",
-      "armco_armours\data\marine\armors\armour_zulu_camo_co.paa",
-      "armco_armours\data\odst\squad_armors\legs_odst_Zulu_co.paa",
+      QPATHTOF(data\marine\armors\vest_zulu_camo_co.paa),
+      QPATHTOF(data\marine\armors\armour_zulu_camo_co.paa),
+      QPATHTOF(data\odst\squad_armors\legs_odst_Zulu_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\squad_armors\odst_armor_Zulu_co.paa"};
+      QPATHTOF(data\odst\squad_armors\odst_armor_Zulu_co.paa)};
 };
 class ARMCO_Phoenix_ODST_Armor : ARMCO_Alpha_ODST_Armor {
   dlc = "ARMCO";
@@ -956,10 +956,10 @@ class ARMCO_Phoenix_ODST_Armor : ARMCO_Alpha_ODST_Armor {
                         "CustomKit_Scorch"};
   };
   hiddenSelectionsTextures[] = {
-      "armco_armours\data\marine\armors\vest_phoenix_co.paa",
-      "armco_armours\data\marine\armors\armour_phoenix_co.paa",
-      "armco_armours\data\odst\squad_armors\legs_odst_Phoenix_co.paa",
+      QPATHTOF(data\marine\armors\vest_phoenix_co.paa),
+      QPATHTOF(data\marine\armors\armour_phoenix_co.paa),
+      QPATHTOF(data\odst\squad_armors\legs_odst_Phoenix_co.paa),
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-      "armco_armours\data\odst\squad_armors\odst_armor_Phoenix_co.paa"};
+      QPATHTOF(data\odst\squad_armors\odst_armor_Phoenix_co.paa)};
 };
 
