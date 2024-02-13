@@ -1,0 +1,16 @@
+# ARMCO Halo Retexture CONTRIBUTOR LIST
+#
+# If you contributed, but are not listed here, contact us.
+#
+# Feel free to add yourself to this when creating a PR.
+
+
+# CORE TEAM - CURRENT MAINTAINERS
+Belhun (https://github.com/Belhun)
+DarknessVoid (https://github.com/DarknessVoid)
+
+# CONTRIBUTORS
+Mini
+Gunner(Before rewrite Version)
+Mac(Before rewrite Version)
+Frosty(Before rewrite Version)
