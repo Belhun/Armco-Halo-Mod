@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AHR">
+    <Package name="Main">
+        <Key ID="STR_AHR_Main_URL">
+            <English>https://github.com/AHR-Repair/AHR</English>
+        </Key>
+    </Package>
+</Project>
