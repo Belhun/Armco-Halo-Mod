@@ -14,7 +14,8 @@ PBOConsole.exe -pack %~dp0armco_armours             %~dp0..\..\Export\@armcohalo
 PBOConsole.exe -pack %~dp0armco_items               %~dp0..\..\Export\@armcohalo\Addons\armco_items.pbo
 PBOConsole.exe -pack %~dp0armco_units               %~dp0..\..\Export\@armcohalo\Addons\armco_units.pbo
 PBOConsole.exe -pack %~dp0armco_ammo                %~dp0..\..\Export\@armcohalo\Addons\armco_ammo.pbo
+PBOConsole.exe -pack %~dp0darkmod_4thot_equipment   %~dp0..\..\Export\@armcohalo\Addons\darkmod_4thot_equipment.pbo
 PBOConsole.exe -pack %~dp0darkmod_4thot_fact_nmr    %~dp0..\..\Export\@armcohalo\Addons\darkmod_4thot_fact_nmr.pbo
-PBOConsole.exe -pack %~dp0darkmod_4thot_m808ifv                %~dp0..\..\Export\@armcohalo\Addons\darkmod_4thot_m808ifv.pbo
+PBOConsole.exe -pack %~dp0darkmod_4thot_m808ifv     %~dp0..\..\Export\@armcohalo\Addons\darkmod_4thot_m808ifv.pbo
 
 PAUSE
