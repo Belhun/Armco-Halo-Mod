@@ -1,11 +1,7 @@
 class CfgPatches {
     class darkmod_4thot_m808ifv
 	{
-        weapons[] = 
-        {
-            "4thot_v_M288",
-            "4thot_v_m36v"
-        };
+        weapons[] = {};
         units[] =
         {
             "dm_e_m808b2",
@@ -18,13 +14,19 @@ class CfgPatches {
         magazines[] =
         {
             "4thot_v_50mm_hep_1360",
+            "4thot_v_50mm_he_1360",
+            "4thot_v_50mm_ap_1360",
+            "4thot_v_50mm_hep_680",
+            "4thot_v_50mm_he_680",
+            "4thot_v_50mm_ap_680",
             "4thot_v_50mm_he_910",
             "4thot_v_50mm_ap_450",
             "4thot_v_130mm_heat_2"
         };
         requiredAddons[] = 
             {   
-            "OPTRE_Loadorder"
+                "ARMCO_Armco_Faction",
+                "OPTRE_Loadorder"
             };
 
         author = "Darknessvoid99";
@@ -106,8 +108,48 @@ class CfgMagazines
         ammo = "4thot_c_50x363_hep";
         count = 1360;
 
+        displayName = "1360Rnd 50x363mm HEI-T-PF";
+        displayNameShort = "HEI-T-PF";
+    };
+
+    class 4thot_v_50mm_he_1360 : 4thot_v_50mm_hep_1360
+    {
+        ammo = "4thot_c_50x363_he";
+
         displayName = "1360Rnd 50x363mm HEI-T";
         displayNameShort = "HEI-T";
+    };
+
+    class 4thot_v_50mm_ap_1360 : 4thot_v_50mm_hep_1360
+    {
+        ammo = "4thot_c_50x363_ap";
+
+        displayName = "1360Rnd 50x363mm APFSDS-T";
+        displayNameShort = "APFSDS-T";
+    };
+
+    class 4thot_v_50mm_hep_680 : OPTRE_680Rnd_AA_Shells_Red
+    {
+        ammo = "4thot_c_50x363_hep";
+
+        displayName = "680Rnd 50x363mm HEI-T-PF";
+        displayNameShort = "HEI-T-PF";
+    };
+
+    class 4thot_v_50mm_he_680 : 4thot_v_50mm_hep_680
+    {
+        ammo = "4thot_c_50x363_he";
+
+        displayName = "680Rnd 50x363mm HEI-T";
+        displayNameShort = "HEI-T";
+    };
+
+    class 4thot_v_50mm_ap_680 : 4thot_v_50mm_hep_680
+    {
+        ammo = "4thot_c_50x363_ap";
+
+        displayName = "680Rnd 50x363mm APFSDS-T";
+        displayNameShort = "APFSDS-T";
     };
 
     class 4thot_v_50mm_he_910 : OPTRE_680Rnd_AA_Shells_Red
@@ -124,7 +166,7 @@ class CfgMagazines
         ammo = "4thot_c_50x363_ap";
         count = 450;
 
-        displayName = "910Rnd 50x363mm APFSDS-T";
+        displayName = "450Rnd 50x363mm APFSDS-T";
         displayNameShort = "APFSDS-T";
     };
 
@@ -162,7 +204,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         editorCategory = "ARMCO_Armco_Faction";
-        faction = "ARMCO_PMC";
+        faction = "ARMCO_Armco_Faction";
 
         hiddenSelectionsTextures[] = 
         {
@@ -180,11 +222,8 @@ class CfgVehicles
             {
                 magazines[] = 
                 {
-                    "4thot_v_50mm_hep_1360"
-                };
-                weapons[] =
-                {
-                    "M288_autocannon"
+                    "4thot_v_50mm_hep_680",
+                    "4thot_v_50mm_he_680"
                 };
             };
         };
@@ -197,7 +236,7 @@ class CfgVehicles
 
         displayName = "M808B2E1 Scimitar"
         editorCategory = "ARMCO_Armco_Faction";
-        faction = "ARMCO_PMC";
+        faction = "ARMCO_Armco_Faction";
         editorSubcategory = "OPTRE_EditorSubcategory_IFV";
 
         hiddenSelectionsTextures[] = 
@@ -218,10 +257,6 @@ class CfgVehicles
                 {
                     "4thot_v_50mm_he_910",
                     "4thot_v_50mm_ap_450"
-                };
-                weapons[] =
-                {
-                    "M288_autocannon"
                 };
             };
         };
@@ -248,7 +283,10 @@ class CfgVehicles
         scopeCurator = 2;
 
         editorCategory = "ARMCO_Armco_Faction";
-        faction = "ARMCO_PMC";
+        faction = "ARMCO_Armco_Faction";
+
+        radarType = 0;
+
 
         hiddenSelectionsTextures[] = 
         {
@@ -266,15 +304,11 @@ class CfgVehicles
             {
                 magazines[] = 
                 {
-                    "4thot_v_50mm_hep_1360",
+                    "4thot_v_50mm_hep_680",
+                    "4thot_v_50mm_he_680",
                     "OPTRE_2Rnd_ASGM4_rockets",
                     "OPTRE_2Rnd_ASGM4_rockets",
                     "OPTRE_2Rnd_ASGM4_rockets"
-                };
-                weapons[] =
-                {
-                    "M288_autocannon",
-                    "OPTRE_M21"
                 };
             };
         };
@@ -287,8 +321,10 @@ class CfgVehicles
 
         displayName = "M808B2A1E1 Scimitar"
         editorCategory = "ARMCO_Armco_Faction";
-        faction = "ARMCO_PMC";
+        faction = "ARMCO_Armco_Faction";
         editorSubcategory = "OPTRE_EditorSubcategory_IFV";
+
+        radarType = 0;
 
         hiddenSelectionsTextures[] = 
         {
@@ -310,11 +346,6 @@ class CfgVehicles
                     "4thot_v_50mm_ap_450",
                     "4thot_v_130mm_heat_2"
                 };
-                weapons[] =
-                {
-                    "M288_autocannon",
-                    "4thot_v_m36v"
-                };
             };
         };
     };
@@ -323,7 +354,6 @@ class CfgVehicles
 class CfgWeapons
 {
     class autocannon_35mm;
-
     class M288_autocannon : autocannon_35mm
     {
         displayName = "M288 Quad 50x363mm Autocannons";
@@ -335,37 +365,28 @@ class CfgWeapons
         {
             "OPTRE_680Rnd_AA_Shells_Red",
             "4thot_v_50mm_hep_1360",
+            "4thot_v_50mm_he_1360",
+            "4thot_v_50mm_ap_1360",
+            "4thot_v_50mm_hep_680",
+            "4thot_v_50mm_he_680",
+            "4thot_v_50mm_ap_680",
             "4thot_v_50mm_he_910",
             "4thot_v_50mm_ap_450"
         };
     };
 
-    //class M288_autocannon;
-    class 4thot_v_M288 : M288_autocannon
+    class OPTRE_M95;
+    class OPTRE_M21 : OPTRE_M95
     {
-        displayName = "M288 Quad 50x363mm Autocannons";
-        displayNameShort = "50x363mm";
+        displayName = "M700 Dual-Purpose Missile Pods";
+        displayNameShort = "2x AA/ATGM";
 
-        magazineReloadTime = 1;
+        ReloadTime = 1;
+        magazineReloadTime = 10;
 
         magazines[] =
         {
-            "4thot_v_50mm_hep_1360",
-            "4thot_v_50mm_he_910",
-            "4thot_v_50mm_ap_450"
-        };
-    };
-
-    class OPTRE_M21;
-    class 4thot_v_m36v : OPTRE_M21
-    {
-        displayName = "M670P ATGM Launcher";
-        displayNameShort = "GAT HEAT";
-
-        ReloadTime = 2.5;
-
-        magazines[] =
-        {
+            "OPTRE_2Rnd_ASGM4_rockets",
             "4thot_v_130mm_heat_2"
         };
     };
