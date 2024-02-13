@@ -1,0 +1,14 @@
+name = "AHR - Armco Halo Retextured";
+dir = "@AHR_armcoHaloRetexture";
+picture = "KAMLogoHighRes.paa";
+actionName = "Github";
+action = "https://github.com/Tomcat-SG/KAM";
+logo = "KAMLogoLowRes.paa";
+logoOver = "KAMLogoLowRes.paa";
+tooltip = "AHR Repair";
+tooltipOwned = "AHR Repair";
+overview = "Medical Menu but for Repair";
+author = "ARMCO team";
+overviewPicture = "KAMLogoLowRes.paa";
+overviewText = "AHR Armco Halo Retextured";
+overviewFootnote = "";
