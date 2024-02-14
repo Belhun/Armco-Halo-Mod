@@ -125,7 +125,7 @@ class CfgCloudlets
 		randomDirectionPeriod=0.0099999998;
 		randomDirectionIntensity=0.079999998;
 		onTimerScript="";
-		beforeDestroyScript=QFUNC(uncon);
+		beforeDestroyScript=QPFUNC(uncon);
 		lifeTimeVar=0;
 		rotationVelocityVar=1;
 		sizeVar=0;
@@ -173,7 +173,7 @@ class CfgCloudlets
 		randomDirectionPeriod=0.0099999998;
 		randomDirectionIntensity=0.079999998;
 		onTimerScript="";
-		beforeDestroyScript=QFUNC(uncoAoE);
+		beforeDestroyScript=QPFUNC(uncoAoE);
 		lifeTimeVar=0;
 		rotationVelocityVar=1;
 		sizeVar=0;
@@ -221,7 +221,7 @@ class CfgCloudlets
 		randomDirectionPeriod=0.0099999998;
 		randomDirectionIntensity=0.079999998;
 		onTimerScript="";
-		beforeDestroyScript=QFUNC(heal);
+		beforeDestroyScript=QPFUNC(heal);
 		lifeTimeVar=0;
 		rotationVelocityVar=1;
 		sizeVar=0;

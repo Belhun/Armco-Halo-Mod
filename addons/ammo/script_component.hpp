@@ -1,4 +1,4 @@
-#define COMPONENT Ammo
+#define COMPONENT ammo
 #define COMPONENT_BEAUTIFIED AHR - Ammo
 #include "\x\AHR\addons\main\script_mod.hpp"
 

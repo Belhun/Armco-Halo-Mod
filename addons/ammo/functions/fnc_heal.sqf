@@ -21,7 +21,7 @@
  *
  * Public: [Yes/No]
  */
-_AOE = 0.4;
+_AOE = 0.5;
 {
 	[_x] call ace_medical_treatment_fnc_fullHealLocal;
 } forEach (nearestObjects [_this, [

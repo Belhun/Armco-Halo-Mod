@@ -39,7 +39,7 @@
 		randomDirectionPeriod=0.0099999998;
 		randomDirectionIntensity=0.079999998;
 		onTimerScript="";
-		beforeDestroyScript=QFUNC(heal);
+		beforeDestroyScript=QPFUNC(heal);
 		lifeTimeVar=0;
 		rotationVelocityVar=1;
 		sizeVar=0;

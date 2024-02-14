@@ -40,6 +40,7 @@
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 #define ANY_OF(ARRAY,CONDITION) (ARRAY findIf {CONDITION} != -1)
 
+#define QPFUNC(var1) QPATHTOF(functions\DOUBLES(fnc,var1).sqf)
 // ACEX Merge
 #define ACEX_PREFIX acex
 #define XADDON DOUBLES(ACEX_PREFIX,COMPONENT)
