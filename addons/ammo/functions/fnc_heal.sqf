@@ -30,12 +30,3 @@ _AOE = 0.4;
 "SoldierEB",
 "SoldierWB"
 ], _AOE]);
-
-
-
-
-
-
-
-
-
