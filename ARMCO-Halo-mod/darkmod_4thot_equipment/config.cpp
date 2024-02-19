@@ -48,6 +48,10 @@ class CfgWeapons
 
     class 4thot_h_s1onir_c_nutters : VES_S1ONIR
     {
+        scope = 2;
+        scopeCurator = 2;
+        ScopeArsenal = 2;
+
         dlc = "ARMCO";
         author = "Darknessvoid99";
         displayName = "[A] S1/ONI/R Helmet (Nutters)";
@@ -60,6 +64,7 @@ class CfgWeapons
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
 
+        ace_hearing_lowerVolume = 0.4;
         ace_hearing_protection = 0.95;
         TFAR_ExternalIntercomWirelessCapable = 1;
     };
@@ -69,6 +74,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         ScopeArsenal = 2;
+
         dlc = "ARMCO";
         author = "Darknessvoid99";
         displayName = "[A] S1/ONI/R Helmet (Nutters)";
@@ -81,6 +87,7 @@ class CfgWeapons
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
 
+        ace_hearing_lowerVolume = 0.1;
         ace_hearing_protection = 0.95;
         TFAR_ExternalIntercomWirelessCapable = 1;
     };
@@ -166,6 +173,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         ScopeArsenal = 2;
+
         dlc = "ARMCO";
         author = "Belhun";
         displayname = "[A] Olive ECH252 Helmet (Alpha)";
@@ -185,6 +193,7 @@ class CfgWeapons
         };
         optreHUDStyle="ODST_1";
 
+        ace_hearing_lowerVolume = 0.4;
         ace_hearing_protection = 0.95;
         TFAR_ExternalIntercomWirelessCapable = 1;
     };
@@ -261,6 +270,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         ScopeArsenal = 2;
+        
         dlc = "ARMCO";
         author = "Belhun";
         displayname = "[A] Olive ECH252 Helmet (Alpha)";
@@ -280,6 +290,7 @@ class CfgWeapons
         };
         optreHUDStyle="ODST_1";
 
+        ace_hearing_lowerVolume = 0.1;
         ace_hearing_protection = 0.95;
         TFAR_ExternalIntercomWirelessCapable = 1;
     };

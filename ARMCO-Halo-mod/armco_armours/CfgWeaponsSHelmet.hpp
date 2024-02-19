@@ -110,6 +110,10 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
 
     class Alpha_CH252D_Helmet : OPTRE_UNSC_CH252D_Helmet
     {
+        scope = 2;
+        scopeCurator = 2;
+        ScopeArsenal = 2;
+
         dlc = "ARMCO";
         author = "Belhun";
         displayname = "[ARMCO][Y] Alpha ODST Helmet";
@@ -120,6 +124,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
+
+        ace_hearing_lowerVolume = 0.4;
         ace_hearing_protection = 0.95;
         TFAR_ExternalIntercomWirelessCapable = 1;
         // class ItemInfo : ItemInfo {
@@ -166,6 +172,10 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
 
     class Alpha_CH252D_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
     {
+        scope = 2;
+        scopeCurator = 2;
+        ScopeArsenal = 2;
+
         dlc = "ARMCO";
         author = "Belhun";
         displayname = "[ARMCO][Y] Alpha ODST Helmet (DP)";
@@ -173,6 +183,8 @@ class EOD_CH252_Helmet : Alpha_CH252_Helmet {
         {
             "armco_armours\data\odst\squad_helmets\odst_helmet_Alpha_co.paa"
         };
+
+        ace_hearing_lowerVolume = 0.1;
         ace_hearing_protection = 0.95;
         TFAR_ExternalIntercomWirelessCapable = 1;
     };

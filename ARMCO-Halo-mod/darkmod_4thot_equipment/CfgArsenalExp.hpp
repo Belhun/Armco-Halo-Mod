@@ -54,18 +54,6 @@ class XtdGearInfos
         };
     //Custom
     //ODST
-        class 4thot_h_s1onir_c_nutters_dp
-        {
-            Model="4thot_h_nuthelm";
-            Custom="Nutters";
-            polar="polar0";
-        };
-        class 4thot_h_s1onir_c_nutters
-        {
-            Model="4thot_h_nuthelm";
-            Custom="Nutters";
-            polar="polar1";
-        };
     };
 };
 
@@ -112,35 +100,6 @@ class XtdGearModels
 				};
 			};
 
-            class polar
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-				label="Polarization";
-				values[]=
-				{
-					"polar0",
-					"polar1"
-				};
-                class polar0
-				{
-					label="OFF";
-				};
-                class polar1
-				{
-					label="ON";
-				};
-			};
-		};
-
-        class 4thot_h_nuthelm
-		{
-			options[]=
-			{
-                "polar"
-			};
-			label="[ARMCO] ODST S1/ONI/R";
             class polar
 			{
 				alwaysSelectable=1;

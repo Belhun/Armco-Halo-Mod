@@ -421,7 +421,7 @@ class XtdGearInfos
             Custom="Mini";
             polar="polar0";
         };
-        class Nutters_CH252D_Helmet_dp
+        class 4thot_h_s1onir_c_nutters_dp
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Nutters";
@@ -542,7 +542,7 @@ class XtdGearInfos
             Custom="Mini";
             polar="polar1";
         };
-        class Nutters_CH252D_Helmet
+        class 4thot_h_s1onir_c_nutters
         {
             Model="ARMCO_Custom_ODST_Helmets";
             Custom="Nutters";
