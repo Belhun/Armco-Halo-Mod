@@ -28,8 +28,7 @@ class CfgPatches {
         requiredAddons[] =
             {
             "OPTRE_Loadorder",
-            "ARMCO_Units_Army",
-            "V_FZ_Armor"
+            "ARMCO_Units_Army"
             };
 
         author = "Darknessvoid99";
@@ -43,10 +42,10 @@ class CfgWeapons
     class OPTRE_UNSC_CH252_Helmet_WDL;
     class OPTRE_UNSC_CH252_Helmet2_Vacuum_WDL;
     class OPTRE_UNSC_CH252_Helmet_Vacuum_WDL;
-    class VES_S1ONIR;
-    class VES_S1ONIR_dp;
+    class OPTRE_UNSC_Recon_Helmet;
+    class OPTRE_UNSC_Recon_Helmet_dp;
 
-    class 4thot_h_s1onir_c_nutters : VES_S1ONIR
+    class 4thot_h_s1onir_c_nutters : OPTRE_UNSC_Recon_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -69,7 +68,7 @@ class CfgWeapons
         TFAR_ExternalIntercomWirelessCapable = 1;
     };
 
-    class 4thot_h_s1onir_c_nutters_dp : VES_S1ONIR_dp
+    class 4thot_h_s1onir_c_nutters_dp : OPTRE_UNSC_Recon_Helmet_dp
     {
         scope = 2;
         scopeCurator = 2;
