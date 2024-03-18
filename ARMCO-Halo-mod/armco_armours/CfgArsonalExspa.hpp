@@ -625,50 +625,50 @@ class XtdGearInfos
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Alpha";
-            polar="polar0";
+            polar="polar1";
         };
         class Sabre_CH252D_Helmet
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Sabre";
-            polar="polar0";
+            polar="polar1";
         };
         class Zulu_CH252D_Helmet
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Zulu";
-            polar="polar0";
+            polar="polar1";
         };
         class Phoenix_CH252D_Helmet
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Phoenix";
-            polar="polar0";
+            polar="polar1";
         };
 
         class Alpha_CH252D_Helmet_dp
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Alpha";
-            polar="polar1";
+            polar="polar0";
         };
         class Sabre_CH252D_Helmet_dp
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Sabre";
-            polar="polar1";
+            polar="polar0";
         };
         class Zulu_CH252D_Helmet_dp
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Zulu";
-            polar="polar1";
+            polar="polar0";
         };
         class Phoenix_CH252D_Helmet_dp
         {
             Model="ARMCO_ODST_Squad_Helmet";
             Squads="Phoenix";
-            polar="polar1";
+            polar="polar0";
         };
     //Uniforms
         class Alpha_BDU
