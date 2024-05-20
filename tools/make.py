@@ -57,7 +57,7 @@ if sys.platform == "win32":
     import winreg
 
 ######## GLOBALS #########
-project = "@AHR_armcoHaloRetexture"
+project = "@4thot_ArmcoOperationTREBUCHET"
 project_version = "1.0.0"
 arma3tools_path = ""
 work_drive = ""
@@ -66,11 +66,11 @@ make_root = ""
 release_dir = ""
 module_root_parent = ""
 optionals_root = ""
-key_name = "AHR"
+key_name = "4thot"
 key = ""
 dssignfile = ""
-prefix = "AHR"
-pbo_name_prefix = "AHR_"
+prefix = "4thot"
+pbo_name_prefix = "4thot_"
 signature_blacklist = []
 importantFiles = ["mod.cpp", "KAMLogoHighRes.paa", "KAMLogoLowRes.paa"]
 versionFiles = ["mod.cpp"]

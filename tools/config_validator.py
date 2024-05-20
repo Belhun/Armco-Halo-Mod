@@ -13,7 +13,7 @@ import time
 
 ######## GLOBALS #########
 MAINPREFIX = "x"
-PREFIX = "AHR_"
+PREFIX = "4thot_"
 ##########################
 
 def Fract_Sec(s):
@@ -75,7 +75,7 @@ def fullDump(p):
 def main(argv):
     print("""
   ################################
-  # AHR Repair Config Check #
+  # 4thot Repair Config Check #
   ################################
 """)
 

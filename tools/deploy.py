@@ -21,8 +21,8 @@ TRANSLATIONBODY = """**[ACE3 Translation Guide](http://ace3.acemod.org/wiki/deve
 """
 
 
-REPOUSER = "AHR-ARMCO"
-REPONAME = "AHR"
+REPOUSER = "4thot-ARMCO"
+REPONAME = "4thot"
 REPOPATH = "{}/{}".format(REPOUSER,REPONAME)
 
 

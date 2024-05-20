@@ -16,7 +16,7 @@ import xml.etree.ElementTree as ET
 
 
 ######## GLOBALS #########
-PROJECT_NAME = "AHR"
+PROJECT_NAME = "4thot"
 ##########################
 
 
@@ -68,7 +68,7 @@ def check_stringtable(filepath):
 
         for key in keys:
             key_id = key.get("ID")
-            
+
             # Skip keys that start with "STR_ACE_"
             if key_id.startswith("STR_ACE_"):
                 continue

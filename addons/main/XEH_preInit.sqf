@@ -6,7 +6,7 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CAT "AHR - Armco Halo: Main"
+#define CBA_SETTINGS_CAT "4thotot - Armco Halo: Main"
 
 // //Enable aceExposure things
 // [

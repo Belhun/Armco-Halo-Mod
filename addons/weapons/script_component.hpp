@@ -1,6 +1,6 @@
 #define COMPONENT weapons
-#define COMPONENT_BEAUTIFIED AHR - weapons
-#include "\x\AHR\addons\main\script_mod.hpp"
+#define COMPONENT_BEAUTIFIED 4thotot - weapons
+#include "\x\4thotot\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -15,4 +15,4 @@
 #endif
 
 // #include "\z\ace\addons\medical_engine\script_macros_medical.hpp"
-#include "\x\AHR\addons\main\script_macros.hpp"
+#include "\x\4thotot\addons\main\script_macros.hpp"

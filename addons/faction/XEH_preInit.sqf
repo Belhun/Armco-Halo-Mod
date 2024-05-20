@@ -6,6 +6,6 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_AHR "AHR - ARMCO Halo Retexture: faction"
+#define CBA_SETTINGS_AHR "4thotot - ARMCO Halo Retexture: faction"
 
 ADDON = true;

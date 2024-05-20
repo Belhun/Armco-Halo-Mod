@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 ##################################
-#  AHR Halo Retexture Setup Script  #
+#  4thot Halo Retexture Setup Script  #
 ##################################
 
 import os
@@ -13,14 +13,14 @@ import winreg
 
 ######## GLOBALS #########
 MAINDIR = "x"
-PROJECTDIR = "AHR"
+PROJECTDIR = "4thot"
 ##########################
 
 def main():
     FULLDIR = "{}\\{}".format(MAINDIR,PROJECTDIR)
     print("""
   #################################################
-  # AHR Halo Retexture Development Environment Setup #
+  # 4thot Halo Retexture Development Environment Setup #
   #################################################
 
   This script will create your armco Halo Retexture dev environment for you.

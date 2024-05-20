@@ -58,7 +58,7 @@ def getFunctions(filepath):
 
     fileFuncs = []
     for func in modfuncs:
-        fileFuncs.append("AHR_{0}_fnc_{1}".format(selfmodule,func))
+        fileFuncs.append("4thot_{0}_fnc_{1}".format(selfmodule,func))
 
     for exModule,func in exfuncs:
         fileFuncs.append("AHR_medical_{0}_fnc_{1}".format(exModule, func))
