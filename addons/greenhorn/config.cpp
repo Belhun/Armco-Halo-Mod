@@ -2,7 +2,10 @@
 class CfgPatches {
     class 4thot_Greenhorn
 	{
-        weapons[] = {};
+        weapons[] =
+        {
+
+        };
         units[] =
         {
 
