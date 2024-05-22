@@ -894,3 +894,52 @@ class ARMCO_Wolffe_ODST_Armor : ARMCO_Alpha_ODST_Armor {
       "optre_unsc_units\army\data\ghillie_woodland_co.paa",
       QPATHTOF(data\odst\custom_armours\odst_armor_Wolffe_co.paa)};
 };
+
+//zUwU Armor
+class ARMCO_zUwU_ODST_Armor : ARMCO_Alpha_ODST_Armor {
+dlc = "ARMCO";
+author = "York";
+displayName = "[ARMCO][B] zUwU ODST Armour";
+    class ItemInfo: ItemInfo
+  {
+    hiddenSelections[] = {"camo",
+                        "camo2",
+                        "camo3",
+                        "camo4",
+                        "camo5",
+                        "A_Ghillie",
+                        "AS_LargeLeft",
+                        "AS_LargeRight",
+                        "AS_MediumLeft",
+                        "AS_MediumRight",
+                        "AS_ODSTCQBRight",
+                        "AS_ODSTCQBLeft",
+                        "AS_ODSTLeft",
+                        "AS_ODSTSniperRight",
+                        "AS_SmallLeft",
+                        "AS_SmallRight",
+                        "AP_AR",
+                        "AP_BR",
+                        "AP_Canteen",
+                        "AP_GL",
+                        "AP_Knife",
+                        "AP_MGThigh",
+                        "AP_AR",
+                        "AP_Pack",
+                        "AP_Rounds",
+                        "AP_SG",
+                        "AP_Sniper",
+                        "AP_Thigh",
+                        "AP_Frag",
+                        "APO_AR",
+                        "APO_BR",
+                        "APO_Sniper",
+                        "CustomKit_Scorch"};
+};
+hiddenSelectionsTextures[] = {
+    QPATHTOF(data\odst\squad_armors\vest_odst_zUwU_co.paa),
+    "optre_unsc_units\army\data\armor_odst_co.paa",
+    QPATHTOF(data\odst\squad_armors\odst_legs_zUwU_co.paa),
+    "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+    QPATHTOF(data\odst\squad_armors\odst_armor_zUwU_co.paa)};
+};

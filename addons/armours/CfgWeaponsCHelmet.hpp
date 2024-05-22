@@ -357,5 +357,28 @@ class _CH252D_Helmet : Alpha_CH252D_Helmet {
           QPATHTOF(data\odst\custom_helmets\odst_helmet_Wolffe_co.paa)};
     };
 
-
-
+//zUwU Helmets Main
+class zUwU_CH252D_Helmet : Alpha_CH252D_Helmet
+{
+    dlc = "ARMCO";
+    author = "York";
+    displayname = "[ARMCO][B] zUwU ODST Helmet";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\odst\squad_helmets\odst_helmet_zUwU_co.paa),
+        QPATHTOF(data\odst\squad_helmets\visors\odst_helmet_visor_zUwU_co.paa),
+        "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+        "optre_unsc_units\army\data\soft_packs_co.paa"
+    };
+};
+//DP VERSION
+class zUwU_CH252D_Helmet_dp : Alpha_CH252D_Helmet_dp
+{
+    dlc = "ARMCO";
+    author = "York";
+    displayname = "[ARMCO][B] zUwU ODST Helmet";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\odst\squad_helmets\odst_helmet_zUwU_co.paa)
+    };
+};

@@ -132,3 +132,13 @@ class ARMCO_Rucksack_Wolffe : ARMCO_Rucksack_Hard_Alpha {
   hiddenSelectionsTextures[] = {
       QPATHTOF(data\odst\custom_backpacks\odst_hard_backpack_Wolffe_co.paa)};
 };
+//zUwU Backpack
+class ARMCO_Rucksack_zUwU : ARMCO_Rucksack_Hard_Alpha {
+    dlc = "ARMCO";
+    author = "York";
+    displayname = "[ARMCO][B]Hard Rucksack (zUwU)";
+    hiddenSelections[] = {"camo1", "AP_Heavy"};
+    hiddenSelectionsTextures[] = {
+    QPATHTOF(data\backpacks\odst_hard_backpack_zUwU_co.paa)
+    };
+};
