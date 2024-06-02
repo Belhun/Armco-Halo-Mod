@@ -139,6 +139,6 @@ class ARMCO_Rucksack_zUwU : ARMCO_Rucksack_Hard_Alpha {
     displayname = "[ARMCO][B]Hard Rucksack (zUwU)";
     hiddenSelections[] = {"camo1", "AP_Heavy"};
     hiddenSelectionsTextures[] = {
-    QPATHTOF(data\backpacks\odst_hard_backpack_zUwU_co.paa)
+      QPATHTOF(data\backpacks\odst_hard_backpack_zUwU_co.paa)
     };
 };
