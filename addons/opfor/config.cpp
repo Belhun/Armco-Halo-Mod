@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 class CfgPatches {
-    class Armco_4th_opfor
+    class 4thot_opfor
 	{
         units[] = {};
         weapons[] = {};
@@ -11,3 +11,4 @@ class CfgPatches {
         VERSION_CONFIG;
     };
 };
+

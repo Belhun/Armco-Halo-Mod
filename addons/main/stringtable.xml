@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="4thotot">
+<Project name="4thot">
     <Package name="Main">
         <Key ID="STR_AHR_Main_URL">
-            <English>https://github.com/4thotot-Repai4thotthot</English>
+            <English>https://github.com/4thot-Repai4thotthot</English>
         </Key>
     </Package>
 </Project>

@@ -1,7 +1,7 @@
 // COMPONENT should be defined in the script_component.hpp and included BEFORE this hpp
 
 #define MAINPREFIX x
-#define PREFIX 4thotot
+#define PREFIX 4thot
 
 #include "script_version.hpp"
 
@@ -16,7 +16,7 @@
 #define REQUIRED_CBA_VERSION {3,15,7}
 
 #ifdef COMPONENT_BEAUTIFIED
-    #define COMPONENT_NAME QUOTE(4thotot - COMPONENT_BEAUTIFIED)
+    #define COMPONENT_NAME QUOTE(4thot - COMPONENT_BEAUTIFIED)
 #else
-    #define COMPONENT_NAME QUOTE(4thotot - COMPONENT)
+    #define COMPONENT_NAME QUOTE(4thot - COMPONENT)
 #endif

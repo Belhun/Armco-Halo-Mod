@@ -6,6 +6,6 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_AHR "4thotot - ARMCO Halo Retexture: Faction New Madrigal Republic"
+#define CBA_SETTINGS_AHR "4thot - ARMCO Halo Retexture: Faction New Madrigal Republic"
 
 ADDON = true;

@@ -20,13 +20,13 @@ class CfgPatches {
 class CfgMods {
     class PREFIX {
         dir = "@4thot_ArmcoOperationTREBUCHET";
-        name = "4thotot - Armco Halo Retextured";
+        name = "4thot - Armco Halo Retextured";
         picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";
         action = CSTRING(URL);
-        description = "Issue Tracker: https://github.com/(insertname)/4thotot/issues";
+        description = "Issue Tracker: https://github.com/(insertname)/4thot/issues";
     };
 };
 
