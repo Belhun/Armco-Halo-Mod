@@ -21,12 +21,20 @@ class CfgFunctions {
             };
         };
     };
-    class 4thot
-	{
-        tag = "4thot_Inventory";
-		class Category
-		{
-            file = QPATHTOF(functions\fnc_InventoryMangement.sqf);
-		};
-	};
+    // class 4thot
+	// {
+    //     tag = "4thot_Inventory";
+	// 	class Category
+	// 	{
+    //         file = QPATHTOF(functions\fnc_InventoryMangement.sqf);
+	// 	};
+	// };
+    // class 4thot_setBase
+	// {
+    //     tag = "4thot_setBase";
+	// 	class Category
+	// 	{
+    //         file = QPATHTOF(functions\fnc_SetInventoryBase.sqf);
+	// 	};
+	// };
 };

@@ -1,2 +1,1 @@
 PREP(handleDestroyed);
-PREP(InventoryMangement);
