@@ -2,75 +2,158 @@
 class CfgPatches {
     class Armco_4th_Weapons
 	{
-       units[] = {"ARMCO_Alpha_Squad_Lead",
-               "ARMCO_Alpha_Medic",
-               "ARMCO_Alpha_Corpsman",
-               "ARMCO_Alpha_Engineer",
-               "ARMCO_Alpha_Special_Weapons_Operator",
-               "ARMCO_Alpha_EOD",
-               "ARMCO_Alpha_Marksman",
-               "ARMCO_Sabre_Sqaud_Lead",
-               "ARMCO_Alpha_Riflemen",
-               "ARMCO_Sabre_Medic",
-               "ARMCO_Sabre_Corpsman",
-               "ARMCO_Sabre_Special_Weapons_Operator",
-               "ARMCO_Sabre_Engineer",
-               "ARMCO_Sabre_EOD",
-               "ARMCO_Sabre_Marksmen",
-               "ARMCO_Sabre_Rifleman",
-               "ARMCO_Zulu_Squad_Lead",
-               "ARMCO_Zulu_Medic",
-               "ARMCO_Zulu_EOD",
-               "ARMCO_Zulu_Engineer",
-               "ARMCO_Zulu_Rifleman",
-               "ARMCO_Zulu_Special_Weapons_Operator",
-               "ARMCO_Zulu_Sniper",
-               "ARMCO_Phoenix_Squad_Lead",
-               "ARMCO_Phoenix_Medic",
-               "ARMCO_Phoenix_Corpsmen",
-               "ARMCO_Phoenix_JTAC",
-               "ARMCO_Phoenix_Sniper",
-               "ARMCO_Phoenix_Engineer",
-               "ARMCO_Phoenix_EOD",
-               "ARMCO_Phoenix_Auto_Rifleman",
-               "ARMCO_Phoenix_Special_Weapons_Operator"};
-    weapons[] = {"ARMCO_OPTRE_MA37GL",
-                 "ARMCO_OPTRE_M6G",
-                 "ARMCO_OPTRE_MA37_OPTRE_MA37_Smartlink_Scope",
-                 "ARMCO_OPTRE_M41_SSR",
-                 "ARMCO_OPTRE_M6G_OPTRE_M6G_Scope",
-                 "ARMCO_OPTRE_M392_DMR_OPTRE_M393_ACOG",
-                 "ARMCO_OPTRE_MA37",
-                 "ARMCO_OPTRE_SRS99C_OPTRE_SRS99C_Scope",
-                 "ARMCO_OPTRE_M73"};
+    units[] = {};
+    weapons[] = {};
     requiredVersion = 0.1;
-    requiredAddons[] = {"ace_captives",
-                        "ace_hearing",
-                        "ace_trenches",
-                        "ace_huntir",
-                        "ace_attach",
-                        "ace_maptools",
-                        "ace_rangecard",
-                        "ace_medical_treatment",
-                        "kat_pharma",
-                        "kat_breathing",
-                        "A3_Weapons_F",
-                        "tfar_handhelds",
-                        "OPTRE_Weapons_AR",
-                        "OPTRE_Weapons_Pistol",
-                        "OPTRE_Weapons_Items",
-                        "kat_circulation",
-                        "kat_surgery",
-                        "ace_flashlights",
-                        "ace_tagging",
-                        "A3_Weapons_F_Items",
-                        "OPTRE_Weapons_Rockets",
-                        "OPTRE_Weapons_DMR",
-                        "OPTRE_Weapons_Sniper",
-                        "OPTRE_Weapons_MG",
-                        "OPTRE_UNSC_Units"};
+    requiredAddons[] = {"OPTRE_Weapons"};
     authors[] = {"Belhun", "Darknessvoid99"};
     url = ECSTRING(main,URL);
     VERSION_CONFIG;
+    };
+};
+
+class CfgMagazines {
+    //8 Round Optre M319 Grenade Shells
+    class M319_HE_Grenade_Shell;
+    class M319_HEDP_Grenade_Shell;
+	class M319_Buckshot;
+	class OPTRE_1Rnd_Smoke_Grenade_shell;
+    class OPTRE_1Rnd_SmokeRed_Grenade_shell;
+    class OPTRE_1Rnd_SmokeGreen_Grenade_shell;
+    class OPTRE_1Rnd_SmokeYellow_Grenade_shell;
+    class OPTRE_1Rnd_SmokePurple_Grenade_shell;
+    class OPTRE_1Rnd_SmokeBlue_Grenade_shell;
+    class OPTRE_1Rnd_SmokeOrange_Grenade_shell;
+    class OPTRE_signalSmokeR;
+    class OPTRE_signalSmokeO;
+    class OPTRE_signalSmokeY;
+    class OPTRE_signalSmokeG;
+    class OPTRE_signalSmokeB;
+    class OPTRE_signalSmokeP;
+    class ACE_40mm_Flare_white;
+    class ACE_40mm_Flare_ir;
+    class OPTRE_1Rnd_MasterKey_Pellets;
+    class OPTRE_1Rnd_MasterKey_Slugs;
+    class 4thot_u_40_8_HE: M319_HE_Grenade_Shell {
+        displayName = "8rnd M319 HE Grenade";
+        count = 8;
+    };
+    class 4thot_u_40_8_HEDP: M319_HEDP_Grenade_Shell {
+        displayName = "8rnd M319 HEDP";
+        count = 8;
+    };
+    class 4thot_u_40_8_Smoke: OPTRE_1Rnd_Smoke_Grenade_shell {
+        displayName = "8rnd Signal Smoke Round (White)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Smoke_Red: OPTRE_1Rnd_SmokeRed_Grenade_shell {
+        displayName = "8rnd Signal Smoke Round (Red)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Smoke_Green: OPTRE_1Rnd_SmokeGreen_Grenade_shell {
+        displayName = "8rnd Signal Smoke Round (Green)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Smoke_Yellow: OPTRE_1Rnd_SmokeYellow_Grenade_shell {
+        displayName = "8rnd Signal Smoke Round (Yellow)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Smoke_Purple: OPTRE_1Rnd_SmokePurple_Grenade_shell {
+        displayName = "8rnd Signal Smoke Round (Purple)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Smoke_Blue: OPTRE_1Rnd_SmokeBlue_Grenade_shell {
+        displayName = "8rnd Signal Smoke Round (Blue)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Smoke_Orange: OPTRE_1Rnd_SmokeOrange_Grenade_shell {
+        displayName = "8rnd Signal Smoke Round (Orange)";
+        count = 8;
+    };
+    // 8rnd Optre Flare Rounds
+    class 4thot_u_40_8_Flare_Red: OPTRE_signalSmokeR {
+        displayName = "8rnd Flare Smoke (Red)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Flare_Orange: OPTRE_signalSmokeO {
+        displayName = "8rnd Flare Smoke (Orange)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Flare_Yellow: OPTRE_signalSmokeY {
+        displayName = "8rnd Flare Smoke (Yellow)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Flare_Green: OPTRE_signalSmokeG {
+        displayName = "8rnd Flare Smoke (Green)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Flare_Blue: OPTRE_signalSmokeB {
+        displayName = "8rnd Flare Smoke (Blue)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Flare_Purple: OPTRE_signalSmokeP {
+        displayName = "8rnd Flare Smoke (Purple)";
+        count = 8;
+    };
+    // Ace Mags
+    class 4thot_u_40_8_Flare_Illumination_White: ACE_40mm_Flare_white {
+        displayName = "8rnd M583 Illumination Flare (White)";
+        count = 8;
+    };
+    class 4thot_u_40_8_Flare_ir: ACE_40mm_Flare_ir {
+        displayName = "8rnd M583 Flare (IR)";
+        count = 8;
+    };
+    // 4rnd Optre Pellets & Slugs
+    class 4thot_u_40_4_Buckshot: OPTRE_1Rnd_MasterKey_Pellets {
+        displayName = "8rnd Buckshot";
+        count = 4;
+    };
+    class 4thot_u_40_4_Slug: OPTRE_1Rnd_MasterKey_Slugs {
+        displayName = "8rnd Slug ";
+        count = 4;
+    };
+
+
+
+};
+class CfgMagazineWells
+{
+    class 4thot_u_40_MGL
+    {
+        4thot[] =
+        {
+            "4thot_u_40_8_HE",
+            "4thot_u_40_8_HEDP",
+            "4thot_u_40_8_Smoke",
+            "4thot_u_40_8_Smoke_Red",
+            "4thot_u_40_8_Smoke_Green",
+            "4thot_u_40_8_Smoke_Yellow",
+            "4thot_u_40_8_Smoke_Purple",
+            "4thot_u_40_8_Smoke_Blue",
+            "4thot_u_40_8_Smoke_Orange",
+            "4thot_u_40_8_Flare_Red",
+            "4thot_u_40_8_Flare_Orange",
+            "4thot_u_40_8_Flare_Yellow",
+            "4thot_u_40_8_Flare_Green",
+            "4thot_u_40_8_Flare_Blue",
+            "4thot_u_40_8_Flare_Purple",
+            "4thot_u_40_8_Flare_Illumination_White",
+            "4thot_u_40_8_Flare_ir",
+            "4thot_u_40_4_Buckshot",
+            "4thot_u_40_4_Slug"
+        };
+    };
+};
+class CfgWeapons {
+    //OPTRE_M319 Overwrite
+    class OPTRE_Rifle_Base;
+    class OPTRE_M319: OPTRE_Rifle_Base {
+        magazineWell[] = {
+            "UGL_40x36",
+            "CBA_40mm_M203",
+            "CBA_40mm_EGLM",
+            "4thot_u_40_MGL"
+            };
     };
 };
