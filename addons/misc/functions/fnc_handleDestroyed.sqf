@@ -49,6 +49,7 @@ if (_loaded isEqualTo []) exitWith {};
         } forEach _curators;
     };
 } forEach _loaded;
+
 // private _array = getItemCargo _vehicle;
 // _CurrentlySetInventory = _vehicle getVariable "_CurrentInventory";
 // systemChat format["%1",_CurrentlySetInventory];
