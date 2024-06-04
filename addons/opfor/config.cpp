@@ -7,7 +7,7 @@ class CfgPatches {
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "A3_Data_F_Enoch_Loadorder",
+            "A3_Data_F_Mark_Loadorder",
             "OPTRE_Loadorder",
             ""
         };
@@ -448,33 +448,52 @@ class CfgVehicles
 		icon = "iconMan";
     };
 
-    class U_C_Uniform_Farmer_01_nrm : 4thot_u_opfor
+    class C_Uniform_Farmer_01_F;
+    class C_Uniform_ArtTShirt_01_v5_F;
+    class C_Uniform_ArtTShirt_01_v6_F;
+    class I_C_Soldier_Bandit_3_F;
+    class I_C_Soldier_Bandit_5_F;
+    class I_G_resistanceLeader_F;
+
+    class U_C_Uniform_Farmer_01_nrm : C_Uniform_Farmer_01_F
     {
+        scope = 1;
+        side = 0;
         uniformClass = "U_C_Uniform_Farmer_01_F_nrm";
     };
 
-    class U_C_ArtTShirt_01_v5_nrm : 4thot_u_opfor
+    class U_C_ArtTShirt_01_v5_nrm : C_Uniform_ArtTShirt_01_v5_F
     {
+        scope = 1;
+        side = 0;
         uniformClass = "U_C_ArtTShirt_01_v5_F_nrm";
     };
 
-    class U_C_ArtTShirt_01_v6_nrm : 4thot_u_opfor
+    class U_C_ArtTShirt_01_v6_nrm : C_Uniform_ArtTShirt_01_v6_F
     {
+        scope = 1;
+        side = 0;
         uniformClass = "U_C_ArtTShirt_01_v6_F_nrm";
     };
 
-    class U_I_C_Soldier_Bandit_3_nrm : 4thot_u_opfor
+    class U_I_C_Soldier_Bandit_3_nrm : I_C_Soldier_Bandit_3_F
     {
+        scope = 1;
+        side = 0;
         uniformClass = "U_I_C_Soldier_Bandit_3_F_nrm";
     };
 
-    class U_I_C_Soldier_Bandit_5_nrm : 4thot_u_opfor
+    class U_I_C_Soldier_Bandit_5_nrm : I_C_Soldier_Bandit_5_F
     {
+        scope = 1;
+        side = 0;
         uniformClass = "U_I_C_Soldier_Bandit_5_F_nrm";
     };
 
-    class U_I_G_resistanceLeader_nrm : 4thot_u_opfor
+    class U_I_G_resistanceLeader_nrm : I_G_resistanceLeader_F
     {
+        scope = 1;
+        side = 0;
         uniformClass = "U_I_G_resistanceLeader_F_nrm";
     };
 };

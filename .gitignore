@@ -351,3 +351,4 @@ ArmaScriptCompiler.exe
 .hemtt/project.toml
 .gitignore
 /@4thot
+.code-workspace

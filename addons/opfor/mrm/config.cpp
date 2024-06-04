@@ -475,8 +475,8 @@ class CfgVehicles
             editorSubcategory = "4thot_men_sec";
 
             uniformClass = "OPTRE_Ins_URF_Combat_Uniform";
-            linkedItems[] = {"OPTRE_Ins_URF_Helmet1_White","VES_HUD_APR_03","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_Ins_URF_Helmet1_White","VES_HUD_APR_03","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_Ins_URF_Helmet1_White","G_RegulatorMask_F","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_Ins_URF_Helmet1_White","G_RegulatorMask_F","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
             backpack = "4thot_e_B_SCBA_01_F";
             weapons[] = {"4thot_a_OPTRE_MA5A_aco","Throw","Put"};
             respawnWeapons[] = {"4thot_a_OPTRE_MA5A_aco","Throw","Put"};
@@ -559,8 +559,8 @@ class CfgVehicles
             icon = "iconManMedic";
             Attendant = 1;
 
-            linkedItems[] = {"OPTRE_FC_CH255_Helmet_SNO_Medic","VES_HUD_APR_03","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_FC_CH255_Helmet_SNO_Medic","VES_HUD_APR_03","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_FC_CH255_Helmet_SNO_Medic","G_RegulatorMask_F","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_FC_CH255_Helmet_SNO_Medic","G_RegulatorMask_F","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
             Items[] = {stditem,meditem};
             RespawnItems[] = {stditem,meditem};
             magazines[] = {tx_5("kat_Painkiller"),tx_10("OPTRE_32Rnd_762x51_Mag")};
@@ -572,12 +572,12 @@ class CfgVehicles
             displayName = "Squad Leader";
             icon = "iconManLeader";
 
-            linkedItems[] = {"OPTRE_CPD_CH251_DME","VES_HUD_APR_03","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_CPD_CH251_DME","VES_HUD_APR_03","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_CPD_CH251_DME","G_RegulatorMask_F","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_CPD_CH251_DME","G_RegulatorMask_F","OPTRE_Ins_URF_Snow_Armor1_Flat","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
             weapons[] = {"4thot_a_OPTRE_MA5A_mrco","Throw","Put"};
             respawnWeapons[] = {"4thot_a_OPTRE_MA5A_mrco","Throw","Put"};
-            Items[] = {stditem,meditem};
-            RespawnItems[] = {stditem,meditem};
+            Items[] = {stditem};
+            RespawnItems[] = {stditem};
             magazines[] = {"kat_Painkiller",tx_5("OPTRE_32Rnd_762x51_Mag_Tracer"),tx_3("1Rnd_HE_Grenade_shell"),tx_3("OPTRE_1Rnd_MasterKey_Pellets")};
             respawnMagazines[] = {"kat_Painkiller",tx_5("OPTRE_32Rnd_762x51_Mag_Tracer"),tx_3("1Rnd_HE_Grenade_shell"),tx_3("OPTRE_1Rnd_MasterKey_Pellets")};
         };
@@ -616,8 +616,8 @@ class CfgVehicles
             displayName = "Soldier (CB)";
 
             uniformClass = "OPTRE_Ins_URF_Combat_Uniform";
-            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","OPTRE_NVG"};
             weapons[] = {"OPTRE_MA5K","Throw","Put"};
             respawnWeapons[] = {"OPTRE_MA5K","Throw","Put"};
             magazines[] = {"kat_Painkiller",tx_5("OPTRE_32Rnd_762x51_Mag")};
@@ -628,8 +628,8 @@ class CfgVehicles
         {
             displayName = "Soldier (SMG)";
 
-            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","VES_Holster_CPD","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","VES_Holster_CPD","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_Rangemaster_belt","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_Rangemaster_belt","ItemRadio","OPTRE_NVG"};
             weapons[] = {"4thot_a_optre_hgun_sas10_F_lsr","Throw","Put"};
             respawnWeapons[] = {"4thot_a_optre_hgun_sas10_F_lsr","Throw","Put"};
             magazines[] = {"kat_Painkiller",tx_5("32Rnd_10mm_Ball")};
@@ -641,8 +641,8 @@ class CfgVehicles
             displayName = "Militiaman";
 
             uniformClass = "OPTRE_Ins_ER_rolled_jean_orca";
-            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","OPTRE_NVG"};
             weapons[] = {"optre_hgun_comet_F","Throw","Put"};
             respawnWeapons[] = {"optre_hgun_comet_F","Throw","Put"};
             magazines[] = {"kat_Painkiller",tx_5("4Rnd_454Casull")};
@@ -654,8 +654,8 @@ class CfgVehicles
             displayName = "Militiaman (SAS10)";
 
             uniformClass = "U_I_G_resistanceLeader_F_fmm";
-            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","VES_Holster_CPD","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","VES_Holster_CPD","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_Rangemaster_belt","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_Rangemaster_belt","ItemRadio","OPTRE_NVG"};
             weapons[] = {"optre_hgun_sas10_F","Throw","Put"};
             respawnWeapons[] = {"optre_hgun_sas10_F","Throw","Put"};
             magazines[] = {"kat_Painkiller",tx_5("16Rnd_10mm_Ball")};
@@ -667,8 +667,8 @@ class CfgVehicles
             displayName = "Militiaman Alt";
 
             uniformClass = "OPTRE_Ins_ER_rolled_surplus_crimson";
-            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_LegStrapBag_black_F","ItemRadio","OPTRE_NVG"};
             weapons[] = {"optre_hgun_comet_F","Throw","Put"};
             respawnWeapons[] = {"optre_hgun_comet_F","Throw","Put"};
             magazines[] = {"kat_Painkiller",tx_5("4Rnd_454Casull")};
@@ -680,8 +680,8 @@ class CfgVehicles
             displayName = "Militiaman (SAS10) Alt";
 
             uniformClass = "OPTRE_Ins_ER_rolled_OD_blknred";
-            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","VES_Holster_CPD","ItemRadio","VES_NVG_Collar"};
-            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","VES_Holster_CPD","ItemRadio","VES_NVG_Collar"};
+            linkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_Rangemaster_belt","ItemRadio","OPTRE_NVG"};
+            respawnLinkedItems[] = {"OPTRE_ONI_Researcher_Headgear","OPTRE_FW_None","V_Rangemaster_belt","ItemRadio","OPTRE_NVG"};
             weapons[] = {"optre_hgun_sas10_F","Throw","Put"};
             respawnWeapons[] = {"optre_hgun_sas10_F","Throw","Put"};
             magazines[] = {"kat_Painkiller",tx_5("16Rnd_10mm_Ball")};
@@ -726,7 +726,7 @@ class CfgVehicles
         {
             displayName = "Militia (Hammer)";
 
-            uniformClass = "U_C_Uniform_Farmer_01_nrm";
+            uniformClass = "U_C_Uniform_Farmer_01_F_nrm";
             weapons[] = {"WBK_survival_weapon_2","Throw","Put"};
             respawnWeapons[] = {"WBK_survival_weapon_2","Throw","Put"};
         };
@@ -735,7 +735,7 @@ class CfgVehicles
         {
             displayName = "Militia (Pipe)";
 
-            uniformClass = "U_C_ArtTShirt_01_v5_nrm";
+            uniformClass = "U_C_ArtTShirt_01_v5_F_nrm";
             weapons[] = {"Pipe_aluminium","Throw","Put"};
             respawnWeapons[] = {"Pipe_aluminium","Throw","Put"};
         };
@@ -744,7 +744,7 @@ class CfgVehicles
         {
             displayName = "Militia (Crowbar)";
 
-            uniformClass = "U_C_ArtTShirt_01_v6_nrm";
+            uniformClass = "U_C_ArtTShirt_01_v6_F_nrm";
             weapons[] = {"Crowbar","Throw","Put"};
             respawnWeapons[] = {"Crowbar","Throw","Put"};
         };
@@ -753,7 +753,7 @@ class CfgVehicles
         {
             displayName = "Militia (Knife)";
 
-            uniformClass = "U_I_C_Soldier_Bandit_3_nrm";
+            uniformClass = "U_I_C_Soldier_Bandit_3_F_nrm";
             weapons[] = {"Knife_m3","Throw","Put"};
             respawnWeapons[] = {"Knife_m3","Throw","Put"};
         };
@@ -762,7 +762,7 @@ class CfgVehicles
         {
             displayName = "Militia (Shovel)";
 
-            uniformClass = "U_I_C_Soldier_Bandit_5_nrm";
+            uniformClass = "U_I_C_Soldier_Bandit_5_F_nrm";
             weapons[] = {"Shovel_Russian","Throw","Put"};
             respawnWeapons[] = {"Shovel_Russian","Throw","Put"};
         };
@@ -787,7 +787,7 @@ class CfgVehicles
 
         class 4thot_u_mrm_sec_militia_mle_h : 4thot_u_mrm_sec_militia_mle_d
         {
-            uniformClass = "U_I_G_resistanceLeader_nrm";
+            uniformClass = "U_I_G_resistanceLeader_F_nrm";
         };
     //Marines
         class 4thot_u_mrm_rifleman : 4thot_u_mrm_sec_rifleman
@@ -1060,35 +1060,35 @@ class CfgGroups
                     class Unit0
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_sleader";
+						vehicle = "4thot_u_mrm_sleader";
 						rank = "LIEUTENANT";
 						position[] = {2,2,0};
 					};
 					class Unit1
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_marks";
+						vehicle = "4thot_u_mrm_marks";
 						rank = "SERGEANT";
 						position[] = {0,0,0};
 					};
 					class Unit2
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_medic";
+						vehicle = "4thot_u_mrm_medic";
 						rank = "CORPORAL";
 						position[] = {-2,0,0};
 					};
 					class Unit3
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-4,0,0};
 					};
 					class Unit4
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-6,0,0};
 					};
@@ -1103,35 +1103,35 @@ class CfgGroups
                     class Unit0
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_tleader";
+						vehicle = "4thot_u_mrm_tleader";
 						rank = "SERGEANT";
 						position[] = {2,2,0};
 					};
 					class Unit1
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_lmg";
+						vehicle = "4thot_u_mrm_lmg";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
 					};
 					class Unit2
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_sgr";
+						vehicle = "4thot_u_mrm_sgr";
 						rank = "CORPORAL";
 						position[] = {-2,0,0};
 					};
 					class Unit3
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-4,0,0};
 					};
 					class Unit4
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-6,0,0};
 					};
@@ -1146,35 +1146,35 @@ class CfgGroups
                     class Unit0
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_tleader";
+						vehicle = "4thot_u_mrm_tleader";
 						rank = "SERGEANT";
 						position[] = {2,2,0};
 					};
 					class Unit1
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_mmg";
+						vehicle = "4thot_u_mrm_mmg";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
 					};
 					class Unit2
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_ats";
+						vehicle = "4thot_u_mrm_ats";
 						rank = "CORPORAL";
 						position[] = {-2,0,0};
 					};
 					class Unit3
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-4,0,0};
 					};
 					class Unit4
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-6,0,0};
 					};
@@ -1189,56 +1189,56 @@ class CfgGroups
                     class Unit0
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_sleader";
+						vehicle = "4thot_u_mrm_sleader";
 						rank = "LIEUTENANT";
 						position[] = {2,2,0};
 					};
 					class Unit1
 					{
 						side = 0;
-						vehicle = "4thot_nmr_mrm_medic";
+						vehicle = "4thot_u_mrm_medic";
 						rank = "CORPORAL";
 						position[] = {0,0,0};
 					};
 					class Unit2
 					{
 						side = 1;
-						vehicle = "4thot_nmr_mrm_lmg";
+						vehicle = "4thot_u_mrm_lmg";
 						rank = "CORPORAL";
 						position[] = {-2,0,0};
 					};
 					class Unit3
 					{
 						side = 1;
-						vehicle = "4thot_nmr_mrm_ats";
+						vehicle = "4thot_u_mrm_ats";
 						rank = "CORPORAL";
 						position[] = {-4,0,0};
 					};
 					class Unit4
 					{
 						side = 1;
-						vehicle = "4thot_nmr_mrm_sgr";
+						vehicle = "4thot_u_mrm_sgr";
 						rank = "SERGEANT";
 						position[] = {-6,0,0};
 					};
 					class Unit5
 					{
 						side = 1;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-8,0,0};
 					};
 					class Unit6
 					{
 						side = 1;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-10,0,0};
 					};
 					class Unit7
 					{
 						side = 1;
-						vehicle = "4thot_nmr_mrm_rifleman";
+						vehicle = "4thot_u_mrm_rifleman";
 						rank = "PRIVATE";
 						position[] = {-12,0,0};
 					};
