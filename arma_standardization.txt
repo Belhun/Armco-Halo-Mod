@@ -1,0 +1,55 @@
+cfgWeapons
+	_w	Weapon
+		_h  Heavy/Static
+		_g  Grenade Launcher
+		_a  Machinegun
+		_m  Sniper Rifle
+		_c  Submachinegun
+		_p  Pistol
+		_ld Disposiable Launcher
+		_l  Medium Launcher
+		_lh Heavy Launcher
+		_r  Rifle
+		_rc Carbine
+		_ra Autorifle
+		_rm Marksman Rifle
+		_vc Cannon
+		_va Autocannon
+		_vl Missile (Vehicle)
+		_vg Vehicle (MG)
+		_x  Unclassified
+		_w  Melee
+		
+	_h	Helmet
+	_v	Vest
+
+		_a_[SPEC] attachment config
+
+cfgMagazines
+	_m  Magazine
+	_b  Belt
+	_l  Rocket/Missile
+	_u  Grenade Launcher
+	_vc Vehicle Cannon
+	_va Vehicle Autocannon
+	_vl Vehicle Launcher
+	_vh Vehicle (MG)
+	_x  Unclassified
+		_[CALIBER]
+			_[COUNT]
+				_[TYPE]
+	_g Grenade
+		_[TYPE]
+			_[DETAIL]
+
+cfgVehicles
+	_b  Backpack
+	_c  Cargo
+	_s  Container (Taru/Huron)
+	_s  Structure
+	_u  Unit
+		_[FACTION]
+
+	_v Vehicle
+
+	
