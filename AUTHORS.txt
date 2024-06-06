@@ -9,8 +9,10 @@
 Belhun (https://github.com/Belhun)
 DarknessVoid (https://github.com/DarknessVoid)
 
-# CONTRIBUTORS
+# CURRENT CONTRIBUTORS
 Mini
+
+Old Contributors:
 Gunner(Before rewrite Version)
 Mac(Before rewrite Version)
 Frosty(Before rewrite Version)
