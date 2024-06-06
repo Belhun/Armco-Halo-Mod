@@ -39,9 +39,11 @@ class CfgPatches
 			"A3_Data_F",
 			"OPTRE_Weapons"
 		};
-		authors[] = {"Belhun", "Darknessvoid"};
-      	url = ECSTRING(main,URL);
-      	VERSION_CONFIG;
+		authors[] = {
+			"Belhun", "Darknessvoid"
+		};
+		url = ECSTRING(main, URL);
+		VERSION_CONFIG;
 	};
 };
 #include "CfgFunctions.hpp"
@@ -83,29 +85,51 @@ class CfgSounds
 };
 class CfgCloudlets
 {
-	class Default;
-	class WNZ_TaserExp: Default
+	class default;
+	class WNZ_TaserExp: default
 	{
-		circleVelocity[]={0,0,0};
-		moveVelocity[]={0,0,0};
-		size[]={0,0};
+		circleVelocity[]={
+			0, 0, 0
+		};
+		moveVelocity[]={
+			0, 0, 0
+		};
+		size[]={
+			0, 0
+		};
 		color[]=
 		{
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0}
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			}
 		};
-		animationSpeed[]={1000};
+		animationSpeed[]={
+			1000
+		};
 		positionVar[]=
 		{
 			"intensity",
 			"intensity",
 			"intensity"
 		};
-		MoveVelocityVar[]={1.75,1.75,1.75};
-		colorVar[]={0,0,0,0};
+		MoveVelocityVar[]={
+			1.75, 1.75, 1.75
+		};
+		colorVar[]={
+			0, 0, 0, 0
+		};
 		interval="interval";
 		circleRadius="intensity";
 		particleShape="\A3\data_f\ParticleEffects\Universal\Universal";
@@ -132,28 +156,50 @@ class CfgCloudlets
 		randomDirectionPeriodVar=2;
 		randomDirectionIntensityVar=0.1;
 	};
-	class WNZ_TaserExp_Big: Default
+	class WNZ_TaserExp_Big: default
 	{
-		circleVelocity[]={0,0,0};
-		moveVelocity[]={0,0,0};
-		size[]={0,0};
+		circleVelocity[]={
+			0, 0, 0
+		};
+		moveVelocity[]={
+			0, 0, 0
+		};
+		size[]={
+			0, 0
+		};
 		color[]=
 		{
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0}
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			}
 		};
-		animationSpeed[]={1000};
+		animationSpeed[]={
+			1000
+		};
 		positionVar[]=
 		{
 			"intensity",
 			"intensity",
 			"intensity"
 		};
-		MoveVelocityVar[]={1.75,1.75,1.75};
-		colorVar[]={0,0,0,0};
+		MoveVelocityVar[]={
+			1.75, 1.75, 1.75
+		};
+		colorVar[]={
+			0, 0, 0, 0
+		};
 		interval="interval";
 		circleRadius="intensity";
 		particleShape="\A3\data_f\ParticleEffects\Universal\Universal";
@@ -180,28 +226,50 @@ class CfgCloudlets
 		randomDirectionPeriodVar=2;
 		randomDirectionIntensityVar=0.1;
 	};
-	class WNZ_HealExp: Default
+	class WNZ_HealExp: default
 	{
-		circleVelocity[]={0,0,0};
-		moveVelocity[]={0,0,0};
-		size[]={0,0};
+		circleVelocity[]={
+			0, 0, 0
+		};
+		moveVelocity[]={
+			0, 0, 0
+		};
+		size[]={
+			0, 0
+		};
 		color[]=
 		{
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0},
-			{0,0,0,0}
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			},
+			{
+				0, 0, 0, 0
+			}
 		};
-		animationSpeed[]={1000};
+		animationSpeed[]={
+			1000
+		};
 		positionVar[]=
 		{
 			"intensity",
 			"intensity",
 			"intensity"
 		};
-		MoveVelocityVar[]={1.75,1.75,1.75};
-		colorVar[]={0,0,0,0};
+		MoveVelocityVar[]={
+			1.75, 1.75, 1.75
+		};
+		colorVar[]={
+			0, 0, 0, 0
+		};
 		interval="interval";
 		circleRadius="intensity";
 		particleShape="\A3\data_f\ParticleEffects\Universal\Universal";
@@ -234,11 +302,19 @@ class CfgLights
 {
 	class WNZ_TaserLight
 	{
-		color[]={1,1,5,1};
-		ambient[]={0.1,0.1,0.5,1};
+		color[]={
+			1, 1, 5, 1
+		};
+		ambient[]={
+			0.1, 0.1, 0.5, 1
+		};
 		brightness=0.15000001;
-		diffuse[]={0,0,0,0.75};
-		position[]={0,0,0};
+		diffuse[]={
+			0, 0, 0, 0.75
+		};
+		position[]={
+			0, 0, 0
+		};
 		dayLight=1;
 		useFlare=1;
 		flareSize=0.5;
@@ -249,7 +325,9 @@ class WNZ_TaserExplosion
 {
 	class Light1
 	{
-		position[]={0,0,0};
+		position[]={
+			0, 0, 0
+		};
 		simulation="light";
 		type="WNZ_TaserLight";
 		intensity=0.25;
@@ -258,7 +336,9 @@ class WNZ_TaserExplosion
 	};
 	class Exp1
 	{
-		position[]={0,0,0};
+		position[]={
+			0, 0, 0
+		};
 		simulation="particles";
 		type="WNZ_TaserExp";
 		intensity=1;
@@ -271,7 +351,9 @@ class WNZ_TaserExplosion_Big
 {
 	class Light1
 	{
-		position[]={0,0,0};
+		position[]={
+			0, 0, 0
+		};
 		simulation="light";
 		type="WNZ_TaserLight";
 		intensity=0.25;
@@ -280,7 +362,9 @@ class WNZ_TaserExplosion_Big
 	};
 	class Exp1
 	{
-		position[]={0,0,0};
+		position[]={
+			0, 0, 0
+		};
 		simulation="particles";
 		type="WNZ_TaserExp_Big";
 		intensity=1;
@@ -293,7 +377,9 @@ class WNZ_HealExplosion
 {
 	class Light1
 	{
-		position[]={0,0,0};
+		position[]={
+			0, 0, 0
+		};
 		simulation="light";
 		type="WNZ_TaserLight";
 		intensity=0.25;
@@ -302,7 +388,9 @@ class WNZ_HealExplosion
 	};
 	class Exp1
 	{
-		position[]={0,0,0};
+		position[]={
+			0, 0, 0
+		};
 		simulation="particles";
 		type="WNZ_HealExp";
 		intensity=1;
@@ -314,11 +402,10 @@ class WNZ_HealExplosion
 #include "CfgAmmoAffect.hpp"
 class CfgAmmo
 {
-	class Default;
+	class default;
 	class BulletCore;
 	class BulletBase: BulletCore
-	{
-	};
+	{};
 	class OPTRE_B_57x31_Tracer;
 	class OPTRE_B_762x51_Tracer;
 	class OPTRE_B_95x40_Tracer;
@@ -366,8 +453,12 @@ class CfgAmmo
 		tracerScale=0.25;
 		tracerStartTime=0.0049999999;
 		tracerEndTime=45;
-		tracerColor[]={0,0,1,0.5};
-		tracerColorR[]={0,0,1,0.5};
+		tracerColor[]={
+			0, 0, 1, 0.5
+		};
+		tracerColorR[]={
+			0, 0, 1, 0.5
+		};
 		airFriction=-0.00085999997;
 		warheadName=".45 ACP Taser";
 		whistleOnFire=1;
@@ -474,7 +565,9 @@ class CfgAmmo
 			"poissondisc",
 			9
 		};
-		triggerSpeedCoef[]={0.85000002,1};
+		triggerSpeedCoef[]={
+			0.85000002, 1
+		};
 		triggerTime=0.0080000004;
 	};
 	class NL_B_12Gauge_Pellets_Submunition_Deploy: B_12Gauge_Pellets_Submunition_Deploy
@@ -512,10 +605,9 @@ class CfgAmmo
 };
 class cfgMagazines
 {
-	class Default;
-	class CA_Magazine: Default
-	{
-	};
+	class default;
+	class CA_Magazine: default
+	{};
 	class OPTRE_8Rnd_127x40_Mag;
 	class OPTRE_4Rnd_145x114_APFSDS_Mag;
 	class OPTRE_15Rnd_762x51_Mag_Tracer;

@@ -21,7 +21,7 @@ TRACE_1("params",_vehicle);
 
 private _loaded = _vehicle getVariable ["ace_cargo_loaded", []];
 if (_loaded isEqualTo []) exitWith {};
-//Tryting to make a check for a setting but cant implament setting
+/* //Tryting to make a check for a setting but cant implament setting
 // NEED TO LEARN: https://github.com/CBATeam/CBA_A3/wiki/Extended-Event-Handlers-(new)
 // if (!"4thot_misc_handleDestroyed") exitWith {
 //     {
@@ -30,7 +30,7 @@ if (_loaded isEqualTo []) exitWith {};
 //             deleteVehicle _x;
 //         };
 //     } forEach _loaded;
-// };
+// }; */
 
 //remove all the Items from the Vehicles cargo
 {
@@ -49,7 +49,7 @@ if (_loaded isEqualTo []) exitWith {};
         } forEach _curators;
     };
 } forEach _loaded;
-
+/*
 // private _array = getItemCargo _vehicle;
 // _CurrentlySetInventory = _vehicle getVariable "_CurrentInventory";
 // systemChat format["%1",_CurrentlySetInventory];
@@ -70,7 +70,7 @@ if (_loaded isEqualTo []) exitWith {};
 // } forEach (_array select 1);
 // _InventoryCargo enableSimulationGlobal false;
 
-
+ */
 diag_log format ["ace_cargo_fnc_handleDestroyed: Vehicle %1 had Cargo when it Died", _vehicle];
 
 [_vehicle] call ace_cargo_fnc_validateCargoSpace;

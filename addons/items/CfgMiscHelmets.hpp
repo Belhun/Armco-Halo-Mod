@@ -7,46 +7,59 @@ class OPTRE_CPD_Beret;
 class OPTRE_h_PatrolCap_Brown;
 
 class ARMCO_Beret_Rifleman : OPTRE_CPD_Beret {
-  author = "Belhun";
-  displayname = "[ARMCO][B] Rifleman Beret";
-  hiddenSelections[] = {"camo"};
-  hiddenSelectionsTextures[] = {
-      QPATHTOF(data\hats\armco_beret_regular_co.paa)};
+	author = "Belhun";
+	displayname = "[ARMCO][B] Rifleman Beret";
+	hiddenSelections[] = {
+		"camo"
+	};
+	hiddenSelectionsTextures[] = {
+		QPATHTOF(data\hats\armco_beret_regular_co.paa)
+	};
 };
 
 class ARMCO_Beret_Medical : ARMCO_Beret_Rifleman {
-  displayname = "[ARMCO][B] Medical Beret";
-  hiddenSelectionsTextures[] = {
-      QPATHTOF(data\hats\armco_beret_medical_co.paa)};
+	displayname = "[ARMCO][B] Medical Beret";
+	hiddenSelectionsTextures[] = {
+		QPATHTOF(data\hats\armco_beret_medical_co.paa)
+	};
 };
 class ARMCO_Beret_TL : ARMCO_Beret_Rifleman {
-  displayname = "[ARMCO][B] TL Beret";
-  hiddenSelectionsTextures[] = {
-      QPATHTOF(data\hats\armco_beret_teamleader_co.paa)};
+	displayname = "[ARMCO][B] TL Beret";
+	hiddenSelectionsTextures[] = {
+		QPATHTOF(data\hats\armco_beret_teamleader_co.paa)
+	};
 };
 class ARMCO_Beret_Veteran : ARMCO_Beret_Rifleman {
-  displayname = "[ARMCO][B] Beret (Distinguished Veteran)";
-  hiddenSelectionsTextures[] = {
-      QPATHTOF(data\hats\armco_beret_special_co.paa)};
+	displayname = "[ARMCO][B] Beret (Distinguished Veteran)";
+	hiddenSelectionsTextures[] = {
+		QPATHTOF(data\hats\armco_beret_special_co.paa)
+	};
 };
 class ARMCO_Beret_Security : ARMCO_Beret_Rifleman {
-  displayname = "[ARMCO][B] Security Bureau Beret";
-  hiddenSelectionsTextures[] = {
-      QPATHTOF(data\security\helmet\helmet_beret_security_co.paa)};
+	displayname = "[ARMCO][B] Security Bureau Beret";
+	hiddenSelectionsTextures[] = {
+		QPATHTOF(data\security\helmet\helmet_beret_security_co.paa)
+	};
 };
 class ARMCO_Beret_EOD : ARMCO_Beret_Rifleman {
-  displayname = "[ARMCO][B] Beret (EOD)";
-  hiddenSelectionsTextures[] = {QPATHTOF(data\hats\armco_beret_eod_co.paa)};
+	displayname = "[ARMCO][B] Beret (EOD)";
+	hiddenSelectionsTextures[] = {
+		QPATHTOF(data\hats\armco_beret_eod_co.paa)
+	};
 };
 class ARMCO_Beret_ODST : ARMCO_Beret_Rifleman {
-  displayname = "[ARMCO][B] Beret (ODST)";
-  hiddenSelectionsTextures[] = {
-      QPATHTOF(data\hats\armco_beret_odst_co.paa)};
+	displayname = "[ARMCO][B] Beret (ODST)";
+	hiddenSelectionsTextures[] = {
+		QPATHTOF(data\hats\armco_beret_odst_co.paa)
+	};
 };
 class ARMCO_PatrolCap_Hat : OPTRE_h_PatrolCap_Brown {
-  author = "Belhun";
-  displayname = "[ARMCO][B] Patrol Cap";
-  hiddenSelections[] = {"camo"};
-  hiddenSelectionsTextures[] = {
-      QPATHTOF(data\hats\cappatrol_Armco_co.paa)};
+	author = "Belhun";
+	displayname = "[ARMCO][B] Patrol Cap";
+	hiddenSelections[] = {
+		"camo"
+	};
+	hiddenSelectionsTextures[] = {
+		QPATHTOF(data\hats\cappatrol_Armco_co.paa)
+	};
 };

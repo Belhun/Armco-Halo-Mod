@@ -14,6 +14,5 @@ class CfgVehicles
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_static";
 		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
-
 	};
 };

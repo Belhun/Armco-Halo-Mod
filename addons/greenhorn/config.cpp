@@ -1,26 +1,20 @@
 #include "script_component.hpp"
 class CfgPatches {
-    class 4thot_Greenhorn
+	class 4thot_Greenhorn
 	{
-        weapons[] =
-        {
+		weapons[] =
+		{};
+		units[] =
+		{};
+		magazines[] =
+		{};
+		requiredAddons[] =
+		{};
 
-        };
-        units[] =
-        {
-
-        };
-        magazines[] =
-        {
-
-        };
-        requiredAddons[] =
-        {
-
-        };
-
-        authors[] = {"Belhun", "Darknessvoid99"};
-        url = ECSTRING(main,URL);
-        VERSION_CONFIG;
-    };
+		authors[] = {
+			"Belhun", "Darknessvoid99"
+		};
+		url = ECSTRING(main, URL);
+		VERSION_CONFIG;
+	};
 };

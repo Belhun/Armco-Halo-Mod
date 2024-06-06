@@ -2,16 +2,16 @@
 class CfgVehicles
 {
 	class OPTRE_M12_Base;
-	class OPTRE_M12_FAV;	//added [ARMCO] M12-FAV
-	class OPTRE_M12_FAV_APC;//added [ARMCO] M12-FAV APC
-	class OPTRE_M813_TT;	//added [ARMCO] M813 Troop Transport
-	class OPTRE_M12_LRV;	//added [ARMCO] M12 Warthog LRV (MG)
-	class OPTRE_M12G1_LRV;	//added [ARMCO] M12G1 Warthog LRV (Gauss)
-	class OPTRE_M12A1_LRV;	//added [ARMCO] M12A1 Warthog LRV (Rocket)
-	class OPTRE_M12R_AA;	//added [ARMCO] M12R Warthog AA
-	class OPTRE_M914_RV;	//added [ARMCO] M914 Repair Hog
-	class OPTRE_M12_FAV_APC_MED;//added [ARMCO] M12-FAV Medical APC
-	class OPTRE_M12_TD_CMA; // added [ARMCO] M12 TD
+	class OPTRE_M12_FAV;		// added [ARMCO] M12-FAV
+	class OPTRE_M12_FAV_APC		// added [ARMCO] M12-FAV APC
+	class OPTRE_M813_TT;		// added [ARMCO] M813 Troop Transport
+	class OPTRE_M12_LRV;		// added [ARMCO] M12 Warthog LRV (MG)
+	class OPTRE_M12G1_LRV;		// added [ARMCO] M12G1 Warthog LRV (Gauss)
+	class OPTRE_M12A1_LRV;		// added [ARMCO] M12A1 Warthog LRV (Rocket)
+	class OPTRE_M12R_AA;		// added [ARMCO] M12R Warthog AA
+	class OPTRE_M914_RV;		// added [ARMCO] M914 Repair Hog
+	class OPTRE_M12_FAV_APC_MED	// added [ARMCO] M12-FAV Medical APC
+	class OPTRE_M12_TD_CMA; 	// added [ARMCO] M12 TD
 
 	class ARMCO_M12_LRV: OPTRE_M12_LRV
 	{
@@ -24,15 +24,15 @@ class CfgVehicles
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
-			{
-				"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
-				"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-				"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
-				"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-				"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
-				"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
-				"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa"
-			};
+		{
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
+			"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa"
+		};
 		class textureSources
 		{
 			class colorstand
@@ -186,13 +186,13 @@ class CfgVehicles
 			"colorarmcot",
 			1
 		};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
-
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 	class ARMCO_M12G1_LRV: OPTRE_M12G1_LRV
 	{
@@ -368,13 +368,13 @@ class CfgVehicles
 			"colorarmcot",
 			1
 		};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
-
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 	class ARMCO_M12A1_LRV: OPTRE_M12A1_LRV
 	{
@@ -387,15 +387,15 @@ class CfgVehicles
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "ARMCO_Factions_cars";
 		hiddenSelectionsTextures[]=
-			{
-				"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
-				"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-				"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
-				"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-				"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
-				"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-				"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-			};
+		{
+			"\armco_vehicles\Warthog\data\M12HogMaav_extupper_armco2_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
+			"\armco_vehicles\Warthog\data\m12_turret_armco_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+		};
 		class textureSources
 		{
 			class colorstand
@@ -549,13 +549,13 @@ class CfgVehicles
 			"colorarmcot",
 			1
 		};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
-
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 	class ARMCO_M12R_AA: OPTRE_M12R_AA
 	{
@@ -722,13 +722,13 @@ class CfgVehicles
 			"colorarmcot",
 			1
 		};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
-
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 	class ARMCO_M914_RV: OPTRE_M914_RV
 	{
@@ -879,28 +879,29 @@ class CfgVehicles
 			};
 		};
 		textureList[]=
-			{
-				"colorstand",
-				1,
-				"colornight",
-				1,
-				"colorsand",
-				1,
-				"colorsnow",
-				1,
-				"colorwood",
-				1,
-				"colorarmco",
-				1,
-				"colorarmcot",
-				1
-			};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
+		{
+			"colorstand",
+			1,
+			"colornight",
+			1,
+			"colorsand",
+			1,
+			"colorsnow",
+			1,
+			"colorwood",
+			1,
+			"colorarmco",
+			1,
+			"colorarmcot",
+			1
+		};
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 
 	class ARMCO_M12_FAV: OPTRE_M12_FAV
@@ -919,7 +920,6 @@ class CfgVehicles
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
 			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa"
-
 		};
 		class textureSources
 		{
@@ -949,7 +949,6 @@ class CfgVehicles
 					"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
 					"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
 					"\OPTRE_Vehicles\Warthog\data\m12hogmaav_interior_co.paa"
-
 				};
 				factions[]=
 				{
@@ -1061,12 +1060,13 @@ class CfgVehicles
 			"camo_details",
 			"camo_interior"
 		};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 	class ARMCO_M12_FAV_APC: OPTRE_M12_FAV_APC
 	{
@@ -1125,7 +1125,6 @@ class CfgVehicles
 					"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa"
-
 				};
 				factions[]=
 				{
@@ -1261,12 +1260,13 @@ class CfgVehicles
 			"camo_transport_details",
 			"camo_net"
 		};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 	class ARMCO_M12_FAV_APC_MED: OPTRE_M12_FAV_APC_MED
 	{
@@ -1289,7 +1289,6 @@ class CfgVehicles
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\medical_lopo_co.paa"
-
 		};
 		class textureSources
 		{
@@ -1470,12 +1469,13 @@ class CfgVehicles
 			"camo_net",
 			"camo_medical"
 		};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 	class ARMCO_M813_TT: OPTRE_M813_TT
 	{
@@ -1531,7 +1531,6 @@ class CfgVehicles
 					"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 					"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa"
-
 				};
 				factions[]=
 				{
@@ -1661,12 +1660,13 @@ class CfgVehicles
 			"camo_net",
 			"camo_transport_decal"
 		};
-		tf_encryptionCode 	= "tf_west_radio_code";
-		tf_dialog 			= "rt1523g_radio_dialog";
-		tf_subtype 			= "digital_lr";
-		tf_range 			= 25000;
-		tf_dialogUpdate 	= "call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio	 	= 1;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "rt1523g_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 25000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;
+		";
+		tf_hasLRradio = 1;
 	};
 
 	class ARMCO_M12_TD: OPTRE_M12_TD_CMA

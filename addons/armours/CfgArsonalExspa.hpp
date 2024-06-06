@@ -2,815 +2,812 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-    // Squad Armor
-        class ARMCO_Alpha_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Alpha";
-            Addons="No_Ghillie";
-        };
-        class ARMCO_Sabre_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Sabre";
-            Addons="No_Ghillie";
-        };
-        class ARMCO_Zulu_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Zulu";
-            Addons="No_Ghillie";
-        };
-        class ARMCO_Phoenix_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Phoenix";
-            Addons="No_Ghillie";
-        };
-        class ARMCO_Medical_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Medical";
-            Addons="No_Ghillie";
-        };
-        class ARMCO_EOD_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="EOD";
-            Addons="No_Ghillie";
-        };
+		// Squad Armor
+		class ARMCO_Alpha_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Alpha";
+			Addons="No_Ghillie";
+		};
+		class ARMCO_Sabre_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Sabre";
+			Addons="No_Ghillie";
+		};
+		class ARMCO_Zulu_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Zulu";
+			Addons="No_Ghillie";
+		};
+		class ARMCO_Phoenix_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Phoenix";
+			Addons="No_Ghillie";
+		};
+		class ARMCO_Medical_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Medical";
+			Addons="No_Ghillie";
+		};
+		class ARMCO_EOD_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="EOD";
+			Addons="No_Ghillie";
+		};
 
-    // Alpha Vereints armors
-        class ARMCO_Alpha_Team_1_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Alpha";
-            Addons="No_Ghillie";
-            Team="Team_1";
-        };
-        class ARMCO_Alpha_Team_2_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Alpha";
-            Addons="No_Ghillie";
-            Team="Team_2";
-        };
-        class ARMCO_Alpha_Team_3_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Alpha";
-            Addons="No_Ghillie";
-            Team="Team_3";
-        };
-        class ARMCO_Alpha_Medical_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Alpha";
-            Addons="No_Ghillie";
-            Team="Team_Medical";
-        };
-        class ARMCO_Alpha_EOD_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Alpha";
-            Addons="No_Ghillie";
-            Team="Team_EOD";
-        };
+		    // Alpha Vereints armors
+		class ARMCO_Alpha_Team_1_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Alpha";
+			Addons="No_Ghillie";
+			Team="Team_1";
+		};
+		class ARMCO_Alpha_Team_2_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Alpha";
+			Addons="No_Ghillie";
+			Team="Team_2";
+		};
+		class ARMCO_Alpha_Team_3_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Alpha";
+			Addons="No_Ghillie";
+			Team="Team_3";
+		};
+		class ARMCO_Alpha_Medical_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Alpha";
+			Addons="No_Ghillie";
+			Team="Team_Medical";
+		};
+		class ARMCO_Alpha_EOD_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Alpha";
+			Addons="No_Ghillie";
+			Team="Team_EOD";
+		};
 
-    // Zulu Veriants
-        class ARMCO_Zulu_Team_1_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Zulu";
-            Addons="No_Ghillie";
-            Team="Team_1";
-        };
-        class ARMCO_Zulu_Team_2_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Zulu";
-            Addons="No_Ghillie";
-            Team="Team_2";
-        };
-        class ARMCO_Zulu_EOD_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Zulu";
-            Addons="No_Ghillie";
-            Team="Team_EOD";
-        };
-        class ARMCO_Zulu_Medical_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Zulu";
-            Addons="No_Ghillie";
-            Team="Team_Medical";
-        };
-    // Phoenix Veriants
-        class ARMCO_Phoenix_Team_1_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Phoenix";
-            Addons="No_Ghillie";
-            Team="Team_1";
-        };
-        class ARMCO_Phoenix_Team_2_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Phoenix";
-            Addons="No_Ghillie";
-            Team="Team_2";
-        };
-        class ARMCO_Phoenix_Team_3_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Phoenix";
-            Addons="No_Ghillie";
-            Team="Team_3";
-        };
-        class ARMCO_Phoenix_Medical_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Phoenix";
-            Addons="No_Ghillie";
-            Team="Team_Medical";
-        };
-        class ARMCO_Phoenix_EOD_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Phoenix";
-            Addons="No_Ghillie";
-            Team="Team_EOD";
-        };
-    // Sabre Verents
-        class ARMCO_Sabre_Team_1_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Sabre";
-            Addons="No_Ghillie";
-            Team="Team_1";
-        };
-        class ARMCO_Sabre_Team_2_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Sabre";
-            Addons="No_Ghillie";
-            Team="Team_2";
-        };
-        class ARMCO_Sabre_Team_3_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Sabre";
-            Addons="No_Ghillie";
-            Team="Team_3";
-        };
-        class ARMCO_Sabre_Medical_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Sabre";
-            Addons="No_Ghillie";
-            Team="Team_Medical";
-        };
-        class ARMCO_Sabre_EOD_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Sabre";
-            Addons="No_Ghillie";
-            Team="Team_EOD";
-        };
-    // Ghillies
-        class ARMCO_Alpha_Ghillie_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Alpha";
-            Addons="Ghillie";
-        };
-        class ARMCO_Sabre_Ghillie_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Sabre";
-            Addons="Ghillie";
-        };
-        class ARMCO_Zulu_Ghillie_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Zulu";
-            Addons="Ghillie";
-        };
-        class ARMCO_Phoenix_Ghillie_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Phoenix";
-            Addons="Ghillie";
-        };
-        class ARMCO_Medical_Ghillie_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="Medical";
-            Addons="Ghillie";
-        };
-        class ARMCO_EOD_Ghillie_Armor
-        {
-            Model="ARMCO_Base_Armor";
-            Squads="EOD";
-            Addons="Ghillie";
-        };
+		    // Zulu Veriants
+		class ARMCO_Zulu_Team_1_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Zulu";
+			Addons="No_Ghillie";
+			Team="Team_1";
+		};
+		class ARMCO_Zulu_Team_2_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Zulu";
+			Addons="No_Ghillie";
+			Team="Team_2";
+		};
+		class ARMCO_Zulu_EOD_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Zulu";
+			Addons="No_Ghillie";
+			Team="Team_EOD";
+		};
+		class ARMCO_Zulu_Medical_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Zulu";
+			Addons="No_Ghillie";
+			Team="Team_Medical";
+		};
+		    // Phoenix Veriants
+		class ARMCO_Phoenix_Team_1_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Phoenix";
+			Addons="No_Ghillie";
+			Team="Team_1";
+		};
+		class ARMCO_Phoenix_Team_2_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Phoenix";
+			Addons="No_Ghillie";
+			Team="Team_2";
+		};
+		class ARMCO_Phoenix_Team_3_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Phoenix";
+			Addons="No_Ghillie";
+			Team="Team_3";
+		};
+		class ARMCO_Phoenix_Medical_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Phoenix";
+			Addons="No_Ghillie";
+			Team="Team_Medical";
+		};
+		class ARMCO_Phoenix_EOD_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Phoenix";
+			Addons="No_Ghillie";
+			Team="Team_EOD";
+		};
+		    // Sabre Verents
+		class ARMCO_Sabre_Team_1_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Sabre";
+			Addons="No_Ghillie";
+			Team="Team_1";
+		};
+		class ARMCO_Sabre_Team_2_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Sabre";
+			Addons="No_Ghillie";
+			Team="Team_2";
+		};
+		class ARMCO_Sabre_Team_3_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Sabre";
+			Addons="No_Ghillie";
+			Team="Team_3";
+		};
+		class ARMCO_Sabre_Medical_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Sabre";
+			Addons="No_Ghillie";
+			Team="Team_Medical";
+		};
+		class ARMCO_Sabre_EOD_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Sabre";
+			Addons="No_Ghillie";
+			Team="Team_EOD";
+		};
+		    // Ghillies
+		class ARMCO_Alpha_Ghillie_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Alpha";
+			Addons="Ghillie";
+		};
+		class ARMCO_Sabre_Ghillie_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Sabre";
+			Addons="Ghillie";
+		};
+		class ARMCO_Zulu_Ghillie_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Zulu";
+			Addons="Ghillie";
+		};
+		class ARMCO_Phoenix_Ghillie_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Phoenix";
+			Addons="Ghillie";
+		};
+		class ARMCO_Medical_Ghillie_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="Medical";
+			Addons="Ghillie";
+		};
+		class ARMCO_EOD_Ghillie_Armor
+		{
+			Model="ARMCO_Base_Armor";
+			Squads="EOD";
+			Addons="Ghillie";
+		};
 
-    //ODST Armours
-        class ARMCO_Alpha_ODST_Armor
-        {
-            Model="ARMCO_Base_ODST_Armor";
-            Squads="Alpha";
-        };
-        class ARMCO_Sabre_ODST_Armor
-        {
-            Model="ARMCO_Base_ODST_Armor";
-            Squads="Sabre";
-        };
-        class ARMCO_Zulu_ODST_Armor
-        {
-            Model="ARMCO_Base_ODST_Armor";
-            Squads="Zulu";
-        };
-        class ARMCO_Phoenix_ODST_Armor
-        {
-            Model="ARMCO_Base_ODST_Armor";
-            Squads="Phoenix";
-        };
+		   // ODST Armours
+		class ARMCO_Alpha_ODST_Armor
+		{
+			Model="ARMCO_Base_ODST_Armor";
+			Squads="Alpha";
+		};
+		class ARMCO_Sabre_ODST_Armor
+		{
+			Model="ARMCO_Base_ODST_Armor";
+			Squads="Sabre";
+		};
+		class ARMCO_Zulu_ODST_Armor
+		{
+			Model="ARMCO_Base_ODST_Armor";
+			Squads="Zulu";
+		};
+		class ARMCO_Phoenix_ODST_Armor
+		{
+			Model="ARMCO_Base_ODST_Armor";
+			Squads="Phoenix";
+		};
 
+		   // Custom Armour
+		class ARMCO_Addy_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Addy";
+		};
+		class ARMCO_Belhun_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Belhun";
+		};
+		class ARMCO_Blue_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Blue";
+		};
+		class ARMCO_Boone_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Boone";
+		};
+		class ARMCO_Burford_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Burford";
+		};
+		class ARMCO_Cheese_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Cheese";
+		};
+		class ARMCO_Ciro_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Ciro";
+		};
+		class ARMCO_Darkness_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Darkness";
+		};
+		class ARMCO_Darman_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Darman";
+		};
+		class ARMCO_Extortionist_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Extortionist";
+		};
+		class ARMCO_Garfield_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Garfield";
+		};
+		class ARMCO_Merek_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Merek";
+		};
+		class ARMCO_Mini_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Mini";
+		};
+		class ARMCO_Nutters_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Nutters";
+		};
+		class ARMCO_Raziel_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Raziel";
+		};
+		class ARMCO_Reaper_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Reaper";
+		};
+		class ARMCO_Red_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Red";
+		};
+		class ARMCO_Shaw_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Shaw";
+		};
+		class ARMCO_VJ_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="VJ";
+		};
+		class ARMCO_Wolffe_ODST_Armor
+		{
+			Model="ARMCO_Custom_ODST_Armor";
+			Custom="Wolffe";
+		};
+		   // Custom Helemts
+		class Addy_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Addy";
+			polar="polar0";
+		};
+		class Belhun_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Belhun";
+			polar="polar0";
+		};
+		class Blue_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Blue";
+			polar="polar0";
+		};
+		class Burford_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Burford";
+			polar="polar0";
+		};
+		class Boone_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Boone";
+			polar="polar0";
+		};
+		class Cheese_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Cheese";
+			polar="polar0";
+		};
+		class Ciro_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Ciro";
+			polar="polar0";
+		};
+		class Darkness_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Darkness";
+			polar="polar0";
+		};
+		class Darman_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Darman";
+			polar="polar0";
+		};
+		class Extortionist_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Extortionist";
+			polar="polar0";
+		};
+		class Garfield_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Garfield";
+			polar="polar0";
+		};
+		class Merek_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Merek";
+			polar="polar0";
+		};
+		class Mini_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Mini";
+			polar="polar0";
+		};
+		class Nutters_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Nutters";
+			polar="polar0";
+		};
+		class Raziel_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Raziel";
+			polar="polar0";
+		};
+		class Reaper_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Reaper";
+			polar="polar0";
+		};
+		class Red_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Red";
+			polar="polar0";
+		};
+		class Shaw_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Shaw";
+			polar="polar0";
+		};
+		class VJ_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="VJ";
+			polar="polar0";
+		};
+		class Wolffe_CH252D_Helmet_dp
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Wolffe";
+			polar="polar0";
+		};
+		   // Squad Helemt
+		class Addy_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Addy";
+			polar="polar1";
+		};
+		class Belhun_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Belhun";
+			polar="polar1";
+		};
+		class Blue_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Blue";
+			polar="polar1";
+		};
+		class Burford_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Burford";
+			polar="polar1";
+		};
+		class Boone_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Boone";
+			polar="polar1";
+		};
+		class Cheese_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Cheese";
+			polar="polar1";
+		};
+		class Ciro_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Ciro";
+			polar="polar1";
+		};
+		class Darkness_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Darkness";
+			polar="polar1";
+		};
+		class Darman_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Darman";
+			polar="polar1";
+		};
+		class Extortionist_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Extortionist";
+			polar="polar1";
+		};
+		class Garfield_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Garfield";
+			polar="polar1";
+		};
+		class Merek_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Merek";
+			polar="polar1";
+		};
+		class Mini_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Mini";
+			polar="polar1";
+		};
+		class Nutters_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Nutters";
+			polar="polar1";
+		};
+		class Raziel_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Raziel";
+			polar="polar1";
+		};
+		class Reaper_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Reaper";
+			polar="polar1";
+		};
+		class Red_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Red";
+			polar="polar1";
+		};
+		class Shaw_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Shaw";
+			polar="polar1";
+		};
+		class VJ_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="VJ";
+			polar="polar1";
+		};
+		class Wolffe_CH252D_Helmet
+		{
+			Model="ARMCO_Custom_ODST_Helmets";
+			Custom="Wolffe";
+			polar="polar1";
+		};
 
+		   // Squad Helemt
+		class Alpha_CH252_Helmet
+		{
+			Model="ARMCO_Squad_Helmet";
+			Squads="Alpha";
+		};
+		class Sabre_CH252_Helmet
+		{
+			Model="ARMCO_Squad_Helmet";
+			Squads="Sabre";
+		};
+		class Phoenix_CH252_Helmet
+		{
+			Model="ARMCO_Squad_Helmet";
+			Squads="Phoenix";
+		};
+		class Zulu_CH252_Helmet
+		{
+			Model="ARMCO_Squad_Helmet";
+			Squads="Zulu";
+		};
+		class Medical_CH252_Helmet
+		{
+			Model="ARMCO_Squad_Helmet";
+			Squads="Medical";
+		};
+		class EOD_CH252_Helmet
+		{
+			Model="ARMCO_Squad_Helmet";
+			Squads="EOD";
+		};
+		class ARMCO_Generic_CH252_Ghillie_Helmet
+		{
+			Model="ARMCO_Squad_Helmet";
+			Squads="Ghillie";
+		};
+		    // ODST Squad Helmet
+		class Alpha_CH252D_Helmet
+		{
+			Model="ARMCO_ODST_Squad_Helmet";
+			Squads="Alpha";
+			polar="polar0";
+		};
+		class Sabre_CH252D_Helmet
+		{
+			Model="ARMCO_ODST_Squad_Helmet";
+			Squads="Sabre";
+			polar="polar0";
+		};
+		class Zulu_CH252D_Helmet
+		{
+			Model="ARMCO_ODST_Squad_Helmet";
+			Squads="Zulu";
+			polar="polar0";
+		};
+		class Phoenix_CH252D_Helmet
+		{
+			Model="ARMCO_ODST_Squad_Helmet";
+			Squads="Phoenix";
+			polar="polar0";
+		};
 
+		class Alpha_CH252D_Helmet_dp
+		{
+			Model="ARMCO_ODST_Squad_Helmet";
+			Squads="Alpha";
+			polar="polar1";
+		};
+		class Sabre_CH252D_Helmet_dp
+		{
+			Model="ARMCO_ODST_Squad_Helmet";
+			Squads="Sabre";
+			polar="polar1";
+		};
+		class Zulu_CH252D_Helmet_dp
+		{
+			Model="ARMCO_ODST_Squad_Helmet";
+			Squads="Zulu";
+			polar="polar1";
+		};
+		class Phoenix_CH252D_Helmet_dp
+		{
+			Model="ARMCO_ODST_Squad_Helmet";
+			Squads="Phoenix";
+			polar="polar1";
+		};
+		   // Uniforms
+		class Alpha_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Alpha";
+			Role="Normal";
+		};
+		class Alpha_EOD_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Alpha";
+			Role="EOD";
+		};
+		class Alpha_Medic_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Alpha";
+			Role="Medical";
+		};
 
-    //Custom Armour
-        class ARMCO_Addy_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Addy";
-        };
-        class ARMCO_Belhun_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Belhun";
-        };
-        class ARMCO_Blue_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Blue";
-        };
-        class ARMCO_Boone_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Boone";
-        };
-        class ARMCO_Burford_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Burford";
-        };
-        class ARMCO_Cheese_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Cheese";
-        };
-        class ARMCO_Ciro_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Ciro";
-        };
-        class ARMCO_Darkness_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Darkness";
-        };
-        class ARMCO_Darman_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Darman";
-        };
-        class ARMCO_Extortionist_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Extortionist";
-        };
-        class ARMCO_Garfield_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Garfield";
-        };
-        class ARMCO_Merek_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Merek";
-        };
-        class ARMCO_Mini_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Mini";
-        };
-        class ARMCO_Nutters_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Nutters";
-        };
-        class ARMCO_Raziel_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Raziel";
-        };
-        class ARMCO_Reaper_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Reaper";
-        };
-        class ARMCO_Red_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Red";
-        };
-        class ARMCO_Shaw_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Shaw";
-        };
-        class ARMCO_VJ_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="VJ";
-        };
-        class ARMCO_Wolffe_ODST_Armor
-        {
-            Model="ARMCO_Custom_ODST_Armor";
-            Custom="Wolffe";
-        };
-    //Custom Helemts
-        class Addy_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Addy";
-            polar="polar0";
-        };
-        class Belhun_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Belhun";
-            polar="polar0";
-        };
-        class Blue_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Blue";
-            polar="polar0";
-        };
-        class Burford_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Burford";
-            polar="polar0";
-        };
-        class Boone_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Boone";
-            polar="polar0";
-        };
-        class Cheese_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Cheese";
-            polar="polar0";
-        };
-        class Ciro_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Ciro";
-            polar="polar0";
-        };
-        class Darkness_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Darkness";
-            polar="polar0";
-        };
-        class Darman_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Darman";
-            polar="polar0";
-        };
-        class Extortionist_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Extortionist";
-            polar="polar0";
-        };
-        class Garfield_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Garfield";
-            polar="polar0";
-        };
-        class Merek_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Merek";
-            polar="polar0";
-        };
-        class Mini_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Mini";
-            polar="polar0";
-        };
-        class Nutters_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Nutters";
-            polar="polar0";
-        };
-        class Raziel_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Raziel";
-            polar="polar0";
-        };
-        class Reaper_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Reaper";
-            polar="polar0";
-        };
-        class Red_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Red";
-            polar="polar0";
-        };
-        class Shaw_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Shaw";
-            polar="polar0";
-        };
-        class VJ_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="VJ";
-            polar="polar0";
-        };
-        class Wolffe_CH252D_Helmet_dp
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Wolffe";
-            polar="polar0";
-        };
-    //Squad Helemt
-        class Addy_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Addy";
-            polar="polar1";
-        };
-        class Belhun_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Belhun";
-            polar="polar1";
-        };
-        class Blue_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Blue";
-            polar="polar1";
-        };
-        class Burford_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Burford";
-            polar="polar1";
-        };
-        class Boone_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Boone";
-            polar="polar1";
-        };
-        class Cheese_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Cheese";
-            polar="polar1";
-        };
-        class Ciro_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Ciro";
-            polar="polar1";
-        };
-        class Darkness_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Darkness";
-            polar="polar1";
-        };
-        class Darman_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Darman";
-            polar="polar1";
-        };
-        class Extortionist_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Extortionist";
-            polar="polar1";
-        };
-        class Garfield_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Garfield";
-            polar="polar1";
-        };
-        class Merek_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Merek";
-            polar="polar1";
-        };
-        class Mini_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Mini";
-            polar="polar1";
-        };
-        class Nutters_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Nutters";
-            polar="polar1";
-        };
-        class Raziel_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Raziel";
-            polar="polar1";
-        };
-        class Reaper_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Reaper";
-            polar="polar1";
-        };
-        class Red_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Red";
-            polar="polar1";
-        };
-        class Shaw_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Shaw";
-            polar="polar1";
-        };
-        class VJ_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="VJ";
-            polar="polar1";
-        };
-        class Wolffe_CH252D_Helmet
-        {
-            Model="ARMCO_Custom_ODST_Helmets";
-            Custom="Wolffe";
-            polar="polar1";
-        };
+		class Sabre_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Sabre";
+			Role="Normal";
+		};
+		class Sabre_EOD_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Sabre";
+			Role="EOD";
+		};
+		class Sabre_Medic_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Sabre";
+			Role="Medical";
+		};
 
-    //Squad Helemt
-        class Alpha_CH252_Helmet
-        {
-            Model="ARMCO_Squad_Helmet";
-            Squads="Alpha";
-        };
-        class Sabre_CH252_Helmet
-        {
-            Model="ARMCO_Squad_Helmet";
-            Squads="Sabre";
-        };
-        class Phoenix_CH252_Helmet
-        {
-            Model="ARMCO_Squad_Helmet";
-            Squads="Phoenix";
-        };
-        class Zulu_CH252_Helmet
-        {
-            Model="ARMCO_Squad_Helmet";
-            Squads="Zulu";
-        };
-        class Medical_CH252_Helmet
-        {
-            Model="ARMCO_Squad_Helmet";
-            Squads="Medical";
-        };
-        class EOD_CH252_Helmet
-        {
-            Model="ARMCO_Squad_Helmet";
-            Squads="EOD";
-        };
-        class ARMCO_Generic_CH252_Ghillie_Helmet
-        {
-            Model="ARMCO_Squad_Helmet";
-            Squads="Ghillie";
-        };
-    // ODST Squad Helmet
-        class Alpha_CH252D_Helmet
-        {
-            Model="ARMCO_ODST_Squad_Helmet";
-            Squads="Alpha";
-            polar="polar0";
-        };
-        class Sabre_CH252D_Helmet
-        {
-            Model="ARMCO_ODST_Squad_Helmet";
-            Squads="Sabre";
-            polar="polar0";
-        };
-        class Zulu_CH252D_Helmet
-        {
-            Model="ARMCO_ODST_Squad_Helmet";
-            Squads="Zulu";
-            polar="polar0";
-        };
-        class Phoenix_CH252D_Helmet
-        {
-            Model="ARMCO_ODST_Squad_Helmet";
-            Squads="Phoenix";
-            polar="polar0";
-        };
+		class Zulu_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Zulu";
+			Role="Normal";
+		};
+		class Zulu_EOD_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Zulu";
+			Role="EOD";
+		};
+		class Zulu_Medic_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Zulu";
+			Role="Medical";
+		};
 
-        class Alpha_CH252D_Helmet_dp
-        {
-            Model="ARMCO_ODST_Squad_Helmet";
-            Squads="Alpha";
-            polar="polar1";
-        };
-        class Sabre_CH252D_Helmet_dp
-        {
-            Model="ARMCO_ODST_Squad_Helmet";
-            Squads="Sabre";
-            polar="polar1";
-        };
-        class Zulu_CH252D_Helmet_dp
-        {
-            Model="ARMCO_ODST_Squad_Helmet";
-            Squads="Zulu";
-            polar="polar1";
-        };
-        class Phoenix_CH252D_Helmet_dp
-        {
-            Model="ARMCO_ODST_Squad_Helmet";
-            Squads="Phoenix";
-            polar="polar1";
-        };
-    //Uniforms
-        class Alpha_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Alpha";
-            Role="Normal";
-        };
-        class Alpha_EOD_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Alpha";
-            Role="EOD";
-        };
-        class Alpha_Medic_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Alpha";
-            Role="Medical";
-        };
-
-        class Sabre_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Sabre";
-            Role="Normal";
-        };
-        class Sabre_EOD_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Sabre";
-            Role="EOD";
-        };
-        class Sabre_Medic_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Sabre";
-            Role="Medical";
-        };
-
-        class Zulu_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Zulu";
-            Role="Normal";
-        };
-        class Zulu_EOD_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Zulu";
-            Role="EOD";
-        };
-        class Zulu_Medic_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Zulu";
-            Role="Medical";
-        };
-
-        class Phoenix_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Phoenix";
-            Role="Normal";
-        };
-        class Phoenix_EOD_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Phoenix";
-            Role="EOD";
-        };
-        class Phoenix_Medic_BDU
-        {
-            Model="ARMCO_Squad_BDU";
-            Squads="Phoenix";
-            Role="Medical";
-        };
-    //Cusom BDUs
-        class ARMCO_ODST_BLK_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="ODST";
-        };
-        class ARMCO_ODST_camo_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="ODST_Camo";
-        };
-        class ARMCO_ODST_M90_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="ODST_M90";
-        };
-        class ARMCO_ODST_GDJungle_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="Jungle";
-        };
-        class ARMCO_ODST_GDDMOUNT_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="Dark_Mountain";
-        };
-        class ARMCO_ODST_NEWGDDMOUNT_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="New_Jungle";
-        };
-        class ARMCO_ODST_DDRKWDL_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="Digital_Dark_Woodland";
-        };
-        class ARMCO_ODST_DWLD_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="Digital_Woodland";
-        };
-        class ARMCO_SEC_OVAL_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="Security_Tactical";
-        };
-        class ARMCO_ODST_SEC_BDU
-        {
-            Model="ARMCO_Custom_BDU";
-            Custom="Security_ODST";
-        };
-    };
+		class Phoenix_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Phoenix";
+			Role="Normal";
+		};
+		class Phoenix_EOD_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Phoenix";
+			Role="EOD";
+		};
+		class Phoenix_Medic_BDU
+		{
+			Model="ARMCO_Squad_BDU";
+			Squads="Phoenix";
+			Role="Medical";
+		};
+		   // Cusom BDUs
+		class ARMCO_ODST_BLK_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="ODST";
+		};
+		class ARMCO_ODST_camo_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="ODST_Camo";
+		};
+		class ARMCO_ODST_M90_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="ODST_M90";
+		};
+		class ARMCO_ODST_GDJungle_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="Jungle";
+		};
+		class ARMCO_ODST_GDDMOUNT_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="Dark_Mountain";
+		};
+		class ARMCO_ODST_NEWGDDMOUNT_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="New_Jungle";
+		};
+		class ARMCO_ODST_DDRKWDL_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="Digital_Dark_Woodland";
+		};
+		class ARMCO_ODST_DWLD_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="Digital_Woodland";
+		};
+		class ARMCO_SEC_OVAL_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="Security_Tactical";
+		};
+		class ARMCO_ODST_SEC_BDU
+		{
+			Model="ARMCO_Custom_BDU";
+			Custom="Security_ODST";
+		};
+	};
 };
 class XtdGearModels
 {
-    class CfgWeapons
-    {
-        class ARMCO_Base_Armor
+	class CfgWeapons
+	{
+		class ARMCO_Base_Armor
 		{
 			options[]=
 			{
 				"Squads",
-                "Addons",
-                "Team"
+				"Addons",
+				"Team"
 			};
 			label="[ARMCO] M52D Body Armour";
 			class Squads
@@ -825,8 +822,8 @@ class XtdGearModels
 					"Sabre",
 					"Phoenix",
 					"Zulu",
-                    "Medical",
-                    "EOD"
+					"Medical",
+					"EOD"
 				};
 				class Alpha
 				{
@@ -844,16 +841,16 @@ class XtdGearModels
 				{
 					label="Zulu";
 				};
-                class Medical
+				class Medical
 				{
 					label="Medical";
 				};
-                class EOD
+				class EOD
 				{
 					label="EOD";
 				};
 			};
-            class Addons
+			class Addons
 			{
 				alwaysSelectable=1;
 				changeingame=0;
@@ -873,7 +870,7 @@ class XtdGearModels
 					label="Ghillie";
 				};
 			};
-            class Team
+			class Team
 			{
 				alwaysSelectable=1;
 				changeingame=0;
@@ -895,7 +892,7 @@ class XtdGearModels
 				{
 					label="Team 2";
 				};
-                class Team_3
+				class Team_3
 				{
 					label="Team 3";
 				};
@@ -903,14 +900,13 @@ class XtdGearModels
 				{
 					label="EOD";
 				};
-                class Team_Medical
+				class Team_Medical
 				{
 					label="Medical";
 				};
 			};
-
 		};
-        class ARMCO_Base_ODST_Armor
+		class ARMCO_Base_ODST_Armor
 		{
 			options[]=
 			{
@@ -947,13 +943,12 @@ class XtdGearModels
 					label="Zulu";
 				};
 			};
-
 		};
-        class ARMCO_Custom_ODST_Armor
+		class ARMCO_Custom_ODST_Armor
 		{
 			options[]=
 			{
-                "Custom"
+				"Custom"
 			};
 			label="[ARMCO] Custom ODST Armour";
 			class Custom
@@ -977,7 +972,7 @@ class XtdGearModels
 					"Garfield",
 					"Merek",
 					"Mini",
-                    "Nutters",
+					"Nutters",
 					"Raziel",
 					"Reaper",
 					"Red",
@@ -986,93 +981,92 @@ class XtdGearModels
 					"Wolffe"
 				};
 				class Addy
-                {
-                    label="Addy";
-                };
+				{
+					label="Addy";
+				};
 				class Belhun
-                {
-                    label="Belhun";
-                };
+				{
+					label="Belhun";
+				};
 				class Blue
-                {
-                    label="Blue";
-                };
+				{
+					label="Blue";
+				};
 				class Boone
-                {
-                    label="Boone";
-                };
+				{
+					label="Boone";
+				};
 				class Burford
-                {
-                    label="Burford";
-                };
+				{
+					label="Burford";
+				};
 				class Cheese
-                {
-                    label="Cheese";
-                };
+				{
+					label="Cheese";
+				};
 				class Ciro
-                {
-                    label="Ciro";
-                };
+				{
+					label="Ciro";
+				};
 				class Darkness
-                {
-                    label="Darkness";
-                };
+				{
+					label="Darkness";
+				};
 				class Darman
-                {
-                    label="Darman";
-                };
+				{
+					label="Darman";
+				};
 				class Extortionist
-                {
-                    label="Extortionist";
-                };
+				{
+					label="Extortionist";
+				};
 				class Garfield
-                {
-                    label="Garfield";
-                };
+				{
+					label="Garfield";
+				};
 				class Merek
-                {
-                    label="Merek";
-                };
+				{
+					label="Merek";
+				};
 				class Nutters
-                {
-                    label="Nutters";
-                };
-                class Mini
-                {
-                    label="Mini";
-                };
+				{
+					label="Nutters";
+				};
+				class Mini
+				{
+					label="Mini";
+				};
 				class Raziel
-                {
-                    label="Raziel";
-                };
+				{
+					label="Raziel";
+				};
 				class Reaper
-                {
-                    label="Reaper";
-                };
+				{
+					label="Reaper";
+				};
 				class Red
-                {
-                    label="Red";
-                };
+				{
+					label="Red";
+				};
 				class Shaw
-                {
-                    label="Shaw";
-                };
+				{
+					label="Shaw";
+				};
 				class VJ
-                {
-                    label="VJ";
-                };
+				{
+					label="VJ";
+				};
 				class Wolffe
-                {
-                    label="Wolffe";
-                };
+				{
+					label="Wolffe";
+				};
 			};
-
 		};
-        class ARMCO_Custom_ODST_Helmets
+		class ARMCO_Custom_ODST_Helmets
 		{
 			options[]=
 			{
-                "Custom"
+				"Custom"
 			};
 			label="[ARMCO] Custom ODST Helmets";
 			class Custom
@@ -1096,7 +1090,7 @@ class XtdGearModels
 					"Garfield",
 					"Merek",
 					"Mini",
-                    "Nutters",
+					"Nutters",
 					"Raziel",
 					"Reaper",
 					"Red",
@@ -1105,89 +1099,88 @@ class XtdGearModels
 					"Wolffe"
 				};
 				class Addy
-                {
-                    label="Addy";
-                };
+				{
+					label="Addy";
+				};
 				class Belhun
-                {
-                    label="Belhun";
-                };
+				{
+					label="Belhun";
+				};
 				class Blue
-                {
-                    label="Blue";
-                };
+				{
+					label="Blue";
+				};
 				class Boone
-                {
-                    label="Boone";
-                };
+				{
+					label="Boone";
+				};
 				class Burford
-                {
-                    label="Burford";
-                };
+				{
+					label="Burford";
+				};
 				class Cheese
-                {
-                    label="Cheese";
-                };
+				{
+					label="Cheese";
+				};
 				class Ciro
-                {
-                    label="Ciro";
-                };
+				{
+					label="Ciro";
+				};
 				class Darkness
-                {
-                    label="Darkness";
-                };
+				{
+					label="Darkness";
+				};
 				class Darman
-                {
-                    label="Darman";
-                };
+				{
+					label="Darman";
+				};
 				class Extortionist
-                {
-                    label="Extortionist";
-                };
+				{
+					label="Extortionist";
+				};
 				class Garfield
-                {
-                    label="Garfield";
-                };
+				{
+					label="Garfield";
+				};
 				class Merek
-                {
-                    label="Merek";
-                };
+				{
+					label="Merek";
+				};
 				class Nutters
-                {
-                    label="Nutters";
-                };
-                class Mini
-                {
-                    label="Mini";
-                };
+				{
+					label="Nutters";
+				};
+				class Mini
+				{
+					label="Mini";
+				};
 				class Raziel
-                {
-                    label="Raziel";
-                };
+				{
+					label="Raziel";
+				};
 				class Reaper
-                {
-                    label="Reaper";
-                };
+				{
+					label="Reaper";
+				};
 				class Red
-                {
-                    label="Red";
-                };
+				{
+					label="Red";
+				};
 				class Shaw
-                {
-                    label="Shaw";
-                };
+				{
+					label="Shaw";
+				};
 				class VJ
-                {
-                    label="VJ";
-                };
+				{
+					label="VJ";
+				};
 				class Wolffe
-                {
-                    label="Wolffe";
-                };
+				{
+					label="Wolffe";
+				};
 			};
-
 		};
-        class ARMCO_Squad_Helmet
+		class ARMCO_Squad_Helmet
 		{
 			options[]=
 			{
@@ -1206,9 +1199,9 @@ class XtdGearModels
 					"Sabre",
 					"Phoenix",
 					"Zulu",
-                    "Medical",
-                    "EOD",
-                    "Ghillie"
+					"Medical",
+					"EOD",
+					"Ghillie"
 				};
 				class Alpha
 				{
@@ -1226,22 +1219,21 @@ class XtdGearModels
 				{
 					label="Zulu";
 				};
-                class Medical
+				class Medical
 				{
 					label="Medical";
 				};
-                class EOD
+				class EOD
 				{
 					label="EOD";
 				};
-                class Ghillie
+				class Ghillie
 				{
 					label="Ghillie";
 				};
 			};
-
 		};
-        class ARMCO_ODST_Squad_Helmet
+		class ARMCO_ODST_Squad_Helmet
 		{
 			options[]=
 			{
@@ -1279,12 +1271,12 @@ class XtdGearModels
 				};
 			};
 		};
-        class ARMCO_Squad_BDU
+		class ARMCO_Squad_BDU
 		{
 			options[]=
 			{
 				"Squads",
-                "Role"
+				"Role"
 			};
 			label="[ARMCO] Squad BDUs";
 			class Squads
@@ -1317,7 +1309,7 @@ class XtdGearModels
 					label="Zulu";
 				};
 			};
-            class Role
+			class Role
 			{
 				alwaysSelectable=1;
 				changeingame=0;
@@ -1343,7 +1335,7 @@ class XtdGearModels
 				};
 			};
 		};
-        class ARMCO_Custom_BDU
+		class ARMCO_Custom_BDU
 		{
 			options[]=
 			{
@@ -1372,7 +1364,6 @@ class XtdGearModels
 				class ODST
 				{
 					label="ODST";
-
 				};
 				class ODST_Camo
 				{
@@ -1386,7 +1377,7 @@ class XtdGearModels
 				{
 					label="Jungle";
 				};
-                class Dark_Mountain
+				class Dark_Mountain
 				{
 					label="Dark Mountain";
 				};
@@ -1402,7 +1393,7 @@ class XtdGearModels
 				{
 					label="Digital Woodland";
 				};
-                class Security_Tactical
+				class Security_Tactical
 				{
 					label="Tactical Overalls";
 				};
@@ -1412,5 +1403,5 @@ class XtdGearModels
 				};
 			};
 		};
-    };
+	};
 };

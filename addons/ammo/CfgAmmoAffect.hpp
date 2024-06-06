@@ -2,7 +2,9 @@ class WNZ_InjectMedical
 {
 	class Light1
 	{
-		position[]={0,0,0};
+		position[]={
+			0, 0, 0
+		};
 		simulation="light";
 		type="WNZ_TaserLight";
 		intensity=0.25;
@@ -11,7 +13,9 @@ class WNZ_InjectMedical
 	};
 	class Exp1
 	{
-		position[]={0,0,0};
+		position[]={
+			0, 0, 0
+		};
 		simulation="particles";
 		type="WNZ_HealExp";
 		intensity=1;
