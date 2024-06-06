@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 class CfgPatches {
-    class Armco_4th_Weapons
+    class 4thot_weapons
 	{
     units[] = {};
     weapons[] = {};

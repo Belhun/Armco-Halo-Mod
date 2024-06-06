@@ -9,7 +9,7 @@ class CfgPatches {
         {
             "A3_Data_F_Mark_Loadorder",
             "OPTRE_Loadorder",
-            ""
+            "4thot_weapons"
         };
         authors[] = {"Belhun", "Darknessvoid99"};
         url = ECSTRING(main,URL);
@@ -93,7 +93,11 @@ class CfgFactionClasses
         {
             displayName = "UNSCMC, 3rd Marine Division";
         };
-};
+    //United Rebel Front
+};      class 4thot_urf3
+        {
+            displayName = "URF, 3rd Expeditionary Unit";
+        };
 
 class CfgEditorSubcategories
 {
@@ -186,6 +190,50 @@ class CfgEditorSubcategories
 
 class CfgMagazines
 {
+    class OPTRE_M2_Smoke;
+    class OPTRE_M2_Smoke_Red;
+    class OPTRE_M2_Smoke_Green;
+    class OPTRE_M2_Smoke_Orange;
+    class HandGrenade;
+    class MiniGrenade;
+
+    class 4thot_g_hef_h : MiniGrenade
+    {
+        scope = 1;
+        displayName = "OGH-13 HE-F Grenade";
+    };
+
+    class 4thot_g_hef_l : MiniGrenade
+    {
+        scope = 1;
+        displayName = "OGL-7 HE Grenade";
+        mass = 5;
+    };
+
+    class 4thot_g_smk_urf_w : OPTRE_M2_Smoke
+    {
+        scope = 1;
+        displayName = "DGS-9 Smoke Grenade (White)";
+    };
+
+    class 4thot_g_smk_urf_r : OPTRE_M2_Smoke_Red
+    {
+        scope = 1;
+        displayName = "DGS-9 Smoke Grenade (Red)";
+    };
+
+    class 4thot_g_smk_urf_g : OPTRE_M2_Smoke_Green
+    {
+        scope = 1;
+        displayName = "DGS-9 Smoke Grenade (Green)";
+    };
+
+    class 4thot_g_smk_urf_o : OPTRE_M2_Smoke_Orange
+    {
+        scope = 1;
+        displayName = "DGS-9 Smoke Grenade (Orange)";
+    };
+
     class 130Rnd_338_Mag;
     class 4thot_b_86070_100_ap : 130Rnd_338_Mag
     {
@@ -199,6 +247,14 @@ class CfgMagazines
 
         //mass = 60;
         count = 100;
+    };
+
+    class Command_20Rnd_65_TracerR_Mag;
+    class 4thot_m_65048_75_sy : Command_20Rnd_65_TracerR_Mag
+    {
+        displayName = "75Rnd 6.5x48mm Magazines";
+        mass = 40;
+        count = 75;
     };
 };
 
@@ -215,6 +271,48 @@ class CfgRecoils
 
 class CfgWeapons
 {
+    //Grenades
+        class GrenadeLauncher;
+        class ThrowMuzzle;
+
+        class Throw : GrenadeLauncher
+        {
+            muzzles[] +=
+            {
+                "4thot_g_hef_h_Muzzle",
+                "4thot_g_hef_l_Muzzle",
+                "4thot_g_smk_urf_w_Muzzle",
+                "4thot_g_smk_urf_r_Muzzle",
+                "4thot_g_smk_urf_g_Muzzle",
+                "4thot_g_smk_urf_o_Muzzle",
+            };
+
+            class 4thot_g_hef_h_Muzzle : ThrowMuzzle
+            {
+                magazines[] = {"4thot_g_hef_h"};
+            };
+            class 4thot_g_hef_l_Muzzle : ThrowMuzzle
+            {
+                magazines[] = {"4thot_g_hef_l"};
+            };
+            class 4thot_g_smk_urf_w_Muzzle : ThrowMuzzle
+            {
+                magazines[] = {"4thot_g_smk_urf_w"};
+            };
+            class 4thot_g_smk_urf_r_Muzzle : ThrowMuzzle
+            {
+                magazines[] = {"4thot_g_smk_urf_r"};
+            };
+            class 4thot_g_smk_urf_g_Muzzle : ThrowMuzzle
+            {
+                magazines[] = {"4thot_g_smk_urf_g"};
+            };
+            class 4thot_g_smk_urf_o_Muzzle : ThrowMuzzle
+            {
+                magazines[] = {"4thot_g_smk_urf_o"};
+            };
+        };
+
     //Weapons
         class MMG_02_camo_F;
         class MMG_02_black_F : MMG_02_camo_F
@@ -336,6 +434,20 @@ class CfgWeapons
             };
         };
 
+        class DMR_03_base_F;
+        class OPTRE_Commando : DMR_03_base_F
+        {
+            magazines[] =
+            {
+                "Commando_20Rnd_65_Mag",
+                "Commando_20Rnd_65_TracerY_Mag",
+                "Command_20Rnd_65_TracerR_Mag",
+                "Commando_20Rnd_65_ReloadY_Mag",
+                "Commando_20Rnd_65_ReloadR_Mag",
+                "4thot_m_65048_75_sy"
+            };
+        };
+
     //Uniforms
         class Uniform_Base;
         class U_C_Uniform_Farmer_01_F : Uniform_Base
@@ -359,6 +471,16 @@ class CfgWeapons
             class ItemInfo;
         };
         class U_I_G_resistanceLeader_F : Uniform_Base
+        {
+            class ItemInfo;
+        };
+
+        class U_I_L_Uniform_01_tshirt_olive_F : Uniform_Base
+        {
+            class ItemInfo;
+        };
+
+        class U_C_Mechanic_01_F : Uniform_Base
         {
             class ItemInfo;
         };
@@ -434,6 +556,30 @@ class CfgWeapons
                 uniformClass = "U_I_G_resistanceLeader_nrm";
             };
         };
+
+        class U_I_L_Uniform_01_tshirt_olive_F_nrm : U_I_L_Uniform_01_tshirt_olive_F
+        {
+            scope = 1;
+            scopeCurator = 1;
+            ScopeArsenal = 1;
+
+            class ItemInfo : ItemInfo
+            {
+                uniformClass = "U_I_L_Uniform_01_tshirt_olive_nrm";
+            };
+        };
+
+        class U_C_Mechanic_01_F_nrm : U_C_Mechanic_01_F
+        {
+            scope = 1;
+            scopeCurator = 1;
+            ScopeArsenal = 1;
+
+            class ItemInfo : ItemInfo
+            {
+                uniformClass = "U_C_Mechanic_01_nrm";
+            };
+        };
 };
 
 class CfgVehicles
@@ -454,6 +600,8 @@ class CfgVehicles
     class I_C_Soldier_Bandit_3_F;
     class I_C_Soldier_Bandit_5_F;
     class I_G_resistanceLeader_F;
+    class I_L_Uniform_01_tshirt_olive_F;
+    class C_Mechanic_01_F;
 
     class U_C_Uniform_Farmer_01_nrm : C_Uniform_Farmer_01_F
     {
@@ -495,6 +643,20 @@ class CfgVehicles
         scope = 1;
         side = 0;
         uniformClass = "U_I_G_resistanceLeader_F_nrm";
+    };
+
+    class U_I_L_Uniform_01_tshirt_olive_nrm : I_L_Uniform_01_tshirt_olive_F
+    {
+        scope = 1;
+        side = 0;
+        uniformClass = "U_I_L_Uniform_01_tshirt_olive_F_nrm";
+    };
+
+    class U_C_Mechanic_01_nrm : C_Mechanic_01_F
+    {
+        scope = 1;
+        side = 0;
+        uniformClass = "U_C_Mechanic_01_F_nrm";
     };
 };
 
