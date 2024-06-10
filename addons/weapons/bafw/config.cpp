@@ -18,7 +18,7 @@ class CfgPatches {
 };
 
 class CfgMagazines {
-	// Grenade_Shell
+
 	class UK3CB_BAF_1Rnd_Smoke_Grenade_shell;
 	class UK3CB_BAF_1Rnd_SmokeRed_Grenade_shell;
 	class UK3CB_BAF_1Rnd_SmokeGreen_Grenade_shell;
@@ -26,6 +26,10 @@ class CfgMagazines {
 	class UK3CB_BAF_1Rnd_SmokePurple_Grenade_shell;
 	class UK3CB_BAF_1Rnd_SmokeBlue_Grenade_shell;
 	class UK3CB_BAF_1Rnd_SmokeOrange_Grenade_shell;
+
+	class OPTRE_M2_Smoke;
+
+//M319 Multiple Grenade Launcher (MGL) Magazines
 	class 4thot_u_40_8_Smoke_White_3CB: UK3CB_BAF_1Rnd_Smoke_Grenade_shell {
 		displayName = "8rnd Impact Smoke Round (White)";
 		count = 8;
@@ -49,6 +53,14 @@ class CfgMagazines {
 	class 4thot_u_40_8_Smoke_Orange_3CB: UK3CB_BAF_1Rnd_SmokeOrange_Grenade_shell {
 		displayName = "8rnd Impact Smoke Round (Orange)";
 		count = 8;
+	};
+
+//Grenades (Throwables)
+	class 4thot_g_smk_urf_w : OPTRE_M2_Smoke
+	{
+		scope = 1;
+		displayName = "DGS-9 Smoke Grenade (White)";
+		ammo = "UK3CB_BAF_SmokeShell";
 	};
 };
 class CfgMagazineWells

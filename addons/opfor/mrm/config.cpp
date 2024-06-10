@@ -4,8 +4,73 @@ class CfgPatches
 	class 4thot_opfor_mrm
 	{
 		addonRootClass="4thot_opfor";
-		weapons[] = {};
-		units[] = {};
+		weapons[] =
+		{
+			"4thot_v_mrm_rebreather"
+		};
+		units[] =
+		{
+			"4thot_e_B_SCBA_01_F",
+			"4thot_e_B_ViperHarness_blk_F_std",
+			"4thot_e_B_ViperHarness_blk_F_med",
+			"4thot_e_B_ViperHarness_blk_F_auto",
+			"4thot_e_B_ViperHarness_blk_F_mmg",
+			"4thot_e_B_ViperHarness_blk_F_ats",
+			"4thot_e_OPTRE_ANPRC_521_Black_sl",
+			"4thot_e_B_ViperLightHarness_blk_F_mark",
+			"4thot_u_mrm_sec_rifleman",
+			"4thot_u_mrm_sec_rifleman_a",
+			"4thot_u_mrm_sec_rifleman_br",
+			"4thot_u_mrm_sec_rifleman_k",
+			"4thot_u_mrm_sec_rifleman_a",
+			"4thot_u_mrm_sec_rifleman_br",
+			"4thot_u_mrm_sec_rifleman_k",
+			"4thot_u_mrm_sec_cqbs_sg",
+			"4thot_u_mrm_sec_cqbs_shd",
+			"4thot_u_mrm_sec_cqbs_smg",
+			"4thot_u_mrm_sec_medic",
+			"4thot_u_mrm_sec_sleader",
+			"4thot_u_mrm_sec_soldier",
+			"4thot_u_mrm_sec_soldier_k",
+			"4thot_u_mrm_sec_soldier_h",
+			"4thot_u_mrm_sec_militia",
+			"4thot_u_mrm_sec_militia_s10",
+			"4thot_u_mrm_sec_militia_a",
+			"4thot_u_mrm_sec_militia_s10_a",
+			"4thot_u_mrm_sec_soldier_mle",
+			"4thot_u_mrm_sec_militia_mle",
+			"4thot_u_mrm_sec_militia_mle_a",
+			"4thot_u_mrm_sec_militia_mle_b",
+			"4thot_u_mrm_sec_militia_mle_c",
+			"4thot_u_mrm_sec_militia_mle_e",
+			"4thot_u_mrm_sec_militia_mle_f",
+			"4thot_u_mrm_sec_militia_mle_g",
+			"4thot_u_mrm_sec_militia_mle_h",
+			"4thot_u_mrm_rifleman",
+			"4thot_u_mrm_medic",
+			"4thot_u_mrm_tleader",
+			"4thot_u_mrm_sleader",
+			"4thot_u_mrm_lmg",
+			"4thot_u_mrm_marks",
+			"4thot_u_mrm_mmg",
+			"4thot_u_mrm_sgr",
+			"4thot_u_mrm_ats",
+			"4thot_u_mrm_crew",
+			"4thot_nmr_v_m808b",
+			"4thot_nmr_v_hornet",
+			"4thot_nmr_v_bison_ifv",
+			"4thot_nmr_v_bison_mgs",
+			"4thot_nmr_v_oryx",
+			"4thot_nmr_v_hog_td",
+			"4thot_nmr_v_hog_mg",
+			"4thot_nmr_v_hog_apc",
+			"4thot_nmr_s_fg75",
+			"4thot_nmr_s_m247h",
+			"4thot_nmr_s_mg",
+			"4thot_nmr_s_aa",
+			"4thot_nmr_s_at",
+			"4thot_nmr_s_m247t"
+		};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
@@ -21,308 +86,10 @@ class CfgPatches
 
 class CfgWeapons
 {
-	class OPTRE_MA5AGL;
-	class OPTRE_MA5A;
-	class OPTRE_Commando_Snow;
-	class OPTRE_CQS48_Bulldog_Automatic_Snow;
-	class OPTRE_Bulldog_Riot_Shield_Snow;
-	class OPTRE_MA5K;
-	class OPTRE_HMG38;
-	class OPTRE_BR37;
-	class 4thot_w_a_hmg48h;
-	class OPTRE_M90A;
-	class optre_hgun_sas10_F;
-	class OPTRE_SAS10_Riot_Shield_Snow;
-	class OPTRE_Ins_URF_Helmet1_White;
-	class OPTRE_ONI_Researcher_Headgear;
-	class OPTRE_Ins_BJ_Helmet_URB;
 	class Vest_Camo_Base;
 	class V_RebreatherB : Vest_Camo_Base
 	{
 		class ItemInfo;
-	};
-
-	class 4thot_a_OPTRE_MA5AGL_mrco : OPTRE_MA5AGL
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "optic_MRCO";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_MA5A_mrco : OPTRE_MA5A
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "optic_MRCO";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_MA5A_scope : OPTRE_MA5A
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "OPTRE_BR55HB_Scope_Grey";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_MA5A_aco : OPTRE_MA5A
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "optic_Aco";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_Commando_Snow_ch : OPTRE_Commando_Snow
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "OPTRE_HMG38_CarryHandle";
-			};
-
-			class LinkedItemsUnder
-			{
-				slot = "UnderBarrelSlot";
-				item = "OPTRE_Riot_Shield_Icon_Fist";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_CQS48_Bulldog_Automatic_Snow_acos : OPTRE_CQS48_Bulldog_Automatic_Snow
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "optic_Aco_smg";
-			};
-
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M12_Laser";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_Bulldog_Riot_Shield_Snow_acos : OPTRE_Bulldog_Riot_Shield_Snow
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M12_Laser";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_MA5K_acos : OPTRE_MA5K
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "OPTRE_M6C_Scope";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_HMG38_std : OPTRE_HMG38
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "OPTRE_M73_SmartLink";
-			};
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M6C_Vis_Red_Laser";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot = "MuzzleSlot";
-				item = "ACE_muzzle_mzls_B";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_HMG38_auto : OPTRE_HMG38
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "OPTRE_M73_SmartLink";
-			};
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M6C_Vis_Red_Laser";
-			};
-			class LinkedItemsUnder
-			{
-				slot = "UnderBarrelSlot";
-				item = "bipod_01_F_blk";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_BR37_srm : OPTRE_BR37
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "OPTRE_SRM_Sight";
-			};
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M6C_Vis_Red_Laser";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot = "MuzzleSlot";
-				item = "OPTRE_M7_silencer";
-			};
-		};
-	};
-
-	class 4thot_w_a_hmg48h_a_srm : 4thot_w_a_hmg48h
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "CowsSlot";
-				item = "OPTRE_SRM_Sight";
-			};
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M12_Laser";
-			};
-			class LinkedItemsUnder
-			{
-				slot = "UnderBarrelSlot";
-				item = "bipod_01_F_blk";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_M90A_lsr : OPTRE_M90A
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M12_Laser";
-			};
-		};
-	};
-
-	class 4thot_a_optre_hgun_sas10_F_lsr : optre_hgun_sas10_F
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M6C_Vis_Red_Laser";
-			};
-		};
-	};
-
-	class 4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr : OPTRE_SAS10_Riot_Shield_Snow
-	{
-		scope = 1;
-		scopeCurator = 1;
-		ScopeArsenal = 1;
-		class LinkedItems
-		{
-			class LinkedItemsAcc
-			{
-				slot = "PointerSlot";
-				item = "OPTRE_M6C_Vis_Red_Laser";
-			};
-
-			class LinkedItemsUnder
-			{
-				slot = "UnderBarrelSlot";
-				item = "OPTRE_Riot_Shield_Icon_Fist";
-			};
-		};
 	};
 
 	class 4thot_v_mrm_rebreather : V_RebreatherB
@@ -336,7 +103,7 @@ class CfgWeapons
 
 class CfgVehicles
 {
-	// Equipment
+// Equipment
 	class B_SCBA_01_F;
 	class B_ViperHarness_blk_F;
 	class OPTRE_ANPRC_521_Black;
@@ -466,7 +233,7 @@ class CfgVehicles
 		class EventHandlers;
 	};
 
-	   // Security
+// Security
 	class 4thot_u_mrm_sec_rifleman : 4thot_u_opfor
 	{
 		scope = 2;
@@ -603,10 +370,10 @@ class CfgVehicles
 		displayName = "CQB Specialist (SMG)";
 
 		weapons[] = {
-			"4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr", "4thot_a_optre_hgun_sas10_F_lsr", "Throw", "Put"
+			"4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr", "optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		respawnWeapons[] = {
-			"4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr", "4thot_a_optre_hgun_sas10_F_lsr", "Throw", "Put"
+			"4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr", "optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		magazines[] = {
 			"kat_Painkiller", tx_5("32Rnd_10mm_Ball"), tx_10("32Rnd_10mm_Ball"), "OPTRE_M9_Frag", "OPTRE_M9_Frag"
@@ -672,7 +439,7 @@ class CfgVehicles
 			"kat_Painkiller", tx_5("OPTRE_32Rnd_762x51_Mag_Tracer"), tx_3("1Rnd_HE_Grenade_shell"), tx_3("OPTRE_1Rnd_MasterKey_Pellets")
 		};
 	};
-	   // Militia
+// Militia
 	class 4thot_u_mrm_sec_soldier : 4thot_u_mrm_sec_rifleman
 	{
 		displayName = "Soldier (SG)";
@@ -760,10 +527,10 @@ class CfgVehicles
 			"OPTRE_ONI_Researcher_Headgear", "OPTRE_FW_None", "V_Rangemaster_belt", "ItemRadio", "OPTRE_NVG"
 		};
 		weapons[] = {
-			"4thot_a_optre_hgun_sas10_F_lsr", "Throw", "Put"
+			"optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		respawnWeapons[] = {
-			"4thot_a_optre_hgun_sas10_F_lsr", "Throw", "Put"
+			"optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		magazines[] = {
 			"kat_Painkiller", tx_5("32Rnd_10mm_Ball")
@@ -1016,7 +783,7 @@ class CfgVehicles
 	{
 		uniformClass = "U_I_G_resistanceLeader_F_nrm";
 	};
-	   // Marines
+// Marines
 	class 4thot_u_mrm_rifleman : 4thot_u_mrm_sec_rifleman
 	{
 		side = 0;
@@ -1150,10 +917,10 @@ class CfgVehicles
 			"OPTRE_Ins_BJ_Helmet", "G_Balaclava_TI_blk_F", "OPTRE_Ins_BJ_Armor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG_MVI"
 		};
 		weapons[] = {
-			"4thot_a_OPTRE_BR37_srm", "4thot_a_optre_hgun_sas10_F_lsr", "Rangefinder", "Throw", "Put"
+			"4thot_a_OPTRE_BR37_srm", "optre_hgun_sas10_F_a_lsr", "Rangefinder", "Throw", "Put"
 		};
 		respawnWeapons[] = {
-			"4thot_a_OPTRE_BR37_srm", "4thot_a_optre_hgun_sas10_F_lsr", "Rangefinder", "Throw", "Put"
+			"4thot_a_OPTRE_BR37_srm", "optre_hgun_sas10_F_a_lsr", "Rangefinder", "Throw", "Put"
 		};
 		items[] = {
 			stditem, "ACE_RangeCard"
@@ -1175,10 +942,10 @@ class CfgVehicles
 
 		backpack = "4thot_e_B_ViperHarness_blk_F_mmg";
 		weapons[] = {
-			"4thot_w_a_hmg48h_a_srm", "4thot_a_optre_hgun_sas10_F_lsr", "Throw", "Put"
+			"4thot_w_a_hmg48h_a_srm", "optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		respawnWeapons[] = {
-			"4thot_w_a_hmg48h_a_srm", "4thot_a_optre_hgun_sas10_F_lsr", "Throw", "Put"
+			"4thot_w_a_hmg48h_a_srm", "optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		magazines[] = {
 			"kat_Painkiller", tx_2("UK3CB_BAF_SmokeShell"), tx_2("OPTRE_M9_Frag"), tx_2("4thot_b_86070_100_ap")

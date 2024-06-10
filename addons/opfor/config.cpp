@@ -2,8 +2,45 @@
 class CfgPatches {
 	class 4thot_opfor
 	{
-		units[] = {};
-		weapons[] = {};
+		units[] =
+		{
+			"U_C_Uniform_Farmer_01_nrm",
+			"U_C_ArtTShirt_01_v5_nrm",
+			"U_C_ArtTShirt_01_v6_nrm",
+			"U_I_C_Soldier_Bandit_3_nrm",
+			"U_I_C_Soldier_Bandit_5_nrm",
+			"U_I_G_resistanceLeader_nrm",
+			"U_I_L_Uniform_01_tshirt_olive_nrm",
+			"U_C_Mechanic_01_nrm"
+		};
+		weapons[] =
+		{
+			"4thot_a_OPTRE_MA5AGL_mrco",
+			"4thot_a_OPTRE_MA5A_mrco",
+			"4thot_a_OPTRE_MA5A_scope",
+			"4thot_a_OPTRE_MA5A_aco",
+			"4thot_a_OPTRE_Commando_Snow_ch",
+			"4thot_a_OPTRE_CQS48_Bulldog_Automatic_Snow_acos",
+			"4thot_a_OPTRE_Bulldog_Riot_Shield_Snow_acos",
+			"4thot_a_OPTRE_MA5K_acos",
+			"4thot_a_OPTRE_HMG38_std",
+			"4thot_a_OPTRE_HMG38_auto",
+			"4thot_a_OPTRE_BR37_srm",
+			"4thot_w_a_hmg48h_a_srm",
+			"4thot_a_OPTRE_M90A_lsr",
+			"optre_hgun_sas10_F_a_lsr",
+			"4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr",
+			"U_C_Uniform_Farmer_01_F_nrm",
+			"U_C_ArtTShirt_01_v5_F_nrm",
+			"U_C_ArtTShirt_01_v6_F_nrm",
+			"U_C_ArtTShirt_01_v5_F_nrm",
+			"U_C_ArtTShirt_01_v6_F_nrm",
+			"U_I_C_Soldier_Bandit_3_F_nrm",
+			"U_I_C_Soldier_Bandit_5_F_nrm",
+			"U_I_G_resistanceLeader_F_nrm",
+			"U_I_L_Uniform_01_tshirt_olive_F_nrm",
+			"U_C_Mechanic_01_F_nrm"
+		};
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
@@ -21,7 +58,7 @@ class CfgPatches {
 
 class CfgFactionClasses
 {
-	// Madrigal Republican Marines
+// Madrigal Republican Marines
 	class 4thot_nmr_mrm
 	{
 		displayName = "Madrigal Republican Marines (Space)";
@@ -37,7 +74,7 @@ class CfgFactionClasses
 		displayName = "Madrigal Republican Marines (Desert)";
 	};
 
-	   // Madrigal Military Forces
+// Madrigal Military Forces
 	class 4thot_nmr_mmf
 	{
 		displayName = "Madrigal Military Forces (Jungle)";
@@ -53,13 +90,13 @@ class CfgFactionClasses
 		displayName = "Madrigal Military Forces (Lunar)";
 	};
 
-	   // Free Madrigal Militia
+// Free Madrigal Militia
 	class 4thot_nmr_fmm
 	{
 		displayName = "Free Madrigal Militia";
 	};
 
-	   // Covenant
+// Covenant
 	class 4thot_cov_me
 	{
 		displayName = "Mafaam Enclave";
@@ -75,7 +112,7 @@ class CfgFactionClasses
 		displayName = "Volkam Ascendacy";
 	};
 
-	   // United Nations Space Command (UNSC)
+// United Nations Space Command (UNSC)
 	class 4thot_unsc_arm91
 	{
 		displayName = "UNSC Army, 91st Infantry Garrison";
@@ -95,12 +132,14 @@ class CfgFactionClasses
 	{
 		displayName = "UNSCMC, 3rd Marine Division";
 	};
-	   // United Rebel Front
+
+// United Rebel Front
+	class 4thot_urf_ex3
+	{
+		displayName = "URF, 3rd Expeditionary Unit";
+	};
 };
-class 4thot_urf3
-{
-	displayName = "URF, 3rd Expeditionary Unit";
-};
+
 
 class CfgEditorSubcategories
 {
@@ -125,7 +164,7 @@ class CfgEditorSubcategories
 		displayName = "Men (ODST)";
 	};
 
-	   // Madrigal Republican Marines
+// Madrigal Republican Marines
 	class 4thot_comp_mrm
 	{
 		displayName = "Madrigal Republican Marines (Space)";
@@ -141,7 +180,7 @@ class CfgEditorSubcategories
 		displayName = "Madrigal Republican Marines (Desert)";
 	};
 
-	   // Madrigal Military Forces
+// Madrigal Military Forces
 	class 4thot_comp_mmf
 	{
 		displayName = "Madrigal Military Forces (Jungle)";
@@ -157,13 +196,13 @@ class CfgEditorSubcategories
 		displayName = "Madrigal Military Forces (Lunar)";
 	};
 
-	   // Free Madrigal Militia
+// Free Madrigal Militia
 	class 4thot_comp_fmm
 	{
 		displayName = "Free Madrigal Militia";
 	};
 
-	   // Covenant
+// Covenant
 	class 4thot_comp_me
 	{
 		displayName = "Mafaam Enclave";
@@ -179,7 +218,7 @@ class CfgEditorSubcategories
 		displayName = "Volkam Ascendacy";
 	};
 
-	   // United Nations Space Command (UNSC)
+// United Nations Space Command (UNSC)
 	class 4thot_comp_unsc_arm
 	{
 		displayName = "UNSC Army";
@@ -189,58 +228,370 @@ class CfgEditorSubcategories
 	{
 		displayName = "UNSC Marine Corps";
 	};
-};
 
-class CfgMagazines
-{
-	class OPTRE_M2_Smoke;
-	class OPTRE_M2_Smoke_Red;
-	class OPTRE_M2_Smoke_Green;
-	class OPTRE_M2_Smoke_Orange;
-	class HandGrenade;
-	class MiniGrenade;
-
-	class 4thot_g_hef_h : MiniGrenade
+// United Rebel Front
+	class 4thot_comp_urf_ex3
 	{
-		scope = 1;
-		displayName = "OGH-13 HE-F Grenade";
-	};
-
-	class 4thot_g_hef_l : MiniGrenade
-	{
-		scope = 1;
-		displayName = "OGL-7 HE Grenade";
-		mass = 5;
-	};
-
-	class 4thot_g_smk_urf_w : OPTRE_M2_Smoke
-	{
-		scope = 1;
-		displayName = "DGS-9 Smoke Grenade (White)";
-	};
-
-	class 4thot_g_smk_urf_r : OPTRE_M2_Smoke_Red
-	{
-		scope = 1;
-		displayName = "DGS-9 Smoke Grenade (Red)";
-	};
-
-	class 4thot_g_smk_urf_g : OPTRE_M2_Smoke_Green
-	{
-		scope = 1;
-		displayName = "DGS-9 Smoke Grenade (Green)";
-	};
-
-	class 4thot_g_smk_urf_o : OPTRE_M2_Smoke_Orange
-	{
-		scope = 1;
-		displayName = "DGS-9 Smoke Grenade (Orange)";
+		displayName = "URF, 3rd Expeditionary Unit";
 	};
 };
 
 class CfgWeapons
 {
-	// Uniforms
+// Equiped Weapons (Attachments)
+	class OPTRE_MA5AGL;
+	class OPTRE_MA5A;
+	class OPTRE_Commando_Snow;
+	class OPTRE_CQS48_Bulldog_Automatic_Snow;
+	class OPTRE_Bulldog_Riot_Shield_Snow;
+	class OPTRE_MA5K;
+	class OPTRE_HMG38;
+	class OPTRE_BR37;
+	class 4thot_w_a_hmg48h;
+	class OPTRE_M90A;
+	class optre_hgun_sas10_F;
+	class OPTRE_SAS10_Riot_Shield_Snow;
+	class OPTRE_BR45_Black;
+	class OPTRE_SRM77_S1_Green;
+
+	class 4thot_a_OPTRE_MA5AGL_mrco : OPTRE_MA5AGL
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_MRCO";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_MA5A_mrco : OPTRE_MA5A
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_MRCO";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_MA5A_scope : OPTRE_MA5A
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "OPTRE_BR55HB_Scope_Grey";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_MA5A_aco : OPTRE_MA5A
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_Aco";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_Commando_Snow_ch : OPTRE_Commando_Snow
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "OPTRE_HMG38_CarryHandle";
+			};
+
+			class LinkedItemsUnder
+			{
+				slot = "UnderBarrelSlot";
+				item = "OPTRE_Riot_Shield_Icon_Fist";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_CQS48_Bulldog_Automatic_Snow_acos : OPTRE_CQS48_Bulldog_Automatic_Snow
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_Aco_smg";
+			};
+
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M12_Laser";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_Bulldog_Riot_Shield_Snow_acos : OPTRE_Bulldog_Riot_Shield_Snow
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M12_Laser";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_MA5K_acos : OPTRE_MA5K
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "OPTRE_M6C_Scope";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_HMG38_std : OPTRE_HMG38
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "OPTRE_M73_SmartLink";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M6C_Vis_Red_Laser";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "ACE_muzzle_mzls_B";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_HMG38_auto : OPTRE_HMG38
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "OPTRE_M73_SmartLink";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M6C_Vis_Red_Laser";
+			};
+			class LinkedItemsUnder
+			{
+				slot = "UnderBarrelSlot";
+				item = "bipod_01_F_blk";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_BR37_srm : OPTRE_BR37
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "OPTRE_SRM_Sight";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M6C_Vis_Red_Laser";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "OPTRE_M7_silencer";
+			};
+		};
+	};
+
+	class 4thot_w_a_hmg48h_a_srm : 4thot_w_a_hmg48h
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "OPTRE_SRM_Sight";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M12_Laser";
+			};
+			class LinkedItemsUnder
+			{
+				slot = "UnderBarrelSlot";
+				item = "bipod_01_F_blk";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_M90A_lsr : OPTRE_M90A
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M12_Laser";
+			};
+		};
+	};
+
+	class optre_hgun_sas10_F_a_lsr : optre_hgun_sas10_F
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M6C_Vis_Red_Laser";
+			};
+		};
+	};
+
+	class optre_hgun_sas10_F_a_sop : optre_hgun_sas10_F
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "OPTRE_M6C_Scope";
+			};
+		};
+	};
+
+	class 4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr : OPTRE_SAS10_Riot_Shield_Snow
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M6C_Vis_Red_Laser";
+			};
+
+			class LinkedItemsUnder
+			{
+				slot = "UnderBarrelSlot";
+				item = "OPTRE_Riot_Shield_Icon_Fist";
+			};
+		};
+	};
+
+	class OPTRE_BR45_Black_a_slsr : OPTRE_BR45_Black
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+		class LinkedItems
+		{
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "OPTRE_MA37KSuppressor";
+			};
+
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M12_Laser";
+			};
+		};
+	};
+
+	class OPTRE_SRM77_S1_Green_a_bp : OPTRE_SRM77_S1_Green
+	{
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "OPTRE_M12_Laser";
+			};
+
+			class LinkedItemsUnder
+			{
+				slot = "UnderBarrelSlot";
+				item = "bipod_01_F_khk";
+			};
+		};
+	};
+
+// Uniforms
 	class Uniform_Base;
 	class U_C_Uniform_Farmer_01_F : Uniform_Base
 	{
@@ -360,7 +711,7 @@ class CfgWeapons
 			uniformClass = "U_I_L_Uniform_01_tshirt_olive_nrm";
 		};
 	};
-	       // TODO: Fix Mechanic uniform(Possably note inherinting)
+
 	class U_C_Mechanic_01_F_nrm : U_C_Mechanic_01_F
 	{
 		scope = 1;
@@ -393,7 +744,7 @@ class CfgVehicles
 	class I_C_Soldier_Bandit_5_F;
 	class I_G_resistanceLeader_F;
 	class I_L_Uniform_01_tshirt_olive_F;
-	class C_Mechanic_01_F;
+	class C_Story_Mechanic_01_F;
 
 	class U_C_Uniform_Farmer_01_nrm : C_Uniform_Farmer_01_F
 	{
@@ -444,7 +795,7 @@ class CfgVehicles
 		uniformClass = "U_I_L_Uniform_01_tshirt_olive_F_nrm";
 	};
 
-	class U_C_Mechanic_01_nrm : C_Mechanic_01_F
+	class U_C_Mechanic_01_nrm : C_Story_Mechanic_01_F
 	{
 		scope = 1;
 		side = 0;

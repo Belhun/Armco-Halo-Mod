@@ -182,13 +182,18 @@ class ace_notLoaded { \
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
+#define tx_15(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a, a
+#define tx_14(a) a, a, a, a, a, a, a, a, a, a, a, a, a, a
+#define tx_13(a) a, a, a, a, a, a, a, a, a, a, a, a, a
+#define tx_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+#define tx_11(a) a, a, a, a, a, a, a, a, a, a, a
 #define tx_10(a) a, a, a, a, a, a, a, a, a, a
-#define tx_9(a) a, a, a, a, a
-#define tx_8(a) a, a, a, a, a
-#define tx_7(a) a, a, a, a, a
-#define tx_6(a) a, a, a, a, a
+#define tx_9(a) a, a, a, a, a, a, a, a, a
+#define tx_8(a) a, a, a, a, a, a, a, a
+#define tx_7(a) a, a, a, a, a, a, a
+#define tx_6(a) a, a, a, a, a, a
 #define tx_5(a) a, a, a, a, a
-#define tx_4(a) a, a, a
+#define tx_4(a) a, a, a, a
 #define tx_3(a) a, a, a
 #define tx_2(a) a, a
 #define stditem "ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_quikclot","ACE_quikclot","ACE_quikclot","OPTRE_Biofoam","ACE_epinephrine","ACE_epinephrine","ACE_splint","ACE_tourniquet","kat_IV_16","ACE_morphine","ACE_salineIV_250","ACE_EarPlugs","ACE_CableTie","ACE_CableTie","ACE_MapTools","ACE_EntrenchingTool","ACE_Canteen"

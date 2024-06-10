@@ -17,7 +17,7 @@ class CfgPatches {
 };
 
 class Cfgmagazines {
-	// 8 round Optre M319 Grenade Shells
+//M319 Multiple Grenade Launcher (MGL) Magazines
 	class M319_HE_Grenade_Shell;
 	class M319_HEDP_Grenade_Shell;
 	class M319_Buckshot;
@@ -118,6 +118,7 @@ class Cfgmagazines {
 		count = 4;
 	};
 
+//HMG-48 Medium Machinegun (MMG) Magazines
 	class 130Rnd_338_Mag;
 	class 4thot_b_86070_100_ap : 130Rnd_338_Mag
 	{
@@ -133,12 +134,58 @@ class Cfgmagazines {
 		count = 100;
 	};
 
+//VK Commando Autorifle Magazines
 	class Command_20Rnd_65_TracerR_Mag;
 	class 4thot_m_65048_75_sy : Command_20Rnd_65_TracerR_Mag
 	{
 		displayname = "75Rnd 6.5x48mm magazines";
 		mass = 40;
 		count = 75;
+	};
+
+//Grenades (Throwables)
+	class OPTRE_M2_Smoke;
+	class OPTRE_M2_Smoke_Red;
+	class OPTRE_M2_Smoke_Green;
+	class OPTRE_M2_Smoke_Orange;
+	class HandGrenade;
+	class MiniGrenade;
+
+	class 4thot_g_hef_h : MiniGrenade
+	{
+		scope = 1;
+		displayName = "OGH-13 HE-F Grenade";
+	};
+
+	class 4thot_g_hef_l : MiniGrenade
+	{
+		scope = 1;
+		displayName = "OGL-7 HE Grenade";
+		mass = 5;
+	};
+
+	class 4thot_g_smk_urf_w : OPTRE_M2_Smoke
+	{
+		scope = 1;
+		displayName = "DGS-9 Smoke Grenade (White)";
+	};
+
+	class 4thot_g_smk_urf_r : OPTRE_M2_Smoke_Red
+	{
+		scope = 1;
+		displayName = "DGS-9 Smoke Grenade (Red)";
+	};
+
+	class 4thot_g_smk_urf_g : OPTRE_M2_Smoke_Green
+	{
+		scope = 1;
+		displayName = "DGS-9 Smoke Grenade (Green)";
+	};
+
+	class 4thot_g_smk_urf_o : OPTRE_M2_Smoke_Orange
+	{
+		scope = 1;
+		displayName = "DGS-9 Smoke Grenade (Orange)";
 	};
 };
 class CfgMagazineWells
@@ -170,7 +217,7 @@ class CfgMagazineWells
 	};
 };
 class Cfgweapons {
-	// OPTRE_M319 Overwrite
+// OPTRE_M319 Overwrite
 	class OPTRE_Rifle_Base;
 	class OPTRE_M319: OPTRE_Rifle_Base {
 		magazineWell[] = {
@@ -180,7 +227,7 @@ class Cfgweapons {
 			"4thot_u_40_MGL"
 		};
 	};
-	    // Grenades
+// Grenades (Throwables)
 	class GrenadeLauncher;
 	class throwMuzzle;
 
@@ -234,7 +281,7 @@ class Cfgweapons {
 		};
 	};
 
-	    // weapons
+//HMG-48 Medium Machinegun (MMG)
 	class MMG_02_camo_F;
 	class MMG_02_black_F : MMG_02_camo_F
 	{
@@ -367,6 +414,7 @@ class Cfgweapons {
 		};
 	};
 
+//VK Commando Autorifle
 	class DMR_03_base_F;
 	class OPTRE_Commando : DMR_03_base_F
 	{
