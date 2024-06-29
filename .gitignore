@@ -352,3 +352,4 @@ ArmaScriptCompiler.exe
 .gitignore
 /@4thot
 .code-workspace
+*.code-workspace

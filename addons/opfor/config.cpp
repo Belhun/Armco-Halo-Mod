@@ -26,7 +26,7 @@ class CfgPatches {
 			"4thot_a_OPTRE_HMG38_std",
 			"4thot_a_OPTRE_HMG38_auto",
 			"4thot_a_OPTRE_BR37_srm",
-			"4thot_w_a_hmg48h_a_srm",
+			"4thot_w_a_hmg48_a_srm",
 			"4thot_a_OPTRE_M90A_lsr",
 			"optre_hgun_sas10_F_a_lsr",
 			"4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr",
@@ -247,7 +247,7 @@ class CfgWeapons
 	class OPTRE_MA5K;
 	class OPTRE_HMG38;
 	class OPTRE_BR37;
-	class 4thot_w_a_hmg48h;
+	class 4thot_w_a_hmg48;
 	class OPTRE_M90A;
 	class optre_hgun_sas10_F;
 	class OPTRE_SAS10_Riot_Shield_Snow;
@@ -461,7 +461,7 @@ class CfgWeapons
 		};
 	};
 
-	class 4thot_w_a_hmg48h_a_srm : 4thot_w_a_hmg48h
+	class 4thot_w_a_hmg48_a_srm : 4thot_w_a_hmg48
 	{
 		scope = 1;
 		scopeCurator = 1;

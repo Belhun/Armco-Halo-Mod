@@ -1702,11 +1702,11 @@ class CfgVehicles
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\transp_lopo_night_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
-			"\OPTRE_Weapons\static\fg75\data\cannon_co.paa",
-			"\OPTRE_Weapons\static\fg75\data\carriage_co.paa",
+			"\OPTRE_Weapons_Turrets\fg75\data\cannon_co.paa",
+			"\OPTRE_Weapons_Turrets\fg75\data\carriage_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
 			"\armco_vehicles\Warthog\data\M12HogMaav_interior_armco_co.paa",
-			"\OPTRE_Weapons\static\fg75\data\console_co.paa"
+			"\OPTRE_Weapons_Turrets\fg75\data\console_co.paa"
 		};
 	};
 };

@@ -347,9 +347,10 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			MACRO_ADDMAGAZINE(3Rnd_HE_Grenade_shell, 3);
-			MACRO_ADDMAGAZINE(OPTRE_1Rnd_SmokeYellow_Grenade_shell, 4);
-			MACRO_ADDMAGAZINE(ACE_40mm_Flare_white, 4);
+			MACRO_ADDMAGAZINE(4thot_u_40x57_1_ap, 8);
+			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_w, 3);
+			MACRO_ADDMAGAZINE(ACE_40mm_Flare_white, 3);
+			MACRO_ADDMAGAZINE(4thot_g_heat, 2);
 		};
 	};
 
@@ -444,10 +445,10 @@ class CfgVehicles
 			"V_BandollierB_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
 		};
 		weapons[] = {
-			"OPTRE_MA5A", "4thot_w_ld_lat24", "Throw", "Put"
+			"OPTRE_MA5A", "4thot_w_ld_m24_loaded", "Throw", "Put"
 		};
 		respawnWeapons[] = {
-			"OPTRE_MA5A", "4thot_w_ld_lat24", "Throw", "Put"
+			"OPTRE_MA5A", "4thot_w_ld_m24_loaded", "Throw", "Put"
 		};
 	};
 
@@ -469,10 +470,10 @@ class CfgVehicles
 			"OPTRE_BR45_Black", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", "4thot_g_hef_l", tx_4("OPTRE_36Rnd_95x40_Mag_Tracer")
+			"kat_Painkiller", "4thot_g_he_l", tx_4("OPTRE_36Rnd_95x40_Mag_Tracer")
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", "4thot_g_hef_l", tx_4("OPTRE_36Rnd_95x40_Mag_Tracer")
+			"kat_Painkiller", "4thot_g_he_l", tx_4("OPTRE_36Rnd_95x40_Mag_Tracer")
 		};
 
 		class EventHandlers
@@ -522,10 +523,10 @@ class CfgVehicles
 			"OPTRE_MA5AGL", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_4("OPTRE_32Rnd_762x51_Mag_Tracer"), "3Rnd_HE_Grenade_shell"
+			"kat_Painkiller", tx_4("OPTRE_32Rnd_762x51_Mag_Tracer"), "4thot_u_40x57_1_ap"
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_4("OPTRE_32Rnd_762x51_Mag_Tracer"), "3Rnd_HE_Grenade_shell"
+			"kat_Painkiller", tx_4("OPTRE_32Rnd_762x51_Mag_Tracer"), "4thot_u_40x57_1_ap"
 		};
 
 		class EventHandlers : EventHandlers
@@ -636,10 +637,10 @@ class CfgVehicles
 			"optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_5("16Rnd_10mm_Ball")
+			"kat_Painkiller", tx_5("16Rnd_10mm_Ball"), tx_2("4thot_g_smk_urf_b")
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_5("16Rnd_10mm_Ball")
+			"kat_Painkiller", tx_5("16Rnd_10mm_Ball"), tx_2("4thot_g_smk_urf_b")
 		};
 
 		class EventHandlers
@@ -686,10 +687,10 @@ class CfgVehicles
 			"OPTRE_M45TAC", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller",tx_7("OPTRE_6Rnd_8Gauge_Pellets"),tx_3("OPTRE_6Rnd_8Gauge_Slugs"),tx_2("4thot_g_hef_l"),tx_2("OPTRE_c7_remote_throwable_sticky_mag")
+			"kat_Painkiller",tx_7("OPTRE_6Rnd_8Gauge_Pellets"),tx_3("OPTRE_6Rnd_8Gauge_Slugs"),tx_2("4thot_g_he_l"),tx_2("OPTRE_c7_remote_throwable_sticky_mag")
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller",tx_7("OPTRE_6Rnd_8Gauge_Pellets"),tx_3("OPTRE_6Rnd_8Gauge_Slugs"),tx_2("4thot_g_hef_l"),tx_2("OPTRE_c7_remote_throwable_sticky_mag")
+			"kat_Painkiller",tx_7("OPTRE_6Rnd_8Gauge_Pellets"),tx_3("OPTRE_6Rnd_8Gauge_Slugs"),tx_2("4thot_g_he_l"),tx_2("OPTRE_c7_remote_throwable_sticky_mag")
 		};
 
 		class EventHandlers : EventHandlers
@@ -751,7 +752,7 @@ class CfgVehicles
 			class fmm_2equip
 			{
 				init ="_unit = _this select 0;
-				_vest = ['V_BandollierB_oli', 'V_BandollierB_oli', 'V_LegStrapBag_olive_F', 'V_BandollierB_rgr', 'V_BandollierB_rgr', 'V_LegStrapBag_coyote_F', 'V_LegStrapBag_black_F'];_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;_pack = ['4thot_b_e_cb1_eb_gue', '4thot_b_e_mes_gry_fmm_gue', '4thot_b_e_cb1_sr_fmm_gue', '4thot_b_e_mes_blk_fmm_gue', '4thot_b_e_cb1_ev_fmm_gue', '4thot_b_e_mes_oli_fmm_gue', '4thot_b_e_tp_blk_fmm_gue', '4thot_b_e_fp_blk_fmm_gue'];_packrnd = _pack call BIS_fnc_selectRandom;_unit addBackpackGlobal _packrnd;_grd1 = ['4thot_g_hef_h', '4thot_g_hef_l', '4thot_g_hef_l', '4thot_g_hef_l', '4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd2 = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd1rnd = _grd1 call BIS_fnc_selectRandom;_grd2rnd = _grd2 call BIS_fnc_selectRandom;_unit addItemToVest _grd1rnd;_unit addItemToVest _grd2rnd;";
+				_vest = ['V_BandollierB_oli', 'V_BandollierB_oli', 'V_LegStrapBag_olive_F', 'V_BandollierB_rgr', 'V_BandollierB_rgr', 'V_LegStrapBag_coyote_F', 'V_LegStrapBag_black_F'];_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;_pack = ['4thot_b_e_cb1_eb_gue', '4thot_b_e_mes_gry_fmm_gue', '4thot_b_e_cb1_sr_fmm_gue', '4thot_b_e_mes_blk_fmm_gue', '4thot_b_e_cb1_ev_fmm_gue', '4thot_b_e_mes_oli_fmm_gue', '4thot_b_e_tp_blk_fmm_gue', '4thot_b_e_fp_blk_fmm_gue'];_packrnd = _pack call BIS_fnc_selectRandom;_unit addBackpackGlobal _packrnd;_grd1 = ['4thot_g_hef_h', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_heat', '4thot_g_smk_urf_w', '4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd2 = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd1rnd = _grd1 call BIS_fnc_selectRandom;_grd2rnd = _grd2 call BIS_fnc_selectRandom;_unit addItemToVest _grd1rnd;_unit addItemToVest _grd2rnd;";
 			};
 
 			class fmm_3weapon
@@ -811,13 +812,13 @@ class CfgVehicles
 			class fmm_2equip
 			{
 				init ="_unit = _this select 0;
-				_vest = ['V_BandollierB_oli', 'V_TacVest_oli', 'V_TacVest_oli', 'V_TacChestrig_oli_F', 'V_TacChestrig_oli_F', 'V_TacVestIR_blk', 'V_Chestrig_oli', 'V_HarnessO_brn', 'V_HarnessO_gry'];_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;_pack = ['4thot_b_e_cb1_eb_gue', '4thot_b_e_mes_gry_fmm_gue', '4thot_b_e_cb1_sr_fmm_gue', '4thot_b_e_mes_blk_fmm_gue', '4thot_b_e_cb1_ev_fmm_gue', '4thot_b_e_mes_oli_fmm_gue', '4thot_b_e_tp_blk_fmm_gue', '4thot_b_e_fp_blk_fmm_gue'];_packrnd = _pack call BIS_fnc_selectRandom;_unit addBackpackGlobal _packrnd;_grd1 = ['4thot_g_hef_h', '4thot_g_hef_l', '4thot_g_hef_l', '4thot_g_hef_l', '4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd2 = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o', '4thot_g_hef_l'];_grd1rnd = _grd1 call BIS_fnc_selectRandom;_grd2rnd = _grd2 call BIS_fnc_selectRandom;_unit addItemToVest _grd1rnd;_unit addItemToVest _grd2rnd;";
+				_vest = ['V_BandollierB_oli', 'V_TacVest_oli', 'V_TacVest_oli', 'V_TacChestrig_oli_F', 'V_TacChestrig_oli_F', 'V_TacVestIR_blk', 'V_Chestrig_oli', 'V_HarnessO_brn', 'V_HarnessO_gry'];_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;_pack = ['4thot_b_e_cb1_eb_gue', '4thot_b_e_mes_gry_fmm_gue', '4thot_b_e_cb1_sr_fmm_gue', '4thot_b_e_mes_blk_fmm_gue', '4thot_b_e_cb1_ev_fmm_gue', '4thot_b_e_mes_oli_fmm_gue', '4thot_b_e_tp_blk_fmm_gue', '4thot_b_e_fp_blk_fmm_gue'];_packrnd = _pack call BIS_fnc_selectRandom;_unit addBackpackGlobal _packrnd;_grd1 = ['4thot_g_hef_h', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_heat', '4thot_g_smk_urf_w', '4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd2 = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o', '4thot_g_he_l'];_grd1rnd = _grd1 call BIS_fnc_selectRandom;_grd2rnd = _grd2 call BIS_fnc_selectRandom;_unit addItemToVest _grd1rnd;_unit addItemToVest _grd2rnd;";
 			};
 
 			class fmm_3weapon
 			{
 				init ="_unit = _this select 0;
-				_weap = ['0', '0', '5', '1', '1', '6', '2', '2', '3', '4'];_weaprnd = _weap call BIS_fnc_selectRandom;switch _weaprnd do{
+				_weap = ['0', '0', '0', '1', '1', '2', '2', '2', '3', '4'];_weaprnd = _weap call BIS_fnc_selectRandom;switch _weaprnd do{
 					case '0':{
 						_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';
 						_unit addWeaponGlobal 'OPTRE_MA5A';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_optc = ['optic_Aco', 'optic_Aco', 'optic_MRCO', '', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
@@ -835,16 +836,8 @@ class CfgVehicles
 						_unit addWeaponGlobal 'OPTRE_CQS48S_Chihuahua_Automatic_Innie';_unit addMagazineGlobal 'OPTRE_12Rnd_12Gauge_Pellets';_unit addMagazineGlobal 'OPTRE_12Rnd_12Gauge_Pellets';_unit addMagazineGlobal 'OPTRE_12Rnd_12Gauge_Pellets';_optc = ['optic_Aco', '', '', '', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
 					};
 					case '4':{
-						_unit addMagazineGlobal '4thot_m_65048_75_sy';
-						_unit addWeaponGlobal 'OPTRE_Commando';_unit addMagazineGlobal '4thot_m_65048_75_sy';_unit addMagazineGlobal '4thot_m_65048_75_sy';_unit addMagazineGlobal '4thot_m_65048_75_sy';_optc = ['optic_Aco', 'OPTRE_HMG38_CarryHandle', 'OPTRE_HMG38_CarryHandle'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;_unit addPrimaryWeaponItem 'bipod_01_F_blk';
-					};
-					case '5':{
-						_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';
-						_unit addMagazineGlobal '1Rnd_HE_Grenade_shell';_unit addWeaponGlobal 'OPTRE_MA5AGL';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal '1Rnd_HE_Grenade_shell';_unit addMagazineGlobal '1Rnd_HE_Grenade_shell';_unit addMagazineGlobal '1Rnd_HE_Grenade_shell';_unit addMagazineGlobal 'OPTRE_1Rnd_SmokeYellow_Grenade_shell';_unit addMagazineGlobal 'OPTRE_1Rnd_SmokeYellow_Grenade_shell';_unit addMagazineGlobal 'ACE_40mm_Flare_white';_unit addMagazineGlobal 'ACE_40mm_Flare_white';_optc = ['optic_Aco', 'optic_Aco', '', '', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
-					};
-					case '6':{
-						_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';
-						_unit addMagazineGlobal '1Rnd_HE_Grenade_shell';_unit addWeaponGlobal 'OPTRE_BR45GL_black';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal '1Rnd_HE_Grenade_shell';_unit addMagazineGlobal '1Rnd_HE_Grenade_shell';_unit addMagazineGlobal '1Rnd_HE_Grenade_shell';_unit addMagazineGlobal 'OPTRE_1Rnd_SmokeYellow_Grenade_shell';_unit addMagazineGlobal 'OPTRE_1Rnd_SmokeYellow_Grenade_shell';_unit addMagazineGlobal 'ACE_40mm_Flare_white';_unit addMagazineGlobal 'ACE_40mm_Flare_white';_optc = ['optic_Aco', 'optic_MRCO', 'optic_MRCO', '', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
+						_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';
+						_unit addWeaponGlobal '4thot_w_rm_cmdo2_blk';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_optc = ['optic_Aco', 'OPTRE_HMG38_CarryHandle', 'OPTRE_HMG38_CarryHandle'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;_unit addPrimaryWeaponItem 'bipod_01_F_blk';
 					};
 				};
 				";
@@ -857,7 +850,7 @@ class CfgVehicles
 	{
 		displayName = "Rifleman (AR)";
 		faction = "4thot_nmr_fmm";
-		editorSubcategory = "EdSubcat_Personnel";
+		editorSubcategory = "4thot_men_mil";
 		icon = "iconMan";
 
 		uniformClass = "OPTRE_Ins_ER_uniform_GGgrey";
@@ -893,7 +886,7 @@ class CfgVehicles
 				init ="_unit = _this select 0;
 				_vest = ['V_CarrierRigKBT_01_light_Olive_F','V_SmershVest_01_F','V_HarnessO_brn','V_CarrierRigKBT_01_light_Olive_F','V_SmershVest_01_F'];
 				_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;
-				_ogrd = ['4thot_g_hef_h', '4thot_g_hef_l', '4thot_g_hef_l', '4thot_g_hef_l'];
+				_ogrd = ['4thot_g_hef_h', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_he_l'];
 				_dgrd = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];
 				_og1 = _ogrd call BIS_fnc_selectRandom;_og2 = _ogrd call BIS_fnc_selectRandom;_dg1 = _dgrd call BIS_fnc_selectRandom;
 				_unit addMagazineGlobal _og1;_unit addMagazineGlobal _og2;_unit addMagazineGlobal _dg1;_unit addMagazineGlobal '4thot_g_smk_urf_w';";
@@ -912,10 +905,10 @@ class CfgVehicles
 	{
 		displayName = "Rifleman (AT)";
 		weapons[] = {
-			"OPTRE_MA5A", "optre_hgun_sas10_F_a_sop", "4thot_w_ld_lat36", "Throw", "Put"
+			"OPTRE_MA5A", "optre_hgun_sas10_F_a_sop", "4thot_w_ld_m24", "Throw", "Put"
 		};
 		respawnWeapons[] = {
-			"OPTRE_MA5A", "optre_hgun_sas10_F_a_sop", "4thot_w_ld_lat36", "Throw", "Put"
+			"OPTRE_MA5A", "optre_hgun_sas10_F_a_sop", "4thot_w_ld_m24", "Throw", "Put"
 		};
 	};
 
@@ -947,23 +940,68 @@ class CfgVehicles
 		};
 	};
 
-	class 4thot_u_fmm_u_tlead : 4thot_u_fmm_rifle
+	class 4thot_u_fmm_u_gradr : 4thot_u_fmm_rifle	//WIP
 	{
 		scope = 2;
 
+		displayName = "Grenadier";
+		faction = "4thot_nmr_fmm";
+		editorSubcategory = "4thot_men_mil";
+
+		uniformClass = "OPTRE_Ins_ER_uniform_GAtan";
+		linkedItems[] = {
+			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+		};
+		respawnLinkedItems[] = {
+			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+		};
+		backpack = "";
+		weapons[] = {
+			"OPTRE_BR45GL_black", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
+		};
+		respawnWeapons[] = {
+			"OPTRE_BR45GL_black", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
+		};
+		magazines[] = {
+			"kat_Painkiller", tx_5("OPTRE_36Rnd_95x40_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_smk_urf_w"
+		};
+		respawnMagazines[] = {
+			"kat_Painkiller", tx_5("OPTRE_36Rnd_95x40_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_smk_urf_w"
+		};
+
+		class EventHandlers
+		{
+			class fmm_1outfit
+			{
+				init ="_unit = _this select 0;
+				_head = ['H_Shemag_olive_hs','H_Bandanna_khk_hs','H_Booniehat_khk_hs','H_MilCap_grn','OPTRE_h_PatrolCap_Green','OPTRE_h_PatrolCap_Brown','H_Watchcap_camo','H_Watchcap_khk','H_Watchcap_cbr'];
+				_headrnd = _head call BIS_fnc_selectRandom;
+				_unit addHeadgear _headrnd;_unit addGoggles 'OPTRE_HUD_r_Glasses';
+				";
+			};
+
+			class fmm_3weapon
+			{
+				init ="_unit = _this select 0;
+				_optc = ['Optre_Recon_Sight_Red', 'OPTRE_M7_Sight', 'OPTRE_M12_Optic_Red', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
+			};
+		};
+	};
+
+	class 4thot_u_fmm_u_tlead : 4thot_u_fmm_u_gradr
+	{
 		displayName = "Team Leader";
 		faction = "4thot_nmr_fmm";
-		editorSubcategory = "EdSubcat_Personnel";
 		icon = "iconManLeader";
 
 		uniformClass = "OPTRE_Ins_ER_uniform_GAgreen";
+		backpack = "OPTRE_ANPRC_521_URF";
 		linkedItems[] = {
 			"V_SmershVest_01_radio_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
 		};
 		respawnLinkedItems[] = {
 			"V_SmershVest_01_radio_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
 		};
-		backpack = "";
 		weapons[] = {
 			"OPTRE_MA5A", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
 		};
@@ -996,10 +1034,9 @@ class CfgVehicles
 		};
 	};
 
-	class 4thot_u_fmm_u_spotr : 4thot_u_fmm_u_tlead
+	class 4thot_u_fmm_u_spotr : 4thot_u_fmm_u_gradr
 	{
 		displayName = "Spotter";
-		icon = "iconMan";
 
 		uniformClass = "OPTRE_Ins_ER_uniform_GAgreen";
 		linkedItems[] = {
@@ -1048,7 +1085,6 @@ class CfgVehicles
 	class 4thot_u_fmm_u_snipr : 4thot_u_fmm_u_spotr
 	{
 		displayName = "Sniper";
-		icon = "iconMan";
 
 		backpack = "";
 		linkedItems[] = {
@@ -1058,10 +1094,10 @@ class CfgVehicles
 			"OPTRE_UNSC_CH252_Helmet3_TRO","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
 		};
 		weapons[] = {
-			"OPTRE_SRM77_S1_Green_a_bp", "optre_hgun_sas10_F_a_sop", "Throw", "Put","Binocular"
+			"OPTRE_SRM77_S1_Green_a_bp", "optre_hgun_sas10_F_a_lsr", "Throw", "Put","Binocular"
 		};
 		respawnWeapons[] = {
-			"OPTRE_SRM77_S1_Green_a_bp", "optre_hgun_sas10_F_a_sop", "Throw", "Put","Binocular"
+			"OPTRE_SRM77_S1_Green_a_bp", "optre_hgun_sas10_F_a_lsr", "Throw", "Put","Binocular"
 		};
 		items[] = {
 			stditem,"ACE_RangeCard","ACE_Kestrel4500","ACE_Tripod"
@@ -1092,57 +1128,8 @@ class CfgVehicles
 			};
 		};
 	};
-
-	class 4thot_u_fmm_u_gradr : 4thot_u_fmm_u_tlead	//WIP
-	{
-		scope = 2;
-
-		displayName = "Grenadier";
-		faction = "4thot_nmr_fmm";
-		editorSubcategory = "EdSubcat_Personnel";
-		icon = "iconMan";
-
-		uniformClass = "OPTRE_Ins_ER_uniform_GAtan";
-		linkedItems[] = {
-			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
-		};
-		respawnLinkedItems[] = {
-			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
-		};
-		backpack = "";
-		weapons[] = {
-			"OPTRE_BR45GL_black", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
-		};
-		respawnWeapons[] = {
-			"OPTRE_BR45GL_black", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
-		};
-		magazines[] = {
-			"kat_Painkiller", tx_5("OPTRE_36Rnd_95x40_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_smk_urf_w"
-		};
-		respawnMagazines[] = {
-			"kat_Painkiller", tx_5("OPTRE_36Rnd_95x40_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_smk_urf_w"
-		};
-
-		class EventHandlers
-		{
-			class fmm_1outfit
-			{
-				init ="_unit = _this select 0;
-				_head = ['H_Shemag_olive_hs','H_Bandanna_khk_hs','H_Booniehat_khk_hs','H_MilCap_grn','OPTRE_h_PatrolCap_Green','OPTRE_h_PatrolCap_Brown','H_Watchcap_camo','H_Watchcap_khk','H_Watchcap_cbr'];
-				_headrnd = _head call BIS_fnc_selectRandom;
-				_unit addHeadgear _headrnd;_unit addGoggles 'OPTRE_HUD_r_Glasses';
-				";
-			};
-
-			class fmm_3weapon
-			{
-				init ="_unit = _this select 0;
-				_optc = ['Optre_Recon_Sight_Red', 'OPTRE_M7_Sight', 'OPTRE_M12_Optic_Red', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
-			};
-		};
-	};
 };
-
+/*
 class CfgGroups
 {
 	class east
@@ -1395,3 +1382,4 @@ class CfgGroups
 		};
 	};
 };
+*/

@@ -13,13 +13,16 @@ cfgWeapons
 		_rc Carbine
 		_ra Autorifle
 		_rm Marksman Rifle
-		_vc Cannon
-		_va Autocannon
-		_vl Missile (Vehicle)
-		_vg Vehicle (MG)
+
+
+	_w_[VEHICLE]
+		_k  Cannon
+		_ak Autocannon
+		_l  Missile (Vehicle)
+		_a  Vehicle (MG)
 		_x  Unclassified
 		_w  Melee
-		
+
 	_h	Helmet
 	_v	Vest
 
@@ -30,14 +33,18 @@ cfgMagazines
 	_b  Belt
 	_l  Rocket/Missile
 	_u  Grenade Launcher
-	_vc Vehicle Cannon
-	_va Vehicle Autocannon
-	_vl Vehicle Launcher
-	_vh Vehicle (MG)
-	_x  Unclassified
 		_[CALIBER]
-			_[COUNT]
-				_[TYPE]
+				_[COUNT]
+					_[TYPE]
+	_[VEHICLE]
+		_k Vehicle Cannon
+		_ak Vehicle Autocannon
+		_l Vehicle Launcher
+		_a Vehicle (MG)
+			_[CALIBER]
+				_[COUNT]
+					_[TYPE]
+	_x  Unclassified
 	_g Grenade
 		_[TYPE]
 			_[DETAIL]
@@ -52,4 +59,26 @@ cfgVehicles
 
 	_v Vehicle
 
-	
+cfgAmmo
+	_a	Infantry Ammo (Rifle)
+	_u  Grenade Launcher
+	_g	Grenade (Throwable)
+	_l  Launcher Ammo
+		_[Caliber]
+			_[Type]
+				_[Tracer Color]
+				_[Guidance]
+				_[Color]
+
+	_[VEHICLE]
+		_k Vehicle Cannon
+		_ak Vehicle Autocannon
+		_l Vehicle Launcher
+		_a Vehicle (MG)
+			_[Caliber]
+				_[Type]
+					_[Tracer Color]
+					_[Guidance]
+					_[Color]
+	_p	Penetrator Submunition
+	_s  Other Submunition (Clusters)
