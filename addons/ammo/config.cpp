@@ -648,7 +648,7 @@ class cfgMagazines
 	};
 	class NL_4Rnd_145x114_APFSDS_Mag: OPTRE_4Rnd_145x114_APFSDS_Mag
 	{
-		displayname="15Rnd 145x114mm Magazine (Non-Lethal)";
+		displayname="4Rnd 145x114mm Magazine (Non-Lethal)";
 		displaynameshort="145x114(NL)";
 		ammo="NL_B_145x114_APFSDS";
 		count=4;
@@ -794,96 +794,100 @@ class CfgWeapons
 			"3Rnd_SmokeOrange_Grenade_shell"
 		};
 	};
-	class UGL_F
-	{
-		magazines[]=
+	/*
+		class UGL_F
 		{
-			"NL_1Rnd_8Gauge_Buckshot",
-			"NL_1Rnd_8Gauge_Slug",
-			"1Rnd_HE_Grenade_shell",
-			"UGL_FlareWhite_F",
-			"UGL_FlareGreen_F",
-			"UGL_FlareRed_F",
-			"UGL_FlareYellow_F",
-			"UGL_FlareCIR_F",
-			"1Rnd_Smoke_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeGreen_Grenade_shell",
-			"1Rnd_SmokeYellow_Grenade_shell",
-			"1Rnd_SmokePurple_Grenade_shell",
-			"1Rnd_SmokeBlue_Grenade_shell",
-			"1Rnd_SmokeOrange_Grenade_shell",
-			"ACE_HuntIR_M203"
+			magazines[]=
+			{
+				"NL_1Rnd_8Gauge_Buckshot",
+				"NL_1Rnd_8Gauge_Slug",
+				"1Rnd_HE_Grenade_shell",
+				"UGL_FlareWhite_F",
+				"UGL_FlareGreen_F",
+				"UGL_FlareRed_F",
+				"UGL_FlareYellow_F",
+				"UGL_FlareCIR_F",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_SmokeRed_Grenade_shell",
+				"1Rnd_SmokeGreen_Grenade_shell",
+				"1Rnd_SmokeYellow_Grenade_shell",
+				"1Rnd_SmokePurple_Grenade_shell",
+				"1Rnd_SmokeBlue_Grenade_shell",
+				"1Rnd_SmokeOrange_Grenade_shell",
+				"ACE_HuntIR_M203"
+			};
 		};
-	};
-	class OPTRE_HMGUGL: UGL_F
-	{
-		magazines[]=
+		class OPTRE_HMGUGL: UGL_F
 		{
-			"NL_1Rnd_8Gauge_Buckshot",
-			"NL_1Rnd_8Gauge_Slug",
-			"1Rnd_HE_Grenade_shell",
-			"UGL_FlareWhite_F",
-			"UGL_FlareGreen_F",
-			"UGL_FlareRed_F",
-			"UGL_FlareYellow_F",
-			"UGL_FlareCIR_F",
-			"1Rnd_Smoke_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeGreen_Grenade_shell",
-			"1Rnd_SmokeYellow_Grenade_shell",
-			"1Rnd_SmokePurple_Grenade_shell",
-			"1Rnd_SmokeBlue_Grenade_shell",
-			"1Rnd_SmokeOrange_Grenade_shell",
-			"3Rnd_HE_Grenade_shell",
-			"3Rnd_UGL_FlareWhite_F",
-			"3Rnd_UGL_FlareGreen_F",
-			"3Rnd_UGL_FlareRed_F",
-			"3Rnd_UGL_FlareYellow_F",
-			"3Rnd_UGL_FlareCIR_F",
-			"3Rnd_Smoke_Grenade_shell",
-			"3Rnd_SmokeRed_Grenade_shell",
-			"3Rnd_SmokeGreen_Grenade_shell",
-			"3Rnd_SmokeYellow_Grenade_shell",
-			"3Rnd_SmokePurple_Grenade_shell",
-			"3Rnd_SmokeBlue_Grenade_shell",
-			"3Rnd_SmokeOrange_Grenade_shell"
+			magazines[]=
+			{
+				"NL_1Rnd_8Gauge_Buckshot",
+				"NL_1Rnd_8Gauge_Slug",
+				"1Rnd_HE_Grenade_shell",
+				"UGL_FlareWhite_F",
+				"UGL_FlareGreen_F",
+				"UGL_FlareRed_F",
+				"UGL_FlareYellow_F",
+				"UGL_FlareCIR_F",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_SmokeRed_Grenade_shell",
+				"1Rnd_SmokeGreen_Grenade_shell",
+				"1Rnd_SmokeYellow_Grenade_shell",
+				"1Rnd_SmokePurple_Grenade_shell",
+				"1Rnd_SmokeBlue_Grenade_shell",
+				"1Rnd_SmokeOrange_Grenade_shell",
+				"3Rnd_HE_Grenade_shell",
+				"3Rnd_UGL_FlareWhite_F",
+				"3Rnd_UGL_FlareGreen_F",
+				"3Rnd_UGL_FlareRed_F",
+				"3Rnd_UGL_FlareYellow_F",
+				"3Rnd_UGL_FlareCIR_F",
+				"3Rnd_Smoke_Grenade_shell",
+				"3Rnd_SmokeRed_Grenade_shell",
+				"3Rnd_SmokeGreen_Grenade_shell",
+				"3Rnd_SmokeYellow_Grenade_shell",
+				"3Rnd_SmokePurple_Grenade_shell",
+				"3Rnd_SmokeBlue_Grenade_shell",
+				"3Rnd_SmokeOrange_Grenade_shell"
+			};
 		};
-	};
-	class OPTRE_M301UGL: UGL_F
-	{
-		magazines[]=
+
+		class OPTRE_M301UGL: UGL_F
 		{
-			"NL_1Rnd_8Gauge_Buckshot",
-			"NL_1Rnd_8Gauge_Slug",
-			"1Rnd_HE_Grenade_shell",
-			"UGL_FlareWhite_F",
-			"UGL_FlareGreen_F",
-			"UGL_FlareRed_F",
-			"UGL_FlareYellow_F",
-			"UGL_FlareCIR_F",
-			"1Rnd_Smoke_Grenade_shell",
-			"1Rnd_SmokeRed_Grenade_shell",
-			"1Rnd_SmokeGreen_Grenade_shell",
-			"1Rnd_SmokeYellow_Grenade_shell",
-			"1Rnd_SmokePurple_Grenade_shell",
-			"1Rnd_SmokeBlue_Grenade_shell",
-			"1Rnd_SmokeOrange_Grenade_shell",
-			"3Rnd_HE_Grenade_shell",
-			"3Rnd_UGL_FlareWhite_F",
-			"3Rnd_UGL_FlareGreen_F",
-			"3Rnd_UGL_FlareRed_F",
-			"3Rnd_UGL_FlareYellow_F",
-			"3Rnd_UGL_FlareCIR_F",
-			"3Rnd_Smoke_Grenade_shell",
-			"3Rnd_SmokeRed_Grenade_shell",
-			"3Rnd_SmokeGreen_Grenade_shell",
-			"3Rnd_SmokeYellow_Grenade_shell",
-			"3Rnd_SmokePurple_Grenade_shell",
-			"3Rnd_SmokeBlue_Grenade_shell",
-			"3Rnd_SmokeOrange_Grenade_shell"
+			magazines[]=
+			{
+				"NL_1Rnd_8Gauge_Buckshot",
+				"NL_1Rnd_8Gauge_Slug",
+				"1Rnd_HE_Grenade_shell",
+				"UGL_FlareWhite_F",
+				"UGL_FlareGreen_F",
+				"UGL_FlareRed_F",
+				"UGL_FlareYellow_F",
+				"UGL_FlareCIR_F",
+				"1Rnd_Smoke_Grenade_shell",
+				"1Rnd_SmokeRed_Grenade_shell",
+				"1Rnd_SmokeGreen_Grenade_shell",
+				"1Rnd_SmokeYellow_Grenade_shell",
+				"1Rnd_SmokePurple_Grenade_shell",
+				"1Rnd_SmokeBlue_Grenade_shell",
+				"1Rnd_SmokeOrange_Grenade_shell",
+				"3Rnd_HE_Grenade_shell",
+				"3Rnd_UGL_FlareWhite_F",
+				"3Rnd_UGL_FlareGreen_F",
+				"3Rnd_UGL_FlareRed_F",
+				"3Rnd_UGL_FlareYellow_F",
+				"3Rnd_UGL_FlareCIR_F",
+				"3Rnd_Smoke_Grenade_shell",
+				"3Rnd_SmokeRed_Grenade_shell",
+				"3Rnd_SmokeGreen_Grenade_shell",
+				"3Rnd_SmokeYellow_Grenade_shell",
+				"3Rnd_SmokePurple_Grenade_shell",
+				"3Rnd_SmokeBlue_Grenade_shell",
+				"3Rnd_SmokeOrange_Grenade_shell"
+			};
+
 		};
-	};
+	*/
 };
 class cfgMagazineWells
 {

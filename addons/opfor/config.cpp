@@ -4,14 +4,14 @@ class CfgPatches {
 	{
 		units[] =
 		{
-			"U_C_Uniform_Farmer_01_nrm",
-			"U_C_ArtTShirt_01_v5_nrm",
-			"U_C_ArtTShirt_01_v6_nrm",
-			"U_I_C_Soldier_Bandit_3_nrm",
-			"U_I_C_Soldier_Bandit_5_nrm",
-			"U_I_G_resistanceLeader_nrm",
-			"U_I_L_Uniform_01_tshirt_olive_nrm",
-			"U_C_Mechanic_01_nrm"
+			"U_C_Uniform_Farmer_01_nmr",
+			"U_C_ArtTShirt_01_v5_nmr",
+			"U_C_ArtTShirt_01_v6_nmr",
+			"U_I_C_Soldier_Bandit_3_nmr",
+			"U_I_C_Soldier_Bandit_5_nmr",
+			"U_I_G_resistanceLeader_nmr",
+			"U_I_L_Uniform_01_tshirt_olive_nmr",
+			"U_C_Mechanic_01_nmr"
 		};
 		weapons[] =
 		{
@@ -30,16 +30,16 @@ class CfgPatches {
 			"4thot_a_OPTRE_M90A_lsr",
 			"optre_hgun_sas10_F_a_lsr",
 			"4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr",
-			"U_C_Uniform_Farmer_01_F_nrm",
-			"U_C_ArtTShirt_01_v5_F_nrm",
-			"U_C_ArtTShirt_01_v6_F_nrm",
-			"U_C_ArtTShirt_01_v5_F_nrm",
-			"U_C_ArtTShirt_01_v6_F_nrm",
-			"U_I_C_Soldier_Bandit_3_F_nrm",
-			"U_I_C_Soldier_Bandit_5_F_nrm",
-			"U_I_G_resistanceLeader_F_nrm",
-			"U_I_L_Uniform_01_tshirt_olive_F_nrm",
-			"U_C_Mechanic_01_F_nrm"
+			"U_C_Uniform_Farmer_01_F_nmr",
+			"U_C_ArtTShirt_01_v5_F_nmr",
+			"U_C_ArtTShirt_01_v6_F_nmr",
+			"U_C_ArtTShirt_01_v5_F_nmr",
+			"U_C_ArtTShirt_01_v6_F_nmr",
+			"U_I_C_Soldier_Bandit_3_F_nmr",
+			"U_I_C_Soldier_Bandit_5_F_nmr",
+			"U_I_G_resistanceLeader_F_nmr",
+			"U_I_L_Uniform_01_tshirt_olive_F_nmr",
+			"U_C_Mechanic_01_F_nmr"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] =
@@ -628,7 +628,7 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
-	class U_C_Uniform_Farmer_01_F_nrm : U_C_Uniform_Farmer_01_F
+	class U_C_Uniform_Farmer_01_F_nmr : U_C_Uniform_Farmer_01_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -636,11 +636,11 @@ class CfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "U_C_Uniform_Farmer_01_nrm";
+			uniformClass = "U_C_Uniform_Farmer_01_nmr";
 		};
 	};
 
-	class U_C_ArtTShirt_01_v5_F_nrm : U_C_ArtTShirt_01_v5_F
+	class U_C_ArtTShirt_01_v5_F_nmr : U_C_ArtTShirt_01_v5_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -648,11 +648,11 @@ class CfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "U_C_ArtTShirt_01_v5_nrm";
+			uniformClass = "U_C_ArtTShirt_01_v5_nmr";
 		};
 	};
 
-	class U_C_ArtTShirt_01_v6_F_nrm : U_C_ArtTShirt_01_v6_F
+	class U_C_ArtTShirt_01_v6_F_nmr : U_C_ArtTShirt_01_v6_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -660,11 +660,11 @@ class CfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "U_C_ArtTShirt_01_v6_nrm";
+			uniformClass = "U_C_ArtTShirt_01_v6_nmr";
 		};
 	};
 
-	class U_I_C_Soldier_Bandit_3_F_nrm : U_I_C_Soldier_Bandit_3_F
+	class U_I_C_Soldier_Bandit_3_F_nmr : U_I_C_Soldier_Bandit_3_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -672,11 +672,11 @@ class CfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "U_I_C_Soldier_Bandit_3_nrm";
+			uniformClass = "U_I_C_Soldier_Bandit_3_nmr";
 		};
 	};
 
-	class U_I_C_Soldier_Bandit_5_F_nrm : U_I_C_Soldier_Bandit_5_F
+	class U_I_C_Soldier_Bandit_5_F_nmr : U_I_C_Soldier_Bandit_5_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -684,11 +684,11 @@ class CfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "U_I_C_Soldier_Bandit_5_nrm";
+			uniformClass = "U_I_C_Soldier_Bandit_5_nmr";
 		};
 	};
 
-	class U_I_G_resistanceLeader_F_nrm : U_I_G_resistanceLeader_F
+	class U_I_G_resistanceLeader_F_nmr : U_I_G_resistanceLeader_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -696,11 +696,11 @@ class CfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "U_I_G_resistanceLeader_nrm";
+			uniformClass = "U_I_G_resistanceLeader_nmr";
 		};
 	};
 
-	class U_I_L_Uniform_01_tshirt_olive_F_nrm : U_I_L_Uniform_01_tshirt_olive_F
+	class U_I_L_Uniform_01_tshirt_olive_F_nmr : U_I_L_Uniform_01_tshirt_olive_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -708,11 +708,11 @@ class CfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "U_I_L_Uniform_01_tshirt_olive_nrm";
+			uniformClass = "U_I_L_Uniform_01_tshirt_olive_nmr";
 		};
 	};
 
-	class U_C_Mechanic_01_F_nrm : U_C_Mechanic_01_F
+	class U_C_Mechanic_01_F_nmr : U_C_Mechanic_01_F
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -720,7 +720,7 @@ class CfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			uniformClass = "U_C_Mechanic_01_nrm";
+			uniformClass = "U_C_Mechanic_01_nmr";
 		};
 	};
 };
@@ -746,59 +746,59 @@ class CfgVehicles
 	class I_L_Uniform_01_tshirt_olive_F;
 	class C_Story_Mechanic_01_F;
 
-	class U_C_Uniform_Farmer_01_nrm : C_Uniform_Farmer_01_F
+	class U_C_Uniform_Farmer_01_nmr : C_Uniform_Farmer_01_F
 	{
 		scope = 1;
 		side = 0;
-		uniformClass = "U_C_Uniform_Farmer_01_F_nrm";
+		uniformClass = "U_C_Uniform_Farmer_01_F_nmr";
 	};
 
-	class U_C_ArtTShirt_01_v5_nrm : C_Uniform_ArtTShirt_01_v5_F
+	class U_C_ArtTShirt_01_v5_nmr : C_Uniform_ArtTShirt_01_v5_F
 	{
 		scope = 1;
 		side = 0;
-		uniformClass = "U_C_ArtTShirt_01_v5_F_nrm";
+		uniformClass = "U_C_ArtTShirt_01_v5_F_nmr";
 	};
 
-	class U_C_ArtTShirt_01_v6_nrm : C_Uniform_ArtTShirt_01_v6_F
+	class U_C_ArtTShirt_01_v6_nmr : C_Uniform_ArtTShirt_01_v6_F
 	{
 		scope = 1;
 		side = 0;
-		uniformClass = "U_C_ArtTShirt_01_v6_F_nrm";
+		uniformClass = "U_C_ArtTShirt_01_v6_F_nmr";
 	};
 
-	class U_I_C_Soldier_Bandit_3_nrm : I_C_Soldier_Bandit_3_F
+	class U_I_C_Soldier_Bandit_3_nmr : I_C_Soldier_Bandit_3_F
 	{
 		scope = 1;
 		side = 0;
-		uniformClass = "U_I_C_Soldier_Bandit_3_F_nrm";
+		uniformClass = "U_I_C_Soldier_Bandit_3_F_nmr";
 	};
 
-	class U_I_C_Soldier_Bandit_5_nrm : I_C_Soldier_Bandit_5_F
+	class U_I_C_Soldier_Bandit_5_nmr : I_C_Soldier_Bandit_5_F
 	{
 		scope = 1;
 		side = 0;
-		uniformClass = "U_I_C_Soldier_Bandit_5_F_nrm";
+		uniformClass = "U_I_C_Soldier_Bandit_5_F_nmr";
 	};
 
-	class U_I_G_resistanceLeader_nrm : I_G_resistanceLeader_F
+	class U_I_G_resistanceLeader_nmr : I_G_resistanceLeader_F
 	{
 		scope = 1;
 		side = 0;
-		uniformClass = "U_I_G_resistanceLeader_F_nrm";
+		uniformClass = "U_I_G_resistanceLeader_F_nmr";
 	};
 
-	class U_I_L_Uniform_01_tshirt_olive_nrm : I_L_Uniform_01_tshirt_olive_F
+	class U_I_L_Uniform_01_tshirt_olive_nmr : I_L_Uniform_01_tshirt_olive_F
 	{
 		scope = 1;
 		side = 0;
-		uniformClass = "U_I_L_Uniform_01_tshirt_olive_F_nrm";
+		uniformClass = "U_I_L_Uniform_01_tshirt_olive_F_nmr";
 	};
 
-	class U_C_Mechanic_01_nrm : C_Story_Mechanic_01_F
+	class U_C_Mechanic_01_nmr : C_Story_Mechanic_01_F
 	{
 		scope = 1;
 		side = 0;
-		uniformClass = "U_C_Mechanic_01_F_nrm";
+		uniformClass = "U_C_Mechanic_01_F_nmr";
 	};
 };

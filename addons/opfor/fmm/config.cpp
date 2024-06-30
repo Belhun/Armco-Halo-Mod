@@ -437,7 +437,7 @@ class CfgVehicles
 		displayName = "Insurgent (AT)";
 		icon = "iconManAT";
 
-		uniformClass = "U_I_C_Soldier_Bandit_3_F_nrm";
+		uniformClass = "U_I_C_Soldier_Bandit_3_F_nmr";
 		linkedItems[] = {
 			"V_BandollierB_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
 		};
@@ -580,7 +580,7 @@ class CfgVehicles
 		displayName = "Hunter (MR)";
 
 		backpack = "";
-		uniformClass = "U_I_L_Uniform_01_tshirt_olive_F_nrm";
+		uniformClass = "U_I_L_Uniform_01_tshirt_olive_F_nmr";
 		linkedItems[] = {
 			"V_TacVestIR_blk", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG", "ACE_Yardage450"
 		};
@@ -672,7 +672,7 @@ class CfgVehicles
 		icon = "iconManEngineer";
 		engineer = 1;
 
-		uniformClass = "U_C_Mechanic_01_F_nrm";
+		uniformClass = "U_C_Mechanic_01_F_nmr";
 		linkedItems[] = {
 			"V_TacChestrig_cbr_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
 		};
@@ -794,7 +794,7 @@ class CfgVehicles
 			class fmm_1outfit
 			{
 				init ="_unit = _this select 0;
-				_unif = ['OPTRE_Ins_ER_rolled_OD_crimson', 'OPTRE_Ins_ER_rolled_surplus_black', 'OPTRE_Ins_ER_rolled_surplus_crimson', 'OPTRE_Ins_ER_uniform_GGgrey', 'OPTRE_Ins_ER_uniform_GGod', 'U_C_Uniform_Farmer_01_F_nrm', 'U_I_L_Uniform_01_tshirt_olive_F_nrm', 'U_I_C_Soldier_Bandit_3_F_nrm', 'U_C_Mechanic_01_F_nrm'];_unifrnd = _unif call BIS_fnc_selectRandom;_unit forceAddUniform _unifrnd;removeGoggles _unit;_head = [['H_Booniehat_oli', '1'], ['H_Booniehat_khk', '1'], ['H_Cap_oli', '1'], ['H_Bandanna_khk', '1'], ['H_Cap_grn', '1'], ['H_Bandanna_sgg', '1'], ['H_Cap_blk', '1'], ['H_Bandanna_cbr', '1'], ['OPTRE_UNSC_Watchcap', '1'], ['G_Balaclava_blk', '0'], ['H_Shemag_olive', '2'], ['G_Balaclava_oli', '0'], ['H_ShemagOpen_tan', '2']];_face = ['G_Bandanna_khk', 'G_Squares', 'G_Aviator', 'G_Bandanna_aviator', 'G_Bandanna_blk', 'G_Bandanna_oli', 'G_Lowprofile', '', ''];_headrnd = _head call BIS_fnc_selectRandom;switch (_headrnd select 1) do{
+				_unif = ['OPTRE_Ins_ER_rolled_OD_crimson', 'OPTRE_Ins_ER_rolled_surplus_black', 'OPTRE_Ins_ER_rolled_surplus_crimson', 'OPTRE_Ins_ER_uniform_GGgrey', 'OPTRE_Ins_ER_uniform_GGod', 'U_C_Uniform_Farmer_01_F_nmr', 'U_I_L_Uniform_01_tshirt_olive_F_nmr', 'U_I_C_Soldier_Bandit_3_F_nmr', 'U_C_Mechanic_01_F_nmr'];_unifrnd = _unif call BIS_fnc_selectRandom;_unit forceAddUniform _unifrnd;removeGoggles _unit;_head = [['H_Booniehat_oli', '1'], ['H_Booniehat_khk', '1'], ['H_Cap_oli', '1'], ['H_Bandanna_khk', '1'], ['H_Cap_grn', '1'], ['H_Bandanna_sgg', '1'], ['H_Cap_blk', '1'], ['H_Bandanna_cbr', '1'], ['OPTRE_UNSC_Watchcap', '1'], ['G_Balaclava_blk', '0'], ['H_Shemag_olive', '2'], ['G_Balaclava_oli', '0'], ['H_ShemagOpen_tan', '2']];_face = ['G_Bandanna_khk', 'G_Squares', 'G_Aviator', 'G_Bandanna_aviator', 'G_Bandanna_blk', 'G_Bandanna_oli', 'G_Lowprofile', '', ''];_headrnd = _head call BIS_fnc_selectRandom;switch (_headrnd select 1) do{
 					case '1':{
 						_unit addHeadgear (_headrnd select 0);
 						_facernd = _face call BIS_fnc_selectRandom;_unit addGoggles _facernd;

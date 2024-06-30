@@ -569,7 +569,7 @@ class CfgVehicles
 	{
 		displayName = "Militiaman (SAS10)";
 
-		uniformClass = "U_I_G_resistanceLeader_F_fmm";
+		uniformClass = "U_I_G_resistanceLeader_F_nmr";
 		linkedItems[] = {
 			"OPTRE_ONI_Researcher_Headgear", "OPTRE_FW_None", "V_Rangemaster_belt", "ItemRadio", "OPTRE_NVG"
 		};
@@ -700,7 +700,7 @@ class CfgVehicles
 	{
 		displayName = "Militia (Hammer)";
 
-		uniformClass = "U_C_Uniform_Farmer_01_F_nrm";
+		uniformClass = "U_C_Uniform_Farmer_01_F_nmr";
 		weapons[] = {
 			"WBK_survival_weapon_2", "Throw", "Put"
 		};
@@ -713,7 +713,7 @@ class CfgVehicles
 	{
 		displayName = "Militia (Pipe)";
 
-		uniformClass = "U_C_ArtTShirt_01_v5_F_nrm";
+		uniformClass = "U_C_ArtTShirt_01_v5_F_nmr";
 		weapons[] = {
 			"Pipe_aluminium", "Throw", "Put"
 		};
@@ -726,7 +726,7 @@ class CfgVehicles
 	{
 		displayName = "Militia (Crowbar)";
 
-		uniformClass = "U_C_ArtTShirt_01_v6_F_nrm";
+		uniformClass = "U_C_ArtTShirt_01_v6_F_nmr";
 		weapons[] = {
 			"Crowbar", "Throw", "Put"
 		};
@@ -739,7 +739,7 @@ class CfgVehicles
 	{
 		displayName = "Militia (Knife)";
 
-		uniformClass = "U_I_C_Soldier_Bandit_3_F_nrm";
+		uniformClass = "U_I_C_Soldier_Bandit_3_F_nmr";
 		weapons[] = {
 			"Knife_m3", "Throw", "Put"
 		};
@@ -752,7 +752,7 @@ class CfgVehicles
 	{
 		displayName = "Militia (Shovel)";
 
-		uniformClass = "U_I_C_Soldier_Bandit_5_F_nrm";
+		uniformClass = "U_I_C_Soldier_Bandit_5_F_nmr";
 		weapons[] = {
 			"Shovel_Russian", "Throw", "Put"
 		};
@@ -781,7 +781,7 @@ class CfgVehicles
 
 	class 4thot_u_mrm_sec_militia_mle_h : 4thot_u_mrm_sec_militia_mle_d
 	{
-		uniformClass = "U_I_G_resistanceLeader_F_nrm";
+		uniformClass = "U_I_G_resistanceLeader_F_nmr";
 	};
 // Marines
 	class 4thot_u_mrm_rifleman : 4thot_u_mrm_sec_rifleman

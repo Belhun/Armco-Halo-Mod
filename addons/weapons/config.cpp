@@ -439,6 +439,9 @@ class CfgMagazineWells
 		};
 	};
 };
+
+// 4thot_g_heat
+
 class Cfgweapons {
 	// OPTRE_M319 Overwrite
 		class OPTRE_Rifle_Base;
@@ -460,7 +463,7 @@ class Cfgweapons {
 			{
 				"4thot_g_hef_h_Muzzle",
 				"4thot_g_he_l_Muzzle",
-				"4thot_g_heat",
+				"4thot_g_heat_Muzzle",
 				"4thot_g_smk_urf_w_Muzzle",
 				"4thot_g_smk_urf_r_Muzzle",
 				"4thot_g_smk_urf_g_Muzzle",
