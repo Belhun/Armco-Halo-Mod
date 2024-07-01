@@ -24,13 +24,13 @@ class CfgMarkers {
 		name = "ARMCO HQ";
 		scope = 2;
 		scopeCurator = 2;
-		icon = "armco_armours\data\flags\flag_armco_ca.paa";
+		icon = QPATHTOF(data\flags\flag_armco_ca.paa);
 		color[] = {
 			1, 1, 1, 1
 		};
 		size = 29;
 		shadow = 0;
-		texture = "armco_armours\data\flags\flag_armco_ca.paa";
+		texture = QPATHTOF(data\flags\flag_armco_ca.paa);
 		markerClass = "ARMCO_Markers";
 	};
 };

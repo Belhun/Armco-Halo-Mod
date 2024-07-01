@@ -3,9 +3,7 @@ class CfgPatches {
 	class ADDON {
 		name = COMPONENT_NAME;
 		requiredVersion = REQUIRED_VERSION;
-		units[] = {
-			"ARMCO_Soldier_A_Rifle"
-		};
+		units[] = {};
 		weapons[] = {
 			"Alpha_CH252_Helmet",
 			"Sabre_CH252_Helmet",
@@ -74,13 +72,17 @@ class CfgPatches {
 		url = ECSTRING(main, URL);
 		VERSION_CONFIG;
 	};
-	  // This include brings in class CfgPatches and CfgFactionClasses,
-	  // CfgMarkerClasses, CfgMarkers CfgFactionClasses
-	#include "CfgPatchesMisc.hpp"
 
-	 // Arsonal exstened setup
-	#include "CfgArsonalExspa.hpp"
+
 };
+
+// This include brings in class CfgPatches and CfgFactionClasses,
+// CfgMarkerClasses, CfgMarkers CfgFactionClasses
+#include "CfgPatchesMisc.hpp"
+
+// Arsonal exstened setup
+#include "CfgArsonalExspa.hpp"
+
 class CfgVehicles {
 	#include "CfgVehicleSoldier.hpp"
 };
