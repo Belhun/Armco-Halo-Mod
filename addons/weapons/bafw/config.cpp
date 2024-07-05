@@ -28,7 +28,7 @@ class CfgMagazines
 	class UK3CB_BAF_1Rnd_SmokeBlue_Grenade_shell;
 	class UK3CB_BAF_1Rnd_SmokeOrange_Grenade_shell;
 
-	class OPTRE_M2_Smoke;
+	class SmokeShell;
 
 	//40mm Shared Magazines
 
@@ -70,13 +70,19 @@ class CfgMagazines
 		};
 
 	//Grenades (Throwables)
+		class OPTRE_M2_Smoke : SmokeShell
+		{
+			ammo = "UK3CB_BAF_SmokeShell";
+		};
+
 		class 4thot_g_smk_urf_w : OPTRE_M2_Smoke
 		{
+			scope = 1;
+			scopeArsenal = 1;
+
 			displayName = "DGS-11 Smoke Grenade (Cover)";
 			displayNameShort = "DGS-11 (W)";
 			descriptionShort = "Defensive Smoke Grenade, White";
-
-			ammo = "UK3CB_BAF_SmokeShell";
 
 			mass = 4.5;
 		};

@@ -138,6 +138,11 @@ class CfgFactionClasses
 	{
 		displayName = "URF, 3rd Expeditionary Unit";
 	};
+
+	class 4thot_urf_des91
+	{
+		displayName = "URF, 91st Infantry Deserters";
+	};
 };
 
 
@@ -233,6 +238,11 @@ class CfgEditorSubcategories
 	class 4thot_comp_urf_ex3
 	{
 		displayName = "URF, 3rd Expeditionary Unit";
+	};
+
+	class 4thot_comp_urf_des91
+	{
+		displayName = "URF, 91st Infantry Deserters";
 	};
 };
 
@@ -628,6 +638,11 @@ class CfgWeapons
 		class ItemInfo;
 	};
 
+	class U_BG_Guerrilla_6_1 : Uniform_Base
+	{
+		class ItemInfo;
+	};
+
 	class U_C_Uniform_Farmer_01_F_nmr : U_C_Uniform_Farmer_01_F
 	{
 		scope = 1;
@@ -723,6 +738,18 @@ class CfgWeapons
 			uniformClass = "U_C_Mechanic_01_nmr";
 		};
 	};
+
+	class U_BG_Guerrilla_6_1_nmr : U_BG_Guerrilla_6_1
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+
+		class ItemInfo : ItemInfo
+		{
+			uniformClass = "B_G_Guerrilla_6_1_nmr";
+		};
+	};
 };
 
 class CfgVehicles
@@ -745,6 +772,7 @@ class CfgVehicles
 	class I_G_resistanceLeader_F;
 	class I_L_Uniform_01_tshirt_olive_F;
 	class C_Story_Mechanic_01_F;
+	class B_G_Soldier_LAT_F;
 
 	class U_C_Uniform_Farmer_01_nmr : C_Uniform_Farmer_01_F
 	{
@@ -800,5 +828,12 @@ class CfgVehicles
 		scope = 1;
 		side = 0;
 		uniformClass = "U_C_Mechanic_01_F_nmr";
+	};
+
+	class B_G_Guerrilla_6_1_nmr : B_G_Soldier_LAT_F
+	{
+		scope = 1;
+		side = 0;
+		uniformClass = "U_BG_Guerrilla_6_1_nmr";
 	};
 };
