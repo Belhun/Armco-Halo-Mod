@@ -304,10 +304,10 @@ class CfgVehicles
 			"4thot_a_OPTRE_Commando_Snow_ch", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_5("Command_20Rnd_65_TracerR_Mag"), tx_3("Command_20Rnd_65_TracerR_Mag"), "Command_20Rnd_65_TracerR_Mag", "4thot_g_hef_h"
+			"kat_Painkiller", tx_5("Command_20Rnd_65_TracerR_Mag"), tx_3("Command_20Rnd_65_TracerR_Mag"), "Command_20Rnd_65_TracerR_Mag", "4thot_g_he_h"
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_5("Command_20Rnd_65_TracerR_Mag"), tx_3("Command_20Rnd_65_TracerR_Mag"), "Command_20Rnd_65_TracerR_Mag", "4thot_g_hef_h"
+			"kat_Painkiller", tx_5("Command_20Rnd_65_TracerR_Mag"), tx_3("Command_20Rnd_65_TracerR_Mag"), "Command_20Rnd_65_TracerR_Mag", "4thot_g_he_h"
 		};
 	};
 
@@ -340,10 +340,10 @@ class CfgVehicles
 			"4thot_a_OPTRE_CQS48_Bulldog_Automatic_Snow_acos", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_5("OPTRE_12Rnd_12Gauge_Pellets_Tracer"), tx_2("OPTRE_12Rnd_12Gauge_Pellets_Tracer"), "4thot_g_hef_h", "4thot_g_hef_h"
+			"kat_Painkiller", tx_5("OPTRE_12Rnd_12Gauge_Pellets_Tracer"), tx_2("OPTRE_12Rnd_12Gauge_Pellets_Tracer"), "4thot_g_he_h", "4thot_g_he_h"
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_5("OPTRE_12Rnd_12Gauge_Pellets_Tracer"), tx_2("OPTRE_12Rnd_12Gauge_Pellets_Tracer"), "4thot_g_hef_h", "4thot_g_hef_h"
+			"kat_Painkiller", tx_5("OPTRE_12Rnd_12Gauge_Pellets_Tracer"), tx_2("OPTRE_12Rnd_12Gauge_Pellets_Tracer"), "4thot_g_he_h", "4thot_g_he_h"
 		};
 	};
 
@@ -376,10 +376,10 @@ class CfgVehicles
 			"4thot_a_OPTRE_SAS10_Riot_Shield_Snow_lsr", "optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_5("32Rnd_10mm_Ball"), tx_10("32Rnd_10mm_Ball"), "4thot_g_hef_h", "4thot_g_hef_h"
+			"kat_Painkiller", tx_5("32Rnd_10mm_Ball"), tx_10("32Rnd_10mm_Ball"), "4thot_g_he_h", "4thot_g_he_h"
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_5("32Rnd_10mm_Ball"), tx_10("32Rnd_10mm_Ball"), "4thot_g_hef_h", "4thot_g_hef_h"
+			"kat_Painkiller", tx_5("32Rnd_10mm_Ball"), tx_10("32Rnd_10mm_Ball"), "4thot_g_he_h", "4thot_g_he_h"
 		};
 	};
 
@@ -812,10 +812,10 @@ class CfgVehicles
 			stditem
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_3("OPTRE_1Rnd_MasterKey_Pellets"), tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_hef_h"), tx_5("OPTRE_40Rnd_30x06_Mag"), "OPTRE_40Rnd_30x06_Mag"
+			"kat_Painkiller", tx_3("OPTRE_1Rnd_MasterKey_Pellets"), tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_he_h"), tx_5("OPTRE_40Rnd_30x06_Mag"), "OPTRE_40Rnd_30x06_Mag"
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_3("OPTRE_1Rnd_MasterKey_Pellets"), tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_hef_h"), tx_5("OPTRE_40Rnd_30x06_Mag"), "OPTRE_40Rnd_30x06_Mag"
+			"kat_Painkiller", tx_3("OPTRE_1Rnd_MasterKey_Pellets"), tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_he_h"), tx_5("OPTRE_40Rnd_30x06_Mag"), "OPTRE_40Rnd_30x06_Mag"
 		};
 
 		class EventHandlers
@@ -898,10 +898,10 @@ class CfgVehicles
 			"4thot_a_OPTRE_HMG38_auto", "Knife_kukri", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", "OPTRE_1Rnd_MasterKey_Pellets", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_hef_h"), tx_3("OPTRE_100Rnd_30x06_Mag_Tracer")
+			"kat_Painkiller", "OPTRE_1Rnd_MasterKey_Pellets", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_he_h"), tx_3("OPTRE_100Rnd_30x06_Mag_Tracer")
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", "OPTRE_1Rnd_MasterKey_Pellets", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_hef_h"), tx_3("OPTRE_100Rnd_30x06_Mag_Tracer")
+			"kat_Painkiller", "OPTRE_1Rnd_MasterKey_Pellets", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_he_h"), tx_3("OPTRE_100Rnd_30x06_Mag_Tracer")
 		};
 	};
 
@@ -929,10 +929,10 @@ class CfgVehicles
 			stditem, "ACE_RangeCard"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_2("4thot_g_smk_urf_w"), "4thot_g_hef_h", tx_5("OPTRE_10RND_338_AP"), tx_3("OPTRE_10RND_338_AP"), "OPTRE_10RND_338_AP", tx_2("16Rnd_10mm_Ball")
+			"kat_Painkiller", tx_2("4thot_g_smk_urf_w"), "4thot_g_he_h", tx_5("OPTRE_10RND_338_AP"), tx_3("OPTRE_10RND_338_AP"), "OPTRE_10RND_338_AP", tx_2("16Rnd_10mm_Ball")
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_2("4thot_g_smk_urf_w"), "4thot_g_hef_h", tx_5("OPTRE_10RND_338_AP"), tx_3("OPTRE_10RND_338_AP"), "OPTRE_10RND_338_AP", tx_2("16Rnd_10mm_Ball")
+			"kat_Painkiller", tx_2("4thot_g_smk_urf_w"), "4thot_g_he_h", tx_5("OPTRE_10RND_338_AP"), tx_3("OPTRE_10RND_338_AP"), "OPTRE_10RND_338_AP", tx_2("16Rnd_10mm_Ball")
 		};
 	};
 
@@ -948,10 +948,10 @@ class CfgVehicles
 			"4thot_w_a_hmg48_a_srm", "optre_hgun_sas10_F_a_lsr", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_hef_h"), tx_2("4thot_b_858x70_100_apr_t3")
+			"kat_Painkiller", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_he_h"), tx_2("4thot_b_858x70_100_apr_t3")
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_hef_h"), tx_2("4thot_b_858x70_100_apr_t3")
+			"kat_Painkiller", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_he_h"), tx_2("4thot_b_858x70_100_apr_t3")
 		};
 	};
 
@@ -967,10 +967,10 @@ class CfgVehicles
 			"4thot_a_OPTRE_M90A_lsr", "Knife_kukri", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_2("4thot_g_hef_h"), tx_5("OPTRE_12Rnd_8Gauge_Pellets"), "OPTRE_12Rnd_8Gauge_Pellets", tx_3("OPTRE_12Rnd_8Gauge_Slugs"), "OPTRE_12Rnd_8Gauge_Slugs"
+			"kat_Painkiller", tx_2("4thot_g_he_h"), tx_5("OPTRE_12Rnd_8Gauge_Pellets"), "OPTRE_12Rnd_8Gauge_Pellets", tx_3("OPTRE_12Rnd_8Gauge_Slugs"), "OPTRE_12Rnd_8Gauge_Slugs"
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_2("4thot_g_hef_h"), tx_5("OPTRE_12Rnd_8Gauge_Pellets"), "OPTRE_12Rnd_8Gauge_Pellets", tx_3("OPTRE_12Rnd_8Gauge_Slugs"), "OPTRE_12Rnd_8Gauge_Slugs"
+			"kat_Painkiller", tx_2("4thot_g_he_h"), tx_5("OPTRE_12Rnd_8Gauge_Pellets"), "OPTRE_12Rnd_8Gauge_Pellets", tx_3("OPTRE_12Rnd_8Gauge_Slugs"), "OPTRE_12Rnd_8Gauge_Slugs"
 		};
 	};
 
@@ -987,10 +987,10 @@ class CfgVehicles
 			"4thot_a_OPTRE_HMG38_std", "Knife_kukri", "OPTRE_M41_SSR", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", "OPTRE_1Rnd_MasterKey_Pellets", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_hef_h"), tx_5("OPTRE_40Rnd_30x06_Mag"), tx_2("OPTRE_40Rnd_30x06_Mag")
+			"kat_Painkiller", "OPTRE_1Rnd_MasterKey_Pellets", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_he_h"), tx_5("OPTRE_40Rnd_30x06_Mag"), tx_2("OPTRE_40Rnd_30x06_Mag")
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", "OPTRE_1Rnd_MasterKey_Pellets", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_hef_h"), tx_5("OPTRE_40Rnd_30x06_Mag"), tx_2("OPTRE_40Rnd_30x06_Mag")
+			"kat_Painkiller", "OPTRE_1Rnd_MasterKey_Pellets", tx_2("4thot_g_smk_urf_w"), tx_2("4thot_g_he_h"), tx_5("OPTRE_40Rnd_30x06_Mag"), tx_2("OPTRE_40Rnd_30x06_Mag")
 		};
 	};
 

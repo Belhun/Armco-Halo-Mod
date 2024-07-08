@@ -94,12 +94,9 @@ class CfgAmmo
             #include "..\..\cfgA_m34_guidance.hpp"
         };
 
-        class 4thot_L_150x900_theat_los_unsc : 4thot_L_150x900_theat_los
+        class 4thot_L_150x900_theat_los_urf : 4thot_L_150x900_theat_los
         {
-            class ace_missileguidance : ace_missileguidance
-            {
-                enabled = 1;
-            };
+            #include "..\..\cfgA_m34_guidance.hpp"
         };
 
         class 4thot_L_150x900_therm_los : ace_metis_HE
@@ -169,22 +166,40 @@ class CfgMagazines
 
         class 4thot_L_150x900_1_at : Vorona_HEAT
         {
-            displayName = "150mm STS Type 1 AP+";
-            displayNameShort = "LOS AP+";
-            descriptionshort = "Semi-Automatic Command to Line Of Sight<br/>Tandem Armor Piercing Guided Missile<br/>For HMW-34 Sturmhammer";
+            displayName = "150mm M16A SSM HEAT (SACLOS)";
+            displayNameShort = "AT-H(LOS)";
+            descriptionshort = "Surface-to-Surface guided Missile<br/>Tandem High Explosive Anti-Tank<br/>Semi-Automatic Command to Line Of Sight";
 
             mass = 150;
 
             ammo = "4thot_L_150x900_theat_los";
         };
 
-        class 4thot_L_150x900_1_ap : Vorona_HE
+        class 4thot_L_150x900_1_dp : Vorona_HE
+        {
+            displayName = "150mm M17 SSM HEMP (SACLOS)";
+            displayNameShort = "DP-H(LOS)";
+            descriptionshort = "Surface-to-Surface guided Missile<br/>High Explosive Multi-Purpose<br/>Semi-Automatic Command to Line Of Sight";
+
+            mass = 150;
+
+            ammo = "4thot_L_75x452r_hemp_los";
+        };
+
+        class 4thot_L_150x900_1_at_urf : 4thot_L_150x900_1_at
+        {
+            displayName = "150mm STS Type 1 AP+";
+            displayNameShort = "LOS AP+";
+            descriptionshort = "Semi-Automatic Command to Line Of Sight<br/>Tandem Armor Piercing Guided Missile<br/>For HMW-34 Sturmhammer";
+
+            ammo = "4thot_L_150x900_theat_los_urf";
+        };
+
+        class 4thot_L_150x900_1_ap : 4thot_L_150x900_1_dp
         {
             displayName = "150mm STS Type 2 AS/I";
             displayNameShort = "LOS AS/I";
             descriptionshort = "Semi-Automatic Command to Line Of Sight<br/>Anti-Strucutre/Infantry Guided Missile<br/>For HMW-34 Sturmhammer";
-
-            mass = 150;
 
             ammo = "4thot_L_150x900_therm_los";
         };
@@ -292,12 +307,13 @@ class CfgWeapons
             class WeaponSlotsInfo;
         };
 
-        class 4thot_w_l_m34_urf : launch_O_Vorona_green_F
+        class 4thot_w_l_m34 : launch_O_Vorona_green_F
         {
-            baseWeapon = "4thot_w_l_m34_urf";
+            scopeArsenal = 1;
+            baseWeapon = "4thot_w_l_m34";
 
-            displayName = "HMW-34 Sturmhammer";
-            descriptionshort = "Heavy Multi-role Weapon<br/>UNSC : M34 SSR HAV";
+            displayName = "M34 SSR HAV";
+            descriptionshort = "Surface-to-Surface Rocket<br/>Heavy Anti-Vehicle";
 
             magazines[] =
             {
@@ -310,6 +326,15 @@ class CfgWeapons
             {
                 mass = 102.9;
             };
+        };
+
+        class 4thot_w_l_m34_urf : 4thot_w_l_m34
+        {
+            scopeArsenal = 2;
+            baseWeapon = "4thot_w_l_m34_urf";
+
+            displayName = "HMW-34 Sturmhammer";
+            descriptionshort = "Heavy Multi-role Weapon<br/>UNSC : M34 SSR HAV";
         };
 
 

@@ -304,7 +304,7 @@ class Cfgmagazines {
 			descriptionShort = "High Explosive Multi-Purpose Grenade<br/>Medium Fragmentation";
 		};
 
-		class 4thot_g_hef_h : HandGrenade
+		class 4thot_g_he_h : HandGrenade
 		{
 			scope = 1;
 
@@ -461,7 +461,7 @@ class Cfgweapons {
 		{
 			muzzles[] +=
 			{
-				"4thot_g_hef_h_Muzzle",
+				"4thot_g_he_h_Muzzle",
 				"4thot_g_he_l_Muzzle",
 				"4thot_g_heat_Muzzle",
 				"4thot_g_smk_urf_w_Muzzle",
@@ -471,10 +471,10 @@ class Cfgweapons {
 				"4thot_g_smk_urf_b_Muzzle",
 			};
 
-			class 4thot_g_hef_h_Muzzle : throwMuzzle
+			class 4thot_g_he_h_Muzzle : throwMuzzle
 			{
 				magazines[] = {
-					"4thot_g_hef_h"
+					"4thot_g_he_h"
 				};
 			};
 			class 4thot_g_he_l_Muzzle : throwMuzzle
@@ -816,6 +816,9 @@ class Cfgweapons {
 
 		class 4thot_w_ra_grot : arifle_MSBS65_Mark_black_F
 		{
+			scope = 1;
+			scopeArsenal = 1;
+
 			baseWeapon = "4thot_w_ra_grot";
 			displayName = "Drum Test";
 
