@@ -38,7 +38,7 @@ class ARMCO_Beret_Veteran : ARMCO_Beret_Rifleman {
 class ARMCO_Beret_Security : ARMCO_Beret_Rifleman {
 	displayname = "[ARMCO][B] Security Bureau Beret";
 	hiddenSelectionsTextures[] = {
-		QPATHTOF(data\security\helmet\helmet_beret_security_co.paa)
+		QPATHTOF(data\hats\helmet_beret_security_co.paa)
 	};
 };
 class ARMCO_Beret_EOD : ARMCO_Beret_Rifleman {
