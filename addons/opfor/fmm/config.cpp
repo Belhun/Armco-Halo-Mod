@@ -57,7 +57,7 @@ class CfgPatches
 			"4thot_u_fmm_u_spotr",
 			"4thot_u_fmm_u_snipr",
 
-			"4thot_v_d_rchog_ied=",
+			"4thot_v_d_rchog_ied",
 			"4thot_v_g_fmm_hog",
 			"4thot_v_g_fmm_hog_ied",
 			"4thot_v_g_fmm_hog_apc",

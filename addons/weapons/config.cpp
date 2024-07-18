@@ -18,14 +18,162 @@ class CfgPatches {
 
 class CfgAmmo
 {
-	class B_93x64_Ball;
-	class OPTRE_65_Creedmoor : B_93x64_Ball
-	{					// MA5		Default
-		caliber = 1.8;	// 2.1		2.2
-		hit = 14;		// 12 		18
-	};
+	//Penetrators (p)
+		class ammo_Penetrator_PG7;
+		class ammo_Penetrator_MRAAWS;
+		class ammo_Penetrator_120mm;
 
-	class G_40mm_HE;
+		//at1 - Light Anti-Tank
+			class 4thot_p_at1_lat : ammo_Penetrator_PG7
+			{
+				caliber = 20;
+				hit = 400;
+				warheadName = "HEAT";
+			};
+
+		//at2 - Medium-Light Anti-Tank
+			class 4thot_p_at2_mlat : 4thot_p_at1_lat
+			{
+				caliber = 26;
+				hit = 450;
+			};
+
+		//at3 - Medium Anti-Tank
+			class 4thot_p_at3_mat : 4thot_p_at1_lat
+			{
+				caliber = 33;
+				hit = 500;
+			};
+
+		//at4 - Medium-Heavy Anti-Tank
+			class 4thot_p_at4_mhat : ammo_Penetrator_MRAAWS
+			{
+				caliber = 56;
+				hit = 600;
+
+				warheadName = "TandemHEAT";
+			};
+
+		//at5 - Heavy Anti-Tank
+			class 4thot_p_at5_hat : 4thot_p_at4_mhat
+			{
+				caliber = 70;
+				hit = 800;
+
+				warheadName = "TandemHEAT";
+			};
+
+		//at6 - APFSDS
+			class 4thot_p_at6_ke : ammo_Penetrator_120mm
+			{
+				caliber = 74;
+				hit = 300;
+
+				warheadName = "TandemHEAT";
+
+				explosive = 0;
+			};
+
+		//at0 - Ultralight Anti-Tank (40mm / AT Grenade)
+			class 4thot_p_at0_gmp : 4thot_p_at1_lat
+			{
+				caliber = 26;
+				hit = 120;
+
+				indirectHit = 10;
+				indirectHitRange = 2.25;
+			};
+
+			class 4thot_p_at0_gdp : 4thot_p_at1_lat
+			{
+				caliber = 20;
+				hit = 100;
+
+				indirectHit = 12;
+				indirectHitRange = 3;
+			};
+
+			class 4thot_p_at0_gat : 4thot_p_at1_lat
+			{
+				caliber = 26;
+				hit = 250;
+			};
+
+	//Infantry Ammo (a)
+		/*
+			SB/Standard Ball:	Caliber 1.0x, Hit 1.0x.
+			AP/Armor-Piercing:	Caliber 2.0x, Hit 0.7x.
+			LR/Long-Range:		Caliber 0.8x, Hit 1.2x.
+		*/
+
+		class B_93x64_Ball;
+		class OPTRE_65_Creedmoor : B_93x64_Ball
+		{					// MA5		Default
+			caliber = 1.8;	// 2.1		2.2
+			hit = 14;		// 12 		18
+		};
+
+		class ACE_762x67_Ball_Mk248_Mod_1;
+		class 4thot_a_762x67_sb_m248_y : ACE_762x67_Ball_Mk248_Mod_1
+		{
+			model = "\A3\Weapons_f\Data\bullettracer\tracer_yellow";
+			caliber = 1.9;
+			hit = 18;
+		};
+
+		class 4thot_a_762x67_sb_m248_r : 4thot_a_762x67_sb_m248_y
+		{
+			model = "\A3\Weapons_f\Data\bullettracer\tracer_yellow";
+		};
+
+		class ACE_762x67_Ball_Mk248_Mod_0;
+		class 4thot_a_762x67_ap_m348_y : ACE_762x67_Ball_Mk248_Mod_0
+		{
+			model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+
+			caliber = 3.8;	//2x
+			hit = 12.6;		//0.7x
+		};
+
+		class ACE_762x67_Ball_Berger_Hybrid_OTM;
+		class 4thot_a_762x67_lr_otm_y : ACE_762x67_Ball_Berger_Hybrid_OTM
+		{
+			model = "\A3\Weapons_f\Data\bullettracer\tracer_yellow";
+
+			caliber = 1.52;	//0.8x
+			hit = 21.6;		//1.2x
+		};
+	// GL Grenades (u)
+		//class G_40mm_HE;
+	// Grenades / Throwables (g)
+
+		//class OPTRE_M9_Frag;
+		//class GrenadeHand;
+		//class mini_Grenade;
+		class OPTRE_AU44_122mm_Grenade;
+
+		class 4thot_g_at : OPTRE_AU44_122mm_Grenade
+		{
+			model = "\z\ace\addons\grenades\models\ace_anm14th3_armed.p3d";
+
+			submunitionAmmo = "4thot_p_at0_gat";
+			submunitionDirectionType = "SubmunitionAutoLeveling";
+			triggerOnImpact = 1;
+
+			//fuseDistance = 0;
+
+			caliber = 1;
+			hit = 15;
+
+			indirectHit = 15;
+			indirectHitRange = 1;
+
+			ace_frag_enabled = 0;
+
+			//typicalspeed = 18;
+			//thrust = 210;
+			//thrustTime = 1.5;
+		};
 };
 
 class Cfgmagazines {
@@ -288,6 +436,101 @@ class Cfgmagazines {
 			lastroundstracer = 3;
 		};
 
+	// M392/M393 Designated Marksman Rifle (DMR)
+		//Compat
+			class OPTRE_60Rnd_762x51_Mag;
+			class OPTRE_15Rnd_762x51_Mag : OPTRE_60Rnd_762x51_Mag
+			{
+				scope = 1;
+				ammo = "4thot_a_762x67_sb_m248_y";
+			};
+
+			class OPTRE_15Rnd_762x51_Mag_Tracer : OPTRE_15Rnd_762x51_Mag
+			{
+				ammo = "4thot_a_762x67_sb_m248_y";
+			};
+
+			class OPTRE_15Rnd_762x51_Mag_Tracer_Yellow : OPTRE_15Rnd_762x51_Mag_Tracer
+			{
+				ammo = "4thot_a_762x67_sb_m248_r";
+			};
+
+			class OPTRE_15Rnd_762x51_AP_Mag : OPTRE_15Rnd_762x51_Mag
+			{
+				ammo = "4thot_a_762x67_ap_m348_y";
+			};
+
+			class OPTRE_15Rnd_762x51_AP_Mag_Tracer : OPTRE_15Rnd_762x51_AP_Mag
+			{
+				ammo = "4thot_a_762x67_ap_m348_y";
+			};
+
+		//class OPTRE_15Rnd_762x51_Mag;
+		class 4thot_m_762x67_15_sbr_nt : OPTRE_15Rnd_762x51_Mag
+		{
+			scope = 2;
+
+			displayname = "15Rnd 7.62x67mm EMB(NT) Magazine";
+			displaynameShort = "EMB";
+			descriptionShort = "M248 Enhanced Military Ball<br/>15 rounds, No Tracers";
+
+			ammo = "4thot_a_762x67_sb_m248_y";
+			tracersEvery = 0;
+			lastroundstracer = 0;
+
+			mass = 20;
+			count = 15;
+		};
+
+		class 4thot_m_762x67_15_sbr_mt : 4thot_m_762x67_15_sbr_nt
+		{
+			displayname = "15Rnd 7.62x67mm EMB/T-R(T2E4) Magazine";
+			displaynameShort = "EMB-T2";
+			descriptionShort = "M248 Enhanced Military Ball<br/>M248R Enhanced Military Red Tracers<br/>15 rounds, Tracers every 2, 4 End Tracers";
+
+			tracersEvery = 2;
+			lastroundstracer = 4;
+		};
+
+		class 4thot_m_762x67_15_sbr_t : 4thot_m_762x67_15_sbr_nt
+		{
+			displayname = "20Rnd 7.62x67mm EMT-R Tracer Magazine";
+			displaynameShort = "EMT-T";
+			descriptionShort = "M248R Enhanced Military Red Tracers<br/>15 rounds, All Tracers";
+
+			tracersEvery = 1;
+			lastroundstracer = 1;
+		};
+
+		class 4thot_m_762x67_15_lr_nt : 4thot_m_762x67_15_sbr_nt
+		{
+			displayname = "15Rnd 7.62x67mm SBLR(NT) Magazine";
+			displaynameShort = "SBLR";
+			descriptionShort = "OTM Hybrid Special Ballistc Long Range<br/>15 rounds, No Tracers";
+
+			ammo = "4thot_a_762x67_lr_otm_y";
+		};
+
+		class 4thot_m_762x67_15_apr_nt : 4thot_m_762x67_15_sbr_nt
+		{
+			displayname = "15Rnd 7.62x67mm API(NT) Magazine";
+			displaynameShort = "API";
+			descriptionShort = "M248 Enhanced Military Ball<br/>15 rounds, No Tracers";
+
+			ammo = "4thot_a_762x67_ap_m348_y";
+		};
+
+		class 4thot_m_762x67_15_apr_mt : 4thot_m_762x67_15_apr_nt
+		{
+			displayname = "15Rnd 7.62x67mm API/T-R(T4E2) Magazine";
+			displaynameShort = "API-T4";
+			descriptionShort = "M348 Armor-Piercing Incendiary<br/>M348R Armor-Piercing Red Tracers<br/>15 rounds, Tracers every 4, 2 End Tracers";
+
+			tracersEvery = 4;
+			lastroundstracer = 2;
+		};
+
+
 	// Grenades (Throwables)
 		class OPTRE_M2_Smoke;
 		class OPTRE_M2_Smoke_Red;
@@ -302,6 +545,10 @@ class Cfgmagazines {
 			displayName = "M9 HE-MP Grenade";
 			displayNameShort = "M9 HEMP";
 			descriptionShort = "High Explosive Multi-Purpose Grenade<br/>Medium Fragmentation";
+
+			//ammo = "OPTRE_G_M9_Frag";
+
+			//mass = 8;
 		};
 
 		class 4thot_g_he_h : HandGrenade
@@ -311,6 +558,8 @@ class Cfgmagazines {
 			displayName = "OGAI-14 AI+ Grenade";
 			displayNameShort = "OGAI-14";
 			descriptionShort = "Heavy Anti-Infantry Grenade<br/>High Fragmentation";
+
+			//ammo = "GrenadeHand";
 
 			mass = 10;
 		};
@@ -323,6 +572,8 @@ class Cfgmagazines {
 			displayNameShort = "OGAI-7";
 			descriptionShort = "Light Anti-Infantry Grenade<br/>Limited Fragmentation";
 
+			//ammo = "mini_Grenade";
+
 			mass = 5;
 		};
 
@@ -330,11 +581,16 @@ class Cfgmagazines {
 		{
 			scope = 1;
 
-			displayName = "OGAT-15 AP Grenade";
+			displayName = "OGAT-11 AP Grenade";
 			displayNameShort = "OGAT-15";
 			descriptionShort = "Light Anti-Tank Grenade<br/>Armor-Piercing, Limited Fragmentation";
 
+			ammo = "4thot_g_at";
+
 			mass = 12.5;
+
+			model = "\z\ace\addons\grenades\models\ace_anm14th3.p3d";
+			picture = "\z\ace\addons\grenades\UI\ace_anm14th3_x_ca.paa";
 		};
 
 		class 4thot_g_smk_urf_w : OPTRE_M2_Smoke
@@ -807,6 +1063,33 @@ class Cfgweapons {
 
 			recoil = "4thot_a_m247";
 		};
+	// M392/M393 Designated Marksman Rifle (DMR)
+		class OPTRE_LongRifle_Base;
+		class OPTRE_M392_DMR : OPTRE_LongRifle_Base
+		{
+			//magazineWell[] = {};
+			magazines[] =
+			{
+				"4thot_m_762x67_15_sbr_nt",
+				"4thot_m_762x67_15_sbr_mt",
+				"4thot_m_762x67_15_sbr_t",
+				"4thot_m_762x67_15_lr_nt",
+				"4thot_m_762x67_15_apr_nt",
+				"4thot_m_762x67_15_apr_mt"
+			};
+
+			recoil = "4thot_a_m392";
+		};
+
+		class OPTRE_M393_DMR : OPTRE_M392_DMR
+		{
+			recoil = "4thot_a_m393";
+		};
+
+		class OPTRE_M393S_DMR : OPTRE_M393_DMR
+		{
+			recoil = "4thot_a_m393S";
+		};
 
 	// Madrigal Standard Rifle Model 10 (MSBS Grot)
 		class arifle_MSBS65_black_F;
@@ -842,7 +1125,7 @@ class CfgRecoils
 
 	class 4thot_a_m247 : recoil_mk200
 	{
-		permanent = "0.05*0.4";
+		permanent = "0.05*0.45";
 		temporary = "0.01*0.4";
 	};
 
@@ -856,5 +1139,22 @@ class CfgRecoils
 	{
 		permanent = "0.05*0.9";
 		temporary = "0.03*0.9";
+	};
+
+	class 4thot_a_m392 : recoil_dmr_03
+	{
+		permanent = "0.05*0.75";
+		temporary = "0.03*0.75";
+	};
+
+	class 4thot_a_m393 : 4thot_a_m392
+	{
+		permanent = "0.05*0.7";
+		temporary = "0.03*0.7";
+	};
+
+	class 4thot_a_m393S : 4thot_a_m393
+	{
+		temporary = "0.03*0.85";
 	};
 };

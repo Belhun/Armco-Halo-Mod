@@ -62,7 +62,6 @@ cfgVehicles
 cfgAmmo
 	_a	Infantry Ammo (Rifle)
 	_u  Grenade Launcher
-	_g	Grenade (Throwable)
 	_l  Launcher Ammo
 		_[Caliber]
 			_[Type]
@@ -80,5 +79,7 @@ cfgAmmo
 					_[Tracer Color]
 					_[Guidance]
 					_[Color]
+	_g	Grenade (Throwable)
 	_p	Penetrator Submunition
+		_[Type]
 	_s  Other Submunition (Clusters)

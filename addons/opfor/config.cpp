@@ -133,6 +133,11 @@ class CfgFactionClasses
 		displayName = "UNSCMC, 3rd Marine Division";
 	};
 
+	class 4thot_unsc_mar21
+	{
+		displayName = "UNSCMC, 77th Marine Regiment";
+	};
+
 // United Rebel Front
 	class 4thot_urf_ex3
 	{
