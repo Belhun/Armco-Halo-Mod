@@ -156,16 +156,16 @@ class CfgAmmo
 		{
 			model = "\z\ace\addons\grenades\models\ace_anm14th3_armed.p3d";
 
-			submunitionAmmo = "4thot_p_at0_gat";
-			submunitionDirectionType = "SubmunitionAutoLeveling";
-			triggerOnImpact = 1;
+			//submunitionAmmo = "4thot_p_at0_gat";
+			//submunitionDirectionType = "SubmunitionAutoLeveling";
+			//triggerOnImpact = 1;
 
 			//fuseDistance = 0;
 
-			caliber = 1;
-			hit = 15;
+			caliber = 26;
+			hit = 300;
 
-			indirectHit = 15;
+			indirectHit = 10;
 			indirectHitRange = 1;
 
 			ace_frag_enabled = 0;
@@ -173,6 +173,8 @@ class CfgAmmo
 			//typicalspeed = 18;
 			//thrust = 210;
 			//thrustTime = 1.5;
+
+			explosive = 0.65;
 		};
 };
 
@@ -579,10 +581,10 @@ class Cfgmagazines {
 
 		class 4thot_g_heat : HandGrenade
 		{
-			scope = 1;
+			scope = 2;
 
 			displayName = "OGAT-11 AP Grenade";
-			displayNameShort = "OGAT-15";
+			displayNameShort = "OGAT-11";
 			descriptionShort = "Light Anti-Tank Grenade<br/>Armor-Piercing, Limited Fragmentation";
 
 			ammo = "4thot_g_at";
