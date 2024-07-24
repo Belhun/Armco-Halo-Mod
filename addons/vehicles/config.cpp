@@ -73,3 +73,23 @@ class cfgFactionClasses {
 		priority = 1;
 	};
 };
+
+class CfgFunctions
+{
+	class armco
+	{
+		class PelicanMagLiftSystem
+		{
+			file = QPATHTOF(functions);
+			class PelicanLoadValidate{};
+			class PelicanUnLoadValidate{};
+		};
+	};
+};
+
+class CfgVehicles
+{
+#include "CfgWarhogs.hpp"
+#include "CfgStatics.hpp"
+#include "CfgPelican.hpp"
+};

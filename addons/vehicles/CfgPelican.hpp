@@ -1,18 +1,4 @@
-#include "cfgPatches.hpp"
-class CfgFunctions
-{
-	class armco
-	{
-		class PelicanMagLiftSystem
-		{
-			file = "armco_vehicles\Pelican";
-			class PelicanLoadValidate{};
-			class PelicanUnLoadValidate{};
-		};
-	};
-};
-class CfgVehicles
-{
+
 	class OPTRE_Pelican_unarmed;
 	class OPTRE_Pelican_armed;
 
@@ -318,7 +304,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\armco_vehicles\Pelican\data\Armco_Pelican_Transport.paa"
+			QPATHTOF(data\Armco_Pelican_Transport.paa)
 		};
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "armco_units_pelicans";
@@ -341,7 +327,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\armco_vehicles\Pelican\data\Armco_Pelican_Transport.paa"
+			QPATHTOF(data\Armco_Pelican_Transport.paa)
 		};
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "armco_units_pelicans";
@@ -366,7 +352,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\armco_vehicles\Pelican\data\Armco_Pelican_Med.paa"
+			QPATHTOF(data\Armco_Pelican_Med.paa)
 		};
 		editorCategory = "ARMCO_Armco_Faction";
 		editorSubcategory = "armco_units_pelicans";
@@ -392,7 +378,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\armco_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
+			QPATHTOF(data\PelicanExterior_URF_CO.paa)
 		};
 		editorCategory = "ARMCO_Green_Horns_Cat";
 		editorSubcategory = "armco_units_pelicans";
@@ -415,7 +401,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\armco_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
+			QPATHTOF(data\PelicanExterior_URF_CO.paa)
 		};
 		editorCategory = "ARMCO_Green_Horns_Cat";
 		editorSubcategory = "armco_units_pelicans";
@@ -440,9 +426,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\armco_vehicles\Pelican\data\PelicanExterior_URF_CO.paa"
+			QPATHTOF(data\PelicanExterior_URF_CO.paa)
 		};
 		editorCategory = "ARMCO_Green_Horns_Cat";
 		editorSubcategory = "armco_units_pelicans";
 	};
-};

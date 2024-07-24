@@ -1,6 +1,4 @@
-#include "CfgPatches.hpp"
-class CfgVehicles
-{
+
 	class OPTRE_Static_FG75_CMA;
 	class ARMCO_Static_FG75: OPTRE_Static_FG75_CMA
 	{
@@ -15,4 +13,3 @@ class CfgVehicles
 		editorSubcategory = "ARMCO_Factions_static";
 		crew="OPTRE_UNSC_Marine_Soldier_Crewman";
 	};
-};
