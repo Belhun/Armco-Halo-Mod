@@ -162,8 +162,9 @@ class CfgAmmo
 
 			//fuseDistance = 0;
 
-			caliber = 26;
-			hit = 300;
+			caliber = 20;
+			hit = 1200;
+			warheadName = "HEAT";
 
 			indirectHit = 10;
 			indirectHitRange = 1;
@@ -174,208 +175,768 @@ class CfgAmmo
 			//thrust = 210;
 			//thrustTime = 1.5;
 
-			explosive = 0.65;
+			explosive = 0; //0.5
 		};
 };
 
 class Cfgmagazines {
 	// 40mm / Shared Magazines
 		class 1Rnd_HE_Grenade_shell;
-		class 1Rnd_Smoke_Grenade_shell;
+		class OPTRE_1Rnd_MasterKey_Pellets;
+
+		class OPTRE_1Rnd_Smoke_Grenade_shell;		//White
+		class OPTRE_1Rnd_SmokeOrange_Grenade_shell;	//Orange
+		class OPTRE_1Rnd_SmokeGreen_Grenade_shell;	//Green
+		class OPTRE_1Rnd_SmokeRed_Grenade_shell;	//Red
+		class OPTRE_1Rnd_SmokeBlue_Grenade_shell;	//Blue
+		class OPTRE_1Rnd_SmokeYellow_Grenade_shell;	//Yellow
+		class OPTRE_1Rnd_SmokePurple_Grenade_shell;	//Purple
+
 		class 1Rnd_SmokeOrange_Grenade_shell;
+		class 1Rnd_Smoke_Grenade_shell;
+		class 1Rnd_SmokeYellow_Grenade_shell;
 		class 1Rnd_SmokeGreen_Grenade_shell;
 		class 1Rnd_SmokeRed_Grenade_shell;
 
-		class 4thot_u_40x72_1_ap : 1Rnd_HE_Grenade_shell
+		class UGL_FlareGreen_F;
+		class UGL_FlareCIR_F;
+		class UGL_FlareRed_F;
+		class UGL_FlareWhite_F;
+		class UGL_FlareYellow_F;
+
+		class ACE_40mm_Flare_white;
+		class ACE_40mm_Flare_green;
+		class ACE_40mm_Flare_red;
+		class ACE_40mm_Flare_ir;
+
+		class ACE_HuntIR_M203;
+
+		class 4thot_u_40x57_1_huntir : ACE_HuntIR_M203
 		{
-			displayname = "40x72mm M13 HE-HP Grenade";
-			displaynameShort = "HE-HP";
-			descriptionShort = "High Power, High Explosive Grenade<br/>Medium Fragmentation<br/>Used by: All Grenade Launchers";
-
-			//ammo = "4thot_u_40x72_he";
-			count = 1;
-
-			mass = 7.5;
-		};
-
-		class 4thot_u_40x72_1_dp : 4thot_u_40x72_1_ap
-		{
-			displayname = "40x72mm M20 HE-MP Grenade";
-			displaynameShort = "HE-MP";
-			descriptionShort = "High Explosive Multi-Purpose (Light Anti-Tank) Grenade<br/>Limited Fragmentation<br/>Used by: All Grenade Launchers";
-
-			//ammo = "4thot_u_40x72_hemp";
-		};
-
-		class 4thot_u_40x47_3_ap : 4thot_u_40x72_1_ap
-		{
-			displayname = "40x47mm 3rnd M22 HE/C Grenade";
-			displaynameShort = "3x HE/C";
-			descriptionShort = "Compact High Explosive Grenades<br/>Limited Fragmentation, 3 Rounds<br/>Used by: Short Grenade Launchers (UGLs)";
-
-			//ammo = "4thot_u_40x47_he";
-			count = 3;
-
-			mass = 8;
-		};
-
-		//Insurrectionist
-		class 4thot_u_40x57_1_ap : 1Rnd_HE_Grenade_shell
-		{
-			displayname = "40x57mm LGAI-3 AI Grenade";
-			displaynameShort = "AI";
-			descriptionShort = "Launched Anti-Infantry Grenade<br/>Medium Fragmentation<br/>Used by: All Grenade Launchers";
-
-			//ammo = "4thot_u_40x57_he";
-
-			mass = 6;
-		};
-
-		class 4thot_u_40x57_1_smk_urf_w : 1Rnd_Smoke_Grenade_shell
-		{
-			displayname = "40x57mm LGS-1 Smoke Grenade (Cover)";
-			displaynameShort = "SMK (W)";
-			descriptionShort = "Launched Smoke Grenade, White<br/>Used by: All Grenade Launchers";
-
-			//ammo = "4thot_u_40x57_smk_urf_w";
+			displayname = "40x57mm SeekIR Round";
+			displaynameShort = "HuntIR";
+			descriptionShort = "40mm Launched SeekIR Camera<br/>Used by: All Grenade Launchers";
 
 			mass = 5;
 		};
 
-		class 4thot_u_40x57_1_smk_urf_o : 1Rnd_SmokeOrange_Grenade_shell
-		{
-			displayname = "40x57mm LGS-1 Smoke Grenade (Target)";
-			displaynameShort = "SMK (O)";
-			descriptionShort = "Launched Smoke Grenade, Orange<br/>Used by: All Grenade Launchers";
+		//UEG - United Earth Government / UNSC - United Nations Space Command
+			class 4thot_u_40x72_1_ap : 1Rnd_HE_Grenade_shell
+			{
+				displayname = "40x72mm M13 HE-HP Grenade";
+				displaynameShort = "HE-HP";
+				descriptionShort = "High Power, High Explosive Grenade<br/>Medium Fragmentation<br/>Used by: All Grenade Launchers";
 
-			//ammo = "4thot_u_40x57_smk_urf_o";
+				//ammo = "4thot_u_40x72_he";
+				count = 1;
 
-			mass = 5;
-		};
+				mass = 8;
+			};
 
-		class 4thot_u_40x57_1_smk_urf_g : 1Rnd_SmokeGreen_Grenade_shell
-		{
-			displayname = "40x57mm LGS-1 Smoke Grenade (Green)";
-			displaynameShort = "SMK (G)";
-			descriptionShort = "Launched Smoke Grenade, Green<br/>Used by: All Grenade Launchers";
+			class 4thot_u_40x72_1_dp : 4thot_u_40x72_1_ap
+			{
+				displayname = "40x72mm M20 HE-MP Grenade";
+				displaynameShort = "HE-MP";
+				descriptionShort = "High Explosive, Multi-Purpose Grenade<br/>Limited Fragmentation<br/>Used by: All Grenade Launchers";
 
-			//ammo = "4thot_u_40x57_smk_urf_g";
+				//ammo = "4thot_u_40x72_hemp";
+			};
 
-			mass = 5;
-		};
+			class 4thot_u_40x72_1_sg : OPTRE_1Rnd_MasterKey_Pellets
+			{
+				displayname = "40x72mm Master-Key Round";
+				displaynameShort = "Buckshot";
+				descriptionShort = "4-Gauge #000 Buckshot<br/>Used by: Short Grenade Launchers (UGLs)";
 
-		class 4thot_u_40x57_1_smk_urf_r : 1Rnd_SmokeRed_Grenade_shell
-		{
-			displayname = "40x57mm LGS-1 Smoke Grenade (Red)";
-			displaynameShort = "SMK (R)";
-			descriptionShort = "Launched Smoke Grenade, Red<br/>Used by: All Grenade Launchers";
+				//ammo = "4thot_u_40x72_sg";
 
-			//ammo = "4thot_u_40x57_smk_urf_r";
+				mass = 8;
+			};
 
-			mass = 5;
-		};
+			class 4thot_u_40x72_1_smk_clu_w : 1Rnd_Smoke_Grenade_shell
+			{
+				displayname = "40x72mm X25 Smoke Grenade (White)";
+				displaynameShort = "SMK (W)";
+				descriptionShort = "Cluster Smoke Grenade, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x72_smk_clu_w";
+
+				mass = 10;
+			};
+
+			class 4thot_u_40x47_3_ap : 4thot_u_40x72_1_ap
+			{
+				displayname = "40x47mm 3rnd M22 HE/C Grenade";
+				displaynameShort = "3x HE";
+				descriptionShort = "Compact High Explosive Grenades<br/>Limited Fragmentation, 3 Rounds<br/>Used by: Short Grenade Launchers (UGLs)";
+
+				//ammo = "4thot_u_40x47_he";
+				count = 3;
+
+				mass = 10;
+			};
+
+			class 4thot_u_40x57_1_smk_ueg_r : OPTRE_1Rnd_SmokeRed_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm M3/H Smoke Grenade (Red)";
+				displaynameShort = "SMK (R)";
+				descriptionShort = "Launched Smoke Grenade, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_ueg_r";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_ueg_w : OPTRE_1Rnd_Smoke_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm M3B Smoke Grenade (White)";
+				displaynameShort = "SMK (W)";
+				descriptionShort = "Launched Smoke Grenade, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_ueg_w";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_ueg_o : OPTRE_1Rnd_SmokeOrange_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm M3B Smoke Grenade (Orange)";
+				displaynameShort = "SMK (O)";
+				descriptionShort = "Launched Smoke Grenade, Yellow-Orange<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_ueg_o";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_r : UGL_FlareRed_F
+			{
+				displayname = "40x57mm M1 Flare Round (Red)";
+				displaynameShort = "FLR (R)";
+				descriptionShort = "40mm Launched Flare, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_r";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_g : UGL_FlareGreen_F
+			{
+				displayname = "40x57mm M1 Flare Round (Green)";
+				displaynameShort = "FLR (G)";
+				descriptionShort = "40mm Launched Flare, Green<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_g";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_o : UGL_FlareYellow_F
+			{
+				displayname = "40x57mm M1 Flare Round (Orange)";
+				displaynameShort = "FLR (O)";
+				descriptionShort = "40mm Launched Flare, Yellow-Orange<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_o";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_w : ACE_40mm_Flare_white
+			{
+				displayname = "40x57mm M1/L Illum. Flare Round (White)";
+				displaynameShort = "FLR (White)";
+				descriptionShort = "40mm Launched Illumination Flare, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_w";
+
+				mass = 6;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_i : ACE_40mm_Flare_ir
+			{
+				displayname = "40x57mm M1/L Illum. Flare Round (IR)";
+				displaynameShort = "FLR (IR)";
+				descriptionShort = "40mm Launched Illumination Flare, Infra-Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_i";
+
+				mass = 6;
+			};
+
+		//ARMCO - Free Armitage Company
+			class 4thot_u_40x57_1_smk_r : OPTRE_1Rnd_SmokeRed_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Red)";
+				displaynameShort = "SMK (R)";
+				descriptionShort = "Impact Smoke Grenade, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_r";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_p : OPTRE_1Rnd_SmokePurple_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Purple)";
+				displaynameShort = "SMK (P)";
+				descriptionShort = "Impact Smoke Grenade, Purple<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_p";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_y : OPTRE_1Rnd_SmokeYellow_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Yellow)";
+				displaynameShort = "SMK (Y)";
+				descriptionShort = "Impact Smoke Grenade, Yellow<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_y";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_b : OPTRE_1Rnd_SmokeBlue_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Blue)";
+				displaynameShort = "SMK (B)";
+				descriptionShort = "Impact Smoke Grenade, Blue<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_b";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_g : OPTRE_1Rnd_SmokeGreen_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Green)";
+				displaynameShort = "SMK (G)";
+				descriptionShort = "Impact Smoke Grenade, Green<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_g";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_o : OPTRE_1Rnd_SmokeOrange_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Orange)";
+				displaynameShort = "SMK (O)";
+				descriptionShort = "Impact Smoke Grenade, Orange<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_o";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x72_1_smk_clu_y : 1Rnd_SmokeYellow_Grenade_shell
+			{
+				displayname = "40x72mm X5 Smoke Grenade (Yellow)";
+				displaynameShort = "SMK (Y)";
+				descriptionShort = "Cluster Smoke Grenade, Yellow<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_clu_y";
+
+				mass = 10;
+			};
+
+			class 4thot_u_40x57_1_flr_i : UGL_FlareCIR_F
+			{
+				displayname = "40x57mm M1 Flare Round (IR)";
+				displaynameShort = "FLR (IR)";
+				descriptionShort = "40mm Launched Flare, Infra-Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_i";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_w : UGL_FlareWhite_F
+			{
+				displayname = "40x57mm M1 Flare Round (White)";
+				displaynameShort = "FLR (White)";
+				descriptionShort = "40mm Launched Flare, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_w";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_y : UGL_FlareYellow_F
+			{
+				displayname = "40x57mm M1 Flare Round (Yellow)";
+				displaynameShort = "FLR (Y)";
+				descriptionShort = "40mm Launched Flare, Yellow<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_y";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_g : ACE_40mm_Flare_green
+			{
+				displayname = "40x57mm M1/L Illum. Flare Round (Green)";
+				displaynameShort = "FLR (Green)";
+				descriptionShort = "40mm Launched Illumination Flare, Green<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_g";
+
+				mass = 6;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_r : ACE_40mm_Flare_red
+			{
+				displayname = "40x57mm M1/L Illum. Flare Round (Red)";
+				displaynameShort = "FLR (Red)";
+				descriptionShort = "40mm Launched Illumination Flare, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_r";
+
+				mass = 6;
+			};
+
+		//URF - United Rebel Front / Insurrectionists
+			class 4thot_u_40x72_1_sg_urf : 4thot_u_40x72_1_sg
+			{
+				displayname = "40x72mm LGSG-1 Buckshot Round";
+				displaynameShort = "Buckshot";
+				descriptionShort = "4-Gauge #00 Buckshot<br/>Used by: Short Grenade Launchers (UGLs)";
+
+				//ammo = "4thot_u_40x72_sg";
+			};
+
+			class 4thot_u_40x57_1_ap : 1Rnd_HE_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm LGAI-3 AI Grenade";
+				displaynameShort = "AI";
+				descriptionShort = "Launched Anti-Infantry Grenade<br/>Medium Fragmentation<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_he";
+
+				mass = 6.5;
+			};
+
+			class 4thot_u_40x57_1_smk_urf_o : 1Rnd_SmokeOrange_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm LGS-1 Smoke Grenade (Target)";
+				displaynameShort = "SMK (O)";
+				descriptionShort = "Launched Smoke Grenade, Orange<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_urf_o";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_urf_w : 1Rnd_Smoke_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm LGS-1 Smoke Grenade (Cover)";
+				displaynameShort = "SMK (W)";
+				descriptionShort = "Launched Smoke Grenade, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_urf_w";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_urf_g : 1Rnd_SmokeGreen_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm LGS-1 Smoke Grenade (Mark A)";
+				displaynameShort = "SMK (G)";
+				descriptionShort = "Launched Smoke Grenade, Green<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_urf_g";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_urf_r : 1Rnd_SmokeRed_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm LGS-1 Smoke Grenade (Mark B)";
+				displaynameShort = "SMK (R)";
+				descriptionShort = "Launched Smoke Grenade, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_urf_r";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_urf_r : UGL_FlareRed_F
+			{
+				scope = 1;
+
+				displayname = "40x57mm LGF-3 Flare Round (Red)";
+				displaynameShort = "FLR (R)";
+				descriptionShort = "40mm Launched Flare, High Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_urf_r";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_urf_g : UGL_FlareGreen_F
+			{
+				scope = 1;
+
+				displayname = "40x57mm LGF-3 Flare Round (Green)";
+				displaynameShort = "FLR (G)";
+				descriptionShort = "40mm Launched Flare, High Green<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_urf_g";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_urf_o : UGL_FlareYellow_F
+			{
+				scope = 1;
+
+				displayname = "40x57mm LGF-3 Flare Round (Orange)";
+				displaynameShort = "FLR (O)";
+				descriptionShort = "40mm Launched Flare, Orange<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_urf_o";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_urf_y : ACE_40mm_Flare_white
+			{
+				displayname = "40x57mm LGFI-5 Illum. Flare Round (Yellow)";
+				displaynameShort = "FLR (Yellow)";
+				descriptionShort = "40mm Launched Illumination Flare, Yellow<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_urf_y";
+
+				mass = 6;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_urf_r : ACE_40mm_Flare_red
+			{
+				displayname = "40x57mm LGFI-5 Illum. Flare Round (Red)";
+				displaynameShort = "FLR (Red)";
+				descriptionShort = "40mm Launched Illumination Flare, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_urf_r";
+
+				mass = 6;
+			};
 
 	// 40mm / M319 Multiple Grenade Launcher (MGL) Magazines
-		class M319_HE_Grenade_Shell;
-		class M319_HEDP_Grenade_Shell;
-		class M319_Buckshot;
-		class OPTRE_1Rnd_Smoke_Grenade_shell;
-		class OPTRE_1Rnd_SmokeRed_Grenade_shell;
-		class OPTRE_1Rnd_SmokeGreen_Grenade_shell;
-		class OPTRE_1Rnd_SmokeYellow_Grenade_shell;
-		class OPTRE_1Rnd_SmokePurple_Grenade_shell;
-		class OPTRE_1Rnd_SmokeBlue_Grenade_shell;
-		class OPTRE_1Rnd_Smokeorange_Grenade_shell;
-		class OPTRE_signalSmokeR;
-		class OPTRE_signalSmokeO;
-		class OPTRE_signalSmokeY;
-		class OPTRE_signalSmokeG;
-		class OPTRE_signalSmokeB;
-		class OPTRE_signalSmokeP;
-		class ACE_40mm_Flare_white;
-		class ACE_40mm_Flare_ir;
-		class OPTRE_1Rnd_MasterKey_Pellets;
-		class OPTRE_1Rnd_MasterKey_Slugs;
+		class 4thot_u_40x57_5_huntir : 4thot_u_40x57_1_huntir
+		{
+			displayname = "40x57mm 5rnd SeekIR Tube";
+			displaynameShort = "HuntIR";
+			descriptionShort = "40mm Launched SeekIR Camera<br/>5 Rounds, Used by: All Grenade Launchers";
 
-		class 4thot_u_40_8_HE: M319_HE_Grenade_Shell {
-			displayname = "8rnd M319 HE Grenade";
-			count = 8;
+			count = 5;
+
+			mass = 25;
 		};
-		class 4thot_u_40_8_HEDP: M319_HEDP_Grenade_Shell {
-			displayname = "8rnd M319 HEDP";
-			count = 8;
-		};
-		class 4thot_u_40_8_Smoke: OPTRE_1Rnd_Smoke_Grenade_shell {
-			displayname = "8rnd Signal Smoke round (White)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Smoke_Red: OPTRE_1Rnd_SmokeRed_Grenade_shell {
-			displayname = "8rnd Signal Smoke round (Red)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Smoke_Green: OPTRE_1Rnd_SmokeGreen_Grenade_shell {
-			displayname = "8rnd Signal Smoke round (Green)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Smoke_Yellow: OPTRE_1Rnd_SmokeYellow_Grenade_shell {
-			displayname = "8rnd Signal Smoke round (Yellow)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Smoke_Purple: OPTRE_1Rnd_SmokePurple_Grenade_shell {
-			displayname = "8rnd Signal Smoke round (Purple)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Smoke_Blue: OPTRE_1Rnd_SmokeBlue_Grenade_shell {
-			displayname = "8rnd Signal Smoke round (Blue)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Smoke_orange: OPTRE_1Rnd_Smokeorange_Grenade_shell {
-			displayname = "8rnd Signal Smoke round (orange)";
-			count = 8;
-		};
-			// 8rnd Optre Flare rounds
-		class 4thot_u_40_8_Flare_Red: OPTRE_signalSmokeR {
-			displayname = "8rnd Flare Smoke (Red)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Flare_orange: OPTRE_signalSmokeO {
-			displayname = "8rnd Flare Smoke (orange)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Flare_Yellow: OPTRE_signalSmokeY {
-			displayname = "8rnd Flare Smoke (Yellow)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Flare_Green: OPTRE_signalSmokeG {
-			displayname = "8rnd Flare Smoke (Green)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Flare_Blue: OPTRE_signalSmokeB {
-			displayname = "8rnd Flare Smoke (Blue)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Flare_Purple: OPTRE_signalSmokeP {
-			displayname = "8rnd Flare Smoke (Purple)";
-			count = 8;
-		};
-			// Ace Mags
-		class 4thot_u_40_8_Flare_Illumination_White: ACE_40mm_Flare_white {
-			displayname = "8rnd M583 Illumination Flare (White)";
-			count = 8;
-		};
-		class 4thot_u_40_8_Flare_ir: ACE_40mm_Flare_ir {
-			displayname = "8rnd M583 Flare (IR)";
-			count = 8;
-		};
-			// 4rnd Optre Pellets & Slugs
-		class 4thot_u_40_4_Buckshot: OPTRE_1Rnd_MasterKey_Pellets {
-			displayname = "8rnd Buckshot";
-			count = 4;
-		};
-		class 4thot_u_40_4_Slug: OPTRE_1Rnd_MasterKey_Slugs {
-			displayname = "8rnd Slug ";
-			count = 4;
-		};
+
+	/*	//UEG - United Earth Government / UNSC - United Nations Space Command
+			class 4thot_u_40x72_3_ap : 4thot_u_40x72_1_ap
+			{
+				displayname = "40x72mm M13 HE-HP Grenade";
+				displaynameShort = "HE-HP";
+				descriptionShort = "High Power, High Explosive Grenade<br/>3 Rounds, Medium Fragmentation<br/>Used by: All Grenade Launchers";
+
+				count = 3;
+
+				mass = 25;
+			};
+
+			class 4thot_u_40x72_3_dp : 4thot_u_40x72_1_dp
+			{
+				displayname = "40x72mm M20 HE-MP Grenade";
+				displaynameShort = "HE-MP";
+				descriptionShort = "High Explosive, Multi-Purpose Grenade<br/>3 Rounds, Limited Fragmentation<br/>Used by: All Grenade Launchers";
+
+				count = 3;
+
+				mass = 25;
+			};
+
+			class 4thot_u_40x72_3_sg : 4thot_u_40x72_1_sg
+			{
+				displayname = "40x72mm Master-Key Round";
+				displaynameShort = "Buckshot";
+				descriptionShort = "4-Gauge #000 Buckshot<br/>Used by: Short Grenade Launchers (UGLs)";
+
+				count = 3;
+
+				mass = 25;
+			};
+
+			class 4thot_u_40x72_1_smk_clu_w : OPTRE_1Rnd_Smoke_Grenade_shell
+			{
+				displayname = "40x72mm X25 Smoke Grenade (White)";
+				displaynameShort = "SMK (W)";
+				descriptionShort = "Cluster Smoke Grenade, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x72_smk_clu_w";
+
+				count = 3;
+
+				mass = 25;
+			};
+
+			class 4thot_u_40x47_3_ap : 4thot_u_40x72_1_ap
+			{
+				displayname = "40x47mm 3rnd M22 HE/C Grenade";
+				displaynameShort = "3x HE";
+				descriptionShort = "Compact High Explosive Grenades<br/>Limited Fragmentation, 3 Rounds<br/>Used by: Short Grenade Launchers (UGLs)";
+
+				//ammo = "4thot_u_40x47_he";
+				count = 3;
+
+				mass = 10;
+			};
+
+			class 4thot_u_40x57_1_smk_ueg_r : OPTRE_1Rnd_SmokeRed_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm M3/H Smoke Grenade (Red)";
+				displaynameShort = "SMK (R)";
+				descriptionShort = "Launched Smoke Grenade, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_ueg_r";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_ueg_w : OPTRE_1Rnd_Smoke_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm M3B Smoke Grenade (White)";
+				displaynameShort = "SMK (W)";
+				descriptionShort = "Launched Smoke Grenade, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_ueg_w";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_ueg_o : OPTRE_1Rnd_SmokeOrange_Grenade_shell
+			{
+				scope = 1;
+
+				displayname = "40x57mm M3B Smoke Grenade (Orange)";
+				displaynameShort = "SMK (O)";
+				descriptionShort = "Launched Smoke Grenade, Yellow-Orange<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_ueg_o";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_r : UGL_FlareRed_F
+			{
+				displayname = "40x57mm M1 Flare Round (Red)";
+				displaynameShort = "FLR (R)";
+				descriptionShort = "40mm Launched Flare, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_r";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_g : UGL_FlareGreen_F
+			{
+				displayname = "40x57mm M1 Flare Round (Green)";
+				displaynameShort = "FLR (G)";
+				descriptionShort = "40mm Launched Flare, Green<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_g";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_o : UGL_FlareYellow_F
+			{
+				displayname = "40x57mm M1 Flare Round (Orange)";
+				displaynameShort = "FLR (O)";
+				descriptionShort = "40mm Launched Flare, Yellow-Orange<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_o";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_w : ACE_40mm_Flare_white
+			{
+				displayname = "40x57mm M1/L Illum. Flare Round (White)";
+				displaynameShort = "FLR (White)";
+				descriptionShort = "40mm Launched Illumination Flare, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_w";
+
+				mass = 6;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_i : ACE_40mm_Flare_ir
+			{
+				displayname = "40x57mm M1/L Illum. Flare Round (IR)";
+				displaynameShort = "FLR (IR)";
+				descriptionShort = "40mm Launched Illumination Flare, Infra-Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_i";
+
+				mass = 6;
+			};
+
+		//ARMCO - Free Armitage Company
+			class 4thot_u_40x57_1_smk_r : OPTRE_1Rnd_SmokeRed_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Red)";
+				displaynameShort = "SMK (R)";
+				descriptionShort = "Impact Smoke Grenade, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_r";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_p : OPTRE_1Rnd_SmokePurple_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Purple)";
+				displaynameShort = "SMK (P)";
+				descriptionShort = "Impact Smoke Grenade, Purple<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_p";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_y : OPTRE_1Rnd_SmokeYellow_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Yellow)";
+				displaynameShort = "SMK (Y)";
+				descriptionShort = "Impact Smoke Grenade, Yellow<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_y";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_b : OPTRE_1Rnd_SmokeBlue_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Blue)";
+				displaynameShort = "SMK (B)";
+				descriptionShort = "Impact Smoke Grenade, Blue<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_b";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_g : OPTRE_1Rnd_SmokeGreen_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Green)";
+				displaynameShort = "SMK (G)";
+				descriptionShort = "Impact Smoke Grenade, Green<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_g";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_smk_o : OPTRE_1Rnd_SmokeOrange_Grenade_shell
+			{
+				displayname = "40x57mm M3 Smoke Grenade (Orange)";
+				displaynameShort = "SMK (O)";
+				descriptionShort = "Impact Smoke Grenade, Orange<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_o";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x72_1_smk_clu_y : OPTRE_1Rnd_SmokeYellow_Grenade_shell
+			{
+				displayname = "40x72mm X5 Smoke Grenade (Yellow)";
+				displaynameShort = "SMK (Y)";
+				descriptionShort = "Cluster Smoke Grenade, Yellow<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_smk_clu_y";
+
+				mass = 10;
+			};
+
+			class 4thot_u_40x57_1_flr_i : UGL_FlareCIR_F
+			{
+				displayname = "40x57mm M1 Flare Round (IR)";
+				displaynameShort = "FLR (IR)";
+				descriptionShort = "40mm Launched Flare, Infra-Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_i";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_w : UGL_FlareWhite_F
+			{
+				displayname = "40x57mm M1 Flare Round (White)";
+				displaynameShort = "FLR (White)";
+				descriptionShort = "40mm Launched Flare, White<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_w";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_y : UGL_FlareYellow_F
+			{
+				displayname = "40x57mm M1 Flare Round (Yellow)";
+				displaynameShort = "FLR (Y)";
+				descriptionShort = "40mm Launched Flare, Yellow<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_y";
+
+				mass = 5;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_g : ACE_40mm_Flare_green
+			{
+				displayname = "40x57mm M1/L Illum. Flare Round (Green)";
+				displaynameShort = "FLR (Green)";
+				descriptionShort = "40mm Launched Illumination Flare, Green<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_g";
+
+				mass = 6;
+			};
+
+			class 4thot_u_40x57_1_flr_ilm_r : ACE_40mm_Flare_red
+			{
+				displayname = "40x57mm M1/L Illum. Flare Round (Red)";
+				displaynameShort = "FLR (Red)";
+				descriptionShort = "40mm Launched Illumination Flare, Red<br/>Used by: All Grenade Launchers";
+
+				//ammo = "4thot_u_40x57_flr_ilm_r";
+
+				mass = 6;
+			};
+		*/
 
 	// HMG-48 Medium Machinegun (MMG) Magazines
 		class 130Rnd_338_Mag;
@@ -534,7 +1095,7 @@ class Cfgmagazines {
 
 
 	// Grenades (Throwables)
-		class OPTRE_M2_Smoke;
+		class SmokeShell;
 		class OPTRE_M2_Smoke_Red;
 		class OPTRE_M2_Smoke_Green;
 		class OPTRE_M2_Smoke_Orange;
@@ -593,6 +1154,11 @@ class Cfgmagazines {
 
 			model = "\z\ace\addons\grenades\models\ace_anm14th3.p3d";
 			picture = "\z\ace\addons\grenades\UI\ace_anm14th3_x_ca.paa";
+		};
+
+		class OPTRE_M2_Smoke : SmokeShell
+		{
+			mass = 5;
 		};
 
 		class 4thot_g_smk_urf_w : OPTRE_M2_Smoke
@@ -660,25 +1226,7 @@ class CfgMagazineWells
 	{
 		4thot[] =
 		{
-			"4thot_u_40_8_HE",
-			"4thot_u_40_8_HEDP",
-			"4thot_u_40_8_Smoke",
-			"4thot_u_40_8_Smoke_Red",
-			"4thot_u_40_8_Smoke_Green",
-			"4thot_u_40_8_Smoke_Yellow",
-			"4thot_u_40_8_Smoke_Purple",
-			"4thot_u_40_8_Smoke_Blue",
-			"4thot_u_40_8_Smoke_orange",
-			"4thot_u_40_8_Flare_Red",
-			"4thot_u_40_8_Flare_orange",
-			"4thot_u_40_8_Flare_Yellow",
-			"4thot_u_40_8_Flare_Green",
-			"4thot_u_40_8_Flare_Blue",
-			"4thot_u_40_8_Flare_Purple",
-			"4thot_u_40_8_Flare_Illumination_White",
-			"4thot_u_40_8_Flare_ir",
-			"4thot_u_40_4_Buckshot",
-			"4thot_u_40_4_Slug"
+			"4thot_u_40x57_5_huntir"
 		};
 	};
 
@@ -688,12 +1236,42 @@ class CfgMagazineWells
 		{
 			"4thot_u_40x72_1_ap",
 			"4thot_u_40x72_1_dp",
+			"4thot_u_40x72_1_sg",
+			"4thot_u_40x72_1_smk_clu_w",
 			"4thot_u_40x47_3_ap",
+			"4thot_u_40x57_1_smk_ueg_r",
+			"4thot_u_40x57_1_smk_ueg_w",
+			"4thot_u_40x57_1_smk_ueg_o",
+			"4thot_u_40x57_1_flr_r",
+			"4thot_u_40x57_1_flr_g",
+			"4thot_u_40x57_1_flr_o",
+			"4thot_u_40x57_1_flr_ilm_w",
+			"4thot_u_40x57_1_flr_ilm_i",
+
+			"4thot_u_40x57_1_smk_r",
+			"4thot_u_40x57_1_smk_p",
+			"4thot_u_40x57_1_smk_y",
+			"4thot_u_40x57_1_smk_b",
+			"4thot_u_40x57_1_smk_g",
+			"4thot_u_40x57_1_smk_o",
+			"4thot_u_40x72_1_smk_clu_y",
+			"4thot_u_40x57_1_flr_i",
+			"4thot_u_40x57_1_flr_w",
+			"4thot_u_40x57_1_flr_y",
+			"4thot_u_40x57_1_flr_ilm_g",
+			"4thot_u_40x57_1_flr_ilm_r",
+
+			"4thot_u_40x72_1_sg",
 			"4thot_u_40x57_1_ap",
-			"4thot_u_40x57_1_smk_urf_w",
 			"4thot_u_40x57_1_smk_urf_o",
+			"4thot_u_40x57_1_smk_urf_w",
 			"4thot_u_40x57_1_smk_urf_g",
-			"4thot_u_40x57_1_smk_urf_r"
+			"4thot_u_40x57_1_smk_urf_r",
+			"4thot_u_40x57_1_flr_urf_r",
+			"4thot_u_40x57_1_flr_urf_g",
+			"4thot_u_40x57_1_flr_urf_o",
+			"4thot_u_40x57_1_flr_ilm_urf_y",
+			"4thot_u_40x57_1_flr_ilm_urf_r"
 		};
 	};
 };

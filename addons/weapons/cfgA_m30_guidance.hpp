@@ -14,6 +14,9 @@
             thrustTime = 1;
 
             //Sensor
+            lockAcquire = 0;
+            allowTabLock = 0;
+            canLock = 2;
             irLock = 1;
             airLock = 1;
             lockType = 0; //Fire and forget

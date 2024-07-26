@@ -318,6 +318,8 @@ class CfgWeapons
             magazines[] =
             {
                 "4thot_L_150x900_1_at",
+                "4thot_L_150x900_1_dp",
+                "4thot_L_150x900_1_at_urf",
                 "4thot_L_150x900_1_ap"
             };
             magazineWell[] = {};

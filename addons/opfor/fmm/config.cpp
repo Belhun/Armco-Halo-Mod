@@ -18,7 +18,7 @@ class CfgPatches
 			"B_FieldPack_green_F_e_fmm_u_rifle ",
 			"B_FieldPack_green_F_e_fmm_medic",
 			"B_Kitbag_rgr_e_fmm_u_engie",
-			"B_Carryall_oli_e_fmm_u_haa",
+			"B_Carryall_oli_e_fmm_u_maa",
 			"B_Carryall_oli_e_fmm_u_mat",
 			"B_Carryall_oli_e_fmm_u_hat",
 			"B_Messenger_Olive_F_fmm_gue",
@@ -79,9 +79,6 @@ class CfgPatches
 		VERSION_CONFIG;
 	};
 };
-
-class CfgWeapons
-{};
 
 class CfgVehicles
 {
@@ -268,11 +265,10 @@ class CfgVehicles
 		class TransportMagazines
 		{
 			MACRO_ADDMAGAZINE(4thot_u_40x57_1_ap, 8);
-			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_w, 4);
-			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_g, 2);
-			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_r, 2);
-			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_o, 2);
-			MACRO_ADDMAGAZINE(ACE_40mm_Flare_white, 4);
+			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_g, 3);
+			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_r, 3);
+			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_o, 3);
+			MACRO_ADDMAGAZINE(4thot_u_40x57_1_flr_ilm_urf_y, 6);
 		};
 	};
 
@@ -356,7 +352,20 @@ class CfgVehicles
 		};
 	};
 
-	class B_Carryall_oli_e_fmm_u_haa : B_Carryall_oli
+	class B_Carryall_oli_e_fmm_u_mat : B_Carryall_oli
+	{
+		scope = 1;
+		scopeCurator = 1;
+		ScopeArsenal = 1;
+
+		class TransportMagazines
+		{
+			MACRO_ADDMAGAZINE(4thot_L_75x320_1_at, 3);
+			MACRO_ADDMAGAZINE(4thot_L_75x320_1_ap, 2);
+		};
+	};
+
+	class B_Carryall_oli_e_fmm_u_maa : B_Carryall_oli
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -365,12 +374,11 @@ class CfgVehicles
 		class TransportMagazines
 		{
 			MACRO_ADDMAGAZINE(4thot_L_75x320_1_aa, 3);
-			MACRO_ADDMAGAZINE(4thot_L_75x320_1_at, 1);
-			MACRO_ADDMAGAZINE(4thot_L_75x320_1_ap, 1);
+			MACRO_ADDMAGAZINE(4thot_L_75x320_1_ap, 2);
 		};
 	};
 
-	class B_Carryall_oli_e_fmm_u_mat : B_Carryall_oli
+	class B_Carryall_oli_e_fmm_u_mataa : B_Carryall_oli
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -392,7 +400,7 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			MACRO_ADDMAGAZINE(4thot_L_150x900_1_at, 1);
+			MACRO_ADDMAGAZINE(4thot_L_150x900_1_at_urf, 1);
 			MACRO_ADDMAGAZINE(4thot_L_150x900_1_ap, 1);
 		};
 	};
@@ -517,7 +525,7 @@ class CfgVehicles
 		{
 			MACRO_ADDMAGAZINE(4thot_u_40x57_1_ap, 8);
 			MACRO_ADDMAGAZINE(4thot_u_40x57_1_smk_urf_w, 3);
-			MACRO_ADDMAGAZINE(ACE_40mm_Flare_white, 3);
+			MACRO_ADDMAGAZINE(4thot_u_40x57_1_flr_ilm_urf_y, 3);
 			MACRO_ADDMAGAZINE(4thot_g_heat, 2);
 		};
 	};
@@ -576,7 +584,7 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;removeGoggles _unit;
+				init ="if (isServer) then { _unit = _this select 0;removeGoggles _unit;
 				_head = [['H_Booniehat_oli', '1'], ['H_Booniehat_khk', '1'], ['H_Cap_oli', '1'], ['H_Bandanna_khk', '1'], ['H_Cap_grn', '1'], ['H_Bandanna_sgg', '1'], ['H_Cap_blk', '1'], ['H_Bandanna_cbr', '1'], ['OPTRE_UNSC_Watchcap', '1'], ['G_Balaclava_blk', '0'], ['H_Shemag_olive', '2'], ['G_Balaclava_oli', '0'], ['H_ShemagOpen_tan', '2']];_face = ['G_Bandanna_khk', 'G_Squares', 'G_Aviator', 'G_Bandanna_aviator', 'G_Bandanna_blk', 'G_Bandanna_oli', 'G_Lowprofile', '', ''];_headrnd = _head call BIS_fnc_selectRandom;switch (_headrnd select 1) do{
 					case '1':{
 						_unit addHeadgear (_headrnd select 0);
@@ -589,13 +597,14 @@ class CfgVehicles
 						_unit addHeadgear (_headrnd select 0);
 					};
 				};
-				";
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['optic_Aco', 'optic_Aco', 'optic_Aco', 'optic_MRCO', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['optic_Aco', 'optic_Aco', 'optic_Aco', 'optic_MRCO', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
+				};";
 			};
 		};
 	};
@@ -650,7 +659,7 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;removeGoggles _unit;
+				init ="if (isServer) then { _unit = _this select 0;removeGoggles _unit;
 				_head = [['H_Shemag_olive_hs', '2'], ['H_Bandanna_khk_hs', '1'], ['H_Booniehat_khk_hs', '1'], ['H_Watchcap_camo', '1'], ['H_Watchcap_khk', '1'], ['H_Watchcap_cbr', '1']];_headrnd = _head call BIS_fnc_selectRandom;switch (_headrnd select 1) do{
 					case '1':{
 						_unit addHeadgear (_headrnd select 0);
@@ -663,13 +672,14 @@ class CfgVehicles
 						_unit addHeadgear (_headrnd select 0);
 					};
 				};
-				";
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['optic_Aco', 'optic_MRCO', 'optic_MRCO', 'OPTRE_M393_ACOG', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['optic_Aco', 'optic_MRCO', 'optic_MRCO', 'OPTRE_M393_ACOG', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
+				};";
 			};
 		};
 	};
@@ -703,8 +713,9 @@ class CfgVehicles
 		{
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['optic_Aco', 'optic_MRCO', '', '', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['optic_Aco', 'optic_MRCO', '', '', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
+				};";
 			};
 		};
 	};
@@ -739,8 +750,9 @@ class CfgVehicles
 		{
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['optic_Aco', 'optic_MRCO', 'optic_MRCO', 'OPTRE_M393_ACOG', 'OPTRE_M393_ACOG', 'optic_Aco'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;_unit addPrimaryWeaponItem 'bipod_01_F_blk';";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['optic_Aco', 'optic_MRCO', 'optic_MRCO', 'OPTRE_M393_ACOG', 'OPTRE_M393_ACOG', 'optic_Aco'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;_unit addPrimaryWeaponItem 'bipod_01_F_blk';
+				};";
 			};
 		};
 	};
@@ -780,8 +792,9 @@ class CfgVehicles
 		{
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['optic_SOS', 'optic_SOS', 'OPTRE_BMR_Scope', 'OPTRE_BR55HB_Scope_Grey', 'OPTRE_BR55HB_Scope_Grey', 'optic_MRCO'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;_unit addPrimaryWeaponItem 'bipod_01_F_blk';";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['optic_SOS', 'optic_SOS', 'OPTRE_BMR_Scope', 'OPTRE_BR55HB_Scope_Grey', 'OPTRE_BR55HB_Scope_Grey', 'optic_MRCO'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;_unit addPrimaryWeaponItem 'bipod_01_F_blk';
+				};";
 			};
 		};
 	};
@@ -817,21 +830,21 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;removeGoggles _unit;
+				init ="if (isServer) then { _unit = _this select 0;removeGoggles _unit;
 				_head = ['H_Booniehat_oli','H_Booniehat_khk','H_Cap_oli','H_Bandanna_khk','H_Cap_grn','H_Bandanna_sgg','H_Cap_blk','H_Bandanna_cbr','OPTRE_UNSC_Watchcap'];_headrnd = _head call BIS_fnc_selectRandom;
 						_unit addHeadgear _headrnd;
 						_unit addGoggles G_Respirator_white_F;
-				";
+				};";
 			};
 
 			class fmm_4medic
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 					   _bl250 = ['kat_bloodIV_O_250','kat_bloodIV_O_N_250','kat_bloodIV_A_250','kat_bloodIV_A_N_250','kat_bloodIV_AB_250','kat_bloodIV_AB_N_250','kat_bloodIV_B_250','kat_bloodIV_B_N_250'];
 					   _bl500 = ['kat_bloodIV_O_500','kat_bloodIV_O_N_500','kat_bloodIV_A_500','kat_bloodIV_A_N_500','kat_bloodIV_AB_500','kat_bloodIV_AB_N_500','kat_bloodIV_B_500','kat_bloodIV_B_N_500'];
 					   _bl1 = _bl250 call BIS_fnc_selectRandom;_bl2 = _bl250 call BIS_fnc_selectRandom;_bl3 = _bl250 call BIS_fnc_selectRandom;_bl4 = _bl500 call BIS_fnc_selectRandom;_bl5 = _bl500 call BIS_fnc_selectRandom;
 					   _unit addItemToBackpack _bl1;_unit addItemToBackpack _bl2;_unit addItemToBackpack _bl3;_unit addItemToBackpack _bl4;_unit addItemToBackpack _bl5;
-					   ";
+					   };";
 			};
 		};
 	};
@@ -883,8 +896,9 @@ class CfgVehicles
 		{
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['optic_Aco_smg', 'optic_Aco_smg', 'OPTRE_M12_Laser', 'OPTRE_M12_Laser', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['optic_Aco_smg', 'optic_Aco_smg', 'OPTRE_M12_Laser', 'OPTRE_M12_Laser', '', ''];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
+				};";
 			};
 		};
 	};
@@ -919,7 +933,7 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_unif = ['OPTRE_Ins_ER_jacket_surplus_brown', 'OPTRE_Ins_ER_jacket_surplus_OD', 'OPTRE_Ins_ER_jacket_surplus_redshirt', 'OPTRE_Ins_ER_jacket_od_surplus', 'U_C_E_LooterJacket_01_F', 'U_BG_Guerilla3_1'];_unifrnd = _unif call BIS_fnc_selectRandom;_unit forceAddUniform _unifrnd;removeGoggles _unit;_head = [['H_Booniehat_oli', '1'], ['H_Booniehat_khk', '1'], ['H_Cap_oli', '1'], ['H_Bandanna_khk', '1'], ['H_Cap_grn', '1'], ['H_Bandanna_sgg', '1'], ['H_Cap_blk', '1'], ['H_Bandanna_cbr', '1'], ['OPTRE_UNSC_Watchcap', '1'], ['G_Balaclava_blk', '0'], ['H_Shemag_olive', '2'], ['G_Balaclava_oli', '0'], ['H_ShemagOpen_tan', '2']];_face = ['G_Bandanna_khk', 'G_Squares', 'G_Aviator', 'G_Bandanna_aviator', 'G_Bandanna_blk', 'G_Bandanna_oli', 'G_Lowprofile', '', ''];_headrnd = _head call BIS_fnc_selectRandom;switch (_headrnd select 1) do{
 					case '1':{
 						_unit addHeadgear (_headrnd select 0);
@@ -932,18 +946,19 @@ class CfgVehicles
 						_unit addHeadgear (_headrnd select 0);
 					};
 				};
-				";
+				};";
 			};
 
 			class fmm_2equip
 			{
-				init ="_unit = _this select 0;
-				_vest = ['V_BandollierB_oli', 'V_BandollierB_oli', 'V_LegStrapBag_olive_F', 'V_BandollierB_rgr', 'V_BandollierB_rgr', 'V_LegStrapBag_coyote_F', 'V_LegStrapBag_black_F'];_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;_pack = ['B_CivilianBackpack_01_Everyday_Black_F_gue', 'B_Messenger_Gray_F_fmm_gue', 'B_CivilianBackpack_01_Sport_Red_F_fmm_gue', 'B_Messenger_Black_F_fmm_gue', 'B_CivilianBackpack_01_Everyday_Vrana_F_fmm_gue', 'B_Messenger_Olive_F_fmm_gue', 'B_TacticalPack_blk_fmm_gue', 'B_FieldPack_blk_fmm_gue'];_packrnd = _pack call BIS_fnc_selectRandom;_unit addBackpackGlobal _packrnd;_grd1 = ['4thot_g_he_h', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_heat', '4thot_g_smk_urf_w', '4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd2 = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd1rnd = _grd1 call BIS_fnc_selectRandom;_grd2rnd = _grd2 call BIS_fnc_selectRandom;_unit addItemToVest _grd1rnd;_unit addItemToVest _grd2rnd;";
+				init ="if (isServer) then { _unit = _this select 0;
+				_vest = ['V_BandollierB_oli', 'V_BandollierB_oli', 'V_LegStrapBag_olive_F', 'V_BandollierB_rgr', 'V_BandollierB_rgr', 'V_LegStrapBag_coyote_F', 'V_LegStrapBag_black_F'];_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;_pack = ['B_CivilianBackpack_01_Everyday_Black_F_gue', 'B_Messenger_Gray_F_fmm_gue', 'B_CivilianBackpack_01_Sport_Red_F_fmm_gue', 'B_Messenger_Black_F_fmm_gue', 'B_CivilianBackpack_01_Everyday_Vrana_F_fmm_gue', 'B_Messenger_Olive_F_fmm_gue', 'B_TacticalPack_blk_fmm_gue', 'B_FieldPack_blk_fmm_gue'];_packrnd = _pack call BIS_fnc_selectRandom;removeBackpackGlobal _unit;_unit addBackpackGlobal _packrnd;_grd1 = ['4thot_g_he_h', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_heat', '4thot_g_smk_urf_w', '4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd2 = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd1rnd = _grd1 call BIS_fnc_selectRandom;_grd2rnd = _grd2 call BIS_fnc_selectRandom;_unit addItemToVest _grd1rnd;_unit addItemToVest _grd2rnd;
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_weap = ['0', '0', '0', '1', '2', '2', '3', '4'];_weaprnd = _weap call BIS_fnc_selectRandom;switch _weaprnd do{
 					case '0':{
 						_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';
@@ -966,7 +981,7 @@ class CfgVehicles
 						_unit addWeaponGlobal 'srifle_DMR_06_hunter_F';_unit addMagazineGlobal '10Rnd_Mk14_762x51_Mag';_unit addMagazineGlobal '10Rnd_Mk14_762x51_Mag';_unit addMagazineGlobal '10Rnd_Mk14_762x51_Mag';_unit addMagazineGlobal '10Rnd_Mk14_762x51_Mag';_unit addMagazineGlobal '10Rnd_Mk14_762x51_Mag';_unit addPrimaryWeaponItem 'optic_KHS_old';
 					};
 				};
-				";
+				};";
 			};
 		};
 	};
@@ -979,31 +994,32 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="if (isServer) then {_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0; fmm_firstScript = true; fmm_secondScript = false;
 				_unif = ['OPTRE_Ins_ER_rolled_OD_crimson', 'OPTRE_Ins_ER_rolled_surplus_black', 'OPTRE_Ins_ER_rolled_surplus_crimson', 'OPTRE_Ins_ER_uniform_GGgrey', 'OPTRE_Ins_ER_uniform_GGod', 'U_C_Uniform_Farmer_01_F_nmr', 'U_I_L_Uniform_01_tshirt_olive_F_nmr', 'U_I_C_Soldier_Bandit_3_F_nmr', 'U_C_Mechanic_01_F_nmr'];_unifrnd = _unif call BIS_fnc_selectRandom;_unit forceAddUniform _unifrnd;removeGoggles _unit;_head = [['H_Booniehat_oli', '1'], ['H_Booniehat_khk', '1'], ['H_Cap_oli', '1'], ['H_Bandanna_khk', '1'], ['H_Cap_grn', '1'], ['H_Bandanna_sgg', '1'], ['H_Cap_blk', '1'], ['H_Bandanna_cbr', '1'], ['OPTRE_UNSC_Watchcap', '1'], ['G_Balaclava_blk', '0'], ['H_Shemag_olive', '2'], ['G_Balaclava_oli', '0'], ['H_ShemagOpen_tan', '2']];_face = ['G_Bandanna_khk', 'G_Squares', 'G_Aviator', 'G_Bandanna_aviator', 'G_Bandanna_blk', 'G_Bandanna_oli', 'G_Lowprofile', '', ''];_headrnd = _head call BIS_fnc_selectRandom;switch (_headrnd select 1) do{
+					case '0':{
+						_unit addGoggles (_headrnd select 0);
+					};
 					case '1':{
 						_unit addHeadgear (_headrnd select 0);
 						_facernd = _face call BIS_fnc_selectRandom;_unit addGoggles _facernd;
 					};
-					case '0':{
-						_unit addGoggles (_headrnd select 0);
-					};
 					case '2':{
 						_unit addHeadgear (_headrnd select 0);
 					};
-				};};
-				";
+				};
+				};";
 			};
 
 			class fmm_2equip
 			{
-				init ="_unit = _this select 0;
-				_vest = ['V_BandollierB_oli', 'V_TacVest_oli', 'V_TacVest_oli', 'V_TacChestrig_oli_F', 'V_TacChestrig_oli_F', 'V_TacVestIR_blk', 'V_Chestrig_oli', 'V_HarnessO_brn', 'V_HarnessO_gry'];_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;_pack = ['B_CivilianBackpack_01_Everyday_Black_F_gue', 'B_Messenger_Gray_F_fmm_gue', 'B_CivilianBackpack_01_Sport_Red_F_fmm_gue', 'B_Messenger_Black_F_fmm_gue', 'B_CivilianBackpack_01_Everyday_Vrana_F_fmm_gue', 'B_Messenger_Olive_F_fmm_gue', 'B_TacticalPack_blk_fmm_gue', 'B_FieldPack_blk_fmm_gue'];_packrnd = _pack call BIS_fnc_selectRandom;_unit addBackpackGlobal _packrnd;_grd1 = ['4thot_g_he_h', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_heat', '4thot_g_smk_urf_w', '4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd2 = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o', '4thot_g_he_l'];_grd1rnd = _grd1 call BIS_fnc_selectRandom;_grd2rnd = _grd2 call BIS_fnc_selectRandom;_unit addItemToVest _grd1rnd;_unit addItemToVest _grd2rnd;";
+				init ="if (isServer) then { _unit = _this select 0; fmm_secondScript = true; fmm_thirdScript = false;
+				_vest = ['V_BandollierB_oli', 'V_TacVest_oli', 'V_TacVest_oli', 'V_TacChestrig_oli_F', 'V_TacChestrig_oli_F', 'V_TacVestIR_blk', 'V_Chestrig_oli', 'V_HarnessO_brn', 'V_HarnessO_gry'];_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;_pack = ['B_CivilianBackpack_01_Everyday_Black_F_gue', 'B_Messenger_Gray_F_fmm_gue', 'B_CivilianBackpack_01_Sport_Red_F_fmm_gue', 'B_Messenger_Black_F_fmm_gue', 'B_CivilianBackpack_01_Everyday_Vrana_F_fmm_gue', 'B_Messenger_Olive_F_fmm_gue', 'B_TacticalPack_blk_fmm_gue', 'B_FieldPack_blk_fmm_gue'];_packrnd = _pack call BIS_fnc_selectRandom;removeBackpackGlobal _unit;_unit addBackpackGlobal _packrnd;_grd1 = ['4thot_g_he_h', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_he_l', '4thot_g_heat', '4thot_g_smk_urf_w', '4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];_grd2 = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o', '4thot_g_he_l'];_grd1rnd = _grd1 call BIS_fnc_selectRandom;_grd2rnd = _grd2 call BIS_fnc_selectRandom;_unit addItemToVest _grd1rnd;_unit addItemToVest _grd2rnd;
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0; fmm_thirdScript = true;
 				_weap = ['0', '0', '0', '1', '1', '2', '2', '2', '3', '4'];_weaprnd = _weap call BIS_fnc_selectRandom;switch _weaprnd do{
 					case '0':{
 						_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';
@@ -1023,10 +1039,10 @@ class CfgVehicles
 					};
 					case '4':{
 						_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';
-						_unit addWeaponGlobal '4thot_w_rm_cmdo2_blk';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_optc = ['optic_Aco', 'OPTRE_HMG38_CarryHandle', 'OPTRE_HMG38_CarryHandle'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;_unit addPrimaryWeaponItem 'bipod_01_F_blk';
+						_unit addWeaponGlobal 'OPTRE_Commando_Black';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_unit addMagazineGlobal '4thot_m_858x70_20_apr_t3';_optc = ['optic_Aco', 'OPTRE_HMG38_CarryHandle', 'OPTRE_HMG38_CarryHandle'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;_unit addPrimaryWeaponItem 'bipod_01_F_blk';
 					};
 				};
-				";
+				};";
 			};
 		};
 	};
@@ -1060,31 +1076,33 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_unif = ['OPTRE_Ins_ER_uniform_GAgreen', 'U_BG_Guerrilla_6_1_nmr', 'OPTRE_Ins_ER_uniform_GAtan'];
 				_unifrnd = _unif call BIS_fnc_selectRandom;_unit forceAddUniform _unifrnd;removeGoggles _unit;
 				_head = ['H_Shemag_olive_hs','H_Bandanna_khk_hs','H_Booniehat_khk_hs','H_MilCap_grn','OPTRE_h_PatrolCap_Green','OPTRE_h_PatrolCap_Brown','H_Watchcap_camo','H_Watchcap_khk','H_Watchcap_cbr'];
 				_headrnd = _head call BIS_fnc_selectRandom;
 				_unit addHeadgear _headrnd;_unit addGoggles 'OPTRE_HUD_r_Glasses';
-				";
+				};";
 			};
 
 			class fmm_2equip
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_vest = ['V_CarrierRigKBT_01_light_Olive_F','V_SmershVest_01_F','V_HarnessO_brn','V_CarrierRigKBT_01_light_Olive_F','V_SmershVest_01_F'];
 				_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;
 				_ogrd = ['4thot_g_he_h', '4thot_g_he_h', '4thot_g_he_l', '4thot_g_he_l'];
 				_dgrd = ['4thot_g_smk_urf_w', '4thot_g_smk_urf_r', '4thot_g_smk_urf_g', '4thot_g_smk_urf_o'];
 				_og1 = _ogrd call BIS_fnc_selectRandom;_og2 = _ogrd call BIS_fnc_selectRandom;_dg1 = _dgrd call BIS_fnc_selectRandom;
-				_unit addMagazineGlobal _og1;_unit addMagazineGlobal _og2;_unit addMagazineGlobal _dg1;_unit addMagazineGlobal '4thot_g_smk_urf_w';";
+				_unit addMagazineGlobal _og1;_unit addMagazineGlobal _og2;_unit addMagazineGlobal _dg1;_unit addMagazineGlobal '4thot_g_smk_urf_w';
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_optc = ['optic_Aco', 'optic_MRCO', 'OPTRE_M393_EOTECH', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
-				_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal '16Rnd_10mm_Ball';";
+				_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_32Rnd_762x51_Mag_Tracer';_unit addMagazineGlobal '16Rnd_10mm_Ball';
+				};";
 			};
 		};
 	};
@@ -1107,12 +1125,13 @@ class CfgVehicles
 		{
 			class fmm_2equip
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_vest = ['V_CarrierRigKBT_01_light_Olive_F','V_SmershVest_01_F','V_HarnessO_brn','V_CarrierRigKBT_01_light_Olive_F','V_SmershVest_01_F'];
 				_vestrnd = _vest call BIS_fnc_selectRandom;_unit addVest _vestrnd;
 				_ogrd = ['4thot_g_he_h', '4thot_g_he_h', '4thot_g_he_l', '4thot_g_he_l'];
 				_og1 = _ogrd call BIS_fnc_selectRandom;
-				_unit addMagazineGlobal _og1;_unit addMagazineGlobal '4thot_g_smk_urf_w';_unit addMagazineGlobal '4thot_g_heat';_unit addMagazineGlobal '4thot_g_heat';_unit addMagazineGlobal '4thot_g_heat';";
+				_unit addMagazineGlobal _og1;_unit addMagazineGlobal '4thot_g_smk_urf_w';_unit addMagazineGlobal '4thot_g_heat';_unit addMagazineGlobal '4thot_g_heat';_unit addMagazineGlobal '4thot_g_heat';
+				};";
 			};
 		};
 	};
@@ -1140,9 +1159,10 @@ class CfgVehicles
 		{
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_optc = ['optic_MRCO', 'OPTRE_BR55HB_Scope', 'OPTRE_M393_EOTECH', 'OPTRE_M392_Scope', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
-				_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal '16Rnd_10mm_Ball';";
+				_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal 'OPTRE_36Rnd_95x40_Mag_Tracer';_unit addMagazineGlobal '16Rnd_10mm_Ball';
+				};";
 			};
 		};
 	};
@@ -1178,17 +1198,18 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_head = ['H_Shemag_olive_hs','H_Bandanna_khk_hs','H_Booniehat_khk_hs','H_MilCap_grn','OPTRE_h_PatrolCap_Green','OPTRE_h_PatrolCap_Brown','H_Watchcap_camo','H_Watchcap_khk','H_Watchcap_cbr'];
 				_headrnd = _head call BIS_fnc_selectRandom;
 				_unit addHeadgear _headrnd;_unit addGoggles 'OPTRE_HUD_r_Glasses';
-				";
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['Optre_Recon_Sight_Red', 'OPTRE_M7_Sight', 'OPTRE_M12_Optic_Red', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['Optre_Recon_Sight_Red', 'OPTRE_M7_Sight', 'OPTRE_M12_Optic_Red', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
+				};";
 			};
 		};
 	};
@@ -1223,17 +1244,18 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_head = ['H_Shemag_olive_hs','H_Bandanna_khk_hs','H_Booniehat_khk_hs','H_MilCap_grn','OPTRE_h_PatrolCap_Green','OPTRE_h_PatrolCap_Brown','H_Watchcap_camo','H_Watchcap_khk','H_Watchcap_cbr'];
 				_headrnd = _head call BIS_fnc_selectRandom;
 				_unit addHeadgear _headrnd;_unit addGoggles 'OPTRE_HUD_r_Glasses';
-				";
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['Optre_Recon_Sight_Red', 'OPTRE_M7_Sight', 'OPTRE_M12_Optic_Red', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['Optre_Recon_Sight_Red', 'OPTRE_M7_Sight', 'OPTRE_M12_Optic_Red', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
+				};";
 			};
 		};
 	};
@@ -1268,7 +1290,7 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;_unit addGoggles 'OPTRE_HUD_r_Glasses';";
+				init ="if (isServer) then { _unit = _this select 0;_unit addGoggles 'OPTRE_HUD_r_Glasses';};";
 			};
 		};
 	};
@@ -1301,8 +1323,9 @@ class CfgVehicles
 		{
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
-				_optc = ['Optre_Recon_Sight_Red', 'OPTRE_M7_Sight', 'OPTRE_M12_Optic_Red', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;";
+				init ="if (isServer) then { _unit = _this select 0;
+				_optc = ['Optre_Recon_Sight_Red', 'OPTRE_M7_Sight', 'OPTRE_M12_Optic_Red', 'OPTRE_M393_EOTECH', 'OPTRE_M12_Optic_Red', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
+				};";
 			};
 		};
 	};
@@ -1365,12 +1388,12 @@ class CfgVehicles
 		{
 			class fmm_4medic
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 					   _bl250 = ['kat_bloodIV_O_250','kat_bloodIV_O_N_250','kat_bloodIV_A_250','kat_bloodIV_A_N_250','kat_bloodIV_AB_250','kat_bloodIV_AB_N_250','kat_bloodIV_B_250','kat_bloodIV_B_N_250'];
 					   _bl500 = ['kat_bloodIV_O_500','kat_bloodIV_O_N_500','kat_bloodIV_A_500','kat_bloodIV_A_N_500','kat_bloodIV_AB_500','kat_bloodIV_AB_N_500','kat_bloodIV_B_500','kat_bloodIV_B_N_500'];
 					   _bl1 = _bl250 call BIS_fnc_selectRandom;_bl2 = _bl250 call BIS_fnc_selectRandom;_bl3 = _bl250 call BIS_fnc_selectRandom;_bl4 = _bl500 call BIS_fnc_selectRandom;_bl5 = _bl500 call BIS_fnc_selectRandom;
 					   _unit addItemToBackpack _bl1;_unit addItemToBackpack _bl2;_unit addItemToBackpack _bl3;_unit addItemToBackpack _bl4;_unit addItemToBackpack _bl5;
-					   ";
+					   };";
 			};
 		};
 	};
@@ -1379,7 +1402,7 @@ class CfgVehicles
 	{
 		displayName = "Anti-Air Assistant";
 
-		backpack = "B_Carryall_oli_e_fmm_u_haa";
+		backpack = "B_Carryall_oli_e_fmm_u_mataa";
 		linkedItems[] = {
 			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
 		};
@@ -1405,7 +1428,7 @@ class CfgVehicles
 		displayName = "Anti-Air Specialist";
 		icon = "iconManAT";
 
-		backpack = "B_Carryall_oli_e_fmm_u_haa";
+		backpack = "B_Carryall_oli_e_fmm_u_maa";
 		linkedItems[] = {
 			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
 		};
@@ -1432,7 +1455,7 @@ class CfgVehicles
 
 		displayName = "Anti-Tank Assistant (M30)";
 
-		backpack = "B_Carryall_oli_e_fmm_u_mat";
+		backpack = "B_Carryall_oli_e_fmm_u_mataa";
 	};
 
 	class 4thot_u_fmm_u_specialist_mat : 4thot_u_fmm_u_specialist_haa
@@ -1469,10 +1492,10 @@ class CfgVehicles
 			"OPTRE_MA5A", "4thot_w_l_m34_urf", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
 		};
 		magazines[] = {
-			"kat_Painkiller", tx_8("OPTRE_32Rnd_762x51_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_he_l",tx_2("4thot_g_smk_urf_w"), "4thot_L_150x900_1_at"
+			"kat_Painkiller", tx_8("OPTRE_32Rnd_762x51_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_he_l",tx_2("4thot_g_smk_urf_w"), "4thot_L_150x900_1_at_urf"
 		};
 		respawnMagazines[] = {
-			"kat_Painkiller", tx_8("OPTRE_32Rnd_762x51_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_he_l",tx_2("4thot_g_smk_urf_w"), "4thot_L_150x900_1_at"
+			"kat_Painkiller", tx_8("OPTRE_32Rnd_762x51_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_he_l",tx_2("4thot_g_smk_urf_w"), "4thot_L_150x900_1_at_urf"
 		};
 	};
 
@@ -1511,15 +1534,15 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;_unit addGoggles 'OPTRE_HUD_r_Glasses';
-				";
+				init ="if (isServer) then { _unit = _this select 0;_unit addGoggles 'OPTRE_HUD_r_Glasses';
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_optc = ['OPTRE_BR55HB_Scope', 'OPTRE_BR55HB_Scope', 'OPTRE_BMR_Scope', 'OPTRE_M392_Scope', 'OPTRE_BMR_Scope', 'OPTRE_M392_Scope'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
-				";
+				};";
 			};
 		};
 	};
@@ -1558,15 +1581,15 @@ class CfgVehicles
 		{
 			class fmm_1outfit
 			{
-				init ="_unit = _this select 0;_unit addGoggles 'G_Bandanna_oli';
-				";
+				init ="if (isServer) then { _unit = _this select 0;_unit addGoggles 'G_Bandanna_oli';
+				};";
 			};
 
 			class fmm_3weapon
 			{
-				init ="_unit = _this select 0;
+				init ="if (isServer) then { _unit = _this select 0;
 				_optc = ['OPTRE_SRM_Sight', 'optic_LRPS', 'optic_LRPS', 'optic_LRPS', 'optic_KHS_blk', 'optic_KHS_blk'];_optcrnd = _optc call BIS_fnc_selectRandom;_unit addPrimaryWeaponItem _optcrnd;
-				";
+				};";
 			};
 		};
 	};
