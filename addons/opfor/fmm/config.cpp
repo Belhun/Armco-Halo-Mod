@@ -555,10 +555,10 @@ class CfgVehicles
 
 		uniformClass = "OPTRE_Ins_ER_uniform_GGgrey";
 		linkedItems[] = {
-			"V_TacChestrig_oli_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_TacChestrig_oli_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_TacChestrig_oli_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_TacChestrig_oli_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		backpack = "";
 		weapons[] = {
@@ -616,10 +616,10 @@ class CfgVehicles
 
 		uniformClass = "U_I_C_Soldier_Bandit_3_F_nmr";
 		linkedItems[] = {
-			"V_BandollierB_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_BandollierB_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_BandollierB_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_BandollierB_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_MA5A", "4thot_w_ld_m24_loaded", "Throw", "Put"
@@ -637,10 +637,10 @@ class CfgVehicles
 
 		uniformClass = "OPTRE_Ins_ER_rolled_OD_crimson";
 		linkedItems[] = {
-			"V_Chestrig_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_Chestrig_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_Chestrig_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_Chestrig_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_BR45_Black", "Throw", "Put"
@@ -691,10 +691,10 @@ class CfgVehicles
 		backpack = "B_Messenger_Coyote_F_e_fmm_gradr";
 		uniformClass = "OPTRE_Ins_ER_uniform_GGod";
 		linkedItems[] = {
-			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_MA5AGL", "Throw", "Put"
@@ -728,10 +728,10 @@ class CfgVehicles
 		backpack = "B_FieldPack_green_F_e_fmm_mmgun";
 		uniformClass = "OPTRE_Ins_ER_rolled_surplus_crimson";
 		linkedItems[] = {
-			"V_TacVest_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_TacVest_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_TacVest_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_TacVest_oli", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_M247", "Throw", "Put"
@@ -764,10 +764,10 @@ class CfgVehicles
 		backpack = "";
 		uniformClass = "U_I_L_Uniform_01_tshirt_olive_F_nmr";
 		linkedItems[] = {
-			"V_TacVestIR_blk", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG", "ACE_Yardage450"
+			"V_TacVestIR_blk", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "ACE_Yardage450"
 		};
 		respawnLinkedItems[] = {
-			"V_TacVestIR_blk", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG", "ACE_Yardage450"
+			"V_TacVestIR_blk", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "ACE_Yardage450"
 		};
 		weapons[] = {
 			"OPTRE_M295_BMR", "Throw", "Put"
@@ -807,10 +807,10 @@ class CfgVehicles
 
 		uniformClass = "OPTRE_Ins_ER_jacket_surgeon2";
 		linkedItems[] = {
-			"V_LegStrapBag_black_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_LegStrapBag_black_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_LegStrapBag_black_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_LegStrapBag_black_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		backpack = "B_Messenger_Gray_F_e_fmm_medic";
 		weapons[] = {
@@ -857,10 +857,10 @@ class CfgVehicles
 
 		uniformClass = "U_C_Mechanic_01_F_nmr";
 		linkedItems[] = {
-			"V_TacChestrig_cbr_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_TacChestrig_cbr_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_TacChestrig_cbr_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_TacChestrig_cbr_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		backpack = "B_LegStrapBag_coyote_F_e_fmm_engie";
 	};
@@ -873,10 +873,10 @@ class CfgVehicles
 
 		uniformClass = "U_I_C_Soldier_Bandit_3_F_nmr";
 		linkedItems[] = {
-			"V_I_G_resistanceLeader_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_I_G_resistanceLeader_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_I_G_resistanceLeader_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_I_G_resistanceLeader_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_M45TAC", "Throw", "Put"
@@ -912,10 +912,10 @@ class CfgVehicles
 
 		uniformClass = "OPTRE_Ins_ER_rolled_OD_crimson";
 		linkedItems[] = {
-			"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		backpack = "";
 		weapons[] = {
@@ -1175,10 +1175,10 @@ class CfgVehicles
 
 		uniformClass = "OPTRE_Ins_ER_uniform_GAtan";
 		linkedItems[] = {
-			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_HarnessOGL_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		backpack = "B_FieldPack_Coyote_F_e_fmm_u_gradr";
 		weapons[] = {
@@ -1222,10 +1222,10 @@ class CfgVehicles
 		uniformClass = "OPTRE_Ins_ER_uniform_GAgreen";
 		backpack = "OPTRE_ANPRC_521_URF";
 		linkedItems[] = {
-			"V_SmershVest_01_radio_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_SmershVest_01_radio_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_SmershVest_01_radio_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_SmershVest_01_radio_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_MA5A", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
@@ -1268,10 +1268,10 @@ class CfgVehicles
 		uniformClass = "OPTRE_Ins_ER_uniform_GAgreen";
 		backpack = "";
 		linkedItems[] = {
-			"H_Beret_CSAT_01_F", "V_CarrierRigKBT_01_light_Olive_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"H_Beret_CSAT_01_F", "V_CarrierRigKBT_01_light_Olive_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"H_Beret_CSAT_01_F", "V_CarrierRigKBT_01_light_Olive_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"H_Beret_CSAT_01_F", "V_CarrierRigKBT_01_light_Olive_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"optre_hgun_sas10_F_a_sop", "Throw", "Put"
@@ -1301,10 +1301,10 @@ class CfgVehicles
 
 		backpack = "";
 		linkedItems[] = {
-			"OPTRE_UNSC_CH252_Helmet3_TRO", "V_CarrierRigKBT_01_heavy_Olive_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"OPTRE_UNSC_CH252_Helmet3_TRO", "V_CarrierRigKBT_01_heavy_Olive_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"OPTRE_UNSC_CH252_Helmet3_TRO", "V_CarrierRigKBT_01_heavy_Olive_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"OPTRE_UNSC_CH252_Helmet3_TRO", "V_CarrierRigKBT_01_heavy_Olive_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_BR45", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
@@ -1340,10 +1340,10 @@ class CfgVehicles
 		uniformClass = "U_BG_Guerrilla_6_1_nmr";
 		backpack = "B_Kitbag_rgr_e_fmm_u_engie";
 		linkedItems[] = {
-			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_MA5A", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
@@ -1372,10 +1372,10 @@ class CfgVehicles
 
 		backpack = "B_FieldPack_green_F_e_fmm_medic";
 		linkedItems[] = {
-			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		magazines[] = {
 			"kat_Painkiller", tx_8("OPTRE_32Rnd_762x51_Mag_Tracer"), tx_2("16Rnd_10mm_Ball"),"4thot_g_he_l",tx_3("4thot_g_smk_urf_w"),"4thot_g_smk_urf_b"
@@ -1404,10 +1404,10 @@ class CfgVehicles
 
 		backpack = "B_Carryall_oli_e_fmm_u_mataa";
 		linkedItems[] = {
-			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_HarnessO_brn", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_MA5A", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
@@ -1430,10 +1430,10 @@ class CfgVehicles
 
 		backpack = "B_Carryall_oli_e_fmm_u_maa";
 		linkedItems[] = {
-			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_MA5A", "4thot_w_l_m30_urf", "optre_hgun_sas10_F_a_sop", "Throw", "Put"
@@ -1505,10 +1505,10 @@ class CfgVehicles
 
 		uniformClass = "OPTRE_Ins_ER_uniform_GAgreen";
 		linkedItems[] = {
-			"H_Shemag_olive_hs","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"H_Shemag_olive_hs","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"H_Shemag_olive_hs","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"H_Shemag_olive_hs","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		backpack = "";
 		weapons[] = {
@@ -1553,10 +1553,10 @@ class CfgVehicles
 
 		backpack = "";
 		linkedItems[] = {
-			"OPTRE_UNSC_CH252_Helmet3_TRO","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"OPTRE_UNSC_CH252_Helmet3_TRO","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		respawnLinkedItems[] = {
-			"OPTRE_UNSC_CH252_Helmet3_TRO","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "OPTRE_NVG"
+			"OPTRE_UNSC_CH252_Helmet3_TRO","V_SmershVest_01_F", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"
 		};
 		weapons[] = {
 			"OPTRE_SRM77_S1_Green_a_bp", "optre_hgun_sas10_F_a_lsr", "Throw", "Put","Binocular"
