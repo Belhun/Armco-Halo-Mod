@@ -1608,17 +1608,31 @@ class CfgVehicles
 
 	class 4thot_v_d_rchog_ied : OPTRE_RCHog_VBIED
 	{
+		scope = 2;
+		side = 0;
+
 		faction = "4thot_nmr_fmm";
 	};
 
 	class 4thot_v_g_fmm_hog : OPTRE_M12_CIV
 	{
+		scope = 2;
+		side = 0;
+
 		displayName = "AMG Hog";
 		faction = "4thot_nmr_fmm";
 
 		crew = "4thot_u_fmm_rebel";
 
-		class textureSources
+		hiddenSelectionsTextures[] =
+		{
+			"\OPTRE_Vehicles\Warthog\data\ins\grn_warthog_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa"
+		};
+
+		class TextureSources
 		{
 			class Sand
 			{
@@ -1675,12 +1689,23 @@ class CfgVehicles
 
 	class 4thot_v_g_fmm_hog_ied : OPTRE_M12_VBIED
 	{
+		scope = 2;
+		side = 0;
+
 		displayName = "AMG Hog (VBIED)";
 		faction = "4thot_nmr_fmm";
 
 		crew = "4thot_u_fmm_rebel";
 
-		class textureSources
+		hiddenSelectionsTextures[] =
+		{
+			"\OPTRE_Vehicles\Warthog\data\ins\grn_warthog_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa"
+		};
+
+		class TextureSources
 		{
 			class Sand
 			{
@@ -1737,12 +1762,25 @@ class CfgVehicles
 
 	class 4thot_v_g_fmm_hog_apc : OPTRE_M12_ins_APC
 	{
+		scope = 2;
+		side = 0;
+
 		displayName = "AMG Hog (APC)";
 		faction = "4thot_nmr_fmm";
 
 		crew = "4thot_u_fmm_rebel";
 
-		class textureSources
+		hiddenSelectionsTextures[] =
+		{
+			"\OPTRE_Vehicles\Warthog\data\ins\grn_warthog_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\indapc_lopo_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\apc_ind_det1_lopo_co.paa"
+		};
+
+		class TextureSources
 		{
 			class Green
 			{
@@ -1799,12 +1837,25 @@ class CfgVehicles
 
 	class 4thot_v_g_fmm_hog_apc_ied : OPTRE_M12_ins_APC
 	{
+		scope = 2;
+		side = 0;
+
 		displayName = "AMG Hog (APC/VBIED)";
 		faction = "4thot_nmr_fmm";
 
 		crew = "4thot_u_fmm_rebel";
 
-		class textureSources
+		hiddenSelectionsTextures[] =
+		{
+			"\OPTRE_Vehicles\Warthog\data\ins\grn_warthog_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\M12HogMaav_extunder_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\indapc_lopo_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\apc_ind_det1_lopo_co.paa"
+		};
+
+		class TextureSources
 		{
 			class Green
 			{
@@ -1861,10 +1912,21 @@ class CfgVehicles
 
 	class 4thot_v_g_fmm_van2 : C_Van_02_transport_F
 	{
+		scope = 2;
+		side = 0;
+
 		displayName = "BMW Halo-Van";	//Bungie Motor Works
 		faction = "4thot_nmr_fmm";
 
 		crew = "4thot_u_fmm_rebel";
+
+		hiddenSelectionsTextures[] =
+		{
+			"\a3\Soft_F_Orange\Van_02\Data\van_body_Green_CO.paa",
+			"\a3\soft_f_orange\van_02\data\van_wheel_transport_co.paa",
+			"\a3\soft_f_orange\van_02\data\van_glass_transport_CA.paa",
+			"\a3\Soft_F_Orange\Van_02\Data\van_body_Green_CO.paa"
+		};
 
 		class TextureSources
 		{
@@ -1927,10 +1989,20 @@ class CfgVehicles
 
 	class 4thot_v_g_fmm_truck2 : C_Truck_02_covered_F //Madrigal Industrial Vehicles
 	{
+		scope = 2;
+		side = 0;
+
 		displayName = "MIV P250 Hauler";
 		faction = "4thot_nmr_fmm";
 
 		crew = "4thot_u_fmm_rebel";
+
+		hiddenSelectionsTextures[] =
+		{
+			"\a3\soft_f_beta\Truck_02\data\truck_02_kab_blue_co.paa",
+			"\a3\soft_f_beta\Truck_02\data\truck_02_kuz_olive_co.paa",
+			"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"
+		};
 
 		class TextureSources
 		{
@@ -1963,6 +2035,9 @@ class CfgVehicles
 
 	class 4thot_v_g_fmm_truck2_engie : C_Truck_02_box_F
 	{
+		scope = 2;
+		side = 0;
+
 		displayName = "MIV P250 Hauler (Maintence)";
 		faction = "4thot_nmr_fmm";
 
@@ -1971,6 +2046,13 @@ class CfgVehicles
 		ace_cargo_space = 8;
         ace_repair_canRepair = 1;
         ace_rearm_defaultSupply = 2000;
+
+		hiddenSelectionsTextures[] =
+		{
+			"\a3\soft_f_beta\Truck_02\data\truck_02_kab_blue_co.paa",
+			"\a3\soft_f_beta\Truck_02\data\truck_02_repair_green_co.paa",
+			"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"
+		};
 
 		class TextureSources
 		{
@@ -1995,10 +2077,20 @@ class CfgVehicles
 
 	class 4thot_v_g_fmm_truck2_fuel : C_Truck_02_fuel_F
 	{
+		scope = 2;
+		side = 0;
+
 		displayName = "MIV P250 Hauler (Fuel)";
 		faction = "4thot_nmr_fmm";
 
 		crew = "4thot_u_fmm_rebel";
+
+		hiddenSelectionsTextures[] =
+		{
+			"\a3\soft_f_beta\Truck_02\data\truck_02_kab_blue_CO.paa",
+			"\a3\soft_f_beta\Truck_02\data\truck_02_fuel_co.paa",
+			"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"
+		};
 
 		class TextureSources
 		{
